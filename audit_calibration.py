@@ -76,7 +76,7 @@ def records(path, ds, gold, cur, colmap):
     out = []
     # errors="replace", as every other log reader here: an exporter that writes one
     # Latin-1 byte (HoloClean did, on beers' "kolsch") must not abort the audit. The
-    # right fix is at the source -- see the .latin1.bak files -- but a reader that
+    # right fix is at the source, in the exporter, but a reader that
     # crashes on a byte is worse than one that flags it.
     with open(path, newline="", encoding="utf-8", errors="replace") as fh:
         for r in csv.DictReader(fh):

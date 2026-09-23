@@ -38,19 +38,16 @@ class Defects:
 @dataclass(frozen=True)
 class DatasetSpec:
     name: str
-    fds: tuple[tuple[tuple[str, ...], str], ...] = ()   # ((lhs_cols...), rhs_col) functional deps
 
 
-# Known FDs are only needed for constraint-based detection / verifier enforcement;
-# the headline study uses oracle detection, so most specs just need the name.
+# The five base corpora. Imported Ni et al. variants are registered on top of these
+# by ``register_variants`` below.
 DATASETS: dict[str, DatasetSpec] = {
-    "hospital": DatasetSpec("hospital", fds=((("ZipCode",), "City"), (("ZipCode",), "State"))),
+    "hospital": DatasetSpec("hospital"),
     "flights": DatasetSpec("flights"),
     "beers": DatasetSpec("beers"),
     "rayyan": DatasetSpec("rayyan"),
-    "tax": DatasetSpec("tax", fds=(
-        (("zip",), "city"), (("zip",), "state"), (("area_code",), "state"),
-    )),  # tax columns are lowercase; matches real header
+    "tax": DatasetSpec("tax"),
 }
 
 
@@ -64,9 +61,7 @@ def _register_ni_variants() -> int:
     accident. Absent manifest means nothing is registered and every base dataset
     behaves exactly as before.
 
-    The FDs of the base dataset carry over, since a variant has the same schema; they
-    matter only for the constraint detector and the FD retriever, not for the oracle
-    sweeps.
+    A variant shares its base dataset's schema, so nothing beyond the name is recorded.
     """
     path = os.path.join(DATA_DIR, "ni_variants.csv")
     if not os.path.exists(path):
@@ -75,11 +70,10 @@ def _register_ni_variants() -> int:
     try:
         with open(path, newline="", encoding="utf-8") as fh:
             for r in csv.DictReader(fh):
-                name, base = r.get("dataset"), r.get("base")
+                name = r.get("dataset")
                 if not name or name in DATASETS:
                     continue
-                parent = DATASETS.get(base)
-                DATASETS[name] = DatasetSpec(name, fds=parent.fds if parent else ())
+                DATASETS[name] = DatasetSpec(name)
                 n += 1
     except (OSError, csv.Error):
         return n
@@ -101,7 +95,7 @@ def _norm(v: str | None) -> str | None:
 # glob) and must fail with a readable message rather than a urllib traceback: the old
 # behaviour turned `--dataset '*_ni_*'` -- what bash leaves behind when a glob matches
 # nothing -- into `HTTP Error 404`, which reads like a network problem and is not one.
-DOWNLOADABLE = ("hospital", "flights", "beers", "rayyan", "tax", "movies_1")
+DOWNLOADABLE = ("hospital", "flights", "beers", "rayyan", "tax")
 
 
 def download(name: str, *, data_dir: str = DATA_DIR) -> str:

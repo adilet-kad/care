@@ -80,7 +80,7 @@ def _baran_medians():
     draws on hospital. Table 1 therefore reports the median of every column for the
     datasets where draws exist, so accuracy, pi_0 and automation all describe the
     same central run instead of mixing one lucky draw's accuracy with another's
-    automation. Datasets without draws (tax) fall through to the single-run audit.
+    automation. A dataset without draws falls through to the single-run audit.
     """
     return {r["dataset"]: r for r in _read(f"{EXP}/baran_median.csv")}
 
@@ -272,10 +272,9 @@ def fig9(plt, alpha=0.2, partition="mondrian"):
     extrapolate from. Dashed line: the floor-adjusted ceiling
     pi_alpha, computed and sealed before any calibration was spent. A hollow marker
     marks a run that certified nothing, which is the outcome the ceiling is supposed to
-    predict -- the dashed line should reach zero at the same x. Triangles are the
-    `outer` (typo-like) contrast points at their own measured rate; they belong to the
-    same proposer and colour but a different error kind, so they are never joined into
-    the inner-error line.
+    predict -- the dashed line should reach zero at the same x. If a sweep file ever
+    carries `outer` (typo-like) variants they are drawn as separate triangles and never
+    joined into the inner-error line; the shipped sweep has none (REPRODUCE.md D32).
     """
     # Prefer the median-over-draws file when it exists: Baran is unseeded, so a curve
     # of single draws would contradict Table 1, which already reports medians.

@@ -25,7 +25,7 @@ _VALID_TYPES: tuple[ConstraintType, ...] = ("H", "W", "P")
 def register_constraint(cls: type[BaseConstraint]) -> type[BaseConstraint]:
     """Class decorator that registers a constraint plugin.
 
-    Validates the H/W/P typing invariant (I5) and rejects duplicate cids at
+    Validates the H/W/P typing rule and rejects duplicate cids at
     import time, turning a whole class of configuration errors into immediate,
     loud failures.
     """

@@ -28,7 +28,7 @@ from care.predicates import ALL_CONSTRAINTS
 
 
 @pytest.fixture(autouse=True)
-def _load_standards():
+def _load_constraints():
     clear_registry()
     for cls in ALL_CONSTRAINTS:
         register_constraint(cls)

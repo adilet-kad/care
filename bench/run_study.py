@@ -6,14 +6,15 @@ one CSV per experiment. The invocation reproduce.sh uses for the headline table:
 
   python -m bench.run_study --dataset hospital \
       --backends "baran:csvs/baran_hospital_mapped.csv" \
-      --experiment all --alphas 0.05 0.1 0.2 --seeds 20 --scoring errors \
-      --out experiments/results_baran_errors
+      --experiment pareto --alphas 0.05 0.1 0.2 --seeds 10 --scoring errors \
+      --fast-verify on --out experiments/results_baran_errors
 
   # deployment-realistic scoring under a real detector's exported cell log:
   python -m bench.run_study --dataset hospital \
       --backends "baran_raha:csvs/baran_raha_hospital_mapped.csv" \
       --detection log:csvs/raha_hospital_detected.csv --scoring detected \
-      --out experiments/results_raha
+      --experiment pareto --alphas 0.05 0.1 0.2 --seeds 10 --fast-verify on \
+      --out experiments/results_raha_baran
 """
 
 from __future__ import annotations

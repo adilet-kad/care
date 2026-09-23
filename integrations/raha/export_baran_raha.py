@@ -54,7 +54,7 @@ Then, in CARE:
     python prepare_log.py  <ds> csvs/baran_raha_<ds>_pred.csv
     python precheck_log.py <ds> csvs/baran_raha_<ds>_pred.csv --scope touched
     python -m bench.run_study --dataset <ds> \
-        --backends "baran:csvs/baran_raha_<ds>_mapped.csv" \
+        --backends "baran_raha:csvs/baran_raha_<ds>_mapped.csv" \
         --experiment pareto --alphas 0.05 0.1 0.2 --seeds 10 \
         --scoring detected --fast-verify on \
         --detection log:csvs/raha_<ds>_detected.csv \

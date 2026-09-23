@@ -12,7 +12,7 @@ A repair flows through the pipeline as:
 failed hard predicates and the satisfied fraction). ``ThresholdTable`` is the
 conformal controller's per-stratum output.
 
-Crucially, ``RepairCandidate`` is what the LLM produces -- it never writes to D
+Crucially, ``RepairCandidate`` is what the proposer produces -- it never writes to D
 (I1). Only after the Verifier projects it to a ``VerifiedRepair`` with
 ``feasible=True`` (I2) and the controller emits an ``auto_apply`` Decision can
 it be applied.
@@ -40,7 +40,7 @@ class Violation(BaseModel):
 
 
 class RepairCandidate(BaseModel):
-    """A proposed repair for a single ref. Produced by the Proposer; the LLM
+    """A proposed repair for a single ref. Produced by the proposer, which
     fills value/rationale/evidence/s_llm/s_agree. ``s_margin`` (verifier) and
     ``s_hat`` (controller) are filled downstream.
 

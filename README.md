@@ -49,7 +49,7 @@ numpy, pandas, scipy or sklearn); matplotlib is needed only for figures.
 | `bench/` | harness: `run_study` (sweeps), `study`/`experiments` (the evaluation protocol), `throughput`, dataset loader | reproduce results |
 | `csvs/` | **the proposer logs** — one `<tool>_<dataset>_pred.csv` per cleaner × dataset as exported, `_mapped.csv` after schema mapping, detector queues, Baran reruns (`baran_var*/`), controlled-noise variants (`*_ni_*`), the token-probability control (`logprob/`) | replay everything without a GPU |
 | `experiments/` | result CSVs; every reported number is read from these | check any number |
-| `paper/` | generated `figures/` and `tables/`, written by `make_figures.py` | read the results |
+| `paper/` | generated `figures/` and `tables/`, written by `make_figures.py` (`tab5_error_drop.tex` by `audit_error_drop.py --tex`) | read the results |
 | `audit_*.py`, `make_figures.py`, `prepare_log.py`, `precheck_log.py` | the documented CLI (below) | regenerate |
 | `tools/` | verification scripts and the sweep pre-registration | audit the results |
 | `integrations/` | the exporters that produced each log, run *inside* the cleaners' own repos; CARE never imports them | regenerate a log |
@@ -127,7 +127,7 @@ lists the rest.
 | `tools/verify_precondition_fallback.py` | its precondition is probed at run time and a violating constraint set falls back to the exact path |
 | `tools/compare_confidence_signals.py` | token log-probability against self-consistency as a confidence signal, on the `csvs/logprob/` control |
 | `tools/agreement_strata.py` | per-column accuracy at each self-consistency level on error cells; the beers `state`/`abv` and hospital column tallies quoted in Section 7.2 |
-| `tools/preregister_pi0.py` / `audit_sweep.py` | the sweep ceilings were sealed (SHA-256) before calibration, and the sweep is checked against the seal |
+| `audit_alpha_ceiling.py` / `audit_sweep.py` | the sweep ceilings were sealed (SHA-256) before calibration, and the sweep is checked against the seal |
 | `tests/property/` | coverage of the fixed-grid controller, group-conditional coverage, projector invariant, Theorems 1–2 on generated data |
 
 Figures and tables are never hand-edited: `make_figures.py` reads only `experiments/*.csv`

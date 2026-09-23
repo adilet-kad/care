@@ -1,5 +1,5 @@
 """export_detection.py -- run REAL Raha error detection and export a CARE-ready
-detected-cells log, for the T2 non-oracle-detection experiment.
+detected-cells log, for the non-oracle-detection experiment (Table 3).
 
 Deliberate architectural choice (same as the Baran correction integration):
 Raha runs natively in ITS OWN repo/environment here, and we export a plain CSV
@@ -156,7 +156,7 @@ def export_one(dataset, *, out_dir, algorithms):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("datasets", nargs="+", help="one or more of: beers hospital rayyan flights tax movies_1")
+    ap.add_argument("datasets", nargs="+", help="one or more of: beers hospital rayyan flights tax")
     ap.add_argument("--out", default=DEFAULT_OUT_DIR, help="output directory (default: ../CARE/csvs)")
     ap.add_argument("--algorithms", nargs="+", default=["OD", "PVD", "RVD", "KBVD"],
                     help="raha ERROR_DETECTION_ALGORITHMS subset (drop KBVD/OD if slow or erroring)")

@@ -91,7 +91,7 @@ def measure(dataset, log, *, alpha=0.1, delta=0.1, max_cells=None, fast_verify=T
     #
     # The fast path's fixed 64-cell precondition probe is timed separately and
     # subtracted. Leaving it in would be a measurement error, not conservatism: it
-    # is paid once per run regardless of m, so on hospital's 458 candidates it alone
+    # is paid once per run regardless of m, so on hospital's 499 candidates it alone
     # accounts for ~10 ms of an apparent 10.6 ms "per repair".
     from bench.study import _probe_verifier_constant
     from care.verify import Verifier

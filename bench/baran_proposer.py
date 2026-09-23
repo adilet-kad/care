@@ -1,6 +1,6 @@
 """bench.baran_proposer -- offline-log proposer wrapping an external repair system.
 
-The "universal safety layer" experiment: CARE governs ANY proposer, not just the LLM.
+CARE governs ANY proposer, classical or LLM, through one log contract.
 Rather than integrate Baran's live ML pipeline (dependency hell, coupled reproducibility),
 we run Baran natively once, dump its corrections to a CSV log, and read them here. The
 same adapter works for any external system (HoloClean, commercial tools) -- emit the log
@@ -20,7 +20,7 @@ Log contract (validated by prepare_log.py):
       can be marked low-trust so the gate escalates repairs that cite it -- the
       retrieval-poisoning defence).
     - cells absent from the log -> the system made no proposal -> CARE escalates
-      (identical semantics to an LLM abstention)
+      (identical semantics to an abstention)
 
 This proposer is proposer-agnostic by design: it emits RepairCandidates with a
 confidence channel, and the conformal controller bounds the error of whatever it
@@ -121,9 +121,6 @@ class BaranProposer:
             )
         return out
 
-
-# The offline-log proposer is proposer-agnostic; the Baran name is historical.
-OfflineLogProposer = BaranProposer
 
 
 __all__ = ["BaranProposer"]

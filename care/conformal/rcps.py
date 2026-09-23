@@ -20,10 +20,10 @@ auto-applied set, i.e. maximal automation. If none certifies, ``lambda_hat =
 Why the fixed grid + correction (and not the naive "smallest data value whose
 pointwise UCB <= alpha"). Selecting a threshold from *all distinct calibration
 s_hat values* and testing each with a pointwise UCB is a multiple-comparisons
-procedure with no correction: empirically it UNDER-COVERS (realized coverage
-~0.83 at a nominal 1-delta = 0.90 under the tight Clopper-Pearson bound). A fixed
+procedure with no correction: in simulation it UNDER-COVERS at the nominal
+1-delta where the fixed grid does not (``tests/property`` asserts this). A fixed
 coarse grid keeps ``m`` small so the Bonferroni penalty is mild, restores valid
-coverage (~0.99), and still auto-applies a real fraction. The genuine RCPS
+coverage, and still auto-applies a real fraction. The genuine RCPS
 tail-monotonicity argument (no union bound) requires certifying the *entire* tail
 ``lambda' >= lambda``; on a data-dependent grid the extreme-high thresholds have
 tiny support and unbounded CIs, which collapses the tail rule to escalate-all.

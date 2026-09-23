@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import csv
 
-from bench.baran_proposer import BaranProposer, OfflineLogProposer
+from bench.baran_proposer import BaranProposer
 from care.core.repair import Violation
 
 
@@ -14,10 +14,6 @@ def _write(path, header, rows):
         w = csv.writer(f)
         w.writerow(header)
         w.writerows(rows)
-
-
-def test_offline_log_is_baran_alias():
-    assert OfflineLogProposer is BaranProposer
 
 
 def test_per_cell_source_becomes_evidence(tmp_path):

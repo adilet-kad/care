@@ -3,7 +3,7 @@
 These scripts are **not part of CARE and are never imported by it.** Each one runs
 *inside* its own upstream repository, in that repository's own virtualenv, and writes a
 CSV that CARE later reads. They live here so the repository is self-contained: how every
-proposer log was produced is visible without cloning four upstream repos first.
+proposer log was produced is visible without cloning five upstream repos first.
 
 That separation is the point, not an accident. CARE's claim is that it governs any
 proposer through one contract, so it must never depend on a proposer's code. Keeping the

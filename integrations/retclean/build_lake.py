@@ -19,10 +19,8 @@ So this script builds the lake the honest way, from the DIRTY data only:
 
 Errors in these corpora are sparse, independent, minority corruptions, so the
 majority vote over a group recovers the consensus value without ever reading
-clean/gold. This is exactly the pattern CARE already uses for its FD-grounded
-retriever (`bench/study.py::_fd_reference_documents`, documented there as "derived
-only from the data under repair ... it never reads clean/gold values, so it
-introduces no oracle leakage"). Same principle, applied to build a lake table.
+clean/gold. The lake is derived only from the data under repair and never reads
+clean/gold values, so it introduces no oracle leakage.
 
 The resulting lake is a legitimate stand-in for an enterprise reference table
 bootstrapped from a lake's own redundancy -- and it can be corrupted for the

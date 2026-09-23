@@ -42,7 +42,7 @@ this is why the no-confidence Baran logs certify whole columns or nothing).
 With `--with-confidence` we capture it by patching BClean's `infer.py` **source at
 import time, in memory**: the file on disk is never modified. The patch only ADDS a
 recording statement; it does not change which candidate is selected, so BClean's repairs
-are bit-identical with and without it (verify with --verify-patch). Confidence is
+are bit-identical with and without it. Confidence is
 reported as the normalised margin  top1 / (top1 + top2), i.e. how decisively the
 Bayesian network preferred its choice.
 

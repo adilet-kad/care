@@ -1,5 +1,5 @@
 """export_retclean.py -- run RetClean over a dataset and export a CARE-ready
-offline-repair log, for the T5 "CARE governs an LLM cleaner" experiment.
+offline-repair log (the retrieval-augmented proposer of Table 1).
 
 Same zero-coupling pattern as the Baran and Raha integrations: RetClean runs
 natively here (its Docker stack: FastAPI backend + Ollama + Elasticsearch/Qdrant),
@@ -30,7 +30,7 @@ Usage (run from the RetClean repo root, stack running):
 
 Output:
     ../CARE/csvs/retclean_<dataset>_pred.csv   (row_id,column,value,source)
-Then in CARE:  python retclean_prepare.py <dataset> csvs/retclean_<dataset>_pred.csv
+Then in CARE:  python prepare_log.py <dataset> csvs/retclean_<dataset>_pred.csv --tool retclean
 """
 
 from __future__ import annotations
@@ -178,7 +178,7 @@ def export_one(dataset, args):
     n_lake = sum(1 for r in log_rows if r[3] == "retclean_lake")
     print(f"WROTE: {out_path}  ({len(log_rows)} repairs; {n_lake} lake-cited, "
           f"{len(log_rows) - n_lake} model-guessed)")
-    print(f"Next (in CARE):  python retclean_prepare.py {dataset} csvs/retclean_{dataset}_pred.csv")
+    print(f"Next (in CARE):  python prepare_log.py {dataset} csvs/retclean_{dataset}_pred.csv --tool retclean")
     print("=" * (22 + len(dataset)) + "\n")
 
 

@@ -49,7 +49,7 @@ def apply_repair(art: DataArtifact, repair: RepairCandidate) -> DataArtifact:
     if isinstance(value, MetadataTriple):
         new.add_metadata(value)
         # Record the edit's provenance so the new triple is itself traceable
-        # (I6 / §6.3.5 audit trail of changes). The triple's source_id is the
+        # (audit trail of changes). The triple's source_id is the
         # trusted evidence that justified it (I4).
         if value.source_id:
             new.add_event(

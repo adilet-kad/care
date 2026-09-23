@@ -123,7 +123,7 @@ RUNS = [
     ("results_jelly_tax25k", "tax", "jellyfish:csvs/jellyfish_tax_mapped.csv",
      ["--scoring", "detected", "--row-range", "0", "25000"]),
     ("results_baran_detected", "tax", "baran:csvs/baran_tax_mapped.csv", ["--scoring", "detected"]),
-    # tax's non-oracle row re-scores the oracle log; see docs/REPRODUCE.md D25.
+    # tax's non-oracle row uses a reduced detector; see docs/REPRODUCE.md D18/D19.
     ("results_raha_baran", "tax", "baran:csvs/baran_tax_mapped.csv",
      ["--scoring", "detected", "--detection", "log:csvs/raha_tax_detected.csv"]),
 ]

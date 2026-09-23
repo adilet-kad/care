@@ -36,7 +36,7 @@ without within-stratum ranking", and the exceedance count is the evidence for ho
 often that qualifier binds.
 
     python audit_sweep.py                                  # all results_sweep_* dirs
-    python audit_sweep.py --results experiments/results_sweep_baran
+    python audit_sweep.py --results experiments/results_sweep_baran_var
     python audit_sweep.py --no-verify-seal                 # only for a re-run in place
     -> experiments/sweep.csv
 """

@@ -48,7 +48,7 @@ _CAND = st.tuples(_REF, _VALUES)
 
 
 @pytest.fixture(autouse=True)
-def _load_standards():
+def _load_constraints():
     clear_registry()
     for cls in ALL_CONSTRAINTS:
         register_constraint(cls)

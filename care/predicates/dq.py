@@ -137,7 +137,7 @@ class ConsistencyFD(BaseConstraint):
 
 @register_constraint
 class Traceability(BaseConstraint):
-    """H: every cell carries at least one provenance edge (invariant I6).
+    """H: every cell carries at least one provenance edge.
 
     Reads the lineage graph rather than the cells, which is what makes it a
     different evaluation shape from the value predicates above. Empty artifacts
