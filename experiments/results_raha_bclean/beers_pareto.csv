@@ -1,0 +1,16 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian_src,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,LLMOnly,-,0.05,detected,0.0,0.39723076923076917,0.6027692307692308,0.4003692307692308,False,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,False,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian,0.1,detected,0.9391143911439117,0.0,0.11478260869565218,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian_src,0.1,detected,0.9391143911439117,0.0,0.11478260869565218,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,LLMOnly,-,0.1,detected,0.0,0.39723076923076917,0.6027692307692308,0.4003692307692308,False,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,False,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,marginal,0.2,detected,0.9817230769230768,0.040187265917602986,0.026246686637328105,0.09722846441947564,True,False,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian,0.2,detected,0.9059040590405907,0.023570247933884292,0.1570871215975723,0.05871074380165288,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian_src,0.2,detected,0.9234932349323495,0.012181303116147313,0.13463330184326738,0.03654390934844194,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,LLMOnly,-,0.2,detected,0.0,0.39723076923076917,0.6027692307692308,0.4003692307692308,False,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv

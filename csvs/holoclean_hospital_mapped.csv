@@ -1,0 +1,233 @@
+row_id,column,value,confidence,source
+4,City,birmingham,0.438186,holoclean
+8,City,birmingham,0.438360,holoclean
+11,City,sheffield,0.299380,holoclean
+14,ProviderNumber,10019,0.161412,holoclean
+17,HospitalType,acute care hospitals,0.578077,holoclean
+25,PhoneNumber,3347938701,0.209831,holoclean
+37,PhoneNumber,3347938701,0.454145,holoclean
+40,HospitalType,acute care hospitals,0.549665,holoclean
+45,ZipCode,35957,0.536498,holoclean
+46,ProviderNumber,10005,0.348016,holoclean
+47,State,al,0.685726,holoclean
+51,State,al,0.660811,holoclean
+57,City,boaz,0.520085,holoclean
+58,Address1,2505 u s highway 431 north,0.464824,holoclean
+61,PhoneNumber,2565938310,0.565762,holoclean
+64,ZipCode,35957,0.557690,holoclean
+66,PhoneNumber,2565938310,0.245474,holoclean
+68,CountyName,marshall,0.636346,holoclean
+71,ZipCode,35631,0.636068,holoclean
+73,CountyName,lauderdale,0.581047,holoclean
+78,CountyName,lauderdale,0.603396,holoclean
+80,City,florence,0.490398,holoclean
+82,ProviderNumber,10006,0.585627,holoclean
+84,State,al,0.681841,holoclean
+89,City,florence,0.511369,holoclean
+95,Address1,702 n main st,0.468222,holoclean
+99,HospitalType,acute care hospitals,0.650082,holoclean
+99,State,al,0.703877,holoclean
+102,PhoneNumber,3344933541,0.567717,holoclean
+107,Address1,702 n main st,0.603498,holoclean
+114,HospitalOwner,voluntary non-profit - private,0.481324,holoclean
+120,State,al,0.612024,holoclean
+137,CountyName,crenshaw,0.489552,holoclean
+138,ZipCode,36049,0.416655,holoclean
+140,ZipCode,36049,0.416658,holoclean
+141,State,al,0.651318,holoclean
+150,ZipCode,35640,0.255378,holoclean
+158,ZipCode,35640,0.532140,holoclean
+160,HospitalOwner,proprietary,0.448841,holoclean
+162,Address1,201 pine street northwest,0.532515,holoclean
+163,HospitalOwner,proprietary,0.407953,holoclean
+165,HospitalOwner,proprietary,0.390708,holoclean
+166,State,al,0.678054,holoclean
+176,Address1,8000 alabama highway 69,0.287199,holoclean
+181,City,guntersville,0.501411,holoclean
+183,State,al,0.693127,holoclean
+197,ZipCode,35235,0.370676,holoclean
+208,City,birmingham,0.374911,holoclean
+213,City,birmingham,0.433354,holoclean
+214,HospitalType,acute care hospitals,0.488358,holoclean
+217,CountyName,jefferson,0.631706,holoclean
+218,PhoneNumber,2058383122,0.462687,holoclean
+219,HospitalOwner,voluntary non-profit - private,0.433173,holoclean
+222,CountyName,de kalb,0.480789,holoclean
+222,HospitalOwner,voluntary non-profit - church,0.416385,holoclean
+224,CountyName,de kalb,0.477584,holoclean
+228,CountyName,de kalb,0.496617,holoclean
+229,PhoneNumber,2568453150,0.500664,holoclean
+233,ZipCode,35968,0.608738,holoclean
+239,CountyName,de kalb,0.498947,holoclean
+239,HospitalOwner,voluntary non-profit - church,0.412277,holoclean
+245,ProviderNumber,10015,0.190487,holoclean
+248,PhoneNumber,3346366221,0.276716,holoclean
+253,CountyName,clarke,0.660006,holoclean
+254,ProviderNumber,10015,0.459197,holoclean
+261,Address1,33700 highway 43,0.596152,holoclean
+262,PhoneNumber,3346366221,0.687933,holoclean
+265,Address1,33700 highway 43,0.548483,holoclean
+267,HospitalType,acute care hospitals,0.618118,holoclean
+268,ZipCode,36784,0.523542,holoclean
+274,ProviderNumber,10016,0.588988,holoclean
+276,Address1,1000 first street north,0.684703,holoclean
+279,State,al,0.695767,holoclean
+281,HospitalType,acute care hospitals,0.542272,holoclean
+284,ZipCode,35007,0.600969,holoclean
+291,ZipCode,35007,0.576791,holoclean
+294,HospitalType,acute care hospitals,0.529902,holoclean
+296,Address1,1720 university blvd,0.414561,holoclean
+312,City,anniston,0.500452,holoclean
+313,CountyName,calhoun,0.587078,holoclean
+314,HospitalOwner,proprietary,0.630197,holoclean
+315,ProviderNumber,10038,0.627925,holoclean
+317,Address1,301 east 18th st,0.702512,holoclean
+322,PhoneNumber,2562358900,0.752130,holoclean
+325,CountyName,calhoun,0.589006,holoclean
+326,ZipCode,36201,0.650800,holoclean
+333,ZipCode,36305,0.381415,holoclean
+335,Address1,4370 west main street,0.574595,holoclean
+341,ZipCode,36305,0.406863,holoclean
+343,PhoneNumber,3347935000,0.508330,holoclean
+347,CountyName,houston,0.699545,holoclean
+357,HospitalOwner,proprietary,0.428414,holoclean
+361,ProviderNumber,10086,0.179931,holoclean
+364,Address1,1530 u s highway 43,0.574328,holoclean
+367,ZipCode,35594,0.487008,holoclean
+368,City,winfield,0.477066,holoclean
+376,ZipCode,35594,0.226553,holoclean
+387,State,al,0.607663,holoclean
+403,State,al,0.693511,holoclean
+407,ZipCode,36067,0.639597,holoclean
+409,ProviderNumber,10108,0.354832,holoclean
+412,Address1,124 s memorial dr,0.527882,holoclean
+412,HospitalType,acute care hospitals,0.527824,holoclean
+421,ZipCode,35150,0.241841,holoclean
+429,ZipCode,35150,0.503551,holoclean
+432,Address1,315 w hickory st,0.619825,holoclean
+438,City,anchorage,0.528429,holoclean
+450,HospitalOwner,proprietary,0.601713,holoclean
+454,HospitalType,acute care hospitals,0.573174,holoclean
+457,CountyName,jefferson,0.542262,holoclean
+457,HospitalOwner,government - hospital district or authority,0.446928,holoclean
+458,CountyName,jefferson,0.571777,holoclean
+466,CountyName,jefferson,0.571876,holoclean
+472,PhoneNumber,3347742601,0.520419,holoclean
+473,Address1,126 hospital ave,0.298500,holoclean
+475,City,ozark,0.491666,holoclean
+478,State,al,0.585635,holoclean
+484,State,al,0.679174,holoclean
+485,Address1,126 hospital ave,0.628769,holoclean
+486,City,ozark,0.491925,holoclean
+491,HospitalType,acute care hospitals,0.483479,holoclean
+491,ZipCode,36360,0.708665,holoclean
+494,HospitalOwner,voluntary non-profit - private,0.407228,holoclean
+498,HospitalType,acute care hospitals,0.559406,holoclean
+500,ZipCode,35960,0.600508,holoclean
+503,CountyName,cherokee,0.670141,holoclean
+505,State,al,0.688761,holoclean
+512,HospitalType,acute care hospitals,0.582923,holoclean
+514,CountyName,cherokee,0.509902,holoclean
+517,PhoneNumber,3342882100,0.535955,holoclean
+518,City,montgomery,0.640722,holoclean
+527,HospitalOwner,voluntary non-profit - church,0.436418,holoclean
+528,CountyName,montgomery,0.634573,holoclean
+541,CountyName,montgomery,0.609222,holoclean
+545,ZipCode,36106,0.492727,holoclean
+549,PhoneNumber,3342938000,0.502190,holoclean
+552,CountyName,montgomery,0.631273,holoclean
+560,ProviderNumber,10024,0.493753,holoclean
+560,State,al,0.571379,holoclean
+562,PhoneNumber,3342938000,0.524254,holoclean
+563,PhoneNumber,3342938000,0.483990,holoclean
+573,PhoneNumber,3347561400,0.309838,holoclean
+589,HospitalType,acute care hospitals,0.550064,holoclean
+593,State,al,0.660495,holoclean
+594,PhoneNumber,3348972257,0.695885,holoclean
+602,City,elba,0.186860,holoclean
+603,CountyName,coffee,0.662151,holoclean
+609,ProviderNumber,10027,0.513738,holoclean
+628,ProviderNumber,10029,0.501442,holoclean
+634,CountyName,lee,0.688613,holoclean
+635,HospitalType,acute care hospitals,0.555960,holoclean
+640,ProviderNumber,10029,0.527124,holoclean
+646,ProviderNumber,10032,0.363821,holoclean
+653,Address1,209 north main street,0.696862,holoclean
+656,ProviderNumber,10032,0.453235,holoclean
+667,PhoneNumber,2059344011,0.400823,holoclean
+673,CountyName,jefferson,0.584342,holoclean
+680,ZipCode,35233,0.446751,holoclean
+686,ZipCode,35233,0.450874,holoclean
+690,CountyName,jefferson,0.626269,holoclean
+691,City,birmingham,0.468091,holoclean
+693,CountyName,elmore,0.475343,holoclean
+697,City,tallassee,0.215311,holoclean
+699,CountyName,elmore,0.576321,holoclean
+700,PhoneNumber,3342836541,0.657504,holoclean
+702,State,al,0.710805,holoclean
+705,ProviderNumber,10034,0.483056,holoclean
+714,PhoneNumber,3342836541,0.635377,holoclean
+722,ProviderNumber,10035,0.187878,holoclean
+723,CountyName,cullman,0.306205,holoclean
+725,ProviderNumber,10035,0.524960,holoclean
+730,HospitalType,acute care hospitals,0.577020,holoclean
+737,Address1,1912 alabama highway 157,0.522780,holoclean
+745,HospitalOwner,proprietary,0.365422,holoclean
+751,ZipCode,36420,0.601461,holoclean
+752,PhoneNumber,3342228466,0.588220,holoclean
+753,CountyName,covington,0.634614,holoclean
+756,ProviderNumber,10036,0.484545,holoclean
+757,City,andalusia,0.524398,holoclean
+764,PhoneNumber,3342228466,0.610177,holoclean
+765,State,al,0.613829,holoclean
+768,Address1,301 east 18th st,0.656061,holoclean
+773,City,anniston,0.498317,holoclean
+780,HospitalType,acute care hospitals,0.602676,holoclean
+781,ProviderNumber,10039,0.482106,holoclean
+783,HospitalType,acute care hospitals,0.572845,holoclean
+785,HospitalOwner,government - hospital district or authority,0.631990,holoclean
+786,CountyName,madison,0.667487,holoclean
+790,ProviderNumber,10039,0.495448,holoclean
+792,State,al,0.657008,holoclean
+794,ProviderNumber,10039,0.495458,holoclean
+799,CountyName,madison,0.637314,holoclean
+815,HospitalType,acute care hospitals,0.591283,holoclean
+816,ZipCode,35903,0.461470,holoclean
+822,City,gadsden,0.639779,holoclean
+825,PhoneNumber,2564944000,0.574849,holoclean
+847,HospitalOwner,voluntary non-profit - private,0.515445,holoclean
+849,HospitalType,acute care hospitals,0.577216,holoclean
+850,Address1,1010 lay dam road,0.563209,holoclean
+858,Address1,1256 military street south,0.285360,holoclean
+860,ProviderNumber,10044,0.463180,holoclean
+866,PhoneNumber,2059216200,0.566373,holoclean
+869,HospitalOwner,voluntary non-profit - private,0.466453,holoclean
+873,HospitalOwner,voluntary non-profit - private,0.475867,holoclean
+878,HospitalType,acute care hospitals,0.619978,holoclean
+879,ProviderNumber,10045,0.437815,holoclean
+882,PhoneNumber,2059325966,0.640116,holoclean
+884,PhoneNumber,2059325966,0.307416,holoclean
+885,State,al,0.671176,holoclean
+887,State,al,0.675576,holoclean
+889,ProviderNumber,10045,0.477878,holoclean
+916,Address1,600 south third street,0.492139,holoclean
+917,PhoneNumber,2565435200,0.544791,holoclean
+918,CountyName,etowah,0.669672,holoclean
+924,ZipCode,35901,0.541678,holoclean
+927,HospitalType,acute care hospitals,0.573417,holoclean
+934,ProviderNumber,10047,0.446603,holoclean
+935,Address1,515 miranda st,0.491065,holoclean
+936,Address1,515 miranda st,0.266595,holoclean
+944,CountyName,butler,0.524246,holoclean
+946,Address1,515 miranda st,0.537312,holoclean
+950,City,georgiana,0.633414,holoclean
+950,HospitalType,acute care hospitals,0.465489,holoclean
+956,ProviderNumber,10049,0.349081,holoclean
+957,HospitalType,acute care hospitals,0.465853,holoclean
+961,City,enterprise,0.170255,holoclean
+965,HospitalType,acute care hospitals,0.594954,holoclean
+967,CountyName,coffee,0.687364,holoclean
+969,City,enterprise,0.377881,holoclean
+977,HospitalType,acute care hospitals,0.548456,holoclean
+986,City,oneonta,0.210365,holoclean
+987,Address1,150 gilbreath drive,0.323823,holoclean

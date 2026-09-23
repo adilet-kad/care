@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+hospital,CARE,marginal,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,CARE,mondrian,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,LLMOnly,-,0.05,errors,0.0,0.07066666666666666,0.9293333333333333,0.07599999999999998,False,True,baran:csvs/baran_hospital_mapped.csv
+hospital,NoOp,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,CARE,marginal,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,CARE,mondrian,0.1,errors,0.8550000000000001,0.011494252873563204,0.2196382428940568,0.01839080459770113,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,LLMOnly,-,0.1,errors,0.0,0.07066666666666666,0.9293333333333333,0.07599999999999998,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,NoOp,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,CARE,marginal,0.2,errors,0.0,0.07066666666666666,0.9293333333333333,0.07599999999999998,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,CARE,mondrian,0.2,errors,0.142,0.059781609195402284,0.8320387596899226,0.07166666666666667,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,LLMOnly,-,0.2,errors,0.0,0.07066666666666666,0.9293333333333333,0.07599999999999998,True,True,baran:csvs/baran_hospital_mapped.csv
+hospital,NoOp,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_hospital_mapped.csv

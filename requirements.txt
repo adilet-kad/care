@@ -1,0 +1,6 @@
+pydantic>=2.6
+pytest>=8.0
+hypothesis>=6.100
+tqdm>=4.66
+matplotlib>=3.7
+openai>=1.30

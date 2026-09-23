@@ -1,0 +1,914 @@
+row_id,column,value,confidence,source
+889,id,673307,1.0000,baran
+513,id,673307,1.0000,baran
+889,article_title,Downregulated E-cadherin expression indicates worse prognosis in Asian patients with colorectal cancer: evidence from meta-analysis.,1.0000,baran
+889,article_language,eng,1.0000,baran
+3,article_language,eng,1.0000,baran
+9,article_language,eng,1.0000,baran
+16,article_language,eng,1.0000,baran
+21,article_language,eng,1.0000,baran
+44,article_language,eng,1.0000,baran
+62,article_language,eng,1.0000,baran
+63,article_language,eng,1.0000,baran
+65,article_language,eng,1.0000,baran
+70,article_language,eng,1.0000,baran
+76,article_language,eng,1.0000,baran
+84,article_language,eng,1.0000,baran
+85,article_language,ENG,1.0000,baran
+88,article_language,eng,1.0000,baran
+91,article_language,eng,1.0000,baran
+92,article_language,eng,1.0000,baran
+94,article_language,eng,1.0000,baran
+95,article_language,eng,1.0000,baran
+105,article_language,eng,1.0000,baran
+108,article_language,eng,1.0000,baran
+115,article_language,eng,1.0000,baran
+121,article_language,eng,1.0000,baran
+141,article_language,eng,1.0000,baran
+144,article_language,eng,1.0000,baran
+158,article_language,eng,1.0000,baran
+171,article_language,eng,1.0000,baran
+174,article_language,eng,1.0000,baran
+190,article_language,eng,1.0000,baran
+192,article_language,eng,1.0000,baran
+196,article_language,eng,1.0000,baran
+198,article_language,eng,1.0000,baran
+205,article_language,eng,1.0000,baran
+212,article_language,eng,1.0000,baran
+213,article_language,eng,1.0000,baran
+216,article_language,eng,1.0000,baran
+227,article_language,eng,1.0000,baran
+228,article_language,eng,1.0000,baran
+259,article_language,eng,1.0000,baran
+263,article_language,eng,1.0000,baran
+264,article_language,eng,1.0000,baran
+265,article_language,eng,1.0000,baran
+278,article_language,eng,1.0000,baran
+290,article_language,eng,1.0000,baran
+293,article_language,eng,1.0000,baran
+296,article_language,eng,1.0000,baran
+300,article_language,eng,1.0000,baran
+302,article_language,eng,1.0000,baran
+310,article_language,eng,1.0000,baran
+317,article_language,eng,1.0000,baran
+327,article_language,eng,1.0000,baran
+339,article_language,eng,1.0000,baran
+342,article_language,eng,1.0000,baran
+351,article_language,eng,1.0000,baran
+353,article_language,eng,1.0000,baran
+354,article_language,eng,1.0000,baran
+357,article_language,eng,1.0000,baran
+362,article_language,eng,1.0000,baran
+366,article_language,eng,1.0000,baran
+368,article_language,eng,1.0000,baran
+369,article_language,eng,1.0000,baran
+374,article_language,eng,1.0000,baran
+383,article_language,eng,1.0000,baran
+385,article_language,eng,1.0000,baran
+391,article_language,eng,1.0000,baran
+396,article_language,eng,1.0000,baran
+410,article_language,eng,1.0000,baran
+428,article_language,eng,1.0000,baran
+430,article_language,eng,1.0000,baran
+432,article_language,eng,1.0000,baran
+436,article_language,eng,1.0000,baran
+442,article_language,eng,1.0000,baran
+447,article_language,eng,1.0000,baran
+452,article_language,eng,1.0000,baran
+454,article_language,eng,1.0000,baran
+462,article_language,eng,1.0000,baran
+463,article_language,eng,1.0000,baran
+464,article_language,eng,1.0000,baran
+474,article_language,eng,1.0000,baran
+475,article_language,eng,1.0000,baran
+486,article_language,eng,1.0000,baran
+501,article_language,eng,1.0000,baran
+509,article_language,eng,1.0000,baran
+516,article_language,eng,1.0000,baran
+520,article_language,eng,1.0000,baran
+529,article_language,eng,1.0000,baran
+530,article_language,eng,1.0000,baran
+567,article_language,eng,1.0000,baran
+570,article_language,eng,1.0000,baran
+574,article_language,eng,1.0000,baran
+575,article_language,eng,1.0000,baran
+578,article_language,eng,1.0000,baran
+579,article_language,English,1.0000,baran
+584,article_language,eng,1.0000,baran
+590,article_language,eng,1.0000,baran
+591,article_language,eng,1.0000,baran
+601,article_language,eng,1.0000,baran
+604,article_language,eng,1.0000,baran
+606,article_language,eng,1.0000,baran
+609,article_language,eng,1.0000,baran
+616,article_language,eng,1.0000,baran
+636,article_language,eng,1.0000,baran
+649,article_language,eng,1.0000,baran
+657,article_language,eng,1.0000,baran
+659,article_language,eng,1.0000,baran
+660,article_language,eng,1.0000,baran
+663,article_language,eng,1.0000,baran
+672,article_language,eng,1.0000,baran
+677,article_language,eng,1.0000,baran
+699,article_language,eng,1.0000,baran
+700,article_language,eng,1.0000,baran
+702,article_language,eng,1.0000,baran
+705,article_language,eng,1.0000,baran
+709,article_language,eng,1.0000,baran
+714,article_language,eng,1.0000,baran
+735,article_language,eng,1.0000,baran
+742,article_language,eng,1.0000,baran
+747,article_language,eng,1.0000,baran
+750,article_language,eng,1.0000,baran
+751,article_language,eng,1.0000,baran
+755,article_language,eng,1.0000,baran
+757,article_language,eng,1.0000,baran
+759,article_language,eng,1.0000,baran
+766,article_language,eng,1.0000,baran
+768,article_language,eng,1.0000,baran
+779,article_language,eng,1.0000,baran
+781,article_language,eng,1.0000,baran
+787,article_language,eng,1.0000,baran
+791,article_language,eng,1.0000,baran
+796,article_language,eng,1.0000,baran
+797,article_language,eng,1.0000,baran
+802,article_language,eng,1.0000,baran
+807,article_language,eng,1.0000,baran
+814,article_language,eng,1.0000,baran
+815,article_language,eng,1.0000,baran
+822,article_language,eng,1.0000,baran
+825,article_language,eng,1.0000,baran
+826,article_language,eng,1.0000,baran
+831,article_language,eng,1.0000,baran
+838,article_language,eng,1.0000,baran
+849,article_language,eng,1.0000,baran
+854,article_language,eng,1.0000,baran
+855,article_language,eng,1.0000,baran
+867,article_language,eng,1.0000,baran
+872,article_language,eng,1.0000,baran
+874,article_language,eng,1.0000,baran
+876,article_language,eng,1.0000,baran
+879,article_language,eng,1.0000,baran
+888,article_language,eng,1.0000,baran
+893,article_language,eng,1.0000,baran
+905,article_language,eng,1.0000,baran
+909,article_language,eng,1.0000,baran
+918,article_language,eng,1.0000,baran
+932,article_language,eng,1.0000,baran
+938,article_language,eng,1.0000,baran
+941,article_language,eng,1.0000,baran
+944,article_language,eng,1.0000,baran
+954,article_language,eng,1.0000,baran
+958,article_language,eng,1.0000,baran
+966,article_language,eng,1.0000,baran
+971,article_language,eng,1.0000,baran
+973,article_language,eng,1.0000,baran
+988,article_language,eng,1.0000,baran
+889,jounral_abbreviation,PloS one,1.0000,baran
+889,journal_issn,1932-6203,1.0000,baran
+889,article_jvolumn,8,1.0000,baran
+377,article_jvolumn,8,1.0000,baran
+478,article_jvolumn,7,1.0000,baran
+970,article_jvolumn,8,1.0000,baran
+889,article_jissue,7,1.0000,baran
+889,article_jcreated_at,1/13/01,1.0000,baran
+280,article_jcreated_at,1/13/01,1.0000,baran
+656,article_jcreated_at,1/13/01,1.0000,baran
+657,article_jcreated_at,1/13/01,1.0000,baran
+889,article_pagination,e70858,1.0000,baran
+889,author_list,"{""Zhigang Chen"",""Minyue Jia"",""Xiaoying Zhao"",""Xin He""}",1.0000,baran
+124,id,863844,1.0000,baran
+124,article_title,Sustained complete remission of a limited-stage blastic plasmacytoid dendritic cell neoplasm followed by a simultaneous combination of low-dose DeVIC therapy and radiation therapy: a case report and review of the literature.,1.0000,baran
+124,journal_title,International journal of clinical and experimental pathology,1.0000,baran
+124,jounral_abbreviation,Int J Clin Exp Pathol,1.0000,baran
+124,journal_issn,1936-2625,1.0000,baran
+124,article_jvolumn,6,1.0000,baran
+21,article_jvolumn,11,1.0000,baran
+41,article_jvolumn,11,1.0000,baran
+456,article_jvolumn,11,1.0000,baran
+124,article_jissue,11,1.0000,baran
+124,article_jcreated_at,1/13/01,1.0000,baran
+124,article_pagination,3-Aug,1.0000,baran
+124,author_list,"{""Yasunori Ota"",""Masaaki Noguchi"",""Kei-Ji Sugimoto"",""Hiroshi Izumi"",""Norio Komatsu"",""Nanae Yamaguchi"",""Hidenori Imai"",""Asami Shimada"",""Yasunobu Sekiguchi"",""Mutsumi Wakabayashi""}",1.0000,baran
+310,author_list,"{""Yasunori Ota"",""Masaaki Noguchi"",""Kei-Ji Sugimoto"",""Hiroshi Izumi"",""Norio Komatsu"",""Nanae Yamaguchi"",""Hidenori Imai"",""Asami Shimada"",""Yasunobu Sekiguchi"",""Mutsumi Wakabayashi""}",1.0000,baran
+886,author_list,"{""Yasunori Ota"",""Masaaki Noguchi"",""Kei-Ji Sugimoto"",""Hiroshi Izumi"",""Norio Komatsu"",""Nanae Yamaguchi"",""Hidenori Imai"",""Asami Shimada"",""Yasunobu Sekiguchi"",""Mutsumi Wakabayashi""}",1.0000,baran
+289,id,785472,1.0000,baran
+189,id,785472,1.0000,baran
+890,id,785472,1.0000,baran
+289,article_title,Streptococcus pneumoniae carriage in the Gaza strip,1.0000,baran
+132,article_title,Downregulated E-cadherin expression indicates worse prognosis in Asian patients with colorectal cancer: evidence from meta-analysis.,1.0000,baran
+862,article_title,Streptococcus pneumoniae carriage in the Gaza strip,1.0000,baran
+993,article_title,Sustained complete remission of a limited-stage blastic plasmacytoid dendritic cell neoplasm followed by a simultaneous combination of low-dose DeVIC therapy and radiation therapy: a case report and review of the literature.,1.0000,baran
+289,article_language,eng,1.0000,baran
+1,article_language,eng,1.0000,baran
+27,article_language,eng,1.0000,baran
+75,article_language,eng,1.0000,baran
+82,article_language,eng,1.0000,baran
+103,article_language,eng,1.0000,baran
+111,article_language,eng,1.0000,baran
+140,article_language,eng,1.0000,baran
+168,article_language,eng,1.0000,baran
+204,article_language,eng,1.0000,baran
+209,article_language,eng,1.0000,baran
+240,article_language,eng,1.0000,baran
+241,article_language,eng,1.0000,baran
+266,article_language,eng,1.0000,baran
+297,article_language,eng,1.0000,baran
+393,article_language,eng,1.0000,baran
+402,article_language,eng,1.0000,baran
+406,article_language,eng,1.0000,baran
+443,article_language,eng,1.0000,baran
+467,article_language,eng,1.0000,baran
+473,article_language,eng,1.0000,baran
+481,article_language,eng,1.0000,baran
+485,article_language,eng,1.0000,baran
+521,article_language,eng,1.0000,baran
+541,article_language,eng,1.0000,baran
+559,article_language,eng,1.0000,baran
+597,article_language,eng,1.0000,baran
+612,article_language,eng,1.0000,baran
+613,article_language,eng,1.0000,baran
+629,article_language,eng,1.0000,baran
+643,article_language,eng,1.0000,baran
+644,article_language,eng,1.0000,baran
+645,article_language,eng,1.0000,baran
+688,article_language,eng,1.0000,baran
+694,article_language,eng,1.0000,baran
+713,article_language,eng,1.0000,baran
+734,article_language,eng,1.0000,baran
+761,article_language,eng,1.0000,baran
+813,article_language,eng,1.0000,baran
+892,article_language,eng,1.0000,baran
+900,article_language,eng,1.0000,baran
+936,article_language,eng,1.0000,baran
+969,article_language,eng,1.0000,baran
+974,article_language,eng,1.0000,baran
+996,article_language,eng,1.0000,baran
+289,journal_title,PLoS One,1.0000,baran
+289,jounral_abbreviation,PloS one,1.0000,baran
+289,journal_issn,1932-6203,1.0000,baran
+289,article_jvolumn,7,1.0000,baran
+95,article_jvolumn,7,1.0000,baran
+266,article_jvolumn,7,1.0000,baran
+345,article_jvolumn,7,1.0000,baran
+369,article_jvolumn,7,1.0000,baran
+809,article_jvolumn,7,1.0000,baran
+865,article_jvolumn,7,1.0000,baran
+934,article_jvolumn,7,1.0000,baran
+995,article_jvolumn,7,1.0000,baran
+289,article_jcreated_at,1/12/01,1.0000,baran
+289,article_pagination,e35061,1.0000,baran
+289,author_list,"{""G. Rahav"",""G. Regev-Yochay"",""I. Abullaish"",""A. Elhamdany"",""R. Malley"",""M. Raz"",""A. Goral"",""Y. Roytman"",""B. Shainberg"",""M. Varon"",""A. Ziv""}",1.0000,baran
+247,author_list,"{""G. Rahav"",""G. Regev-Yochay"",""I. Abullaish"",""A. Elhamdany"",""R. Malley"",""M. Raz"",""A. Goral"",""Y. Roytman"",""B. Shainberg"",""M. Varon"",""A. Ziv""}",1.0000,baran
+249,author_list,"{""G. Rahav"",""G. Regev-Yochay"",""I. Abullaish"",""A. Elhamdany"",""R. Malley"",""M. Raz"",""A. Goral"",""Y. Roytman"",""B. Shainberg"",""M. Varon"",""A. Ziv""}",1.0000,baran
+871,author_list,"{""G. Rahav"",""G. Regev-Yochay"",""I. Abullaish"",""A. Elhamdany"",""R. Malley"",""M. Raz"",""A. Goral"",""Y. Roytman"",""B. Shainberg"",""M. Varon"",""A. Ziv""}",1.0000,baran
+675,id,619668,1.0000,baran
+675,article_title,The psychiatric comorbidity of epilepsy.,1.0000,baran
+447,article_title,The psychiatric comorbidity of epilepsy.,1.0000,baran
+675,journal_title,Acta Neurol Scand,1.0000,baran
+978,journal_title,Acta Neurol Scand,1.0000,baran
+675,jounral_abbreviation,Acta neurologica Scandinavica,1.0000,baran
+675,journal_issn,14-Jan,1.0000,baran
+53,article_jvolumn,4,1.0000,baran
+166,article_jvolumn,4,1.0000,baran
+402,article_jvolumn,4,1.0000,baran
+614,article_jvolumn,4,1.0000,baran
+745,article_jvolumn,4,1.0000,baran
+864,article_jvolumn,4,1.0000,baran
+675,article_jissue,4,1.0000,baran
+11,article_jissue,4,1.0000,baran
+13,article_jissue,11,1.0000,baran
+18,article_jissue,11,1.0000,baran
+22,article_jissue,7,1.0000,baran
+27,article_jissue,11,1.0000,baran
+57,article_jissue,7,1.0000,baran
+66,article_jissue,7,1.0000,baran
+68,article_jissue,7,1.0000,baran
+76,article_jissue,7,1.0000,baran
+112,article_jissue,11,1.0000,baran
+114,article_jissue,11,1.0000,baran
+115,article_jissue,4,1.0000,baran
+116,article_jissue,4,1.0000,baran
+118,article_jissue,11,1.0000,baran
+127,article_jissue,11,1.0000,baran
+128,article_jissue,11,1.0000,baran
+130,article_jissue,11,1.0000,baran
+132,article_jissue,7,1.0000,baran
+137,article_jissue,4,1.0000,baran
+140,article_jissue,7,1.0000,baran
+153,article_jissue,11,1.0000,baran
+158,article_jissue,11,1.0000,baran
+173,article_jissue,7,1.0000,baran
+184,article_jissue,11,1.0000,baran
+213,article_jissue,4,1.0000,baran
+220,article_jissue,7,1.0000,baran
+226,article_jissue,7,1.0000,baran
+227,article_jissue,4,1.0000,baran
+253,article_jissue,11,1.0000,baran
+259,article_jissue,4,1.0000,baran
+265,article_jissue,11,1.0000,baran
+273,article_jissue,7,1.0000,baran
+275,article_jissue,7,1.0000,baran
+278,article_jissue,11,1.0000,baran
+288,article_jissue,7,1.0000,baran
+296,article_jissue,7,1.0000,baran
+307,article_jissue,7,1.0000,baran
+309,article_jissue,4,1.0000,baran
+314,article_jissue,4,1.0000,baran
+323,article_jissue,11,1.0000,baran
+325,article_jissue,11,1.0000,baran
+333,article_jissue,11,1.0000,baran
+348,article_jissue,7,1.0000,baran
+352,article_jissue,11,1.0000,baran
+365,article_jissue,11,1.0000,baran
+367,article_jissue,11,1.0000,baran
+373,article_jissue,11,1.0000,baran
+375,article_jissue,4,1.0000,baran
+380,article_jissue,11,1.0000,baran
+381,article_jissue,11,1.0000,baran
+389,article_jissue,7,1.0000,baran
+400,article_jissue,7,1.0000,baran
+423,article_jissue,4,1.0000,baran
+427,article_jissue,11,1.0000,baran
+433,article_jissue,7,1.0000,baran
+443,article_jissue,7,1.0000,baran
+444,article_jissue,4,1.0000,baran
+448,article_jissue,7,1.0000,baran
+449,article_jissue,11,1.0000,baran
+473,article_jissue,7,1.0000,baran
+475,article_jissue,7,1.0000,baran
+483,article_jissue,7,1.0000,baran
+489,article_jissue,7,1.0000,baran
+493,article_jissue,7,1.0000,baran
+511,article_jissue,7,1.0000,baran
+517,article_jissue,11,1.0000,baran
+519,article_jissue,11,1.0000,baran
+520,article_jissue,11,1.0000,baran
+530,article_jissue,4,1.0000,baran
+539,article_jissue,11,1.0000,baran
+541,article_jissue,4,1.0000,baran
+543,article_jissue,7,1.0000,baran
+546,article_jissue,4,1.0000,baran
+548,article_jissue,4,1.0000,baran
+553,article_jissue,11,1.0000,baran
+559,article_jissue,11,1.0000,baran
+565,article_jissue,7,1.0000,baran
+567,article_jissue,7,1.0000,baran
+574,article_jissue,7,1.0000,baran
+592,article_jissue,11,1.0000,baran
+594,article_jissue,7,1.0000,baran
+595,article_jissue,7,1.0000,baran
+596,article_jissue,11,1.0000,baran
+597,article_jissue,11,1.0000,baran
+614,article_jissue,7,1.0000,baran
+616,article_jissue,11,1.0000,baran
+623,article_jissue,4,1.0000,baran
+634,article_jissue,11,1.0000,baran
+643,article_jissue,11,1.0000,baran
+646,article_jissue,7,1.0000,baran
+651,article_jissue,4,1.0000,baran
+657,article_jissue,11,1.0000,baran
+665,article_jissue,11,1.0000,baran
+674,article_jissue,4,1.0000,baran
+679,article_jissue,11,1.0000,baran
+687,article_jissue,11,1.0000,baran
+690,article_jissue,7,1.0000,baran
+696,article_jissue,7,1.0000,baran
+699,article_jissue,7,1.0000,baran
+723,article_jissue,7,1.0000,baran
+735,article_jissue,7,1.0000,baran
+736,article_jissue,11,1.0000,baran
+744,article_jissue,7,1.0000,baran
+745,article_jissue,7,1.0000,baran
+748,article_jissue,11,1.0000,baran
+754,article_jissue,11,1.0000,baran
+763,article_jissue,7,1.0000,baran
+767,article_jissue,7,1.0000,baran
+773,article_jissue,11,1.0000,baran
+799,article_jissue,4,1.0000,baran
+807,article_jissue,11,1.0000,baran
+809,article_jissue,11,1.0000,baran
+810,article_jissue,11,1.0000,baran
+819,article_jissue,11,1.0000,baran
+821,article_jissue,7,1.0000,baran
+822,article_jissue,11,1.0000,baran
+831,article_jissue,7,1.0000,baran
+832,article_jissue,11,1.0000,baran
+838,article_jissue,7,1.0000,baran
+844,article_jissue,4,1.0000,baran
+845,article_jissue,11,1.0000,baran
+854,article_jissue,11,1.0000,baran
+869,article_jissue,11,1.0000,baran
+871,article_jissue,7,1.0000,baran
+872,article_jissue,11,1.0000,baran
+881,article_jissue,7,1.0000,baran
+887,article_jissue,11,1.0000,baran
+895,article_jissue,4,1.0000,baran
+901,article_jissue,7,1.0000,baran
+910,article_jissue,7,1.0000,baran
+916,article_jissue,7,1.0000,baran
+925,article_jissue,7,1.0000,baran
+927,article_jissue,11,1.0000,baran
+939,article_jissue,4,1.0000,baran
+941,article_jissue,7,1.0000,baran
+945,article_jissue,7,1.0000,baran
+962,article_jissue,7,1.0000,baran
+986,article_jissue,7,1.0000,baran
+993,article_jissue,4,1.0000,baran
+994,article_jissue,4,1.0000,baran
+675,article_jcreated_at,1/4/10,1.0000,baran
+675,article_pagination,207-20,1.0000,baran
+675,author_list,"{""A Gaitatzis"",""M R Trimble"",""J W Sander""}",1.0000,baran
+774,id,663339,1.0000,baran
+774,article_title,Human papillomavirus infection and increased risk of HIV acquisition. A systematic review and meta-analysis.,1.0000,baran
+774,article_language,eng,1.0000,baran
+774,jounral_abbreviation,AIDS,1.0000,baran
+774,journal_issn,1473-5571,1.0000,baran
+774,article_jvolumn,26,1.0000,baran
+365,article_jvolumn,26,1.0000,baran
+774,article_jcreated_at,11/13/12,1.0000,baran
+774,article_pagination,2211-22,1.0000,baran
+774,author_list,"{""Chunhui Wang"",""Richard Hayes"",""Louise Kuhn"",""Stephen Shiboski"",""Jennifer S Smith"",""Natasha L Larke"",""Deborah Watson-Jones"",""Catherine F Houlihan"",""Patti E Gravitt"",""Karen K Smith-McCune""}",1.0000,baran
+107,author_list,"{""Chunhui Wang"",""Richard Hayes"",""Louise Kuhn"",""Stephen Shiboski"",""Jennifer S Smith"",""Natasha L Larke"",""Deborah Watson-Jones"",""Catherine F Houlihan"",""Patti E Gravitt"",""Karen K Smith-McCune""}",1.0000,baran
+218,article_title,Laparoscopic reversal of Hartmann's rectosigmoidectomy,1.0000,baran
+21,article_title,Laparoscopic reversal of Hartmann's rectosigmoidectomy,1.0000,baran
+158,article_title,Human papillomavirus infection and increased risk of HIV acquisition. A systematic review and meta-analysis.,1.0000,baran
+31,article_language,eng,1.0000,baran
+53,article_language,eng,1.0000,baran
+56,article_language,eng,1.0000,baran
+123,article_language,eng,1.0000,baran
+152,article_language,eng,1.0000,baran
+173,article_language,eng,1.0000,baran
+182,article_language,eng,1.0000,baran
+186,article_language,eng,1.0000,baran
+194,article_language,eng,1.0000,baran
+238,article_language,eng,1.0000,baran
+248,article_language,eng,1.0000,baran
+262,article_language,eng,1.0000,baran
+267,article_language,eng,1.0000,baran
+313,article_language,eng,1.0000,baran
+316,article_language,eng,1.0000,baran
+372,article_language,eng,1.0000,baran
+524,article_language,eng,1.0000,baran
+534,article_language,eng,1.0000,baran
+536,article_language,eng,1.0000,baran
+555,article_language,eng,1.0000,baran
+577,article_language,eng,1.0000,baran
+627,article_language,eng,1.0000,baran
+718,article_language,eng,1.0000,baran
+800,article_language,eng,1.0000,baran
+818,article_language,eng,1.0000,baran
+834,article_language,eng,1.0000,baran
+875,article_language,eng,1.0000,baran
+880,article_language,eng,1.0000,baran
+894,article_language,eng,1.0000,baran
+904,article_language,eng,1.0000,baran
+910,article_language,eng,1.0000,baran
+919,article_language,eng,1.0000,baran
+920,article_language,eng,1.0000,baran
+983,article_language,eng,1.0000,baran
+218,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+218,jounral_abbreviation,Colorectal Dis,1.0000,baran
+218,journal_issn,1462-8910,1.0000,baran
+218,article_jvolumn,10,1.0000,baran
+102,article_jvolumn,1,1.0000,baran
+188,article_jvolumn,1,1.0000,baran
+319,article_jvolumn,1,1.0000,baran
+375,article_jvolumn,1,1.0000,baran
+378,article_jvolumn,10,1.0000,baran
+477,article_jvolumn,1,1.0000,baran
+506,article_jvolumn,1,1.0000,baran
+686,article_jvolumn,1,1.0000,baran
+812,article_jvolumn,1,1.0000,baran
+833,article_jvolumn,1,1.0000,baran
+873,article_jvolumn,1,1.0000,baran
+927,article_jvolumn,1,1.0000,baran
+994,article_jvolumn,1,1.0000,baran
+218,article_jissue,1,1.0000,baran
+19,article_jissue,1,1.0000,baran
+40,article_jissue,1,1.0000,baran
+49,article_jissue,1,1.0000,baran
+92,article_jissue,1,1.0000,baran
+123,article_jissue,1,1.0000,baran
+176,article_jissue,1,1.0000,baran
+186,article_jissue,1,1.0000,baran
+244,article_jissue,1,1.0000,baran
+274,article_jissue,1,1.0000,baran
+329,article_jissue,1,1.0000,baran
+363,article_jissue,1,1.0000,baran
+393,article_jissue,1,1.0000,baran
+398,article_jissue,1,1.0000,baran
+502,article_jissue,1,1.0000,baran
+506,article_jissue,1,1.0000,baran
+527,article_jissue,1,1.0000,baran
+583,article_jissue,1,1.0000,baran
+588,article_jissue,1,1.0000,baran
+642,article_jissue,1,1.0000,baran
+712,article_jissue,1,1.0000,baran
+768,article_jissue,1,1.0000,baran
+780,article_jissue,1,1.0000,baran
+815,article_jissue,1,1.0000,baran
+858,article_jissue,1,1.0000,baran
+863,article_jissue,1,1.0000,baran
+880,article_jissue,1,1.0000,baran
+882,article_jissue,1,1.0000,baran
+888,article_jissue,1,1.0000,baran
+893,article_jissue,1,1.0000,baran
+924,article_jissue,1,1.0000,baran
+935,article_jissue,1,1.0000,baran
+937,article_jissue,1,1.0000,baran
+948,article_jissue,1,1.0000,baran
+998,article_jissue,1,1.0000,baran
+218,article_jcreated_at,1/8/01,1.0000,baran
+218,article_pagination,81-83,1.0000,baran
+218,author_list,"{""S. Slawik"",""A. R. Dixon""}",1.0000,baran
+265,author_list,"{""S. Slawik"",""A. R. Dixon""}",1.0000,baran
+575,id,74821,1.0000,baran
+232,id,619668,1.0000,baran
+575,article_title,Progesterone receptor PROGINS and +331G/A polymorphisms confer susceptibility to ovarian cancer: a meta-analysis based on 17 studies.,1.0000,baran
+575,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+87,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+413,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+450,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+465,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+476,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+522,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+554,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+720,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+737,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+755,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+828,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+575,jounral_abbreviation,Tumour Biol.,1.0000,baran
+575,journal_issn,1423-0380,1.0000,baran
+575,article_jvolumn,35,1.0000,baran
+18,article_jvolumn,3,1.0000,baran
+40,article_jvolumn,3,1.0000,baran
+63,article_jvolumn,3,1.0000,baran
+73,article_jvolumn,3,1.0000,baran
+79,article_jvolumn,3,1.0000,baran
+92,article_jvolumn,3,1.0000,baran
+101,article_jvolumn,3,1.0000,baran
+110,article_jvolumn,3,1.0000,baran
+254,article_jvolumn,3,1.0000,baran
+255,article_jvolumn,35,1.0000,baran
+258,article_jvolumn,3,1.0000,baran
+297,article_jvolumn,35,1.0000,baran
+327,article_jvolumn,35,1.0000,baran
+332,article_jvolumn,3,1.0000,baran
+333,article_jvolumn,3,1.0000,baran
+482,article_jvolumn,3,1.0000,baran
+492,article_jvolumn,35,1.0000,baran
+563,article_jvolumn,3,1.0000,baran
+573,article_jvolumn,3,1.0000,baran
+689,article_jvolumn,35,1.0000,baran
+771,article_jvolumn,35,1.0000,baran
+952,article_jvolumn,35,1.0000,baran
+976,article_jvolumn,3,1.0000,baran
+575,article_jissue,3,1.0000,baran
+46,article_jissue,3,1.0000,baran
+100,article_jissue,35,1.0000,baran
+121,article_jissue,35,1.0000,baran
+144,article_jissue,3,1.0000,baran
+208,article_jissue,35,1.0000,baran
+270,article_jissue,35,1.0000,baran
+293,article_jissue,3,1.0000,baran
+318,article_jissue,35,1.0000,baran
+339,article_jissue,35,1.0000,baran
+383,article_jissue,3,1.0000,baran
+435,article_jissue,35,1.0000,baran
+499,article_jissue,35,1.0000,baran
+523,article_jissue,35,1.0000,baran
+619,article_jissue,35,1.0000,baran
+702,article_jissue,3,1.0000,baran
+770,article_jissue,3,1.0000,baran
+771,article_jissue,3,1.0000,baran
+776,article_jissue,3,1.0000,baran
+850,article_jissue,3,1.0000,baran
+866,article_jissue,3,1.0000,baran
+909,article_jissue,3,1.0000,baran
+995,article_jissue,35,1.0000,baran
+575,article_jcreated_at,1/14/03,1.0000,baran
+575,author_list,"{""Xinran Wang"",""Chenhuan Ding"",""Lilan Chen"",""Shu Li"",""Ting Liu"",""Xia Yin"",""You Wang"",""Xiangjun Sun"",""Wen Di"",""He Li""}",1.0000,baran
+607,author_list,"{""Xinran Wang"",""Chenhuan Ding"",""Lilan Chen"",""Shu Li"",""Ting Liu"",""Xia Yin"",""You Wang"",""Xiangjun Sun"",""Wen Di"",""He Li""}",1.0000,baran
+733,author_list,"{""Xinran Wang"",""Chenhuan Ding"",""Lilan Chen"",""Shu Li"",""Ting Liu"",""Xia Yin"",""You Wang"",""Xiangjun Sun"",""Wen Di"",""He Li""}",1.0000,baran
+215,id,77389,1.0000,baran
+215,article_title,Symptoms tell it all: a systematic review of the value of symptom assessment to predict survival in advanced cancer patients.,1.0000,baran
+215,journal_title,Critical reviews in oncology/hematology,1.0000,baran
+215,jounral_abbreviation,Crit. Rev. Oncol. Hematol.,1.0000,baran
+215,journal_issn,1879-0461,1.0000,baran
+215,article_jvolumn,84,1.0000,baran
+6,article_jissue,84,1.0000,baran
+8,article_jissue,84,1.0000,baran
+28,article_jissue,84,1.0000,baran
+29,article_jissue,84,1.0000,baran
+34,article_jissue,84,1.0000,baran
+51,article_jissue,84,1.0000,baran
+52,article_jissue,84,1.0000,baran
+72,article_jissue,84,1.0000,baran
+88,article_jissue,84,1.0000,baran
+96,article_jissue,84,1.0000,baran
+122,article_jissue,84,1.0000,baran
+125,article_jissue,84,1.0000,baran
+135,article_jissue,84,1.0000,baran
+141,article_jissue,84,1.0000,baran
+147,article_jissue,84,1.0000,baran
+149,article_jissue,84,1.0000,baran
+156,article_jissue,84,1.0000,baran
+157,article_jissue,84,1.0000,baran
+162,article_jissue,84,1.0000,baran
+174,article_jissue,84,1.0000,baran
+179,article_jissue,84,1.0000,baran
+193,article_jissue,84,1.0000,baran
+217,article_jissue,84,1.0000,baran
+235,article_jissue,84,1.0000,baran
+237,article_jissue,84,1.0000,baran
+243,article_jissue,84,1.0000,baran
+279,article_jissue,84,1.0000,baran
+285,article_jissue,84,1.0000,baran
+287,article_jissue,84,1.0000,baran
+303,article_jissue,84,1.0000,baran
+331,article_jissue,84,1.0000,baran
+332,article_jissue,84,1.0000,baran
+340,article_jissue,84,1.0000,baran
+344,article_jissue,84,1.0000,baran
+347,article_jissue,84,1.0000,baran
+354,article_jissue,84,1.0000,baran
+362,article_jissue,84,1.0000,baran
+391,article_jissue,84,1.0000,baran
+395,article_jissue,84,1.0000,baran
+397,article_jissue,84,1.0000,baran
+442,article_jissue,84,1.0000,baran
+451,article_jissue,84,1.0000,baran
+469,article_jissue,84,1.0000,baran
+496,article_jissue,84,1.0000,baran
+509,article_jissue,84,1.0000,baran
+526,article_jissue,84,1.0000,baran
+534,article_jissue,84,1.0000,baran
+544,article_jissue,84,1.0000,baran
+554,article_jissue,84,1.0000,baran
+560,article_jissue,84,1.0000,baran
+568,article_jissue,84,1.0000,baran
+602,article_jissue,84,1.0000,baran
+628,article_jissue,84,1.0000,baran
+636,article_jissue,84,1.0000,baran
+648,article_jissue,84,1.0000,baran
+652,article_jissue,84,1.0000,baran
+669,article_jissue,84,1.0000,baran
+670,article_jissue,84,1.0000,baran
+707,article_jissue,84,1.0000,baran
+710,article_jissue,84,1.0000,baran
+728,article_jissue,84,1.0000,baran
+749,article_jissue,84,1.0000,baran
+750,article_jissue,84,1.0000,baran
+756,article_jissue,84,1.0000,baran
+779,article_jissue,84,1.0000,baran
+797,article_jissue,84,1.0000,baran
+800,article_jissue,84,1.0000,baran
+820,article_jissue,84,1.0000,baran
+827,article_jissue,84,1.0000,baran
+837,article_jissue,84,1.0000,baran
+860,article_jissue,84,1.0000,baran
+865,article_jissue,84,1.0000,baran
+879,article_jissue,84,1.0000,baran
+883,article_jissue,84,1.0000,baran
+906,article_jissue,84,1.0000,baran
+908,article_jissue,84,1.0000,baran
+913,article_jissue,84,1.0000,baran
+928,article_jissue,84,1.0000,baran
+936,article_jissue,84,1.0000,baran
+961,article_jissue,84,1.0000,baran
+971,article_jissue,84,1.0000,baran
+974,article_jissue,84,1.0000,baran
+975,article_jissue,84,1.0000,baran
+990,article_jissue,84,1.0000,baran
+992,article_jissue,84,1.0000,baran
+215,article_jcreated_at,1/12/10,1.0000,baran
+215,article_pagination,130-48,1.0000,baran
+342,id,540850,1.0000,baran
+342,article_title,Glucocorticosteroid treatment of vasogenic oedema,1.0000,baran
+342,journal_title,Acta Neurochir Suppl (Wien),1.0000,baran
+342,jounral_abbreviation,Acta neurochirurgica. Supplementum,1.0000,baran
+342,journal_issn,0065-1419 (Print) 0065-1419,1.0000,baran
+342,article_jcreated_at,1/1/88,1.0000,baran
+342,article_pagination,145-8,1.0000,baran
+342,author_list,"{""W. Bodsch"",""T. Rommel""}",1.0000,baran
+996,id,979472,1.0000,baran
+177,id,979472,1.0000,baran
+203,id,979472,1.0000,baran
+509,id,540850,1.0000,baran
+548,id,540850,1.0000,baran
+616,id,77389,1.0000,baran
+803,id,77389,1.0000,baran
+996,article_title,Distribution of silicotic collagenization in relation to smoking habits,1.0000,baran
+302,article_title,Distribution of silicotic collagenization in relation to smoking habits,1.0000,baran
+52,article_language,eng,1.0000,baran
+69,article_language,eng,1.0000,baran
+165,article_language,eng,1.0000,baran
+200,article_language,eng,1.0000,baran
+320,article_language,eng,1.0000,baran
+348,article_language,eng,1.0000,baran
+392,article_language,eng,1.0000,baran
+450,article_language,eng,1.0000,baran
+525,article_language,eng,1.0000,baran
+549,article_language,eng,1.0000,baran
+586,article_language,eng,1.0000,baran
+655,article_language,eng,1.0000,baran
+667,article_language,eng,1.0000,baran
+740,article_language,eng,1.0000,baran
+830,article_language,eng,1.0000,baran
+881,article_language,eng,1.0000,baran
+925,article_language,eng,1.0000,baran
+962,article_language,eng,1.0000,baran
+990,article_language,eng,1.0000,baran
+996,journal_title,Am Rev Respir Dis,1.0000,baran
+996,jounral_abbreviation,The American review of respiratory disease,1.0000,baran
+996,journal_issn,0003-0805 (Print) 0003-0805,1.0000,baran
+996,article_jissue,2,1.0000,baran
+996,article_pagination,297-301,1.0000,baran
+996,author_list,"{""S. L. Lee"",""G. K. Sluis-Cremer"",""P. A. Hessel""}",1.0000,baran
+3,author_list,"{""W. Bodsch"",""T. Rommel""}",1.0000,baran
+404,author_list,"{""W. Bodsch"",""T. Rommel""}",1.0000,baran
+115,id,684757,1.0000,baran
+497,id,684757,1.0000,baran
+899,id,684757,1.0000,baran
+115,article_title,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.,1.0000,baran
+35,article_title,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.,1.0000,baran
+294,article_title,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.,1.0000,baran
+925,article_title,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.,1.0000,baran
+115,journal_title,The Journal Of Rheumatology,1.0000,baran
+115,jounral_abbreviation,J Rheumatol,1.0000,baran
+115,journal_issn,0315-162X,1.0000,baran
+55,article_jvolumn,84,1.0000,baran
+78,article_jvolumn,84,1.0000,baran
+83,article_jvolumn,84,1.0000,baran
+85,article_jvolumn,84,1.0000,baran
+123,article_jvolumn,84,1.0000,baran
+155,article_jvolumn,84,1.0000,baran
+163,article_jvolumn,84,1.0000,baran
+171,article_jvolumn,84,1.0000,baran
+175,article_jvolumn,84,1.0000,baran
+177,article_jvolumn,84,1.0000,baran
+233,article_jvolumn,84,1.0000,baran
+274,article_jvolumn,84,1.0000,baran
+317,article_jvolumn,84,1.0000,baran
+320,article_jvolumn,84,1.0000,baran
+336,article_jvolumn,84,1.0000,baran
+349,article_jvolumn,84,1.0000,baran
+381,article_jvolumn,84,1.0000,baran
+386,article_jvolumn,84,1.0000,baran
+388,article_jvolumn,84,1.0000,baran
+407,article_jvolumn,84,1.0000,baran
+429,article_jvolumn,84,1.0000,baran
+437,article_jvolumn,84,1.0000,baran
+440,article_jvolumn,84,1.0000,baran
+458,article_jvolumn,84,1.0000,baran
+487,article_jvolumn,84,1.0000,baran
+512,article_jvolumn,84,1.0000,baran
+543,article_jvolumn,84,1.0000,baran
+592,article_jvolumn,84,1.0000,baran
+598,article_jvolumn,84,1.0000,baran
+599,article_jvolumn,84,1.0000,baran
+651,article_jvolumn,84,1.0000,baran
+664,article_jvolumn,84,1.0000,baran
+680,article_jvolumn,84,1.0000,baran
+693,article_jvolumn,84,1.0000,baran
+697,article_jvolumn,84,1.0000,baran
+708,article_jvolumn,84,1.0000,baran
+713,article_jvolumn,84,1.0000,baran
+810,article_jvolumn,84,1.0000,baran
+817,article_jvolumn,84,1.0000,baran
+855,article_jvolumn,84,1.0000,baran
+860,article_jvolumn,84,1.0000,baran
+863,article_jvolumn,84,1.0000,baran
+893,article_jvolumn,84,1.0000,baran
+912,article_jvolumn,84,1.0000,baran
+929,article_jvolumn,84,1.0000,baran
+951,article_jvolumn,84,1.0000,baran
+960,article_jvolumn,84,1.0000,baran
+998,article_jvolumn,84,1.0000,baran
+115,article_jcreated_at,1/1/04,1.0000,baran
+115,article_pagination,745-50,1.0000,baran
+115,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+836,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+883,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+937,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+117,id,585766,1.0000,baran
+154,id,585766,1.0000,baran
+796,id,585766,1.0000,baran
+117,article_title,Thermoregulatory response of women to intermittent work in the heat,1.0000,baran
+462,article_title,Thermoregulatory response of women to intermittent work in the heat,1.0000,baran
+591,article_title,Thermoregulatory response of women to intermittent work in the heat,1.0000,baran
+117,journal_title,Journal of applied physiology,1.0000,baran
+117,jounral_abbreviation,J Appl Physiol,1.0000,baran
+117,journal_issn,0021-8987,1.0000,baran
+117,article_jcreated_at,1/1/76,1.0000,baran
+117,article_pagination,57-61,1.0000,baran
+117,author_list,"{""B. L. Drinkwater"",""J. E. Denton"",""S. M. Horvath"",""P. B. Raven""}",1.0000,baran
+564,author_list,"{""B. L. Drinkwater"",""J. E. Denton"",""S. M. Horvath"",""P. B. Raven""}",1.0000,baran
+991,journal_title,Am J Clin Nutr,1.0000,baran
+991,jounral_abbreviation,The American journal of clinical nutrition,1.0000,baran
+991,journal_issn,Feb-65,1.0000,baran
+991,article_jvolumn,72,1.0000,baran
+252,article_jvolumn,5,1.0000,baran
+905,article_jvolumn,5,1.0000,baran
+991,article_jissue,5,1.0000,baran
+991,article_jcreated_at,1/1/00,1.0000,baran
+991,article_pagination,1343S-1353S,1.0000,baran
+991,author_list,"{""R. P. Troiano"",""M. D. Carroll"",""R. R. Briefel"",""K. Bialostosky""}",1.0000,baran
+897,id,15325,1.0000,baran
+681,id,15325,1.0000,baran
+897,article_title,Effects of different antihypertensive drugs on plasma fibrinogen in hypertensive patients.,1.0000,baran
+565,article_title,Effects of different antihypertensive drugs on plasma fibrinogen in hypertensive patients.,1.0000,baran
+897,jounral_abbreviation,Br J Clin Pharmacol,1.0000,baran
+897,journal_issn,0306-5251,1.0000,baran
+897,article_jvolumn,39,1.0000,baran
+44,article_jvolumn,39,1.0000,baran
+118,article_jvolumn,39,1.0000,baran
+176,article_jvolumn,5,1.0000,baran
+197,article_jvolumn,39,1.0000,baran
+198,article_jvolumn,5,1.0000,baran
+418,article_jvolumn,39,1.0000,baran
+542,article_jvolumn,5,1.0000,baran
+587,article_jvolumn,39,1.0000,baran
+815,article_jvolumn,5,1.0000,baran
+897,article_jissue,5,1.0000,baran
+897,article_jcreated_at,1/1/95,1.0000,baran
+897,article_pagination,471-6,1.0000,baran
+24,id,569841,1.0000,baran
+24,article_title,Effects of chemotherapy in AIDS-associated non-Hodgkin's lymphoma on Kaposi's sarcoma herpesvirus DNA in blood.,1.0000,baran
+175,article_title,Effects of chemotherapy in AIDS-associated non-Hodgkin's lymphoma on Kaposi's sarcoma herpesvirus DNA in blood.,1.0000,baran
+24,jounral_abbreviation,J. Clin. Oncol.,1.0000,baran
+24,journal_issn,1527-7755,1.0000,baran
+24,article_jissue,15,1.0000,baran
+24,article_jcreated_at,5/20/09,1.0000,baran
+24,article_pagination,2496-502,1.0000,baran
+24,author_list,"{""Ariela Noy"",""Lawrence D Kaplan"",""Yanxing Yu"",""Alexandra M Levine"",""Richard F Ambinder"",""Susan E Krown"",""Bruce J Dezube"",""Lan Lin"",""Jeannette Y Lee"",""Gary S Hayward""}",1.0000,baran
+938,id,741988,1.0000,baran
+938,article_title,Changes in lower esophageal sphincter pressure (LES) after Stamm gastrostomy,1.0000,baran
+631,article_title,Changes in lower esophageal sphincter pressure (LES) after Stamm gastrostomy,1.0000,baran
+938,jounral_abbreviation,The Journal of surgical research,1.0000,baran
+938,journal_issn,0022-4804,1.0000,baran
+938,article_jvolumn,42,1.0000,baran
+938,article_jcreated_at,1/1/87,1.0000,baran
+938,article_pagination,570-4,1.0000,baran
+938,author_list,"{""J. L. Grosfeld"",""S. Goto"",""G. P. Gardner"",""D. F. Canal"",""D. W. Vane""}",1.0000,baran
+26,id,21910,1.0000,baran
+816,id,741988,1.0000,baran
+921,id,21910,1.0000,baran
+961,id,21910,1.0000,baran
+26,article_title,Examining waiting placement in hospital: utilization and the lived experience.,1.0000,baran
+705,article_title,Examining waiting placement in hospital: utilization and the lived experience.,1.0000,baran
+26,journal_title,Global journal of health science,1.0000,baran
+26,jounral_abbreviation,Glob J Health Sci,1.0000,baran
+26,journal_issn,1916-9736,1.0000,baran
+26,article_jvolumn,6,1.0000,baran
+120,article_jvolumn,42,1.0000,baran
+302,article_jvolumn,42,1.0000,baran
+352,article_jvolumn,42,1.0000,baran
+371,article_jvolumn,42,1.0000,baran
+403,article_jvolumn,42,1.0000,baran
+474,article_jvolumn,42,1.0000,baran
+633,article_jvolumn,42,1.0000,baran
+640,article_jvolumn,42,1.0000,baran
+1000,article_jvolumn,6,1.0000,baran
+26,article_jcreated_at,1/14/03,1.0000,baran
+26,article_pagination,22-Dec,1.0000,baran
+562,article_title,ELDERLY AND PHYSICAL ACTIVITY: BENEFITS AND CHALLENGES IN SEARCH FOR LIFE QUALITY.,1.0000,baran
+435,article_title,ELDERLY AND PHYSICAL ACTIVITY: BENEFITS AND CHALLENGES IN SEARCH FOR LIFE QUALITY.,1.0000,baran
+562,journal_title,Journal of Nursing UFPE / Revista de Enfermagem UFPE,1.0000,baran
+562,jounral_abbreviation,REV ENFERMAGEM UFPE,1.0000,baran
+562,journal_issn,1981-8963,1.0000,baran
+562,article_jvolumn,6,1.0000,baran
+98,article_jvolumn,6,1.0000,baran
+191,article_jvolumn,6,1.0000,baran
+245,article_jvolumn,6,1.0000,baran
+261,article_jvolumn,6,1.0000,baran
+324,article_jvolumn,6,1.0000,baran
+339,article_jvolumn,6,1.0000,baran
+557,article_jvolumn,6,1.0000,baran
+582,article_jvolumn,6,1.0000,baran
+665,article_jvolumn,6,1.0000,baran
+875,article_jvolumn,6,1.0000,baran
+935,article_jvolumn,6,1.0000,baran
+562,article_jissue,11,1.0000,baran
+562,article_jcreated_at,1/12/11,1.0000,baran
+562,article_pagination,2761-2769 9p,1.0000,baran
+579,id,966388,1.0000,baran
+579,article_title,Multiple endocrine neoplasia type 1 with multiple leiomyomas linked to a novel mutation in the MEN1 gene,1.0000,baran
+579,journal_title,Yonsei Medical Journal,1.0000,baran
+579,jounral_abbreviation,Yonsei Med.J.,1.0000,baran
+579,journal_issn,1976-2437,1.0000,baran
+579,article_pagination,655-661,1.0000,baran
+579,author_list,"{""H. Choi"",""E. S. Kang"",""S. K. Lim"",""S. Y. Jeong"",""H. C. Lee"",""H. J. Kim"",""S. Kim"",""Y. Rhee"",""Y. H. Lee"",""J. H. Moon"",""K. R. Kim"",""C. W. Ahn"",""B. S. Cha"",""E. J. Lee""}",1.0000,baran
+248,author_list,"{""H. Choi"",""E. S. Kang"",""S. K. Lim"",""S. Y. Jeong"",""H. C. Lee"",""H. J. Kim"",""S. Kim"",""Y. Rhee"",""Y. H. Lee"",""J. H. Moon"",""K. R. Kim"",""C. W. Ahn"",""B. S. Cha"",""E. J. Lee""}",1.0000,baran
+846,author_list,"{""H. Choi"",""E. S. Kang"",""S. K. Lim"",""S. Y. Jeong"",""H. C. Lee"",""H. J. Kim"",""S. Kim"",""Y. Rhee"",""Y. H. Lee"",""J. H. Moon"",""K. R. Kim"",""C. W. Ahn"",""B. S. Cha"",""E. J. Lee""}",1.0000,baran
+231,id,696362,1.0000,baran
+138,article_title,Multiple endocrine neoplasia type 1 with multiple leiomyomas linked to a novel mutation in the MEN1 gene,1.0000,baran
+197,article_title,Multiple endocrine neoplasia type 1 with multiple leiomyomas linked to a novel mutation in the MEN1 gene,1.0000,baran
+811,article_title,Multiple endocrine neoplasia type 1 with multiple leiomyomas linked to a novel mutation in the MEN1 gene,1.0000,baran
+231,journal_title,McNeill Mathematics Program,1.0000,baran
+231,jounral_abbreviation,College Teaching,1.0000,baran
+231,journal_issn,87567555,1.0000,baran
+231,article_jcreated_at,1/6/01,1.0000,baran
+231,article_pagination,291-297,1.0000,baran
+231,author_list,"{""C. G. Mendez""}",1.0000,baran

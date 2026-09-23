@@ -1,0 +1,17 @@
+policy,proposer,dataset,alpha,seeds,budget_violations,violation_rate,mean_error,max_error,mean_automation
+CARE,Baran,hospital,0.1,20,1,0.05,0.036,0.1268,0.137
+Platt,Baran,hospital,0.1,20,0,0.0,0.0695,0.0933,0.95
+Isotonic,Baran,hospital,0.1,20,0,0.0,0.0683,0.0933,1.0
+Raw,Baran,hospital,0.1,20,0,0.0,,,0.0
+CARE,Baran,beers,0.1,20,0,0.0,0.0273,0.0318,0.7223
+Platt,Baran,beers,0.1,20,0,0.0,,,0.0
+Isotonic,Baran,beers,0.1,20,20,1.0,0.1182,0.1234,1.0
+Raw,Baran,beers,0.1,20,0,0.0,,,0.0
+CARE,BClean,flights,0.1,20,0,0.0,0.0065,0.0108,0.1229
+Platt,BClean,flights,0.1,20,0,0.0,,,0.0
+Isotonic,BClean,flights,0.1,20,20,1.0,0.1901,0.2394,0.1171
+Raw,BClean,flights,0.1,20,0,0.0,,,0.0
+CARE,Jellyfish,beers,0.1,20,0,0.0,,,0.0
+Platt,Jellyfish,beers,0.1,20,0,0.0,,,0.0
+Isotonic,Jellyfish,beers,0.1,20,20,1.0,0.688,0.7005,0.4406
+Raw,Jellyfish,beers,0.1,20,0,0.0,,,0.0

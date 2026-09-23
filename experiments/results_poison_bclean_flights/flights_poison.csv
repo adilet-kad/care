@@ -1,0 +1,9 @@
+dataset,baseline,poison_frac,trusted_poison,scoring,realized_error,err_lo,err_hi,human_cost,applied_contamination,thm2_bound,within_thm2_bound,backend
+flights,CARE,0.0,False,errors,0.033869513724034205,0.02377471941444369,0.04526784657806186,0.8116248348745045,0.0,0.2,True,bclean:csvs/bclean_flights_mapped.csv
+flights,LLMOnly,0.0,False,errors,0.5019154557463673,0.4982826948480845,0.505217965653897,0.0,0.0,,,bclean:csvs/bclean_flights_mapped.csv
+flights,CARE,0.05,False,errors,0.029436671781852376,0.018069139116253984,0.04226577202805224,0.8207397622192867,0.0,0.2,True,bclean:csvs/bclean_flights_mapped.csv
+flights,LLMOnly,0.05,False,errors,0.5237120211360634,0.5198150594451784,0.5267503302509907,0.0,0.04676354029062087,,,bclean:csvs/bclean_flights_mapped.csv
+flights,CARE,0.1,False,errors,0.028957054139594384,0.015669896477069102,0.04348355231979402,0.834676354029062,0.0,0.2,True,bclean:csvs/bclean_flights_mapped.csv
+flights,LLMOnly,0.1,False,errors,0.5479524438573316,0.5452443857331571,0.5506605019815061,0.0,0.09491413474240423,,,bclean:csvs/bclean_flights_mapped.csv
+flights,CARE,0.2,False,errors,0.02522540983606557,0.010756094997898268,0.041714480874316916,0.8643989431968295,0.0,0.2,True,bclean:csvs/bclean_flights_mapped.csv
+flights,LLMOnly,0.2,False,errors,0.5980845442536328,0.594782034346103,0.6015852047556143,0.0,0.1953764861294584,,,bclean:csvs/bclean_flights_mapped.csv

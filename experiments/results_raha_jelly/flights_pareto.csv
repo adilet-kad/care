@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,LLMOnly,-,0.05,detected,0.0,0.9475971583786043,0.05240284162139573,0.949143334726285,False,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,CARE,mondrian,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,LLMOnly,-,0.1,detected,0.0,0.9475971583786043,0.05240284162139573,0.949143334726285,False,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,CARE,marginal,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,CARE,mondrian,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,LLMOnly,-,0.2,detected,0.0,0.9475971583786043,0.05240284162139573,0.949143334726285,False,True,jellyfish:csvs/jellyfish_flights_mapped.csv
+flights,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_flights_mapped.csv

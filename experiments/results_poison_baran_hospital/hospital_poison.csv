@@ -1,0 +1,9 @@
+dataset,baseline,poison_frac,trusted_poison,scoring,realized_error,err_lo,err_hi,human_cost,applied_contamination,thm2_bound,within_thm2_bound,backend
+hospital,CARE,0.0,False,errors,0.059781609195402284,0.04486206896551722,0.07166666666666667,0.142,0.0,0.2,True,baran:csvs/baran_hospital_mapped.csv
+hospital,LLMOnly,0.0,False,errors,0.06733333333333333,0.06233333333333332,0.07233333333333332,0.0,0.0,,,baran:csvs/baran_hospital_mapped.csv
+hospital,CARE,0.05,False,errors,0.05767859447388829,0.039357305082593906,0.07177066377283414,0.18533333333333335,0.0,0.2,True,baran:csvs/baran_hospital_mapped.csv
+hospital,LLMOnly,0.05,False,errors,0.11399999999999999,0.10800000000000001,0.11933333333333332,0.0,0.05,,,baran:csvs/baran_hospital_mapped.csv
+hospital,CARE,0.1,False,errors,0.05667943680514368,0.039195865630155244,0.07048195749969365,0.22066666666666665,0.0,0.2,True,baran:csvs/baran_hospital_mapped.csv
+hospital,LLMOnly,0.1,False,errors,0.15233333333333335,0.14566666666666667,0.159,0.0,0.09233333333333334,,,baran:csvs/baran_hospital_mapped.csv
+hospital,CARE,0.2,False,errors,0.05738016685568692,0.03695148941076933,0.07668755313593681,0.38566666666666666,0.0,0.2,True,baran:csvs/baran_hospital_mapped.csv
+hospital,LLMOnly,0.2,False,errors,0.24933333333333332,0.23733333333333334,0.261,0.0,0.19533333333333333,,,baran:csvs/baran_hospital_mapped.csv

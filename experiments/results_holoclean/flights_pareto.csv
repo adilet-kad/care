@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights,CARE,marginal,0.05,errors,0.6420527441197434,0.0043937430852096,0.5248347753298426,0.005372923033727528,True,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,CARE,mondrian,0.05,errors,0.3477207977207977,0.011366397529847949,0.7791147440416111,0.013655248526061547,True,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,LLMOnly,-,0.05,errors,0.0,0.2591589451176051,0.7408410548823949,0.26386315039201713,False,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,NoOp,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,CARE,marginal,0.1,errors,0.4261582323592302,0.049819702783588646,0.6928646038655708,0.05377119577238385,True,False,holoclean:csvs/holoclean_flights_mapped.csv
+flights,CARE,mondrian,0.1,errors,0.3247863247863248,0.0139240506329114,0.7948979591836736,0.015295358649789037,True,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,LLMOnly,-,0.1,errors,0.0,0.2591589451176051,0.7408410548823949,0.26386315039201713,False,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,NoOp,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,CARE,marginal,0.2,errors,0.25972915181753387,0.14057697264941366,0.7311314033515497,0.14552491178917135,True,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,CARE,mondrian,0.2,errors,0.3247863247863248,0.0139240506329114,0.7948979591836736,0.015295358649789037,True,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,LLMOnly,-,0.2,errors,0.0,0.2591589451176051,0.7408410548823949,0.26386315039201713,False,True,holoclean:csvs/holoclean_flights_mapped.csv
+flights,NoOp,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,holoclean:csvs/holoclean_flights_mapped.csv

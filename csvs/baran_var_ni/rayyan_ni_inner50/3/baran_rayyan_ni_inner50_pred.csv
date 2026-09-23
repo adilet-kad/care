@@ -1,0 +1,934 @@
+row_id,column,value,confidence,source
+206,article_title,Cytokine profiling of young overweight and obese female African American adults with prediabetes,1.0000,baran
+206,article_language,English,1.0000,baran
+206,journal_title,Cytokine,1.0000,baran
+144,journal_title,Cytokine,1.0000,baran
+206,jounral_abbreviation,Cytokine,1.0000,baran
+165,jounral_abbreviation,The European journal of general practice,1.0000,baran
+262,jounral_abbreviation,Paediatr Child Health,1.0000,baran
+291,jounral_abbreviation,Bioelectromagnetics,1.0000,baran
+298,jounral_abbreviation,Circulation,1.0000,baran
+341,jounral_abbreviation,Ann. N. Y. Acad. Sci.,1.0000,baran
+493,jounral_abbreviation,Curr.Opin.Infect.Dis.,1.0000,baran
+589,jounral_abbreviation,Circulation,1.0000,baran
+613,jounral_abbreviation,Postgrad Med J,1.0000,baran
+617,jounral_abbreviation,Ann. N. Y. Acad. Sci.,1.0000,baran
+634,jounral_abbreviation,Nature New Biol.,1.0000,baran
+718,jounral_abbreviation,J Rheumatol,1.0000,baran
+720,jounral_abbreviation,Neuropharmacology,1.0000,baran
+746,jounral_abbreviation,J Clin Anesth,1.0000,baran
+801,jounral_abbreviation,Environ. Toxicol. Pharmacol.,1.0000,baran
+822,jounral_abbreviation,J Int Neuropsychol Soc,1.0000,baran
+824,jounral_abbreviation,Br J Clin Pharmacol,1.0000,baran
+837,jounral_abbreviation,PLoS ONE,1.0000,baran
+842,jounral_abbreviation,Paediatr Child Health,1.0000,baran
+873,jounral_abbreviation,Intensive Care Med,1.0000,baran
+939,jounral_abbreviation,"Clinical nutrition (Edinburgh, Scotland)",1.0000,baran
+206,journal_issn,1096-0023,1.0000,baran
+16,journal_issn,1469-493X,1.0000,baran
+41,journal_issn,0363-5023,1.0000,baran
+83,journal_issn,1096-0023,1.0000,baran
+150,journal_issn,1790-8019,1.0000,baran
+209,journal_issn,1473-5725,1.0000,baran
+253,journal_issn,1082-3069,1.0000,baran
+298,journal_issn,22-Sep,1.0000,baran
+341,journal_issn,0077-8923,1.0000,baran
+367,journal_issn,0895-6111,1.0000,baran
+403,journal_issn,1567-5688,1.0000,baran
+413,journal_issn,1469-493X,1.0000,baran
+476,journal_issn,0021-9258,1.0000,baran
+546,journal_issn,0899-8256,1.0000,baran
+613,journal_issn,1469-0756,1.0000,baran
+617,journal_issn,0077-8923,1.0000,baran
+654,journal_issn,1469-896X,1.0000,baran
+663,journal_issn,0020-7640,1.0000,baran
+687,journal_issn,0196-0644,1.0000,baran
+710,journal_issn,0929-693X,1.0000,baran
+730,journal_issn,1521-186X,1.0000,baran
+749,journal_issn,0039-1735,1.0000,baran
+785,journal_issn,0269-2163,1.0000,baran
+796,journal_issn,1469-493X,1.0000,baran
+830,journal_issn,1474-5151,1.0000,baran
+837,journal_issn,1932-6203,1.0000,baran
+838,journal_issn,1473-5725,1.0000,baran
+896,journal_issn,0301-1623,1.0000,baran
+916,journal_issn,09663622 (ISSN),1.0000,baran
+927,journal_issn,0041-1337,1.0000,baran
+939,journal_issn,0261-5614,1.0000,baran
+957,journal_issn,1467-1107,1.0000,baran
+965,journal_issn,1324-3780,1.0000,baran
+982,journal_issn,0019-5499,1.0000,baran
+988,journal_issn,0190-535X,1.0000,baran
+206,article_jissue,1,1.0000,baran
+206,article_jcreated_at,1/13/01,1.0000,baran
+18,article_jcreated_at,1/5/01,1.0000,baran
+39,article_jcreated_at,1/1/99,1.0000,baran
+49,article_jcreated_at,1/7/02,1.0000,baran
+54,article_jcreated_at,1/15/01,1.0000,baran
+83,article_jcreated_at,1/13/01,1.0000,baran
+89,article_jcreated_at,1/11/01,1.0000,baran
+117,article_jcreated_at,1/15/01,1.0000,baran
+127,article_jcreated_at,1/1/93,1.0000,baran
+129,article_jcreated_at,1/1/01,1.0000,baran
+158,article_jcreated_at,5/1/90,1.0000,baran
+159,article_jcreated_at,1/13/01,1.0000,baran
+168,article_jcreated_at,1/3/12,1.0000,baran
+190,article_jcreated_at,1/1/06,1.0000,baran
+198,article_jcreated_at,1/15/01,1.0000,baran
+205,article_jcreated_at,1/15/01,1.0000,baran
+245,article_jcreated_at,1/4/01,1.0000,baran
+269,article_jcreated_at,1/13/01,1.0000,baran
+281,article_jcreated_at,1/4/01,1.0000,baran
+283,article_jcreated_at,1/15/01,1.0000,baran
+291,article_jcreated_at,1/1/01,1.0000,baran
+293,article_jcreated_at,1/15/08,1.0000,baran
+300,article_jcreated_at,1/13/03,1.0000,baran
+323,article_jcreated_at,1/1/76,1.0000,baran
+324,article_jcreated_at,1/13/01,1.0000,baran
+402,article_jcreated_at,1/1/93,1.0000,baran
+405,article_jcreated_at,5/1/90,1.0000,baran
+413,article_jcreated_at,1/1/00,1.0000,baran
+429,article_jcreated_at,1/12/02,1.0000,baran
+430,article_jcreated_at,1/14/01,1.0000,baran
+445,article_jcreated_at,1/1/01,1.0000,baran
+483,article_jcreated_at,1/5/01,1.0000,baran
+493,article_jcreated_at,1/15/01,1.0000,baran
+519,article_jcreated_at,1/12/07,1.0000,baran
+539,article_jcreated_at,1/1/01,1.0000,baran
+549,article_jcreated_at,4/15/05,1.0000,baran
+567,article_jcreated_at,1/12/01,1.0000,baran
+574,article_jcreated_at,1/13/01,1.0000,baran
+580,article_jcreated_at,2/6/08,1.0000,baran
+581,article_jcreated_at,1/12/01,1.0000,baran
+604,article_jcreated_at,1/11/01,1.0000,baran
+612,article_jcreated_at,1/13/01,1.0000,baran
+616,article_jcreated_at,5/1/90,1.0000,baran
+617,article_jcreated_at,6/30/98,1.0000,baran
+634,article_jcreated_at,3/28/73,1.0000,baran
+641,article_jcreated_at,1/15/01,1.0000,baran
+650,article_jcreated_at,5/1/90,1.0000,baran
+654,article_jcreated_at,1/12/03,1.0000,baran
+662,article_jcreated_at,1/14/01,1.0000,baran
+695,article_jcreated_at,1/1/76,1.0000,baran
+701,article_jcreated_at,3/1/99,1.0000,baran
+726,article_jcreated_at,1/14/09,1.0000,baran
+736,article_jcreated_at,1/8/07,1.0000,baran
+746,article_jcreated_at,1/6/09,1.0000,baran
+780,article_jcreated_at,1/15/01,1.0000,baran
+791,article_jcreated_at,1/10/01,1.0000,baran
+794,article_jcreated_at,7/1/00,1.0000,baran
+813,article_jcreated_at,1/9/01,1.0000,baran
+840,article_jcreated_at,1/9/09,1.0000,baran
+873,article_jcreated_at,1/6/05,1.0000,baran
+883,article_jcreated_at,1/7/01,1.0000,baran
+896,article_jcreated_at,1/13/01,1.0000,baran
+900,article_jcreated_at,1/13/02,1.0000,baran
+914,article_jcreated_at,1/5/01,1.0000,baran
+929,article_jcreated_at,1/3/06,1.0000,baran
+931,article_jcreated_at,1/4/01,1.0000,baran
+936,article_jcreated_at,1/14/01,1.0000,baran
+992,article_jcreated_at,1/6/01,1.0000,baran
+1000,article_jcreated_at,1/11/01,1.0000,baran
+206,article_pagination,310-5,1.0000,baran
+206,author_list,"{""J. Bhagatwala"",""W. Caldwell"",""D. H. Guo"",""A. Mellor"",""H. Zhu"",""R. Caldwell"",""R. Lucas"",""S. J. Parikh"",""Y. Dong"",""S. Sridhar"",""Y. Dong""}",1.0000,baran
+7,author_list,"{""Sebastien Racinais"",""Olivier Girard"",""Lars Nybo"",""Magni Mohr"",""Martin Thomassen""}",1.0000,baran
+9,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+35,author_list,"{""Yan-Xin Zhao"",""Jun-Chao Xie"",""Xue-Yuan Liu"",""Han Yan""}",1.0000,baran
+39,author_list,"{""G. Abraham"",""Jr. Fromm, R. E."",""P. E. Marik"",""J. Varon"",""P. Careau""}",1.0000,baran
+54,author_list,"{""Sauer N."",""Szecsenyi J."",""Faber R."",""Guthrie E."",""Schaefert R."",""Herzog W."",""Boelter R."",""Wild B."",""Kaufmann C."",""Schellberg D.""}",1.0000,baran
+56,author_list,"{""G Spitaleri"",""L Adamoli"",""F Vecchio"",""F de Braud"",""C Catania"",""A Delmonte"",""F Toffalorio"",""T De Pas"",""C Noberasco"",""D Radice"",""A Goldhirsch""}",1.0000,baran
+69,author_list,"{""D. R. Sullivan"",""G. Netzer""}",1.0000,baran
+76,author_list,"{""A Street"",""C Walsh""}",1.0000,baran
+84,author_list,"{""J. DA - May-Jun DO - 10.4103/1119-3077.130253 DP - NLM ET - 2014/04/10 Wu"",""Q. Zhao"",""Y. Fan"",""Y. S. Liao""}",1.0000,baran
+87,author_list,"{""G. Abraham"",""Jr. Fromm, R. E."",""P. E. Marik"",""J. Varon"",""P. Careau""}",1.0000,baran
+89,author_list,"{""M. Suter"",""V. Giusti""}",1.0000,baran
+105,author_list,"{""K. Seo"",""L. G. Epstein""}",1.0000,baran
+108,author_list,"{""KATERINA1 BODOVSKI"",""RACHAEL3 WALSH"",""INBAL2 NAHUM-SHANI""}",1.0000,baran
+116,author_list,"{""Yong-Kyun Kim"",""Tae Yoong Jeong"",""Won Hyuk Chang"",""Sang Chul Lee"",""Jeong-Gyu Yoon"",""Dong Suk Kim""}",1.0000,baran
+117,author_list,"{""Ahmad Qamar"",""Muhammad Shahid"",""Md. Abdur Rahman"",""Ahmed Lbath"",""Akhlaq Ahmad"",""Faizan Ur Rehman"",""Abdullah Murad"",""Bilal Sadiq""}",1.0000,baran
+121,author_list,"{""T. Topp"",""C. Kuhne"",""S. Ruchholtz"",""U. Lewan"",""A. Kruger"",""T. Muller"",""R. Zettl""}",1.0000,baran
+129,author_list,"{""E.-B. Malmgren-Olsson"",""K. Armelius"",""B.-. Armelius""}",1.0000,baran
+165,author_list,"{""O. H. Simonsen"",""S. T. Skou"",""H. Thomsen""}",1.0000,baran
+168,author_list,"{""F Vin"",""F A Allaert"",""J P Benigni"",""S Sadoun""}",1.0000,baran
+170,author_list,"{""Allan I Binder""}",1.0000,baran
+175,author_list,"{""Emile E Voest"",""Saskia C C M Teunissen"",""Alexander de Graeff"",""Marija Trajkovic-Vidakovic""}",1.0000,baran
+186,author_list,"{""Kevin Patrick"",""Jill Rybar"",""Linda Hill"",""Sara Baird"",""Raul Coimbra"",""Susanna Concha-Garcia""}",1.0000,baran
+190,author_list,"{""Y L Ku""}",1.0000,baran
+198,author_list,"{""Salvatore Dimauro"",""Carolina Ionete"",""Hasan O Akman"",""Carmen Paradas"",""David E Jones"",""Michio Hirano"",""Peter N Riskind"",""Thomas W Smith"",""Heather Lau""}",1.0000,baran
+199,author_list,"{""H. Y. Tong"",""J. Frias"",""R. Lubomirov"",""P. Lapunzina"",""A. M. Borobia"",""J. Tenorio"",""P. Arias"",""A. J. Carcas""}",1.0000,baran
+241,author_list,"{""Carolyn H McCabe"",""Shaun G Goodman"",""Frans Van de Werf"",""David A Morrow"",""Elliott M Antman"",""Eugene Braunwald"",""Kenneth W Mahaffey"",""Marc Cohen"",""Ian B Menown"",""Sabina A Murphy"",""Charles Michael Gibson""}",1.0000,baran
+262,author_list,{NULL},1.0000,baran
+271,author_list,{NULL},1.0000,baran
+286,author_list,"{""Corinn Taylor""}",1.0000,baran
+289,author_list,"{""J. Robinson"",""D. W. Smith"",""B. Colwell"",""S. L. Stevens"",""C. McMillan""}",1.0000,baran
+291,author_list,{NULL},1.0000,baran
+298,author_list,"{""S. Lin"",""S. E. Nissen"",""K. Wolski"",""I. Sipahi"",""E. M. Tuzcu"",""S. J. Nicholls"",""T. Churchill"",""P. Schoenhagen"",""T. Crowe"",""C. Wang"",""A. Loyd"",""C. Apperson-Hansen"",""W. A. Magyar""}",1.0000,baran
+300,author_list,"{""J M Cisler"",""T Mletzko"",""C D Kilts"",""S Tripathi"",""G A James"",""X P Hu"",""C Heim"",""C B Nemeroff"",""H S Mayberg""}",1.0000,baran
+315,author_list,{NULL},1.0000,baran
+381,author_list,"{""Kazeem B Yusuff"",""Unyime I Eshiet""}",1.0000,baran
+399,author_list,"{""A. J. Ghia"",""V. J. Gonzalez"",""J. D. Tward"",""A. M. Stroup"",""D. K. Gaffney"",""L. Pappas""}",1.0000,baran
+402,author_list,"{""A. Amemiya"",""C. R. Dolan"",""H. H. Ardinger"",""C. T. Fong"",""S. E. Wallace"",""T. D. Bird"",""K. Stephens"",""R. J. H. Smith"",""M. P. Adam"",""E. C. Delot"",""L. J. H. Bean"",""E. J. Vilain"",""R. A. Pagon""}",1.0000,baran
+405,author_list,"{""Marlon Barg"",""Emilio L Streck"",""Lara M Gomes"",""Vanessa M Andrade"",""Daniela D Leffa"",""Felipe Dal-Pizzol"",""Fabricia Petronilho"",""Francieli Vuolo"",""Milena Carvalho-Silva"",""Fernanda Balbinot"",""Gislaine T Rezin""}",1.0000,baran
+417,author_list,"{""NCT01713205 ""}",1.0000,baran
+426,author_list,"{""D. R. Sullivan"",""G. Netzer""}",1.0000,baran
+460,author_list,"{""W. Yu"",""R. Pagani"",""L. Huang""}",1.0000,baran
+483,author_list,"{""M. Wang"",""G. Stewart"",""J. F. Tierney"",""G. Spilopoulos"",""W. Duncan"",""H. S. Hansen"",""Z. Rhugang"",""M. K. Parmar"",""A. Rousell"",""B. Launois"",""K. Nygaard"",""S. J. Arnott"",""M. Gignoux""}",1.0000,baran
+508,author_list,"{""Kevin Patrick"",""Jill Rybar"",""Linda Hill"",""Sara Baird"",""Raul Coimbra"",""Susanna Concha-Garcia""}",1.0000,baran
+513,author_list,"{""D. Ring"",""R. G. Albers"",""T. G. Guitton""}",1.0000,baran
+525,author_list,"{""M. B. Philip"",""R. A. Hayward""}",1.0000,baran
+530,author_list,"{""A. L. Steege"",""T. Alterman"",""M. R. Petersen"",""J. Li""}",1.0000,baran
+550,author_list,"{""NCT01413984 ""}",1.0000,baran
+555,author_list,"{""Yasuhiro Koga"",""Kazutake Okada"",""Toru Ozaki"",""Sotaro Sadahiro"",""Akira Tanaka"",""Toshiyuki Suzuki"",""Hiroko Kamata""}",1.0000,baran
+556,author_list,{NULL},1.0000,baran
+565,author_list,"{""Sren Brostrm"",""Gunnar Lose""}",1.0000,baran
+589,author_list,"{""Yusuf S"",""Fox KA"",""Chow CK"",""Anand SS"",""Jolly S"",""Rao-Melacini P""}",1.0000,baran
+604,author_list,"{""M. Heuer"",""S. Radunz"",""A. Paul"",""G. C. Sotiropoulos"",""Z. Mathe"",""T. Trarbach"",""H. A. Baba""}",1.0000,baran
+611,author_list,{NULL},1.0000,baran
+613,author_list,"{""Julia Dawn Jones"",""Touran Heidi Keen"",""Peter Sze Chai Wong"",""Reza Ashrafi"",""Omer Khanzada"",""Derek Richard Robinson"",""Upul Wickramarachchi""}",1.0000,baran
+616,author_list,"{""NCT01713205 ""}",1.0000,baran
+623,author_list,"{""J.-M. Zhao"",""O. Sjaastad""}",1.0000,baran
+632,author_list,"{""Kenichi Kokubo"",""Taro Kamisasanuki"",""Kengo Hayashi"",""Kenichiro Kasai"",""Nobutada Katori""}",1.0000,baran
+712,author_list,"{""Chandra Y. and Bains Sujeev S. and Egede Leonard E. Osborn""}",1.0000,baran
+718,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+724,author_list,"{""J. De La Camera"",""M. M. Mesfin"",""A. M. Kedir"",""G. Amanual"",""T. Araya"",""I. G. Tareke""}",1.0000,baran
+736,author_list,"{""Demosthenes B Panagiotakos"",""Katherine Esposito"",""Christina-Maria Kastorini"",""Dario Giugliano""}",1.0000,baran
+745,author_list,"{""Makbule Gezmen-Karadag"",""Anke Oenema"",""Saskia J te Velde"",""Hilal Yildiran"",""Mai J M Chinapaw"",""Johannes Brug"",""Mine Yildirim"",""Eda Koksal"",""Saniye Bilici"",""Nilufer Acar-Tek"",""Gamze Akbulut"",""Nevin Sanlier"",""Maartje M van Stralen"",""Judith S B de Meij"",""Amika S Singh""}",1.0000,baran
+746,author_list,"{""David N Maine"",""Genevieve E Courpas"",""James F Weller"",""Jeffrey M Richman"",""Andrew J Rowlingson"",""Christopher L Wu""}",1.0000,baran
+748,author_list,"{""J. L. Li"",""P. Newcomb""}",1.0000,baran
+750,author_list,"{""K. Seo"",""L. G. Epstein""}",1.0000,baran
+773,author_list,"{""S. Kato"",""M. Ishida"",""H. Sakuma""}",1.0000,baran
+785,author_list,"{""J M Teno""}",1.0000,baran
+787,author_list,"{""K. Peisker"",""B. Singh"",""S. Sanyal"",""Q. Chai"",""X. Ge"",""N. Metzendorf"",""S. Dasgupta""}",1.0000,baran
+795,author_list,"{""Kathy W Hosig"",""Sharon M Nickols-Richardson"",""Kavita H Poddar"",""Susan E Duncan"",""Eileen S Anderson""}",1.0000,baran
+817,author_list,"{""H. Y. Tong"",""J. Frias"",""R. Lubomirov"",""P. Lapunzina"",""A. M. Borobia"",""J. Tenorio"",""P. Arias"",""A. J. Carcas""}",1.0000,baran
+824,author_list,"{""G Villa"",""A Zoppi"",""G D Malamani"",""G Marasi"",""A Vanasia"",""R Fogari""}",1.0000,baran
+830,author_list,"{""Cecilia Bj_rkelund"",""Margaretha Jerlock""}",1.0000,baran
+840,author_list,"{""Katharine O'Dell"",""Padma Kandadai"",""Jyot Saini""}",1.0000,baran
+842,author_list,{NULL},1.0000,baran
+866,author_list,"{""P. Azevedo"",""A. Vaz-Carneiro"",""J. Costa""}",1.0000,baran
+873,author_list,"{""Kwok M Ho"",""Geoffrey J Dobb"",""Steven A R Webb""}",1.0000,baran
+889,author_list,"{""NCT01153620 ""}",1.0000,baran
+900,author_list,"{""KATERINA1 BODOVSKI"",""RACHAEL3 WALSH"",""INBAL2 NAHUM-SHANI""}",1.0000,baran
+905,author_list,"{""Thomas Scherer"",""Jose M Garcia"",""Victor Papusha"",""Ji-an Chen"",""Mark Asnicar"",""Joanna Smiechowska"",""Bobby Guillory"",""Christoph Buettner"",""Roy G Smith"",""Anriada Nassif""}",1.0000,baran
+929,author_list,"{""Mayuko Saito"",""Susan Olender"",""Robert H Gilman"",""Christian T Bautista"",""Evelyn J Hsieh"",""Luz Caviedes"",""Kari Gillenwater"",""Jane Apgar"",""Pedro Moro"",""Andres G Lescano""}",1.0000,baran
+931,author_list,{NULL},1.0000,baran
+933,author_list,"{""V Cus_"",""H Galvez"",""M Iriondo"",""J Campistol"",""I Mlaga"",""A Garc_a Cazorla""}",1.0000,baran
+936,author_list,"{""W. Sexauer"",""M. S. Kavuru"",""U. Vaid"",""K. Gaurav""}",1.0000,baran
+941,author_list,"{""Patil S."",""Horobin H.""}",1.0000,baran
+946,author_list,{NULL},1.0000,baran
+958,author_list,"{""Yong-Kyun Kim"",""Tae Yoong Jeong"",""Won Hyuk Chang"",""Sang Chul Lee"",""Jeong-Gyu Yoon"",""Dong Suk Kim""}",1.0000,baran
+969,author_list,"{""R A Robison"",""J L Nelson"",""B L Roeder"",""B L Beckstead"",""G B Schaalje"",""J C Carmen"",""W G Pitt"",""C M Runyan""}",1.0000,baran
+987,author_list,"{""C. L. Romano"",""G. Mineo"",""C. Bonora"",""D. Romano""}",1.0000,baran
+988,author_list,"{""Y L Ku""}",1.0000,baran
+998,author_list,"{""Katharine O'Dell"",""Padma Kandadai"",""Jyot Saini""}",1.0000,baran
+903,id,672671,1.0000,baran
+923,id,672671,1.0000,baran
+903,article_language,eng,1.0000,baran
+903,journal_title,Reviews in endocrine & metabolic disorders,1.0000,baran
+52,journal_title,Reviews in endocrine & metabolic disorders,1.0000,baran
+191,journal_title,Reviews in endocrine & metabolic disorders,1.0000,baran
+903,jounral_abbreviation,Rev Endocr Metab Disord,1.0000,baran
+903,journal_issn,1573-2606,1.0000,baran
+903,article_jvolumn,14,1.0000,baran
+9,article_jvolumn,21,1.0000,baran
+25,article_jvolumn,40,1.0000,baran
+27,article_jvolumn,1,1.0000,baran
+38,article_jvolumn,42,1.0000,baran
+64,article_jvolumn,54,1.0000,baran
+75,article_jvolumn,3,1.0000,baran
+76,article_jvolumn,0,1.0000,baran
+79,article_jvolumn,0,1.0000,baran
+86,article_jvolumn,16,1.0000,baran
+93,article_jvolumn,184,1.0000,baran
+114,article_jvolumn,1,1.0000,baran
+119,article_jvolumn,289,1.0000,baran
+120,article_jvolumn,1,1.0000,baran
+146,article_jvolumn,23,1.0000,baran
+149,article_jvolumn,5,1.0000,baran
+187,article_jvolumn,0,1.0000,baran
+192,article_jvolumn,161,1.0000,baran
+203,article_jvolumn,16,1.0000,baran
+214,article_jvolumn,74,1.0000,baran
+216,article_jvolumn,5,1.0000,baran
+230,article_jvolumn,143,1.0000,baran
+246,article_jvolumn,16,1.0000,baran
+257,article_jvolumn,58,1.0000,baran
+289,article_jvolumn,101,1.0000,baran
+305,article_jvolumn,57,1.0000,baran
+314,article_jvolumn,1,1.0000,baran
+351,article_jvolumn,18,1.0000,baran
+361,article_jvolumn,44,1.0000,baran
+407,article_jvolumn,0,1.0000,baran
+430,article_jvolumn,-1,1.0000,baran
+440,article_jvolumn,3,1.0000,baran
+497,article_jvolumn,8,1.0000,baran
+505,article_jvolumn,74,1.0000,baran
+514,article_jvolumn,130,1.0000,baran
+524,article_jvolumn,41,1.0000,baran
+528,article_jvolumn,74,1.0000,baran
+556,article_jvolumn,91,1.0000,baran
+585,article_jvolumn,101,1.0000,baran
+618,article_jvolumn,33,1.0000,baran
+626,article_jvolumn,42,1.0000,baran
+630,article_jvolumn,5,1.0000,baran
+645,article_jvolumn,92,1.0000,baran
+647,article_jvolumn,14,1.0000,baran
+652,article_jvolumn,0,1.0000,baran
+673,article_jvolumn,22,1.0000,baran
+684,article_jvolumn,34,1.0000,baran
+694,article_jvolumn,14,1.0000,baran
+722,article_jvolumn,8,1.0000,baran
+785,article_jvolumn,22,1.0000,baran
+789,article_jvolumn,14,1.0000,baran
+812,article_jvolumn,11,1.0000,baran
+814,article_jvolumn,0,1.0000,baran
+816,article_jvolumn,348,1.0000,baran
+825,article_jvolumn,29,1.0000,baran
+826,article_jvolumn,1,1.0000,baran
+846,article_jvolumn,49,1.0000,baran
+880,article_jvolumn,0,1.0000,baran
+889,article_jvolumn,22,1.0000,baran
+909,article_jvolumn,5,1.0000,baran
+924,article_jvolumn,5,1.0000,baran
+936,article_jvolumn,41,1.0000,baran
+944,article_jvolumn,5,1.0000,baran
+957,article_jvolumn,1,1.0000,baran
+967,article_jvolumn,42,1.0000,baran
+987,article_jvolumn,71,1.0000,baran
+994,article_jvolumn,22,1.0000,baran
+997,article_jvolumn,16,1.0000,baran
+903,article_jissue,3,1.0000,baran
+180,article_pagination,310-5,1.0000,baran
+408,article_pagination,310-5,1.0000,baran
+505,article_pagination,310-5,1.0000,baran
+903,author_list,"{""Demosthenes B Panagiotakos"",""Katherine Esposito"",""Christina-Maria Kastorini"",""Dario Giugliano""}",1.0000,baran
+723,author_list,"{""J. Bhagatwala"",""W. Caldwell"",""D. H. Guo"",""A. Mellor"",""H. Zhu"",""R. Caldwell"",""R. Lucas"",""S. J. Parikh"",""Y. Dong"",""S. Sridhar"",""Y. Dong""}",1.0000,baran
+627,id,854628,1.0000,baran
+627,article_title,Determinants of drug response in a cisplatin-resistant human lung cancer cell line.,1.0000,baran
+618,article_title,Determinants of drug response in a cisplatin-resistant human lung cancer cell line.,1.0000,baran
+836,article_title,Determinants of drug response in a cisplatin-resistant human lung cancer cell line.,1.0000,baran
+627,article_language,eng,1.0000,baran
+627,journal_issn,0910-5050,1.0000,baran
+6,article_jvolumn,5,1.0000,baran
+12,article_jvolumn,5,1.0000,baran
+69,article_jvolumn,1,1.0000,baran
+81,article_jvolumn,5,1.0000,baran
+83,article_jvolumn,5,1.0000,baran
+118,article_jvolumn,14,1.0000,baran
+142,article_jvolumn,1,1.0000,baran
+167,article_jvolumn,5,1.0000,baran
+247,article_jvolumn,5,1.0000,baran
+252,article_jvolumn,5,1.0000,baran
+278,article_jvolumn,5,1.0000,baran
+293,article_jvolumn,5,1.0000,baran
+331,article_jvolumn,5,1.0000,baran
+333,article_jvolumn,5,1.0000,baran
+397,article_jvolumn,5,1.0000,baran
+418,article_jvolumn,1,1.0000,baran
+421,article_jvolumn,1,1.0000,baran
+431,article_jvolumn,14,1.0000,baran
+449,article_jvolumn,5,1.0000,baran
+459,article_jvolumn,5,1.0000,baran
+464,article_jvolumn,5,1.0000,baran
+605,article_jvolumn,5,1.0000,baran
+606,article_jvolumn,5,1.0000,baran
+676,article_jvolumn,14,1.0000,baran
+688,article_jvolumn,5,1.0000,baran
+757,article_jvolumn,5,1.0000,baran
+766,article_jvolumn,5,1.0000,baran
+770,article_jvolumn,5,1.0000,baran
+791,article_jvolumn,1,1.0000,baran
+832,article_jvolumn,1,1.0000,baran
+833,article_jvolumn,1,1.0000,baran
+876,article_jvolumn,5,1.0000,baran
+906,article_jvolumn,5,1.0000,baran
+920,article_jvolumn,5,1.0000,baran
+978,article_jvolumn,3,1.0000,baran
+988,article_jvolumn,1,1.0000,baran
+627,article_jissue,5,1.0000,baran
+15,article_jissue,5,1.0000,baran
+26,article_jissue,5,1.0000,baran
+34,article_jissue,5,1.0000,baran
+37,article_jissue,5,1.0000,baran
+49,article_jissue,5,1.0000,baran
+51,article_jissue,5,1.0000,baran
+69,article_jissue,5,1.0000,baran
+78,article_jissue,3,1.0000,baran
+91,article_jissue,5,1.0000,baran
+99,article_jissue,5,1.0000,baran
+115,article_jissue,5,1.0000,baran
+132,article_jissue,5,1.0000,baran
+139,article_jissue,5,1.0000,baran
+141,article_jissue,5,1.0000,baran
+142,article_jissue,3,1.0000,baran
+165,article_jissue,5,1.0000,baran
+182,article_jissue,5,1.0000,baran
+186,article_jissue,5,1.0000,baran
+222,article_jissue,5,1.0000,baran
+228,article_jissue,3,1.0000,baran
+235,article_jissue,5,1.0000,baran
+242,article_jissue,5,1.0000,baran
+249,article_jissue,5,1.0000,baran
+255,article_jissue,5,1.0000,baran
+256,article_jissue,5,1.0000,baran
+271,article_jissue,5,1.0000,baran
+274,article_jissue,5,1.0000,baran
+275,article_jissue,5,1.0000,baran
+290,article_jissue,3,1.0000,baran
+339,article_jissue,5,1.0000,baran
+369,article_jissue,5,1.0000,baran
+377,article_jissue,5,1.0000,baran
+400,article_jissue,5,1.0000,baran
+404,article_jissue,3,1.0000,baran
+407,article_jissue,5,1.0000,baran
+410,article_jissue,5,1.0000,baran
+412,article_jissue,5,1.0000,baran
+428,article_jissue,3,1.0000,baran
+445,article_jissue,5,1.0000,baran
+459,article_jissue,5,1.0000,baran
+470,article_jissue,3,1.0000,baran
+480,article_jissue,5,1.0000,baran
+488,article_jissue,3,1.0000,baran
+494,article_jissue,5,1.0000,baran
+496,article_jissue,5,1.0000,baran
+500,article_jissue,5,1.0000,baran
+502,article_jissue,3,1.0000,baran
+503,article_jissue,3,1.0000,baran
+508,article_jissue,5,1.0000,baran
+515,article_jissue,3,1.0000,baran
+568,article_jissue,5,1.0000,baran
+591,article_jissue,5,1.0000,baran
+605,article_jissue,5,1.0000,baran
+611,article_jissue,5,1.0000,baran
+630,article_jissue,5,1.0000,baran
+648,article_jissue,3,1.0000,baran
+659,article_jissue,5,1.0000,baran
+669,article_jissue,5,1.0000,baran
+689,article_jissue,3,1.0000,baran
+693,article_jissue,5,1.0000,baran
+710,article_jissue,5,1.0000,baran
+711,article_jissue,3,1.0000,baran
+715,article_jissue,5,1.0000,baran
+716,article_jissue,5,1.0000,baran
+729,article_jissue,5,1.0000,baran
+736,article_jissue,3,1.0000,baran
+740,article_jissue,5,1.0000,baran
+753,article_jissue,3,1.0000,baran
+771,article_jissue,5,1.0000,baran
+773,article_jissue,5,1.0000,baran
+774,article_jissue,3,1.0000,baran
+783,article_jissue,3,1.0000,baran
+788,article_jissue,5,1.0000,baran
+794,article_jissue,5,1.0000,baran
+806,article_jissue,5,1.0000,baran
+822,article_jissue,5,1.0000,baran
+825,article_jissue,4,1.0000,baran
+859,article_jissue,5,1.0000,baran
+912,article_jissue,5,1.0000,baran
+936,article_jissue,5,1.0000,baran
+956,article_jissue,3,1.0000,baran
+960,article_jissue,5,1.0000,baran
+980,article_jissue,3,1.0000,baran
+990,article_jissue,5,1.0000,baran
+997,article_jissue,5,1.0000,baran
+627,article_jcreated_at,5/1/90,1.0000,baran
+627,article_pagination,527-35,1.0000,baran
+627,author_list,"{""N Saijo"",""M Yamakido"",""K D Tew"",""Y Fujiwara"",""K Kasahara"",""M Bungo"",""Y Sugimoto""}",1.0000,baran
+68,author_list,"{""N Saijo"",""M Yamakido"",""K D Tew"",""Y Fujiwara"",""K Kasahara"",""M Bungo"",""Y Sugimoto""}",1.0000,baran
+424,id,784224,1.0000,baran
+424,article_language,eng,1.0000,baran
+424,journal_title,Am J Perinatol,1.0000,baran
+302,journal_title,Am J Perinatol,1.0000,baran
+564,journal_title,Am J Perinatol,1.0000,baran
+424,jounral_abbreviation,American journal of perinatology,1.0000,baran
+424,journal_issn,0735-1631,1.0000,baran
+424,article_jvolumn,32,1.0000,baran
+35,article_jvolumn,24,1.0000,baran
+154,article_jvolumn,32,1.0000,baran
+276,article_jvolumn,32,1.0000,baran
+424,article_jcreated_at,1/15/01,1.0000,baran
+12,article_jcreated_at,1/15/01,1.0000,baran
+29,article_jcreated_at,1/13/01,1.0000,baran
+53,article_jcreated_at,1/15/01,1.0000,baran
+151,article_jcreated_at,5/1/90,1.0000,baran
+197,article_jcreated_at,1/15/01,1.0000,baran
+202,article_jcreated_at,1/13/01,1.0000,baran
+215,article_jcreated_at,1/13/01,1.0000,baran
+238,article_jcreated_at,1/13/01,1.0000,baran
+249,article_jcreated_at,5/1/90,1.0000,baran
+264,article_jcreated_at,1/5/01,1.0000,baran
+290,article_jcreated_at,1/15/01,1.0000,baran
+304,article_jcreated_at,1/13/01,1.0000,baran
+334,article_jcreated_at,1/15/01,1.0000,baran
+335,article_jcreated_at,1/15/01,1.0000,baran
+362,article_jcreated_at,5/1/90,1.0000,baran
+379,article_jcreated_at,1/15/01,1.0000,baran
+392,article_jcreated_at,1/15/01,1.0000,baran
+411,article_jcreated_at,1/13/01,1.0000,baran
+412,article_jcreated_at,5/1/90,1.0000,baran
+457,article_jcreated_at,1/15/01,1.0000,baran
+464,article_jcreated_at,5/1/90,1.0000,baran
+518,article_jcreated_at,1/13/01,1.0000,baran
+540,article_jcreated_at,1/13/01,1.0000,baran
+557,article_jcreated_at,5/1/90,1.0000,baran
+656,article_jcreated_at,5/1/90,1.0000,baran
+664,article_jcreated_at,1/13/01,1.0000,baran
+674,article_jcreated_at,1/15/01,1.0000,baran
+686,article_jcreated_at,5/1/90,1.0000,baran
+708,article_jcreated_at,5/1/90,1.0000,baran
+738,article_jcreated_at,1/15/01,1.0000,baran
+743,article_jcreated_at,5/1/90,1.0000,baran
+772,article_jcreated_at,5/1/90,1.0000,baran
+775,article_jcreated_at,1/15/01,1.0000,baran
+876,article_jcreated_at,5/1/90,1.0000,baran
+890,article_jcreated_at,5/1/90,1.0000,baran
+897,article_jcreated_at,5/1/90,1.0000,baran
+898,article_jcreated_at,1/13/01,1.0000,baran
+975,article_jcreated_at,5/1/90,1.0000,baran
+985,article_jcreated_at,5/1/90,1.0000,baran
+11,article_pagination,310-5,1.0000,baran
+18,article_pagination,310-5,1.0000,baran
+34,article_pagination,14,1.0000,baran
+53,article_pagination,310-5,1.0000,baran
+57,article_pagination,310-5,1.0000,baran
+61,article_pagination,310-5,1.0000,baran
+65,article_pagination,310-5,1.0000,baran
+67,article_pagination,14,1.0000,baran
+69,article_pagination,310-5,1.0000,baran
+84,article_pagination,310-5,1.0000,baran
+89,article_pagination,310-5,1.0000,baran
+90,article_pagination,14,1.0000,baran
+94,article_pagination,310-5,1.0000,baran
+103,article_pagination,310-5,1.0000,baran
+108,article_pagination,527-35,1.0000,baran
+117,article_pagination,310-5,1.0000,baran
+122,article_pagination,310-5,1.0000,baran
+123,article_pagination,14,1.0000,baran
+127,article_pagination,310-5,1.0000,baran
+128,article_pagination,310-5,1.0000,baran
+139,article_pagination,310-5,1.0000,baran
+153,article_pagination,14,1.0000,baran
+158,article_pagination,310-5,1.0000,baran
+165,article_pagination,310-5,1.0000,baran
+177,article_pagination,310-5,1.0000,baran
+181,article_pagination,527-35,1.0000,baran
+195,article_pagination,310-5,1.0000,baran
+200,article_pagination,310-5,1.0000,baran
+217,article_pagination,310-5,1.0000,baran
+240,article_pagination,310-5,1.0000,baran
+259,article_pagination,310-5,1.0000,baran
+274,article_pagination,310-5,1.0000,baran
+289,article_pagination,310-5,1.0000,baran
+297,article_pagination,310-5,1.0000,baran
+300,article_pagination,310-5,1.0000,baran
+310,article_pagination,310-5,1.0000,baran
+318,article_pagination,310-5,1.0000,baran
+319,article_pagination,310-5,1.0000,baran
+347,article_pagination,310-5,1.0000,baran
+351,article_pagination,310-5,1.0000,baran
+352,article_pagination,527-35,1.0000,baran
+353,article_pagination,310-5,1.0000,baran
+364,article_pagination,310-5,1.0000,baran
+373,article_pagination,310-5,1.0000,baran
+396,article_pagination,310-5,1.0000,baran
+397,article_pagination,310-5,1.0000,baran
+403,article_pagination,310-5,1.0000,baran
+409,article_pagination,310-5,1.0000,baran
+416,article_pagination,310-5,1.0000,baran
+418,article_pagination,527-35,1.0000,baran
+422,article_pagination,310-5,1.0000,baran
+429,article_pagination,14,1.0000,baran
+436,article_pagination,310-5,1.0000,baran
+449,article_pagination,310-5,1.0000,baran
+467,article_pagination,310-5,1.0000,baran
+468,article_pagination,310-5,1.0000,baran
+469,article_pagination,310-5,1.0000,baran
+470,article_pagination,310-5,1.0000,baran
+486,article_pagination,310-5,1.0000,baran
+490,article_pagination,527-35,1.0000,baran
+494,article_pagination,310-5,1.0000,baran
+502,article_pagination,310-5,1.0000,baran
+526,article_pagination,310-5,1.0000,baran
+557,article_pagination,310-5,1.0000,baran
+559,article_pagination,310-5,1.0000,baran
+560,article_pagination,310-5,1.0000,baran
+574,article_pagination,310-5,1.0000,baran
+586,article_pagination,310-5,1.0000,baran
+592,article_pagination,310-5,1.0000,baran
+597,article_pagination,310-5,1.0000,baran
+605,article_pagination,310-5,1.0000,baran
+608,article_pagination,310-5,1.0000,baran
+622,article_pagination,310-5,1.0000,baran
+628,article_pagination,310-5,1.0000,baran
+639,article_pagination,310-5,1.0000,baran
+640,article_pagination,310-5,1.0000,baran
+644,article_pagination,310-5,1.0000,baran
+649,article_pagination,527-35,1.0000,baran
+650,article_pagination,310-5,1.0000,baran
+654,article_pagination,310-5,1.0000,baran
+657,article_pagination,310-5,1.0000,baran
+670,article_pagination,310-5,1.0000,baran
+689,article_pagination,310-5,1.0000,baran
+691,article_pagination,14,1.0000,baran
+724,article_pagination,310-5,1.0000,baran
+761,article_pagination,527-35,1.0000,baran
+772,article_pagination,310-5,1.0000,baran
+777,article_pagination,310-5,1.0000,baran
+784,article_pagination,527-35,1.0000,baran
+797,article_pagination,310-5,1.0000,baran
+802,article_pagination,527-35,1.0000,baran
+803,article_pagination,14,1.0000,baran
+816,article_pagination,527-35,1.0000,baran
+828,article_pagination,310-5,1.0000,baran
+832,article_pagination,310-5,1.0000,baran
+839,article_pagination,527-35,1.0000,baran
+840,article_pagination,310-5,1.0000,baran
+842,article_pagination,310-5,1.0000,baran
+854,article_pagination,527-35,1.0000,baran
+858,article_pagination,310-5,1.0000,baran
+860,article_pagination,310-5,1.0000,baran
+875,article_pagination,527-35,1.0000,baran
+876,article_pagination,310-5,1.0000,baran
+891,article_pagination,310-5,1.0000,baran
+896,article_pagination,310-5,1.0000,baran
+911,article_pagination,310-5,1.0000,baran
+913,article_pagination,310-5,1.0000,baran
+914,article_pagination,310-5,1.0000,baran
+923,article_pagination,310-5,1.0000,baran
+947,article_pagination,310-5,1.0000,baran
+950,article_pagination,310-5,1.0000,baran
+957,article_pagination,310-5,1.0000,baran
+958,article_pagination,14,1.0000,baran
+971,article_pagination,310-5,1.0000,baran
+984,article_pagination,310-5,1.0000,baran
+989,article_pagination,310-5,1.0000,baran
+424,author_list,"{""D. A. Paul"",""R. G. Locke"",""L. Saiman"",""D. Tuttle"",""A. Novitsky"",""A. Mackley""}",1.0000,baran
+393,article_title,[Laparoscopic appendectomy after the learning curve].,1.0000,baran
+964,article_title,[Laparoscopic appendectomy after the learning curve].,1.0000,baran
+393,article_language,spa,1.0000,baran
+393,journal_title,Cirug_a Peditrica: Organo Oficial De La Sociedad Espaola De Cirug_a Peditrica,1.0000,baran
+393,jounral_abbreviation,Cir Pediatr,1.0000,baran
+393,journal_issn,0214-1221,1.0000,baran
+393,article_jcreated_at,1/8/07,1.0000,baran
+393,article_pagination,167-72,1.0000,baran
+636,id,944558,1.0000,baran
+181,id,784224,1.0000,baran
+275,id,944558,1.0000,baran
+622,id,944558,1.0000,baran
+646,id,944558,1.0000,baran
+636,article_language,eng,1.0000,baran
+636,journal_title,Neurol Res,1.0000,baran
+636,jounral_abbreviation,Neurological research,1.0000,baran
+636,journal_issn,0161-6412 (Print) 0161-6412,1.0000,baran
+636,article_jcreated_at,1/3/01,1.0000,baran
+65,article_jcreated_at,1/3/01,1.0000,baran
+301,article_jcreated_at,1/3/01,1.0000,baran
+422,article_jcreated_at,1/8/07,1.0000,baran
+858,article_jcreated_at,1/8/07,1.0000,baran
+972,article_jcreated_at,1/8/07,1.0000,baran
+636,article_pagination,153-6,1.0000,baran
+719,article_language,English,1.0000,baran
+719,jounral_abbreviation,Int.J.Neurosci.,1.0000,baran
+719,journal_issn,0020-7454,1.0000,baran
+719,article_jvolumn,114,1.0000,baran
+719,article_jissue,8,1.0000,baran
+719,article_jcreated_at,1/4/01,1.0000,baran
+444,article_jcreated_at,1/4/01,1.0000,baran
+536,article_jcreated_at,1/4/01,1.0000,baran
+942,article_jcreated_at,1/4/01,1.0000,baran
+719,article_pagination,923-931,1.0000,baran
+719,author_list,"{""K.-W. Park"",""J. Song"",""H.-J. Kim"",""S.-R. Moon"",""M.S. Lee""}",1.0000,baran
+507,id,168889,1.0000,baran
+296,id,168889,1.0000,baran
+507,article_title,Trends in domestic violence service and leadership: implications for an integrated shelter model,1.0000,baran
+507,jounral_abbreviation,Adm Policy Ment Health,1.0000,baran
+507,journal_issn,0894-587X,1.0000,baran
+507,article_jvolumn,27,1.0000,baran
+22,article_jvolumn,114,1.0000,baran
+46,article_jvolumn,114,1.0000,baran
+73,article_jvolumn,114,1.0000,baran
+91,article_jvolumn,8,1.0000,baran
+97,article_jvolumn,8,1.0000,baran
+204,article_jvolumn,8,1.0000,baran
+249,article_jvolumn,5,1.0000,baran
+267,article_jvolumn,5,1.0000,baran
+282,article_jvolumn,8,1.0000,baran
+363,article_jvolumn,114,1.0000,baran
+369,article_jvolumn,114,1.0000,baran
+391,article_jvolumn,114,1.0000,baran
+518,article_jvolumn,8,1.0000,baran
+558,article_jvolumn,5,1.0000,baran
+615,article_jvolumn,8,1.0000,baran
+616,article_jvolumn,5,1.0000,baran
+663,article_jvolumn,5,1.0000,baran
+728,article_jvolumn,8,1.0000,baran
+746,article_jvolumn,27,1.0000,baran
+764,article_jvolumn,8,1.0000,baran
+783,article_jvolumn,114,1.0000,baran
+786,article_jvolumn,5,1.0000,baran
+854,article_jvolumn,5,1.0000,baran
+507,article_jissue,5,1.0000,baran
+507,article_pagination,339-52,1.0000,baran
+507,author_list,"{""M. B. Philip"",""R. A. Hayward""}",1.0000,baran
+111,article_title,Intrinsically de-sialylated CD103(+) CD8 T cells mediate beneficial anti-glioma immune responses.,1.0000,baran
+503,article_title,Trends in domestic violence service and leadership: implications for an integrated shelter model,1.0000,baran
+111,article_language,eng,1.0000,baran
+111,journal_title,"Cancer immunology, immunotherapy : CII",1.0000,baran
+111,jounral_abbreviation,Cancer Immunol. Immunother.,1.0000,baran
+111,journal_issn,1432-0851,1.0000,baran
+9,article_jissue,8,1.0000,baran
+53,article_jissue,8,1.0000,baran
+58,article_jissue,5,1.0000,baran
+66,article_jissue,8,1.0000,baran
+133,article_jissue,8,1.0000,baran
+188,article_jissue,5,1.0000,baran
+197,article_jissue,8,1.0000,baran
+199,article_jissue,8,1.0000,baran
+231,article_jissue,5,1.0000,baran
+261,article_jissue,5,1.0000,baran
+277,article_jissue,8,1.0000,baran
+321,article_jissue,8,1.0000,baran
+324,article_jissue,8,1.0000,baran
+327,article_jissue,8,1.0000,baran
+354,article_jissue,5,1.0000,baran
+383,article_jissue,5,1.0000,baran
+399,article_jissue,8,1.0000,baran
+473,article_jissue,8,1.0000,baran
+504,article_jissue,8,1.0000,baran
+512,article_jissue,5,1.0000,baran
+527,article_jissue,8,1.0000,baran
+533,article_jissue,5,1.0000,baran
+550,article_jissue,8,1.0000,baran
+557,article_jissue,8,1.0000,baran
+572,article_jissue,8,1.0000,baran
+580,article_jissue,8,1.0000,baran
+612,article_jissue,8,1.0000,baran
+622,article_jissue,8,1.0000,baran
+645,article_jissue,5,1.0000,baran
+656,article_jissue,5,1.0000,baran
+667,article_jissue,8,1.0000,baran
+730,article_jissue,5,1.0000,baran
+734,article_jissue,8,1.0000,baran
+738,article_jissue,8,1.0000,baran
+786,article_jissue,5,1.0000,baran
+803,article_jissue,8,1.0000,baran
+809,article_jissue,8,1.0000,baran
+823,article_jissue,5,1.0000,baran
+832,article_jissue,5,1.0000,baran
+833,article_jissue,8,1.0000,baran
+839,article_jissue,5,1.0000,baran
+854,article_jissue,8,1.0000,baran
+858,article_jissue,8,1.0000,baran
+862,article_jissue,5,1.0000,baran
+878,article_jissue,8,1.0000,baran
+879,article_jissue,8,1.0000,baran
+907,article_jissue,8,1.0000,baran
+959,article_jissue,8,1.0000,baran
+967,article_jissue,8,1.0000,baran
+986,article_jissue,8,1.0000,baran
+111,article_jcreated_at,1/14/09,1.0000,baran
+6,article_jcreated_at,1/14/09,1.0000,baran
+124,article_jcreated_at,1/14/09,1.0000,baran
+172,article_jcreated_at,1/14/09,1.0000,baran
+258,article_jcreated_at,1/14/09,1.0000,baran
+404,article_jcreated_at,1/14/09,1.0000,baran
+421,article_jcreated_at,1/14/09,1.0000,baran
+721,article_jcreated_at,1/14/09,1.0000,baran
+974,article_jcreated_at,1/14/09,1.0000,baran
+111,author_list,"{""HongQiang Wang"",""Dwain K Irvin"",""Ashley Gragg"",""Xiao-xue Zhang"",""Christopher J Wheeler"",""Keith L Black"",""Lucia Veiga"",""Ryan Cordner"",""Mandana Zandian"",""Akanksha Panwar"",""Emmanuel Jouanneau"",""Yuying Zhai"",""Shyam Goverdhana"",""Armen Mardiros""}",1.0000,baran
+761,author_list,"{""HongQiang Wang"",""Dwain K Irvin"",""Ashley Gragg"",""Xiao-xue Zhang"",""Christopher J Wheeler"",""Keith L Black"",""Lucia Veiga"",""Ryan Cordner"",""Mandana Zandian"",""Akanksha Panwar"",""Emmanuel Jouanneau"",""Yuying Zhai"",""Shyam Goverdhana"",""Armen Mardiros""}",1.0000,baran
+702,article_title,Lung function efficacy of olodaterol qd delivered via respimat vs placebo and formoterol bid in patients with COPD: two 48-week studies [Abstract],1.0000,baran
+702,article_language,English,1.0000,baran
+702,jounral_abbreviation,Respirology,1.0000,baran
+702,journal_issn,1440-1843,1.0000,baran
+419,article_jvolumn,0,1.0000,baran
+458,article_jvolumn,0,1.0000,baran
+565,article_jvolumn,0,1.0000,baran
+650,article_jvolumn,0,1.0000,baran
+807,article_jvolumn,0,1.0000,baran
+966,article_jvolumn,0,1.0000,baran
+702,article_jissue,0,1.0000,baran
+702,article_pagination,120 [TP 184],1.0000,baran
+702,author_list,"{""Pizzichini E"",""Hart L"",""Paggiaro P"",""Hamilton A"",""Peters M"",""Korducki L"",""De Salvo M"",""De La Hoz A"",""Koch A""}",1.0000,baran
+21,article_title,"Lycopene metabolite, apo-10'-lycopenoic acid, inhibits diethylnitrosamine-initiated, high fat diet-promoted hepatic inflammation and tumorigenesis in mice.",1.0000,baran
+925,article_title,"Lycopene metabolite, apo-10'-lycopenoic acid, inhibits diethylnitrosamine-initiated, high fat diet-promoted hepatic inflammation and tumorigenesis in mice.",1.0000,baran
+954,article_title,"Lycopene metabolite, apo-10'-lycopenoic acid, inhibits diethylnitrosamine-initiated, high fat diet-promoted hepatic inflammation and tumorigenesis in mice.",1.0000,baran
+21,article_language,eng,1.0000,baran
+21,jounral_abbreviation,Cancer Prev Res (Phila),1.0000,baran
+21,journal_issn,1940-6215,1.0000,baran
+233,article_jvolumn,12,1.0000,baran
+234,article_jvolumn,12,1.0000,baran
+310,article_jvolumn,12,1.0000,baran
+340,article_jvolumn,12,1.0000,baran
+444,article_jvolumn,12,1.0000,baran
+579,article_jvolumn,12,1.0000,baran
+756,article_jvolumn,12,1.0000,baran
+857,article_jvolumn,12,1.0000,baran
+21,article_jissue,12,1.0000,baran
+16,article_jissue,12,1.0000,baran
+116,article_jissue,0,1.0000,baran
+134,article_jissue,12,1.0000,baran
+162,article_jissue,0,1.0000,baran
+163,article_jissue,12,1.0000,baran
+173,article_jissue,0,1.0000,baran
+280,article_jissue,0,1.0000,baran
+295,article_jissue,0,1.0000,baran
+333,article_jissue,0,1.0000,baran
+540,article_jissue,0,1.0000,baran
+585,article_jissue,12,1.0000,baran
+620,article_jissue,0,1.0000,baran
+640,article_jissue,12,1.0000,baran
+649,article_jissue,0,1.0000,baran
+727,article_jissue,12,1.0000,baran
+741,article_jissue,12,1.0000,baran
+752,article_jissue,0,1.0000,baran
+910,article_jissue,0,1.0000,baran
+950,article_jissue,0,1.0000,baran
+953,article_jissue,0,1.0000,baran
+21,article_pagination,1304-16,1.0000,baran
+21,author_list,"{""Lynne M Ausman"",""Martin S Obin"",""Xiang-Dong Wang"",""Chun Liu"",""Blanche C Ip"",""Donald E Smith"",""Kang-Quan Hu""}",1.0000,baran
+863,article_title,[Use of probiotics and prebiotics in infant formulas].,1.0000,baran
+863,article_language,spa,1.0000,baran
+863,journal_title,Prediccion de la masa muscular apendicular esqueletica basado en mediciones antropometricas en Adultos Mayores Chilenos.,1.0000,baran
+863,journal_issn,1699-5198,1.0000,baran
+863,article_jissue,-1,1.0000,baran
+1,article_jissue,-1,1.0000,baran
+102,article_jissue,-1,1.0000,baran
+136,article_jissue,-1,1.0000,baran
+143,article_jissue,-1,1.0000,baran
+303,article_jissue,-1,1.0000,baran
+315,article_jissue,-1,1.0000,baran
+384,article_jissue,-1,1.0000,baran
+453,article_jissue,-1,1.0000,baran
+469,article_jissue,-1,1.0000,baran
+517,article_jissue,-1,1.0000,baran
+529,article_jissue,-1,1.0000,baran
+600,article_jissue,-1,1.0000,baran
+655,article_jissue,-1,1.0000,baran
+706,article_jissue,-1,1.0000,baran
+713,article_jissue,-1,1.0000,baran
+781,article_jissue,-1,1.0000,baran
+800,article_jissue,-1,1.0000,baran
+877,article_jissue,-1,1.0000,baran
+957,article_jissue,-1,1.0000,baran
+965,article_jissue,-1,1.0000,baran
+988,article_jissue,-1,1.0000,baran
+863,article_jcreated_at,1/15/01,1.0000,baran
+779,article_jcreated_at,1/15/01,1.0000,baran
+863,author_list,"{""Venancio Mart_nez Surez""}",1.0000,baran
+85,author_list,"{""Venancio Mart_nez Surez""}",1.0000,baran
+541,article_title,Sonographically guided biopsy of focal lesions: a comparison of freehand and probe-guided techniques using a phantom.,1.0000,baran
+541,article_language,eng,1.0000,baran
+541,journal_title,AJR. American Journal Of Roentgenology,1.0000,baran
+541,jounral_abbreviation,AJR Am J Roentgenol,1.0000,baran
+541,journal_issn,0361-803X,1.0000,baran
+541,article_jvolumn,184,1.0000,baran
+337,article_jvolumn,184,1.0000,baran
+374,article_jvolumn,184,1.0000,baran
+450,article_jvolumn,-1,1.0000,baran
+559,article_jvolumn,184,1.0000,baran
+737,article_jvolumn,-1,1.0000,baran
+801,article_jvolumn,-1,1.0000,baran
+865,article_jvolumn,184,1.0000,baran
+881,article_jvolumn,-1,1.0000,baran
+950,article_jvolumn,184,1.0000,baran
+60,article_jissue,184,1.0000,baran
+98,article_jissue,184,1.0000,baran
+920,article_jissue,184,1.0000,baran
+541,article_jcreated_at,1/5/05,1.0000,baran
+541,article_pagination,1652-6,1.0000,baran
+452,id,84905,1.0000,baran
+137,id,84905,1.0000,baran
+452,journal_title,Obesity reviews : an official journal of the International Association for the Study of Obesity,1.0000,baran
+452,jounral_abbreviation,Obes Rev,1.0000,baran
+452,journal_issn,1467-789X,1.0000,baran
+452,article_jcreated_at,1/12/09,1.0000,baran
+452,article_pagination,780-98,1.0000,baran
+452,author_list,"{""A Bereket"",""Z Hochberg"",""Y Yavuz"",""H L Muller"",""R H Lustig"",""R Weiss"",""W Kiess"",""A P Goldstone""}",1.0000,baran
+612,author_list,"{""A Bereket"",""Z Hochberg"",""Y Yavuz"",""H L Muller"",""R H Lustig"",""R Weiss"",""W Kiess"",""A P Goldstone""}",1.0000,baran
+475,id,917417,1.0000,baran
+28,id,917417,1.0000,baran
+475,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+475,article_language,eng,1.0000,baran
+475,journal_title,Korean Journal of Anesthesiology,1.0000,baran
+475,journal_issn,2005-7563,1.0000,baran
+475,article_jcreated_at,1/12/07,1.0000,baran
+166,article_jcreated_at,1/12/07,1.0000,baran
+356,article_jcreated_at,1/12/07,1.0000,baran
+35,id,676042,1.0000,baran
+150,id,676042,1.0000,baran
+268,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+621,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+673,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+785,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+811,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+889,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+893,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+994,article_title,In vivo effects of different anesthetic agents on apoptosis.,1.0000,baran
+35,article_language,eng,1.0000,baran
+35,journal_title,Journal of stroke and cerebrovascular diseases : the official journal of National Stroke Association,1.0000,baran
+35,jounral_abbreviation,J Stroke Cerebrovasc Dis,1.0000,baran
+35,article_jissue,2,1.0000,baran
+2,article_jissue,2,1.0000,baran
+94,article_jissue,2,1.0000,baran
+177,article_jissue,2,1.0000,baran
+200,article_jissue,2,1.0000,baran
+237,article_jissue,2,1.0000,baran
+298,article_jissue,2,1.0000,baran
+304,article_jissue,2,1.0000,baran
+316,article_jissue,2,1.0000,baran
+338,article_jissue,2,1.0000,baran
+409,article_jissue,2,1.0000,baran
+416,article_jissue,2,1.0000,baran
+429,article_jissue,2,1.0000,baran
+463,article_jissue,2,1.0000,baran
+486,article_jissue,2,1.0000,baran
+510,article_jissue,2,1.0000,baran
+535,article_jissue,2,1.0000,baran
+537,article_jissue,2,1.0000,baran
+544,article_jissue,2,1.0000,baran
+558,article_jissue,2,1.0000,baran
+569,article_jissue,2,1.0000,baran
+583,article_jissue,2,1.0000,baran
+592,article_jissue,2,1.0000,baran
+619,article_jissue,2,1.0000,baran
+624,article_jissue,2,1.0000,baran
+631,article_jissue,2,1.0000,baran
+643,article_jissue,2,1.0000,baran
+668,article_jissue,2,1.0000,baran
+737,article_jissue,2,1.0000,baran
+767,article_jissue,2,1.0000,baran
+793,article_jissue,2,1.0000,baran
+865,article_jissue,2,1.0000,baran
+35,article_pagination,362-9,1.0000,baran
+264,id,275675,1.0000,baran
+264,article_title,An exploration of self-reported negative affect by adolescents as a reason for smoking: implications for tobacco prevention and intervention programs,1.0000,baran
+264,article_language,eng,1.0000,baran
+264,jounral_abbreviation,Preventive medicine,1.0000,baran
+264,journal_issn,0091-7435,1.0000,baran
+264,article_pagination,589-96,1.0000,baran
+264,author_list,"{""J. Robinson"",""D. W. Smith"",""B. Colwell"",""S. L. Stevens"",""C. McMillan""}",1.0000,baran
+998,id,226417,1.0000,baran
+998,article_title,Correct Performance of Pelvic Muscle Exercises in Women Reporting Prior Knowledge.,1.0000,baran
+998,article_language,ENG,1.0000,baran
+998,jounral_abbreviation,Female Pelvic Med Reconstr Surg,1.0000,baran
+998,journal_issn,2154-4212,1.0000,baran
+998,article_jcreated_at,10/27/14,1.0000,baran
+825,id,663526,1.0000,baran
+56,id,663526,1.0000,baran
+633,id,663526,1.0000,baran
+836,id,663526,1.0000,baran
+825,article_title,Blood 25-hydroxyvitamin D concentration and hypertension: a meta-analysis.,1.0000,baran
+256,article_title,Blood 25-hydroxyvitamin D concentration and hypertension: a meta-analysis.,1.0000,baran
+499,article_title,Blood 25-hydroxyvitamin D concentration and hypertension: a meta-analysis.,1.0000,baran
+825,article_language,eng,1.0000,baran
+825,jounral_abbreviation,J. Hypertens.,1.0000,baran
+825,journal_issn,1473-5598,1.0000,baran
+825,article_jcreated_at,1/11/04,1.0000,baran
+939,id,589265,1.0000,baran
+939,article_title,Consumption of fried foods and risk of metabolic syndrome: the SUN cohort study,1.0000,baran
+192,article_title,Consumption of fried foods and risk of metabolic syndrome: the SUN cohort study,1.0000,baran
+939,article_language,eng,1.0000,baran
+939,journal_title,Clin Nutr,1.0000,baran
+939,article_pagination,545-9,1.0000,baran
+939,author_list,"{""E. Flores-Gomez"",""F. J. Basterra-Gortari"",""C. Sayon-Orea"",""M. A. Martinez-Gonzalez"",""A. Gea"",""M. Bes-Rastrollo""}",1.0000,baran

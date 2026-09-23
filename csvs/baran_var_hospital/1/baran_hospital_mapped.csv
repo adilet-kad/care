@@ -1,0 +1,502 @@
+row_id,column,value,confidence,source
+533,HospitalName,baptist medical center south,1.0000,baran
+27,HospitalName,southeast alabama medical center,1.0000,baran
+132,HospitalName,crenshaw community hospital,1.0000,baran
+172,HospitalName,marshall medical center north,1.0000,baran
+244,HospitalName,dekalb regional medical center,1.0000,baran
+338,HospitalName,flowers hospital,1.0000,baran
+385,HospitalName,univ of south alabama medical center,1.0000,baran
+386,HospitalName,univ of south alabama medical center,1.0000,baran
+449,HospitalName,alaska regional hospital,1.0000,baran
+561,HospitalName,jackson hospital & clinic inc,1.0000,baran
+655,HospitalName,wedowee hospital,1.0000,baran
+698,HospitalName,community hospital inc,1.0000,baran
+711,HospitalName,community hospital inc,1.0000,baran
+731,HospitalName,cullman regional medical center,1.0000,baran
+759,HospitalName,andalusia regional hospital,1.0000,baran
+766,HospitalName,andalusia regional hospital,1.0000,baran
+778,HospitalName,huntsville hospital,1.0000,baran
+904,HospitalName,riverview regional medical center,1.0000,baran
+922,HospitalName,riverview regional medical center,1.0000,baran
+923,HospitalName,riverview regional medical center,1.0000,baran
+939,HospitalName,georgiana hospital,1.0000,baran
+963,HospitalName,medical center enterprise,1.0000,baran
+988,HospitalName,st vincents blount,1.0000,baran
+533,HospitalType,acute care hospitals,1.0000,baran
+17,HospitalType,acute care hospitals,1.0000,baran
+40,HospitalType,acute care hospitals,1.0000,baran
+99,HospitalType,acute care hospitals,1.0000,baran
+200,HospitalType,acute care hospitals,1.0000,baran
+214,HospitalType,acute care hospitals,1.0000,baran
+267,HospitalType,acute care hospitals,1.0000,baran
+281,HospitalType,acute care hospitals,1.0000,baran
+294,HospitalType,acute care hospitals,1.0000,baran
+412,HospitalType,acute care hospitals,1.0000,baran
+414,HospitalType,acute care hospitals,1.0000,baran
+454,HospitalType,acute care hospitals,1.0000,baran
+491,HospitalType,acute care hospitals,1.0000,baran
+494,HospitalType,acute care hospitals,1.0000,baran
+498,HospitalType,acute care hospitals,1.0000,baran
+512,HospitalType,acute care hospitals,1.0000,baran
+589,HospitalType,acute care hospitals,1.0000,baran
+635,HospitalType,acute care hospitals,1.0000,baran
+696,HospitalType,acute care hospitals,1.0000,baran
+706,HospitalType,acute care hospitals,1.0000,baran
+730,HospitalType,acute care hospitals,1.0000,baran
+780,HospitalType,acute care hospitals,1.0000,baran
+783,HospitalType,acute care hospitals,1.0000,baran
+815,HospitalType,acute care hospitals,1.0000,baran
+849,HospitalType,acute care hospitals,1.0000,baran
+878,HospitalType,acute care hospitals,1.0000,baran
+903,HospitalType,acute care hospitals,1.0000,baran
+927,HospitalType,acute care hospitals,1.0000,baran
+950,HospitalType,acute care hospitals,1.0000,baran
+957,HospitalType,acute care hospitals,1.0000,baran
+965,HospitalType,acute care hospitals,1.0000,baran
+977,HospitalType,acute care hospitals,1.0000,baran
+533,MeasureName,pneumonia patients assessed and given influenza vaccination,1.0000,baran
+1,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,1.0000,baran
+95,MeasureName,heart attack patients given aspirin at arrival,1.0000,baran
+120,MeasureName,heart attack patients given aspirin at arrival,1.0000,baran
+211,MeasureName,pneumonia patients assessed and given influenza vaccination,1.0000,baran
+291,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,1.0000,baran
+494,MeasureName,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.0000,baran
+508,MeasureName,pneumonia patients assessed and given influenza vaccination,1.0000,baran
+542,MeasureName,heart attack patients given aspirin at arrival,1.0000,baran
+546,MeasureName,heart attack patients given beta blocker at discharge,1.0000,baran
+563,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,1.0000,baran
+613,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,1.0000,baran
+651,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.0000,baran
+786,MeasureName,heart failure patients given an evaluation of left ventricular systolic (lvs) function,1.0000,baran
+894,MeasureName,pneumonia patients assessed and given influenza vaccination,1.0000,baran
+998,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,1.0000,baran
+533,Sample,87 patients,1.0000,baran
+134,Sample,21 pxtients,1.0000,baran
+235,Sample,82 patients,1.0000,baran
+317,Sample,29 xatients,1.0000,baran
+483,Sample,62 patients,1.0000,baran
+503,Sample,44 paxienxs,1.0000,baran
+555,Sample,74 patxents,1.0000,baran
+581,Sample,50 pxtients,1.0000,baran
+669,Sample,87 paxienxs,1.0000,baran
+873,Sample,15 patiexts,1.0000,baran
+973,Sample,27 paxienxs,1.0000,baran
+957,HospitalName,medical center enterprise,1.0000,baran
+387,State,al,1.0000,baran
+43,State,al,1.0000,baran
+47,State,al,1.0000,baran
+51,State,al,1.0000,baran
+84,State,al,1.0000,baran
+99,State,al,1.0000,baran
+120,State,al,1.0000,baran
+141,State,al,1.0000,baran
+166,State,al,1.0000,baran
+183,State,al,1.0000,baran
+229,State,al,1.0000,baran
+279,State,al,1.0000,baran
+357,State,al,1.0000,baran
+403,State,al,1.0000,baran
+478,State,al,1.0000,baran
+484,State,al,1.0000,baran
+505,State,al,1.0000,baran
+560,State,al,1.0000,baran
+573,State,al,1.0000,baran
+593,State,al,1.0000,baran
+702,State,al,1.0000,baran
+765,State,al,1.0000,baran
+792,State,al,1.0000,baran
+885,State,al,1.0000,baran
+887,State,al,1.0000,baran
+923,State,al,1.0000,baran
+387,PhoneNumber,2514717110,1.0000,baran
+25,PhoneNumber,3347938701,1.0000,baran
+37,PhoneNumber,3347938701,1.0000,baran
+58,PhoneNumber,2565938310,1.0000,baran
+61,PhoneNumber,2565938310,1.0000,baran
+66,PhoneNumber,2565938310,1.0000,baran
+102,PhoneNumber,3344933541,1.0000,baran
+248,PhoneNumber,3346366221,1.0000,baran
+262,PhoneNumber,3346366221,1.0000,baran
+322,PhoneNumber,2562358900,1.0000,baran
+343,PhoneNumber,3347935000,1.0000,baran
+382,PhoneNumber,2514717110,1.0000,baran
+385,PhoneNumber,2514717110,1.0000,baran
+394,PhoneNumber,3343614267,1.0000,baran
+472,PhoneNumber,3347742601,1.0000,baran
+517,PhoneNumber,3342882100,1.0000,baran
+549,PhoneNumber,3342938000,1.0000,baran
+562,PhoneNumber,3342938000,1.0000,baran
+563,PhoneNumber,3342938000,1.0000,baran
+573,PhoneNumber,3347561400,1.0000,baran
+594,PhoneNumber,3348972257,1.0000,baran
+700,PhoneNumber,3342836541,1.0000,baran
+714,PhoneNumber,3342836541,1.0000,baran
+752,PhoneNumber,3342228466,1.0000,baran
+764,PhoneNumber,3342228466,1.0000,baran
+825,PhoneNumber,2564944000,1.0000,baran
+866,PhoneNumber,2059216200,1.0000,baran
+882,PhoneNumber,2059325966,1.0000,baran
+884,PhoneNumber,2059325966,1.0000,baran
+917,PhoneNumber,2565435200,1.0000,baran
+387,Condition,heart failure,1.0000,baran
+401,Condition,heart failure,1.0000,baran
+158,ZipCode,35640,1.0000,baran
+45,ZipCode,35957,1.0000,baran
+64,ZipCode,35957,1.0000,baran
+71,ZipCode,35631,1.0000,baran
+94,ZipCode,35631,1.0000,baran
+138,ZipCode,36049,1.0000,baran
+140,ZipCode,36049,1.0000,baran
+150,ZipCode,35640,1.0000,baran
+197,ZipCode,35235,1.0000,baran
+233,ZipCode,35968,1.0000,baran
+268,ZipCode,36784,1.0000,baran
+284,ZipCode,35007,1.0000,baran
+291,ZipCode,35007,1.0000,baran
+326,ZipCode,36201,1.0000,baran
+333,ZipCode,36305,1.0000,baran
+341,ZipCode,36305,1.0000,baran
+367,ZipCode,35594,1.0000,baran
+376,ZipCode,35594,1.0000,baran
+407,ZipCode,36067,1.0000,baran
+421,ZipCode,35150,1.0000,baran
+429,ZipCode,35150,1.0000,baran
+491,ZipCode,36360,1.0000,baran
+500,ZipCode,35960,1.0000,baran
+545,ZipCode,36106,1.0000,baran
+680,ZipCode,35233,1.0000,baran
+686,ZipCode,35233,1.0000,baran
+711,ZipCode,36078,1.0000,baran
+751,ZipCode,36420,1.0000,baran
+816,ZipCode,35903,1.0000,baran
+924,ZipCode,35901,1.0000,baran
+218,PhoneNumber,2058383122,1.0000,baran
+229,PhoneNumber,2568453150,1.0000,baran
+667,PhoneNumber,2059344011,1.0000,baran
+856,PhoneNumber,2059216200,1.0000,baran
+158,HospitalOwner,proprietary,1.0000,baran
+23,HospitalOwner,government - hospital district or authority,1.0000,baran
+28,HospitalOwner,government - hospital district or authority,1.0000,baran
+32,HospitalOwner,government - hospital district or authority,1.0000,baran
+43,HospitalOwner,government - hospital district or authority,1.0000,baran
+114,HospitalOwner,voluntary non-profit - private,1.0000,baran
+160,HospitalOwner,proprietary,1.0000,baran
+163,HospitalOwner,proprietary,1.0000,baran
+165,HospitalOwner,voluntary non-profit - private,1.0000,baran
+217,HospitalOwner,government - hospital district or authority,1.0000,baran
+219,HospitalOwner,government - state,1.0000,baran
+222,HospitalOwner,voluntary non-profit - church,1.0000,baran
+239,HospitalOwner,voluntary non-profit - church,1.0000,baran
+314,HospitalOwner,proprietary,1.0000,baran
+333,HospitalOwner,government - hospital district or authority,1.0000,baran
+357,HospitalOwner,proprietary,1.0000,baran
+450,HospitalOwner,proprietary,1.0000,baran
+457,HospitalOwner,proprietary,1.0000,baran
+494,HospitalOwner,voluntary non-profit - private,1.0000,baran
+527,HospitalOwner,proprietary,1.0000,baran
+745,HospitalOwner,voluntary non-profit - private,1.0000,baran
+785,HospitalOwner,government - hospital district or authority,1.0000,baran
+847,HospitalOwner,voluntary non-profit - private,1.0000,baran
+869,HospitalOwner,voluntary non-profit - other,1.0000,baran
+873,HospitalOwner,proprietary,1.0000,baran
+158,EmergencyService,yes,1.0000,baran
+25,EmergencyService,yes,1.0000,baran
+44,EmergencyService,yes,1.0000,baran
+52,EmergencyService,yes,1.0000,baran
+319,EmergencyService,yes,1.0000,baran
+328,EmergencyService,yes,1.0000,baran
+333,EmergencyService,yes,1.0000,baran
+351,EmergencyService,yes,1.0000,baran
+375,EmergencyService,yes,1.0000,baran
+390,EmergencyService,yes,1.0000,baran
+411,EmergencyService,yes,1.0000,baran
+419,EmergencyService,no,1.0000,baran
+493,EmergencyService,yes,1.0000,baran
+522,EmergencyService,yes,1.0000,baran
+537,EmergencyService,yes,1.0000,baran
+565,EmergencyService,yes,1.0000,baran
+580,EmergencyService,yes,1.0000,baran
+588,EmergencyService,yes,1.0000,baran
+629,EmergencyService,yes,1.0000,baran
+654,EmergencyService,no,1.0000,baran
+675,EmergencyService,yes,1.0000,baran
+798,EmergencyService,yes,1.0000,baran
+810,EmergencyService,yes,1.0000,baran
+867,EmergencyService,yes,1.0000,baran
+890,EmergencyService,yes,1.0000,baran
+920,EmergencyService,yes,1.0000,baran
+922,EmergencyService,yes,1.0000,baran
+128,Condition,heart failure,1.0000,baran
+230,Condition,heart failure,1.0000,baran
+280,Condition,heart failure,1.0000,baran
+600,Condition,heart failure,1.0000,baran
+699,Condition,heart failure,1.0000,baran
+248,HospitalOwner,government - federal,1.0000,baran
+573,HospitalOwner,voluntary non-profit - other,1.0000,baran
+257,Condition,pneumonia,1.0000,baran
+22,Condition,heart attack,1.0000,baran
+23,Condition,heart attack,1.0000,baran
+74,Condition,heart attack,1.0000,baran
+200,Condition,heart attack,1.0000,baran
+226,Condition,heart attack,1.0000,baran
+237,Condition,surgical infection prevention,1.0000,baran
+240,Condition,surgical infection prevention,1.0000,baran
+367,Condition,pneumonia,1.0000,baran
+370,Condition,pneumonia,1.0000,baran
+468,Condition,heart attack,1.0000,baran
+507,Condition,pneumonia,1.0000,baran
+556,Condition,pneumonia,1.0000,baran
+609,Condition,surgical infection prevention,1.0000,baran
+632,Condition,pneumonia,1.0000,baran
+680,Condition,pneumonia,1.0000,baran
+696,Condition,heart attack,1.0000,baran
+713,Condition,surgical infection prevention,1.0000,baran
+717,Condition,heart attack,1.0000,baran
+734,Condition,surgical infection prevention,1.0000,baran
+781,Condition,heart attack,1.0000,baran
+852,Condition,surgical infection prevention,1.0000,baran
+870,Condition,surgical infection prevention,1.0000,baran
+956,Condition,heart attack,1.0000,baran
+975,Condition,surgical infection prevention,1.0000,baran
+257,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.0000,baran
+112,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,1.0000,baran
+146,MeasureName,heart attack patients given aspirin at discharge,1.0000,baran
+220,MeasureName,heart attack patients given aspirin at arrival,1.0000,baran
+282,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.0000,baran
+347,MeasureName,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,1.0000,baran
+381,MeasureName,heart attack patients given aspirin at discharge,1.0000,baran
+390,MeasureName,heart failure patients given smoking cessation advice/counseling,1.0000,baran
+474,MeasureName,heart failure patients given discharge instructions,1.0000,baran
+652,MeasureName,heart failure patients given smoking cessation advice/counseling,1.0000,baran
+673,MeasureName,heart attack patients given pci within 90 minutes of arrival,1.0000,baran
+706,MeasureName,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,1.0000,baran
+707,MeasureName,pneumonia patients given the most appropriate initial antibiotic(s),1.0000,baran
+714,MeasureName,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),1.0000,baran
+803,MeasureName,heart attack patients given aspirin at arrival,1.0000,baran
+817,MeasureName,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,1.0000,baran
+903,MeasureName,children who received reliever medication while hospitalized for asthma,1.0000,baran
+916,MeasureName,heart failure patients given smoking cessation advice/counseling,1.0000,baran
+257,Score,96%,1.0000,baran
+412,Address1,124 s memorial dr,1.0000,baran
+412,Score,100%,1.0000,baran
+489,Score,100%,1.0000,baran
+515,Score,100%,1.0000,baran
+712,Score,100%,1.0000,baran
+214,ProviderNumber,10011,1.0000,baran
+164,Score,97%,1.0000,baran
+209,Score,95%,1.0000,baran
+379,Score,95%,1.0000,baran
+406,Score,94%,1.0000,baran
+427,Score,97%,1.0000,baran
+719,Score,97%,1.0000,baran
+770,Score,93%,1.0000,baran
+889,Score,95%,1.0000,baran
+214,Stateavg,al_scip-inf-2,1.0000,baran
+194,Stateavg,al_scix-vte-2,1.0000,baran
+374,Stateavg,al_scip-inf-2,1.0000,baran
+765,Stateavg,al_scix-vte-1,1.0000,baran
+797,Stateavg,xl_scip-inf-2,1.0000,baran
+14,ProviderNumber,10019,1.0000,baran
+46,ProviderNumber,10005,1.0000,baran
+82,ProviderNumber,10006,1.0000,baran
+245,ProviderNumber,10015,1.0000,baran
+254,ProviderNumber,10015,1.0000,baran
+274,ProviderNumber,10016,1.0000,baran
+315,ProviderNumber,10038,1.0000,baran
+361,ProviderNumber,10086,1.0000,baran
+409,ProviderNumber,10108,1.0000,baran
+560,ProviderNumber,10024,1.0000,baran
+609,ProviderNumber,10027,1.0000,baran
+628,ProviderNumber,10029,1.0000,baran
+640,ProviderNumber,10029,1.0000,baran
+646,ProviderNumber,10032,1.0000,baran
+656,ProviderNumber,10032,1.0000,baran
+705,ProviderNumber,10034,1.0000,baran
+722,ProviderNumber,10035,1.0000,baran
+725,ProviderNumber,10035,1.0000,baran
+756,ProviderNumber,10036,1.0000,baran
+781,ProviderNumber,10039,1.0000,baran
+790,ProviderNumber,10039,1.0000,baran
+794,ProviderNumber,10039,1.0000,baran
+860,ProviderNumber,10044,1.0000,baran
+879,ProviderNumber,10045,1.0000,baran
+889,ProviderNumber,10045,1.0000,baran
+934,ProviderNumber,10047,1.0000,baran
+956,ProviderNumber,10049,1.0000,baran
+58,Address1,1000 first street north,1.0000,baran
+95,Address1,702 n main st,1.0000,baran
+107,Address1,8000 alabama highway 69,1.0000,baran
+162,Address1,1256 military street south,1.0000,baran
+176,Address1,8000 alabama highway 69,1.0000,baran
+261,Address1,33700 highway 43,1.0000,baran
+265,Address1,33700 highway 43,1.0000,baran
+276,Address1,200 med center drive,1.0000,baran
+317,Address1,301 east 18th st,1.0000,baran
+335,Address1,4370 west main street,1.0000,baran
+364,Address1,1300 south montgomery avenue,1.0000,baran
+394,Address1,1256 military street south,1.0000,baran
+416,Address1,1256 military street south,1.0000,baran
+432,Address1,2451 fillingim street,1.0000,baran
+452,Address1,1720 university blvd,1.0000,baran
+473,Address1,126 hospital ave,1.0000,baran
+485,Address1,126 hospital ave,1.0000,baran
+653,Address1,702 n main st,1.0000,baran
+768,Address1,1000 first street north,1.0000,baran
+850,Address1,1010 lay dam road,1.0000,baran
+858,Address1,1256 military street south,1.0000,baran
+916,Address1,600 south third street,1.0000,baran
+935,Address1,101 hospital circle,1.0000,baran
+936,Address1,515 miranda st,1.0000,baran
+946,Address1,201 pine street northwest,1.0000,baran
+957,Address1,400 n edwards street,1.0000,baran
+987,Address1,150 gilbreath drive,1.0000,baran
+579,City,valley,1.0000,baran
+579,CountyName,chambers,1.0000,baran
+68,CountyName,marshall,1.0000,baran
+137,CountyName,crenshaw,1.0000,baran
+217,CountyName,jefferson,1.0000,baran
+253,CountyName,clarke,1.0000,baran
+416,CountyName,talladega,1.0000,baran
+457,CountyName,jefferson,1.0000,baran
+458,CountyName,jefferson,1.0000,baran
+466,CountyName,jefferson,1.0000,baran
+503,CountyName,cherokee,1.0000,baran
+514,CountyName,cherokee,1.0000,baran
+591,CountyName,chambers,1.0000,baran
+603,CountyName,coffee,1.0000,baran
+634,CountyName,lee,1.0000,baran
+673,CountyName,jefferson,1.0000,baran
+690,CountyName,jefferson,1.0000,baran
+693,CountyName,elmore,1.0000,baran
+699,CountyName,elmore,1.0000,baran
+753,CountyName,covington,1.0000,baran
+918,CountyName,etowah,1.0000,baran
+944,CountyName,butler,1.0000,baran
+967,CountyName,coffee,1.0000,baran
+11,City,sheffield,1.0000,baran
+80,City,florence,1.0000,baran
+89,City,florence,1.0000,baran
+94,City,florence,1.0000,baran
+312,City,anniston,1.0000,baran
+368,City,winfield,1.0000,baran
+438,City,anchorage,1.0000,baran
+591,City,valley,1.0000,baran
+697,City,tallassee,1.0000,baran
+757,City,andalusia,1.0000,baran
+773,City,anniston,1.0000,baran
+856,City,hamilton,1.0000,baran
+950,City,georgiana,1.0000,baran
+843,MeasureCode,pn-6,1.0000,baran
+102,MeasureCode,pn-6,1.0000,baran
+649,MeasureCode,pn-6,1.0000,baran
+677,MeasureCode,pn-6,1.0000,baran
+435,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.0000,baran
+448,MeasureName,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),1.0000,baran
+843,Stateavg,al_pn-6,1.0000,baran
+335,Stateavg,al_pn-2,1.0000,baran
+73,CountyName,lauderdale,1.0000,baran
+78,CountyName,lauderdale,1.0000,baran
+222,CountyName,de kalb,1.0000,baran
+224,CountyName,de kalb,1.0000,baran
+228,CountyName,de kalb,1.0000,baran
+239,CountyName,de kalb,1.0000,baran
+313,CountyName,calhoun,1.0000,baran
+325,CountyName,calhoun,1.0000,baran
+347,CountyName,houston,1.0000,baran
+528,CountyName,montgomery,1.0000,baran
+541,CountyName,montgomery,1.0000,baran
+552,CountyName,montgomery,1.0000,baran
+723,CountyName,cullman,1.0000,baran
+731,CountyName,cullman,1.0000,baran
+786,CountyName,madison,1.0000,baran
+799,CountyName,madison,1.0000,baran
+896,CountyName,fayette,1.0000,baran
+674,MeasureCode,hf-1,1.0000,baran
+674,Sample,618 patients,1.0000,baran
+92,Sample,619 paxienxs,1.0000,baran
+414,Sample,125 patixnts,1.0000,baran
+445,Sample,521 patiexts,1.0000,baran
+589,Sample,172 patxents,1.0000,baran
+777,Sample,193 paxienxs,1.0000,baran
+867,Sample,121 patiexts,1.0000,baran
+906,Sample,126 patxents,1.0000,baran
+737,Address1,1108 ross clark circle,1.0000,baran
+121,MeasureCode,ami-2,1.0000,baran
+98,MeasureCode,ami-2,1.0000,baran
+399,MeasureCode,hf-1,1.0000,baran
+695,MeasureCode,ami-2,1.0000,baran
+719,MeasureCode,ami-2,1.0000,baran
+730,MeasureCode,hf-1,1.0000,baran
+750,MeasureCode,hf-1,1.0000,baran
+775,MeasureCode,ami-2,1.0000,baran
+866,MeasureCode,hf-1,1.0000,baran
+121,Score,100%,1.0000,baran
+337,Score,100%,1.0000,baran
+57,City,boaz,1.0000,baran
+602,City,elba,1.0000,baran
+57,Stateavg,al_pn-3b,1.0000,baran
+371,Stateavg,al_pn-7,1.0000,baran
+921,Stateavg,al_pn-6,1.0000,baran
+4,City,birmingham,1.0000,baran
+8,City,birmingham,1.0000,baran
+181,City,guntersville,1.0000,baran
+208,City,birmingham,1.0000,baran
+213,City,birmingham,1.0000,baran
+229,City,fort payne,1.0000,baran
+475,City,ozark,1.0000,baran
+486,City,ozark,1.0000,baran
+518,City,montgomery,1.0000,baran
+691,City,birmingham,1.0000,baran
+737,City,cullman,1.0000,baran
+822,City,gadsden,1.0000,baran
+896,City,fayette,1.0000,baran
+961,City,enterprise,1.0000,baran
+969,City,enterprise,1.0000,baran
+986,City,oneonta,1.0000,baran
+109,MeasureCode,pn-5c,1.0000,baran
+178,MeasureCode,hf-2,1.0000,baran
+191,MeasureCode,scip-inf-4,1.0000,baran
+265,MeasureCode,scip-inf-3,1.0000,baran
+350,MeasureCode,ami-2,1.0000,baran
+392,MeasureCode,pn-3b,1.0000,baran
+410,MeasureCode,scip-inf-1,1.0000,baran
+465,MeasureCode,scip-vte-1,1.0000,baran
+496,MeasureCode,ami-5,1.0000,baran
+581,MeasureCode,pn-5c,1.0000,baran
+640,MeasureCode,scip-vte-1,1.0000,baran
+692,MeasureCode,ami-1,1.0000,baran
+736,MeasureCode,scip-inf-2,1.0000,baran
+789,MeasureCode,pn-2,1.0000,baran
+931,MeasureCode,ami-1,1.0000,baran
+565,Stateavg,al_scip-vte-1,1.0000,baran
+348,Stateavg,al_scip-vte-2,1.0000,baran
+761,Stateavg,al_scip-inf-2,1.0000,baran
+296,Address1,1720 university blvd,1.0000,baran
+351,Address1,1300 south montgomery avenue,1.0000,baran
+655,City,wedowee,1.0000,baran
+70,Stateavg,al_ami-1,1.0000,baran
+245,Stateavg,al_ami-1,1.0000,baran
+249,Stateavg,al_ami-5,1.0000,baran
+270,Stateavg,al_ami-1,1.0000,baran
+388,Stateavg,al_hf-2,1.0000,baran
+478,Stateavg,al_pn-2,1.0000,baran
+556,Stateavg,al_pn-5c,1.0000,baran
+568,Stateavg,al_ami-2,1.0000,baran
+623,Stateavg,al_ami-8a,1.0000,baran
+647,Stateavg,al_ami-7a,1.0000,baran
+679,Stateavg,al_pn-3b,1.0000,baran
+722,Stateavg,al_ami-7a,1.0000,baran
+788,Stateavg,al_hf-4,1.0000,baran
+828,Stateavg,al_ami-1,1.0000,baran
+699,Score,88%,1.0000,baran
+239,Score,88%,1.0000,baran
+238,Score,97%,1.0000,baran
+159,Score,97%,1.0000,baran
+463,Sample,0 patients,1.0000,baran
+547,Sample,0 patients,1.0000,baran
+253,Score,89%,1.0000,baran
+188,Score,95%,1.0000,baran
+507,Score,93%,1.0000,baran
+861,Score,80%,1.0000,baran
+524,Sample,257 patients,1.0000,baran
+419,Sample,4 patients,1.0000,baran

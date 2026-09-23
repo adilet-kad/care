@@ -1,0 +1,16 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,CARE,mondrian_src,0.05,detected,0.693978349120433,0.010951829852280381,0.46275066173028445,0.013426468642534762,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,LLMOnly,-,0.05,detected,0.0,0.64789972899729,0.35210027100271,0.6503048780487805,False,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,CARE,mondrian,0.1,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,CARE,mondrian_src,0.1,detected,0.6792963464140731,0.01371308016877637,0.47899590163934425,0.014978902953586493,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,LLMOnly,-,0.1,detected,0.0,0.64789972899729,0.35210027100271,0.6503048780487805,False,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,CARE,marginal,0.2,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,CARE,mondrian,0.2,detected,0.8147646461225871,0.12541133455210238,0.27337142857142854,0.13016453382084095,True,False,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,CARE,mondrian_src,0.2,detected,0.6792963464140731,0.01371308016877637,0.47899590163934425,0.014978902953586493,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,LLMOnly,-,0.2,detected,0.0,0.64789972899729,0.35210027100271,0.6503048780487805,False,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv
+flights,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_flights_mapped.csv

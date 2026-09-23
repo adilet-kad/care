@@ -1,0 +1,517 @@
+row_id,column,value,confidence,source
+363,article_language,eng,1.0000,baran
+181,article_language,eng,1.0000,baran
+210,article_language,eng,1.0000,baran
+691,article_language,eng,1.0000,baran
+695,article_language,eng,1.0000,baran
+363,article_jissue,1,1.0000,baran
+164,article_jissue,0,1.0000,baran
+577,article_jissue,1,1.0000,baran
+674,article_jissue,4,1.0000,baran
+829,article_jissue,0,1.0000,baran
+843,article_jissue,1,1.0000,baran
+856,article_jissue,0,1.0000,baran
+990,article_jissue,1,1.0000,baran
+363,article_pagination,56-64,1.0000,baran
+99,article_pagination,245-8,1.0000,baran
+242,article_pagination,52-63,1.0000,baran
+358,article_pagination,167-72,1.0000,baran
+383,article_pagination,974-81,1.0000,baran
+405,article_pagination,56-64,1.0000,baran
+417,article_pagination,56-64,1.0000,baran
+555,article_pagination,593-5,1.0000,baran
+627,article_pagination,1271-6,1.0000,baran
+881,article_pagination,721-7,1.0000,baran
+903,article_pagination,3118-29,1.0000,baran
+932,article_pagination,eng,1.0000,baran
+954,article_pagination,389-95,1.0000,baran
+967,article_pagination,613-5,1.0000,baran
+363,author_list,"{""O Serresse"",""C Boudreau-Lariviere"",""S Grelier"",""R Zory""}",1.0000,baran
+13,article_language,eng,1.0000,baran
+144,article_language,eng,1.0000,baran
+893,article_language,eng,1.0000,baran
+381,journal_title,Anesthesia And Analgesia,1.0000,baran
+83,journal_title,Anesthesia And Analgesia,1.0000,baran
+220,journal_title,Anesthesia And Analgesia,1.0000,baran
+739,journal_title,Anesthesia And Analgesia,1.0000,baran
+381,jounral_abbreviation,Anesth Analg,1.0000,baran
+17,jounral_abbreviation,Arch.Gen.Psychiatry,1.0000,baran
+24,jounral_abbreviation,J. Clin. Oncol.,1.0000,baran
+126,jounral_abbreviation,Stat Methods Med Res,1.0000,baran
+192,jounral_abbreviation,Ugeskrift for laeger,1.0000,baran
+218,jounral_abbreviation,Ann. Intern. Med.,1.0000,baran
+296,jounral_abbreviation,Tumour Biol.,1.0000,baran
+320,jounral_abbreviation,Cardiol Young,1.0000,baran
+587,jounral_abbreviation,Eur J Anaesthesiol,1.0000,baran
+746,jounral_abbreviation,Circulation,1.0000,baran
+780,jounral_abbreviation,J. Bone Miner. Res.,1.0000,baran
+791,jounral_abbreviation,Revista medico-chirurgicala a Societatii de Medici si Naturalisti din Iasi,1.0000,baran
+798,jounral_abbreviation,The American journal of clinical nutrition,1.0000,baran
+965,jounral_abbreviation,Diabetic medicine : a journal of the British Diabetic Association,1.0000,baran
+2,article_jissue,1,1.0000,baran
+12,article_jissue,1,1.0000,baran
+35,article_jissue,-1,1.0000,baran
+45,article_jissue,1,1.0000,baran
+57,article_jissue,1,1.0000,baran
+58,article_jissue,0,1.0000,baran
+70,article_jissue,2,1.0000,baran
+93,article_jissue,1,1.0000,baran
+104,article_jissue,0,1.0000,baran
+146,article_jissue,0,1.0000,baran
+147,article_jissue,0,1.0000,baran
+151,article_jissue,6,1.0000,baran
+243,article_jissue,7,1.0000,baran
+247,article_jissue,1,1.0000,baran
+291,article_jissue,1,1.0000,baran
+299,article_jissue,0,1.0000,baran
+351,article_jissue,1,1.0000,baran
+353,article_jissue,0,1.0000,baran
+386,article_jissue,1,1.0000,baran
+401,article_jissue,1,1.0000,baran
+446,article_jissue,1,1.0000,baran
+462,article_jissue,1,1.0000,baran
+469,article_jissue,0,1.0000,baran
+478,article_jissue,1,1.0000,baran
+493,article_jissue,12,1.0000,baran
+517,article_jissue,1,1.0000,baran
+541,article_jissue,1,1.0000,baran
+547,article_jissue,0,1.0000,baran
+549,article_jissue,1,1.0000,baran
+560,article_jissue,1,1.0000,baran
+571,article_jissue,1,1.0000,baran
+576,article_jissue,1,1.0000,baran
+599,article_jissue,0,1.0000,baran
+629,article_jissue,4,1.0000,baran
+654,article_jissue,1,1.0000,baran
+663,article_jissue,1,1.0000,baran
+684,article_jissue,1,1.0000,baran
+709,article_jissue,1,1.0000,baran
+730,article_jissue,4,1.0000,baran
+736,article_jissue,0,1.0000,baran
+772,article_jissue,1,1.0000,baran
+784,article_jissue,1,1.0000,baran
+787,article_jissue,0,1.0000,baran
+793,article_jissue,1,1.0000,baran
+795,article_jissue,1,1.0000,baran
+832,article_jissue,2,1.0000,baran
+842,article_jissue,5,1.0000,baran
+862,article_jissue,1,1.0000,baran
+868,article_jissue,3,1.0000,baran
+879,article_jissue,3,1.0000,baran
+891,article_jissue,4,1.0000,baran
+935,article_jissue,0,1.0000,baran
+940,article_jissue,1,1.0000,baran
+957,article_jissue,2,1.0000,baran
+976,article_jissue,3,1.0000,baran
+977,article_jissue,0,1.0000,baran
+979,article_jissue,0,1.0000,baran
+994,article_jissue,0,1.0000,baran
+381,article_jcreated_at,1/6/05,1.0000,baran
+24,article_jcreated_at,2/6/05,1.0000,baran
+85,article_jcreated_at,1/6/05,1.0000,baran
+107,article_jcreated_at,7/6/05,1.0000,baran
+114,article_jcreated_at,1/6/05,1.0000,baran
+128,article_jcreated_at,7/6/15,1.0000,baran
+167,article_jcreated_at,1/6/05,1.0000,baran
+205,article_jcreated_at,3/6/15,1.0000,baran
+233,article_jcreated_at,1/6/15,1.0000,baran
+252,article_jcreated_at,1/6/15,1.0000,baran
+279,article_jcreated_at,3/6/05,1.0000,baran
+281,article_jcreated_at,1/6/05,1.0000,baran
+291,article_jcreated_at,1/6/05,1.0000,baran
+315,article_jcreated_at,1/6/15,1.0000,baran
+332,article_jcreated_at,1/6/05,1.0000,baran
+376,article_jcreated_at,1/6/05,1.0000,baran
+377,article_jcreated_at,1/6/05,1.0000,baran
+397,article_jcreated_at,1/6/15,1.0000,baran
+413,article_jcreated_at,1/6/15,1.0000,baran
+414,article_jcreated_at,1/6/15,1.0000,baran
+445,article_jcreated_at,1/6/05,1.0000,baran
+472,article_jcreated_at,7/6/15,1.0000,baran
+473,article_jcreated_at,1/6/05,1.0000,baran
+519,article_jcreated_at,1/6/05,1.0000,baran
+522,article_jcreated_at,1/6/05,1.0000,baran
+533,article_jcreated_at,3/6/15,1.0000,baran
+543,article_jcreated_at,1/6/05,1.0000,baran
+568,article_jcreated_at,1/6/05,1.0000,baran
+595,article_jcreated_at,7/6/05,1.0000,baran
+606,article_jcreated_at,1/6/05,1.0000,baran
+653,article_jcreated_at,1/6/05,1.0000,baran
+701,article_jcreated_at,1/6/05,1.0000,baran
+711,article_jcreated_at,2/6/05,1.0000,baran
+751,article_jcreated_at,1/6/05,1.0000,baran
+810,article_jcreated_at,8/6/15,1.0000,baran
+843,article_jcreated_at,1/6/05,1.0000,baran
+860,article_jcreated_at,1/6/15,1.0000,baran
+876,article_jcreated_at,4/6/05,1.0000,baran
+898,article_jcreated_at,1/6/05,1.0000,baran
+920,article_jcreated_at,1/6/05,1.0000,baran
+947,article_jcreated_at,1/6/05,1.0000,baran
+381,article_pagination,1427-30,1.0000,baran
+582,article_language,eng,1.0000,baran
+19,journal_title,Clinical & Translational Oncology: Official Publication of the Federation of Spanish Oncology Societes & of the National Cancer Institute of Mexico,1.0000,baran
+64,journal_title,Indian Journal of Pathology and Microbiology,1.0000,baran
+135,journal_title,eng,1.0000,baran
+148,journal_title,Consumer Reports on Health,1.0000,baran
+189,journal_title,Cochrane Database Syst. Rev.,1.0000,baran
+288,journal_title,The Journals of Gerontology: Series A: Biological Sciences and Medical Sciences,1.0000,baran
+407,journal_title,J Okla State Med Assoc,1.0000,baran
+629,journal_title,Prediccion de la masa muscular apendicular esqueletica basado en mediciones antropometricas en Adultos Mayores Chilenos.,1.0000,baran
+698,journal_title,Gut,1.0000,baran
+798,journal_title,Am J Clin Nutr,1.0000,baran
+180,jounral_abbreviation,Orthopedics,1.0000,baran
+203,jounral_abbreviation,J. Infect. Dis.,1.0000,baran
+998,jounral_abbreviation,Disabil Rehabil,1.0000,baran
+582,journal_issn,1433-0350,1.0000,baran
+7,journal_issn,eng,1.0000,baran
+49,journal_issn,eng,1.0000,baran
+52,journal_issn,eng,1.0000,baran
+74,journal_issn,eng,1.0000,baran
+84,journal_issn,eng,1.0000,baran
+105,journal_issn,eng,1.0000,baran
+150,journal_issn,eng,1.0000,baran
+165,journal_issn,eng,1.0000,baran
+171,journal_issn,eng,1.0000,baran
+282,journal_issn,eng,1.0000,baran
+303,journal_issn,eng,1.0000,baran
+347,journal_issn,eng,1.0000,baran
+348,journal_issn,eng,1.0000,baran
+368,journal_issn,eng,1.0000,baran
+369,journal_issn,eng,1.0000,baran
+383,journal_issn,eng,1.0000,baran
+397,journal_issn,eng,1.0000,baran
+440,journal_issn,eng,1.0000,baran
+455,journal_issn,eng,1.0000,baran
+529,journal_issn,eng,1.0000,baran
+570,journal_issn,eng,1.0000,baran
+609,journal_issn,eng,1.0000,baran
+698,journal_issn,eng,1.0000,baran
+904,journal_issn,eng,1.0000,baran
+907,journal_issn,eng,1.0000,baran
+973,journal_issn,eng,1.0000,baran
+982,journal_issn,1447-0594,1.0000,baran
+582,article_jvolumn,30,1.0000,baran
+9,article_jvolumn,30,1.0000,baran
+10,article_jvolumn,30,1.0000,baran
+25,article_jvolumn,15,1.0000,baran
+63,article_jvolumn,14,1.0000,baran
+107,article_jvolumn,1,1.0000,baran
+140,article_jvolumn,1,1.0000,baran
+143,article_jvolumn,30,1.0000,baran
+147,article_jvolumn,30,1.0000,baran
+157,article_jvolumn,34,1.0000,baran
+161,article_jvolumn,1,1.0000,baran
+164,article_jvolumn,30,1.0000,baran
+166,article_jvolumn,30,1.0000,baran
+177,article_jvolumn,16,1.0000,baran
+182,article_jvolumn,30,1.0000,baran
+185,article_jvolumn,30,1.0000,baran
+188,article_jvolumn,1,1.0000,baran
+200,article_jvolumn,1,1.0000,baran
+203,article_jvolumn,7,1.0000,baran
+222,article_jvolumn,19,1.0000,baran
+224,article_jvolumn,12,1.0000,baran
+237,article_jvolumn,30,1.0000,baran
+239,article_jvolumn,1,1.0000,baran
+244,article_jvolumn,30,1.0000,baran
+245,article_jvolumn,19,1.0000,baran
+252,article_jvolumn,1,1.0000,baran
+284,article_jvolumn,30,1.0000,baran
+287,article_jvolumn,30,1.0000,baran
+311,article_jvolumn,30,1.0000,baran
+312,article_jvolumn,30,1.0000,baran
+313,article_jvolumn,30,1.0000,baran
+314,article_jvolumn,30,1.0000,baran
+319,article_jvolumn,30,1.0000,baran
+321,article_jvolumn,30,1.0000,baran
+322,article_jvolumn,30,1.0000,baran
+324,article_jvolumn,188,1.0000,baran
+341,article_jvolumn,30,1.0000,baran
+355,article_jvolumn,1,1.0000,baran
+375,article_jvolumn,30,1.0000,baran
+403,article_jvolumn,19,1.0000,baran
+408,article_jvolumn,30,1.0000,baran
+412,article_jvolumn,1,1.0000,baran
+426,article_jvolumn,30,1.0000,baran
+457,article_jvolumn,30,1.0000,baran
+459,article_jvolumn,65,1.0000,baran
+468,article_jvolumn,30,1.0000,baran
+485,article_jvolumn,30,1.0000,baran
+490,article_jvolumn,30,1.0000,baran
+506,article_jvolumn,30,1.0000,baran
+520,article_jvolumn,30,1.0000,baran
+531,article_jvolumn,30,1.0000,baran
+540,article_jvolumn,30,1.0000,baran
+544,article_jvolumn,1,1.0000,baran
+567,article_jvolumn,30,1.0000,baran
+568,article_jvolumn,1,1.0000,baran
+580,article_jvolumn,34,1.0000,baran
+584,article_jvolumn,30,1.0000,baran
+590,article_jvolumn,30,1.0000,baran
+595,article_jvolumn,30,1.0000,baran
+596,article_jvolumn,1,1.0000,baran
+613,article_jvolumn,30,1.0000,baran
+625,article_jvolumn,7,1.0000,baran
+667,article_jvolumn,30,1.0000,baran
+697,article_jvolumn,30,1.0000,baran
+707,article_jvolumn,30,1.0000,baran
+726,article_jvolumn,30,1.0000,baran
+747,article_jvolumn,66,1.0000,baran
+750,article_jvolumn,30,1.0000,baran
+751,article_jvolumn,30,1.0000,baran
+771,article_jvolumn,30,1.0000,baran
+779,article_jvolumn,30,1.0000,baran
+796,article_jvolumn,30,1.0000,baran
+819,article_jvolumn,30,1.0000,baran
+844,article_jvolumn,53,1.0000,baran
+863,article_jvolumn,1,1.0000,baran
+866,article_jvolumn,72,1.0000,baran
+871,article_jvolumn,7,1.0000,baran
+875,article_jvolumn,1,1.0000,baran
+877,article_jvolumn,30,1.0000,baran
+883,article_jvolumn,28,1.0000,baran
+930,article_jvolumn,30,1.0000,baran
+932,article_jvolumn,27,1.0000,baran
+950,article_jvolumn,13,1.0000,baran
+966,article_jvolumn,30,1.0000,baran
+998,article_jvolumn,-1,1.0000,baran
+275,article_jissue,0,1.0000,baran
+728,article_jissue,0,1.0000,baran
+733,article_jissue,8,1.0000,baran
+801,article_jissue,11,1.0000,baran
+878,article_jissue,0,1.0000,baran
+11,article_jcreated_at,eng,1.0000,baran
+242,article_jcreated_at,1/12/02,1.0000,baran
+597,article_jcreated_at,eng,1.0000,baran
+875,article_jcreated_at,eng,1.0000,baran
+880,article_jcreated_at,1/14/12,1.0000,baran
+911,article_jcreated_at,eng,1.0000,baran
+932,article_jcreated_at,eng,1.0000,baran
+968,article_jcreated_at,eng,1.0000,baran
+582,article_pagination,631-8,1.0000,baran
+34,article_pagination,eng,1.0000,baran
+62,article_pagination,1427-30,1.0000,baran
+65,article_pagination,eng,1.0000,baran
+192,article_pagination,eng,1.0000,baran
+274,article_pagination,eng,1.0000,baran
+303,article_pagination,45-53; quiz 54,1.0000,baran
+468,article_pagination,eng,1.0000,baran
+478,article_pagination,eng,1.0000,baran
+590,article_pagination,eng,1.0000,baran
+675,article_pagination,eng,1.0000,baran
+824,article_pagination,6-May,1.0000,baran
+832,article_pagination,135-41,1.0000,baran
+860,article_pagination,eng,1.0000,baran
+306,article_language,eng,1.0000,baran
+20,article_language,eng,1.0000,baran
+60,article_language,eng,1.0000,baran
+85,article_language,eng,1.0000,baran
+99,article_language,eng,1.0000,baran
+110,article_language,eng,1.0000,baran
+120,article_language,eng,1.0000,baran
+154,article_language,eng,1.0000,baran
+253,article_language,eng,1.0000,baran
+259,article_language,eng,1.0000,baran
+279,article_language,eng,1.0000,baran
+368,article_language,eng,1.0000,baran
+442,article_language,eng,1.0000,baran
+471,article_language,eng,1.0000,baran
+512,article_language,eng,1.0000,baran
+523,article_language,eng,1.0000,baran
+530,article_language,eng,1.0000,baran
+580,article_language,eng,1.0000,baran
+683,article_language,eng,1.0000,baran
+708,article_language,eng,1.0000,baran
+716,article_language,eng,1.0000,baran
+720,article_language,eng,1.0000,baran
+759,article_language,eng,1.0000,baran
+815,article_language,eng,1.0000,baran
+877,article_language,eng,1.0000,baran
+886,article_language,eng,1.0000,baran
+306,journal_title,J Okla State Med Assoc,1.0000,baran
+25,journal_title,Psychological medicine,1.0000,baran
+134,journal_title,Paliativn_ Schanzova osteotomie p_i nereponibiln_ luxaci kyeln_ho kloubu u pacient s d_tskou mozkovou obrnou v adolescentn_m v_u,1.0000,baran
+173,journal_title,Respiratory medicine,1.0000,baran
+199,journal_title,Autonomic Neuroscience: Basic and Clinical,1.0000,baran
+266,journal_title,Am J Clin Nutr,1.0000,baran
+273,journal_title,eng,1.0000,baran
+309,jounral_abbreviation,Gut,1.0000,baran
+487,jounral_abbreviation,Physiotherapy,1.0000,baran
+521,jounral_abbreviation,Int J Obes (Lond),1.0000,baran
+615,jounral_abbreviation,Catheter Cardiovasc Interv,1.0000,baran
+194,article_jvolumn,106,1.0000,baran
+619,article_jvolumn,-1,1.0000,baran
+306,article_jissue,7,1.0000,baran
+306,article_pagination,327-32,1.0000,baran
+121,author_list,"{""Demetrios J. Kutsogiannis"",""Neil K. Singla"",""Frances Chung"",""Stephen R. Lane"",""Jeremey Levin"",""Joseph V.J. Pergolizzi"",""Brendan Johnson"",""Linda Blackburn"",""Sonia K. Singla""}",1.0000,baran
+227,author_list,"{""G Jayashree Jagadeesh"",""David L Nelson"",""Taizo Wada"",""Fabio Candotti""}",1.0000,baran
+521,author_list,"{""M F Jumean"",""P J Erwin"",""V M Montori"",""F Lopez-Jimenez"",""A Romero-Corral"",""V K Somers"",""D O Okorodudu""}",1.0000,baran
+556,author_list,"{""M F Jumean"",""P J Erwin"",""V M Montori"",""F Lopez-Jimenez"",""A Romero-Corral"",""V K Somers"",""D O Okorodudu""}",1.0000,baran
+626,author_list,"{""Diana Duro"",""Augusto Goulo"",""Gon_alo Santos"",""Nuno Mendon_a"",""Isabel Santana"",""Eg_dio Machado""}",1.0000,baran
+729,author_list,"{""T. Dovan"",""R. R. Neutra"",""D. A. Savitz"",""R. I. Kavet""}",1.0000,baran
+802,author_list,"{""Antoine Hone-Blanchet"",""Shirley Fecteau""}",1.0000,baran
+909,author_list,"{""Marie-Pierre Gagnon"",""Claude Sicotte"",""_dith-Romy Nsangou"",""Sonya Grenier"",""Julie Payne-Gagnon""}",1.0000,baran
+40,id,473026,1.0000,baran
+40,article_title,The incidence of contrast-induced nephropathy in trauma patients.,1.0000,baran
+19,article_title,ELDERLY AND PHYSICAL ACTIVITY: BENEFITS AND CHALLENGES IN SEARCH FOR LIFE QUALITY.,1.0000,baran
+49,article_title,"A prospective observational study of obesity, body composition, and insulin resistance in 18 women with bipolar disorder and 17 matched control subjects.",1.0000,baran
+64,article_title,[Limited experience in adrenocortical function tests in infants].,1.0000,baran
+106,article_title,Cardioactive steroid poisoning: a comparison of plant- and animal-derived compounds.,1.0000,baran
+148,article_title,"School, neighborhood, and family factors are associated with children's bullying involvement: a nationally representative longitudinal study.",1.0000,baran
+168,article_title,Environmental and genomic factors as well as interventions influencing smoking cessation: a systematic review of reviews and a proposed working model.,1.0000,baran
+181,article_title,Results of the phase II NCRI CLL206 trial of alemtuzumab in combination with high-dose methylprednisolone for high-risk (17P-) CLL,1.0000,baran
+189,article_title,The special status of actions in causal reasoning in rats.,1.0000,baran
+288,article_title,Pancytopenia : A rare presentation of legionella pneumonia,1.0000,baran
+372,article_title,Continuous aspiration of subglottic secretions in preventing ventilator-associated pneumonia.,1.0000,baran
+407,article_title,Preoperative administration of tramadol continuous infusion reduces postoperative morphine requirements in patients undergoing surgery following femur fracture,1.0000,baran
+511,article_title,"Phase II study of epirubicin, oxaliplatin and docetaxel combination in metastatic gastric or gastroesophageal junction adenocarcinoma.",1.0000,baran
+532,article_title,"Infectious diseases. As Ebola wanes, trials jockey for patients.",1.0000,baran
+546,article_title,Competencies for undergraduate community-based education for the health professions - A systematic review.,1.0000,baran
+551,article_title,Prognostic value of morning blood pressure surge in clinical events: a meta-analysis of longitudinal studies.,1.0000,baran
+589,article_title,Clinical course of patients with aspirin-exacerbated respiratory disease: can we predict the prognosis?,1.0000,baran
+628,article_title,Smoking and oral cancer.,1.0000,baran
+698,article_title,Hormonal and dietary characteristics in obese human subjects with and without food addiction.,1.0000,baran
+798,article_title,Implementing participatory intervention and research in communities: lessons from the Kahnawake Schools Diabetes Prevention Project in Canada,1.0000,baran
+993,article_title,Quantitative assessment of the influence of common variations (rs8034191 and rs1051730) at 15q25 and lung cancer risk.,1.0000,baran
+466,article_jissue,7,1.0000,baran
+388,article_pagination,323-333,1.0000,baran
+652,article_pagination,65-68-,1.0000,baran
+753,article_pagination,305-11,1.0000,baran
+40,author_list,"{""Rich Sinert"",""Shoma Desai"",""Antonia Hipp"",""Carmen Lopez""}",1.0000,baran
+400,id,34517,1.0000,baran
+400,article_title,Identification of a novel missense (C7W) mutation of SOD1 in a large familial amyotrophic lateral sclerosis pedigree.,1.0000,baran
+336,article_language,eng,1.0000,baran
+722,article_language,eng,1.0000,baran
+31,journal_title,Molecular Biology Reports,1.0000,baran
+155,journal_title,eng,1.0000,baran
+174,journal_title,eng,1.0000,baran
+218,journal_title,Annals of internal medicine,1.0000,baran
+272,journal_title,Gut,1.0000,baran
+279,journal_title,eng,1.0000,baran
+295,journal_title,eng,1.0000,baran
+371,journal_title,eng,1.0000,baran
+374,journal_title,Feminist Legal Studies,1.0000,baran
+544,journal_title,eng,1.0000,baran
+592,journal_title,eng,1.0000,baran
+660,journal_title,eng,1.0000,baran
+791,journal_title,eng,1.0000,baran
+809,journal_title,Journal of the neurological sciences,1.0000,baran
+922,journal_title,eng,1.0000,baran
+26,jounral_abbreviation,World J Pediatr Congenit Heart Surg,1.0000,baran
+650,jounral_abbreviation,Ugeskrift for laeger,1.0000,baran
+992,jounral_abbreviation,Revista medico-chirurgicala a Societatii de Medici si Naturalisti din Iasi,1.0000,baran
+400,journal_issn,1558-1497,1.0000,baran
+65,journal_issn,1547-5271,1.0000,baran
+521,journal_issn,0363-5023,1.0000,baran
+626,journal_issn,1462-2203,1.0000,baran
+909,journal_issn,0003-990X,1.0000,baran
+157,article_jissue,0,1.0000,baran
+265,article_jissue,0,1.0000,baran
+457,article_jissue,0,1.0000,baran
+794,article_jissue,0,1.0000,baran
+496,article_pagination,248-58,1.0000,baran
+603,article_pagination,925-31,1.0000,baran
+910,article_pagination,15-22,1.0000,baran
+26,author_list,"{""S. Sarkar"",""S. Grover""}",1.0000,baran
+79,author_list,"{""T Forsn"",""J Eriksson"",""C Osmond"",""D Barker""}",1.0000,baran
+168,author_list,"{""A Brand"",""J Van der Heyden"",""S de Viron"",""H Van Oyen"",""N Malats""}",1.0000,baran
+202,author_list,"{""Cynthia J. Carson""}",1.0000,baran
+264,author_list,"{""Pardis Pedram"",""Guang Sun""}",1.0000,baran
+266,author_list,"{""Yan-Yan Li"",""Yun Qian"",""Chuan-Wei Zhou""}",1.0000,baran
+290,author_list,"{""Ahmad A.S.""}",1.0000,baran
+596,author_list,"{""A. Sudo"",""S. Ishiguro"",""K. Iida""}",1.0000,baran
+703,author_list,"{""J. H. Littell"",""M. Popa"",""B. Forsythe""}",1.0000,baran
+860,author_list,"{""S. T. Visser"",""M. J. Postma"",""P. Denig"",""F. M. De Vries"",""E. Hak""}",1.0000,baran
+861,author_list,"{""Thompson NC"",""Calverley PMA"",""Olsson H""}",1.0000,baran
+294,id,904889,1.0000,baran
+89,article_language,eng,1.0000,baran
+206,article_language,eng,1.0000,baran
+341,article_language,eng,1.0000,baran
+416,article_language,eng,1.0000,baran
+446,article_language,ENG,1.0000,baran
+508,article_language,eng,1.0000,baran
+972,article_language,eng,1.0000,baran
+294,journal_title,Chin. Med,1.0000,baran
+26,journal_title,World journal for pediatric & congenital heart surgery,1.0000,baran
+227,journal_title,Int. Angiol.,1.0000,baran
+264,journal_title,Obesity reviews : an official journal of the International Association for the Study of Obesity,1.0000,baran
+290,journal_title,"Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",1.0000,baran
+485,journal_title,Nihon Koshu Eisei Zasshi,1.0000,baran
+532,jounral_abbreviation,Br.J.Anaesth.,1.0000,baran
+294,journal_issn,1749-8546,1.0000,baran
+546,article_jcreated_at,1/11/01,1.0000,baran
+625,article_jcreated_at,1/3/01,1.0000,baran
+677,article_jcreated_at,1/12/01,1.0000,baran
+736,article_jcreated_at,1/1/98,1.0000,baran
+753,article_jcreated_at,1/14/01,1.0000,baran
+100,journal_title,Journal of the American Dietetic Association,1.0000,baran
+100,jounral_abbreviation,J Am Diet Assoc,1.0000,baran
+100,article_jcreated_at,1/1/92,1.0000,baran
+199,article_jcreated_at,1/1/92,1.0000,baran
+437,article_jcreated_at,1/5/02,1.0000,baran
+645,article_jcreated_at,1/1/92,1.0000,baran
+742,article_jcreated_at,1/7/02,1.0000,baran
+867,article_jcreated_at,1/1/92,1.0000,baran
+97,id,931323,1.0000,baran
+465,article_jcreated_at,1/1/92,1.0000,baran
+97,author_list,"{""N. Jakubik"",""L. Trzpil"",""F. Raciborski"",""U. Samolinska-Zawisza"",""L. Samoliski"",""D. Paczesny"",""Z. Halat"",""J. Marszalkowska"",""B. Samolinski"",""P. Samel-Kowalik"",""A. Lusawa"",""J. Gutowska"",""A. Tomaszewska"",""A. Walkiewicz""}",1.0000,baran
+839,id,294719,1.0000,baran
+199,id,931323,1.0000,baran
+293,id,931323,1.0000,baran
+703,id,473026,1.0000,baran
+839,article_title,Prehospital hypertonic saline resuscitation attenuates the activation and promotes apoptosis of neutrophils in patients with severe traumatic brain injury.,1.0000,baran
+177,article_title,[Limited experience in adrenocortical function tests in infants].,1.0000,baran
+256,article_title,Pathophysiology of paradoxical embolism: evaluation of the role of interatrial septum anatomy based on the intracardiac echocardiography assessment of patients with right-to-left shunting.,1.0000,baran
+792,article_title,Why is functional capacity decreased in hypertensive patients? From mechanisms to clinical studies.,1.0000,baran
+403,id,722451,1.0000,baran
+348,article_title,Prehospital hypertonic saline resuscitation attenuates the activation and promotes apoptosis of neutrophils in patients with severe traumatic brain injury.,1.0000,baran
+579,article_jcreated_at,1/10/01,1.0000,baran
+403,author_list,"{""Birgit Schulze-Ehlers"",""Achim Spiller"",""Nina Steffen"",""Gesa Busch""}",1.0000,baran
+304,id,716785,1.0000,baran
+17,article_title,The relationship between capsulorhexis size and anterior chamber depth relation.,1.0000,baran
+71,article_title,Pharmacological treatments for obsessive-compulsive disorder in children and adolescents: a qualitative review.,1.0000,baran
+151,article_title,"Can moxibustion, an ancient treatment modality, be evaluated in a double-blind randomized controlled trial? - A narrative review",1.0000,baran
+338,article_title,Antimicrobial resistance of H. pylori isolates in alaska native persons from 2000-2008: Results from the alaska sentinel surveillance project,1.0000,baran
+388,article_title,Effects of multifunctional fabrics on cardiac autonomic tone and psychological state,1.0000,baran
+8,article_jcreated_at,1/1/62,1.0000,baran
+10,article_jcreated_at,1/8/02,1.0000,baran
+52,article_jcreated_at,1/5/02,1.0000,baran
+83,article_jcreated_at,1/4/02,1.0000,baran
+113,article_jcreated_at,1/2/02,1.0000,baran
+178,article_jcreated_at,1/6/02,1.0000,baran
+229,article_jcreated_at,1/9/02,1.0000,baran
+257,article_jcreated_at,1/9/02,1.0000,baran
+258,article_jcreated_at,1/1/92,1.0000,baran
+392,article_jcreated_at,1/3/02,1.0000,baran
+428,article_jcreated_at,1/1/92,1.0000,baran
+453,article_jcreated_at,1/7/02,1.0000,baran
+470,article_jcreated_at,1/1/92,1.0000,baran
+560,article_jcreated_at,1/9/02,1.0000,baran
+573,article_jcreated_at,1/1/92,1.0000,baran
+627,article_jcreated_at,1/8/02,1.0000,baran
+668,article_jcreated_at,1/1/92,1.0000,baran
+697,article_jcreated_at,1/8/02,1.0000,baran
+771,article_jcreated_at,1/7/02,1.0000,baran
+847,article_jcreated_at,1/4/02,1.0000,baran
+852,article_jcreated_at,1/1/92,1.0000,baran
+858,article_jcreated_at,1/1/92,1.0000,baran
+930,article_jcreated_at,1/5/02,1.0000,baran
+304,author_list,"{""Rutherford OM"",""Kennedy J"",""Skelton DA""}",1.0000,baran
+884,id,503159,1.0000,baran
+350,article_title,Prehospital hypertonic saline resuscitation attenuates the activation and promotes apoptosis of neutrophils in patients with severe traumatic brain injury.,1.0000,baran
+884,author_list,"{""E Fujimaki""}",1.0000,baran
+180,id,704111,1.0000,baran
+180,author_list,"{""Robert T Trousdale"",""J Ryan Martin""}",1.0000,baran
+365,id,283460,1.0000,baran
+365,author_list,"{""Marc N. Gourevitch"",""Jennifer McNeely"",""David Stevens"",""John Rotrosen"",""Ellie Grossman"",""Laura Huben"",""Marc Manseau"",""Joshua D. Lee""}",1.0000,baran
+593,id,313584,1.0000,baran
+593,author_list,"{""Jennifer L. Edwards"",""Cherie A. Lyons"",""Marcia E. Swords"",""Mary S. Rogers"",""Kathy E. Green""}",1.0000,baran
+242,id,638918,1.0000,baran
+242,author_list,"{""R Webster"",""E Spezi"",""S Mukherjee"",""R Adams"",""S Gwynne"",""J Staffurth"",""B Coles""}",1.0000,baran
+307,id,934177,1.0000,baran
+307,author_list,"{""NCT00750412 ""}",1.0000,baran
+622,id,646572,1.0000,baran
+351,id,646572,1.0000,baran
+622,article_title,[Medical and psychosocial care needs of cancer patients: a systematic review comparing urban and rural provisions].,1.0000,baran
+502,id,699523,1.0000,baran
+502,article_title,Regulating free speech,1.0000,baran

@@ -1,0 +1,39 @@
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{0.92}
+\begin{tabular}{llrrrrrrrl}
+\toprule
+& & \multicolumn{4}{c}{proposer (no \textsc{Care})} & \multicolumn{4}{c}{with \textsc{Care}} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+Proposer & Dataset & $n$ & acc. & $\pi_0$ & harm & $A(0.05)$ & $A(0.1)$ & $A(0.2)$ & $R(0.2)$ \\
+\midrule
+Baran & \textsc{hospital} & 500 & 0.909 & 0.683 & \textemdash & $0$ & $0.01$ & $0.58$ & $0.057$ \\
+Baran & \textsc{beers} & 3{,}316 & 0.864 & 0.019 & \textemdash & $0.36$ & $0.72$ & $0.80$ & $0.037$ \\
+Baran & \textsc{flights} & 4{,}920 & 1.000 & 1.000 & \textemdash & \multicolumn{4}{c}{\emph{excluded}} \\
+Baran & \textsc{rayyan} & 422 & 0.908 & 0.035 & \textemdash & $0$ & $0.27$ & $0.69$ & $0.042$ \\
+Baran & \textsc{tax} & 121{,}219 & 0.914 & 0.728 & \textemdash & $0.72$ & $0.73$ & $0.83$ & $0.008$ \\
+\addlinespace[1.5pt]
+BClean & \textsc{hospital}$^{\dagger}$ & 398 & 1.000 & 1.000 & \textemdash & $0.73$ & $0.73$ & $1.00$ & $0.000$ \\
+BClean & \textsc{beers} & 2{,}743 & 0.738 & 0.000 & \textemdash & $0$ & $0$ & $0.02$ & $0.017$ \\
+BClean & \textsc{flights} & 2{,}522 & 0.500 & 0.000 & \textemdash & $0.12$ & $0.12$ & $0.19$ & $0.034$ \\
+\addlinespace[1.5pt]
+Jellyfish & \textsc{hospital} & 509 & 0.422 & 0.051 & $0.29$ & \multicolumn{4}{c}{\emph{refused at every $\alpha$}} \\
+Jellyfish & \textsc{beers} & 3{,}357 & 0.194 & 0.000 & $0.33$ & $0$ & $0$ & $0.04$ & $0.004$ \\
+Jellyfish & \textsc{flights} & 4{,}920 & 0.018 & 0.000 & $0.46$ & \multicolumn{4}{c}{\emph{refused at every $\alpha$}} \\
+Jellyfish & \textsc{rayyan} & 945 & 0.002 & 0.000 & $0.55$ & \multicolumn{4}{c}{\emph{refused at every $\alpha$}} \\
+Jellyfish & \textsc{tax} & 15{,}628 & 0.023 & 0.000 & $0.40$ & \multicolumn{4}{c}{\emph{refused at every $\alpha$}} \\
+\addlinespace[1.5pt]
+RetClean & \textsc{hospital} & 509 & 0.422 & 0.051 & $0.29$ & \multicolumn{4}{c}{\emph{excluded}} \\
+RetClean & \textsc{flights} & 3{,}040 & 0.377 & 0.000 & $0.41$ & \multicolumn{4}{c}{\emph{refused at every $\alpha$}} \\
+\addlinespace[1.5pt]
+GPT-4o-mini & \textsc{hospital} & 509 & 0.456 & 0.051 & $0.38$ & \multicolumn{4}{c}{\emph{refused at every $\alpha$}} \\
+GPT-4o-mini & \textsc{beers} & 3{,}357 & 0.070 & 0.038 & $0.14$ & $0$ & $0$ & $0.04$ & $0.000$ \\
+GPT-4o-mini & \textsc{flights} & 4{,}901 & 0.075 & 0.000 & $0.13$ & \multicolumn{4}{c}{\emph{refused at every $\alpha$}} \\
+GPT-4o-mini & \textsc{rayyan} & 944 & 0.006 & 0.000 & $0.50$ & \multicolumn{4}{c}{\emph{refused at every $\alpha$}} \\
+\addlinespace[1.5pt]
+HoloClean & \textsc{hospital}$^{\dagger}$ & 232 & 1.000 & 1.000 & \textemdash & $0$ & $0.72$ & $1.00$ & $0.000$ \\
+HoloClean & \textsc{beers} & 121 & 1.000 & 1.000 & \textemdash & \multicolumn{4}{c}{\emph{excluded}} \\
+HoloClean & \textsc{flights} & 2{,}337 & 0.742 & 0.000 & \textemdash & $0.65$ & $0.68$ & $0.68$ & $0.014$ \\
+\addlinespace[1.5pt]
+\bottomrule
+\end{tabular}

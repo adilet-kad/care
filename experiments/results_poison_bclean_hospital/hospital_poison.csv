@@ -1,0 +1,9 @@
+dataset,baseline,poison_frac,trusted_poison,scoring,realized_error,err_lo,err_hi,human_cost,applied_contamination,thm2_bound,within_thm2_bound,backend
+hospital,CARE,0.0,False,errors,0.0,0.0,0.0,0.0,0.0,0.2,True,bclean:csvs/bclean_hospital_mapped.csv
+hospital,LLMOnly,0.0,False,errors,0.0,0.0,0.0,0.0,0.0,,,bclean:csvs/bclean_hospital_mapped.csv
+hospital,CARE,0.05,False,errors,0.0,0.0,0.0,0.04583333333333333,0.0,0.2,True,bclean:csvs/bclean_hospital_mapped.csv
+hospital,LLMOnly,0.05,False,errors,0.04583333333333332,0.038333333333333316,0.05333333333333333,0.0,0.04583333333333333,,,bclean:csvs/bclean_hospital_mapped.csv
+hospital,CARE,0.1,False,errors,0.0,0.0,0.0,0.09041666666666667,0.0,0.2,True,bclean:csvs/bclean_hospital_mapped.csv
+hospital,LLMOnly,0.1,False,errors,0.09041666666666665,0.07999999999999999,0.10041666666666664,0.0,0.09041666666666667,,,bclean:csvs/bclean_hospital_mapped.csv
+hospital,CARE,0.2,False,errors,0.0,0.0,0.0,0.19125,0.0,0.2,True,bclean:csvs/bclean_hospital_mapped.csv
+hospital,LLMOnly,0.2,False,errors,0.19125,0.18291666666666667,0.20166666666666666,0.0,0.19125,,,bclean:csvs/bclean_hospital_mapped.csv

@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights_ni_inner10,CARE,marginal,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,CARE,mondrian,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,LLMOnly,-,0.05,errors,0.0,0.3127692307692308,0.6872307692307692,0.3187692307692308,False,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,NoOp,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,CARE,marginal,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,CARE,mondrian,0.1,errors,0.980674846625767,0.015079365079365081,0.027506426735218508,0.045238095238095244,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,LLMOnly,-,0.1,errors,0.0,0.3127692307692308,0.6872307692307692,0.3187692307692308,False,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,NoOp,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,CARE,marginal,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,CARE,mondrian,0.2,errors,0.9226993865030675,0.04761904761904763,0.11413881748071981,0.08492063492063494,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,LLMOnly,-,0.2,errors,0.0,0.3127692307692308,0.6872307692307692,0.3187692307692308,False,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv
+flights_ni_inner10,NoOp,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner10/1/baran_flights_ni_inner10_mapped.csv

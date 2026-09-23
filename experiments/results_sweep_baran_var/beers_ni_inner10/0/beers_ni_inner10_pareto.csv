@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers_ni_inner10,CARE,marginal,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,CARE,mondrian,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,LLMOnly,-,0.05,errors,0.0,0.5070761014686248,0.4929238985313752,0.5114819759679572,False,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,NoOp,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,CARE,marginal,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,CARE,mondrian,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,LLMOnly,-,0.1,errors,0.0,0.5070761014686248,0.4929238985313752,0.5114819759679572,False,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,NoOp,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,CARE,marginal,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,CARE,mondrian,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,LLMOnly,-,0.2,errors,0.0,0.5070761014686248,0.4929238985313752,0.5114819759679572,False,True,baran:csvs/baran_beers_ni_inner10_mapped.csv
+beers_ni_inner10,NoOp,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_beers_ni_inner10_mapped.csv

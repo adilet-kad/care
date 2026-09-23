@@ -1,0 +1,2998 @@
+row_id,column,value,confidence,source
+994,Address1,150 gilbreath drive,1.0000,baran
+1,Address1,1720 university blvd,1.0000,baran
+10,Address1,849 south three notch street,1.0000,baran
+12,Address1,1000 first street north,1.0000,baran
+13,Address1,2801 debarr road,1.0000,baran
+17,Address1,1300 south montgomery avenue,1.0000,baran
+19,Address1,1300 south montgomery avenue,1.0000,baran
+23,Address1,1108 ross clark circle,1.0000,baran
+29,Address1,1108 ross clark circle,1.0000,baran
+30,Address1,1108 ross clark circle,1.0000,baran
+34,Address1,2451 fillingim street,1.0000,baran
+39,Address1,1108 ross clark circle,1.0000,baran
+40,Address1,1108 ross clark circle,1.0000,baran
+45,Address1,8000 alabama highway 69,1.0000,baran
+47,Address1,8000 alabama highway 69,1.0000,baran
+57,Address1,8000 alabama highway 69,1.0000,baran
+67,Address1,8000 alabama highway 69,1.0000,baran
+69,Address1,8000 alabama highway 69,1.0000,baran
+70,Address1,205 marengo street,1.0000,baran
+71,Address1,301 east 18th st,1.0000,baran
+74,Address1,1000 first street north,1.0000,baran
+79,Address1,205 marengo street,1.0000,baran
+80,Address1,205 marengo street,1.0000,baran
+82,Address1,205 marengo street,1.0000,baran
+85,Address1,205 marengo street,1.0000,baran
+91,Address1,150 gilbreath drive,1.0000,baran
+104,Address1,849 south three notch street,1.0000,baran
+108,Address1,849 south three notch street,1.0000,baran
+109,Address1,1530 u s highway 43,1.0000,baran
+113,Address1,8000 alabama highway 69,1.0000,baran
+118,Address1,849 south three notch street,1.0000,baran
+119,Address1,849 south three notch street,1.0000,baran
+120,Address1,101 hospital circle,1.0000,baran
+128,Address1,1530 u s highway 43,1.0000,baran
+132,Address1,4800 48th st,1.0000,baran
+139,Address1,101 hospital circle,1.0000,baran
+140,Address1,101 hospital circle,1.0000,baran
+141,Address1,301 east 18th st,1.0000,baran
+145,Address1,101 sivley rd,1.0000,baran
+147,Address1,201 pine street northwest,1.0000,baran
+148,Address1,2105 east south boulevard,1.0000,baran
+150,Address1,200 med center drive,1.0000,baran
+152,Address1,201 pine street northwest,1.0000,baran
+156,Address1,201 pine street northwest,1.0000,baran
+158,Address1,201 pine street northwest,1.0000,baran
+160,Address1,201 pine street northwest,1.0000,baran
+161,Address1,201 pine street northwest,1.0000,baran
+167,Address1,400 northwood dr,1.0000,baran
+170,Address1,150 gilbreath drive,1.0000,baran
+172,Address1,8000 alabama highway 69,1.0000,baran
+175,Address1,150 gilbreath drive,1.0000,baran
+176,Address1,8000 alabama highway 69,1.0000,baran
+184,Address1,849 south three notch street,1.0000,baran
+188,Address1,8000 alabama highway 69,1.0000,baran
+192,Address1,8000 alabama highway 69,1.0000,baran
+193,Address1,8000 alabama highway 69,1.0000,baran
+208,Address1,1530 u s highway 43,1.0000,baran
+217,Address1,1007 goodyear avenue,1.0000,baran
+221,Address1,200 med center drive,1.0000,baran
+223,Address1,849 south three notch street,1.0000,baran
+228,Address1,1000 first street north,1.0000,baran
+229,Address1,849 south three notch street,1.0000,baran
+233,Address1,200 med center drive,1.0000,baran
+234,Address1,101 hospital circle,1.0000,baran
+236,Address1,200 med center drive,1.0000,baran
+237,Address1,200 med center drive,1.0000,baran
+238,Address1,1530 u s highway 43,1.0000,baran
+248,Address1,33700 highway 43,1.0000,baran
+254,Address1,200 med center drive,1.0000,baran
+255,Address1,150 gilbreath drive,1.0000,baran
+261,Address1,33700 highway 43,1.0000,baran
+266,Address1,33700 highway 43,1.0000,baran
+268,Address1,8000 alabama highway 69,1.0000,baran
+274,Address1,1000 first street north,1.0000,baran
+275,Address1,1000 first street north,1.0000,baran
+277,Address1,1000 first street north,1.0000,baran
+279,Address1,1000 first street north,1.0000,baran
+292,Address1,201 pine street northwest,1.0000,baran
+301,Address1,1720 university blvd,1.0000,baran
+302,Address1,1720 university blvd,1.0000,baran
+313,Address1,301 east 18th st,1.0000,baran
+317,Address1,301 east 18th st,1.0000,baran
+326,Address1,301 east 18th st,1.0000,baran
+327,Address1,301 east 18th st,1.0000,baran
+328,Address1,301 east 18th st,1.0000,baran
+331,Address1,301 east 18th st,1.0000,baran
+333,Address1,315 w hickory st,1.0000,baran
+334,Address1,1108 ross clark circle,1.0000,baran
+336,Address1,1108 ross clark circle,1.0000,baran
+338,Address1,1108 ross clark circle,1.0000,baran
+350,Address1,810 st vincents drive,1.0000,baran
+351,Address1,150 gilbreath drive,1.0000,baran
+353,Address1,810 st vincents drive,1.0000,baran
+355,Address1,1530 u s highway 43,1.0000,baran
+356,Address1,1530 u s highway 43,1.0000,baran
+362,Address1,1530 u s highway 43,1.0000,baran
+363,Address1,1530 u s highway 43,1.0000,baran
+365,Address1,1530 u s highway 43,1.0000,baran
+366,Address1,1530 u s highway 43,1.0000,baran
+367,Address1,1530 u s highway 43,1.0000,baran
+369,Address1,1530 u s highway 43,1.0000,baran
+371,Address1,1530 u s highway 43,1.0000,baran
+380,Address1,2451 fillingim street,1.0000,baran
+382,Address1,2451 fillingim street,1.0000,baran
+389,Address1,150 gilbreath drive,1.0000,baran
+393,Address1,124 s memorial dr,1.0000,baran
+395,Address1,124 s memorial dr,1.0000,baran
+398,Address1,124 s memorial dr,1.0000,baran
+402,Address1,124 s memorial dr,1.0000,baran
+406,Address1,150 gilbreath drive,1.0000,baran
+411,Address1,2451 fillingim street,1.0000,baran
+415,Address1,315 w hickory st,1.0000,baran
+417,Address1,315 w hickory st,1.0000,baran
+429,Address1,315 w hickory st,1.0000,baran
+436,Address1,2801 debarr road,1.0000,baran
+438,Address1,2801 debarr road,1.0000,baran
+446,Address1,2801 debarr road,1.0000,baran
+464,Address1,1530 u s highway 43,1.0000,baran
+467,Address1,126 hospital ave,1.0000,baran
+471,Address1,126 hospital ave,1.0000,baran
+474,Address1,126 hospital ave,1.0000,baran
+477,Address1,987 drayton street,1.0000,baran
+478,Address1,126 hospital ave,1.0000,baran
+479,Address1,126 hospital ave,1.0000,baran
+489,Address1,126 hospital ave,1.0000,baran
+494,Address1,400 northwood dr,1.0000,baran
+496,Address1,400 northwood dr,1.0000,baran
+500,Address1,150 gilbreath drive,1.0000,baran
+502,Address1,400 northwood dr,1.0000,baran
+510,Address1,1000 first street north,1.0000,baran
+513,Address1,205 marengo street,1.0000,baran
+519,Address1,101 hospital circle,1.0000,baran
+521,Address1,150 gilbreath drive,1.0000,baran
+524,Address1,2105 east south boulevard,1.0000,baran
+525,Address1,2105 east south boulevard,1.0000,baran
+527,Address1,2105 east south boulevard,1.0000,baran
+539,Address1,2105 east south boulevard,1.0000,baran
+540,Address1,1530 u s highway 43,1.0000,baran
+543,Address1,1725 pine street,1.0000,baran
+546,Address1,1725 pine street,1.0000,baran
+547,Address1,1725 pine street,1.0000,baran
+549,Address1,1725 pine street,1.0000,baran
+552,Address1,1725 pine street,1.0000,baran
+555,Address1,201 pine street northwest,1.0000,baran
+563,Address1,849 south three notch street,1.0000,baran
+566,Address1,150 gilbreath drive,1.0000,baran
+579,Address1,4800 48th st,1.0000,baran
+580,Address1,301 east 18th st,1.0000,baran
+584,Address1,4800 48th st,1.0000,baran
+585,Address1,4800 48th st,1.0000,baran
+588,Address1,4800 48th st,1.0000,baran
+595,Address1,987 drayton street,1.0000,baran
+599,Address1,987 drayton street,1.0000,baran
+600,Address1,987 drayton street,1.0000,baran
+606,Address1,987 drayton street,1.0000,baran
+610,Address1,987 drayton street,1.0000,baran
+612,Address1,8000 alabama highway 69,1.0000,baran
+622,Address1,2000 pepperell parkway,1.0000,baran
+625,Address1,515 miranda st,1.0000,baran
+629,Address1,2000 pepperell parkway,1.0000,baran
+635,Address1,2000 pepperell parkway,1.0000,baran
+637,Address1,2000 pepperell parkway,1.0000,baran
+640,Address1,1530 u s highway 43,1.0000,baran
+642,Address1,209 north main street,1.0000,baran
+646,Address1,1108 ross clark circle,1.0000,baran
+652,Address1,987 drayton street,1.0000,baran
+666,Address1,805 friendship road,1.0000,baran
+669,Address1,987 drayton street,1.0000,baran
+680,Address1,1530 u s highway 43,1.0000,baran
+686,Address1,619 south 19th street,1.0000,baran
+701,Address1,101 hospital circle,1.0000,baran
+708,Address1,1108 ross clark circle,1.0000,baran
+710,Address1,1108 ross clark circle,1.0000,baran
+712,Address1,1000 first street north,1.0000,baran
+721,Address1,1000 first street north,1.0000,baran
+724,Address1,1912 alabama highway 157,1.0000,baran
+729,Address1,600 south third street,1.0000,baran
+730,Address1,1912 alabama highway 157,1.0000,baran
+731,Address1,600 south third street,1.0000,baran
+732,Address1,8000 alabama highway 69,1.0000,baran
+733,Address1,1000 first street north,1.0000,baran
+736,Address1,1000 first street north,1.0000,baran
+744,Address1,849 south three notch street,1.0000,baran
+747,Address1,849 south three notch street,1.0000,baran
+754,Address1,1000 first street north,1.0000,baran
+765,Address1,201 pine street northwest,1.0000,baran
+773,Address1,301 east 18th st,1.0000,baran
+776,Address1,101 sivley rd,1.0000,baran
+782,Address1,1108 ross clark circle,1.0000,baran
+785,Address1,101 sivley rd,1.0000,baran
+788,Address1,101 sivley rd,1.0000,baran
+793,Address1,101 sivley rd,1.0000,baran
+795,Address1,101 sivley rd,1.0000,baran
+797,Address1,101 sivley rd,1.0000,baran
+798,Address1,101 sivley rd,1.0000,baran
+803,Address1,2451 fillingim street,1.0000,baran
+807,Address1,600 south third street,1.0000,baran
+808,Address1,150 gilbreath drive,1.0000,baran
+810,Address1,1000 first street north,1.0000,baran
+814,Address1,600 south third street,1.0000,baran
+826,Address1,400 northwood dr,1.0000,baran
+829,Address1,1010 lay dam road,1.0000,baran
+831,Address1,1010 lay dam road,1.0000,baran
+836,Address1,849 south three notch street,1.0000,baran
+840,Address1,1010 lay dam road,1.0000,baran
+851,Address1,1010 lay dam road,1.0000,baran
+853,Address1,1530 u s highway 43,1.0000,baran
+867,Address1,205 marengo street,1.0000,baran
+868,Address1,1530 u s highway 43,1.0000,baran
+869,Address1,1530 u s highway 43,1.0000,baran
+871,Address1,1530 u s highway 43,1.0000,baran
+876,Address1,1530 u s highway 43,1.0000,baran
+878,Address1,101 hospital circle,1.0000,baran
+880,Address1,1653 temple avenue north,1.0000,baran
+881,Address1,849 south three notch street,1.0000,baran
+885,Address1,1108 ross clark circle,1.0000,baran
+887,Address1,1653 temple avenue north,1.0000,baran
+889,Address1,1653 temple avenue north,1.0000,baran
+893,Address1,1653 temple avenue north,1.0000,baran
+894,Address1,1530 u s highway 43,1.0000,baran
+899,Address1,1653 temple avenue north,1.0000,baran
+903,Address1,1010 lay dam road,1.0000,baran
+905,Address1,600 south third street,1.0000,baran
+925,Address1,600 south third street,1.0000,baran
+928,Address1,600 south third street,1.0000,baran
+932,Address1,515 miranda st,1.0000,baran
+946,Address1,515 miranda st,1.0000,baran
+958,Address1,987 drayton street,1.0000,baran
+960,Address1,987 drayton street,1.0000,baran
+962,Address1,987 drayton street,1.0000,baran
+963,Address1,205 marengo street,1.0000,baran
+966,Address1,2105 east south boulevard,1.0000,baran
+967,Address1,987 drayton street,1.0000,baran
+970,Address1,987 drayton street,1.0000,baran
+971,Address1,987 drayton street,1.0000,baran
+976,Address1,987 drayton street,1.0000,baran
+978,Address1,849 south three notch street,1.0000,baran
+990,Address1,150 gilbreath drive,1.0000,baran
+995,Address1,150 gilbreath drive,1.0000,baran
+996,Address1,1000 first street north,1.0000,baran
+997,Address1,1108 ross clark circle,1.0000,baran
+999,Address1,150 gilbreath drive,1.0000,baran
+994,City,oneonta,1.0000,baran
+11,City,birmingham,1.0000,baran
+12,City,alabaster,1.0000,baran
+17,City,birmingham,1.0000,baran
+18,City,birmingham,1.0000,baran
+19,City,birmingham,1.0000,baran
+23,City,dothan,1.0000,baran
+24,City,dothan,1.0000,baran
+25,City,dothan,1.0000,baran
+27,City,dothan,1.0000,baran
+40,City,dothan,1.0000,baran
+46,City,guntersville,1.0000,baran
+48,City,opp,1.0000,baran
+49,City,guntersville,1.0000,baran
+55,City,centre,1.0000,baran
+60,City,sylacauga,1.0000,baran
+65,City,guntersville,1.0000,baran
+66,City,guntersville,1.0000,baran
+67,City,guntersville,1.0000,baran
+72,City,florence,1.0000,baran
+77,City,florence,1.0000,baran
+79,City,florence,1.0000,baran
+87,City,florence,1.0000,baran
+88,City,florence,1.0000,baran
+90,City,florence,1.0000,baran
+91,City,prattville,1.0000,baran
+108,City,opp,1.0000,baran
+110,City,opp,1.0000,baran
+117,City,opp,1.0000,baran
+125,City,luverne,1.0000,baran
+126,City,luverne,1.0000,baran
+128,City,hamilton,1.0000,baran
+129,City,luverne,1.0000,baran
+130,City,luverne,1.0000,baran
+131,City,luverne,1.0000,baran
+144,City,luverne,1.0000,baran
+158,City,hartselle,1.0000,baran
+162,City,hartselle,1.0000,baran
+163,City,hartselle,1.0000,baran
+164,City,hartselle,1.0000,baran
+184,City,montgomery,1.0000,baran
+191,City,birmingham,1.0000,baran
+194,City,thomasville,1.0000,baran
+197,City,birmingham,1.0000,baran
+204,City,birmingham,1.0000,baran
+208,City,birmingham,1.0000,baran
+209,City,birmingham,1.0000,baran
+210,City,birmingham,1.0000,baran
+215,City,birmingham,1.0000,baran
+217,City,birmingham,1.0000,baran
+218,City,birmingham,1.0000,baran
+222,City,fort payne,1.0000,baran
+224,City,birmingham,1.0000,baran
+227,City,fort payne,1.0000,baran
+229,City,oneonta,1.0000,baran
+232,City,fort payne,1.0000,baran
+233,City,fort payne,1.0000,baran
+237,City,fort payne,1.0000,baran
+242,City,valley,1.0000,baran
+243,City,fort payne,1.0000,baran
+244,City,fort payne,1.0000,baran
+246,City,thomasville,1.0000,baran
+248,City,thomasville,1.0000,baran
+250,City,thomasville,1.0000,baran
+252,City,hartselle,1.0000,baran
+265,City,thomasville,1.0000,baran
+269,City,thomasville,1.0000,baran
+274,City,alabaster,1.0000,baran
+285,City,alabaster,1.0000,baran
+290,City,alabaster,1.0000,baran
+294,City,alabaster,1.0000,baran
+301,City,birmingham,1.0000,baran
+306,City,birmingham,1.0000,baran
+308,City,birmingham,1.0000,baran
+309,City,birmingham,1.0000,baran
+318,City,montgomery,1.0000,baran
+322,City,anniston,1.0000,baran
+325,City,anniston,1.0000,baran
+326,City,anniston,1.0000,baran
+341,City,dothan,1.0000,baran
+345,City,dothan,1.0000,baran
+348,City,clanton,1.0000,baran
+354,City,hamilton,1.0000,baran
+358,City,hamilton,1.0000,baran
+359,City,hamilton,1.0000,baran
+360,City,hamilton,1.0000,baran
+361,City,hamilton,1.0000,baran
+363,City,hamilton,1.0000,baran
+367,City,clanton,1.0000,baran
+370,City,hamilton,1.0000,baran
+374,City,hamilton,1.0000,baran
+376,City,hamilton,1.0000,baran
+377,City,hamilton,1.0000,baran
+380,City,mobile,1.0000,baran
+382,City,mobile,1.0000,baran
+383,City,mobile,1.0000,baran
+392,City,mobile,1.0000,baran
+399,City,wedowee,1.0000,baran
+412,City,prattville,1.0000,baran
+416,City,sylacauga,1.0000,baran
+417,City,sylacauga,1.0000,baran
+418,City,enterprise,1.0000,baran
+420,City,sylacauga,1.0000,baran
+422,City,sylacauga,1.0000,baran
+424,City,gadsden,1.0000,baran
+427,City,sylacauga,1.0000,baran
+436,City,anchorage,1.0000,baran
+437,City,anchorage,1.0000,baran
+439,City,valley,1.0000,baran
+443,City,anchorage,1.0000,baran
+446,City,anchorage,1.0000,baran
+447,City,anchorage,1.0000,baran
+450,City,anchorage,1.0000,baran
+462,City,birmingham,1.0000,baran
+464,City,birmingham,1.0000,baran
+465,City,wedowee,1.0000,baran
+480,City,ozark,1.0000,baran
+488,City,ozark,1.0000,baran
+490,City,ozark,1.0000,baran
+491,City,ozark,1.0000,baran
+496,City,centre,1.0000,baran
+498,City,centre,1.0000,baran
+503,City,centre,1.0000,baran
+519,City,luverne,1.0000,baran
+520,City,montgomery,1.0000,baran
+522,City,montgomery,1.0000,baran
+524,City,montgomery,1.0000,baran
+526,City,alabaster,1.0000,baran
+528,City,montgomery,1.0000,baran
+531,City,montgomery,1.0000,baran
+534,City,montgomery,1.0000,baran
+535,City,montgomery,1.0000,baran
+540,City,hamilton,1.0000,baran
+545,City,montgomery,1.0000,baran
+551,City,montgomery,1.0000,baran
+553,City,georgiana,1.0000,baran
+555,City,hartselle,1.0000,baran
+567,City,valley,1.0000,baran
+569,City,valley,1.0000,baran
+574,City,valley,1.0000,baran
+590,City,enterprise,1.0000,baran
+591,City,valley,1.0000,baran
+593,City,enterprise,1.0000,baran
+596,City,enterprise,1.0000,baran
+598,City,enterprise,1.0000,baran
+599,City,enterprise,1.0000,baran
+607,City,enterprise,1.0000,baran
+609,City,gadsden,1.0000,baran
+614,City,enterprise,1.0000,baran
+616,City,opelika,1.0000,baran
+620,City,opelika,1.0000,baran
+628,City,opelika,1.0000,baran
+643,City,wedowee,1.0000,baran
+644,City,wedowee,1.0000,baran
+647,City,wedowee,1.0000,baran
+654,City,wedowee,1.0000,baran
+656,City,wedowee,1.0000,baran
+658,City,wedowee,1.0000,baran
+660,City,birmingham,1.0000,baran
+669,City,birmingham,1.0000,baran
+670,City,birmingham,1.0000,baran
+671,City,florence,1.0000,baran
+672,City,birmingham,1.0000,baran
+673,City,birmingham,1.0000,baran
+676,City,birmingham,1.0000,baran
+681,City,birmingham,1.0000,baran
+683,City,enterprise,1.0000,baran
+685,City,birmingham,1.0000,baran
+689,City,birmingham,1.0000,baran
+692,City,tallassee,1.0000,baran
+702,City,tallassee,1.0000,baran
+707,City,tallassee,1.0000,baran
+708,City,tallassee,1.0000,baran
+709,City,tallassee,1.0000,baran
+713,City,gadsden,1.0000,baran
+717,City,alabaster,1.0000,baran
+733,City,luverne,1.0000,baran
+735,City,cullman,1.0000,baran
+738,City,cullman,1.0000,baran
+739,City,cullman,1.0000,baran
+744,City,opp,1.0000,baran
+748,City,opp,1.0000,baran
+751,City,opp,1.0000,baran
+752,City,opp,1.0000,baran
+755,City,gadsden,1.0000,baran
+758,City,opp,1.0000,baran
+759,City,opp,1.0000,baran
+761,City,opp,1.0000,baran
+763,City,opp,1.0000,baran
+764,City,opp,1.0000,baran
+771,City,anniston,1.0000,baran
+772,City,anniston,1.0000,baran
+776,City,huntsville,1.0000,baran
+778,City,huntsville,1.0000,baran
+781,City,thomasville,1.0000,baran
+782,City,dothan,1.0000,baran
+783,City,anniston,1.0000,baran
+787,City,huntsville,1.0000,baran
+795,City,huntsville,1.0000,baran
+796,City,huntsville,1.0000,baran
+798,City,huntsville,1.0000,baran
+800,City,thomasville,1.0000,baran
+801,City,valley,1.0000,baran
+806,City,gadsden,1.0000,baran
+809,City,gadsden,1.0000,baran
+810,City,gadsden,1.0000,baran
+815,City,gadsden,1.0000,baran
+822,City,valley,1.0000,baran
+824,City,gadsden,1.0000,baran
+829,City,clanton,1.0000,baran
+834,City,florence,1.0000,baran
+837,City,clanton,1.0000,baran
+838,City,clanton,1.0000,baran
+847,City,clanton,1.0000,baran
+852,City,fayette,1.0000,baran
+853,City,hamilton,1.0000,baran
+857,City,hamilton,1.0000,baran
+859,City,hamilton,1.0000,baran
+861,City,hamilton,1.0000,baran
+878,City,luverne,1.0000,baran
+879,City,birmingham,1.0000,baran
+880,City,fayette,1.0000,baran
+884,City,fayette,1.0000,baran
+894,City,fayette,1.0000,baran
+905,City,gadsden,1.0000,baran
+908,City,gadsden,1.0000,baran
+912,City,montgomery,1.0000,baran
+918,City,gadsden,1.0000,baran
+924,City,guntersville,1.0000,baran
+925,City,gadsden,1.0000,baran
+926,City,gadsden,1.0000,baran
+927,City,ozark,1.0000,baran
+931,City,georgiana,1.0000,baran
+936,City,georgiana,1.0000,baran
+938,City,georgiana,1.0000,baran
+940,City,georgiana,1.0000,baran
+956,City,enterprise,1.0000,baran
+957,City,enterprise,1.0000,baran
+958,City,enterprise,1.0000,baran
+970,City,enterprise,1.0000,baran
+972,City,huntsville,1.0000,baran
+979,City,enterprise,1.0000,baran
+980,City,enterprise,1.0000,baran
+982,City,oneonta,1.0000,baran
+991,City,oneonta,1.0000,baran
+993,City,alabaster,1.0000,baran
+995,City,oneonta,1.0000,baran
+997,City,dothan,1.0000,baran
+994,ZipCode,35121,1.0000,baran
+17,ZipCode,35233,1.0000,baran
+18,ZipCode,35233,1.0000,baran
+25,ZipCode,36302,1.0000,baran
+45,ZipCode,35976,1.0000,baran
+69,ZipCode,35976,1.0000,baran
+88,ZipCode,35631,1.0000,baran
+90,ZipCode,35631,1.0000,baran
+109,ZipCode,36467,1.0000,baran
+120,ZipCode,36049,1.0000,baran
+122,ZipCode,36323,1.0000,baran
+131,ZipCode,36049,1.0000,baran
+168,ZipCode,36467,1.0000,baran
+178,ZipCode,35058,1.0000,baran
+181,ZipCode,35233,1.0000,baran
+187,ZipCode,35976,1.0000,baran
+201,ZipCode,35007,1.0000,baran
+206,ZipCode,35233,1.0000,baran
+216,ZipCode,36467,1.0000,baran
+219,ZipCode,35233,1.0000,baran
+221,ZipCode,35968,1.0000,baran
+222,ZipCode,35968,1.0000,baran
+224,ZipCode,35233,1.0000,baran
+235,ZipCode,35968,1.0000,baran
+239,ZipCode,35968,1.0000,baran
+261,ZipCode,36784,1.0000,baran
+265,ZipCode,36784,1.0000,baran
+286,ZipCode,35007,1.0000,baran
+313,ZipCode,36201,1.0000,baran
+374,ZipCode,35594,1.0000,baran
+382,ZipCode,36617,1.0000,baran
+386,ZipCode,36617,1.0000,baran
+394,ZipCode,36067,1.0000,baran
+401,ZipCode,36067,1.0000,baran
+403,ZipCode,36067,1.0000,baran
+407,ZipCode,36067,1.0000,baran
+408,ZipCode,36067,1.0000,baran
+423,ZipCode,35150,1.0000,baran
+424,ZipCode,35903,1.0000,baran
+431,ZipCode,35150,1.0000,baran
+433,ZipCode,36116,1.0000,baran
+453,ZipCode,35233,1.0000,baran
+462,ZipCode,35233,1.0000,baran
+470,ZipCode,35640,1.0000,baran
+479,ZipCode,36360,1.0000,baran
+482,ZipCode,35594,1.0000,baran
+483,ZipCode,36360,1.0000,baran
+523,ZipCode,35903,1.0000,baran
+537,ZipCode,36116,1.0000,baran
+542,ZipCode,36106,1.0000,baran
+543,ZipCode,36106,1.0000,baran
+546,ZipCode,36106,1.0000,baran
+555,ZipCode,35640,1.0000,baran
+564,ZipCode,36106,1.0000,baran
+575,ZipCode,36116,1.0000,baran
+580,ZipCode,35233,1.0000,baran
+581,ZipCode,36854,1.0000,baran
+582,ZipCode,36049,1.0000,baran
+588,ZipCode,36854,1.0000,baran
+591,ZipCode,36854,1.0000,baran
+595,ZipCode,36323,1.0000,baran
+618,ZipCode,36801,1.0000,baran
+623,ZipCode,35968,1.0000,baran
+624,ZipCode,36302,1.0000,baran
+640,ZipCode,35594,1.0000,baran
+645,ZipCode,36278,1.0000,baran
+651,ZipCode,36278,1.0000,baran
+682,ZipCode,35233,1.0000,baran
+686,ZipCode,35233,1.0000,baran
+696,ZipCode,35976,1.0000,baran
+716,ZipCode,36201,1.0000,baran
+734,ZipCode,35594,1.0000,baran
+741,ZipCode,35058,1.0000,baran
+750,ZipCode,35121,1.0000,baran
+761,ZipCode,36467,1.0000,baran
+762,ZipCode,36467,1.0000,baran
+768,ZipCode,35976,1.0000,baran
+779,ZipCode,35801,1.0000,baran
+793,ZipCode,35801,1.0000,baran
+794,ZipCode,35801,1.0000,baran
+796,ZipCode,35801,1.0000,baran
+824,ZipCode,35903,1.0000,baran
+837,ZipCode,35045,1.0000,baran
+844,ZipCode,35045,1.0000,baran
+858,ZipCode,35594,1.0000,baran
+862,ZipCode,35594,1.0000,baran
+866,ZipCode,35594,1.0000,baran
+868,ZipCode,35594,1.0000,baran
+869,ZipCode,35594,1.0000,baran
+880,ZipCode,35555,1.0000,baran
+882,ZipCode,35555,1.0000,baran
+893,ZipCode,35555,1.0000,baran
+894,ZipCode,35555,1.0000,baran
+920,ZipCode,35903,1.0000,baran
+926,ZipCode,35903,1.0000,baran
+927,ZipCode,36360,1.0000,baran
+929,ZipCode,35903,1.0000,baran
+932,ZipCode,36033,1.0000,baran
+941,ZipCode,36033,1.0000,baran
+971,ZipCode,36323,1.0000,baran
+988,ZipCode,99508,1.0000,baran
+996,ZipCode,35121,1.0000,baran
+998,ZipCode,35121,1.0000,baran
+994,PhoneNumber,2052743000,1.0000,baran
+390,PhoneNumber,2514717110,1.0000,baran
+421,PhoneNumber,2562495000,1.0000,baran
+484,PhoneNumber,3347742601,1.0000,baran
+516,PhoneNumber,2569275531,1.0000,baran
+816,PhoneNumber,2564944000,1.0000,baran
+994,HospitalOwner,voluntary non-profit - private,1.0000,baran
+9,HospitalOwner,government - hospital district or authority,1.0000,baran
+10,HospitalOwner,government - hospital district or authority,1.0000,baran
+16,HospitalOwner,government - hospital district or authority,1.0000,baran
+17,HospitalOwner,voluntary non-profit - private,1.0000,baran
+19,HospitalOwner,proprietary,1.0000,baran
+20,HospitalOwner,government - hospital district or authority,1.0000,baran
+21,HospitalOwner,government - hospital district or authority,1.0000,baran
+23,HospitalOwner,voluntary non-profit - other,1.0000,baran
+24,HospitalOwner,government - hospital district or authority,1.0000,baran
+36,HospitalOwner,government - hospital district or authority,1.0000,baran
+43,HospitalOwner,government - hospital district or authority,1.0000,baran
+50,HospitalOwner,government - hospital district or authority,1.0000,baran
+53,HospitalOwner,government - hospital district or authority,1.0000,baran
+57,HospitalOwner,government - hospital district or authority,1.0000,baran
+61,HospitalOwner,government - hospital district or authority,1.0000,baran
+67,HospitalOwner,voluntary non-profit - private,1.0000,baran
+68,HospitalOwner,government - hospital district or authority,1.0000,baran
+70,HospitalOwner,voluntary non-profit - other,1.0000,baran
+71,HospitalOwner,voluntary non-profit - other,1.0000,baran
+73,HospitalOwner,voluntary non-profit - other,1.0000,baran
+75,HospitalOwner,voluntary non-profit - other,1.0000,baran
+77,HospitalOwner,government - hospital district or authority,1.0000,baran
+81,HospitalOwner,voluntary non-profit - other,1.0000,baran
+90,HospitalOwner,government - hospital district or authority,1.0000,baran
+100,HospitalOwner,voluntary non-profit - private,1.0000,baran
+104,HospitalOwner,voluntary non-profit - private,1.0000,baran
+106,HospitalOwner,voluntary non-profit - private,1.0000,baran
+112,HospitalOwner,voluntary non-profit - private,1.0000,baran
+113,HospitalOwner,voluntary non-profit - private,1.0000,baran
+121,HospitalOwner,government - federal,1.0000,baran
+122,HospitalOwner,government - federal,1.0000,baran
+124,HospitalOwner,government - federal,1.0000,baran
+131,HospitalOwner,voluntary non-profit - private,1.0000,baran
+134,HospitalOwner,government - federal,1.0000,baran
+142,HospitalOwner,government - federal,1.0000,baran
+151,HospitalOwner,proprietary,1.0000,baran
+159,HospitalOwner,proprietary,1.0000,baran
+161,HospitalOwner,proprietary,1.0000,baran
+162,HospitalOwner,voluntary non-profit - other,1.0000,baran
+177,HospitalOwner,government - hospital district or authority,1.0000,baran
+179,HospitalOwner,government - hospital district or authority,1.0000,baran
+186,HospitalOwner,government - hospital district or authority,1.0000,baran
+194,HospitalOwner,government - hospital district or authority,1.0000,baran
+195,HospitalOwner,voluntary non-profit - private,1.0000,baran
+196,HospitalOwner,voluntary non-profit - private,1.0000,baran
+200,HospitalOwner,voluntary non-profit - private,1.0000,baran
+202,HospitalOwner,voluntary non-profit - private,1.0000,baran
+204,HospitalOwner,government - hospital district or authority,1.0000,baran
+210,HospitalOwner,government - hospital district or authority,1.0000,baran
+211,HospitalOwner,voluntary non-profit - private,1.0000,baran
+213,HospitalOwner,voluntary non-profit - private,1.0000,baran
+232,HospitalOwner,proprietary,1.0000,baran
+234,HospitalOwner,voluntary non-profit - church,1.0000,baran
+235,HospitalOwner,voluntary non-profit - church,1.0000,baran
+236,HospitalOwner,voluntary non-profit - church,1.0000,baran
+244,HospitalOwner,proprietary,1.0000,baran
+245,HospitalOwner,government - federal,1.0000,baran
+246,HospitalOwner,voluntary non-profit - church,1.0000,baran
+247,HospitalOwner,government - federal,1.0000,baran
+248,HospitalOwner,voluntary non-profit - private,1.0000,baran
+253,HospitalOwner,government - federal,1.0000,baran
+254,HospitalOwner,government - federal,1.0000,baran
+258,HospitalOwner,government - federal,1.0000,baran
+272,HospitalOwner,voluntary non-profit - church,1.0000,baran
+277,HospitalOwner,voluntary non-profit - church,1.0000,baran
+278,HospitalOwner,voluntary non-profit - church,1.0000,baran
+291,HospitalOwner,voluntary non-profit - church,1.0000,baran
+293,HospitalOwner,voluntary non-profit - church,1.0000,baran
+294,HospitalOwner,proprietary,1.0000,baran
+300,HospitalOwner,voluntary non-profit - private,1.0000,baran
+306,HospitalOwner,government - hospital district or authority,1.0000,baran
+310,HospitalOwner,voluntary non-profit - private,1.0000,baran
+312,HospitalOwner,proprietary,1.0000,baran
+320,HospitalOwner,proprietary,1.0000,baran
+323,HospitalOwner,proprietary,1.0000,baran
+332,HospitalOwner,government - hospital district or authority,1.0000,baran
+344,HospitalOwner,government - hospital district or authority,1.0000,baran
+349,HospitalOwner,voluntary non-profit - private,1.0000,baran
+350,HospitalOwner,voluntary non-profit - private,1.0000,baran
+352,HospitalOwner,voluntary non-profit - private,1.0000,baran
+357,HospitalOwner,proprietary,1.0000,baran
+358,HospitalOwner,voluntary non-profit - private,1.0000,baran
+359,HospitalOwner,voluntary non-profit - private,1.0000,baran
+362,HospitalOwner,proprietary,1.0000,baran
+366,HospitalOwner,proprietary,1.0000,baran
+368,HospitalOwner,proprietary,1.0000,baran
+369,HospitalOwner,proprietary,1.0000,baran
+376,HospitalOwner,government - hospital district or authority,1.0000,baran
+377,HospitalOwner,proprietary,1.0000,baran
+378,HospitalOwner,proprietary,1.0000,baran
+385,HospitalOwner,government - state,1.0000,baran
+386,HospitalOwner,government - state,1.0000,baran
+389,HospitalOwner,government - state,1.0000,baran
+399,HospitalOwner,voluntary non-profit - other,1.0000,baran
+406,HospitalOwner,voluntary non-profit - private,1.0000,baran
+407,HospitalOwner,voluntary non-profit - private,1.0000,baran
+409,HospitalOwner,voluntary non-profit - private,1.0000,baran
+420,HospitalOwner,government - hospital district or authority,1.0000,baran
+432,HospitalOwner,voluntary non-profit - other,1.0000,baran
+438,HospitalOwner,proprietary,1.0000,baran
+439,HospitalOwner,voluntary non-profit - private,1.0000,baran
+449,HospitalOwner,proprietary,1.0000,baran
+453,HospitalOwner,government - hospital district or authority,1.0000,baran
+456,HospitalOwner,government - hospital district or authority,1.0000,baran
+461,HospitalOwner,government - hospital district or authority,1.0000,baran
+462,HospitalOwner,proprietary,1.0000,baran
+467,HospitalOwner,government - hospital district or authority,1.0000,baran
+470,HospitalOwner,government - hospital district or authority,1.0000,baran
+474,HospitalOwner,government - hospital district or authority,1.0000,baran
+478,HospitalOwner,government - hospital district or authority,1.0000,baran
+480,HospitalOwner,voluntary non-profit - private,1.0000,baran
+483,HospitalOwner,government - hospital district or authority,1.0000,baran
+487,HospitalOwner,government - hospital district or authority,1.0000,baran
+488,HospitalOwner,government - local,1.0000,baran
+510,HospitalOwner,voluntary non-profit - private,1.0000,baran
+515,HospitalOwner,voluntary non-profit - private,1.0000,baran
+518,HospitalOwner,voluntary non-profit - private,1.0000,baran
+519,HospitalOwner,proprietary,1.0000,baran
+520,HospitalOwner,voluntary non-profit - church,1.0000,baran
+533,HospitalOwner,voluntary non-profit - private,1.0000,baran
+553,HospitalOwner,proprietary,1.0000,baran
+554,HospitalOwner,voluntary non-profit - private,1.0000,baran
+556,HospitalOwner,voluntary non-profit - private,1.0000,baran
+568,HospitalOwner,voluntary non-profit - other,1.0000,baran
+576,HospitalOwner,voluntary non-profit - other,1.0000,baran
+577,HospitalOwner,voluntary non-profit - other,1.0000,baran
+581,HospitalOwner,voluntary non-profit - other,1.0000,baran
+583,HospitalOwner,voluntary non-profit - other,1.0000,baran
+587,HospitalOwner,voluntary non-profit - other,1.0000,baran
+590,HospitalOwner,government - hospital district or authority,1.0000,baran
+592,HospitalOwner,voluntary non-profit - other,1.0000,baran
+593,HospitalOwner,government - hospital district or authority,1.0000,baran
+596,HospitalOwner,government - hospital district or authority,1.0000,baran
+598,HospitalOwner,government - hospital district or authority,1.0000,baran
+620,HospitalOwner,proprietary,1.0000,baran
+621,HospitalOwner,government - hospital district or authority,1.0000,baran
+623,HospitalOwner,government - hospital district or authority,1.0000,baran
+629,HospitalOwner,government - hospital district or authority,1.0000,baran
+637,HospitalOwner,government - hospital district or authority,1.0000,baran
+649,HospitalOwner,government - local,1.0000,baran
+650,HospitalOwner,government - local,1.0000,baran
+651,HospitalOwner,government - local,1.0000,baran
+652,HospitalOwner,government - local,1.0000,baran
+658,HospitalOwner,government - federal,1.0000,baran
+662,HospitalOwner,government - local,1.0000,baran
+667,HospitalOwner,voluntary non-profit - private,1.0000,baran
+668,HospitalOwner,voluntary non-profit - private,1.0000,baran
+670,HospitalOwner,proprietary,1.0000,baran
+675,HospitalOwner,voluntary non-profit - private,1.0000,baran
+680,HospitalOwner,voluntary non-profit - private,1.0000,baran
+682,HospitalOwner,voluntary non-profit - private,1.0000,baran
+688,HospitalOwner,voluntary non-profit - private,1.0000,baran
+706,HospitalOwner,voluntary non-profit - private,1.0000,baran
+716,HospitalOwner,voluntary non-profit - private,1.0000,baran
+720,HospitalOwner,government - hospital district or authority,1.0000,baran
+722,HospitalOwner,government - hospital district or authority,1.0000,baran
+727,HospitalOwner,government - hospital district or authority,1.0000,baran
+732,HospitalOwner,government - hospital district or authority,1.0000,baran
+733,HospitalOwner,voluntary non-profit - other,1.0000,baran
+739,HospitalOwner,proprietary,1.0000,baran
+741,HospitalOwner,government - hospital district or authority,1.0000,baran
+745,HospitalOwner,proprietary,1.0000,baran
+757,HospitalOwner,proprietary,1.0000,baran
+759,HospitalOwner,proprietary,1.0000,baran
+762,HospitalOwner,proprietary,1.0000,baran
+771,HospitalOwner,government - federal,1.0000,baran
+776,HospitalOwner,government - state,1.0000,baran
+777,HospitalOwner,government - hospital district or authority,1.0000,baran
+779,HospitalOwner,government - hospital district or authority,1.0000,baran
+780,HospitalOwner,government - hospital district or authority,1.0000,baran
+783,HospitalOwner,voluntary non-profit - private,1.0000,baran
+784,HospitalOwner,government - hospital district or authority,1.0000,baran
+789,HospitalOwner,government - hospital district or authority,1.0000,baran
+790,HospitalOwner,government - hospital district or authority,1.0000,baran
+791,HospitalOwner,government - hospital district or authority,1.0000,baran
+792,HospitalOwner,government - hospital district or authority,1.0000,baran
+796,HospitalOwner,voluntary non-profit - private,1.0000,baran
+797,HospitalOwner,government - hospital district or authority,1.0000,baran
+798,HospitalOwner,voluntary non-profit - private,1.0000,baran
+802,HospitalOwner,government - hospital district or authority,1.0000,baran
+804,HospitalOwner,proprietary,1.0000,baran
+811,HospitalOwner,proprietary,1.0000,baran
+820,HospitalOwner,proprietary,1.0000,baran
+830,HospitalOwner,voluntary non-profit - private,1.0000,baran
+837,HospitalOwner,voluntary non-profit - other,1.0000,baran
+848,HospitalOwner,voluntary non-profit - private,1.0000,baran
+861,HospitalOwner,voluntary non-profit - private,1.0000,baran
+863,HospitalOwner,voluntary non-profit - private,1.0000,baran
+865,HospitalOwner,voluntary non-profit - private,1.0000,baran
+874,HospitalOwner,voluntary non-profit - private,1.0000,baran
+878,HospitalOwner,voluntary non-profit - private,1.0000,baran
+880,HospitalOwner,voluntary non-profit - private,1.0000,baran
+884,HospitalOwner,voluntary non-profit - private,1.0000,baran
+895,HospitalOwner,voluntary non-profit - other,1.0000,baran
+899,HospitalOwner,voluntary non-profit - other,1.0000,baran
+900,HospitalOwner,voluntary non-profit - other,1.0000,baran
+904,HospitalOwner,proprietary,1.0000,baran
+910,HospitalOwner,proprietary,1.0000,baran
+914,HospitalOwner,proprietary,1.0000,baran
+917,HospitalOwner,proprietary,1.0000,baran
+918,HospitalOwner,voluntary non-profit - private,1.0000,baran
+920,HospitalOwner,proprietary,1.0000,baran
+925,HospitalOwner,proprietary,1.0000,baran
+935,HospitalOwner,voluntary non-profit - private,1.0000,baran
+942,HospitalOwner,voluntary non-profit - private,1.0000,baran
+944,HospitalOwner,voluntary non-profit - private,1.0000,baran
+953,HospitalOwner,voluntary non-profit - private,1.0000,baran
+957,HospitalOwner,voluntary non-profit - other,1.0000,baran
+970,HospitalOwner,voluntary non-profit - other,1.0000,baran
+976,HospitalOwner,proprietary,1.0000,baran
+979,HospitalOwner,proprietary,1.0000,baran
+981,HospitalOwner,voluntary non-profit - private,1.0000,baran
+982,HospitalOwner,voluntary non-profit - private,1.0000,baran
+986,HospitalOwner,voluntary non-profit - private,1.0000,baran
+990,HospitalOwner,voluntary non-profit - private,1.0000,baran
+1000,HospitalOwner,voluntary non-profit - private,1.0000,baran
+994,Condition,pneumonia,1.0000,baran
+6,Condition,pneumonia,1.0000,baran
+32,Condition,pneumonia,1.0000,baran
+34,Condition,pneumonia,1.0000,baran
+67,Condition,pneumonia,1.0000,baran
+113,Condition,pneumonia,1.0000,baran
+152,Condition,pneumonia,1.0000,baran
+168,Condition,pneumonia,1.0000,baran
+202,Condition,pneumonia,1.0000,baran
+204,Condition,pneumonia,1.0000,baran
+205,Condition,pneumonia,1.0000,baran
+209,Condition,pneumonia,1.0000,baran
+213,Condition,pneumonia,1.0000,baran
+230,Condition,pneumonia,1.0000,baran
+267,Condition,pneumonia,1.0000,baran
+347,Condition,pneumonia,1.0000,baran
+401,Condition,pneumonia,1.0000,baran
+442,Condition,pneumonia,1.0000,baran
+448,Condition,pneumonia,1.0000,baran
+465,Condition,pneumonia,1.0000,baran
+466,Condition,pneumonia,1.0000,baran
+481,Condition,pneumonia,1.0000,baran
+482,Condition,pneumonia,1.0000,baran
+484,Condition,pneumonia,1.0000,baran
+524,Condition,pneumonia,1.0000,baran
+563,Condition,pneumonia,1.0000,baran
+586,Condition,pneumonia,1.0000,baran
+587,Condition,pneumonia,1.0000,baran
+588,Condition,pneumonia,1.0000,baran
+591,Condition,pneumonia,1.0000,baran
+650,Condition,pneumonia,1.0000,baran
+652,Condition,pneumonia,1.0000,baran
+665,Condition,pneumonia,1.0000,baran
+690,Condition,pneumonia,1.0000,baran
+705,Condition,pneumonia,1.0000,baran
+711,Condition,pneumonia,1.0000,baran
+761,Condition,pneumonia,1.0000,baran
+770,Condition,pneumonia,1.0000,baran
+776,Condition,pneumonia,1.0000,baran
+797,Condition,pneumonia,1.0000,baran
+800,Condition,pneumonia,1.0000,baran
+836,Condition,pneumonia,1.0000,baran
+867,Condition,pneumonia,1.0000,baran
+896,Condition,pneumonia,1.0000,baran
+927,Condition,pneumonia,1.0000,baran
+941,Condition,pneumonia,1.0000,baran
+955,Condition,pneumonia,1.0000,baran
+975,Condition,pneumonia,1.0000,baran
+995,Condition,pneumonia,1.0000,baran
+994,MeasureCode,pn-4,1.0000,baran
+3,MeasureCode,scip-inf-2,1.0000,baran
+4,MeasureCode,pn-4,1.0000,baran
+10,MeasureCode,pn-4,1.0000,baran
+12,MeasureCode,ami-4,1.0000,baran
+20,MeasureCode,pn-4,1.0000,baran
+23,MeasureCode,ami-4,1.0000,baran
+32,MeasureCode,pn-3b,1.0000,baran
+37,MeasureCode,pn-4,1.0000,baran
+39,MeasureCode,pn-4,1.0000,baran
+44,MeasureCode,pn-5c,1.0000,baran
+45,MeasureCode,pn-4,1.0000,baran
+56,MeasureCode,pn-2,1.0000,baran
+58,MeasureCode,pn-4,1.0000,baran
+61,MeasureCode,pn-4,1.0000,baran
+64,MeasureCode,scip-inf-2,1.0000,baran
+66,MeasureCode,pn-4,1.0000,baran
+73,MeasureCode,pn-4,1.0000,baran
+74,MeasureCode,pn-4,1.0000,baran
+84,MeasureCode,pn-4,1.0000,baran
+88,MeasureCode,pn-4,1.0000,baran
+90,MeasureCode,scip-vte-1,1.0000,baran
+92,MeasureCode,pn-4,1.0000,baran
+95,MeasureCode,ami-1,1.0000,baran
+97,MeasureCode,pn-4,1.0000,baran
+98,MeasureCode,ami-4,1.0000,baran
+100,MeasureCode,ami-7a,1.0000,baran
+103,MeasureCode,scip-inf-4,1.0000,baran
+107,MeasureCode,pn-4,1.0000,baran
+110,MeasureCode,pn-4,1.0000,baran
+111,MeasureCode,pn-7,1.0000,baran
+113,MeasureCode,pn-4,1.0000,baran
+116,MeasureCode,scip-inf-4,1.0000,baran
+121,MeasureCode,ami-2,1.0000,baran
+122,MeasureCode,pn-4,1.0000,baran
+123,MeasureCode,pn-2,1.0000,baran
+128,MeasureCode,pn-4,1.0000,baran
+129,MeasureCode,hf-3,1.0000,baran
+135,MeasureCode,pn-4,1.0000,baran
+140,MeasureCode,pn-4,1.0000,baran
+142,MeasureCode,scip-inf-6,1.0000,baran
+143,MeasureCode,ami-4,1.0000,baran
+148,MeasureCode,pn-4,1.0000,baran
+153,MeasureCode,pn-4,1.0000,baran
+163,MeasureCode,pn-4,1.0000,baran
+166,MeasureCode,scip-inf-4,1.0000,baran
+167,MeasureCode,pn-4,1.0000,baran
+169,MeasureCode,pn-4,1.0000,baran
+172,MeasureCode,pn-4,1.0000,baran
+173,MeasureCode,pn-4,1.0000,baran
+174,MeasureCode,pn-4,1.0000,baran
+175,MeasureCode,pn-4,1.0000,baran
+176,MeasureCode,pn-4,1.0000,baran
+177,MeasureCode,hf-1,1.0000,baran
+181,MeasureCode,pn-4,1.0000,baran
+185,MeasureCode,pn-2,1.0000,baran
+191,MeasureCode,scip-inf-4,1.0000,baran
+196,MeasureCode,ami-2,1.0000,baran
+199,MeasureCode,pn-2,1.0000,baran
+205,MeasureCode,pn-4,1.0000,baran
+208,MeasureCode,pn-4,1.0000,baran
+209,MeasureCode,pn-4,1.0000,baran
+210,MeasureCode,pn-4,1.0000,baran
+211,MeasureCode,pn-4,1.0000,baran
+212,MeasureCode,scip-card-2,1.0000,baran
+215,MeasureCode,pn-4,1.0000,baran
+216,MeasureCode,scip-inf-4,1.0000,baran
+231,MeasureCode,pn-2,1.0000,baran
+234,MeasureCode,pn-2,1.0000,baran
+241,MeasureCode,pn-4,1.0000,baran
+252,MeasureCode,pn-4,1.0000,baran
+255,MeasureCode,pn-4,1.0000,baran
+261,MeasureCode,pn-4,1.0000,baran
+278,MeasureCode,hf-2,1.0000,baran
+282,MeasureCode,pn-4,1.0000,baran
+289,MeasureCode,hf-1,1.0000,baran
+295,MeasureCode,pn-4,1.0000,baran
+298,MeasureCode,hf-4,1.0000,baran
+301,MeasureCode,ami-8a,1.0000,baran
+302,MeasureCode,hf-1,1.0000,baran
+307,MeasureCode,pn-4,1.0000,baran
+308,MeasureCode,pn-4,1.0000,baran
+310,MeasureCode,pn-4,1.0000,baran
+312,MeasureCode,pn-4,1.0000,baran
+318,MeasureCode,pn-4,1.0000,baran
+325,MeasureCode,pn-4,1.0000,baran
+326,MeasureCode,pn-4,1.0000,baran
+328,MeasureCode,pn-4,1.0000,baran
+334,MeasureCode,pn-4,1.0000,baran
+336,MeasureCode,pn-4,1.0000,baran
+338,MeasureCode,pn-4,1.0000,baran
+339,MeasureCode,pn-4,1.0000,baran
+340,MeasureCode,pn-4,1.0000,baran
+345,MeasureCode,pn-4,1.0000,baran
+347,MeasureCode,pn-4,1.0000,baran
+352,MeasureCode,pn-4,1.0000,baran
+353,MeasureCode,pn-4,1.0000,baran
+354,MeasureCode,pn-4,1.0000,baran
+359,MeasureCode,pn-3b,1.0000,baran
+360,MeasureCode,ami-7a,1.0000,baran
+364,MeasureCode,pn-4,1.0000,baran
+370,MeasureCode,pn-4,1.0000,baran
+372,MeasureCode,pn-4,1.0000,baran
+373,MeasureCode,scip-inf-1,1.0000,baran
+377,MeasureCode,pn-2,1.0000,baran
+380,MeasureCode,pn-4,1.0000,baran
+383,MeasureCode,pn-4,1.0000,baran
+385,MeasureCode,ami-2,1.0000,baran
+387,MeasureCode,pn-4,1.0000,baran
+390,MeasureCode,hf-4,1.0000,baran
+392,MeasureCode,pn-2,1.0000,baran
+394,MeasureCode,pn-4,1.0000,baran
+400,MeasureCode,hf-2,1.0000,baran
+401,MeasureCode,pn-4,1.0000,baran
+402,MeasureCode,pn-2,1.0000,baran
+405,MeasureCode,pn-4,1.0000,baran
+406,MeasureCode,pn-4,1.0000,baran
+411,MeasureCode,pn-4,1.0000,baran
+419,MeasureCode,pn-4,1.0000,baran
+421,MeasureCode,pn-4,1.0000,baran
+427,MeasureCode,pn-4,1.0000,baran
+431,MeasureCode,pn-4,1.0000,baran
+432,MeasureCode,pn-4,1.0000,baran
+436,MeasureCode,pn-4,1.0000,baran
+447,MeasureCode,ami-1,1.0000,baran
+453,MeasureCode,pn-4,1.0000,baran
+454,MeasureCode,pn-4,1.0000,baran
+456,MeasureCode,hf-3,1.0000,baran
+460,MeasureCode,scip-inf-1,1.0000,baran
+461,MeasureCode,pn-4,1.0000,baran
+462,MeasureCode,scip-inf-3,1.0000,baran
+464,MeasureCode,scip-inf-6,1.0000,baran
+466,MeasureCode,scip-vte-2,1.0000,baran
+468,MeasureCode,pn-4,1.0000,baran
+473,MeasureCode,pn-4,1.0000,baran
+483,MeasureCode,pn-4,1.0000,baran
+484,MeasureCode,scip-card-2,1.0000,baran
+489,MeasureCode,ami-4,1.0000,baran
+491,MeasureCode,pn-4,1.0000,baran
+496,MeasureCode,pn-4,1.0000,baran
+498,MeasureCode,ami-8a,1.0000,baran
+500,MeasureCode,pn-4,1.0000,baran
+507,MeasureCode,pn-6,1.0000,baran
+510,MeasureCode,pn-4,1.0000,baran
+519,MeasureCode,ami-3,1.0000,baran
+521,MeasureCode,ami-5,1.0000,baran
+527,MeasureCode,pn-4,1.0000,baran
+528,MeasureCode,pn-4,1.0000,baran
+532,MeasureCode,pn-4,1.0000,baran
+536,MeasureCode,pn-4,1.0000,baran
+537,MeasureCode,pn-4,1.0000,baran
+541,MeasureCode,pn-4,1.0000,baran
+544,MeasureCode,ami-3,1.0000,baran
+547,MeasureCode,pn-4,1.0000,baran
+548,MeasureCode,pn-4,1.0000,baran
+549,MeasureCode,scip-vte-1,1.0000,baran
+550,MeasureCode,hf-1,1.0000,baran
+556,MeasureCode,pn-5c,1.0000,baran
+558,MeasureCode,pn-4,1.0000,baran
+562,MeasureCode,pn-4,1.0000,baran
+567,MeasureCode,pn-4,1.0000,baran
+571,MeasureCode,ami-5,1.0000,baran
+573,MeasureCode,pn-4,1.0000,baran
+583,MeasureCode,pn-7,1.0000,baran
+584,MeasureCode,pn-4,1.0000,baran
+585,MeasureCode,scip-inf-1,1.0000,baran
+587,MeasureCode,scip-vte-2,1.0000,baran
+588,MeasureCode,scip-inf-4,1.0000,baran
+590,MeasureCode,pn-4,1.0000,baran
+591,MeasureCode,scip-vte-2,1.0000,baran
+598,MeasureCode,pn-4,1.0000,baran
+599,MeasureCode,hf-1,1.0000,baran
+605,MeasureCode,pn-4,1.0000,baran
+619,MeasureCode,pn-4,1.0000,baran
+631,MeasureCode,pn-4,1.0000,baran
+633,MeasureCode,scip-card-2,1.0000,baran
+636,MeasureCode,pn-4,1.0000,baran
+637,MeasureCode,pn-4,1.0000,baran
+638,MeasureCode,pn-4,1.0000,baran
+640,MeasureCode,scip-vte-1,1.0000,baran
+642,MeasureCode,pn-4,1.0000,baran
+648,MeasureCode,pn-4,1.0000,baran
+650,MeasureCode,pn-4,1.0000,baran
+652,MeasureCode,pn-4,1.0000,baran
+653,MeasureCode,pn-2,1.0000,baran
+661,MeasureCode,ami-4,1.0000,baran
+662,MeasureCode,scip-inf-3,1.0000,baran
+663,MeasureCode,pn-4,1.0000,baran
+667,MeasureCode,pn-4,1.0000,baran
+680,MeasureCode,ami-8a,1.0000,baran
+683,MeasureCode,pn-7,1.0000,baran
+684,MeasureCode,pn-4,1.0000,baran
+689,MeasureCode,scip-inf-6,1.0000,baran
+693,MeasureCode,ami-2,1.0000,baran
+697,MeasureCode,pn-6,1.0000,baran
+698,MeasureCode,ami-8a,1.0000,baran
+708,MeasureCode,pn-7,1.0000,baran
+721,MeasureCode,pn-4,1.0000,baran
+727,MeasureCode,pn-4,1.0000,baran
+729,MeasureCode,pn-4,1.0000,baran
+730,MeasureCode,pn-4,1.0000,baran
+737,MeasureCode,scip-inf-3,1.0000,baran
+741,MeasureCode,pn-4,1.0000,baran
+746,MeasureCode,scip-inf-1,1.0000,baran
+748,MeasureCode,pn-4,1.0000,baran
+754,MeasureCode,pn-4,1.0000,baran
+758,MeasureCode,pn-7,1.0000,baran
+772,MeasureCode,pn-4,1.0000,baran
+775,MeasureCode,pn-4,1.0000,baran
+781,MeasureCode,pn-4,1.0000,baran
+782,MeasureCode,ami-5,1.0000,baran
+789,MeasureCode,pn-4,1.0000,baran
+790,MeasureCode,pn-4,1.0000,baran
+792,MeasureCode,pn-5c,1.0000,baran
+794,MeasureCode,pn-4,1.0000,baran
+796,MeasureCode,scip-inf-1,1.0000,baran
+797,MeasureCode,pn-4,1.0000,baran
+798,MeasureCode,pn-4,1.0000,baran
+799,MeasureCode,scip-inf-4,1.0000,baran
+800,MeasureCode,pn-4,1.0000,baran
+802,MeasureCode,pn-4,1.0000,baran
+806,MeasureCode,ami-4,1.0000,baran
+807,MeasureCode,pn-4,1.0000,baran
+808,MeasureCode,pn-4,1.0000,baran
+809,MeasureCode,pn-4,1.0000,baran
+816,MeasureCode,pn-4,1.0000,baran
+817,MeasureCode,pn-4,1.0000,baran
+820,MeasureCode,scip-card-2,1.0000,baran
+822,MeasureCode,hf-2,1.0000,baran
+825,MeasureCode,pn-4,1.0000,baran
+827,MeasureCode,pn-4,1.0000,baran
+833,MeasureCode,pn-2,1.0000,baran
+839,MeasureCode,pn-4,1.0000,baran
+841,MeasureCode,pn-4,1.0000,baran
+849,MeasureCode,pn-2,1.0000,baran
+853,MeasureCode,pn-2,1.0000,baran
+854,MeasureCode,ami-2,1.0000,baran
+860,MeasureCode,pn-4,1.0000,baran
+865,MeasureCode,pn-4,1.0000,baran
+868,MeasureCode,pn-6,1.0000,baran
+875,MeasureCode,scip-inf-6,1.0000,baran
+878,MeasureCode,pn-4,1.0000,baran
+880,MeasureCode,ami-3,1.0000,baran
+884,MeasureCode,pn-4,1.0000,baran
+891,MeasureCode,pn-4,1.0000,baran
+901,MeasureCode,ami-2,1.0000,baran
+903,MeasureCode,pn-4,1.0000,baran
+906,MeasureCode,pn-4,1.0000,baran
+912,MeasureCode,pn-4,1.0000,baran
+914,MeasureCode,pn-4,1.0000,baran
+915,MeasureCode,pn-4,1.0000,baran
+918,MeasureCode,pn-3b,1.0000,baran
+923,MeasureCode,scip-card-2,1.0000,baran
+925,MeasureCode,pn-4,1.0000,baran
+929,MeasureCode,pn-4,1.0000,baran
+930,MeasureCode,pn-4,1.0000,baran
+932,MeasureCode,hf-4,1.0000,baran
+935,MeasureCode,pn-4,1.0000,baran
+938,MeasureCode,hf-4,1.0000,baran
+947,MeasureCode,pn-7,1.0000,baran
+954,MeasureCode,pn-4,1.0000,baran
+956,MeasureCode,pn-4,1.0000,baran
+958,MeasureCode,pn-4,1.0000,baran
+960,MeasureCode,ami-5,1.0000,baran
+963,MeasureCode,pn-4,1.0000,baran
+965,MeasureCode,hf-3,1.0000,baran
+968,MeasureCode,pn-3b,1.0000,baran
+977,MeasureCode,scip-inf-4,1.0000,baran
+978,MeasureCode,scip-inf-6,1.0000,baran
+982,MeasureCode,pn-4,1.0000,baran
+983,MeasureCode,pn-4,1.0000,baran
+996,MeasureCode,pn-4,1.0000,baran
+1000,MeasureCode,scip-inf-2,1.0000,baran
+994,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+994,Sample,29 patients,1.0000,baran
+6,Sample,29 patients,1.0000,baran
+16,Sample,29 patients,1.0000,baran
+23,Sample,29 patients,1.0000,baran
+34,Sample,29 patients,1.0000,baran
+41,Sample,29 patients,1.0000,baran
+45,Sample,29 patients,1.0000,baran
+72,Sample,29 patients,1.0000,baran
+74,Sample,29 patients,1.0000,baran
+82,Sample,29 patients,1.0000,baran
+94,Sample,29 patients,1.0000,baran
+100,Sample,29 patients,1.0000,baran
+102,Sample,29 patients,1.0000,baran
+103,Sample,29 patients,1.0000,baran
+111,Sample,29 patients,1.0000,baran
+168,Sample,29 patients,1.0000,baran
+169,Sample,29 patients,1.0000,baran
+173,Sample,29 patients,1.0000,baran
+177,Sample,29 patients,1.0000,baran
+179,Sample,29 patients,1.0000,baran
+195,Sample,29 patients,1.0000,baran
+212,Sample,29 patients,1.0000,baran
+214,Sample,29 patients,1.0000,baran
+226,Sample,29 patients,1.0000,baran
+230,Sample,29 patients,1.0000,baran
+238,Sample,29 patients,1.0000,baran
+252,Sample,29 patients,1.0000,baran
+267,Sample,29 patients,1.0000,baran
+274,Sample,29 patients,1.0000,baran
+280,Sample,29 patients,1.0000,baran
+305,Sample,29 patients,1.0000,baran
+310,Sample,29 patients,1.0000,baran
+330,Sample,29 patients,1.0000,baran
+340,Sample,29 patients,1.0000,baran
+359,Sample,29 patients,1.0000,baran
+364,Sample,29 patients,1.0000,baran
+365,Sample,29 patients,1.0000,baran
+375,Sample,29 patients,1.0000,baran
+387,Sample,29 patients,1.0000,baran
+428,Sample,29 patients,1.0000,baran
+441,Sample,29 patients,1.0000,baran
+471,Sample,29 patients,1.0000,baran
+502,Sample,29 patients,1.0000,baran
+507,Sample,29 patients,1.0000,baran
+515,Sample,29 patients,1.0000,baran
+534,Sample,29 patients,1.0000,baran
+552,Sample,29 patients,1.0000,baran
+553,Sample,29 patients,1.0000,baran
+555,Sample,29 patients,1.0000,baran
+592,Sample,29 patients,1.0000,baran
+606,Sample,29 patients,1.0000,baran
+616,Sample,29 patients,1.0000,baran
+621,Sample,29 patients,1.0000,baran
+666,Sample,29 patients,1.0000,baran
+684,Sample,29 patients,1.0000,baran
+686,Sample,29 patients,1.0000,baran
+700,Sample,29 patients,1.0000,baran
+701,Sample,29 patients,1.0000,baran
+720,Sample,29 patients,1.0000,baran
+750,Sample,29 patients,1.0000,baran
+771,Sample,29 patients,1.0000,baran
+784,Sample,29 patients,1.0000,baran
+791,Sample,29 patients,1.0000,baran
+807,Sample,29 patients,1.0000,baran
+850,Sample,29 patients,1.0000,baran
+885,Sample,29 patients,1.0000,baran
+889,Sample,29 patients,1.0000,baran
+946,Sample,29 patients,1.0000,baran
+949,Sample,29 patients,1.0000,baran
+954,Sample,29 patients,1.0000,baran
+964,Sample,29 patients,1.0000,baran
+973,Sample,29 patients,1.0000,baran
+993,Sample,29 patients,1.0000,baran
+605,HospitalName,elba general hospital,1.0000,baran
+8,ZipCode,35058,1.0000,baran
+14,ZipCode,36360,1.0000,baran
+26,ZipCode,35903,1.0000,baran
+42,ZipCode,35968,1.0000,baran
+47,ZipCode,35976,1.0000,baran
+49,ZipCode,35976,1.0000,baran
+50,ZipCode,35801,1.0000,baran
+59,ZipCode,36784,1.0000,baran
+64,ZipCode,35976,1.0000,baran
+66,ZipCode,35976,1.0000,baran
+68,ZipCode,35976,1.0000,baran
+70,ZipCode,35631,1.0000,baran
+74,ZipCode,35631,1.0000,baran
+84,ZipCode,35631,1.0000,baran
+87,ZipCode,35631,1.0000,baran
+92,ZipCode,35631,1.0000,baran
+100,ZipCode,36467,1.0000,baran
+108,ZipCode,36467,1.0000,baran
+117,ZipCode,36467,1.0000,baran
+126,ZipCode,36049,1.0000,baran
+135,ZipCode,36323,1.0000,baran
+138,ZipCode,36049,1.0000,baran
+146,ZipCode,35640,1.0000,baran
+155,ZipCode,35640,1.0000,baran
+157,ZipCode,35640,1.0000,baran
+164,ZipCode,35640,1.0000,baran
+170,ZipCode,35976,1.0000,baran
+175,ZipCode,35976,1.0000,baran
+232,ZipCode,35968,1.0000,baran
+249,ZipCode,36784,1.0000,baran
+256,ZipCode,36784,1.0000,baran
+259,ZipCode,35903,1.0000,baran
+260,ZipCode,36784,1.0000,baran
+264,ZipCode,36784,1.0000,baran
+273,ZipCode,35007,1.0000,baran
+278,ZipCode,35007,1.0000,baran
+282,ZipCode,35007,1.0000,baran
+291,ZipCode,35007,1.0000,baran
+292,ZipCode,35640,1.0000,baran
+295,ZipCode,36049,1.0000,baran
+315,ZipCode,35903,1.0000,baran
+316,ZipCode,36201,1.0000,baran
+317,ZipCode,36201,1.0000,baran
+324,ZipCode,36201,1.0000,baran
+327,ZipCode,36201,1.0000,baran
+340,ZipCode,36302,1.0000,baran
+341,ZipCode,36302,1.0000,baran
+354,ZipCode,35594,1.0000,baran
+355,ZipCode,35594,1.0000,baran
+366,ZipCode,35594,1.0000,baran
+367,ZipCode,35045,1.0000,baran
+405,ZipCode,36067,1.0000,baran
+410,ZipCode,35801,1.0000,baran
+411,ZipCode,36067,1.0000,baran
+416,ZipCode,35150,1.0000,baran
+428,ZipCode,36467,1.0000,baran
+430,ZipCode,35150,1.0000,baran
+437,ZipCode,99508,1.0000,baran
+442,ZipCode,99508,1.0000,baran
+452,ZipCode,99559,1.0000,baran
+458,ZipCode,35150,1.0000,baran
+467,ZipCode,36360,1.0000,baran
+475,ZipCode,35903,1.0000,baran
+480,ZipCode,36360,1.0000,baran
+492,ZipCode,35960,1.0000,baran
+494,ZipCode,35960,1.0000,baran
+495,ZipCode,35960,1.0000,baran
+496,ZipCode,35960,1.0000,baran
+497,ZipCode,35960,1.0000,baran
+502,ZipCode,35960,1.0000,baran
+503,ZipCode,35960,1.0000,baran
+507,ZipCode,35960,1.0000,baran
+521,ZipCode,35976,1.0000,baran
+526,ZipCode,35007,1.0000,baran
+529,ZipCode,35007,1.0000,baran
+550,ZipCode,36078,1.0000,baran
+586,ZipCode,35058,1.0000,baran
+598,ZipCode,36323,1.0000,baran
+601,ZipCode,36323,1.0000,baran
+603,ZipCode,36323,1.0000,baran
+616,ZipCode,36801,1.0000,baran
+619,ZipCode,35121,1.0000,baran
+620,ZipCode,36801,1.0000,baran
+638,ZipCode,35801,1.0000,baran
+656,ZipCode,36278,1.0000,baran
+661,ZipCode,36278,1.0000,baran
+662,ZipCode,36278,1.0000,baran
+693,ZipCode,35121,1.0000,baran
+694,ZipCode,36078,1.0000,baran
+710,ZipCode,99508,1.0000,baran
+713,ZipCode,35903,1.0000,baran
+718,ZipCode,35058,1.0000,baran
+720,ZipCode,35058,1.0000,baran
+726,ZipCode,35058,1.0000,baran
+728,ZipCode,35058,1.0000,baran
+729,ZipCode,35903,1.0000,baran
+736,ZipCode,35903,1.0000,baran
+755,ZipCode,35903,1.0000,baran
+760,ZipCode,36467,1.0000,baran
+767,ZipCode,36201,1.0000,baran
+770,ZipCode,36201,1.0000,baran
+775,ZipCode,35801,1.0000,baran
+783,ZipCode,36201,1.0000,baran
+789,ZipCode,35007,1.0000,baran
+791,ZipCode,35801,1.0000,baran
+792,ZipCode,35801,1.0000,baran
+797,ZipCode,35801,1.0000,baran
+798,ZipCode,35801,1.0000,baran
+811,ZipCode,35903,1.0000,baran
+856,ZipCode,35594,1.0000,baran
+876,ZipCode,35594,1.0000,baran
+890,ZipCode,35555,1.0000,baran
+897,ZipCode,35555,1.0000,baran
+902,ZipCode,36278,1.0000,baran
+904,ZipCode,35903,1.0000,baran
+905,ZipCode,35903,1.0000,baran
+906,ZipCode,35903,1.0000,baran
+907,ZipCode,36784,1.0000,baran
+918,ZipCode,35903,1.0000,baran
+922,ZipCode,35150,1.0000,baran
+933,ZipCode,36033,1.0000,baran
+939,ZipCode,36033,1.0000,baran
+942,ZipCode,36033,1.0000,baran
+948,ZipCode,36033,1.0000,baran
+965,ZipCode,35903,1.0000,baran
+968,ZipCode,36323,1.0000,baran
+969,ZipCode,36323,1.0000,baran
+970,ZipCode,36323,1.0000,baran
+976,ZipCode,36323,1.0000,baran
+980,ZipCode,36323,1.0000,baran
+989,ZipCode,35903,1.0000,baran
+992,ZipCode,35121,1.0000,baran
+605,CountyName,coffee,1.0000,baran
+3,CountyName,chambers,1.0000,baran
+7,CountyName,fayette,1.0000,baran
+8,CountyName,jefferson,1.0000,baran
+10,CountyName,etowah,1.0000,baran
+12,CountyName,jefferson,1.0000,baran
+14,CountyName,calhoun,1.0000,baran
+15,CountyName,jefferson,1.0000,baran
+16,CountyName,jefferson,1.0000,baran
+26,CountyName,houston,1.0000,baran
+29,CountyName,houston,1.0000,baran
+34,CountyName,houston,1.0000,baran
+35,CountyName,etowah,1.0000,baran
+42,CountyName,houston,1.0000,baran
+48,CountyName,cherokee,1.0000,baran
+50,CountyName,marshall,1.0000,baran
+51,CountyName,marshall,1.0000,baran
+53,CountyName,marshall,1.0000,baran
+55,CountyName,marshall,1.0000,baran
+56,CountyName,marshall,1.0000,baran
+59,CountyName,marshall,1.0000,baran
+60,CountyName,marshall,1.0000,baran
+63,CountyName,houston,1.0000,baran
+71,CountyName,marion,1.0000,baran
+75,CountyName,coffee,1.0000,baran
+80,CountyName,lauderdale,1.0000,baran
+86,CountyName,lauderdale,1.0000,baran
+91,CountyName,lauderdale,1.0000,baran
+93,CountyName,anchorage,1.0000,baran
+98,CountyName,houston,1.0000,baran
+103,CountyName,covington,1.0000,baran
+106,CountyName,covington,1.0000,baran
+113,CountyName,covington,1.0000,baran
+115,CountyName,cherokee,1.0000,baran
+122,CountyName,crenshaw,1.0000,baran
+123,CountyName,houston,1.0000,baran
+128,CountyName,jefferson,1.0000,baran
+132,CountyName,coffee,1.0000,baran
+135,CountyName,crenshaw,1.0000,baran
+136,CountyName,de kalb,1.0000,baran
+141,CountyName,crenshaw,1.0000,baran
+145,CountyName,marion,1.0000,baran
+148,CountyName,houston,1.0000,baran
+150,CountyName,morgan,1.0000,baran
+154,CountyName,morgan,1.0000,baran
+165,CountyName,lauderdale,1.0000,baran
+167,CountyName,crenshaw,1.0000,baran
+168,CountyName,cherokee,1.0000,baran
+178,CountyName,marshall,1.0000,baran
+181,CountyName,lauderdale,1.0000,baran
+182,CountyName,marshall,1.0000,baran
+184,CountyName,houston,1.0000,baran
+191,CountyName,lauderdale,1.0000,baran
+194,CountyName,marshall,1.0000,baran
+195,CountyName,chambers,1.0000,baran
+201,CountyName,jefferson,1.0000,baran
+205,CountyName,marion,1.0000,baran
+214,CountyName,jefferson,1.0000,baran
+216,CountyName,cherokee,1.0000,baran
+224,CountyName,lauderdale,1.0000,baran
+229,CountyName,chambers,1.0000,baran
+234,CountyName,de kalb,1.0000,baran
+242,CountyName,coffee,1.0000,baran
+252,CountyName,lauderdale,1.0000,baran
+254,CountyName,clarke,1.0000,baran
+255,CountyName,chambers,1.0000,baran
+259,CountyName,jefferson,1.0000,baran
+268,CountyName,clarke,1.0000,baran
+280,CountyName,jefferson,1.0000,baran
+281,CountyName,shelby,1.0000,baran
+292,CountyName,shelby,1.0000,baran
+295,CountyName,jefferson,1.0000,baran
+305,CountyName,jefferson,1.0000,baran
+307,CountyName,marshall,1.0000,baran
+315,CountyName,marshall,1.0000,baran
+318,CountyName,houston,1.0000,baran
+329,CountyName,houston,1.0000,baran
+333,CountyName,houston,1.0000,baran
+335,CountyName,cherokee,1.0000,baran
+337,CountyName,cherokee,1.0000,baran
+346,CountyName,houston,1.0000,baran
+348,CountyName,houston,1.0000,baran
+367,CountyName,marion,1.0000,baran
+371,CountyName,marion,1.0000,baran
+381,CountyName,mobile,1.0000,baran
+387,CountyName,lauderdale,1.0000,baran
+389,CountyName,mobile,1.0000,baran
+396,CountyName,autauga,1.0000,baran
+399,CountyName,autauga,1.0000,baran
+410,CountyName,autauga,1.0000,baran
+418,CountyName,talladega,1.0000,baran
+424,CountyName,talladega,1.0000,baran
+428,CountyName,cherokee,1.0000,baran
+433,CountyName,houston,1.0000,baran
+439,CountyName,coffee,1.0000,baran
+441,CountyName,coffee,1.0000,baran
+444,CountyName,anchorage,1.0000,baran
+458,CountyName,jefferson,1.0000,baran
+463,CountyName,covington,1.0000,baran
+465,CountyName,marshall,1.0000,baran
+468,CountyName,dale,1.0000,baran
+470,CountyName,marshall,1.0000,baran
+473,CountyName,cherokee,1.0000,baran
+475,CountyName,dale,1.0000,baran
+477,CountyName,chilton,1.0000,baran
+481,CountyName,shelby,1.0000,baran
+482,CountyName,dale,1.0000,baran
+485,CountyName,marion,1.0000,baran
+504,CountyName,cherokee,1.0000,baran
+505,CountyName,cherokee,1.0000,baran
+506,CountyName,cherokee,1.0000,baran
+510,CountyName,chambers,1.0000,baran
+514,CountyName,cherokee,1.0000,baran
+518,CountyName,montgomery,1.0000,baran
+519,CountyName,anchorage,1.0000,baran
+521,CountyName,montgomery,1.0000,baran
+523,CountyName,montgomery,1.0000,baran
+526,CountyName,chilton,1.0000,baran
+529,CountyName,montgomery,1.0000,baran
+540,CountyName,montgomery,1.0000,baran
+550,CountyName,cherokee,1.0000,baran
+553,CountyName,marshall,1.0000,baran
+555,CountyName,montgomery,1.0000,baran
+565,CountyName,montgomery,1.0000,baran
+570,CountyName,chambers,1.0000,baran
+572,CountyName,chambers,1.0000,baran
+575,CountyName,houston,1.0000,baran
+576,CountyName,chambers,1.0000,baran
+578,CountyName,lauderdale,1.0000,baran
+580,CountyName,lauderdale,1.0000,baran
+582,CountyName,chambers,1.0000,baran
+583,CountyName,chambers,1.0000,baran
+586,CountyName,dale,1.0000,baran
+590,CountyName,chambers,1.0000,baran
+597,CountyName,cherokee,1.0000,baran
+609,CountyName,coffee,1.0000,baran
+611,CountyName,houston,1.0000,baran
+612,CountyName,coffee,1.0000,baran
+616,CountyName,coffee,1.0000,baran
+619,CountyName,chambers,1.0000,baran
+623,CountyName,lauderdale,1.0000,baran
+624,CountyName,butler,1.0000,baran
+625,CountyName,marshall,1.0000,baran
+627,CountyName,lee,1.0000,baran
+636,CountyName,lee,1.0000,baran
+638,CountyName,lee,1.0000,baran
+639,CountyName,lee,1.0000,baran
+640,CountyName,coffee,1.0000,baran
+646,CountyName,randolph,1.0000,baran
+652,CountyName,jefferson,1.0000,baran
+655,CountyName,randolph,1.0000,baran
+660,CountyName,lauderdale,1.0000,baran
+666,CountyName,cherokee,1.0000,baran
+671,CountyName,jefferson,1.0000,baran
+683,CountyName,montgomery,1.0000,baran
+684,CountyName,lee,1.0000,baran
+693,CountyName,chambers,1.0000,baran
+696,CountyName,elmore,1.0000,baran
+697,CountyName,elmore,1.0000,baran
+698,CountyName,clarke,1.0000,baran
+701,CountyName,elmore,1.0000,baran
+703,CountyName,butler,1.0000,baran
+704,CountyName,chilton,1.0000,baran
+710,CountyName,elmore,1.0000,baran
+712,CountyName,elmore,1.0000,baran
+713,CountyName,etowah,1.0000,baran
+715,CountyName,dale,1.0000,baran
+716,CountyName,elmore,1.0000,baran
+717,CountyName,cullman,1.0000,baran
+719,CountyName,cullman,1.0000,baran
+723,CountyName,cullman,1.0000,baran
+729,CountyName,cullman,1.0000,baran
+731,CountyName,cullman,1.0000,baran
+732,CountyName,cullman,1.0000,baran
+733,CountyName,cullman,1.0000,baran
+734,CountyName,cullman,1.0000,baran
+736,CountyName,cullman,1.0000,baran
+743,CountyName,covington,1.0000,baran
+745,CountyName,covington,1.0000,baran
+750,CountyName,chambers,1.0000,baran
+753,CountyName,lauderdale,1.0000,baran
+754,CountyName,covington,1.0000,baran
+755,CountyName,fayette,1.0000,baran
+756,CountyName,covington,1.0000,baran
+765,CountyName,covington,1.0000,baran
+768,CountyName,calhoun,1.0000,baran
+781,CountyName,madison,1.0000,baran
+782,CountyName,butler,1.0000,baran
+783,CountyName,madison,1.0000,baran
+789,CountyName,madison,1.0000,baran
+799,CountyName,marion,1.0000,baran
+800,CountyName,madison,1.0000,baran
+801,CountyName,coffee,1.0000,baran
+802,CountyName,butler,1.0000,baran
+812,CountyName,etowah,1.0000,baran
+821,CountyName,etowah,1.0000,baran
+822,CountyName,coffee,1.0000,baran
+825,CountyName,etowah,1.0000,baran
+826,CountyName,cherokee,1.0000,baran
+833,CountyName,chilton,1.0000,baran
+834,CountyName,chilton,1.0000,baran
+845,CountyName,chilton,1.0000,baran
+849,CountyName,chilton,1.0000,baran
+852,CountyName,chilton,1.0000,baran
+854,CountyName,marshall,1.0000,baran
+855,CountyName,marion,1.0000,baran
+864,CountyName,butler,1.0000,baran
+875,CountyName,marion,1.0000,baran
+878,CountyName,fayette,1.0000,baran
+879,CountyName,lauderdale,1.0000,baran
+883,CountyName,houston,1.0000,baran
+896,CountyName,fayette,1.0000,baran
+898,CountyName,cherokee,1.0000,baran
+902,CountyName,fayette,1.0000,baran
+903,CountyName,etowah,1.0000,baran
+907,CountyName,etowah,1.0000,baran
+911,CountyName,etowah,1.0000,baran
+912,CountyName,houston,1.0000,baran
+913,CountyName,etowah,1.0000,baran
+917,CountyName,etowah,1.0000,baran
+922,CountyName,etowah,1.0000,baran
+924,CountyName,etowah,1.0000,baran
+927,CountyName,etowah,1.0000,baran
+944,CountyName,butler,1.0000,baran
+947,CountyName,butler,1.0000,baran
+949,CountyName,butler,1.0000,baran
+952,CountyName,calhoun,1.0000,baran
+965,CountyName,coffee,1.0000,baran
+966,CountyName,houston,1.0000,baran
+972,CountyName,jefferson,1.0000,baran
+977,CountyName,coffee,1.0000,baran
+988,CountyName,blount,1.0000,baran
+989,CountyName,blount,1.0000,baran
+993,CountyName,blount,1.0000,baran
+997,CountyName,butler,1.0000,baran
+5,PhoneNumber,2053258100,1.0000,baran
+7,PhoneNumber,2562651000,1.0000,baran
+10,PhoneNumber,2565718000,1.0000,baran
+11,PhoneNumber,3348972257,1.0000,baran
+14,PhoneNumber,3347742601,1.0000,baran
+18,PhoneNumber,2562651000,1.0000,baran
+21,PhoneNumber,3347938701,1.0000,baran
+22,PhoneNumber,3347938701,1.0000,baran
+28,PhoneNumber,3347938701,1.0000,baran
+30,PhoneNumber,3347938701,1.0000,baran
+33,PhoneNumber,3347938701,1.0000,baran
+35,PhoneNumber,2057552500,1.0000,baran
+40,PhoneNumber,3347938701,1.0000,baran
+45,PhoneNumber,2565718000,1.0000,baran
+47,PhoneNumber,2565718000,1.0000,baran
+49,PhoneNumber,2565718000,1.0000,baran
+50,PhoneNumber,2562651000,1.0000,baran
+54,PhoneNumber,2565718000,1.0000,baran
+57,PhoneNumber,2565718000,1.0000,baran
+58,PhoneNumber,2565718000,1.0000,baran
+61,PhoneNumber,2565718000,1.0000,baran
+62,PhoneNumber,2565718000,1.0000,baran
+66,PhoneNumber,2565718000,1.0000,baran
+71,PhoneNumber,2562358900,1.0000,baran
+73,PhoneNumber,2567688400,1.0000,baran
+74,PhoneNumber,2567688400,1.0000,baran
+75,PhoneNumber,2569275531,1.0000,baran
+78,PhoneNumber,2567688400,1.0000,baran
+85,PhoneNumber,2567688400,1.0000,baran
+89,PhoneNumber,2567688400,1.0000,baran
+92,PhoneNumber,2567688400,1.0000,baran
+93,PhoneNumber,2059325966,1.0000,baran
+97,PhoneNumber,3344933541,1.0000,baran
+98,PhoneNumber,3342938000,1.0000,baran
+104,PhoneNumber,3344933541,1.0000,baran
+112,PhoneNumber,3344933541,1.0000,baran
+128,PhoneNumber,2054877736,1.0000,baran
+131,PhoneNumber,3343353374,1.0000,baran
+136,PhoneNumber,2565718000,1.0000,baran
+137,PhoneNumber,3343353374,1.0000,baran
+140,PhoneNumber,3343353374,1.0000,baran
+145,PhoneNumber,2562651000,1.0000,baran
+149,PhoneNumber,2567736511,1.0000,baran
+155,PhoneNumber,2567736511,1.0000,baran
+157,PhoneNumber,2567736511,1.0000,baran
+161,PhoneNumber,2567736511,1.0000,baran
+165,PhoneNumber,3342882100,1.0000,baran
+167,PhoneNumber,2569275531,1.0000,baran
+174,PhoneNumber,2565718000,1.0000,baran
+183,PhoneNumber,2565718000,1.0000,baran
+184,PhoneNumber,3342938000,1.0000,baran
+190,PhoneNumber,2565718000,1.0000,baran
+191,PhoneNumber,2565718000,1.0000,baran
+192,PhoneNumber,2565718000,1.0000,baran
+202,PhoneNumber,2058383122,1.0000,baran
+203,PhoneNumber,2058383122,1.0000,baran
+205,PhoneNumber,2562651000,1.0000,baran
+209,PhoneNumber,2564944000,1.0000,baran
+210,PhoneNumber,2058383122,1.0000,baran
+213,PhoneNumber,2058383122,1.0000,baran
+216,PhoneNumber,3344933541,1.0000,baran
+221,PhoneNumber,2568453150,1.0000,baran
+222,PhoneNumber,2568453150,1.0000,baran
+225,PhoneNumber,2568453150,1.0000,baran
+227,PhoneNumber,2568453150,1.0000,baran
+233,PhoneNumber,2568453150,1.0000,baran
+248,PhoneNumber,3346366221,1.0000,baran
+252,PhoneNumber,2567736511,1.0000,baran
+259,PhoneNumber,2564944000,1.0000,baran
+263,PhoneNumber,3346366221,1.0000,baran
+271,PhoneNumber,2056208100,1.0000,baran
+275,PhoneNumber,2056208100,1.0000,baran
+278,PhoneNumber,2056208100,1.0000,baran
+279,PhoneNumber,2056208100,1.0000,baran
+280,PhoneNumber,3343353374,1.0000,baran
+286,PhoneNumber,2056208100,1.0000,baran
+289,PhoneNumber,2056208100,1.0000,baran
+290,PhoneNumber,2056208100,1.0000,baran
+296,PhoneNumber,2053258100,1.0000,baran
+312,PhoneNumber,2562358900,1.0000,baran
+313,PhoneNumber,2562358900,1.0000,baran
+315,PhoneNumber,2564944000,1.0000,baran
+319,PhoneNumber,2562358900,1.0000,baran
+322,PhoneNumber,2562358900,1.0000,baran
+324,PhoneNumber,2562358900,1.0000,baran
+326,PhoneNumber,2562358900,1.0000,baran
+328,PhoneNumber,2562358900,1.0000,baran
+329,PhoneNumber,2562495000,1.0000,baran
+330,PhoneNumber,2562358900,1.0000,baran
+332,PhoneNumber,3347938701,1.0000,baran
+334,PhoneNumber,3347938701,1.0000,baran
+338,PhoneNumber,3347938701,1.0000,baran
+339,PhoneNumber,3347938701,1.0000,baran
+341,PhoneNumber,3347938701,1.0000,baran
+342,PhoneNumber,3347938701,1.0000,baran
+343,PhoneNumber,3347938701,1.0000,baran
+363,PhoneNumber,2054877736,1.0000,baran
+374,PhoneNumber,2054877736,1.0000,baran
+375,PhoneNumber,2054877736,1.0000,baran
+376,PhoneNumber,2054877736,1.0000,baran
+383,PhoneNumber,2514717110,1.0000,baran
+397,PhoneNumber,3343614267,1.0000,baran
+406,PhoneNumber,3343614267,1.0000,baran
+412,PhoneNumber,3343614267,1.0000,baran
+415,PhoneNumber,2562495000,1.0000,baran
+417,PhoneNumber,2562495000,1.0000,baran
+425,PhoneNumber,2562495000,1.0000,baran
+429,PhoneNumber,2562495000,1.0000,baran
+437,PhoneNumber,9072761131,1.0000,baran
+440,PhoneNumber,9072761131,1.0000,baran
+441,PhoneNumber,3347561400,1.0000,baran
+446,PhoneNumber,9072761131,1.0000,baran
+448,PhoneNumber,9072761131,1.0000,baran
+449,PhoneNumber,9072761131,1.0000,baran
+457,PhoneNumber,2563864556,1.0000,baran
+459,PhoneNumber,2567736511,1.0000,baran
+463,PhoneNumber,2567372000,1.0000,baran
+464,PhoneNumber,2563864556,1.0000,baran
+465,PhoneNumber,2563572111,1.0000,baran
+467,PhoneNumber,3347742601,1.0000,baran
+470,PhoneNumber,2567736511,1.0000,baran
+473,PhoneNumber,3344933541,1.0000,baran
+474,PhoneNumber,3347742601,1.0000,baran
+477,PhoneNumber,3348972257,1.0000,baran
+479,PhoneNumber,3347742601,1.0000,baran
+480,PhoneNumber,3347742601,1.0000,baran
+481,PhoneNumber,2565718000,1.0000,baran
+485,PhoneNumber,2054877736,1.0000,baran
+486,PhoneNumber,3347742601,1.0000,baran
+490,PhoneNumber,3347742601,1.0000,baran
+492,PhoneNumber,2569275531,1.0000,baran
+493,PhoneNumber,2569275531,1.0000,baran
+499,PhoneNumber,2569275531,1.0000,baran
+501,PhoneNumber,2569275531,1.0000,baran
+502,PhoneNumber,2569275531,1.0000,baran
+515,PhoneNumber,2569275531,1.0000,baran
+519,PhoneNumber,3343353374,1.0000,baran
+524,PhoneNumber,3342938000,1.0000,baran
+525,PhoneNumber,3342938000,1.0000,baran
+526,PhoneNumber,2056208100,1.0000,baran
+527,PhoneNumber,3342938000,1.0000,baran
+534,PhoneNumber,3342938000,1.0000,baran
+539,PhoneNumber,3342938000,1.0000,baran
+544,PhoneNumber,3342938000,1.0000,baran
+550,PhoneNumber,3342836541,1.0000,baran
+552,PhoneNumber,3342938000,1.0000,baran
+553,PhoneNumber,3343762205,1.0000,baran
+558,PhoneNumber,3342938000,1.0000,baran
+561,PhoneNumber,3342938000,1.0000,baran
+568,PhoneNumber,3347561400,1.0000,baran
+573,PhoneNumber,3347561400,1.0000,baran
+578,PhoneNumber,3347561400,1.0000,baran
+580,PhoneNumber,2562358900,1.0000,baran
+586,PhoneNumber,2567372000,1.0000,baran
+595,PhoneNumber,3348972257,1.0000,baran
+601,PhoneNumber,3348972257,1.0000,baran
+602,PhoneNumber,3348972257,1.0000,baran
+604,PhoneNumber,3348972257,1.0000,baran
+608,PhoneNumber,3348972257,1.0000,baran
+610,PhoneNumber,3348972257,1.0000,baran
+617,PhoneNumber,3347493411,1.0000,baran
+619,PhoneNumber,2052743000,1.0000,baran
+621,PhoneNumber,3347493411,1.0000,baran
+622,PhoneNumber,3347493411,1.0000,baran
+623,PhoneNumber,2568453150,1.0000,baran
+625,PhoneNumber,3343762205,1.0000,baran
+626,PhoneNumber,3347493411,1.0000,baran
+629,PhoneNumber,3347493411,1.0000,baran
+630,PhoneNumber,3347493411,1.0000,baran
+632,PhoneNumber,3347493411,1.0000,baran
+633,PhoneNumber,3347493411,1.0000,baran
+640,PhoneNumber,2054877736,1.0000,baran
+652,PhoneNumber,3348972257,1.0000,baran
+656,PhoneNumber,2563572111,1.0000,baran
+661,PhoneNumber,2563572111,1.0000,baran
+667,PhoneNumber,2053258100,1.0000,baran
+672,PhoneNumber,2059344011,1.0000,baran
+681,PhoneNumber,2059344011,1.0000,baran
+683,PhoneNumber,3348972257,1.0000,baran
+684,PhoneNumber,3347493411,1.0000,baran
+685,PhoneNumber,2059344011,1.0000,baran
+687,PhoneNumber,2059325966,1.0000,baran
+691,PhoneNumber,2059344011,1.0000,baran
+692,PhoneNumber,3342836541,1.0000,baran
+694,PhoneNumber,3342836541,1.0000,baran
+698,PhoneNumber,2054877736,1.0000,baran
+699,PhoneNumber,3342836541,1.0000,baran
+704,PhoneNumber,3343353374,1.0000,baran
+711,PhoneNumber,3342836541,1.0000,baran
+713,PhoneNumber,2564944000,1.0000,baran
+715,PhoneNumber,2054877736,1.0000,baran
+725,PhoneNumber,2567372000,1.0000,baran
+730,PhoneNumber,2567372000,1.0000,baran
+735,PhoneNumber,2567372000,1.0000,baran
+737,PhoneNumber,2567372000,1.0000,baran
+744,PhoneNumber,3344933541,1.0000,baran
+746,PhoneNumber,3344933541,1.0000,baran
+751,PhoneNumber,3344933541,1.0000,baran
+753,PhoneNumber,3344933541,1.0000,baran
+755,PhoneNumber,2564944000,1.0000,baran
+759,PhoneNumber,3344933541,1.0000,baran
+771,PhoneNumber,2562358900,1.0000,baran
+776,PhoneNumber,2562651000,1.0000,baran
+778,PhoneNumber,2562651000,1.0000,baran
+779,PhoneNumber,2562651000,1.0000,baran
+782,PhoneNumber,3347938701,1.0000,baran
+784,PhoneNumber,2562651000,1.0000,baran
+790,PhoneNumber,2562651000,1.0000,baran
+792,PhoneNumber,2562651000,1.0000,baran
+795,PhoneNumber,2562651000,1.0000,baran
+796,PhoneNumber,2562651000,1.0000,baran
+797,PhoneNumber,2562651000,1.0000,baran
+799,PhoneNumber,3348972257,1.0000,baran
+802,PhoneNumber,2568453150,1.0000,baran
+806,PhoneNumber,2564944000,1.0000,baran
+807,PhoneNumber,2564944000,1.0000,baran
+817,PhoneNumber,2564944000,1.0000,baran
+818,PhoneNumber,2564944000,1.0000,baran
+819,PhoneNumber,2564944000,1.0000,baran
+826,PhoneNumber,2569275531,1.0000,baran
+830,PhoneNumber,2057552500,1.0000,baran
+846,PhoneNumber,2057552500,1.0000,baran
+853,PhoneNumber,2054877736,1.0000,baran
+856,PhoneNumber,2054877736,1.0000,baran
+857,PhoneNumber,2054877736,1.0000,baran
+861,PhoneNumber,2054877736,1.0000,baran
+862,PhoneNumber,2054877736,1.0000,baran
+867,PhoneNumber,2054877736,1.0000,baran
+871,PhoneNumber,2054877736,1.0000,baran
+873,PhoneNumber,2054877736,1.0000,baran
+874,PhoneNumber,2054877736,1.0000,baran
+880,PhoneNumber,2059325966,1.0000,baran
+883,PhoneNumber,3342938000,1.0000,baran
+884,PhoneNumber,2059325966,1.0000,baran
+886,PhoneNumber,2059325966,1.0000,baran
+888,PhoneNumber,2059325966,1.0000,baran
+889,PhoneNumber,2059325966,1.0000,baran
+898,PhoneNumber,3344933541,1.0000,baran
+904,PhoneNumber,2564944000,1.0000,baran
+905,PhoneNumber,2564944000,1.0000,baran
+906,PhoneNumber,2564944000,1.0000,baran
+910,PhoneNumber,2564944000,1.0000,baran
+915,PhoneNumber,2564944000,1.0000,baran
+925,PhoneNumber,2564944000,1.0000,baran
+926,PhoneNumber,2564944000,1.0000,baran
+929,PhoneNumber,2564944000,1.0000,baran
+932,PhoneNumber,3343762205,1.0000,baran
+933,PhoneNumber,3343762205,1.0000,baran
+941,PhoneNumber,3343762205,1.0000,baran
+945,PhoneNumber,3343762205,1.0000,baran
+946,PhoneNumber,3343762205,1.0000,baran
+950,PhoneNumber,3343762205,1.0000,baran
+951,PhoneNumber,3343762205,1.0000,baran
+952,PhoneNumber,3347742601,1.0000,baran
+960,PhoneNumber,3348972257,1.0000,baran
+962,PhoneNumber,3348972257,1.0000,baran
+968,PhoneNumber,3348972257,1.0000,baran
+969,PhoneNumber,3348972257,1.0000,baran
+970,PhoneNumber,3348972257,1.0000,baran
+971,PhoneNumber,3348972257,1.0000,baran
+972,PhoneNumber,2562651000,1.0000,baran
+974,PhoneNumber,3348972257,1.0000,baran
+975,PhoneNumber,3348972257,1.0000,baran
+982,PhoneNumber,2052743000,1.0000,baran
+983,PhoneNumber,2052743000,1.0000,baran
+605,EmergencyService,yes,1.0000,baran
+29,EmergencyService,yes,1.0000,baran
+65,EmergencyService,yes,1.0000,baran
+67,EmergencyService,yes,1.0000,baran
+68,EmergencyService,yes,1.0000,baran
+86,EmergencyService,yes,1.0000,baran
+97,EmergencyService,no,1.0000,baran
+102,EmergencyService,no,1.0000,baran
+104,EmergencyService,no,1.0000,baran
+108,EmergencyService,yes,1.0000,baran
+112,EmergencyService,no,1.0000,baran
+118,EmergencyService,no,1.0000,baran
+134,EmergencyService,yes,1.0000,baran
+160,EmergencyService,yes,1.0000,baran
+164,EmergencyService,yes,1.0000,baran
+242,EmergencyService,yes,1.0000,baran
+252,EmergencyService,yes,1.0000,baran
+253,EmergencyService,yes,1.0000,baran
+255,EmergencyService,yes,1.0000,baran
+285,EmergencyService,yes,1.0000,baran
+337,EmergencyService,yes,1.0000,baran
+346,EmergencyService,yes,1.0000,baran
+353,EmergencyService,yes,1.0000,baran
+388,EmergencyService,yes,1.0000,baran
+415,EmergencyService,no,1.0000,baran
+422,EmergencyService,no,1.0000,baran
+426,EmergencyService,no,1.0000,baran
+428,EmergencyService,yes,1.0000,baran
+429,EmergencyService,no,1.0000,baran
+431,EmergencyService,yes,1.0000,baran
+447,EmergencyService,yes,1.0000,baran
+460,EmergencyService,yes,1.0000,baran
+518,EmergencyService,yes,1.0000,baran
+564,EmergencyService,yes,1.0000,baran
+585,EmergencyService,yes,1.0000,baran
+594,EmergencyService,yes,1.0000,baran
+647,EmergencyService,no,1.0000,baran
+655,EmergencyService,no,1.0000,baran
+656,EmergencyService,yes,1.0000,baran
+661,EmergencyService,yes,1.0000,baran
+662,EmergencyService,yes,1.0000,baran
+664,EmergencyService,no,1.0000,baran
+671,EmergencyService,yes,1.0000,baran
+696,EmergencyService,yes,1.0000,baran
+697,EmergencyService,no,1.0000,baran
+700,EmergencyService,no,1.0000,baran
+730,EmergencyService,yes,1.0000,baran
+733,EmergencyService,yes,1.0000,baran
+745,EmergencyService,no,1.0000,baran
+746,EmergencyService,no,1.0000,baran
+752,EmergencyService,no,1.0000,baran
+756,EmergencyService,no,1.0000,baran
+760,EmergencyService,yes,1.0000,baran
+795,EmergencyService,yes,1.0000,baran
+839,EmergencyService,yes,1.0000,baran
+849,EmergencyService,yes,1.0000,baran
+859,EmergencyService,yes,1.0000,baran
+860,EmergencyService,yes,1.0000,baran
+921,EmergencyService,yes,1.0000,baran
+932,EmergencyService,yes,1.0000,baran
+935,EmergencyService,no,1.0000,baran
+936,EmergencyService,no,1.0000,baran
+942,EmergencyService,yes,1.0000,baran
+947,EmergencyService,no,1.0000,baran
+948,EmergencyService,yes,1.0000,baran
+950,EmergencyService,no,1.0000,baran
+958,EmergencyService,yes,1.0000,baran
+965,EmergencyService,yes,1.0000,baran
+992,EmergencyService,no,1.0000,baran
+605,Condition,pneumonia,1.0000,baran
+440,MeasureCode,pn-4,1.0000,baran
+441,MeasureCode,pn-4,1.0000,baran
+767,MeasureCode,pn-4,1.0000,baran
+777,MeasureCode,pn-4,1.0000,baran
+904,MeasureCode,pn-4,1.0000,baran
+605,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+1,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+9,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+32,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+33,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+44,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+53,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+67,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+88,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+143,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+204,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+285,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+321,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+376,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+389,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+439,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+581,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+589,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+614,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+618,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+620,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+628,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+634,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+644,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+663,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+669,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+716,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+802,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+806,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+816,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+864,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+870,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+881,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+892,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+925,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+952,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+605,Sample,12 patients,1.0000,baran
+5,Sample,12 patients,1.0000,baran
+11,Sample,12 patients,1.0000,baran
+29,Sample,165 patients,1.0000,baran
+44,Sample,12 patients,1.0000,baran
+51,Sample,12 patients,1.0000,baran
+52,Sample,12 patients,1.0000,baran
+71,Sample,12 patients,1.0000,baran
+89,Sample,12 patients,1.0000,baran
+109,Sample,12 patients,1.0000,baran
+115,Sample,12 patients,1.0000,baran
+138,Sample,12 patients,1.0000,baran
+176,Sample,12 patients,1.0000,baran
+182,Sample,12 patients,1.0000,baran
+190,Sample,12 patients,1.0000,baran
+194,Sample,12 patients,1.0000,baran
+209,Sample,12 patients,1.0000,baran
+223,Sample,12 patients,1.0000,baran
+233,Sample,12 patients,1.0000,baran
+241,Sample,12 patients,1.0000,baran
+242,Sample,12 patients,1.0000,baran
+248,Sample,12 patients,1.0000,baran
+272,Sample,12 patients,1.0000,baran
+276,Sample,12 patients,1.0000,baran
+284,Sample,12 patients,1.0000,baran
+285,Sample,12 patients,1.0000,baran
+302,Sample,12 patients,1.0000,baran
+304,Sample,12 patients,1.0000,baran
+314,Sample,81 patients,1.0000,baran
+317,Sample,12 patients,1.0000,baran
+323,Sample,12 patients,1.0000,baran
+335,Sample,12 patients,1.0000,baran
+344,Sample,12 patients,1.0000,baran
+354,Sample,12 patients,1.0000,baran
+366,Sample,12 patients,1.0000,baran
+373,Sample,12 patients,1.0000,baran
+392,Sample,12 patients,1.0000,baran
+399,Sample,12 patients,1.0000,baran
+407,Sample,12 patients,1.0000,baran
+437,Sample,12 patients,1.0000,baran
+456,Sample,81 patients,1.0000,baran
+460,Sample,12 patients,1.0000,baran
+518,Sample,12 patients,1.0000,baran
+521,Sample,12 patients,1.0000,baran
+546,Sample,12 patients,1.0000,baran
+557,Sample,12 patients,1.0000,baran
+562,Sample,12 patients,1.0000,baran
+571,Sample,12 patients,1.0000,baran
+573,Sample,12 patients,1.0000,baran
+583,Sample,12 patients,1.0000,baran
+586,Sample,81 patients,1.0000,baran
+595,Sample,12 patients,1.0000,baran
+599,Sample,12 patients,1.0000,baran
+610,Sample,12 patients,1.0000,baran
+613,Sample,12 patients,1.0000,baran
+614,Sample,12 patients,1.0000,baran
+630,Sample,12 patients,1.0000,baran
+649,Sample,81 patients,1.0000,baran
+653,Sample,12 patients,1.0000,baran
+683,Sample,12 patients,1.0000,baran
+690,Sample,12 patients,1.0000,baran
+703,Sample,12 patients,1.0000,baran
+704,Sample,12 patients,1.0000,baran
+710,Sample,12 patients,1.0000,baran
+719,Sample,81 patients,1.0000,baran
+727,Sample,12 patients,1.0000,baran
+745,Sample,12 patients,1.0000,baran
+748,Sample,12 patients,1.0000,baran
+758,Sample,12 patients,1.0000,baran
+759,Sample,12 patients,1.0000,baran
+767,Sample,12 patients,1.0000,baran
+770,Sample,12 patients,1.0000,baran
+778,Sample,12 patients,1.0000,baran
+783,Sample,12 patients,1.0000,baran
+785,Sample,12 patients,1.0000,baran
+793,Sample,12 patients,1.0000,baran
+795,Sample,12 patients,1.0000,baran
+806,Sample,12 patients,1.0000,baran
+823,Sample,12 patients,1.0000,baran
+826,Sample,12 patients,1.0000,baran
+836,Sample,12 patients,1.0000,baran
+842,Sample,12 patients,1.0000,baran
+846,Sample,12 patients,1.0000,baran
+851,Sample,12 patients,1.0000,baran
+858,Sample,12 patients,1.0000,baran
+868,Sample,12 patients,1.0000,baran
+894,Sample,12 patients,1.0000,baran
+897,Sample,12 patients,1.0000,baran
+919,Sample,12 patients,1.0000,baran
+921,Sample,12 patients,1.0000,baran
+926,Sample,12 patients,1.0000,baran
+933,Sample,12 patients,1.0000,baran
+960,Sample,12 patients,1.0000,baran
+962,Sample,165 patients,1.0000,baran
+967,Sample,12 patients,1.0000,baran
+972,Sample,12 patients,1.0000,baran
+978,Sample,12 patients,1.0000,baran
+986,Sample,12 patients,1.0000,baran
+605,Stateavg,al_pn-4,1.0000,baran
+24,Stateavg,al_pn-4,1.0000,baran
+43,Stateavg,al_pn-4,1.0000,baran
+439,Stateavg,al_pn-4,1.0000,baran
+504,Stateavg,al_pn-3b,1.0000,baran
+615,Stateavg,al_pn-4,1.0000,baran
+705,Stateavg,al_pn-4,1.0000,baran
+863,Stateavg,al_pn-4,1.0000,baran
+382,ProviderNumber,10087,1.0000,baran
+18,ProviderNumber,10087,1.0000,baran
+231,ProviderNumber,10087,1.0000,baran
+274,ProviderNumber,10087,1.0000,baran
+463,ProviderNumber,10087,1.0000,baran
+550,ProviderNumber,10087,1.0000,baran
+621,ProviderNumber,10087,1.0000,baran
+692,ProviderNumber,10087,1.0000,baran
+697,ProviderNumber,10087,1.0000,baran
+834,ProviderNumber,10087,1.0000,baran
+354,CountyName,montgomery,1.0000,baran
+413,CountyName,jefferson,1.0000,baran
+382,Condition,heart attack,1.0000,baran
+382,MeasureName,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.0000,baran
+382,Score,100%,1.0000,baran
+3,Score,empty,1.0000,baran
+6,Score,100%,1.0000,baran
+7,Score,100%,1.0000,baran
+12,Score,100%,1.0000,baran
+14,Score,empty,1.0000,baran
+20,Score,100%,1.0000,baran
+25,Score,empty,1.0000,baran
+26,Score,empty,1.0000,baran
+32,Score,empty,1.0000,baran
+37,Score,6 patients,1.0000,baran
+45,Score,100%,1.0000,baran
+46,Score,100%,1.0000,baran
+52,Score,empty,1.0000,baran
+53,Score,empty,1.0000,baran
+55,Score,empty,1.0000,baran
+57,Score,100%,1.0000,baran
+60,Score,100%,1.0000,baran
+68,Score,6 patients,1.0000,baran
+73,Score,100%,1.0000,baran
+76,Score,empty,1.0000,baran
+77,Score,empty,1.0000,baran
+79,Score,100%,1.0000,baran
+86,Score,100%,1.0000,baran
+91,Score,empty,1.0000,baran
+93,Score,6 patients,1.0000,baran
+103,Score,6 patients,1.0000,baran
+114,Score,6 patients,1.0000,baran
+122,Score,100%,1.0000,baran
+128,Score,6 patients,1.0000,baran
+130,Score,empty,1.0000,baran
+133,Score,100%,1.0000,baran
+137,Score,100%,1.0000,baran
+145,Score,100%,1.0000,baran
+157,Score,100%,1.0000,baran
+169,Score,100%,1.0000,baran
+177,Score,100%,1.0000,baran
+183,Score,100%,1.0000,baran
+203,Score,empty,1.0000,baran
+209,Score,empty,1.0000,baran
+213,Score,6 patients,1.0000,baran
+223,Score,6 patients,1.0000,baran
+225,Score,empty,1.0000,baran
+226,Score,empty,1.0000,baran
+231,Score,empty,1.0000,baran
+237,Score,100%,1.0000,baran
+239,Score,100%,1.0000,baran
+253,Score,empty,1.0000,baran
+254,Score,100%,1.0000,baran
+255,Score,100%,1.0000,baran
+256,Score,6 patients,1.0000,baran
+257,Score,100%,1.0000,baran
+262,Score,empty,1.0000,baran
+264,Score,empty,1.0000,baran
+266,Score,empty,1.0000,baran
+268,Score,empty,1.0000,baran
+270,Score,empty,1.0000,baran
+271,Score,100%,1.0000,baran
+274,Score,100%,1.0000,baran
+279,Score,100%,1.0000,baran
+281,Score,100%,1.0000,baran
+285,Score,100%,1.0000,baran
+289,Score,6 patients,1.0000,baran
+291,Score,empty,1.0000,baran
+298,Score,empty,1.0000,baran
+301,Score,100%,1.0000,baran
+310,Score,100%,1.0000,baran
+312,Score,100%,1.0000,baran
+318,Score,empty,1.0000,baran
+319,Score,empty,1.0000,baran
+322,Score,100%,1.0000,baran
+326,Score,100%,1.0000,baran
+330,Score,100%,1.0000,baran
+331,Score,100%,1.0000,baran
+338,Score,empty,1.0000,baran
+340,Score,100%,1.0000,baran
+348,Score,100%,1.0000,baran
+349,Score,empty,1.0000,baran
+353,Score,empty,1.0000,baran
+354,Score,empty,1.0000,baran
+358,Score,6 patients,1.0000,baran
+366,Score,6 patients,1.0000,baran
+371,Score,6 patients,1.0000,baran
+376,Score,empty,1.0000,baran
+378,Score,100%,1.0000,baran
+381,Score,empty,1.0000,baran
+383,Score,100%,1.0000,baran
+384,Score,100%,1.0000,baran
+390,Score,100%,1.0000,baran
+391,Score,100%,1.0000,baran
+399,Score,empty,1.0000,baran
+406,Score,empty,1.0000,baran
+412,Score,100%,1.0000,baran
+413,Score,100%,1.0000,baran
+422,Score,empty,1.0000,baran
+426,Score,6 patients,1.0000,baran
+429,Score,100%,1.0000,baran
+430,Score,empty,1.0000,baran
+432,Score,100%,1.0000,baran
+444,Score,empty,1.0000,baran
+447,Score,100%,1.0000,baran
+450,Score,100%,1.0000,baran
+458,Score,empty,1.0000,baran
+460,Score,empty,1.0000,baran
+461,Score,100%,1.0000,baran
+468,Score,100%,1.0000,baran
+470,Score,100%,1.0000,baran
+480,Score,6 patients,1.0000,baran
+483,Score,100%,1.0000,baran
+486,Score,100%,1.0000,baran
+487,Score,100%,1.0000,baran
+488,Score,empty,1.0000,baran
+499,Score,100%,1.0000,baran
+501,Score,100%,1.0000,baran
+504,Score,97%,1.0000,baran
+507,Score,6 patients,1.0000,baran
+515,Score,100%,1.0000,baran
+523,Score,empty,1.0000,baran
+534,Score,empty,1.0000,baran
+535,Score,100%,1.0000,baran
+544,Score,empty,1.0000,baran
+554,Score,100%,1.0000,baran
+564,Score,100%,1.0000,baran
+571,Score,100%,1.0000,baran
+574,Score,100%,1.0000,baran
+578,Score,100%,1.0000,baran
+586,Score,100%,1.0000,baran
+588,Score,100%,1.0000,baran
+595,Score,100%,1.0000,baran
+602,Score,100%,1.0000,baran
+606,Score,100%,1.0000,baran
+612,Score,empty,1.0000,baran
+618,Score,100%,1.0000,baran
+623,Score,empty,1.0000,baran
+625,Score,100%,1.0000,baran
+629,Score,100%,1.0000,baran
+634,Score,6 patients,1.0000,baran
+636,Score,100%,1.0000,baran
+642,Score,100%,1.0000,baran
+644,Score,100%,1.0000,baran
+645,Score,100%,1.0000,baran
+647,Score,empty,1.0000,baran
+650,Score,100%,1.0000,baran
+666,Score,100%,1.0000,baran
+667,Score,empty,1.0000,baran
+668,Score,6 patients,1.0000,baran
+670,Score,100%,1.0000,baran
+680,Score,empty,1.0000,baran
+681,Score,100%,1.0000,baran
+684,Score,6 patients,1.0000,baran
+685,Score,100%,1.0000,baran
+692,Score,empty,1.0000,baran
+701,Score,100%,1.0000,baran
+704,Score,100%,1.0000,baran
+706,Score,100%,1.0000,baran
+707,Score,100%,1.0000,baran
+709,Score,100%,1.0000,baran
+711,Score,6 patients,1.0000,baran
+738,Score,empty,1.0000,baran
+751,Score,empty,1.0000,baran
+753,Score,100%,1.0000,baran
+754,Score,100%,1.0000,baran
+764,Score,100%,1.0000,baran
+765,Score,empty,1.0000,baran
+768,Score,100%,1.0000,baran
+771,Score,empty,1.0000,baran
+775,Score,6 patients,1.0000,baran
+779,Score,100%,1.0000,baran
+780,Score,100%,1.0000,baran
+781,Score,100%,1.0000,baran
+784,Score,empty,1.0000,baran
+790,Score,empty,1.0000,baran
+797,Score,empty,1.0000,baran
+798,Score,empty,1.0000,baran
+803,Score,100%,1.0000,baran
+813,Score,6 patients,1.0000,baran
+817,Score,100%,1.0000,baran
+819,Score,100%,1.0000,baran
+820,Score,100%,1.0000,baran
+824,Score,empty,1.0000,baran
+829,Score,6 patients,1.0000,baran
+830,Score,100%,1.0000,baran
+833,Score,100%,1.0000,baran
+849,Score,100%,1.0000,baran
+858,Score,empty,1.0000,baran
+863,Score,6 patients,1.0000,baran
+864,Score,100%,1.0000,baran
+866,Score,100%,1.0000,baran
+867,Score,100%,1.0000,baran
+870,Score,100%,1.0000,baran
+871,Score,100%,1.0000,baran
+892,Score,empty,1.0000,baran
+896,Score,100%,1.0000,baran
+903,Score,100%,1.0000,baran
+910,Score,100%,1.0000,baran
+914,Score,100%,1.0000,baran
+915,Score,100%,1.0000,baran
+920,Score,100%,1.0000,baran
+921,Score,100%,1.0000,baran
+922,Score,100%,1.0000,baran
+927,Score,empty,1.0000,baran
+937,Score,empty,1.0000,baran
+939,Score,empty,1.0000,baran
+947,Score,empty,1.0000,baran
+948,Score,100%,1.0000,baran
+950,Score,empty,1.0000,baran
+954,Score,100%,1.0000,baran
+966,Score,100%,1.0000,baran
+968,Score,empty,1.0000,baran
+970,Score,empty,1.0000,baran
+982,Score,100%,1.0000,baran
+985,Score,6 patients,1.0000,baran
+986,Score,empty,1.0000,baran
+989,Score,empty,1.0000,baran
+991,Score,100%,1.0000,baran
+992,Score,empty,1.0000,baran
+995,Score,empty,1.0000,baran
+997,Score,100%,1.0000,baran
+998,Score,100%,1.0000,baran
+999,Score,100%,1.0000,baran
+382,Sample,22 patients,1.0000,baran
+382,Stateavg,al_ami-3,1.0000,baran
+311,HospitalName,callahan eye foundation hospital,1.0000,baran
+7,HospitalName,fayette medical center,1.0000,baran
+10,HospitalName,gadsden regional medical center,1.0000,baran
+13,HospitalName,helen keller memorial hospital,1.0000,baran
+16,HospitalName,helen keller memorial hospital,1.0000,baran
+18,HospitalName,hartselle medical center,1.0000,baran
+23,HospitalName,southeast alabama medical center,1.0000,baran
+32,HospitalName,southeast alabama medical center,1.0000,baran
+33,HospitalName,elba general hospital,1.0000,baran
+34,HospitalName,callahan eye foundation hospital,1.0000,baran
+35,HospitalName,riverview regional medical center,1.0000,baran
+36,HospitalName,southeast alabama medical center,1.0000,baran
+39,HospitalName,southeast alabama medical center,1.0000,baran
+40,HospitalName,eliza coffee memorial hospital,1.0000,baran
+46,HospitalName,marshall medical center south,1.0000,baran
+53,HospitalName,marshall medical center south,1.0000,baran
+54,HospitalName,cullman regional medical center,1.0000,baran
+59,HospitalName,marshall medical center south,1.0000,baran
+62,HospitalName,stringfellow memorial hospital,1.0000,baran
+65,HospitalName,marshall medical center south,1.0000,baran
+70,HospitalName,eliza coffee memorial hospital,1.0000,baran
+76,HospitalName,eliza coffee memorial hospital,1.0000,baran
+82,HospitalName,eliza coffee memorial hospital,1.0000,baran
+83,HospitalName,eliza coffee memorial hospital,1.0000,baran
+85,HospitalName,g h lanier memorial hospital,1.0000,baran
+95,HospitalName,mizell memorial hospital,1.0000,baran
+97,HospitalName,helen keller memorial hospital,1.0000,baran
+98,HospitalName,jackson hospital & clinic inc,1.0000,baran
+102,HospitalName,mizell memorial hospital,1.0000,baran
+105,HospitalName,mizell memorial hospital,1.0000,baran
+112,HospitalName,gadsden regional medical center,1.0000,baran
+113,HospitalName,mizell memorial hospital,1.0000,baran
+127,HospitalName,crenshaw community hospital,1.0000,baran
+132,HospitalName,crenshaw community hospital,1.0000,baran
+135,HospitalName,crenshaw community hospital,1.0000,baran
+136,HospitalName,dekalb regional medical center,1.0000,baran
+137,HospitalName,riverview regional medical center,1.0000,baran
+138,HospitalName,crenshaw community hospital,1.0000,baran
+140,HospitalName,huntsville hospital,1.0000,baran
+141,HospitalName,crenshaw community hospital,1.0000,baran
+142,HospitalName,crenshaw community hospital,1.0000,baran
+143,HospitalName,crenshaw community hospital,1.0000,baran
+155,HospitalName,callahan eye foundation hospital,1.0000,baran
+156,HospitalName,hartselle medical center,1.0000,baran
+158,HospitalName,hartselle medical center,1.0000,baran
+159,HospitalName,hartselle medical center,1.0000,baran
+163,HospitalName,hartselle medical center,1.0000,baran
+164,HospitalName,hartselle medical center,1.0000,baran
+165,HospitalName,community hospital inc,1.0000,baran
+171,HospitalName,marshall medical center north,1.0000,baran
+176,HospitalName,marshall medical center north,1.0000,baran
+178,HospitalName,marshall medical center north,1.0000,baran
+185,HospitalName,marshall medical center north,1.0000,baran
+188,HospitalName,marshall medical center north,1.0000,baran
+196,HospitalName,st vincents east,1.0000,baran
+199,HospitalName,elba general hospital,1.0000,baran
+200,HospitalName,st vincents east,1.0000,baran
+209,HospitalName,andalusia regional hospital,1.0000,baran
+214,HospitalName,st vincents east,1.0000,baran
+217,HospitalName,andalusia regional hospital,1.0000,baran
+227,HospitalName,prattville baptist hospital,1.0000,baran
+232,HospitalName,dekalb regional medical center,1.0000,baran
+236,HospitalName,gadsden regional medical center,1.0000,baran
+240,HospitalName,dekalb regional medical center,1.0000,baran
+247,HospitalName,southwest alabama medical center,1.0000,baran
+252,HospitalName,eliza coffee memorial hospital,1.0000,baran
+255,HospitalName,elba general hospital,1.0000,baran
+257,HospitalName,gadsden regional medical center,1.0000,baran
+258,HospitalName,southwest alabama medical center,1.0000,baran
+262,HospitalName,southwest alabama medical center,1.0000,baran
+278,HospitalName,georgiana hospital,1.0000,baran
+282,HospitalName,shelby baptist medical center,1.0000,baran
+285,HospitalName,shelby baptist medical center,1.0000,baran
+303,HospitalName,callahan eye foundation hospital,1.0000,baran
+314,HospitalName,stringfellow memorial hospital,1.0000,baran
+315,HospitalName,marshall medical center north,1.0000,baran
+316,HospitalName,andalusia regional hospital,1.0000,baran
+319,HospitalName,university of alabama hospital,1.0000,baran
+321,HospitalName,stringfellow memorial hospital,1.0000,baran
+322,HospitalName,prattville baptist hospital,1.0000,baran
+328,HospitalName,huntsville hospital,1.0000,baran
+334,HospitalName,alaska regional hospital,1.0000,baran
+338,HospitalName,callahan eye foundation hospital,1.0000,baran
+349,HospitalName,st vincents hospital,1.0000,baran
+364,HospitalName,northwest medical center,1.0000,baran
+366,HospitalName,northwest medical center,1.0000,baran
+373,HospitalName,northwest medical center,1.0000,baran
+374,HospitalName,gadsden regional medical center,1.0000,baran
+375,HospitalName,crenshaw community hospital,1.0000,baran
+377,HospitalName,northwest medical center,1.0000,baran
+387,HospitalName,andalusia regional hospital,1.0000,baran
+392,HospitalName,univ of south alabama medical center,1.0000,baran
+393,HospitalName,prattville baptist hospital,1.0000,baran
+395,HospitalName,prattville baptist hospital,1.0000,baran
+404,HospitalName,prattville baptist hospital,1.0000,baran
+405,HospitalName,prattville baptist hospital,1.0000,baran
+417,HospitalName,university of alabama hospital,1.0000,baran
+424,HospitalName,coosa valley medical center,1.0000,baran
+433,HospitalName,elba general hospital,1.0000,baran
+441,HospitalName,southeast alabama medical center,1.0000,baran
+448,HospitalName,medical center enterprise,1.0000,baran
+452,HospitalName,yukon kuskokwim delta reg hospital,1.0000,baran
+453,HospitalName,helen keller memorial hospital,1.0000,baran
+454,HospitalName,helen keller memorial hospital,1.0000,baran
+458,HospitalName,helen keller memorial hospital,1.0000,baran
+459,HospitalName,crenshaw community hospital,1.0000,baran
+460,HospitalName,gadsden regional medical center,1.0000,baran
+470,HospitalName,marshall medical center north,1.0000,baran
+471,HospitalName,dale medical center,1.0000,baran
+474,HospitalName,marshall medical center north,1.0000,baran
+475,HospitalName,callahan eye foundation hospital,1.0000,baran
+489,HospitalName,dale medical center,1.0000,baran
+499,HospitalName,st vincents blount,1.0000,baran
+501,HospitalName,shelby baptist medical center,1.0000,baran
+502,HospitalName,gadsden regional medical center,1.0000,baran
+508,HospitalName,cherokee medical center,1.0000,baran
+512,HospitalName,cherokee medical center,1.0000,baran
+518,HospitalName,baptist medical center south,1.0000,baran
+520,HospitalName,callahan eye foundation hospital,1.0000,baran
+523,HospitalName,stringfellow memorial hospital,1.0000,baran
+528,HospitalName,baptist medical center south,1.0000,baran
+532,HospitalName,baptist medical center south,1.0000,baran
+534,HospitalName,shelby baptist medical center,1.0000,baran
+541,HospitalName,baptist medical center south,1.0000,baran
+543,HospitalName,jackson hospital & clinic inc,1.0000,baran
+545,HospitalName,andalusia regional hospital,1.0000,baran
+550,HospitalName,gadsden regional medical center,1.0000,baran
+556,HospitalName,callahan eye foundation hospital,1.0000,baran
+558,HospitalName,marshall medical center south,1.0000,baran
+560,HospitalName,jackson hospital & clinic inc,1.0000,baran
+561,HospitalName,chilton medical center,1.0000,baran
+564,HospitalName,jackson hospital & clinic inc,1.0000,baran
+570,HospitalName,g h lanier memorial hospital,1.0000,baran
+571,HospitalName,g h lanier memorial hospital,1.0000,baran
+579,HospitalName,g h lanier memorial hospital,1.0000,baran
+580,HospitalName,dale medical center,1.0000,baran
+582,HospitalName,g h lanier memorial hospital,1.0000,baran
+588,HospitalName,g h lanier memorial hospital,1.0000,baran
+589,HospitalName,g h lanier memorial hospital,1.0000,baran
+593,HospitalName,elba general hospital,1.0000,baran
+595,HospitalName,northwest medical center,1.0000,baran
+596,HospitalName,elba general hospital,1.0000,baran
+598,HospitalName,elba general hospital,1.0000,baran
+608,HospitalName,prattville baptist hospital,1.0000,baran
+610,HospitalName,cullman regional medical center,1.0000,baran
+614,HospitalName,elba general hospital,1.0000,baran
+615,HospitalName,elba general hospital,1.0000,baran
+616,HospitalName,elba general hospital,1.0000,baran
+620,HospitalName,east alabama medical center and snf,1.0000,baran
+629,HospitalName,riverview regional medical center,1.0000,baran
+630,HospitalName,andalusia regional hospital,1.0000,baran
+638,HospitalName,east alabama medical center and snf,1.0000,baran
+640,HospitalName,medical center enterprise,1.0000,baran
+645,HospitalName,gadsden regional medical center,1.0000,baran
+646,HospitalName,wedowee hospital,1.0000,baran
+650,HospitalName,wedowee hospital,1.0000,baran
+657,HospitalName,wedowee hospital,1.0000,baran
+662,HospitalName,elba general hospital,1.0000,baran
+663,HospitalName,wedowee hospital,1.0000,baran
+667,HospitalName,northwest medical center,1.0000,baran
+669,HospitalName,university of alabama hospital,1.0000,baran
+682,HospitalName,university of alabama hospital,1.0000,baran
+683,HospitalName,jackson hospital & clinic inc,1.0000,baran
+687,HospitalName,gadsden regional medical center,1.0000,baran
+688,HospitalName,university of alabama hospital,1.0000,baran
+693,HospitalName,callahan eye foundation hospital,1.0000,baran
+694,HospitalName,elba general hospital,1.0000,baran
+703,HospitalName,community hospital inc,1.0000,baran
+711,HospitalName,hartselle medical center,1.0000,baran
+718,HospitalName,cullman regional medical center,1.0000,baran
+719,HospitalName,callahan eye foundation hospital,1.0000,baran
+722,HospitalName,cullman regional medical center,1.0000,baran
+724,HospitalName,cullman regional medical center,1.0000,baran
+730,HospitalName,georgiana hospital,1.0000,baran
+733,HospitalName,cullman regional medical center,1.0000,baran
+735,HospitalName,stringfellow memorial hospital,1.0000,baran
+738,HospitalName,cullman regional medical center,1.0000,baran
+747,HospitalName,andalusia regional hospital,1.0000,baran
+753,HospitalName,marion regional medical center,1.0000,baran
+761,HospitalName,andalusia regional hospital,1.0000,baran
+768,HospitalName,stringfellow memorial hospital,1.0000,baran
+773,HospitalName,stringfellow memorial hospital,1.0000,baran
+777,HospitalName,huntsville hospital,1.0000,baran
+778,HospitalName,g h lanier memorial hospital,1.0000,baran
+784,HospitalName,chilton medical center,1.0000,baran
+793,HospitalName,huntsville hospital,1.0000,baran
+796,HospitalName,crenshaw community hospital,1.0000,baran
+800,HospitalName,huntsville hospital,1.0000,baran
+804,HospitalName,gadsden regional medical center,1.0000,baran
+809,HospitalName,gadsden regional medical center,1.0000,baran
+814,HospitalName,callahan eye foundation hospital,1.0000,baran
+818,HospitalName,st vincents hospital,1.0000,baran
+823,HospitalName,gadsden regional medical center,1.0000,baran
+824,HospitalName,gadsden regional medical center,1.0000,baran
+832,HospitalName,andalusia regional hospital,1.0000,baran
+833,HospitalName,chilton medical center,1.0000,baran
+838,HospitalName,chilton medical center,1.0000,baran
+839,HospitalName,chilton medical center,1.0000,baran
+842,HospitalName,chilton medical center,1.0000,baran
+845,HospitalName,andalusia regional hospital,1.0000,baran
+848,HospitalName,chilton medical center,1.0000,baran
+851,HospitalName,chilton medical center,1.0000,baran
+853,HospitalName,gadsden regional medical center,1.0000,baran
+855,HospitalName,marion regional medical center,1.0000,baran
+865,HospitalName,marion regional medical center,1.0000,baran
+867,HospitalName,chilton medical center,1.0000,baran
+868,HospitalName,marion regional medical center,1.0000,baran
+870,HospitalName,marion regional medical center,1.0000,baran
+872,HospitalName,stringfellow memorial hospital,1.0000,baran
+873,HospitalName,eliza coffee memorial hospital,1.0000,baran
+874,HospitalName,elba general hospital,1.0000,baran
+884,HospitalName,russellville hospital,1.0000,baran
+887,HospitalName,andalusia regional hospital,1.0000,baran
+889,HospitalName,yukon kuskokwim delta reg hospital,1.0000,baran
+891,HospitalName,fayette medical center,1.0000,baran
+892,HospitalName,fayette medical center,1.0000,baran
+896,HospitalName,fayette medical center,1.0000,baran
+897,HospitalName,fayette medical center,1.0000,baran
+899,HospitalName,fayette medical center,1.0000,baran
+903,HospitalName,riverview regional medical center,1.0000,baran
+907,HospitalName,riverview regional medical center,1.0000,baran
+909,HospitalName,riverview regional medical center,1.0000,baran
+914,HospitalName,riverview regional medical center,1.0000,baran
+916,HospitalName,riverview regional medical center,1.0000,baran
+919,HospitalName,riverview regional medical center,1.0000,baran
+920,HospitalName,riverview regional medical center,1.0000,baran
+923,HospitalName,riverview regional medical center,1.0000,baran
+926,HospitalName,dekalb regional medical center,1.0000,baran
+932,HospitalName,southeast alabama medical center,1.0000,baran
+935,HospitalName,georgiana hospital,1.0000,baran
+939,HospitalName,georgiana hospital,1.0000,baran
+940,HospitalName,georgiana hospital,1.0000,baran
+941,HospitalName,university of alabama hospital,1.0000,baran
+945,HospitalName,andalusia regional hospital,1.0000,baran
+947,HospitalName,georgiana hospital,1.0000,baran
+948,HospitalName,georgiana hospital,1.0000,baran
+951,HospitalName,andalusia regional hospital,1.0000,baran
+952,HospitalName,stringfellow memorial hospital,1.0000,baran
+956,HospitalName,callahan eye foundation hospital,1.0000,baran
+957,HospitalName,medical center enterprise,1.0000,baran
+958,HospitalName,medical center enterprise,1.0000,baran
+962,HospitalName,jackson hospital & clinic inc,1.0000,baran
+965,HospitalName,medical center enterprise,1.0000,baran
+967,HospitalName,medical center enterprise,1.0000,baran
+969,HospitalName,marshall medical center south,1.0000,baran
+970,HospitalName,marion regional medical center,1.0000,baran
+976,HospitalName,medical center enterprise,1.0000,baran
+977,HospitalName,medical center enterprise,1.0000,baran
+981,HospitalName,elba general hospital,1.0000,baran
+985,HospitalName,elba general hospital,1.0000,baran
+987,HospitalName,st vincents blount,1.0000,baran
+990,HospitalName,st vincents blount,1.0000,baran
+991,HospitalName,elba general hospital,1.0000,baran
+997,HospitalName,st vincents blount,1.0000,baran
+998,HospitalName,st vincents blount,1.0000,baran
+311,ZipCode,35233,1.0000,baran
+414,CountyName,butler,1.0000,baran
+311,Condition,pneumonia,1.0000,baran
+311,MeasureName,pneumonia patients assessed and given influenza vaccination,1.0000,baran
+311,Stateavg,al_pn-7,1.0000,baran
+53,Stateavg,al_ami-3,1.0000,baran
+54,Stateavg,al_pn-7,1.0000,baran
+124,Stateavg,al_pn-7,1.0000,baran
+202,Stateavg,al_ami-3,1.0000,baran
+234,Stateavg,al_pn-7,1.0000,baran
+312,Stateavg,al_pn-7,1.0000,baran
+346,Stateavg,al_pn-7,1.0000,baran
+463,Stateavg,al_pn-7,1.0000,baran
+511,Stateavg,al_ami-3,1.0000,baran
+533,Stateavg,al_ami-3,1.0000,baran
+539,Stateavg,al_pn-7,1.0000,baran
+612,Stateavg,al_ami-3,1.0000,baran
+631,Stateavg,al_pn-7,1.0000,baran
+670,Stateavg,al_pn-7,1.0000,baran
+697,Stateavg,al_ami-3,1.0000,baran
+729,Stateavg,al_pn-7,1.0000,baran
+756,Stateavg,al_ami-3,1.0000,baran
+773,Stateavg,al_ami-3,1.0000,baran
+783,Stateavg,al_pn-7,1.0000,baran
+837,Stateavg,al_ami-3,1.0000,baran
+856,Stateavg,al_pn-7,1.0000,baran
+857,Stateavg,al_pn-7,1.0000,baran
+886,Stateavg,al_ami-3,1.0000,baran
+915,Stateavg,al_ami-3,1.0000,baran
+149,ProviderNumber,10009,1.0000,baran
+149,Condition,heart attack,1.0000,baran
+149,MeasureName,heart attack patients given beta blocker at discharge,1.0000,baran
+149,Stateavg,al_ami-5,1.0000,baran
+136,Stateavg,al_ami-5,1.0000,baran
+165,Stateavg,al_ami-5,1.0000,baran
+195,Stateavg,al_ami-5,1.0000,baran
+241,Stateavg,al_ami-5,1.0000,baran
+398,Stateavg,al_ami-5,1.0000,baran
+450,Stateavg,al_ami-5,1.0000,baran
+566,Stateavg,al_ami-5,1.0000,baran
+590,Stateavg,al_ami-5,1.0000,baran
+3,ProviderNumber,10018,1.0000,baran
+7,ProviderNumber,10029,1.0000,baran
+8,ProviderNumber,10018,1.0000,baran
+10,ProviderNumber,10036,1.0000,baran
+11,ProviderNumber,10019,1.0000,baran
+12,ProviderNumber,10019,1.0000,baran
+16,ProviderNumber,10034,1.0000,baran
+19,ProviderNumber,10019,1.0000,baran
+26,ProviderNumber,10009,1.0000,baran
+28,ProviderNumber,10001,1.0000,baran
+31,ProviderNumber,10001,1.0000,baran
+32,ProviderNumber,10015,1.0000,baran
+35,ProviderNumber,10029,1.0000,baran
+37,ProviderNumber,10001,1.0000,baran
+38,ProviderNumber,10001,1.0000,baran
+42,ProviderNumber,10001,1.0000,baran
+50,ProviderNumber,10005,1.0000,baran
+52,ProviderNumber,10005,1.0000,baran
+61,ProviderNumber,10005,1.0000,baran
+64,ProviderNumber,10005,1.0000,baran
+65,ProviderNumber,10024,1.0000,baran
+66,ProviderNumber,10005,1.0000,baran
+72,ProviderNumber,10006,1.0000,baran
+74,ProviderNumber,10006,1.0000,baran
+79,ProviderNumber,10006,1.0000,baran
+80,ProviderNumber,10006,1.0000,baran
+82,ProviderNumber,10108,1.0000,baran
+102,ProviderNumber,10045,1.0000,baran
+108,ProviderNumber,10007,1.0000,baran
+110,ProviderNumber,10007,1.0000,baran
+115,ProviderNumber,10007,1.0000,baran
+116,ProviderNumber,10007,1.0000,baran
+121,ProviderNumber,10008,1.0000,baran
+122,ProviderNumber,10008,1.0000,baran
+123,ProviderNumber,10008,1.0000,baran
+125,ProviderNumber,10008,1.0000,baran
+127,ProviderNumber,10016,1.0000,baran
+129,ProviderNumber,10008,1.0000,baran
+132,ProviderNumber,10049,1.0000,baran
+134,ProviderNumber,10008,1.0000,baran
+144,ProviderNumber,10008,1.0000,baran
+148,ProviderNumber,10009,1.0000,baran
+154,ProviderNumber,10009,1.0000,baran
+155,ProviderNumber,10047,1.0000,baran
+161,ProviderNumber,10009,1.0000,baran
+162,ProviderNumber,10040,1.0000,baran
+165,ProviderNumber,10023,1.0000,baran
+168,ProviderNumber,10009,1.0000,baran
+173,ProviderNumber,10010,1.0000,baran
+180,ProviderNumber,10010,1.0000,baran
+182,ProviderNumber,10010,1.0000,baran
+192,ProviderNumber,10010,1.0000,baran
+199,ProviderNumber,10006,1.0000,baran
+203,ProviderNumber,10011,1.0000,baran
+204,ProviderNumber,10011,1.0000,baran
+210,ProviderNumber,10011,1.0000,baran
+211,ProviderNumber,10011,1.0000,baran
+216,ProviderNumber,10011,1.0000,baran
+217,ProviderNumber,10040,1.0000,baran
+222,ProviderNumber,10012,1.0000,baran
+226,ProviderNumber,10012,1.0000,baran
+227,ProviderNumber,10055,1.0000,baran
+228,ProviderNumber,10012,1.0000,baran
+238,ProviderNumber,10012,1.0000,baran
+239,ProviderNumber,10012,1.0000,baran
+241,ProviderNumber,10009,1.0000,baran
+248,ProviderNumber,10015,1.0000,baran
+252,ProviderNumber,10036,1.0000,baran
+254,ProviderNumber,10015,1.0000,baran
+255,ProviderNumber,10006,1.0000,baran
+257,ProviderNumber,10043,1.0000,baran
+258,ProviderNumber,10009,1.0000,baran
+261,ProviderNumber,10040,1.0000,baran
+264,ProviderNumber,10015,1.0000,baran
+268,ProviderNumber,10015,1.0000,baran
+270,ProviderNumber,10016,1.0000,baran
+272,ProviderNumber,10016,1.0000,baran
+275,ProviderNumber,10016,1.0000,baran
+279,ProviderNumber,10016,1.0000,baran
+287,ProviderNumber,10016,1.0000,baran
+288,ProviderNumber,10016,1.0000,baran
+293,ProviderNumber,10009,1.0000,baran
+298,ProviderNumber,10009,1.0000,baran
+304,ProviderNumber,10018,1.0000,baran
+306,ProviderNumber,10018,1.0000,baran
+307,ProviderNumber,10018,1.0000,baran
+312,ProviderNumber,10038,1.0000,baran
+321,ProviderNumber,10029,1.0000,baran
+326,ProviderNumber,10038,1.0000,baran
+330,ProviderNumber,10038,1.0000,baran
+331,ProviderNumber,10038,1.0000,baran
+334,ProviderNumber,10024,1.0000,baran
+339,ProviderNumber,10055,1.0000,baran
+353,ProviderNumber,10056,1.0000,baran
+362,ProviderNumber,10086,1.0000,baran
+367,ProviderNumber,10086,1.0000,baran
+371,ProviderNumber,10086,1.0000,baran
+381,ProviderNumber,10087,1.0000,baran
+388,ProviderNumber,10087,1.0000,baran
+394,ProviderNumber,10108,1.0000,baran
+398,ProviderNumber,10108,1.0000,baran
+406,ProviderNumber,10108,1.0000,baran
+408,ProviderNumber,10108,1.0000,baran
+415,ProviderNumber,10164,1.0000,baran
+419,ProviderNumber,10009,1.0000,baran
+420,ProviderNumber,10164,1.0000,baran
+424,ProviderNumber,10086,1.0000,baran
+429,ProviderNumber,10164,1.0000,baran
+430,ProviderNumber,10164,1.0000,baran
+431,ProviderNumber,10164,1.0000,baran
+432,ProviderNumber,10164,1.0000,baran
+433,ProviderNumber,10006,1.0000,baran
+441,ProviderNumber,10032,1.0000,baran
+447,ProviderNumber,20017,1.0000,baran
+448,ProviderNumber,10010,1.0000,baran
+453,ProviderNumber,10036,1.0000,baran
+455,ProviderNumber,10019,1.0000,baran
+456,ProviderNumber,10019,1.0000,baran
+458,ProviderNumber,10033,1.0000,baran
+459,ProviderNumber,10005,1.0000,baran
+480,ProviderNumber,10040,1.0000,baran
+482,ProviderNumber,10021,1.0000,baran
+485,ProviderNumber,10021,1.0000,baran
+491,ProviderNumber,10021,1.0000,baran
+492,ProviderNumber,10022,1.0000,baran
+494,ProviderNumber,10022,1.0000,baran
+496,ProviderNumber,10022,1.0000,baran
+499,ProviderNumber,10038,1.0000,baran
+500,ProviderNumber,10022,1.0000,baran
+503,ProviderNumber,10022,1.0000,baran
+505,ProviderNumber,10022,1.0000,baran
+507,ProviderNumber,10022,1.0000,baran
+509,ProviderNumber,10022,1.0000,baran
+519,ProviderNumber,10023,1.0000,baran
+525,ProviderNumber,10023,1.0000,baran
+531,ProviderNumber,10023,1.0000,baran
+535,ProviderNumber,10023,1.0000,baran
+546,ProviderNumber,10024,1.0000,baran
+552,ProviderNumber,10024,1.0000,baran
+578,ProviderNumber,10025,1.0000,baran
+591,ProviderNumber,10025,1.0000,baran
+603,ProviderNumber,10027,1.0000,baran
+606,ProviderNumber,10027,1.0000,baran
+608,ProviderNumber,10009,1.0000,baran
+622,ProviderNumber,10029,1.0000,baran
+623,ProviderNumber,10029,1.0000,baran
+633,ProviderNumber,10029,1.0000,baran
+635,ProviderNumber,10029,1.0000,baran
+637,ProviderNumber,10029,1.0000,baran
+645,ProviderNumber,10043,1.0000,baran
+648,ProviderNumber,10032,1.0000,baran
+651,ProviderNumber,10040,1.0000,baran
+652,ProviderNumber,10032,1.0000,baran
+653,ProviderNumber,10032,1.0000,baran
+661,ProviderNumber,10032,1.0000,baran
+666,ProviderNumber,10032,1.0000,baran
+674,ProviderNumber,10033,1.0000,baran
+677,ProviderNumber,10033,1.0000,baran
+684,ProviderNumber,10009,1.0000,baran
+689,ProviderNumber,10033,1.0000,baran
+694,ProviderNumber,10006,1.0000,baran
+702,ProviderNumber,10034,1.0000,baran
+706,ProviderNumber,10034,1.0000,baran
+707,ProviderNumber,10034,1.0000,baran
+711,ProviderNumber,10012,1.0000,baran
+716,ProviderNumber,10034,1.0000,baran
+721,ProviderNumber,10035,1.0000,baran
+722,ProviderNumber,10011,1.0000,baran
+726,ProviderNumber,10035,1.0000,baran
+727,ProviderNumber,10035,1.0000,baran
+728,ProviderNumber,10035,1.0000,baran
+730,ProviderNumber,10055,1.0000,baran
+731,ProviderNumber,10035,1.0000,baran
+733,ProviderNumber,10032,1.0000,baran
+736,ProviderNumber,10035,1.0000,baran
+742,ProviderNumber,10036,1.0000,baran
+743,ProviderNumber,10036,1.0000,baran
+744,ProviderNumber,10036,1.0000,baran
+746,ProviderNumber,10036,1.0000,baran
+748,ProviderNumber,10036,1.0000,baran
+755,ProviderNumber,10036,1.0000,baran
+765,ProviderNumber,10036,1.0000,baran
+768,ProviderNumber,10025,1.0000,baran
+775,ProviderNumber,10039,1.0000,baran
+788,ProviderNumber,10039,1.0000,baran
+794,ProviderNumber,10039,1.0000,baran
+801,ProviderNumber,10039,1.0000,baran
+804,ProviderNumber,10040,1.0000,baran
+816,ProviderNumber,10040,1.0000,baran
+817,ProviderNumber,10006,1.0000,baran
+826,ProviderNumber,10040,1.0000,baran
+832,ProviderNumber,10040,1.0000,baran
+835,ProviderNumber,10043,1.0000,baran
+838,ProviderNumber,10011,1.0000,baran
+841,ProviderNumber,10043,1.0000,baran
+848,ProviderNumber,10010,1.0000,baran
+850,ProviderNumber,10043,1.0000,baran
+853,ProviderNumber,10034,1.0000,baran
+859,ProviderNumber,10044,1.0000,baran
+861,ProviderNumber,10044,1.0000,baran
+862,ProviderNumber,10044,1.0000,baran
+864,ProviderNumber,10044,1.0000,baran
+868,ProviderNumber,10164,1.0000,baran
+869,ProviderNumber,10044,1.0000,baran
+874,ProviderNumber,10006,1.0000,baran
+875,ProviderNumber,10044,1.0000,baran
+881,ProviderNumber,10045,1.0000,baran
+885,ProviderNumber,10045,1.0000,baran
+887,ProviderNumber,10040,1.0000,baran
+890,ProviderNumber,10045,1.0000,baran
+893,ProviderNumber,10045,1.0000,baran
+894,ProviderNumber,10045,1.0000,baran
+898,ProviderNumber,10045,1.0000,baran
+901,ProviderNumber,10045,1.0000,baran
+911,ProviderNumber,10046,1.0000,baran
+913,ProviderNumber,10046,1.0000,baran
+914,ProviderNumber,10019,1.0000,baran
+915,ProviderNumber,10046,1.0000,baran
+920,ProviderNumber,10036,1.0000,baran
+921,ProviderNumber,10046,1.0000,baran
+926,ProviderNumber,10018,1.0000,baran
+929,ProviderNumber,10006,1.0000,baran
+932,ProviderNumber,10044,1.0000,baran
+934,ProviderNumber,10047,1.0000,baran
+939,ProviderNumber,10009,1.0000,baran
+943,ProviderNumber,10047,1.0000,baran
+949,ProviderNumber,10047,1.0000,baran
+951,ProviderNumber,10018,1.0000,baran
+954,ProviderNumber,10047,1.0000,baran
+956,ProviderNumber,10040,1.0000,baran
+960,ProviderNumber,10040,1.0000,baran
+964,ProviderNumber,10049,1.0000,baran
+965,ProviderNumber,10010,1.0000,baran
+967,ProviderNumber,10045,1.0000,baran
+970,ProviderNumber,10029,1.0000,baran
+972,ProviderNumber,10049,1.0000,baran
+979,ProviderNumber,10049,1.0000,baran
+980,ProviderNumber,10049,1.0000,baran
+982,ProviderNumber,10050,1.0000,baran
+999,ProviderNumber,10050,1.0000,baran
+601,State,al,1.0000,baran
+95,State,al,1.0000,baran
+299,State,al,1.0000,baran
+394,State,al,1.0000,baran
+886,State,al,1.0000,baran
+601,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.0000,baran
+601,Stateavg,al_hf-3,1.0000,baran
+321,Stateavg,al_hf-3,1.0000,baran
+452,Stateavg,al_hf-3,1.0000,baran
+524,Stateavg,al_hf-3,1.0000,baran
+754,Stateavg,al_hf-3,1.0000,baran
+775,Stateavg,al_hf-3,1.0000,baran
+897,Stateavg,al_hf-3,1.0000,baran
+446,State,al,1.0000,baran
+647,Condition,heart attack,1.0000,baran
+647,MeasureName,heart attack patients given fibrinolytic medication within 30 minutes of arrival,1.0000,baran
+1,Sample,22 patients,1.0000,baran
+8,Sample,22 patients,1.0000,baran
+12,Sample,22 patients,1.0000,baran
+17,Sample,22 patients,1.0000,baran
+42,Sample,22 patients,1.0000,baran
+58,Sample,22 patients,1.0000,baran
+60,Sample,22 patients,1.0000,baran
+61,Sample,22 patients,1.0000,baran
+67,Sample,22 patients,1.0000,baran
+73,Sample,22 patients,1.0000,baran
+192,Sample,22 patients,1.0000,baran
+220,Sample,22 patients,1.0000,baran
+228,Sample,22 patients,1.0000,baran
+229,Sample,22 patients,1.0000,baran
+240,Sample,22 patients,1.0000,baran
+256,Sample,22 patients,1.0000,baran
+277,Sample,210 patients,1.0000,baran
+281,Sample,22 patients,1.0000,baran
+288,Sample,22 patients,1.0000,baran
+328,Sample,22 patients,1.0000,baran
+332,Sample,22 patients,1.0000,baran
+339,Sample,22 patients,1.0000,baran
+370,Sample,22 patients,1.0000,baran
+398,Sample,22 patients,1.0000,baran
+405,Sample,22 patients,1.0000,baran
+418,Sample,22 patients,1.0000,baran
+433,Sample,22 patients,1.0000,baran
+434,Sample,22 patients,1.0000,baran
+454,Sample,22 patients,1.0000,baran
+464,Sample,22 patients,1.0000,baran
+467,Sample,22 patients,1.0000,baran
+468,Sample,22 patients,1.0000,baran
+483,Sample,22 patients,1.0000,baran
+484,Sample,22 patients,1.0000,baran
+492,Sample,22 patients,1.0000,baran
+494,Sample,22 patients,1.0000,baran
+504,Sample,33 patients,1.0000,baran
+508,Sample,22 patients,1.0000,baran
+516,Sample,22 patients,1.0000,baran
+539,Sample,22 patients,1.0000,baran
+545,Sample,22 patients,1.0000,baran
+548,Sample,22 patients,1.0000,baran
+563,Sample,22 patients,1.0000,baran
+608,Sample,22 patients,1.0000,baran
+620,Sample,22 patients,1.0000,baran
+624,Sample,22 patients,1.0000,baran
+640,Sample,22 patients,1.0000,baran
+646,Sample,22 patients,1.0000,baran
+706,Sample,22 patients,1.0000,baran
+714,Sample,22 patients,1.0000,baran
+716,Sample,22 patients,1.0000,baran
+732,Sample,22 patients,1.0000,baran
+744,Sample,22 patients,1.0000,baran
+752,Sample,22 patients,1.0000,baran
+756,Sample,22 patients,1.0000,baran
+761,Sample,22 patients,1.0000,baran
+796,Sample,22 patients,1.0000,baran
+808,Sample,22 patients,1.0000,baran
+814,Sample,22 patients,1.0000,baran
+816,Sample,22 patients,1.0000,baran
+819,Sample,22 patients,1.0000,baran
+820,Sample,22 patients,1.0000,baran
+829,Sample,22 patients,1.0000,baran
+833,Sample,22 patients,1.0000,baran
+837,Sample,22 patients,1.0000,baran
+839,Sample,22 patients,1.0000,baran
+845,Sample,22 patients,1.0000,baran
+867,Sample,22 patients,1.0000,baran
+873,Sample,22 patients,1.0000,baran
+874,Sample,22 patients,1.0000,baran
+887,Sample,22 patients,1.0000,baran
+893,Sample,22 patients,1.0000,baran
+901,Sample,22 patients,1.0000,baran
+902,Sample,22 patients,1.0000,baran
+906,Sample,22 patients,1.0000,baran
+944,Sample,5 patients,1.0000,baran
+953,Sample,22 patients,1.0000,baran
+959,Sample,22 patients,1.0000,baran
+647,Stateavg,al_ami-7a,1.0000,baran
+451,ProviderNumber,10009,1.0000,baran
+191,ZipCode,35233,1.0000,baran
+296,ZipCode,35233,1.0000,baran
+302,ZipCode,35233,1.0000,baran
+303,ZipCode,35233,1.0000,baran
+304,ZipCode,35233,1.0000,baran
+318,ZipCode,36116,1.0000,baran
+349,ZipCode,35233,1.0000,baran
+353,ZipCode,35233,1.0000,baran
+456,ZipCode,35233,1.0000,baran
+464,ZipCode,35233,1.0000,baran
+517,ZipCode,36116,1.0000,baran
+534,ZipCode,36116,1.0000,baran
+544,ZipCode,36106,1.0000,baran
+561,ZipCode,36106,1.0000,baran
+660,ZipCode,35233,1.0000,baran
+675,ZipCode,35233,1.0000,baran
+680,ZipCode,35233,1.0000,baran
+879,ZipCode,35233,1.0000,baran
+912,ZipCode,36116,1.0000,baran
+966,ZipCode,36116,1.0000,baran
+514,MeasureName,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),1.0000,baran
+514,Sample,6 patients,1.0000,baran
+62,Sample,6 patients,1.0000,baran
+99,Sample,6 patients,1.0000,baran
+200,Sample,6 patients,1.0000,baran
+289,Sample,6 patients,1.0000,baran
+447,Sample,6 patients,1.0000,baran
+470,Sample,6 patients,1.0000,baran
+478,Sample,6 patients,1.0000,baran
+529,Sample,6 patients,1.0000,baran
+537,Sample,6 patients,1.0000,baran
+733,Sample,6 patients,1.0000,baran
+735,Sample,6 patients,1.0000,baran
+870,Sample,6 patients,1.0000,baran
+514,Stateavg,al_scip-inf-6,1.0000,baran
+243,Stateavg,al_ami-7a,1.0000,baran
+309,Stateavg,al_scip-inf-6,1.0000,baran
+359,Stateavg,al_ami-7a,1.0000,baran
+423,Stateavg,al_ami-7a,1.0000,baran
+822,Stateavg,al_scip-inf-6,1.0000,baran
+871,Stateavg,al_ami-7a,1.0000,baran
+916,Stateavg,al_scip-inf-6,1.0000,baran
+277,Condition,heart failure,1.0000,baran
+277,MeasureName,heart failure patients given discharge instructions,1.0000,baran
+944,Condition,pneumonia,1.0000,baran
+944,MeasureName,pneumonia patients given smoking cessation advice/counseling,1.0000,baran
+354,HospitalName,east alabama medical center and snf,1.0000,baran
+747,Condition,heart attack,1.0000,baran
+747,MeasureName,heart attack patients given fibrinolytic medication within 30 minutes of arrival,1.0000,baran
+80,Condition,heart failure,1.0000,baran
+80,MeasureName,heart failure patients given smoking cessation advice/counseling,1.0000,baran
+56,Condition,pneumonia,1.0000,baran
+56,MeasureName,pneumonia patients assessed and given pneumococcal vaccination,1.0000,baran
+504,Condition,pneumonia,1.0000,baran
+504,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,1.0000,baran
+804,Condition,heart attack,1.0000,baran
+804,MeasureName,heart attack patients given aspirin at discharge,1.0000,baran
+356,Condition,heart attack,1.0000,baran
+356,MeasureName,heart attack patients given aspirin at discharge,1.0000,baran
+314,Condition,heart attack,1.0000,baran
+314,MeasureName,heart attack patients given aspirin at arrival,1.0000,baran
+572,Condition,heart attack,1.0000,baran
+572,MeasureName,heart attack patients given fibrinolytic medication within 30 minutes of arrival,1.0000,baran
+245,Condition,heart attack,1.0000,baran
+245,Stateavg,al_ami-1,1.0000,baran
+29,Condition,heart failure,1.0000,baran
+29,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),1.0000,baran

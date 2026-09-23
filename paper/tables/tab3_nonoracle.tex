@@ -1,0 +1,34 @@
+\small
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{detector} & \multicolumn{2}{c}{oracle} & \multicolumn{2}{c}{Raha} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Dataset & prec. & rec. & $A(0.2)$ & $R(0.2)$ & $A(0.2)$ & $R(0.2)$ \\
+\midrule
+\multicolumn{7}{@{}l}{\emph{Jellyfish}} \\
+\quad\textsc{hospital} & 0.92 & 0.45 & \multicolumn{2}{c}{\emph{refused}} & \multicolumn{2}{c}{\emph{refused}} \\
+\quad\textsc{beers} & 0.74 & 0.84 & $0.04$ & $0.004$ & $0.04$ & $0.012$ \\
+\quad\textsc{flights} & 0.93 & 0.76 & \multicolumn{2}{c}{\emph{refused}} & \multicolumn{2}{c}{\emph{refused}} \\
+\quad\textsc{rayyan} & 0.84 & 0.80 & \multicolumn{2}{c}{\emph{refused}} & \multicolumn{2}{c}{\emph{refused}} \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\emph{Baran}} \\
+\quad\textsc{hospital} & 0.92 & 0.45 & $0.86$ & $0.060$ & \multicolumn{2}{c}{\emph{refused}} \\
+\quad\textsc{beers} & 0.74 & 0.84 & $0.80$ & $0.025$ & $0.94$ & $0.025$ \\
+\quad\textsc{flights} & 0.93 & 0.76 & $1.00$ & $0.000$ & $0.68$ & $0.023$ \\
+\quad\textsc{rayyan} & 0.84 & 0.80 & $0.77$ & $0.054$ & \multicolumn{2}{c}{\emph{refused}} \\
+\quad\textsc{tax} & 0.81 & 0.77 & $0.73$ & $0.000$ & $0.94$ & $0.000$ \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\emph{BClean}$^{\ddagger}$} \\
+\quad\textsc{hospital} & 0.92 & 0.45 & $0.87$ & $0.000$ & $0.62$ & $0.000$ \\
+\quad\textsc{beers} & 0.74 & 0.84 & $0.01$ & $0.017$ & $0.08$ & $0.012$ \\
+\quad\textsc{flights} & 0.93 & 0.76 & $0.12$ & $0.034$ & $0.14$ & $0.029$ \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\emph{HoloClean}$^{\ddagger}$} \\
+\quad\textsc{hospital} & 0.92 & 0.45 & $0.53$ & $0.000$ & $0.34$ & $0.000$ \\
+\quad\textsc{beers} & 0.74 & 0.84 & $0.50$ & $0.000$ & $0.13$ & $0.000$ \\
+\quad\textsc{flights} & 0.93 & 0.76 & $0.32$ & $0.014$ & $0.39$ & $0.014$ \\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular}

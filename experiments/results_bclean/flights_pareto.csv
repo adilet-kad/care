@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights,CARE,marginal,0.05,errors,1.0,0.0,0.0,0.0,True,True,bclean:csvs/bclean_flights_mapped.csv
+flights,CARE,mondrian,0.05,errors,0.8782034346103037,0.0064516129032258,0.21573128540588402,0.009677419354838701,True,True,bclean:csvs/bclean_flights_mapped.csv
+flights,LLMOnly,-,0.05,errors,0.0,0.49656538969616904,0.5034346103038309,0.49953764861294586,False,True,bclean:csvs/bclean_flights_mapped.csv
+flights,NoOp,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,bclean:csvs/bclean_flights_mapped.csv
+flights,CARE,marginal,0.1,errors,1.0,0.0,0.0,0.0,True,True,bclean:csvs/bclean_flights_mapped.csv
+flights,CARE,mondrian,0.1,errors,0.8771466314398941,0.007526881720430101,0.2171764705882353,0.009677419354838701,True,True,bclean:csvs/bclean_flights_mapped.csv
+flights,LLMOnly,-,0.1,errors,0.0,0.49656538969616904,0.5034346103038309,0.49953764861294586,False,True,bclean:csvs/bclean_flights_mapped.csv
+flights,NoOp,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,bclean:csvs/bclean_flights_mapped.csv
+flights,CARE,marginal,0.2,errors,1.0,0.0,0.0,0.0,True,True,bclean:csvs/bclean_flights_mapped.csv
+flights,CARE,mondrian,0.2,errors,0.8116248348745045,0.033869513724034205,0.3053579916535629,0.04526784657806186,True,True,bclean:csvs/bclean_flights_mapped.csv
+flights,LLMOnly,-,0.2,errors,0.0,0.49656538969616904,0.5034346103038309,0.49953764861294586,False,True,bclean:csvs/bclean_flights_mapped.csv
+flights,NoOp,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,bclean:csvs/bclean_flights_mapped.csv

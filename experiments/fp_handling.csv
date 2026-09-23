@@ -1,0 +1,11 @@
+proposer,dataset,n_detected,n_false_positives,fp_touched,fp_changed,fp_change_rate
+Jellyfish,hospital,249,19,19,10,0.5263
+BClean,hospital,249,19,1,0,0.0000
+Jellyfish,beers,3840,1012,722,722,1.0000
+BClean,beers,3840,1012,7,0,0.0000
+Baran,flights,3988,263,29,18,0.6207
+Jellyfish,flights,3988,263,263,121,0.4601
+BClean,flights,3988,263,263,27,0.1027
+Baran,rayyan,902,147,23,23,1.0000
+Jellyfish,rayyan,902,147,147,86,0.5850
+Jellyfish,tax,114835,22053,2694,834,0.3096

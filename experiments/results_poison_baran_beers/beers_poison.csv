@@ -1,0 +1,9 @@
+dataset,baseline,poison_frac,trusted_poison,scoring,realized_error,err_lo,err_hi,human_cost,applied_contamination,thm2_bound,within_thm2_bound,backend
+beers,CARE,0.0,False,errors,0.02537499999999999,0.024062499999999976,0.026749999999999996,0.20079920079920083,0.0,0.2,True,baran:csvs/baran_beers_mapped.csv
+beers,LLMOnly,0.0,False,errors,0.11843156843156843,0.11593406593406592,0.12062937062937062,0.0,0.0,,,baran:csvs/baran_beers_mapped.csv
+beers,CARE,0.05,False,errors,0.025467905967280192,0.02411346822524204,0.02687367186245506,0.23886113886113888,0.0,0.2,True,baran:csvs/baran_beers_mapped.csv
+beers,LLMOnly,0.05,False,errors,0.16153846153846152,0.156993006993007,0.16603396603396603,0.0,0.04760239760239761,,,baran:csvs/baran_beers_mapped.csv
+beers,CARE,0.1,False,errors,0.025345552123759107,0.024018935081760763,0.02678183396837349,0.2803696303696303,0.0,0.2,True,baran:csvs/baran_beers_mapped.csv
+beers,LLMOnly,0.1,False,errors,0.2034965034965035,0.19750249750249751,0.20889110889110882,0.0,0.0954045954045954,,,baran:csvs/baran_beers_mapped.csv
+beers,CARE,0.2,False,errors,0.02546185168591073,0.024090457437727086,0.026827091254534273,0.3596403596403596,0.0,0.2,True,baran:csvs/baran_beers_mapped.csv
+beers,LLMOnly,0.2,False,errors,0.29180819180819184,0.286013986013986,0.2978521478521479,0.0,0.19555444555444554,,,baran:csvs/baran_beers_mapped.csv

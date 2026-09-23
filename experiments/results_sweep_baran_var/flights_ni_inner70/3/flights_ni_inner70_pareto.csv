@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights_ni_inner70,CARE,marginal,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,CARE,mondrian,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,LLMOnly,-,0.05,errors,0.0,0.9421885753613214,0.057811424638678596,0.9441156228492774,False,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,NoOp,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,CARE,marginal,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,CARE,mondrian,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,LLMOnly,-,0.1,errors,0.0,0.9421885753613214,0.057811424638678596,0.9441156228492774,False,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,NoOp,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,CARE,marginal,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,CARE,mondrian,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,LLMOnly,-,0.2,errors,0.0,0.9421885753613214,0.057811424638678596,0.9441156228492774,False,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv
+flights_ni_inner70,NoOp,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_ni/flights_ni_inner70/3/baran_flights_ni_inner70_mapped.csv

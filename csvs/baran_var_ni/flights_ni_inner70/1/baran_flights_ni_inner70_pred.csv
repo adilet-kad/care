@@ -1,0 +1,2500 @@
+row_id,column,value,confidence,source
+852,src,flytecomm,1.0000,baran
+4,src,flytecomm,1.0000,baran
+40,src,flytecomm,1.0000,baran
+231,src,flytecomm,1.0000,baran
+311,src,flytecomm,1.0000,baran
+373,src,flytecomm,1.0000,baran
+387,src,flytecomm,1.0000,baran
+470,src,flytecomm,1.0000,baran
+495,src,flytecomm,1.0000,baran
+545,src,flytecomm,1.0000,baran
+573,src,flytecomm,1.0000,baran
+658,src,flytecomm,1.0000,baran
+706,src,flytecomm,1.0000,baran
+748,src,flytecomm,1.0000,baran
+773,src,flytecomm,1.0000,baran
+832,src,flytecomm,1.0000,baran
+887,src,flytecomm,1.0000,baran
+917,src,flytecomm,1.0000,baran
+927,src,flytecomm,1.0000,baran
+928,src,flytecomm,1.0000,baran
+946,src,flytecomm,1.0000,baran
+997,src,flytecomm,1.0000,baran
+1169,src,flytecomm,1.0000,baran
+1179,src,flytecomm,1.0000,baran
+1199,src,flytecomm,1.0000,baran
+1221,src,flytecomm,1.0000,baran
+1226,src,flytecomm,1.0000,baran
+1264,src,flytecomm,1.0000,baran
+1285,src,flytecomm,1.0000,baran
+1327,src,flytecomm,1.0000,baran
+1330,src,flytecomm,1.0000,baran
+1338,src,flytecomm,1.0000,baran
+1373,src,flytecomm,1.0000,baran
+1374,src,flytecomm,1.0000,baran
+1400,src,flytecomm,1.0000,baran
+1431,src,flytecomm,1.0000,baran
+1432,src,flytecomm,1.0000,baran
+1446,src,flytecomm,1.0000,baran
+1471,src,flytecomm,1.0000,baran
+1502,src,flytecomm,1.0000,baran
+1520,src,flytecomm,1.0000,baran
+1565,src,flytecomm,1.0000,baran
+1681,src,flytecomm,1.0000,baran
+1687,src,flytecomm,1.0000,baran
+1698,src,flytecomm,1.0000,baran
+1752,src,flytecomm,1.0000,baran
+1812,src,flytecomm,1.0000,baran
+1877,src,flytecomm,1.0000,baran
+1974,src,flytecomm,1.0000,baran
+2028,src,flytecomm,1.0000,baran
+2035,src,flytecomm,1.0000,baran
+2065,src,flytecomm,1.0000,baran
+2070,src,flytecomm,1.0000,baran
+2075,src,flytecomm,1.0000,baran
+2120,src,flytecomm,1.0000,baran
+2134,src,flytecomm,1.0000,baran
+2168,src,flytecomm,1.0000,baran
+2208,src,flytecomm,1.0000,baran
+2216,src,flytecomm,1.0000,baran
+2278,src,flytecomm,1.0000,baran
+2337,src,flytecomm,1.0000,baran
+2362,src,flytecomm,1.0000,baran
+852,flight,AA-415-BOS-ORD,1.0000,baran
+852,sched_dep_time,8:35 a.m.,1.0000,baran
+45,sched_dep_time,8:35 a.m.,1.0000,baran
+52,sched_dep_time,8:35 a.m.,1.0000,baran
+86,sched_dep_time,8:35 a.m.,1.0000,baran
+129,sched_dep_time,8:35 a.m.,1.0000,baran
+233,sched_dep_time,8:35 a.m.,1.0000,baran
+328,sched_dep_time,8:35 a.m.,1.0000,baran
+393,sched_dep_time,8:35 a.m.,1.0000,baran
+473,sched_dep_time,8:35 a.m.,1.0000,baran
+556,sched_dep_time,8:35 a.m.,1.0000,baran
+696,sched_dep_time,8:35 a.m.,1.0000,baran
+784,sched_dep_time,8:35 a.m.,1.0000,baran
+947,sched_dep_time,8:35 a.m.,1.0000,baran
+961,sched_dep_time,8:35 a.m.,1.0000,baran
+986,sched_dep_time,8:35 a.m.,1.0000,baran
+1032,sched_dep_time,8:35 a.m.,1.0000,baran
+1040,sched_dep_time,8:35 a.m.,1.0000,baran
+1105,sched_dep_time,8:35 a.m.,1.0000,baran
+1202,sched_dep_time,8:35 a.m.,1.0000,baran
+1211,sched_dep_time,8:35 a.m.,1.0000,baran
+1277,sched_dep_time,8:35 a.m.,1.0000,baran
+1305,sched_dep_time,8:35 a.m.,1.0000,baran
+1410,sched_dep_time,8:35 a.m.,1.0000,baran
+1493,sched_dep_time,8:35 a.m.,1.0000,baran
+1602,sched_dep_time,8:35 a.m.,1.0000,baran
+1665,sched_dep_time,8:35 a.m.,1.0000,baran
+1705,sched_dep_time,8:35 a.m.,1.0000,baran
+1727,sched_dep_time,8:35 a.m.,1.0000,baran
+1805,sched_dep_time,8:35 a.m.,1.0000,baran
+1926,sched_dep_time,8:35 a.m.,1.0000,baran
+1969,sched_dep_time,8:35 a.m.,1.0000,baran
+2015,sched_dep_time,8:35 a.m.,1.0000,baran
+2048,sched_dep_time,8:35 a.m.,1.0000,baran
+2070,sched_dep_time,8:35 a.m.,1.0000,baran
+2110,sched_dep_time,8:35 a.m.,1.0000,baran
+2247,sched_dep_time,8:35 a.m.,1.0000,baran
+2290,sched_dep_time,8:35 a.m.,1.0000,baran
+2313,sched_dep_time,8:35 a.m.,1.0000,baran
+2338,sched_dep_time,8:35 a.m.,1.0000,baran
+852,act_dep_time,8:56 a.m.,1.0000,baran
+43,act_dep_time,8:56 a.m.,1.0000,baran
+347,act_dep_time,8:56 a.m.,1.0000,baran
+371,act_dep_time,8:56 a.m.,1.0000,baran
+417,act_dep_time,8:56 a.m.,1.0000,baran
+506,act_dep_time,8:56 a.m.,1.0000,baran
+515,act_dep_time,8:56 a.m.,1.0000,baran
+697,act_dep_time,8:56 a.m.,1.0000,baran
+871,act_dep_time,8:56 a.m.,1.0000,baran
+921,act_dep_time,8:56 a.m.,1.0000,baran
+945,act_dep_time,8:56 a.m.,1.0000,baran
+1135,act_dep_time,8:56 a.m.,1.0000,baran
+1346,act_dep_time,8:56 a.m.,1.0000,baran
+1695,act_dep_time,8:56 a.m.,1.0000,baran
+1696,act_dep_time,8:56 a.m.,1.0000,baran
+1807,act_dep_time,8:56 a.m.,1.0000,baran
+1816,act_dep_time,8:56 a.m.,1.0000,baran
+1838,act_dep_time,8:56 a.m.,1.0000,baran
+1948,act_dep_time,8:56 a.m.,1.0000,baran
+2181,act_dep_time,8:56 a.m.,1.0000,baran
+852,sched_arr_time,10:40 a.m.,1.0000,baran
+852,act_arr_time,10:16 a.m.,1.0000,baran
+200,act_arr_time,10:16 a.m.,1.0000,baran
+228,act_arr_time,10:16 a.m.,1.0000,baran
+405,act_arr_time,10:16 a.m.,1.0000,baran
+444,act_arr_time,10:16 a.m.,1.0000,baran
+755,act_arr_time,10:16 a.m.,1.0000,baran
+829,act_arr_time,10:16 a.m.,1.0000,baran
+888,act_arr_time,10:16 a.m.,1.0000,baran
+1069,act_arr_time,10:16 a.m.,1.0000,baran
+1197,act_arr_time,10:16 a.m.,1.0000,baran
+1232,act_arr_time,10:16 a.m.,1.0000,baran
+1349,act_arr_time,10:16 a.m.,1.0000,baran
+1514,act_arr_time,10:16 a.m.,1.0000,baran
+1523,act_arr_time,10:16 a.m.,1.0000,baran
+1622,act_arr_time,10:16 a.m.,1.0000,baran
+1781,act_arr_time,10:16 a.m.,1.0000,baran
+2113,act_arr_time,10:16 a.m.,1.0000,baran
+1365,src,CO,1.0000,baran
+1365,flight,CO-1250-MIA-IAH,1.0000,baran
+54,flight,AA-415-BOS-ORD,1.0000,baran
+200,flight,AA-415-BOS-ORD,1.0000,baran
+275,flight,CO-1250-MIA-IAH,1.0000,baran
+281,flight,AA-415-BOS-ORD,1.0000,baran
+542,flight,AA-415-BOS-ORD,1.0000,baran
+652,flight,CO-1250-MIA-IAH,1.0000,baran
+976,flight,AA-415-BOS-ORD,1.0000,baran
+1003,flight,AA-415-BOS-ORD,1.0000,baran
+1110,flight,CO-1250-MIA-IAH,1.0000,baran
+1121,flight,CO-1250-MIA-IAH,1.0000,baran
+1133,flight,AA-415-BOS-ORD,1.0000,baran
+1179,flight,CO-1250-MIA-IAH,1.0000,baran
+1385,flight,AA-415-BOS-ORD,1.0000,baran
+1438,flight,AA-415-BOS-ORD,1.0000,baran
+1692,flight,CO-1250-MIA-IAH,1.0000,baran
+1793,flight,CO-1250-MIA-IAH,1.0000,baran
+1794,flight,CO-1250-MIA-IAH,1.0000,baran
+1860,flight,AA-415-BOS-ORD,1.0000,baran
+1894,flight,AA-415-BOS-ORD,1.0000,baran
+1911,flight,AA-415-BOS-ORD,1.0000,baran
+2107,flight,AA-415-BOS-ORD,1.0000,baran
+2115,flight,AA-415-BOS-ORD,1.0000,baran
+2210,flight,AA-415-BOS-ORD,1.0000,baran
+1365,sched_dep_time,2:53 p.m.,1.0000,baran
+29,sched_dep_time,4:48 p.m.,1.0000,baran
+107,sched_dep_time,4:48 p.m.,1.0000,baran
+149,sched_dep_time,3:01 p.m.,1.0000,baran
+301,sched_dep_time,4:48 p.m.,1.0000,baran
+313,sched_dep_time,4:48 p.m.,1.0000,baran
+412,sched_dep_time,2:53 p.m.,1.0000,baran
+494,sched_dep_time,4:48 p.m.,1.0000,baran
+509,sched_dep_time,4:48 p.m.,1.0000,baran
+513,sched_dep_time,3:01 p.m.,1.0000,baran
+525,sched_dep_time,4:48 p.m.,1.0000,baran
+527,sched_dep_time,2:53 p.m.,1.0000,baran
+542,sched_dep_time,4:48 p.m.,1.0000,baran
+562,sched_dep_time,4:48 p.m.,1.0000,baran
+567,sched_dep_time,4:48 p.m.,1.0000,baran
+570,sched_dep_time,4:48 p.m.,1.0000,baran
+575,sched_dep_time,3:01 p.m.,1.0000,baran
+637,sched_dep_time,4:48 p.m.,1.0000,baran
+703,sched_dep_time,2:53 p.m.,1.0000,baran
+714,sched_dep_time,4:48 p.m.,1.0000,baran
+719,sched_dep_time,4:48 p.m.,1.0000,baran
+728,sched_dep_time,4:48 p.m.,1.0000,baran
+739,sched_dep_time,2:53 p.m.,1.0000,baran
+756,sched_dep_time,4:48 p.m.,1.0000,baran
+862,sched_dep_time,4:48 p.m.,1.0000,baran
+1011,sched_dep_time,4:48 p.m.,1.0000,baran
+1041,sched_dep_time,4:48 p.m.,1.0000,baran
+1066,sched_dep_time,4:48 p.m.,1.0000,baran
+1083,sched_dep_time,3:01 p.m.,1.0000,baran
+1139,sched_dep_time,2:53 p.m.,1.0000,baran
+1215,sched_dep_time,4:48 p.m.,1.0000,baran
+1242,sched_dep_time,4:48 p.m.,1.0000,baran
+1330,sched_dep_time,2:53 p.m.,1.0000,baran
+1358,sched_dep_time,4:48 p.m.,1.0000,baran
+1400,sched_dep_time,4:48 p.m.,1.0000,baran
+1428,sched_dep_time,4:48 p.m.,1.0000,baran
+1442,sched_dep_time,4:48 p.m.,1.0000,baran
+1462,sched_dep_time,4:48 p.m.,1.0000,baran
+1502,sched_dep_time,4:48 p.m.,1.0000,baran
+1577,sched_dep_time,3:01 p.m.,1.0000,baran
+1734,sched_dep_time,4:48 p.m.,1.0000,baran
+1740,sched_dep_time,2:53 p.m.,1.0000,baran
+1792,sched_dep_time,4:48 p.m.,1.0000,baran
+1799,sched_dep_time,4:48 p.m.,1.0000,baran
+1800,sched_dep_time,4:48 p.m.,1.0000,baran
+1819,sched_dep_time,4:48 p.m.,1.0000,baran
+1855,sched_dep_time,2:53 p.m.,1.0000,baran
+1881,sched_dep_time,3:01 p.m.,1.0000,baran
+1928,sched_dep_time,4:48 p.m.,1.0000,baran
+1944,sched_dep_time,4:48 p.m.,1.0000,baran
+2013,sched_dep_time,4:48 p.m.,1.0000,baran
+2017,sched_dep_time,3:01 p.m.,1.0000,baran
+2081,sched_dep_time,4:48 p.m.,1.0000,baran
+2126,sched_dep_time,4:48 p.m.,1.0000,baran
+2129,sched_dep_time,2:53 p.m.,1.0000,baran
+2143,sched_dep_time,2:53 p.m.,1.0000,baran
+2157,sched_dep_time,3:01 p.m.,1.0000,baran
+2161,sched_dep_time,4:48 p.m.,1.0000,baran
+2165,sched_dep_time,4:48 p.m.,1.0000,baran
+2217,sched_dep_time,4:48 p.m.,1.0000,baran
+1365,act_dep_time,3:01 p.m.,1.0000,baran
+29,act_dep_time,3:01 p.m.,1.0000,baran
+201,act_dep_time,3:01 p.m.,1.0000,baran
+203,act_dep_time,3:01 p.m.,1.0000,baran
+212,act_dep_time,3:01 p.m.,1.0000,baran
+234,act_dep_time,3:01 p.m.,1.0000,baran
+299,act_dep_time,3:01 p.m.,1.0000,baran
+327,act_dep_time,3:01 p.m.,1.0000,baran
+432,act_dep_time,3:01 p.m.,1.0000,baran
+457,act_dep_time,3:01 p.m.,1.0000,baran
+489,act_dep_time,3:01 p.m.,1.0000,baran
+737,act_dep_time,3:01 p.m.,1.0000,baran
+888,act_dep_time,3:01 p.m.,1.0000,baran
+985,act_dep_time,3:01 p.m.,1.0000,baran
+992,act_dep_time,3:01 p.m.,1.0000,baran
+1010,act_dep_time,3:01 p.m.,1.0000,baran
+1049,act_dep_time,3:01 p.m.,1.0000,baran
+1100,act_dep_time,3:01 p.m.,1.0000,baran
+1595,act_dep_time,3:01 p.m.,1.0000,baran
+1617,act_dep_time,3:01 p.m.,1.0000,baran
+1652,act_dep_time,3:01 p.m.,1.0000,baran
+1664,act_dep_time,3:01 p.m.,1.0000,baran
+1734,act_dep_time,3:01 p.m.,1.0000,baran
+1878,act_dep_time,3:01 p.m.,1.0000,baran
+2074,act_dep_time,3:01 p.m.,1.0000,baran
+2103,act_dep_time,3:01 p.m.,1.0000,baran
+2184,act_dep_time,3:01 p.m.,1.0000,baran
+2198,act_dep_time,3:01 p.m.,1.0000,baran
+2277,act_dep_time,3:01 p.m.,1.0000,baran
+2318,act_dep_time,3:01 p.m.,1.0000,baran
+2352,act_dep_time,3:01 p.m.,1.0000,baran
+1365,sched_arr_time,4:48 p.m.,1.0000,baran
+1,sched_arr_time,10:40 a.m.,1.0000,baran
+9,sched_arr_time,4:48 p.m.,1.0000,baran
+114,sched_arr_time,4:48 p.m.,1.0000,baran
+194,sched_arr_time,4:48 p.m.,1.0000,baran
+375,sched_arr_time,4:48 p.m.,1.0000,baran
+392,sched_arr_time,4:48 p.m.,1.0000,baran
+697,sched_arr_time,4:48 p.m.,1.0000,baran
+821,sched_arr_time,4:48 p.m.,1.0000,baran
+837,sched_arr_time,10:40 a.m.,1.0000,baran
+865,sched_arr_time,10:40 a.m.,1.0000,baran
+889,sched_arr_time,4:48 p.m.,1.0000,baran
+939,sched_arr_time,4:48 p.m.,1.0000,baran
+1098,sched_arr_time,4:48 p.m.,1.0000,baran
+1198,sched_arr_time,4:48 p.m.,1.0000,baran
+1266,sched_arr_time,4:48 p.m.,1.0000,baran
+1275,sched_arr_time,4:48 p.m.,1.0000,baran
+1356,sched_arr_time,10:40 a.m.,1.0000,baran
+1521,sched_arr_time,4:48 p.m.,1.0000,baran
+1725,sched_arr_time,4:48 p.m.,1.0000,baran
+1800,sched_arr_time,4:48 p.m.,1.0000,baran
+1834,sched_arr_time,4:48 p.m.,1.0000,baran
+1876,sched_arr_time,4:48 p.m.,1.0000,baran
+1914,sched_arr_time,4:48 p.m.,1.0000,baran
+1938,sched_arr_time,4:48 p.m.,1.0000,baran
+1977,sched_arr_time,4:48 p.m.,1.0000,baran
+1998,sched_arr_time,4:48 p.m.,1.0000,baran
+2028,sched_arr_time,10:40 a.m.,1.0000,baran
+2111,sched_arr_time,4:48 p.m.,1.0000,baran
+2276,sched_arr_time,4:48 p.m.,1.0000,baran
+2353,sched_arr_time,4:48 p.m.,1.0000,baran
+1365,act_arr_time,4:59 p.m.,1.0000,baran
+34,act_arr_time,4:59 p.m.,1.0000,baran
+112,act_arr_time,4:59 p.m.,1.0000,baran
+148,act_arr_time,4:59 p.m.,1.0000,baran
+153,act_arr_time,4:59 p.m.,1.0000,baran
+375,act_arr_time,4:59 p.m.,1.0000,baran
+461,act_arr_time,4:59 p.m.,1.0000,baran
+526,act_arr_time,4:59 p.m.,1.0000,baran
+607,act_arr_time,4:59 p.m.,1.0000,baran
+631,act_arr_time,4:59 p.m.,1.0000,baran
+649,act_arr_time,4:59 p.m.,1.0000,baran
+733,act_arr_time,4:59 p.m.,1.0000,baran
+806,act_arr_time,4:59 p.m.,1.0000,baran
+859,act_arr_time,4:59 p.m.,1.0000,baran
+864,act_arr_time,4:59 p.m.,1.0000,baran
+1129,act_arr_time,4:59 p.m.,1.0000,baran
+1299,act_arr_time,4:59 p.m.,1.0000,baran
+1380,act_arr_time,4:59 p.m.,1.0000,baran
+1449,act_arr_time,4:59 p.m.,1.0000,baran
+1605,act_arr_time,4:59 p.m.,1.0000,baran
+1644,act_arr_time,4:59 p.m.,1.0000,baran
+1646,act_arr_time,4:59 p.m.,1.0000,baran
+1710,act_arr_time,4:59 p.m.,1.0000,baran
+1801,act_arr_time,4:59 p.m.,1.0000,baran
+1815,act_arr_time,4:59 p.m.,1.0000,baran
+1871,act_arr_time,4:59 p.m.,1.0000,baran
+1969,act_arr_time,4:59 p.m.,1.0000,baran
+1975,act_arr_time,4:59 p.m.,1.0000,baran
+1990,act_arr_time,4:59 p.m.,1.0000,baran
+2125,act_arr_time,4:59 p.m.,1.0000,baran
+2134,act_arr_time,4:59 p.m.,1.0000,baran
+2137,act_arr_time,4:59 p.m.,1.0000,baran
+2361,act_arr_time,4:59 p.m.,1.0000,baran
+656,src,weather,1.0000,baran
+51,src,CO,1.0000,baran
+106,src,CO,1.0000,baran
+168,src,CO,1.0000,baran
+189,src,CO,1.0000,baran
+202,src,CO,1.0000,baran
+215,src,CO,1.0000,baran
+255,src,weather,1.0000,baran
+281,src,CO,1.0000,baran
+298,src,weather,1.0000,baran
+370,src,CO,1.0000,baran
+395,src,CO,1.0000,baran
+432,src,weather,1.0000,baran
+445,src,CO,1.0000,baran
+482,src,CO,1.0000,baran
+606,src,CO,1.0000,baran
+662,src,weather,1.0000,baran
+685,src,weather,1.0000,baran
+702,src,CO,1.0000,baran
+725,src,CO,1.0000,baran
+736,src,CO,1.0000,baran
+789,src,weather,1.0000,baran
+809,src,CO,1.0000,baran
+811,src,CO,1.0000,baran
+814,src,CO,1.0000,baran
+870,src,weather,1.0000,baran
+882,src,weather,1.0000,baran
+899,src,weather,1.0000,baran
+924,src,CO,1.0000,baran
+981,src,weather,1.0000,baran
+989,src,weather,1.0000,baran
+994,src,CO,1.0000,baran
+1051,src,weather,1.0000,baran
+1056,src,foxbusiness,1.0000,baran
+1064,src,CO,1.0000,baran
+1084,src,weather,1.0000,baran
+1098,src,weather,1.0000,baran
+1145,src,CO,1.0000,baran
+1166,src,CO,1.0000,baran
+1168,src,weather,1.0000,baran
+1184,src,CO,1.0000,baran
+1252,src,weather,1.0000,baran
+1289,src,weather,1.0000,baran
+1325,src,CO,1.0000,baran
+1351,src,CO,1.0000,baran
+1376,src,CO,1.0000,baran
+1377,src,weather,1.0000,baran
+1395,src,weather,1.0000,baran
+1410,src,CO,1.0000,baran
+1516,src,CO,1.0000,baran
+1536,src,CO,1.0000,baran
+1546,src,weather,1.0000,baran
+1553,src,CO,1.0000,baran
+1559,src,CO,1.0000,baran
+1569,src,CO,1.0000,baran
+1587,src,weather,1.0000,baran
+1593,src,weather,1.0000,baran
+1623,src,CO,1.0000,baran
+1675,src,CO,1.0000,baran
+1684,src,weather,1.0000,baran
+1689,src,CO,1.0000,baran
+1721,src,weather,1.0000,baran
+1727,src,weather,1.0000,baran
+1731,src,CO,1.0000,baran
+1738,src,weather,1.0000,baran
+1753,src,CO,1.0000,baran
+1775,src,weather,1.0000,baran
+1817,src,weather,1.0000,baran
+1832,src,CO,1.0000,baran
+1940,src,weather,1.0000,baran
+1948,src,CO,1.0000,baran
+1952,src,CO,1.0000,baran
+2000,src,CO,1.0000,baran
+2093,src,CO,1.0000,baran
+2122,src,CO,1.0000,baran
+2150,src,CO,1.0000,baran
+2185,src,CO,1.0000,baran
+2252,src,weather,1.0000,baran
+2288,src,weather,1.0000,baran
+2298,src,CO,1.0000,baran
+2321,src,weather,1.0000,baran
+2352,src,weather,1.0000,baran
+2376,src,weather,1.0000,baran
+656,flight,AA-3804-PHL-ORD,1.0000,baran
+140,flight,AA-3804-PHL-ORD,1.0000,baran
+238,flight,AA-3804-PHL-ORD,1.0000,baran
+241,flight,AA-3804-PHL-ORD,1.0000,baran
+293,flight,AA-3804-PHL-ORD,1.0000,baran
+406,flight,AA-3804-PHL-ORD,1.0000,baran
+410,flight,AA-3804-PHL-ORD,1.0000,baran
+1419,flight,AA-3804-PHL-ORD,1.0000,baran
+1446,flight,AA-3804-PHL-ORD,1.0000,baran
+1586,flight,AA-3804-PHL-ORD,1.0000,baran
+1674,flight,AA-3804-PHL-ORD,1.0000,baran
+1754,flight,AA-3804-PHL-ORD,1.0000,baran
+1765,flight,AA-3804-PHL-ORD,1.0000,baran
+1810,flight,AA-3804-PHL-ORD,1.0000,baran
+1844,flight,AA-3804-PHL-ORD,1.0000,baran
+656,sched_dep_time,2:35 p.m.,1.0000,baran
+63,sched_dep_time,2:35 p.m.,1.0000,baran
+97,sched_dep_time,2:35 p.m.,1.0000,baran
+142,sched_dep_time,2:35 p.m.,1.0000,baran
+153,sched_dep_time,2:35 p.m.,1.0000,baran
+166,sched_dep_time,2:35 p.m.,1.0000,baran
+210,sched_dep_time,2:35 p.m.,1.0000,baran
+223,sched_dep_time,2:35 p.m.,1.0000,baran
+262,sched_dep_time,2:35 p.m.,1.0000,baran
+274,sched_dep_time,2:35 p.m.,1.0000,baran
+277,sched_dep_time,2:35 p.m.,1.0000,baran
+315,sched_dep_time,2:35 p.m.,1.0000,baran
+324,sched_dep_time,2:35 p.m.,1.0000,baran
+375,sched_dep_time,2:35 p.m.,1.0000,baran
+407,sched_dep_time,2:35 p.m.,1.0000,baran
+429,sched_dep_time,2:35 p.m.,1.0000,baran
+430,sched_dep_time,2:35 p.m.,1.0000,baran
+518,sched_dep_time,2:35 p.m.,1.0000,baran
+519,sched_dep_time,2:35 p.m.,1.0000,baran
+610,sched_dep_time,2:35 p.m.,1.0000,baran
+611,sched_dep_time,2:35 p.m.,1.0000,baran
+616,sched_dep_time,2:35 p.m.,1.0000,baran
+621,sched_dep_time,2:35 p.m.,1.0000,baran
+699,sched_dep_time,2:35 p.m.,1.0000,baran
+702,sched_dep_time,2:35 p.m.,1.0000,baran
+763,sched_dep_time,2:35 p.m.,1.0000,baran
+789,sched_dep_time,2:35 p.m.,1.0000,baran
+841,sched_dep_time,2:35 p.m.,1.0000,baran
+842,sched_dep_time,2:35 p.m.,1.0000,baran
+864,sched_dep_time,2:35 p.m.,1.0000,baran
+907,sched_dep_time,2:35 p.m.,1.0000,baran
+981,sched_dep_time,2:35 p.m.,1.0000,baran
+983,sched_dep_time,2:35 p.m.,1.0000,baran
+994,sched_dep_time,2:35 p.m.,1.0000,baran
+1087,sched_dep_time,2:35 p.m.,1.0000,baran
+1104,sched_dep_time,2:35 p.m.,1.0000,baran
+1149,sched_dep_time,2:35 p.m.,1.0000,baran
+1191,sched_dep_time,2:35 p.m.,1.0000,baran
+1250,sched_dep_time,2:35 p.m.,1.0000,baran
+1271,sched_dep_time,2:35 p.m.,1.0000,baran
+1273,sched_dep_time,2:35 p.m.,1.0000,baran
+1297,sched_dep_time,2:35 p.m.,1.0000,baran
+1304,sched_dep_time,2:35 p.m.,1.0000,baran
+1396,sched_dep_time,2:35 p.m.,1.0000,baran
+1397,sched_dep_time,2:35 p.m.,1.0000,baran
+1415,sched_dep_time,2:35 p.m.,1.0000,baran
+1430,sched_dep_time,2:35 p.m.,1.0000,baran
+1526,sched_dep_time,2:35 p.m.,1.0000,baran
+1546,sched_dep_time,2:35 p.m.,1.0000,baran
+1550,sched_dep_time,2:35 p.m.,1.0000,baran
+1586,sched_dep_time,2:35 p.m.,1.0000,baran
+1587,sched_dep_time,2:35 p.m.,1.0000,baran
+1653,sched_dep_time,2:35 p.m.,1.0000,baran
+1745,sched_dep_time,2:35 p.m.,1.0000,baran
+1776,sched_dep_time,2:35 p.m.,1.0000,baran
+1784,sched_dep_time,2:35 p.m.,1.0000,baran
+1803,sched_dep_time,2:35 p.m.,1.0000,baran
+1841,sched_dep_time,2:35 p.m.,1.0000,baran
+1847,sched_dep_time,2:35 p.m.,1.0000,baran
+1949,sched_dep_time,2:35 p.m.,1.0000,baran
+2036,sched_dep_time,2:35 p.m.,1.0000,baran
+2054,sched_dep_time,2:35 p.m.,1.0000,baran
+2106,sched_dep_time,2:35 p.m.,1.0000,baran
+2135,sched_dep_time,2:35 p.m.,1.0000,baran
+2148,sched_dep_time,2:35 p.m.,1.0000,baran
+2184,sched_dep_time,2:35 p.m.,1.0000,baran
+2186,sched_dep_time,2:35 p.m.,1.0000,baran
+2224,sched_dep_time,2:35 p.m.,1.0000,baran
+2232,sched_dep_time,2:35 p.m.,1.0000,baran
+2278,sched_dep_time,2:35 p.m.,1.0000,baran
+2294,sched_dep_time,2:35 p.m.,1.0000,baran
+2343,sched_dep_time,2:35 p.m.,1.0000,baran
+2346,sched_dep_time,2:35 p.m.,1.0000,baran
+656,act_dep_time,2:44 p.m.,1.0000,baran
+656,sched_arr_time,4:05 p.m.,1.0000,baran
+393,sched_arr_time,4:05 p.m.,1.0000,baran
+441,sched_arr_time,4:05 p.m.,1.0000,baran
+570,sched_arr_time,4:05 p.m.,1.0000,baran
+585,sched_arr_time,4:05 p.m.,1.0000,baran
+762,sched_arr_time,4:05 p.m.,1.0000,baran
+904,sched_arr_time,4:05 p.m.,1.0000,baran
+986,sched_arr_time,4:05 p.m.,1.0000,baran
+1220,sched_arr_time,4:05 p.m.,1.0000,baran
+1264,sched_arr_time,4:05 p.m.,1.0000,baran
+1539,sched_arr_time,4:05 p.m.,1.0000,baran
+1969,sched_arr_time,4:05 p.m.,1.0000,baran
+2331,sched_arr_time,4:05 p.m.,1.0000,baran
+656,act_arr_time,3:43 p.m.,1.0000,baran
+155,act_arr_time,3:43 p.m.,1.0000,baran
+839,act_arr_time,3:43 p.m.,1.0000,baran
+1072,act_arr_time,3:43 p.m.,1.0000,baran
+1692,act_arr_time,3:43 p.m.,1.0000,baran
+1883,act_arr_time,3:43 p.m.,1.0000,baran
+383,src,flightview,1.0000,baran
+13,src,flightview,1.0000,baran
+61,src,flightview,1.0000,baran
+64,src,flightview,1.0000,baran
+66,src,flightview,1.0000,baran
+110,src,flightview,1.0000,baran
+252,src,flightview,1.0000,baran
+317,src,flightview,1.0000,baran
+333,src,flightview,1.0000,baran
+365,src,flightview,1.0000,baran
+515,src,flightview,1.0000,baran
+522,src,flightview,1.0000,baran
+596,src,flightview,1.0000,baran
+607,src,flightview,1.0000,baran
+665,src,flightview,1.0000,baran
+698,src,flightview,1.0000,baran
+704,src,flightview,1.0000,baran
+713,src,flightview,1.0000,baran
+770,src,flightview,1.0000,baran
+802,src,flightview,1.0000,baran
+836,src,flightview,1.0000,baran
+840,src,flightview,1.0000,baran
+851,src,flightview,1.0000,baran
+864,src,flightview,1.0000,baran
+987,src,flightview,1.0000,baran
+1087,src,flightview,1.0000,baran
+1090,src,flightview,1.0000,baran
+1131,src,flightview,1.0000,baran
+1139,src,flightview,1.0000,baran
+1144,src,flightview,1.0000,baran
+1204,src,flightview,1.0000,baran
+1266,src,flightview,1.0000,baran
+1273,src,flightview,1.0000,baran
+1339,src,flightview,1.0000,baran
+1350,src,flightview,1.0000,baran
+1353,src,flightview,1.0000,baran
+1367,src,flightview,1.0000,baran
+1407,src,flightview,1.0000,baran
+1465,src,flightview,1.0000,baran
+1509,src,flightview,1.0000,baran
+1558,src,flightview,1.0000,baran
+1625,src,flightview,1.0000,baran
+1667,src,flightview,1.0000,baran
+1670,src,flightview,1.0000,baran
+1686,src,flightview,1.0000,baran
+1707,src,flightview,1.0000,baran
+1745,src,flightview,1.0000,baran
+1755,src,flightview,1.0000,baran
+1813,src,flightview,1.0000,baran
+1815,src,flightview,1.0000,baran
+1915,src,flightview,1.0000,baran
+1976,src,flightview,1.0000,baran
+2002,src,flightview,1.0000,baran
+2213,src,flightview,1.0000,baran
+2250,src,flightview,1.0000,baran
+2322,src,flightview,1.0000,baran
+2324,src,flightview,1.0000,baran
+2369,src,flightview,1.0000,baran
+383,flight,AA-2268-PHX-ORD,1.0000,baran
+310,flight,AA-2268-PHX-ORD,1.0000,baran
+597,flight,AA-2268-PHX-ORD,1.0000,baran
+1088,flight,AA-2268-PHX-ORD,1.0000,baran
+1125,flight,AA-2268-PHX-ORD,1.0000,baran
+2010,flight,AA-2268-PHX-ORD,1.0000,baran
+2275,flight,AA-2268-PHX-ORD,1.0000,baran
+2281,flight,AA-2268-PHX-ORD,1.0000,baran
+383,sched_dep_time,7:15 a.m.,1.0000,baran
+131,sched_dep_time,7:15 a.m.,1.0000,baran
+201,sched_dep_time,7:15 a.m.,1.0000,baran
+239,sched_dep_time,7:15 a.m.,1.0000,baran
+312,sched_dep_time,11:35 a.m.,1.0000,baran
+331,sched_dep_time,7:15 a.m.,1.0000,baran
+447,sched_dep_time,11:35 a.m.,1.0000,baran
+505,sched_dep_time,7:15 a.m.,1.0000,baran
+517,sched_dep_time,11:35 a.m.,1.0000,baran
+532,sched_dep_time,11:35 a.m.,1.0000,baran
+566,sched_dep_time,7:15 a.m.,1.0000,baran
+572,sched_dep_time,7:15 a.m.,1.0000,baran
+670,sched_dep_time,11:35 a.m.,1.0000,baran
+677,sched_dep_time,7:15 a.m.,1.0000,baran
+908,sched_dep_time,7:15 a.m.,1.0000,baran
+933,sched_dep_time,11:35 a.m.,1.0000,baran
+990,sched_dep_time,7:15 a.m.,1.0000,baran
+1074,sched_dep_time,7:15 a.m.,1.0000,baran
+1114,sched_dep_time,7:15 a.m.,1.0000,baran
+1292,sched_dep_time,7:15 a.m.,1.0000,baran
+1386,sched_dep_time,7:15 a.m.,1.0000,baran
+1437,sched_dep_time,7:15 a.m.,1.0000,baran
+1495,sched_dep_time,7:15 a.m.,1.0000,baran
+1504,sched_dep_time,7:15 a.m.,1.0000,baran
+1515,sched_dep_time,11:35 a.m.,1.0000,baran
+1559,sched_dep_time,7:15 a.m.,1.0000,baran
+1563,sched_dep_time,11:35 a.m.,1.0000,baran
+1573,sched_dep_time,7:15 a.m.,1.0000,baran
+1585,sched_dep_time,7:15 a.m.,1.0000,baran
+1631,sched_dep_time,7:15 a.m.,1.0000,baran
+1641,sched_dep_time,11:35 a.m.,1.0000,baran
+1694,sched_dep_time,7:15 a.m.,1.0000,baran
+1703,sched_dep_time,7:15 a.m.,1.0000,baran
+1757,sched_dep_time,7:15 a.m.,1.0000,baran
+1833,sched_dep_time,11:35 a.m.,1.0000,baran
+1903,sched_dep_time,7:15 a.m.,1.0000,baran
+1933,sched_dep_time,7:15 a.m.,1.0000,baran
+1946,sched_dep_time,7:15 a.m.,1.0000,baran
+1951,sched_dep_time,7:15 a.m.,1.0000,baran
+1983,sched_dep_time,7:15 a.m.,1.0000,baran
+2032,sched_dep_time,11:35 a.m.,1.0000,baran
+2086,sched_dep_time,7:15 a.m.,1.0000,baran
+2117,sched_dep_time,11:35 a.m.,1.0000,baran
+2121,sched_dep_time,7:15 a.m.,1.0000,baran
+2142,sched_dep_time,7:15 a.m.,1.0000,baran
+2266,sched_dep_time,11:35 a.m.,1.0000,baran
+2272,sched_dep_time,7:15 a.m.,1.0000,baran
+2280,sched_dep_time,11:35 a.m.,1.0000,baran
+383,act_dep_time,7:22 a.m.,1.0000,baran
+383,sched_arr_time,11:35 a.m.,1.0000,baran
+69,sched_arr_time,11:35 a.m.,1.0000,baran
+260,sched_arr_time,11:35 a.m.,1.0000,baran
+316,sched_arr_time,11:35 a.m.,1.0000,baran
+426,sched_arr_time,11:35 a.m.,1.0000,baran
+450,sched_arr_time,11:35 a.m.,1.0000,baran
+639,sched_arr_time,11:35 a.m.,1.0000,baran
+685,sched_arr_time,11:35 a.m.,1.0000,baran
+1169,sched_arr_time,11:35 a.m.,1.0000,baran
+1248,sched_arr_time,11:35 a.m.,1.0000,baran
+1289,sched_arr_time,11:35 a.m.,1.0000,baran
+1307,sched_arr_time,11:35 a.m.,1.0000,baran
+1353,sched_arr_time,11:35 a.m.,1.0000,baran
+1358,sched_arr_time,11:35 a.m.,1.0000,baran
+1392,sched_arr_time,11:35 a.m.,1.0000,baran
+1574,sched_arr_time,11:35 a.m.,1.0000,baran
+1762,sched_arr_time,11:35 a.m.,1.0000,baran
+2024,sched_arr_time,11:35 a.m.,1.0000,baran
+2121,sched_arr_time,11:35 a.m.,1.0000,baran
+383,act_arr_time,11:06 a.m.,1.0000,baran
+612,src,flightstats,1.0000,baran
+52,src,flightstats,1.0000,baran
+75,src,flightstats,1.0000,baran
+97,src,flightstats,1.0000,baran
+150,src,flightstats,1.0000,baran
+207,src,flightstats,1.0000,baran
+238,src,flightstats,1.0000,baran
+455,src,flightstats,1.0000,baran
+873,src,flightstats,1.0000,baran
+896,src,flightstats,1.0000,baran
+1031,src,flightstats,1.0000,baran
+1081,src,flightstats,1.0000,baran
+1336,src,flightstats,1.0000,baran
+1466,src,flightstats,1.0000,baran
+1523,src,flightstats,1.0000,baran
+1600,src,flightstats,1.0000,baran
+1621,src,flightstats,1.0000,baran
+1735,src,flightstats,1.0000,baran
+1749,src,flightstats,1.0000,baran
+1756,src,flightstats,1.0000,baran
+1978,src,flightstats,1.0000,baran
+2001,src,flightstats,1.0000,baran
+2049,src,flightstats,1.0000,baran
+2228,src,flightstats,1.0000,baran
+2371,src,flightstats,1.0000,baran
+612,flight,AA-3786-IAH-ORD,1.0000,baran
+74,flight,AA-3786-IAH-ORD,1.0000,baran
+87,flight,AA-3786-IAH-ORD,1.0000,baran
+151,flight,AA-3786-IAH-ORD,1.0000,baran
+199,flight,AA-3786-IAH-ORD,1.0000,baran
+257,flight,AA-3786-IAH-ORD,1.0000,baran
+554,flight,AA-3786-IAH-ORD,1.0000,baran
+590,flight,AA-3786-IAH-ORD,1.0000,baran
+610,flight,AA-3786-IAH-ORD,1.0000,baran
+615,flight,AA-3786-IAH-ORD,1.0000,baran
+633,flight,AA-3786-IAH-ORD,1.0000,baran
+651,flight,AA-3786-IAH-ORD,1.0000,baran
+861,flight,AA-3786-IAH-ORD,1.0000,baran
+1005,flight,AA-3786-IAH-ORD,1.0000,baran
+1016,flight,AA-3786-IAH-ORD,1.0000,baran
+1035,flight,AA-3786-IAH-ORD,1.0000,baran
+1232,flight,AA-3786-IAH-ORD,1.0000,baran
+1274,flight,AA-3786-IAH-ORD,1.0000,baran
+1423,flight,AA-3786-IAH-ORD,1.0000,baran
+1440,flight,AA-3786-IAH-ORD,1.0000,baran
+1914,flight,AA-3786-IAH-ORD,1.0000,baran
+1986,flight,AA-3786-IAH-ORD,1.0000,baran
+2007,flight,AA-3786-IAH-ORD,1.0000,baran
+2012,flight,AA-3786-IAH-ORD,1.0000,baran
+2062,flight,AA-3786-IAH-ORD,1.0000,baran
+612,sched_dep_time,4:00 p.m.,1.0000,baran
+83,sched_dep_time,4:00 p.m.,1.0000,baran
+194,sched_dep_time,6:40 p.m.,1.0000,baran
+213,sched_dep_time,4:00 p.m.,1.0000,baran
+221,sched_dep_time,4:00 p.m.,1.0000,baran
+267,sched_dep_time,6:40 p.m.,1.0000,baran
+269,sched_dep_time,4:00 p.m.,1.0000,baran
+326,sched_dep_time,4:00 p.m.,1.0000,baran
+336,sched_dep_time,6:40 p.m.,1.0000,baran
+347,sched_dep_time,4:00 p.m.,1.0000,baran
+377,sched_dep_time,4:00 p.m.,1.0000,baran
+451,sched_dep_time,4:00 p.m.,1.0000,baran
+480,sched_dep_time,4:00 p.m.,1.0000,baran
+502,sched_dep_time,4:00 p.m.,1.0000,baran
+571,sched_dep_time,6:40 p.m.,1.0000,baran
+613,sched_dep_time,4:00 p.m.,1.0000,baran
+622,sched_dep_time,6:40 p.m.,1.0000,baran
+659,sched_dep_time,4:00 p.m.,1.0000,baran
+708,sched_dep_time,4:00 p.m.,1.0000,baran
+731,sched_dep_time,6:40 p.m.,1.0000,baran
+758,sched_dep_time,4:00 p.m.,1.0000,baran
+833,sched_dep_time,4:00 p.m.,1.0000,baran
+897,sched_dep_time,6:40 p.m.,1.0000,baran
+953,sched_dep_time,4:00 p.m.,1.0000,baran
+1008,sched_dep_time,6:40 p.m.,1.0000,baran
+1020,sched_dep_time,6:40 p.m.,1.0000,baran
+1033,sched_dep_time,6:40 p.m.,1.0000,baran
+1059,sched_dep_time,4:00 p.m.,1.0000,baran
+1072,sched_dep_time,6:40 p.m.,1.0000,baran
+1079,sched_dep_time,4:00 p.m.,1.0000,baran
+1090,sched_dep_time,4:00 p.m.,1.0000,baran
+1102,sched_dep_time,6:40 p.m.,1.0000,baran
+1106,sched_dep_time,4:00 p.m.,1.0000,baran
+1152,sched_dep_time,4:00 p.m.,1.0000,baran
+1186,sched_dep_time,4:00 p.m.,1.0000,baran
+1189,sched_dep_time,4:00 p.m.,1.0000,baran
+1213,sched_dep_time,4:00 p.m.,1.0000,baran
+1224,sched_dep_time,4:00 p.m.,1.0000,baran
+1234,sched_dep_time,4:00 p.m.,1.0000,baran
+1276,sched_dep_time,4:00 p.m.,1.0000,baran
+1439,sched_dep_time,6:40 p.m.,1.0000,baran
+1474,sched_dep_time,4:00 p.m.,1.0000,baran
+1479,sched_dep_time,4:00 p.m.,1.0000,baran
+1531,sched_dep_time,4:00 p.m.,1.0000,baran
+1668,sched_dep_time,4:00 p.m.,1.0000,baran
+1683,sched_dep_time,4:00 p.m.,1.0000,baran
+1697,sched_dep_time,4:00 p.m.,1.0000,baran
+1700,sched_dep_time,4:00 p.m.,1.0000,baran
+1787,sched_dep_time,4:00 p.m.,1.0000,baran
+1788,sched_dep_time,4:00 p.m.,1.0000,baran
+1814,sched_dep_time,4:00 p.m.,1.0000,baran
+1924,sched_dep_time,4:00 p.m.,1.0000,baran
+1975,sched_dep_time,4:00 p.m.,1.0000,baran
+2039,sched_dep_time,4:00 p.m.,1.0000,baran
+2045,sched_dep_time,4:00 p.m.,1.0000,baran
+2063,sched_dep_time,4:00 p.m.,1.0000,baran
+2079,sched_dep_time,4:00 p.m.,1.0000,baran
+2093,sched_dep_time,6:40 p.m.,1.0000,baran
+2094,sched_dep_time,6:40 p.m.,1.0000,baran
+2144,sched_dep_time,6:40 p.m.,1.0000,baran
+2152,sched_dep_time,4:00 p.m.,1.0000,baran
+2226,sched_dep_time,4:00 p.m.,1.0000,baran
+2228,sched_dep_time,4:00 p.m.,1.0000,baran
+2269,sched_dep_time,4:00 p.m.,1.0000,baran
+2283,sched_dep_time,4:00 p.m.,1.0000,baran
+2291,sched_dep_time,4:00 p.m.,1.0000,baran
+2301,sched_dep_time,4:00 p.m.,1.0000,baran
+2347,sched_dep_time,6:40 p.m.,1.0000,baran
+2368,sched_dep_time,4:00 p.m.,1.0000,baran
+612,act_dep_time,4:12 p.m.,1.0000,baran
+8,act_dep_time,4:00 p.m.,1.0000,baran
+51,act_dep_time,11:35 a.m.,1.0000,baran
+60,act_dep_time,4:00 p.m.,1.0000,baran
+81,act_dep_time,11:35 a.m.,1.0000,baran
+138,act_dep_time,11:35 a.m.,1.0000,baran
+169,act_dep_time,11:35 a.m.,1.0000,baran
+221,act_dep_time,2:44 p.m.,1.0000,baran
+236,act_dep_time,7:22 a.m.,1.0000,baran
+270,act_dep_time,2:44 p.m.,1.0000,baran
+293,act_dep_time,11:35 a.m.,1.0000,baran
+294,act_dep_time,2:44 p.m.,1.0000,baran
+340,act_dep_time,4:12 p.m.,1.0000,baran
+351,act_dep_time,7:22 a.m.,1.0000,baran
+363,act_dep_time,4:00 p.m.,1.0000,baran
+368,act_dep_time,7:22 a.m.,1.0000,baran
+390,act_dep_time,4:12 p.m.,1.0000,baran
+512,act_dep_time,11:35 a.m.,1.0000,baran
+564,act_dep_time,4:12 p.m.,1.0000,baran
+576,act_dep_time,4:00 p.m.,1.0000,baran
+580,act_dep_time,7:22 a.m.,1.0000,baran
+585,act_dep_time,11:35 a.m.,1.0000,baran
+591,act_dep_time,4:00 p.m.,1.0000,baran
+605,act_dep_time,4:00 p.m.,1.0000,baran
+621,act_dep_time,7:22 a.m.,1.0000,baran
+629,act_dep_time,7:22 a.m.,1.0000,baran
+663,act_dep_time,7:22 a.m.,1.0000,baran
+688,act_dep_time,11:35 a.m.,1.0000,baran
+717,act_dep_time,4:12 p.m.,1.0000,baran
+740,act_dep_time,4:00 p.m.,1.0000,baran
+755,act_dep_time,7:22 a.m.,1.0000,baran
+759,act_dep_time,4:00 p.m.,1.0000,baran
+794,act_dep_time,2:44 p.m.,1.0000,baran
+826,act_dep_time,11:35 a.m.,1.0000,baran
+835,act_dep_time,4:00 p.m.,1.0000,baran
+848,act_dep_time,2:44 p.m.,1.0000,baran
+854,act_dep_time,4:12 p.m.,1.0000,baran
+875,act_dep_time,11:35 a.m.,1.0000,baran
+898,act_dep_time,2:44 p.m.,1.0000,baran
+938,act_dep_time,4:00 p.m.,1.0000,baran
+1077,act_dep_time,11:35 a.m.,1.0000,baran
+1145,act_dep_time,4:00 p.m.,1.0000,baran
+1214,act_dep_time,4:00 p.m.,1.0000,baran
+1219,act_dep_time,4:00 p.m.,1.0000,baran
+1405,act_dep_time,4:12 p.m.,1.0000,baran
+1413,act_dep_time,4:00 p.m.,1.0000,baran
+1437,act_dep_time,4:00 p.m.,1.0000,baran
+1454,act_dep_time,4:00 p.m.,1.0000,baran
+1467,act_dep_time,4:00 p.m.,1.0000,baran
+1480,act_dep_time,4:00 p.m.,1.0000,baran
+1498,act_dep_time,4:12 p.m.,1.0000,baran
+1511,act_dep_time,4:00 p.m.,1.0000,baran
+1539,act_dep_time,2:44 p.m.,1.0000,baran
+1597,act_dep_time,4:00 p.m.,1.0000,baran
+1603,act_dep_time,7:22 a.m.,1.0000,baran
+1609,act_dep_time,2:44 p.m.,1.0000,baran
+1629,act_dep_time,2:44 p.m.,1.0000,baran
+1633,act_dep_time,4:12 p.m.,1.0000,baran
+1645,act_dep_time,11:35 a.m.,1.0000,baran
+1650,act_dep_time,4:12 p.m.,1.0000,baran
+1657,act_dep_time,4:00 p.m.,1.0000,baran
+1720,act_dep_time,11:35 a.m.,1.0000,baran
+1788,act_dep_time,4:12 p.m.,1.0000,baran
+1803,act_dep_time,4:12 p.m.,1.0000,baran
+1823,act_dep_time,4:12 p.m.,1.0000,baran
+1848,act_dep_time,2:44 p.m.,1.0000,baran
+1984,act_dep_time,11:35 a.m.,1.0000,baran
+1991,act_dep_time,11:35 a.m.,1.0000,baran
+1998,act_dep_time,11:35 a.m.,1.0000,baran
+2020,act_dep_time,2:44 p.m.,1.0000,baran
+2054,act_dep_time,4:00 p.m.,1.0000,baran
+2064,act_dep_time,2:44 p.m.,1.0000,baran
+2110,act_dep_time,2:44 p.m.,1.0000,baran
+2138,act_dep_time,4:00 p.m.,1.0000,baran
+2147,act_dep_time,7:22 a.m.,1.0000,baran
+2152,act_dep_time,2:44 p.m.,1.0000,baran
+2173,act_dep_time,7:22 a.m.,1.0000,baran
+2174,act_dep_time,11:35 a.m.,1.0000,baran
+2235,act_dep_time,4:12 p.m.,1.0000,baran
+2237,act_dep_time,4:00 p.m.,1.0000,baran
+2290,act_dep_time,4:12 p.m.,1.0000,baran
+2297,act_dep_time,4:00 p.m.,1.0000,baran
+612,sched_arr_time,6:40 p.m.,1.0000,baran
+331,sched_arr_time,6:40 p.m.,1.0000,baran
+470,sched_arr_time,6:40 p.m.,1.0000,baran
+481,sched_arr_time,6:40 p.m.,1.0000,baran
+738,sched_arr_time,6:40 p.m.,1.0000,baran
+791,sched_arr_time,6:40 p.m.,1.0000,baran
+900,sched_arr_time,6:40 p.m.,1.0000,baran
+963,sched_arr_time,6:40 p.m.,1.0000,baran
+1016,sched_arr_time,6:40 p.m.,1.0000,baran
+1330,sched_arr_time,6:40 p.m.,1.0000,baran
+1387,sched_arr_time,6:40 p.m.,1.0000,baran
+1643,sched_arr_time,6:40 p.m.,1.0000,baran
+1826,sched_arr_time,6:40 p.m.,1.0000,baran
+1907,sched_arr_time,6:40 p.m.,1.0000,baran
+1941,sched_arr_time,6:40 p.m.,1.0000,baran
+2261,sched_arr_time,6:40 p.m.,1.0000,baran
+2308,sched_arr_time,6:40 p.m.,1.0000,baran
+612,act_arr_time,6:15 p.m.,1.0000,baran
+2197,src,panynj,1.0000,baran
+6,src,panynj,1.0000,baran
+8,src,panynj,1.0000,baran
+14,src,flightstats,1.0000,baran
+20,src,panynj,1.0000,baran
+24,src,flightview,1.0000,baran
+27,src,flytecomm,1.0000,baran
+35,src,flightview,1.0000,baran
+37,src,flightview,1.0000,baran
+44,src,CO,1.0000,baran
+55,src,panynj,1.0000,baran
+68,src,flightstats,1.0000,baran
+76,src,flightview,1.0000,baran
+79,src,panynj,1.0000,baran
+94,src,flightview,1.0000,baran
+104,src,CO,1.0000,baran
+116,src,flytecomm,1.0000,baran
+119,src,panynj,1.0000,baran
+127,src,flightview,1.0000,baran
+161,src,flightview,1.0000,baran
+172,src,flytecomm,1.0000,baran
+180,src,CO,1.0000,baran
+192,src,flightstats,1.0000,baran
+198,src,flytecomm,1.0000,baran
+206,src,flightstats,1.0000,baran
+216,src,flightview,1.0000,baran
+225,src,flytecomm,1.0000,baran
+230,src,flightview,1.0000,baran
+235,src,flytecomm,1.0000,baran
+241,src,panynj,1.0000,baran
+249,src,CO,1.0000,baran
+263,src,flytecomm,1.0000,baran
+270,src,CO,1.0000,baran
+290,src,flightview,1.0000,baran
+293,src,panynj,1.0000,baran
+297,src,panynj,1.0000,baran
+300,src,flightstats,1.0000,baran
+310,src,flightview,1.0000,baran
+314,src,CO,1.0000,baran
+325,src,CO,1.0000,baran
+326,src,flightstats,1.0000,baran
+337,src,panynj,1.0000,baran
+391,src,panynj,1.0000,baran
+420,src,flightstats,1.0000,baran
+425,src,flightview,1.0000,baran
+426,src,panynj,1.0000,baran
+430,src,flytecomm,1.0000,baran
+433,src,panynj,1.0000,baran
+444,src,flightstats,1.0000,baran
+448,src,panynj,1.0000,baran
+453,src,flightview,1.0000,baran
+467,src,panynj,1.0000,baran
+476,src,flightstats,1.0000,baran
+483,src,panynj,1.0000,baran
+488,src,panynj,1.0000,baran
+492,src,flytecomm,1.0000,baran
+493,src,panynj,1.0000,baran
+517,src,panynj,1.0000,baran
+527,src,flytecomm,1.0000,baran
+529,src,flytecomm,1.0000,baran
+531,src,flightstats,1.0000,baran
+540,src,flightview,1.0000,baran
+549,src,panynj,1.0000,baran
+555,src,flightview,1.0000,baran
+558,src,flytecomm,1.0000,baran
+559,src,CO,1.0000,baran
+565,src,flytecomm,1.0000,baran
+582,src,flytecomm,1.0000,baran
+583,src,flytecomm,1.0000,baran
+594,src,CO,1.0000,baran
+611,src,CO,1.0000,baran
+614,src,flightstats,1.0000,baran
+616,src,panynj,1.0000,baran
+619,src,CO,1.0000,baran
+628,src,CO,1.0000,baran
+643,src,panynj,1.0000,baran
+644,src,CO,1.0000,baran
+647,src,CO,1.0000,baran
+650,src,CO,1.0000,baran
+651,src,flytecomm,1.0000,baran
+663,src,panynj,1.0000,baran
+664,src,flytecomm,1.0000,baran
+666,src,flightview,1.0000,baran
+677,src,panynj,1.0000,baran
+681,src,flightstats,1.0000,baran
+689,src,CO,1.0000,baran
+723,src,panynj,1.0000,baran
+741,src,flightstats,1.0000,baran
+745,src,flytecomm,1.0000,baran
+746,src,panynj,1.0000,baran
+767,src,CO,1.0000,baran
+778,src,flightview,1.0000,baran
+790,src,flightview,1.0000,baran
+796,src,panynj,1.0000,baran
+807,src,flytecomm,1.0000,baran
+813,src,flightstats,1.0000,baran
+816,src,CO,1.0000,baran
+828,src,CO,1.0000,baran
+830,src,flytecomm,1.0000,baran
+847,src,flightstats,1.0000,baran
+850,src,flightstats,1.0000,baran
+857,src,CO,1.0000,baran
+860,src,flightstats,1.0000,baran
+876,src,flightview,1.0000,baran
+880,src,CO,1.0000,baran
+889,src,flightstats,1.0000,baran
+893,src,flytecomm,1.0000,baran
+894,src,flightstats,1.0000,baran
+902,src,panynj,1.0000,baran
+908,src,flytecomm,1.0000,baran
+912,src,panynj,1.0000,baran
+931,src,panynj,1.0000,baran
+938,src,flightview,1.0000,baran
+951,src,panynj,1.0000,baran
+953,src,panynj,1.0000,baran
+964,src,flightstats,1.0000,baran
+973,src,CO,1.0000,baran
+976,src,panynj,1.0000,baran
+984,src,CO,1.0000,baran
+995,src,CO,1.0000,baran
+999,src,panynj,1.0000,baran
+1002,src,flightview,1.0000,baran
+1005,src,panynj,1.0000,baran
+1006,src,flightview,1.0000,baran
+1022,src,flightview,1.0000,baran
+1023,src,flytecomm,1.0000,baran
+1025,src,flightview,1.0000,baran
+1065,src,flightstats,1.0000,baran
+1075,src,CO,1.0000,baran
+1086,src,CO,1.0000,baran
+1088,src,flytecomm,1.0000,baran
+1100,src,CO,1.0000,baran
+1105,src,CO,1.0000,baran
+1110,src,flightview,1.0000,baran
+1135,src,flightview,1.0000,baran
+1141,src,flytecomm,1.0000,baran
+1180,src,CO,1.0000,baran
+1187,src,panynj,1.0000,baran
+1215,src,CO,1.0000,baran
+1218,src,flightview,1.0000,baran
+1236,src,flytecomm,1.0000,baran
+1242,src,flytecomm,1.0000,baran
+1261,src,flytecomm,1.0000,baran
+1293,src,flightstats,1.0000,baran
+1297,src,CO,1.0000,baran
+1301,src,CO,1.0000,baran
+1302,src,flightview,1.0000,baran
+1322,src,flightview,1.0000,baran
+1344,src,CO,1.0000,baran
+1352,src,flightview,1.0000,baran
+1359,src,flytecomm,1.0000,baran
+1378,src,CO,1.0000,baran
+1390,src,CO,1.0000,baran
+1391,src,flightview,1.0000,baran
+1403,src,flightstats,1.0000,baran
+1440,src,flightview,1.0000,baran
+1444,src,flytecomm,1.0000,baran
+1455,src,flytecomm,1.0000,baran
+1468,src,CO,1.0000,baran
+1475,src,flytecomm,1.0000,baran
+1480,src,flytecomm,1.0000,baran
+1482,src,flightview,1.0000,baran
+1485,src,flightstats,1.0000,baran
+1498,src,panynj,1.0000,baran
+1519,src,panynj,1.0000,baran
+1528,src,flytecomm,1.0000,baran
+1543,src,panynj,1.0000,baran
+1545,src,panynj,1.0000,baran
+1548,src,flytecomm,1.0000,baran
+1556,src,CO,1.0000,baran
+1614,src,panynj,1.0000,baran
+1615,src,CO,1.0000,baran
+1632,src,CO,1.0000,baran
+1647,src,panynj,1.0000,baran
+1652,src,CO,1.0000,baran
+1658,src,panynj,1.0000,baran
+1660,src,flightstats,1.0000,baran
+1702,src,panynj,1.0000,baran
+1712,src,panynj,1.0000,baran
+1740,src,flytecomm,1.0000,baran
+1758,src,panynj,1.0000,baran
+1787,src,flytecomm,1.0000,baran
+1802,src,CO,1.0000,baran
+1806,src,flytecomm,1.0000,baran
+1821,src,panynj,1.0000,baran
+1825,src,flytecomm,1.0000,baran
+1828,src,flytecomm,1.0000,baran
+1834,src,flightview,1.0000,baran
+1835,src,flytecomm,1.0000,baran
+1843,src,flytecomm,1.0000,baran
+1844,src,flytecomm,1.0000,baran
+1847,src,panynj,1.0000,baran
+1848,src,panynj,1.0000,baran
+1857,src,CO,1.0000,baran
+1858,src,flytecomm,1.0000,baran
+1880,src,flightview,1.0000,baran
+1881,src,flytecomm,1.0000,baran
+1898,src,flightstats,1.0000,baran
+1900,src,panynj,1.0000,baran
+1905,src,flightstats,1.0000,baran
+1907,src,flightview,1.0000,baran
+1923,src,CO,1.0000,baran
+1954,src,panynj,1.0000,baran
+1970,src,flightstats,1.0000,baran
+1983,src,panynj,1.0000,baran
+1988,src,panynj,1.0000,baran
+2006,src,panynj,1.0000,baran
+2007,src,flightview,1.0000,baran
+2020,src,panynj,1.0000,baran
+2021,src,panynj,1.0000,baran
+2029,src,panynj,1.0000,baran
+2053,src,CO,1.0000,baran
+2060,src,flytecomm,1.0000,baran
+2094,src,flightstats,1.0000,baran
+2106,src,flightview,1.0000,baran
+2110,src,flytecomm,1.0000,baran
+2128,src,panynj,1.0000,baran
+2129,src,panynj,1.0000,baran
+2184,src,flightstats,1.0000,baran
+2195,src,flightstats,1.0000,baran
+2211,src,flytecomm,1.0000,baran
+2226,src,CO,1.0000,baran
+2236,src,panynj,1.0000,baran
+2243,src,flytecomm,1.0000,baran
+2244,src,panynj,1.0000,baran
+2256,src,panynj,1.0000,baran
+2257,src,panynj,1.0000,baran
+2272,src,panynj,1.0000,baran
+2273,src,flightstats,1.0000,baran
+2280,src,CO,1.0000,baran
+2286,src,flytecomm,1.0000,baran
+2287,src,panynj,1.0000,baran
+2303,src,flytecomm,1.0000,baran
+2314,src,flightstats,1.0000,baran
+2326,src,panynj,1.0000,baran
+2328,src,panynj,1.0000,baran
+2331,src,panynj,1.0000,baran
+2338,src,panynj,1.0000,baran
+2341,src,panynj,1.0000,baran
+2342,src,CO,1.0000,baran
+2349,src,flightstats,1.0000,baran
+2350,src,flytecomm,1.0000,baran
+2355,src,flightstats,1.0000,baran
+2367,src,panynj,1.0000,baran
+2374,src,panynj,1.0000,baran
+2197,flight,UA-5487-SFO-MRY,1.0000,baran
+2197,sched_dep_time,10:39 a.m.,1.0000,baran
+2197,act_dep_time,10:33 a.m.,1.0000,baran
+228,act_dep_time,10:33 a.m.,1.0000,baran
+284,act_dep_time,10:33 a.m.,1.0000,baran
+309,act_dep_time,10:33 a.m.,1.0000,baran
+467,act_dep_time,10:33 a.m.,1.0000,baran
+611,act_dep_time,10:33 a.m.,1.0000,baran
+641,act_dep_time,10:33 a.m.,1.0000,baran
+819,act_dep_time,10:33 a.m.,1.0000,baran
+847,act_dep_time,10:33 a.m.,1.0000,baran
+912,act_dep_time,10:33 a.m.,1.0000,baran
+971,act_dep_time,10:33 a.m.,1.0000,baran
+1013,act_dep_time,10:33 a.m.,1.0000,baran
+1040,act_dep_time,10:33 a.m.,1.0000,baran
+1043,act_dep_time,10:33 a.m.,1.0000,baran
+1186,act_dep_time,10:33 a.m.,1.0000,baran
+1205,act_dep_time,10:33 a.m.,1.0000,baran
+1314,act_dep_time,10:33 a.m.,1.0000,baran
+1354,act_dep_time,10:33 a.m.,1.0000,baran
+1425,act_dep_time,10:33 a.m.,1.0000,baran
+1660,act_dep_time,10:33 a.m.,1.0000,baran
+1815,act_dep_time,10:33 a.m.,1.0000,baran
+1855,act_dep_time,10:33 a.m.,1.0000,baran
+1905,act_dep_time,10:33 a.m.,1.0000,baran
+1935,act_dep_time,10:33 a.m.,1.0000,baran
+1959,act_dep_time,10:33 a.m.,1.0000,baran
+1967,act_dep_time,10:33 a.m.,1.0000,baran
+2029,act_dep_time,10:33 a.m.,1.0000,baran
+2150,act_dep_time,10:33 a.m.,1.0000,baran
+2170,act_dep_time,10:33 a.m.,1.0000,baran
+2216,act_dep_time,10:33 a.m.,1.0000,baran
+2236,act_dep_time,10:33 a.m.,1.0000,baran
+2249,act_dep_time,10:33 a.m.,1.0000,baran
+2320,act_dep_time,10:33 a.m.,1.0000,baran
+2338,act_dep_time,10:33 a.m.,1.0000,baran
+2197,sched_arr_time,11:19 a.m.,1.0000,baran
+73,sched_arr_time,11:19 a.m.,1.0000,baran
+251,sched_arr_time,11:19 a.m.,1.0000,baran
+306,sched_arr_time,11:19 a.m.,1.0000,baran
+419,sched_arr_time,11:19 a.m.,1.0000,baran
+527,sched_arr_time,11:19 a.m.,1.0000,baran
+577,sched_arr_time,11:19 a.m.,1.0000,baran
+605,sched_arr_time,11:19 a.m.,1.0000,baran
+817,sched_arr_time,11:19 a.m.,1.0000,baran
+933,sched_arr_time,11:19 a.m.,1.0000,baran
+1062,sched_arr_time,11:19 a.m.,1.0000,baran
+1074,sched_arr_time,11:19 a.m.,1.0000,baran
+1243,sched_arr_time,11:19 a.m.,1.0000,baran
+1246,sched_arr_time,11:19 a.m.,1.0000,baran
+1344,sched_arr_time,11:19 a.m.,1.0000,baran
+1413,sched_arr_time,11:19 a.m.,1.0000,baran
+1432,sched_arr_time,11:19 a.m.,1.0000,baran
+1490,sched_arr_time,11:19 a.m.,1.0000,baran
+1530,sched_arr_time,11:19 a.m.,1.0000,baran
+1617,sched_arr_time,11:19 a.m.,1.0000,baran
+1684,sched_arr_time,11:19 a.m.,1.0000,baran
+1812,sched_arr_time,11:19 a.m.,1.0000,baran
+1830,sched_arr_time,11:19 a.m.,1.0000,baran
+1919,sched_arr_time,11:19 a.m.,1.0000,baran
+1967,sched_arr_time,11:19 a.m.,1.0000,baran
+2023,sched_arr_time,11:19 a.m.,1.0000,baran
+2112,sched_arr_time,11:19 a.m.,1.0000,baran
+2120,sched_arr_time,11:19 a.m.,1.0000,baran
+2227,sched_arr_time,11:19 a.m.,1.0000,baran
+2294,sched_arr_time,11:19 a.m.,1.0000,baran
+2341,sched_arr_time,11:19 a.m.,1.0000,baran
+2197,act_arr_time,11:21 a.m.,1.0000,baran
+4,act_arr_time,6:40 p.m.,1.0000,baran
+8,act_arr_time,11:06 a.m.,1.0000,baran
+79,act_arr_time,11:21 a.m.,1.0000,baran
+84,act_arr_time,11:21 a.m.,1.0000,baran
+94,act_arr_time,6:15 p.m.,1.0000,baran
+100,act_arr_time,11:21 a.m.,1.0000,baran
+132,act_arr_time,4:12 p.m.,1.0000,baran
+150,act_arr_time,4:12 p.m.,1.0000,baran
+171,act_arr_time,11:06 a.m.,1.0000,baran
+191,act_arr_time,6:15 p.m.,1.0000,baran
+218,act_arr_time,4:12 p.m.,1.0000,baran
+255,act_arr_time,6:40 p.m.,1.0000,baran
+324,act_arr_time,6:15 p.m.,1.0000,baran
+326,act_arr_time,6:15 p.m.,1.0000,baran
+334,act_arr_time,6:15 p.m.,1.0000,baran
+337,act_arr_time,6:40 p.m.,1.0000,baran
+351,act_arr_time,11:06 a.m.,1.0000,baran
+367,act_arr_time,11:06 a.m.,1.0000,baran
+439,act_arr_time,11:06 a.m.,1.0000,baran
+456,act_arr_time,11:06 a.m.,1.0000,baran
+506,act_arr_time,6:15 p.m.,1.0000,baran
+534,act_arr_time,6:15 p.m.,1.0000,baran
+596,act_arr_time,11:21 a.m.,1.0000,baran
+634,act_arr_time,6:15 p.m.,1.0000,baran
+643,act_arr_time,4:12 p.m.,1.0000,baran
+682,act_arr_time,6:15 p.m.,1.0000,baran
+810,act_arr_time,11:21 a.m.,1.0000,baran
+833,act_arr_time,11:06 a.m.,1.0000,baran
+912,act_arr_time,6:15 p.m.,1.0000,baran
+947,act_arr_time,6:40 p.m.,1.0000,baran
+993,act_arr_time,6:15 p.m.,1.0000,baran
+994,act_arr_time,11:06 a.m.,1.0000,baran
+1000,act_arr_time,4:12 p.m.,1.0000,baran
+1039,act_arr_time,6:15 p.m.,1.0000,baran
+1054,act_arr_time,11:06 a.m.,1.0000,baran
+1088,act_arr_time,4:12 p.m.,1.0000,baran
+1089,act_arr_time,6:15 p.m.,1.0000,baran
+1093,act_arr_time,11:06 a.m.,1.0000,baran
+1100,act_arr_time,11:21 a.m.,1.0000,baran
+1205,act_arr_time,4:12 p.m.,1.0000,baran
+1222,act_arr_time,11:06 a.m.,1.0000,baran
+1246,act_arr_time,11:06 a.m.,1.0000,baran
+1282,act_arr_time,6:40 p.m.,1.0000,baran
+1341,act_arr_time,4:12 p.m.,1.0000,baran
+1369,act_arr_time,11:06 a.m.,1.0000,baran
+1448,act_arr_time,4:12 p.m.,1.0000,baran
+1454,act_arr_time,6:15 p.m.,1.0000,baran
+1467,act_arr_time,6:40 p.m.,1.0000,baran
+1493,act_arr_time,6:40 p.m.,1.0000,baran
+1503,act_arr_time,11:06 a.m.,1.0000,baran
+1535,act_arr_time,11:06 a.m.,1.0000,baran
+1572,act_arr_time,6:15 p.m.,1.0000,baran
+1584,act_arr_time,11:06 a.m.,1.0000,baran
+1592,act_arr_time,6:40 p.m.,1.0000,baran
+1648,act_arr_time,4:12 p.m.,1.0000,baran
+1715,act_arr_time,6:15 p.m.,1.0000,baran
+1746,act_arr_time,11:21 a.m.,1.0000,baran
+1829,act_arr_time,11:06 a.m.,1.0000,baran
+1845,act_arr_time,6:15 p.m.,1.0000,baran
+1854,act_arr_time,4:12 p.m.,1.0000,baran
+1859,act_arr_time,11:21 a.m.,1.0000,baran
+1868,act_arr_time,11:06 a.m.,1.0000,baran
+1907,act_arr_time,11:06 a.m.,1.0000,baran
+1909,act_arr_time,11:21 a.m.,1.0000,baran
+2024,act_arr_time,11:21 a.m.,1.0000,baran
+2036,act_arr_time,4:12 p.m.,1.0000,baran
+2062,act_arr_time,6:15 p.m.,1.0000,baran
+2067,act_arr_time,4:12 p.m.,1.0000,baran
+2083,act_arr_time,6:15 p.m.,1.0000,baran
+2112,act_arr_time,11:06 a.m.,1.0000,baran
+2124,act_arr_time,6:15 p.m.,1.0000,baran
+2149,act_arr_time,11:06 a.m.,1.0000,baran
+2182,act_arr_time,11:06 a.m.,1.0000,baran
+2206,act_arr_time,6:40 p.m.,1.0000,baran
+2220,act_arr_time,11:06 a.m.,1.0000,baran
+2293,act_arr_time,6:40 p.m.,1.0000,baran
+2317,act_arr_time,6:15 p.m.,1.0000,baran
+2338,act_arr_time,11:21 a.m.,1.0000,baran
+2072,src,flights,1.0000,baran
+2072,flight,UA-37-EWR-MCO,1.0000,baran
+152,flight,UA-37-EWR-MCO,1.0000,baran
+298,flight,UA-37-EWR-MCO,1.0000,baran
+366,flight,UA-37-EWR-MCO,1.0000,baran
+387,flight,UA-5487-SFO-MRY,1.0000,baran
+413,flight,UA-37-EWR-MCO,1.0000,baran
+415,flight,UA-5487-SFO-MRY,1.0000,baran
+447,flight,UA-37-EWR-MCO,1.0000,baran
+449,flight,UA-5487-SFO-MRY,1.0000,baran
+499,flight,UA-5487-SFO-MRY,1.0000,baran
+500,flight,UA-5487-SFO-MRY,1.0000,baran
+565,flight,UA-37-EWR-MCO,1.0000,baran
+599,flight,UA-37-EWR-MCO,1.0000,baran
+712,flight,UA-5487-SFO-MRY,1.0000,baran
+781,flight,UA-37-EWR-MCO,1.0000,baran
+891,flight,UA-37-EWR-MCO,1.0000,baran
+988,flight,UA-5487-SFO-MRY,1.0000,baran
+1127,flight,UA-37-EWR-MCO,1.0000,baran
+1145,flight,UA-37-EWR-MCO,1.0000,baran
+1387,flight,UA-5487-SFO-MRY,1.0000,baran
+1442,flight,UA-37-EWR-MCO,1.0000,baran
+1525,flight,UA-37-EWR-MCO,1.0000,baran
+1549,flight,UA-37-EWR-MCO,1.0000,baran
+1583,flight,UA-37-EWR-MCO,1.0000,baran
+1597,flight,UA-5487-SFO-MRY,1.0000,baran
+1745,flight,UA-5487-SFO-MRY,1.0000,baran
+1987,flight,UA-37-EWR-MCO,1.0000,baran
+2015,flight,UA-5487-SFO-MRY,1.0000,baran
+2020,flight,UA-5487-SFO-MRY,1.0000,baran
+2109,flight,UA-37-EWR-MCO,1.0000,baran
+2180,flight,UA-37-EWR-MCO,1.0000,baran
+2183,flight,UA-37-EWR-MCO,1.0000,baran
+2203,flight,UA-37-EWR-MCO,1.0000,baran
+2072,sched_dep_time,1:29 p.m.,1.0000,baran
+8,sched_dep_time,10:39 a.m.,1.0000,baran
+144,sched_dep_time,10:39 a.m.,1.0000,baran
+316,sched_dep_time,10:39 a.m.,1.0000,baran
+345,sched_dep_time,1:29 p.m.,1.0000,baran
+444,sched_dep_time,10:39 a.m.,1.0000,baran
+478,sched_dep_time,10:39 a.m.,1.0000,baran
+843,sched_dep_time,1:29 p.m.,1.0000,baran
+1147,sched_dep_time,10:39 a.m.,1.0000,baran
+1222,sched_dep_time,1:29 p.m.,1.0000,baran
+1247,sched_dep_time,1:29 p.m.,1.0000,baran
+1272,sched_dep_time,10:39 a.m.,1.0000,baran
+1427,sched_dep_time,10:39 a.m.,1.0000,baran
+1475,sched_dep_time,10:39 a.m.,1.0000,baran
+1489,sched_dep_time,1:29 p.m.,1.0000,baran
+1498,sched_dep_time,10:39 a.m.,1.0000,baran
+1605,sched_dep_time,1:29 p.m.,1.0000,baran
+1706,sched_dep_time,10:39 a.m.,1.0000,baran
+1834,sched_dep_time,10:39 a.m.,1.0000,baran
+1868,sched_dep_time,10:39 a.m.,1.0000,baran
+2010,sched_dep_time,1:29 p.m.,1.0000,baran
+2049,sched_dep_time,10:39 a.m.,1.0000,baran
+2088,sched_dep_time,10:39 a.m.,1.0000,baran
+2123,sched_dep_time,1:29 p.m.,1.0000,baran
+2139,sched_dep_time,1:29 p.m.,1.0000,baran
+2201,sched_dep_time,1:29 p.m.,1.0000,baran
+2267,sched_dep_time,10:39 a.m.,1.0000,baran
+2072,act_dep_time,1:48 p.m.,1.0000,baran
+2072,sched_arr_time,4:17 p.m.,1.0000,baran
+2072,act_arr_time,4:17 p.m.,1.0000,baran
+68,act_arr_time,4:17 p.m.,1.0000,baran
+92,act_arr_time,4:17 p.m.,1.0000,baran
+174,act_arr_time,4:17 p.m.,1.0000,baran
+175,act_arr_time,4:17 p.m.,1.0000,baran
+182,act_arr_time,4:17 p.m.,1.0000,baran
+185,act_arr_time,4:17 p.m.,1.0000,baran
+464,act_arr_time,4:17 p.m.,1.0000,baran
+502,act_arr_time,4:17 p.m.,1.0000,baran
+606,act_arr_time,4:17 p.m.,1.0000,baran
+611,act_arr_time,4:17 p.m.,1.0000,baran
+666,act_arr_time,4:17 p.m.,1.0000,baran
+696,act_arr_time,4:17 p.m.,1.0000,baran
+713,act_arr_time,4:17 p.m.,1.0000,baran
+739,act_arr_time,4:17 p.m.,1.0000,baran
+1001,act_arr_time,4:17 p.m.,1.0000,baran
+1092,act_arr_time,4:17 p.m.,1.0000,baran
+1142,act_arr_time,4:17 p.m.,1.0000,baran
+1276,act_arr_time,4:17 p.m.,1.0000,baran
+1400,act_arr_time,4:17 p.m.,1.0000,baran
+1430,act_arr_time,4:17 p.m.,1.0000,baran
+1439,act_arr_time,4:17 p.m.,1.0000,baran
+1464,act_arr_time,4:17 p.m.,1.0000,baran
+1768,act_arr_time,4:17 p.m.,1.0000,baran
+1808,act_arr_time,4:17 p.m.,1.0000,baran
+1818,act_arr_time,4:17 p.m.,1.0000,baran
+1823,act_arr_time,4:17 p.m.,1.0000,baran
+2011,act_arr_time,4:17 p.m.,1.0000,baran
+2058,act_arr_time,4:17 p.m.,1.0000,baran
+2166,act_arr_time,4:17 p.m.,1.0000,baran
+2180,act_arr_time,4:17 p.m.,1.0000,baran
+2278,act_arr_time,4:17 p.m.,1.0000,baran
+2368,act_arr_time,4:17 p.m.,1.0000,baran
+520,src,orbitz,1.0000,baran
+520,flight,AA-3-JFK-LAX,1.0000,baran
+520,sched_dep_time,12:00 p.m.,1.0000,baran
+3,sched_dep_time,12:00 p.m.,1.0000,baran
+57,sched_dep_time,12:00 p.m.,1.0000,baran
+84,sched_dep_time,12:00 p.m.,1.0000,baran
+460,sched_dep_time,12:00 p.m.,1.0000,baran
+629,sched_dep_time,12:00 p.m.,1.0000,baran
+737,sched_dep_time,12:00 p.m.,1.0000,baran
+830,sched_dep_time,12:00 p.m.,1.0000,baran
+931,sched_dep_time,12:00 p.m.,1.0000,baran
+988,sched_dep_time,12:00 p.m.,1.0000,baran
+1128,sched_dep_time,12:00 p.m.,1.0000,baran
+1223,sched_dep_time,12:00 p.m.,1.0000,baran
+1310,sched_dep_time,12:00 p.m.,1.0000,baran
+1500,sched_dep_time,12:00 p.m.,1.0000,baran
+2225,sched_dep_time,12:00 p.m.,1.0000,baran
+2255,sched_dep_time,12:00 p.m.,1.0000,baran
+2344,sched_dep_time,12:00 p.m.,1.0000,baran
+2373,sched_dep_time,12:00 p.m.,1.0000,baran
+520,act_dep_time,12:11 p.m.,1.0000,baran
+520,sched_arr_time,3:15 p.m.,1.0000,baran
+7,sched_arr_time,4:17 p.m.,1.0000,baran
+24,sched_arr_time,3:16 p.m.,1.0000,baran
+59,sched_arr_time,4:17 p.m.,1.0000,baran
+109,sched_arr_time,3:16 p.m.,1.0000,baran
+156,sched_arr_time,3:16 p.m.,1.0000,baran
+163,sched_arr_time,4:17 p.m.,1.0000,baran
+207,sched_arr_time,3:15 p.m.,1.0000,baran
+219,sched_arr_time,4:17 p.m.,1.0000,baran
+226,sched_arr_time,3:15 p.m.,1.0000,baran
+238,sched_arr_time,3:15 p.m.,1.0000,baran
+242,sched_arr_time,4:17 p.m.,1.0000,baran
+252,sched_arr_time,3:15 p.m.,1.0000,baran
+298,sched_arr_time,3:15 p.m.,1.0000,baran
+301,sched_arr_time,3:16 p.m.,1.0000,baran
+311,sched_arr_time,4:17 p.m.,1.0000,baran
+363,sched_arr_time,3:15 p.m.,1.0000,baran
+364,sched_arr_time,12:00 p.m.,1.0000,baran
+388,sched_arr_time,4:17 p.m.,1.0000,baran
+412,sched_arr_time,12:00 p.m.,1.0000,baran
+415,sched_arr_time,4:17 p.m.,1.0000,baran
+488,sched_arr_time,3:15 p.m.,1.0000,baran
+518,sched_arr_time,3:15 p.m.,1.0000,baran
+557,sched_arr_time,3:15 p.m.,1.0000,baran
+593,sched_arr_time,3:15 p.m.,1.0000,baran
+624,sched_arr_time,12:00 p.m.,1.0000,baran
+646,sched_arr_time,4:17 p.m.,1.0000,baran
+662,sched_arr_time,12:00 p.m.,1.0000,baran
+681,sched_arr_time,4:17 p.m.,1.0000,baran
+693,sched_arr_time,4:17 p.m.,1.0000,baran
+755,sched_arr_time,4:17 p.m.,1.0000,baran
+758,sched_arr_time,3:15 p.m.,1.0000,baran
+760,sched_arr_time,12:00 p.m.,1.0000,baran
+808,sched_arr_time,3:15 p.m.,1.0000,baran
+820,sched_arr_time,12:00 p.m.,1.0000,baran
+841,sched_arr_time,12:00 p.m.,1.0000,baran
+844,sched_arr_time,4:17 p.m.,1.0000,baran
+853,sched_arr_time,4:17 p.m.,1.0000,baran
+872,sched_arr_time,3:15 p.m.,1.0000,baran
+881,sched_arr_time,12:00 p.m.,1.0000,baran
+981,sched_arr_time,4:17 p.m.,1.0000,baran
+1005,sched_arr_time,4:17 p.m.,1.0000,baran
+1017,sched_arr_time,12:00 p.m.,1.0000,baran
+1039,sched_arr_time,3:16 p.m.,1.0000,baran
+1064,sched_arr_time,12:00 p.m.,1.0000,baran
+1079,sched_arr_time,3:15 p.m.,1.0000,baran
+1117,sched_arr_time,4:17 p.m.,1.0000,baran
+1163,sched_arr_time,4:17 p.m.,1.0000,baran
+1173,sched_arr_time,3:15 p.m.,1.0000,baran
+1202,sched_arr_time,4:17 p.m.,1.0000,baran
+1223,sched_arr_time,12:00 p.m.,1.0000,baran
+1230,sched_arr_time,12:00 p.m.,1.0000,baran
+1326,sched_arr_time,4:17 p.m.,1.0000,baran
+1349,sched_arr_time,4:17 p.m.,1.0000,baran
+1357,sched_arr_time,12:00 p.m.,1.0000,baran
+1383,sched_arr_time,12:00 p.m.,1.0000,baran
+1395,sched_arr_time,3:15 p.m.,1.0000,baran
+1400,sched_arr_time,3:16 p.m.,1.0000,baran
+1414,sched_arr_time,3:16 p.m.,1.0000,baran
+1428,sched_arr_time,12:00 p.m.,1.0000,baran
+1453,sched_arr_time,4:17 p.m.,1.0000,baran
+1477,sched_arr_time,4:17 p.m.,1.0000,baran
+1485,sched_arr_time,4:17 p.m.,1.0000,baran
+1509,sched_arr_time,12:00 p.m.,1.0000,baran
+1572,sched_arr_time,4:17 p.m.,1.0000,baran
+1592,sched_arr_time,4:17 p.m.,1.0000,baran
+1613,sched_arr_time,12:00 p.m.,1.0000,baran
+1618,sched_arr_time,4:17 p.m.,1.0000,baran
+1629,sched_arr_time,4:17 p.m.,1.0000,baran
+1630,sched_arr_time,4:17 p.m.,1.0000,baran
+1637,sched_arr_time,4:17 p.m.,1.0000,baran
+1695,sched_arr_time,3:15 p.m.,1.0000,baran
+1705,sched_arr_time,3:15 p.m.,1.0000,baran
+1718,sched_arr_time,12:00 p.m.,1.0000,baran
+1802,sched_arr_time,4:17 p.m.,1.0000,baran
+1817,sched_arr_time,3:16 p.m.,1.0000,baran
+1853,sched_arr_time,3:15 p.m.,1.0000,baran
+1913,sched_arr_time,3:15 p.m.,1.0000,baran
+1929,sched_arr_time,3:15 p.m.,1.0000,baran
+1948,sched_arr_time,4:17 p.m.,1.0000,baran
+1985,sched_arr_time,4:17 p.m.,1.0000,baran
+2038,sched_arr_time,4:17 p.m.,1.0000,baran
+2073,sched_arr_time,12:00 p.m.,1.0000,baran
+2080,sched_arr_time,4:17 p.m.,1.0000,baran
+2102,sched_arr_time,4:17 p.m.,1.0000,baran
+2110,sched_arr_time,3:15 p.m.,1.0000,baran
+2125,sched_arr_time,3:15 p.m.,1.0000,baran
+2137,sched_arr_time,3:15 p.m.,1.0000,baran
+2219,sched_arr_time,3:16 p.m.,1.0000,baran
+2282,sched_arr_time,4:17 p.m.,1.0000,baran
+2285,sched_arr_time,4:17 p.m.,1.0000,baran
+2342,sched_arr_time,3:15 p.m.,1.0000,baran
+2358,sched_arr_time,4:17 p.m.,1.0000,baran
+2360,sched_arr_time,12:00 p.m.,1.0000,baran
+520,act_arr_time,3:16 p.m.,1.0000,baran
+1743,src,mytripandmore,1.0000,baran
+16,src,flights,1.0000,baran
+30,src,mytripandmore,1.0000,baran
+32,src,orbitz,1.0000,baran
+88,src,flights,1.0000,baran
+128,src,mytripandmore,1.0000,baran
+152,src,flights,1.0000,baran
+163,src,flights,1.0000,baran
+170,src,mytripandmore,1.0000,baran
+176,src,flights,1.0000,baran
+184,src,flights,1.0000,baran
+232,src,mytripandmore,1.0000,baran
+296,src,mytripandmore,1.0000,baran
+302,src,orbitz,1.0000,baran
+305,src,mytripandmore,1.0000,baran
+320,src,mytripandmore,1.0000,baran
+328,src,orbitz,1.0000,baran
+332,src,flights,1.0000,baran
+334,src,mytripandmore,1.0000,baran
+346,src,orbitz,1.0000,baran
+350,src,airtravelcenter,1.0000,baran
+367,src,orbitz,1.0000,baran
+368,src,mytripandmore,1.0000,baran
+390,src,flights,1.0000,baran
+394,src,flights,1.0000,baran
+403,src,flights,1.0000,baran
+438,src,orbitz,1.0000,baran
+460,src,mytripandmore,1.0000,baran
+532,src,flights,1.0000,baran
+569,src,mytripandmore,1.0000,baran
+584,src,flights,1.0000,baran
+600,src,mytripandmore,1.0000,baran
+605,src,flights,1.0000,baran
+626,src,flights,1.0000,baran
+679,src,flights,1.0000,baran
+686,src,mytripandmore,1.0000,baran
+712,src,mytripandmore,1.0000,baran
+722,src,flights,1.0000,baran
+733,src,flights,1.0000,baran
+739,src,orbitz,1.0000,baran
+768,src,orbitz,1.0000,baran
+781,src,mytripandmore,1.0000,baran
+788,src,orbitz,1.0000,baran
+799,src,flightaware,1.0000,baran
+822,src,mytripandmore,1.0000,baran
+839,src,mytripandmore,1.0000,baran
+845,src,mytripandmore,1.0000,baran
+913,src,mytripandmore,1.0000,baran
+960,src,flights,1.0000,baran
+991,src,orbitz,1.0000,baran
+1010,src,orbitz,1.0000,baran
+1024,src,mytripandmore,1.0000,baran
+1035,src,flights,1.0000,baran
+1049,src,orbitz,1.0000,baran
+1073,src,orbitz,1.0000,baran
+1083,src,flights,1.0000,baran
+1092,src,mytripandmore,1.0000,baran
+1114,src,flights,1.0000,baran
+1120,src,mytripandmore,1.0000,baran
+1134,src,orbitz,1.0000,baran
+1151,src,orbitz,1.0000,baran
+1171,src,mytripandmore,1.0000,baran
+1178,src,flights,1.0000,baran
+1211,src,mytripandmore,1.0000,baran
+1270,src,flights,1.0000,baran
+1295,src,mytripandmore,1.0000,baran
+1298,src,flights,1.0000,baran
+1310,src,orbitz,1.0000,baran
+1319,src,orbitz,1.0000,baran
+1341,src,flights,1.0000,baran
+1371,src,orbitz,1.0000,baran
+1426,src,orbitz,1.0000,baran
+1439,src,orbitz,1.0000,baran
+1456,src,orbitz,1.0000,baran
+1461,src,orbitz,1.0000,baran
+1476,src,orbitz,1.0000,baran
+1530,src,flights,1.0000,baran
+1535,src,orbitz,1.0000,baran
+1560,src,mytripandmore,1.0000,baran
+1570,src,mytripandmore,1.0000,baran
+1595,src,flights,1.0000,baran
+1599,src,mytripandmore,1.0000,baran
+1649,src,flights,1.0000,baran
+1688,src,mytripandmore,1.0000,baran
+1713,src,mytripandmore,1.0000,baran
+1759,src,mytripandmore,1.0000,baran
+1767,src,mytripandmore,1.0000,baran
+1773,src,mytripandmore,1.0000,baran
+1792,src,flights,1.0000,baran
+1804,src,flights,1.0000,baran
+1842,src,mytripandmore,1.0000,baran
+1849,src,flights,1.0000,baran
+1870,src,mytripandmore,1.0000,baran
+1884,src,mytripandmore,1.0000,baran
+1885,src,mytripandmore,1.0000,baran
+1895,src,orbitz,1.0000,baran
+1899,src,mytripandmore,1.0000,baran
+1927,src,orbitz,1.0000,baran
+1942,src,mytripandmore,1.0000,baran
+1944,src,orbitz,1.0000,baran
+1957,src,flights,1.0000,baran
+1990,src,mytripandmore,1.0000,baran
+1992,src,mytripandmore,1.0000,baran
+1993,src,flights,1.0000,baran
+2003,src,mytripandmore,1.0000,baran
+2012,src,orbitz,1.0000,baran
+2025,src,flights,1.0000,baran
+2066,src,mytripandmore,1.0000,baran
+2076,src,flights,1.0000,baran
+2085,src,mytripandmore,1.0000,baran
+2102,src,mytripandmore,1.0000,baran
+2104,src,flights,1.0000,baran
+2116,src,flights,1.0000,baran
+2161,src,flights,1.0000,baran
+2163,src,flights,1.0000,baran
+2212,src,mytripandmore,1.0000,baran
+2220,src,flights,1.0000,baran
+2246,src,orbitz,1.0000,baran
+2263,src,orbitz,1.0000,baran
+2269,src,mytripandmore,1.0000,baran
+2291,src,flights,1.0000,baran
+2332,src,flights,1.0000,baran
+2340,src,orbitz,1.0000,baran
+1743,flight,UA-233-LAX-JFK,1.0000,baran
+8,flight,AA-3-JFK-LAX,1.0000,baran
+33,flight,UA-233-LAX-JFK,1.0000,baran
+94,flight,AA-3-JFK-LAX,1.0000,baran
+327,flight,UA-233-LAX-JFK,1.0000,baran
+337,flight,UA-233-LAX-JFK,1.0000,baran
+546,flight,AA-3-JFK-LAX,1.0000,baran
+722,flight,AA-3-JFK-LAX,1.0000,baran
+821,flight,AA-3-JFK-LAX,1.0000,baran
+1038,flight,AA-3-JFK-LAX,1.0000,baran
+1122,flight,UA-233-LAX-JFK,1.0000,baran
+1136,flight,AA-3-JFK-LAX,1.0000,baran
+1200,flight,AA-3-JFK-LAX,1.0000,baran
+1347,flight,AA-3-JFK-LAX,1.0000,baran
+1359,flight,AA-3-JFK-LAX,1.0000,baran
+1362,flight,UA-233-LAX-JFK,1.0000,baran
+1445,flight,AA-3-JFK-LAX,1.0000,baran
+1452,flight,AA-3-JFK-LAX,1.0000,baran
+1484,flight,AA-3-JFK-LAX,1.0000,baran
+1490,flight,AA-3-JFK-LAX,1.0000,baran
+1544,flight,AA-3-JFK-LAX,1.0000,baran
+1640,flight,AA-3-JFK-LAX,1.0000,baran
+1806,flight,UA-233-LAX-JFK,1.0000,baran
+1829,flight,AA-3-JFK-LAX,1.0000,baran
+1866,flight,AA-3-JFK-LAX,1.0000,baran
+1889,flight,AA-3-JFK-LAX,1.0000,baran
+1915,flight,AA-3-JFK-LAX,1.0000,baran
+1962,flight,AA-3-JFK-LAX,1.0000,baran
+1977,flight,UA-233-LAX-JFK,1.0000,baran
+2033,flight,AA-3-JFK-LAX,1.0000,baran
+2045,flight,UA-233-LAX-JFK,1.0000,baran
+2200,flight,AA-3-JFK-LAX,1.0000,baran
+2253,flight,AA-3-JFK-LAX,1.0000,baran
+2255,flight,AA-3-JFK-LAX,1.0000,baran
+2292,flight,AA-3-JFK-LAX,1.0000,baran
+2319,flight,UA-233-LAX-JFK,1.0000,baran
+2326,flight,AA-3-JFK-LAX,1.0000,baran
+1743,sched_dep_time,4:25 p.m.,1.0000,baran
+54,sched_dep_time,4:25 p.m.,1.0000,baran
+55,sched_dep_time,4:25 p.m.,1.0000,baran
+92,sched_dep_time,4:25 p.m.,1.0000,baran
+110,sched_dep_time,4:25 p.m.,1.0000,baran
+155,sched_dep_time,4:25 p.m.,1.0000,baran
+205,sched_dep_time,4:25 p.m.,1.0000,baran
+291,sched_dep_time,4:25 p.m.,1.0000,baran
+392,sched_dep_time,4:25 p.m.,1.0000,baran
+442,sched_dep_time,4:25 p.m.,1.0000,baran
+543,sched_dep_time,4:25 p.m.,1.0000,baran
+711,sched_dep_time,4:25 p.m.,1.0000,baran
+780,sched_dep_time,4:25 p.m.,1.0000,baran
+876,sched_dep_time,4:25 p.m.,1.0000,baran
+935,sched_dep_time,4:25 p.m.,1.0000,baran
+936,sched_dep_time,4:25 p.m.,1.0000,baran
+1069,sched_dep_time,4:25 p.m.,1.0000,baran
+1132,sched_dep_time,4:25 p.m.,1.0000,baran
+1470,sched_dep_time,4:25 p.m.,1.0000,baran
+1568,sched_dep_time,4:25 p.m.,1.0000,baran
+1638,sched_dep_time,4:25 p.m.,1.0000,baran
+1692,sched_dep_time,4:25 p.m.,1.0000,baran
+1894,sched_dep_time,4:25 p.m.,1.0000,baran
+2058,sched_dep_time,4:25 p.m.,1.0000,baran
+2177,sched_dep_time,4:25 p.m.,1.0000,baran
+2340,sched_dep_time,4:25 p.m.,1.0000,baran
+2362,sched_dep_time,4:25 p.m.,1.0000,baran
+1743,act_dep_time,4:25 p.m.,1.0000,baran
+1743,sched_arr_time,12:29 a.m.,1.0000,baran
+1743,act_arr_time,12:29 a.m.,1.0000,baran
+550,src,wunderground,1.0000,baran
+550,flight,AA-3063-SLC-LAX,1.0000,baran
+134,flight,AA-3063-SLC-LAX,1.0000,baran
+300,flight,AA-3063-SLC-LAX,1.0000,baran
+307,flight,AA-3063-SLC-LAX,1.0000,baran
+458,flight,AA-3063-SLC-LAX,1.0000,baran
+1644,flight,AA-3063-SLC-LAX,1.0000,baran
+1659,flight,AA-3063-SLC-LAX,1.0000,baran
+1839,flight,AA-3063-SLC-LAX,1.0000,baran
+1947,flight,AA-3063-SLC-LAX,1.0000,baran
+1950,flight,AA-3063-SLC-LAX,1.0000,baran
+1994,flight,AA-3063-SLC-LAX,1.0000,baran
+2258,flight,AA-3063-SLC-LAX,1.0000,baran
+550,sched_dep_time,8:20 p.m.,1.0000,baran
+422,sched_dep_time,8:20 p.m.,1.0000,baran
+551,sched_dep_time,8:20 p.m.,1.0000,baran
+606,sched_dep_time,8:20 p.m.,1.0000,baran
+822,sched_dep_time,8:20 p.m.,1.0000,baran
+850,sched_dep_time,8:20 p.m.,1.0000,baran
+1115,sched_dep_time,8:20 p.m.,1.0000,baran
+1163,sched_dep_time,8:20 p.m.,1.0000,baran
+1356,sched_dep_time,8:20 p.m.,1.0000,baran
+1555,sched_dep_time,8:20 p.m.,1.0000,baran
+1907,sched_dep_time,8:20 p.m.,1.0000,baran
+2198,sched_dep_time,8:20 p.m.,1.0000,baran
+2327,sched_dep_time,8:20 p.m.,1.0000,baran
+550,act_dep_time,8:39 p.m.,1.0000,baran
+550,sched_arr_time,9:20 p.m.,1.0000,baran
+550,act_arr_time,9:20 p.m.,1.0000,baran
+167,act_arr_time,3:16 p.m.,1.0000,baran
+173,act_arr_time,9:20 p.m.,1.0000,baran
+178,act_arr_time,3:16 p.m.,1.0000,baran
+190,act_arr_time,9:20 p.m.,1.0000,baran
+236,act_arr_time,3:16 p.m.,1.0000,baran
+266,act_arr_time,9:20 p.m.,1.0000,baran
+417,act_arr_time,3:16 p.m.,1.0000,baran
+420,act_arr_time,9:20 p.m.,1.0000,baran
+422,act_arr_time,3:16 p.m.,1.0000,baran
+452,act_arr_time,12:29 a.m.,1.0000,baran
+486,act_arr_time,9:20 p.m.,1.0000,baran
+491,act_arr_time,9:20 p.m.,1.0000,baran
+494,act_arr_time,9:20 p.m.,1.0000,baran
+511,act_arr_time,3:16 p.m.,1.0000,baran
+548,act_arr_time,3:16 p.m.,1.0000,baran
+635,act_arr_time,3:16 p.m.,1.0000,baran
+704,act_arr_time,3:16 p.m.,1.0000,baran
+828,act_arr_time,3:16 p.m.,1.0000,baran
+909,act_arr_time,3:16 p.m.,1.0000,baran
+973,act_arr_time,9:20 p.m.,1.0000,baran
+1017,act_arr_time,3:16 p.m.,1.0000,baran
+1053,act_arr_time,9:20 p.m.,1.0000,baran
+1075,act_arr_time,12:29 a.m.,1.0000,baran
+1173,act_arr_time,12:29 a.m.,1.0000,baran
+1238,act_arr_time,3:16 p.m.,1.0000,baran
+1311,act_arr_time,9:20 p.m.,1.0000,baran
+1460,act_arr_time,3:16 p.m.,1.0000,baran
+1548,act_arr_time,12:29 a.m.,1.0000,baran
+1556,act_arr_time,12:29 a.m.,1.0000,baran
+1569,act_arr_time,9:20 p.m.,1.0000,baran
+1576,act_arr_time,9:20 p.m.,1.0000,baran
+1601,act_arr_time,3:16 p.m.,1.0000,baran
+1638,act_arr_time,3:16 p.m.,1.0000,baran
+1655,act_arr_time,9:20 p.m.,1.0000,baran
+1732,act_arr_time,9:20 p.m.,1.0000,baran
+1820,act_arr_time,9:20 p.m.,1.0000,baran
+1939,act_arr_time,12:29 a.m.,1.0000,baran
+1967,act_arr_time,9:20 p.m.,1.0000,baran
+1972,act_arr_time,9:20 p.m.,1.0000,baran
+1985,act_arr_time,12:29 a.m.,1.0000,baran
+2004,act_arr_time,12:29 a.m.,1.0000,baran
+2098,act_arr_time,12:29 a.m.,1.0000,baran
+2148,act_arr_time,3:16 p.m.,1.0000,baran
+2170,act_arr_time,3:16 p.m.,1.0000,baran
+2188,act_arr_time,9:20 p.m.,1.0000,baran
+2213,act_arr_time,12:29 a.m.,1.0000,baran
+2227,act_arr_time,3:16 p.m.,1.0000,baran
+2251,act_arr_time,3:16 p.m.,1.0000,baran
+2298,act_arr_time,12:29 a.m.,1.0000,baran
+2305,act_arr_time,12:29 a.m.,1.0000,baran
+2308,act_arr_time,3:16 p.m.,1.0000,baran
+2314,act_arr_time,12:29 a.m.,1.0000,baran
+2364,act_arr_time,9:20 p.m.,1.0000,baran
+2373,act_arr_time,12:29 a.m.,1.0000,baran
+1190,src,myrateplan,1.0000,baran
+91,src,wunderground,1.0000,baran
+109,src,myrateplan,1.0000,baran
+122,src,wunderground,1.0000,baran
+144,src,wunderground,1.0000,baran
+145,src,myrateplan,1.0000,baran
+268,src,wunderground,1.0000,baran
+283,src,myrateplan,1.0000,baran
+292,src,wunderground,1.0000,baran
+327,src,wunderground,1.0000,baran
+330,src,wunderground,1.0000,baran
+339,src,wunderground,1.0000,baran
+351,src,wunderground,1.0000,baran
+408,src,myrateplan,1.0000,baran
+449,src,wunderground,1.0000,baran
+454,src,wunderground,1.0000,baran
+480,src,wunderground,1.0000,baran
+487,src,wunderground,1.0000,baran
+505,src,wunderground,1.0000,baran
+567,src,wunderground,1.0000,baran
+574,src,wunderground,1.0000,baran
+603,src,wunderground,1.0000,baran
+682,src,wunderground,1.0000,baran
+761,src,wunderground,1.0000,baran
+774,src,wunderground,1.0000,baran
+779,src,wunderground,1.0000,baran
+929,src,wunderground,1.0000,baran
+985,src,wunderground,1.0000,baran
+1047,src,wunderground,1.0000,baran
+1111,src,wunderground,1.0000,baran
+1121,src,wunderground,1.0000,baran
+1143,src,wunderground,1.0000,baran
+1196,src,wunderground,1.0000,baran
+1203,src,wunderground,1.0000,baran
+1259,src,myrateplan,1.0000,baran
+1304,src,myrateplan,1.0000,baran
+1337,src,myrateplan,1.0000,baran
+1463,src,wunderground,1.0000,baran
+1489,src,myrateplan,1.0000,baran
+1521,src,wunderground,1.0000,baran
+1602,src,wunderground,1.0000,baran
+1611,src,wunderground,1.0000,baran
+1622,src,wunderground,1.0000,baran
+1723,src,myrateplan,1.0000,baran
+1793,src,wunderground,1.0000,baran
+1866,src,wunderground,1.0000,baran
+1891,src,wunderground,1.0000,baran
+1964,src,wunderground,1.0000,baran
+1967,src,wunderground,1.0000,baran
+1996,src,wunderground,1.0000,baran
+2017,src,wunderground,1.0000,baran
+2083,src,myrateplan,1.0000,baran
+2136,src,myrateplan,1.0000,baran
+2178,src,myrateplan,1.0000,baran
+2238,src,myrateplan,1.0000,baran
+2296,src,wunderground,1.0000,baran
+1190,flight,AA-643-MIA-ORD,1.0000,baran
+1190,sched_dep_time,7:10 a.m.,1.0000,baran
+1190,act_dep_time,7:30 a.m.,1.0000,baran
+1190,sched_arr_time,9:35 a.m.,1.0000,baran
+1190,act_arr_time,9:31 a.m.,1.0000,baran
+1181,flight,AA-643-MIA-ORD,1.0000,baran
+309,flight,AA-643-MIA-ORD,1.0000,baran
+312,flight,AA-643-MIA-ORD,1.0000,baran
+353,flight,AA-643-MIA-ORD,1.0000,baran
+452,flight,AA-643-MIA-ORD,1.0000,baran
+489,flight,AA-643-MIA-ORD,1.0000,baran
+537,flight,AA-643-MIA-ORD,1.0000,baran
+622,flight,AA-643-MIA-ORD,1.0000,baran
+626,flight,AA-643-MIA-ORD,1.0000,baran
+627,flight,AA-643-MIA-ORD,1.0000,baran
+731,flight,AA-643-MIA-ORD,1.0000,baran
+913,flight,AA-643-MIA-ORD,1.0000,baran
+927,flight,AA-643-MIA-ORD,1.0000,baran
+1070,flight,AA-643-MIA-ORD,1.0000,baran
+1168,flight,AA-643-MIA-ORD,1.0000,baran
+1187,flight,AA-643-MIA-ORD,1.0000,baran
+1209,flight,AA-643-MIA-ORD,1.0000,baran
+1212,flight,AA-643-MIA-ORD,1.0000,baran
+1278,flight,AA-643-MIA-ORD,1.0000,baran
+1355,flight,AA-643-MIA-ORD,1.0000,baran
+1416,flight,AA-643-MIA-ORD,1.0000,baran
+1511,flight,AA-643-MIA-ORD,1.0000,baran
+1618,flight,AA-643-MIA-ORD,1.0000,baran
+1669,flight,AA-643-MIA-ORD,1.0000,baran
+1686,flight,AA-643-MIA-ORD,1.0000,baran
+1713,flight,AA-643-MIA-ORD,1.0000,baran
+1891,flight,AA-643-MIA-ORD,1.0000,baran
+1893,flight,AA-643-MIA-ORD,1.0000,baran
+2289,flight,AA-643-MIA-ORD,1.0000,baran
+2352,flight,AA-643-MIA-ORD,1.0000,baran
+1181,sched_dep_time,7:10 a.m.,1.0000,baran
+27,sched_dep_time,7:10 a.m.,1.0000,baran
+87,sched_dep_time,7:10 a.m.,1.0000,baran
+186,sched_dep_time,7:10 a.m.,1.0000,baran
+196,sched_dep_time,7:10 a.m.,1.0000,baran
+197,sched_dep_time,7:10 a.m.,1.0000,baran
+341,sched_dep_time,7:10 a.m.,1.0000,baran
+370,sched_dep_time,7:10 a.m.,1.0000,baran
+439,sched_dep_time,7:10 a.m.,1.0000,baran
+453,sched_dep_time,7:10 a.m.,1.0000,baran
+500,sched_dep_time,7:10 a.m.,1.0000,baran
+514,sched_dep_time,7:10 a.m.,1.0000,baran
+539,sched_dep_time,7:10 a.m.,1.0000,baran
+608,sched_dep_time,7:10 a.m.,1.0000,baran
+648,sched_dep_time,7:10 a.m.,1.0000,baran
+796,sched_dep_time,7:10 a.m.,1.0000,baran
+819,sched_dep_time,7:10 a.m.,1.0000,baran
+922,sched_dep_time,7:10 a.m.,1.0000,baran
+942,sched_dep_time,7:10 a.m.,1.0000,baran
+1159,sched_dep_time,7:10 a.m.,1.0000,baran
+1170,sched_dep_time,7:10 a.m.,1.0000,baran
+1198,sched_dep_time,7:10 a.m.,1.0000,baran
+1238,sched_dep_time,7:10 a.m.,1.0000,baran
+1258,sched_dep_time,7:10 a.m.,1.0000,baran
+1368,sched_dep_time,7:10 a.m.,1.0000,baran
+1391,sched_dep_time,7:10 a.m.,1.0000,baran
+1393,sched_dep_time,7:10 a.m.,1.0000,baran
+1406,sched_dep_time,7:10 a.m.,1.0000,baran
+1549,sched_dep_time,7:10 a.m.,1.0000,baran
+1732,sched_dep_time,7:10 a.m.,1.0000,baran
+1771,sched_dep_time,7:10 a.m.,1.0000,baran
+1772,sched_dep_time,7:10 a.m.,1.0000,baran
+1791,sched_dep_time,7:10 a.m.,1.0000,baran
+1935,sched_dep_time,7:10 a.m.,1.0000,baran
+1945,sched_dep_time,7:10 a.m.,1.0000,baran
+2016,sched_dep_time,7:10 a.m.,1.0000,baran
+2034,sched_dep_time,7:10 a.m.,1.0000,baran
+2061,sched_dep_time,7:10 a.m.,1.0000,baran
+2074,sched_dep_time,7:10 a.m.,1.0000,baran
+2138,sched_dep_time,7:10 a.m.,1.0000,baran
+2154,sched_dep_time,7:10 a.m.,1.0000,baran
+2185,sched_dep_time,7:10 a.m.,1.0000,baran
+2191,sched_dep_time,7:10 a.m.,1.0000,baran
+2195,sched_dep_time,7:10 a.m.,1.0000,baran
+2239,sched_dep_time,7:10 a.m.,1.0000,baran
+2356,sched_dep_time,7:10 a.m.,1.0000,baran
+1181,act_dep_time,7:30 a.m.,1.0000,baran
+1181,sched_arr_time,9:35 a.m.,1.0000,baran
+1181,act_arr_time,9:31 a.m.,1.0000,baran
+28,act_arr_time,9:31 a.m.,1.0000,baran
+54,act_arr_time,9:31 a.m.,1.0000,baran
+89,act_arr_time,9:31 a.m.,1.0000,baran
+101,act_arr_time,9:31 a.m.,1.0000,baran
+299,act_arr_time,9:31 a.m.,1.0000,baran
+304,act_arr_time,9:31 a.m.,1.0000,baran
+316,act_arr_time,9:31 a.m.,1.0000,baran
+355,act_arr_time,9:31 a.m.,1.0000,baran
+474,act_arr_time,9:31 a.m.,1.0000,baran
+481,act_arr_time,9:31 a.m.,1.0000,baran
+568,act_arr_time,9:35 a.m.,1.0000,baran
+577,act_arr_time,9:31 a.m.,1.0000,baran
+633,act_arr_time,9:31 a.m.,1.0000,baran
+677,act_arr_time,9:31 a.m.,1.0000,baran
+730,act_arr_time,9:31 a.m.,1.0000,baran
+793,act_arr_time,9:31 a.m.,1.0000,baran
+863,act_arr_time,9:31 a.m.,1.0000,baran
+886,act_arr_time,9:35 a.m.,1.0000,baran
+936,act_arr_time,9:31 a.m.,1.0000,baran
+969,act_arr_time,9:31 a.m.,1.0000,baran
+1044,act_arr_time,9:31 a.m.,1.0000,baran
+1194,act_arr_time,9:35 a.m.,1.0000,baran
+1208,act_arr_time,9:31 a.m.,1.0000,baran
+1331,act_arr_time,9:31 a.m.,1.0000,baran
+1337,act_arr_time,9:35 a.m.,1.0000,baran
+1470,act_arr_time,9:31 a.m.,1.0000,baran
+1480,act_arr_time,9:31 a.m.,1.0000,baran
+1524,act_arr_time,9:31 a.m.,1.0000,baran
+1554,act_arr_time,9:31 a.m.,1.0000,baran
+1666,act_arr_time,9:31 a.m.,1.0000,baran
+1679,act_arr_time,9:35 a.m.,1.0000,baran
+1684,act_arr_time,9:31 a.m.,1.0000,baran
+1708,act_arr_time,9:31 a.m.,1.0000,baran
+1742,act_arr_time,9:31 a.m.,1.0000,baran
+1777,act_arr_time,9:31 a.m.,1.0000,baran
+1834,act_arr_time,9:31 a.m.,1.0000,baran
+1843,act_arr_time,9:35 a.m.,1.0000,baran
+1857,act_arr_time,9:31 a.m.,1.0000,baran
+1916,act_arr_time,9:31 a.m.,1.0000,baran
+2028,act_arr_time,9:31 a.m.,1.0000,baran
+2279,act_arr_time,9:31 a.m.,1.0000,baran
+2300,act_arr_time,9:31 a.m.,1.0000,baran
+553,flight,AA-3468-CVG-MIA,1.0000,baran
+45,flight,AA-3468-CVG-MIA,1.0000,baran
+105,flight,AA-3468-CVG-MIA,1.0000,baran
+172,flight,AA-3468-CVG-MIA,1.0000,baran
+325,flight,AA-3468-CVG-MIA,1.0000,baran
+378,flight,AA-3468-CVG-MIA,1.0000,baran
+508,flight,AA-3468-CVG-MIA,1.0000,baran
+632,flight,AA-3468-CVG-MIA,1.0000,baran
+812,flight,AA-3468-CVG-MIA,1.0000,baran
+1021,flight,AA-3468-CVG-MIA,1.0000,baran
+1115,flight,AA-3468-CVG-MIA,1.0000,baran
+1128,flight,AA-3468-CVG-MIA,1.0000,baran
+1322,flight,AA-3468-CVG-MIA,1.0000,baran
+1337,flight,AA-3468-CVG-MIA,1.0000,baran
+1370,flight,AA-3468-CVG-MIA,1.0000,baran
+1413,flight,AA-3468-CVG-MIA,1.0000,baran
+1455,flight,AA-3468-CVG-MIA,1.0000,baran
+1648,flight,AA-3468-CVG-MIA,1.0000,baran
+1728,flight,AA-3468-CVG-MIA,1.0000,baran
+1952,flight,AA-3468-CVG-MIA,1.0000,baran
+2067,flight,AA-3468-CVG-MIA,1.0000,baran
+2152,flight,AA-3468-CVG-MIA,1.0000,baran
+2323,flight,AA-3468-CVG-MIA,1.0000,baran
+2339,flight,AA-3468-CVG-MIA,1.0000,baran
+2344,flight,AA-3468-CVG-MIA,1.0000,baran
+553,sched_dep_time,7:00 a.m.,1.0000,baran
+553,act_dep_time,7:25 a.m.,1.0000,baran
+553,sched_arr_time,9:55 a.m.,1.0000,baran
+553,act_arr_time,9:45 a.m.,1.0000,baran
+654,act_arr_time,9:45 a.m.,1.0000,baran
+670,act_arr_time,9:45 a.m.,1.0000,baran
+934,act_arr_time,9:45 a.m.,1.0000,baran
+1104,act_arr_time,9:45 a.m.,1.0000,baran
+1459,act_arr_time,9:45 a.m.,1.0000,baran
+1468,act_arr_time,9:45 a.m.,1.0000,baran
+1913,act_arr_time,9:45 a.m.,1.0000,baran
+2095,act_arr_time,9:45 a.m.,1.0000,baran
+2152,act_arr_time,9:45 a.m.,1.0000,baran
+2330,act_arr_time,9:45 a.m.,1.0000,baran
+1056,flight,AA-466-IAH-MIA,1.0000,baran
+1056,sched_dep_time,6:00 a.m.,1.0000,baran
+59,sched_dep_time,6:00 a.m.,1.0000,baran
+211,sched_dep_time,6:00 a.m.,1.0000,baran
+217,sched_dep_time,6:00 a.m.,1.0000,baran
+273,sched_dep_time,7:00 a.m.,1.0000,baran
+448,sched_dep_time,7:00 a.m.,1.0000,baran
+467,sched_dep_time,7:00 a.m.,1.0000,baran
+788,sched_dep_time,7:00 a.m.,1.0000,baran
+858,sched_dep_time,7:00 a.m.,1.0000,baran
+943,sched_dep_time,7:00 a.m.,1.0000,baran
+1019,sched_dep_time,7:00 a.m.,1.0000,baran
+1099,sched_dep_time,6:00 a.m.,1.0000,baran
+1140,sched_dep_time,6:00 a.m.,1.0000,baran
+1345,sched_dep_time,6:00 a.m.,1.0000,baran
+1429,sched_dep_time,6:00 a.m.,1.0000,baran
+1453,sched_dep_time,7:00 a.m.,1.0000,baran
+1611,sched_dep_time,6:00 a.m.,1.0000,baran
+1618,sched_dep_time,6:00 a.m.,1.0000,baran
+1659,sched_dep_time,7:00 a.m.,1.0000,baran
+1753,sched_dep_time,6:00 a.m.,1.0000,baran
+1781,sched_dep_time,7:00 a.m.,1.0000,baran
+1849,sched_dep_time,6:00 a.m.,1.0000,baran
+1959,sched_dep_time,7:00 a.m.,1.0000,baran
+1981,sched_dep_time,7:00 a.m.,1.0000,baran
+2136,sched_dep_time,7:00 a.m.,1.0000,baran
+2287,sched_dep_time,6:00 a.m.,1.0000,baran
+2374,sched_dep_time,6:00 a.m.,1.0000,baran
+1056,act_dep_time,6:08 a.m.,1.0000,baran
+1056,sched_arr_time,9:20 a.m.,1.0000,baran
+44,sched_arr_time,9:20 a.m.,1.0000,baran
+122,sched_arr_time,9:35 a.m.,1.0000,baran
+126,sched_arr_time,9:35 a.m.,1.0000,baran
+134,sched_arr_time,9:35 a.m.,1.0000,baran
+152,sched_arr_time,9:35 a.m.,1.0000,baran
+174,sched_arr_time,9:55 a.m.,1.0000,baran
+184,sched_arr_time,9:35 a.m.,1.0000,baran
+208,sched_arr_time,9:35 a.m.,1.0000,baran
+216,sched_arr_time,9:55 a.m.,1.0000,baran
+319,sched_arr_time,9:35 a.m.,1.0000,baran
+394,sched_arr_time,9:20 a.m.,1.0000,baran
+416,sched_arr_time,9:35 a.m.,1.0000,baran
+446,sched_arr_time,9:35 a.m.,1.0000,baran
+459,sched_arr_time,9:35 a.m.,1.0000,baran
+491,sched_arr_time,12:29 a.m.,1.0000,baran
+508,sched_arr_time,9:20 a.m.,1.0000,baran
+542,sched_arr_time,9:20 a.m.,1.0000,baran
+606,sched_arr_time,12:29 a.m.,1.0000,baran
+614,sched_arr_time,9:20 a.m.,1.0000,baran
+633,sched_arr_time,12:29 a.m.,1.0000,baran
+640,sched_arr_time,9:55 a.m.,1.0000,baran
+644,sched_arr_time,9:20 a.m.,1.0000,baran
+667,sched_arr_time,9:35 a.m.,1.0000,baran
+743,sched_arr_time,9:20 a.m.,1.0000,baran
+761,sched_arr_time,9:55 a.m.,1.0000,baran
+782,sched_arr_time,9:55 a.m.,1.0000,baran
+812,sched_arr_time,9:35 a.m.,1.0000,baran
+813,sched_arr_time,9:55 a.m.,1.0000,baran
+818,sched_arr_time,9:20 a.m.,1.0000,baran
+823,sched_arr_time,9:20 a.m.,1.0000,baran
+827,sched_arr_time,9:20 p.m.,1.0000,baran
+857,sched_arr_time,9:55 a.m.,1.0000,baran
+893,sched_arr_time,12:29 a.m.,1.0000,baran
+906,sched_arr_time,9:35 a.m.,1.0000,baran
+912,sched_arr_time,9:20 p.m.,1.0000,baran
+947,sched_arr_time,9:20 a.m.,1.0000,baran
+958,sched_arr_time,12:29 a.m.,1.0000,baran
+988,sched_arr_time,12:29 a.m.,1.0000,baran
+1097,sched_arr_time,12:29 a.m.,1.0000,baran
+1144,sched_arr_time,12:29 a.m.,1.0000,baran
+1165,sched_arr_time,9:55 a.m.,1.0000,baran
+1206,sched_arr_time,9:20 a.m.,1.0000,baran
+1251,sched_arr_time,9:55 a.m.,1.0000,baran
+1263,sched_arr_time,9:20 a.m.,1.0000,baran
+1279,sched_arr_time,9:35 a.m.,1.0000,baran
+1367,sched_arr_time,12:29 a.m.,1.0000,baran
+1391,sched_arr_time,9:35 a.m.,1.0000,baran
+1393,sched_arr_time,9:20 a.m.,1.0000,baran
+1431,sched_arr_time,9:35 a.m.,1.0000,baran
+1514,sched_arr_time,9:20 a.m.,1.0000,baran
+1534,sched_arr_time,9:55 a.m.,1.0000,baran
+1564,sched_arr_time,9:35 a.m.,1.0000,baran
+1604,sched_arr_time,12:29 a.m.,1.0000,baran
+1636,sched_arr_time,9:35 a.m.,1.0000,baran
+1657,sched_arr_time,9:35 a.m.,1.0000,baran
+1671,sched_arr_time,9:55 a.m.,1.0000,baran
+1677,sched_arr_time,9:35 a.m.,1.0000,baran
+1736,sched_arr_time,9:35 a.m.,1.0000,baran
+1749,sched_arr_time,9:35 a.m.,1.0000,baran
+1785,sched_arr_time,9:20 p.m.,1.0000,baran
+1804,sched_arr_time,9:20 a.m.,1.0000,baran
+1807,sched_arr_time,9:20 a.m.,1.0000,baran
+1884,sched_arr_time,9:35 a.m.,1.0000,baran
+1912,sched_arr_time,9:55 a.m.,1.0000,baran
+1956,sched_arr_time,9:20 a.m.,1.0000,baran
+1979,sched_arr_time,12:29 a.m.,1.0000,baran
+1986,sched_arr_time,9:35 a.m.,1.0000,baran
+2020,sched_arr_time,9:35 a.m.,1.0000,baran
+2090,sched_arr_time,9:35 a.m.,1.0000,baran
+2115,sched_arr_time,9:55 a.m.,1.0000,baran
+2153,sched_arr_time,9:35 a.m.,1.0000,baran
+2196,sched_arr_time,9:20 p.m.,1.0000,baran
+2208,sched_arr_time,9:20 a.m.,1.0000,baran
+2212,sched_arr_time,9:20 a.m.,1.0000,baran
+2226,sched_arr_time,9:35 a.m.,1.0000,baran
+2235,sched_arr_time,9:35 a.m.,1.0000,baran
+2273,sched_arr_time,9:20 a.m.,1.0000,baran
+2292,sched_arr_time,9:20 a.m.,1.0000,baran
+2302,sched_arr_time,9:20 a.m.,1.0000,baran
+2354,sched_arr_time,9:35 a.m.,1.0000,baran
+2371,sched_arr_time,12:29 a.m.,1.0000,baran
+1056,act_arr_time,9:05 a.m.,1.0000,baran
+40,act_arr_time,9:05 a.m.,1.0000,baran
+156,act_arr_time,6:08 a.m.,1.0000,baran
+192,act_arr_time,6:08 a.m.,1.0000,baran
+259,act_arr_time,9:05 a.m.,1.0000,baran
+290,act_arr_time,9:05 a.m.,1.0000,baran
+331,act_arr_time,6:08 a.m.,1.0000,baran
+450,act_arr_time,9:20 a.m.,1.0000,baran
+560,act_arr_time,9:05 a.m.,1.0000,baran
+650,act_arr_time,9:20 a.m.,1.0000,baran
+672,act_arr_time,6:08 a.m.,1.0000,baran
+690,act_arr_time,6:08 a.m.,1.0000,baran
+750,act_arr_time,9:05 a.m.,1.0000,baran
+756,act_arr_time,6:08 a.m.,1.0000,baran
+765,act_arr_time,6:08 a.m.,1.0000,baran
+777,act_arr_time,9:05 a.m.,1.0000,baran
+808,act_arr_time,6:08 a.m.,1.0000,baran
+815,act_arr_time,6:08 a.m.,1.0000,baran
+837,act_arr_time,9:05 a.m.,1.0000,baran
+851,act_arr_time,6:08 a.m.,1.0000,baran
+941,act_arr_time,6:08 a.m.,1.0000,baran
+1035,act_arr_time,9:20 a.m.,1.0000,baran
+1068,act_arr_time,9:05 a.m.,1.0000,baran
+1237,act_arr_time,9:05 a.m.,1.0000,baran
+1251,act_arr_time,9:20 a.m.,1.0000,baran
+1328,act_arr_time,6:08 a.m.,1.0000,baran
+1338,act_arr_time,6:08 a.m.,1.0000,baran
+1411,act_arr_time,6:08 a.m.,1.0000,baran
+1428,act_arr_time,6:08 a.m.,1.0000,baran
+1473,act_arr_time,9:20 a.m.,1.0000,baran
+1585,act_arr_time,6:08 a.m.,1.0000,baran
+1663,act_arr_time,9:05 a.m.,1.0000,baran
+1775,act_arr_time,9:20 a.m.,1.0000,baran
+1973,act_arr_time,9:20 a.m.,1.0000,baran
+2022,act_arr_time,9:20 a.m.,1.0000,baran
+2031,act_arr_time,6:08 a.m.,1.0000,baran
+2033,act_arr_time,6:08 a.m.,1.0000,baran
+2059,act_arr_time,9:20 a.m.,1.0000,baran
+2192,act_arr_time,6:08 a.m.,1.0000,baran
+2355,act_arr_time,6:08 a.m.,1.0000,baran
+1575,flight,CO-50-CLE-EWR,1.0000,baran
+144,flight,AA-466-IAH-MIA,1.0000,baran
+256,flight,AA-466-IAH-MIA,1.0000,baran
+284,flight,AA-466-IAH-MIA,1.0000,baran
+408,flight,AA-466-IAH-MIA,1.0000,baran
+464,flight,AA-466-IAH-MIA,1.0000,baran
+467,flight,AA-466-IAH-MIA,1.0000,baran
+478,flight,AA-466-IAH-MIA,1.0000,baran
+591,flight,AA-466-IAH-MIA,1.0000,baran
+677,flight,AA-466-IAH-MIA,1.0000,baran
+699,flight,CO-50-CLE-EWR,1.0000,baran
+764,flight,AA-466-IAH-MIA,1.0000,baran
+783,flight,AA-466-IAH-MIA,1.0000,baran
+865,flight,AA-466-IAH-MIA,1.0000,baran
+882,flight,CO-50-CLE-EWR,1.0000,baran
+896,flight,AA-466-IAH-MIA,1.0000,baran
+1102,flight,CO-50-CLE-EWR,1.0000,baran
+1173,flight,AA-466-IAH-MIA,1.0000,baran
+1330,flight,CO-50-CLE-EWR,1.0000,baran
+1702,flight,AA-466-IAH-MIA,1.0000,baran
+1716,flight,CO-50-CLE-EWR,1.0000,baran
+1755,flight,CO-50-CLE-EWR,1.0000,baran
+1864,flight,AA-466-IAH-MIA,1.0000,baran
+1871,flight,AA-466-IAH-MIA,1.0000,baran
+1984,flight,AA-466-IAH-MIA,1.0000,baran
+2027,flight,AA-466-IAH-MIA,1.0000,baran
+2175,flight,CO-50-CLE-EWR,1.0000,baran
+2225,flight,CO-50-CLE-EWR,1.0000,baran
+2256,flight,AA-466-IAH-MIA,1.0000,baran
+2360,flight,AA-466-IAH-MIA,1.0000,baran
+1575,sched_dep_time,2:55 p.m.,1.0000,baran
+9,sched_dep_time,3:31 p.m.,1.0000,baran
+12,sched_dep_time,3:31 p.m.,1.0000,baran
+34,sched_dep_time,3:31 p.m.,1.0000,baran
+58,sched_dep_time,2:55 p.m.,1.0000,baran
+99,sched_dep_time,2:55 p.m.,1.0000,baran
+202,sched_dep_time,2:55 p.m.,1.0000,baran
+260,sched_dep_time,3:31 p.m.,1.0000,baran
+400,sched_dep_time,2:55 p.m.,1.0000,baran
+554,sched_dep_time,2:55 p.m.,1.0000,baran
+599,sched_dep_time,3:31 p.m.,1.0000,baran
+618,sched_dep_time,2:55 p.m.,1.0000,baran
+679,sched_dep_time,2:55 p.m.,1.0000,baran
+867,sched_dep_time,3:31 p.m.,1.0000,baran
+975,sched_dep_time,2:55 p.m.,1.0000,baran
+1012,sched_dep_time,2:55 p.m.,1.0000,baran
+1026,sched_dep_time,2:55 p.m.,1.0000,baran
+1062,sched_dep_time,2:55 p.m.,1.0000,baran
+1121,sched_dep_time,3:31 p.m.,1.0000,baran
+1141,sched_dep_time,2:55 p.m.,1.0000,baran
+1270,sched_dep_time,3:31 p.m.,1.0000,baran
+1293,sched_dep_time,2:55 p.m.,1.0000,baran
+1326,sched_dep_time,2:55 p.m.,1.0000,baran
+1340,sched_dep_time,2:55 p.m.,1.0000,baran
+1379,sched_dep_time,2:55 p.m.,1.0000,baran
+1418,sched_dep_time,2:55 p.m.,1.0000,baran
+1419,sched_dep_time,2:55 p.m.,1.0000,baran
+1452,sched_dep_time,2:55 p.m.,1.0000,baran
+1492,sched_dep_time,3:31 p.m.,1.0000,baran
+1527,sched_dep_time,2:55 p.m.,1.0000,baran
+1607,sched_dep_time,2:55 p.m.,1.0000,baran
+1625,sched_dep_time,2:55 p.m.,1.0000,baran
+1773,sched_dep_time,3:31 p.m.,1.0000,baran
+1829,sched_dep_time,2:55 p.m.,1.0000,baran
+1874,sched_dep_time,2:55 p.m.,1.0000,baran
+1937,sched_dep_time,3:31 p.m.,1.0000,baran
+2011,sched_dep_time,2:55 p.m.,1.0000,baran
+2047,sched_dep_time,2:55 p.m.,1.0000,baran
+2082,sched_dep_time,3:31 p.m.,1.0000,baran
+2092,sched_dep_time,2:55 p.m.,1.0000,baran
+2190,sched_dep_time,2:55 p.m.,1.0000,baran
+2218,sched_dep_time,2:55 p.m.,1.0000,baran
+2264,sched_dep_time,3:31 p.m.,1.0000,baran
+2307,sched_dep_time,2:55 p.m.,1.0000,baran
+1575,act_dep_time,3:31 p.m.,1.0000,baran
+1575,sched_arr_time,4:49 p.m.,1.0000,baran
+12,sched_arr_time,5:26 p.m.,1.0000,baran
+37,sched_arr_time,5:26 p.m.,1.0000,baran
+81,sched_arr_time,5:26 p.m.,1.0000,baran
+135,sched_arr_time,5:26 p.m.,1.0000,baran
+209,sched_arr_time,4:49 p.m.,1.0000,baran
+279,sched_arr_time,4:49 p.m.,1.0000,baran
+305,sched_arr_time,5:26 p.m.,1.0000,baran
+381,sched_arr_time,4:49 p.m.,1.0000,baran
+444,sched_arr_time,5:26 p.m.,1.0000,baran
+586,sched_arr_time,4:49 p.m.,1.0000,baran
+668,sched_arr_time,4:49 p.m.,1.0000,baran
+733,sched_arr_time,5:26 p.m.,1.0000,baran
+822,sched_arr_time,5:26 p.m.,1.0000,baran
+930,sched_arr_time,4:49 p.m.,1.0000,baran
+944,sched_arr_time,5:26 p.m.,1.0000,baran
+950,sched_arr_time,5:26 p.m.,1.0000,baran
+1125,sched_arr_time,4:49 p.m.,1.0000,baran
+1148,sched_arr_time,5:26 p.m.,1.0000,baran
+1259,sched_arr_time,5:26 p.m.,1.0000,baran
+1303,sched_arr_time,4:49 p.m.,1.0000,baran
+1390,sched_arr_time,5:26 p.m.,1.0000,baran
+1653,sched_arr_time,5:26 p.m.,1.0000,baran
+1686,sched_arr_time,5:26 p.m.,1.0000,baran
+1751,sched_arr_time,4:49 p.m.,1.0000,baran
+1765,sched_arr_time,5:26 p.m.,1.0000,baran
+1767,sched_arr_time,5:26 p.m.,1.0000,baran
+1792,sched_arr_time,5:26 p.m.,1.0000,baran
+1866,sched_arr_time,4:49 p.m.,1.0000,baran
+1874,sched_arr_time,5:26 p.m.,1.0000,baran
+1931,sched_arr_time,5:26 p.m.,1.0000,baran
+1974,sched_arr_time,4:49 p.m.,1.0000,baran
+2047,sched_arr_time,4:49 p.m.,1.0000,baran
+2128,sched_arr_time,4:49 p.m.,1.0000,baran
+2262,sched_arr_time,4:49 p.m.,1.0000,baran
+2318,sched_arr_time,4:49 p.m.,1.0000,baran
+2334,sched_arr_time,4:49 p.m.,1.0000,baran
+1575,act_arr_time,5:26 p.m.,1.0000,baran
+105,act_arr_time,5:26 p.m.,1.0000,baran
+213,act_arr_time,5:26 p.m.,1.0000,baran
+866,act_arr_time,5:26 p.m.,1.0000,baran
+983,act_arr_time,5:26 p.m.,1.0000,baran
+1417,act_arr_time,5:26 p.m.,1.0000,baran
+1423,act_arr_time,5:26 p.m.,1.0000,baran
+1494,act_arr_time,5:26 p.m.,1.0000,baran
+1549,act_arr_time,5:26 p.m.,1.0000,baran
+1597,act_arr_time,5:26 p.m.,1.0000,baran
+1669,act_arr_time,5:26 p.m.,1.0000,baran
+1930,act_arr_time,5:26 p.m.,1.0000,baran
+2242,act_arr_time,5:26 p.m.,1.0000,baran
+1761,flight,UA-248-PHX-ORD,1.0000,baran
+1761,sched_dep_time,12:57 p.m.,1.0000,baran
+1761,act_dep_time,1:32 p.m.,1.0000,baran
+1761,sched_arr_time,5:15 p.m.,1.0000,baran
+1761,act_arr_time,5:34 p.m.,1.0000,baran
+1316,flight,CO-1088-CLE-IAH,1.0000,baran
+1316,sched_dep_time,8:40 a.m.,1.0000,baran
+1316,act_dep_time,8:40 a.m.,1.0000,baran
+1316,sched_arr_time,10:54 a.m.,1.0000,baran
+1316,act_arr_time,10:56 a.m.,1.0000,baran
+350,flight,AA-222-LAX-BOS,1.0000,baran
+350,sched_dep_time,7:10 a.m.,1.0000,baran
+350,act_dep_time,7:31 a.m.,1.0000,baran
+350,sched_arr_time,3:30 p.m.,1.0000,baran
+350,act_arr_time,3:14 p.m.,1.0000,baran
+1,act_arr_time,10:56 a.m.,1.0000,baran
+42,act_arr_time,10:56 a.m.,1.0000,baran
+138,act_arr_time,5:34 p.m.,1.0000,baran
+246,act_arr_time,10:56 a.m.,1.0000,baran
+273,act_arr_time,10:56 a.m.,1.0000,baran
+279,act_arr_time,5:34 p.m.,1.0000,baran
+384,act_arr_time,10:56 a.m.,1.0000,baran
+401,act_arr_time,5:15 p.m.,1.0000,baran
+448,act_arr_time,5:34 p.m.,1.0000,baran
+487,act_arr_time,5:34 p.m.,1.0000,baran
+513,act_arr_time,5:15 p.m.,1.0000,baran
+524,act_arr_time,3:14 p.m.,1.0000,baran
+557,act_arr_time,5:34 p.m.,1.0000,baran
+600,act_arr_time,3:14 p.m.,1.0000,baran
+626,act_arr_time,3:14 p.m.,1.0000,baran
+653,act_arr_time,10:56 a.m.,1.0000,baran
+715,act_arr_time,10:56 a.m.,1.0000,baran
+738,act_arr_time,10:56 a.m.,1.0000,baran
+919,act_arr_time,5:34 p.m.,1.0000,baran
+1097,act_arr_time,5:15 p.m.,1.0000,baran
+1113,act_arr_time,10:56 a.m.,1.0000,baran
+1132,act_arr_time,10:56 a.m.,1.0000,baran
+1148,act_arr_time,3:14 p.m.,1.0000,baran
+1161,act_arr_time,10:56 a.m.,1.0000,baran
+1235,act_arr_time,5:15 p.m.,1.0000,baran
+1287,act_arr_time,10:56 a.m.,1.0000,baran
+1353,act_arr_time,5:15 p.m.,1.0000,baran
+1502,act_arr_time,10:56 a.m.,1.0000,baran
+1547,act_arr_time,5:34 p.m.,1.0000,baran
+1617,act_arr_time,5:34 p.m.,1.0000,baran
+1736,act_arr_time,5:15 p.m.,1.0000,baran
+1858,act_arr_time,3:14 p.m.,1.0000,baran
+1926,act_arr_time,3:14 p.m.,1.0000,baran
+2023,act_arr_time,10:56 a.m.,1.0000,baran
+2025,act_arr_time,3:14 p.m.,1.0000,baran
+2054,act_arr_time,5:34 p.m.,1.0000,baran
+2138,act_arr_time,3:14 p.m.,1.0000,baran
+2141,act_arr_time,5:15 p.m.,1.0000,baran
+2142,act_arr_time,5:15 p.m.,1.0000,baran
+2215,act_arr_time,10:56 a.m.,1.0000,baran
+2216,act_arr_time,5:34 p.m.,1.0000,baran
+2252,act_arr_time,10:56 a.m.,1.0000,baran
+2280,act_arr_time,5:15 p.m.,1.0000,baran
+799,flight,AA-400-DFW-JFK,1.0000,baran
+49,flight,AA-222-LAX-BOS,1.0000,baran
+109,flight,AA-222-LAX-BOS,1.0000,baran
+117,flight,AA-400-DFW-JFK,1.0000,baran
+133,flight,UA-248-PHX-ORD,1.0000,baran
+147,flight,AA-222-LAX-BOS,1.0000,baran
+247,flight,AA-222-LAX-BOS,1.0000,baran
+308,flight,CO-1088-CLE-IAH,1.0000,baran
+334,flight,AA-400-DFW-JFK,1.0000,baran
+473,flight,AA-400-DFW-JFK,1.0000,baran
+497,flight,CO-1088-CLE-IAH,1.0000,baran
+563,flight,UA-248-PHX-ORD,1.0000,baran
+614,flight,CO-1088-CLE-IAH,1.0000,baran
+684,flight,AA-400-DFW-JFK,1.0000,baran
+713,flight,CO-1088-CLE-IAH,1.0000,baran
+721,flight,CO-1088-CLE-IAH,1.0000,baran
+778,flight,CO-1088-CLE-IAH,1.0000,baran
+790,flight,UA-248-PHX-ORD,1.0000,baran
+856,flight,UA-248-PHX-ORD,1.0000,baran
+917,flight,AA-222-LAX-BOS,1.0000,baran
+934,flight,CO-1088-CLE-IAH,1.0000,baran
+954,flight,CO-1088-CLE-IAH,1.0000,baran
+984,flight,AA-400-DFW-JFK,1.0000,baran
+1050,flight,UA-248-PHX-ORD,1.0000,baran
+1103,flight,AA-400-DFW-JFK,1.0000,baran
+1112,flight,AA-222-LAX-BOS,1.0000,baran
+1120,flight,CO-1088-CLE-IAH,1.0000,baran
+1126,flight,UA-248-PHX-ORD,1.0000,baran
+1142,flight,CO-1088-CLE-IAH,1.0000,baran
+1144,flight,AA-222-LAX-BOS,1.0000,baran
+1172,flight,CO-1088-CLE-IAH,1.0000,baran
+1251,flight,UA-248-PHX-ORD,1.0000,baran
+1298,flight,UA-248-PHX-ORD,1.0000,baran
+1354,flight,UA-248-PHX-ORD,1.0000,baran
+1409,flight,AA-400-DFW-JFK,1.0000,baran
+1466,flight,UA-248-PHX-ORD,1.0000,baran
+1473,flight,CO-1088-CLE-IAH,1.0000,baran
+1479,flight,AA-222-LAX-BOS,1.0000,baran
+1485,flight,AA-222-LAX-BOS,1.0000,baran
+1537,flight,AA-222-LAX-BOS,1.0000,baran
+1629,flight,CO-1088-CLE-IAH,1.0000,baran
+1666,flight,AA-222-LAX-BOS,1.0000,baran
+1690,flight,UA-248-PHX-ORD,1.0000,baran
+1770,flight,CO-1088-CLE-IAH,1.0000,baran
+1790,flight,UA-248-PHX-ORD,1.0000,baran
+1827,flight,AA-400-DFW-JFK,1.0000,baran
+1847,flight,AA-400-DFW-JFK,1.0000,baran
+1857,flight,AA-400-DFW-JFK,1.0000,baran
+1865,flight,UA-248-PHX-ORD,1.0000,baran
+1895,flight,AA-400-DFW-JFK,1.0000,baran
+1903,flight,AA-400-DFW-JFK,1.0000,baran
+1913,flight,AA-222-LAX-BOS,1.0000,baran
+1954,flight,AA-400-DFW-JFK,1.0000,baran
+2025,flight,AA-222-LAX-BOS,1.0000,baran
+2029,flight,AA-400-DFW-JFK,1.0000,baran
+2034,flight,AA-222-LAX-BOS,1.0000,baran
+2110,flight,UA-248-PHX-ORD,1.0000,baran
+2135,flight,AA-400-DFW-JFK,1.0000,baran
+2252,flight,UA-248-PHX-ORD,1.0000,baran
+2293,flight,AA-400-DFW-JFK,1.0000,baran
+2299,flight,AA-222-LAX-BOS,1.0000,baran
+2321,flight,UA-248-PHX-ORD,1.0000,baran
+2338,flight,AA-222-LAX-BOS,1.0000,baran
+2368,flight,AA-400-DFW-JFK,1.0000,baran
+799,sched_dep_time,10:40 a.m.,1.0000,baran
+799,act_dep_time,11:01 a.m.,1.0000,baran
+799,sched_arr_time,2:59 p.m.,1.0000,baran
+799,act_arr_time,3:04 p.m.,1.0000,baran
+1153,flight,AA-616-DFW-DTW,1.0000,baran
+1153,sched_dep_time,9:05 a.m.,1.0000,baran
+1153,act_dep_time,10:10 a.m.,1.0000,baran
+1153,sched_arr_time,12:35 p.m.,1.0000,baran
+19,sched_arr_time,2:59 p.m.,1.0000,baran
+36,sched_arr_time,10:54 a.m.,1.0000,baran
+38,sched_arr_time,5:15 p.m.,1.0000,baran
+120,sched_arr_time,10:54 a.m.,1.0000,baran
+133,sched_arr_time,12:35 p.m.,1.0000,baran
+138,sched_arr_time,3:30 p.m.,1.0000,baran
+185,sched_arr_time,10:54 a.m.,1.0000,baran
+211,sched_arr_time,10:54 a.m.,1.0000,baran
+244,sched_arr_time,12:35 p.m.,1.0000,baran
+247,sched_arr_time,2:59 p.m.,1.0000,baran
+255,sched_arr_time,3:04 p.m.,1.0000,baran
+289,sched_arr_time,12:35 p.m.,1.0000,baran
+297,sched_arr_time,2:59 p.m.,1.0000,baran
+302,sched_arr_time,5:15 p.m.,1.0000,baran
+335,sched_arr_time,5:15 p.m.,1.0000,baran
+336,sched_arr_time,2:59 p.m.,1.0000,baran
+340,sched_arr_time,3:04 p.m.,1.0000,baran
+352,sched_arr_time,12:35 p.m.,1.0000,baran
+355,sched_arr_time,5:15 p.m.,1.0000,baran
+359,sched_arr_time,8:40 a.m.,1.0000,baran
+369,sched_arr_time,12:35 p.m.,1.0000,baran
+377,sched_arr_time,5:15 p.m.,1.0000,baran
+395,sched_arr_time,5:15 p.m.,1.0000,baran
+417,sched_arr_time,12:35 p.m.,1.0000,baran
+480,sched_arr_time,12:35 p.m.,1.0000,baran
+495,sched_arr_time,8:40 a.m.,1.0000,baran
+513,sched_arr_time,2:59 p.m.,1.0000,baran
+514,sched_arr_time,3:30 p.m.,1.0000,baran
+648,sched_arr_time,8:40 a.m.,1.0000,baran
+678,sched_arr_time,8:40 a.m.,1.0000,baran
+682,sched_arr_time,3:04 p.m.,1.0000,baran
+710,sched_arr_time,10:54 a.m.,1.0000,baran
+719,sched_arr_time,2:59 p.m.,1.0000,baran
+731,sched_arr_time,8:40 a.m.,1.0000,baran
+735,sched_arr_time,2:59 p.m.,1.0000,baran
+752,sched_arr_time,12:35 p.m.,1.0000,baran
+769,sched_arr_time,3:30 p.m.,1.0000,baran
+770,sched_arr_time,5:15 p.m.,1.0000,baran
+783,sched_arr_time,10:54 a.m.,1.0000,baran
+789,sched_arr_time,12:35 p.m.,1.0000,baran
+801,sched_arr_time,5:15 p.m.,1.0000,baran
+810,sched_arr_time,12:35 p.m.,1.0000,baran
+884,sched_arr_time,3:30 p.m.,1.0000,baran
+896,sched_arr_time,12:35 p.m.,1.0000,baran
+913,sched_arr_time,2:59 p.m.,1.0000,baran
+923,sched_arr_time,3:30 p.m.,1.0000,baran
+970,sched_arr_time,2:59 p.m.,1.0000,baran
+1000,sched_arr_time,3:04 p.m.,1.0000,baran
+1009,sched_arr_time,5:15 p.m.,1.0000,baran
+1022,sched_arr_time,10:54 a.m.,1.0000,baran
+1025,sched_arr_time,12:35 p.m.,1.0000,baran
+1044,sched_arr_time,10:54 a.m.,1.0000,baran
+1068,sched_arr_time,5:15 p.m.,1.0000,baran
+1081,sched_arr_time,3:04 p.m.,1.0000,baran
+1118,sched_arr_time,10:54 a.m.,1.0000,baran
+1152,sched_arr_time,5:15 p.m.,1.0000,baran
+1177,sched_arr_time,3:04 p.m.,1.0000,baran
+1200,sched_arr_time,10:54 a.m.,1.0000,baran
+1224,sched_arr_time,12:35 p.m.,1.0000,baran
+1253,sched_arr_time,10:54 a.m.,1.0000,baran
+1265,sched_arr_time,12:35 p.m.,1.0000,baran
+1296,sched_arr_time,8:40 a.m.,1.0000,baran
+1313,sched_arr_time,12:35 p.m.,1.0000,baran
+1321,sched_arr_time,8:40 a.m.,1.0000,baran
+1363,sched_arr_time,3:30 p.m.,1.0000,baran
+1384,sched_arr_time,3:04 p.m.,1.0000,baran
+1385,sched_arr_time,12:35 p.m.,1.0000,baran
+1404,sched_arr_time,10:54 a.m.,1.0000,baran
+1407,sched_arr_time,5:15 p.m.,1.0000,baran
+1430,sched_arr_time,5:15 p.m.,1.0000,baran
+1437,sched_arr_time,5:15 p.m.,1.0000,baran
+1451,sched_arr_time,3:30 p.m.,1.0000,baran
+1469,sched_arr_time,2:59 p.m.,1.0000,baran
+1474,sched_arr_time,12:35 p.m.,1.0000,baran
+1500,sched_arr_time,5:15 p.m.,1.0000,baran
+1518,sched_arr_time,10:54 a.m.,1.0000,baran
+1533,sched_arr_time,5:15 p.m.,1.0000,baran
+1615,sched_arr_time,2:59 p.m.,1.0000,baran
+1616,sched_arr_time,3:30 p.m.,1.0000,baran
+1622,sched_arr_time,8:40 a.m.,1.0000,baran
+1647,sched_arr_time,8:40 a.m.,1.0000,baran
+1662,sched_arr_time,12:35 p.m.,1.0000,baran
+1692,sched_arr_time,8:40 a.m.,1.0000,baran
+1710,sched_arr_time,12:35 p.m.,1.0000,baran
+1770,sched_arr_time,3:30 p.m.,1.0000,baran
+1793,sched_arr_time,8:40 a.m.,1.0000,baran
+1797,sched_arr_time,12:35 p.m.,1.0000,baran
+1861,sched_arr_time,8:40 a.m.,1.0000,baran
+1873,sched_arr_time,10:54 a.m.,1.0000,baran
+1888,sched_arr_time,8:40 a.m.,1.0000,baran
+1937,sched_arr_time,8:40 a.m.,1.0000,baran
+1945,sched_arr_time,3:04 p.m.,1.0000,baran
+1957,sched_arr_time,12:35 p.m.,1.0000,baran
+1973,sched_arr_time,3:04 p.m.,1.0000,baran
+1982,sched_arr_time,5:15 p.m.,1.0000,baran
+1997,sched_arr_time,5:15 p.m.,1.0000,baran
+2009,sched_arr_time,8:40 a.m.,1.0000,baran
+2011,sched_arr_time,2:59 p.m.,1.0000,baran
+2029,sched_arr_time,5:15 p.m.,1.0000,baran
+2065,sched_arr_time,10:54 a.m.,1.0000,baran
+2138,sched_arr_time,12:35 p.m.,1.0000,baran
+2141,sched_arr_time,2:59 p.m.,1.0000,baran
+2151,sched_arr_time,12:35 p.m.,1.0000,baran
+2190,sched_arr_time,3:04 p.m.,1.0000,baran
+2193,sched_arr_time,8:40 a.m.,1.0000,baran
+2234,sched_arr_time,10:54 a.m.,1.0000,baran
+2254,sched_arr_time,3:04 p.m.,1.0000,baran
+2259,sched_arr_time,2:59 p.m.,1.0000,baran
+2303,sched_arr_time,8:40 a.m.,1.0000,baran
+2369,sched_arr_time,8:40 a.m.,1.0000,baran
+1153,act_arr_time,1:27 p.m.,1.0000,baran
+170,act_arr_time,1:27 p.m.,1.0000,baran
+438,act_arr_time,1:27 p.m.,1.0000,baran
+574,act_arr_time,3:04 p.m.,1.0000,baran
+805,act_arr_time,3:04 p.m.,1.0000,baran
+831,act_arr_time,3:04 p.m.,1.0000,baran
+867,act_arr_time,3:04 p.m.,1.0000,baran
+885,act_arr_time,1:27 p.m.,1.0000,baran
+903,act_arr_time,1:27 p.m.,1.0000,baran
+1073,act_arr_time,3:04 p.m.,1.0000,baran
+1157,act_arr_time,3:04 p.m.,1.0000,baran
+1189,act_arr_time,3:04 p.m.,1.0000,baran
+1281,act_arr_time,1:27 p.m.,1.0000,baran
+1335,act_arr_time,3:04 p.m.,1.0000,baran
+1690,act_arr_time,3:04 p.m.,1.0000,baran
+1721,act_arr_time,3:04 p.m.,1.0000,baran
+1751,act_arr_time,1:27 p.m.,1.0000,baran
+1826,act_arr_time,1:27 p.m.,1.0000,baran
+2078,act_arr_time,1:27 p.m.,1.0000,baran
+2239,act_arr_time,1:27 p.m.,1.0000,baran
+2292,act_arr_time,1:27 p.m.,1.0000,baran

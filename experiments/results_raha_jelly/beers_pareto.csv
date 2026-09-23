@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,LLMOnly,-,0.05,detected,0.0,0.9328169014084506,0.06718309859154929,0.9345070422535212,False,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,CARE,mondrian,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,LLMOnly,-,0.1,detected,0.0,0.9328169014084506,0.06718309859154929,0.9345070422535212,False,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,CARE,marginal,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,CARE,mondrian,0.2,detected,0.9638836772983115,0.011688311688311692,0.06889995473064735,0.012987012987012991,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,LLMOnly,-,0.2,detected,0.0,0.9328169014084506,0.06718309859154929,0.9345070422535212,False,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_beers_mapped.csv

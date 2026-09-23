@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+tax,CARE,marginal,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,CARE,mondrian,0.05,errors,0.07980544678758933,0.0034022821814296165,0.9551779950071783,0.0034938747471663922,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,LLMOnly,-,0.05,errors,0.0,0.0655007111626192,0.9344992888373808,0.0659344325624682,False,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,NoOp,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,CARE,marginal,0.1,errors,0.0,0.0655007111626192,0.9344992888373808,0.0659344325624682,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,CARE,mondrian,0.1,errors,0.06927007427437622,0.003363770139229505,0.9608792527988215,0.00345432592536693,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,LLMOnly,-,0.1,errors,0.0,0.0655007111626192,0.9344992888373808,0.0659344325624682,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,NoOp,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,CARE,marginal,0.2,errors,0.0,0.0655007111626192,0.9344992888373808,0.0659344325624682,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,CARE,mondrian,0.2,errors,0.06927007427437622,0.003363770139229505,0.9608792527988215,0.00345432592536693,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,LLMOnly,-,0.2,errors,0.0,0.0655007111626192,0.9344992888373808,0.0659344325624682,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv
+tax,NoOp,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,baran:csvs/baran_var_tax/1/baran_tax_mapped.csv

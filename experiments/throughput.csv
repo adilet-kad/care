@@ -1,0 +1,4 @@
+dataset,cells,candidates,load_s,scan_s,scan_violations,scan_cells_per_s,exact_sample,exact_ms_per_repair,probe_s,fast_total_s,fast_ms_per_repair,fast_repairs_per_s,speedup,calibrate_s,decide_s,decide_us_per_repair,certify_s,amortised_ms_per_repair,fast_verify
+flights,14256,4920,0.039,0.0017,2312,8149126,50,52.893,3.364,3.402,0.0077,129671,6858.7,0.0003,0.0058,2.0,0.0061,0.693,True
+hospital,19000,499,0.043,0.0016,2227,11706564,50,71.259,4.478,4.493,0.0288,34752,2476.4,0.0001,0.0005,1.7,0.0006,9.008,True
+beers,24100,3334,0.055,0.0014,1199,16874364,50,92.985,5.919,5.956,0.0111,89801,8350.2,0.0002,0.0034,1.7,0.0036,1.788,True

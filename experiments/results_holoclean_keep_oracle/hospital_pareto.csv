@@ -1,0 +1,16 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+hospital,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian_src,0.05,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,LLMOnly,-,0.05,detected,0.0,0.45823754789272025,0.5417624521072797,0.46896551724137936,False,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,False,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian,0.1,detected,1.0,0.0,0.0,0.0,True,False,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian_src,0.1,detected,0.6145038167938931,0.0,0.5564738292011019,0.0,True,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,LLMOnly,-,0.1,detected,0.0,0.45823754789272025,0.5417624521072797,0.46896551724137936,False,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,False,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,CARE,marginal,0.2,detected,1.0,0.0,0.0,0.0,True,False,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian,0.2,detected,1.0,0.0,0.0,0.0,True,False,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian_src,0.2,detected,0.46564885496183195,0.0,0.6965174129353234,0.0,True,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,LLMOnly,-,0.2,detected,0.0,0.45823754789272025,0.5417624521072797,0.46896551724137936,False,True,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv
+hospital,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,False,holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv

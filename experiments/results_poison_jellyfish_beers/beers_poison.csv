@@ -1,0 +1,9 @@
+dataset,baseline,poison_frac,trusted_poison,scoring,realized_error,err_lo,err_hi,human_cost,applied_contamination,thm2_bound,within_thm2_bound,backend
+beers,CARE,0.0,False,detected,0.0,0.0,0.0,1.0,0.0,0.1,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,LLMOnly,0.0,False,detected,0.8038194444444444,0.8016369047619047,0.8064980158730158,0.0,0.0,,,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,CARE,0.05,False,detected,0.0,0.0,0.0,1.0,0.0,0.1,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,LLMOnly,0.05,False,detected,0.8125992063492063,0.8108630952380953,0.8145833333333334,0.0,0.04568452380952381,,,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,CARE,0.1,False,detected,0.0,0.0,0.0,1.0,0.0,0.1,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,LLMOnly,0.1,False,detected,0.8220238095238095,0.8189980158730158,0.8254960317460316,0.0,0.09459325396825397,,,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,CARE,0.2,False,detected,0.0,0.0,0.0,1.0,0.0,0.1,True,jellyfish:csvs/jellyfish_beers_mapped.csv
+beers,LLMOnly,0.2,False,detected,0.8404761904761905,0.8374503968253968,0.8433035714285714,0.0,0.19459325396825397,,,jellyfish:csvs/jellyfish_beers_mapped.csv

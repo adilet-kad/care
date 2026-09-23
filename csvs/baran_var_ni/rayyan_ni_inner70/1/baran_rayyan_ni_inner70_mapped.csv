@@ -1,0 +1,1546 @@
+row_id,column,value,confidence,source
+889,id,673307,1.0000,baran
+513,id,673307,1.0000,baran
+889,article_title,Downregulated E-cadherin expression indicates worse prognosis in Asian patients with colorectal cancer: evidence from meta-analysis.,1.0000,baran
+889,article_language,eng,1.0000,baran
+889,jounral_abbreviation,PloS one,1.0000,baran
+2,jounral_abbreviation,The Journal of hand surgery,1.0000,baran
+38,jounral_abbreviation,Int J Colorectal Dis,1.0000,baran
+162,jounral_abbreviation,Neuroscience,1.0000,baran
+199,jounral_abbreviation,Headache,1.0000,baran
+215,jounral_abbreviation,Circulation,1.0000,baran
+279,jounral_abbreviation,Oral Surg. Oral Med. Oral Pathol.,1.0000,baran
+289,jounral_abbreviation,European journal of cancer care,1.0000,baran
+369,jounral_abbreviation,Helicobacter,1.0000,baran
+466,jounral_abbreviation,Oncol Nurs Forum,1.0000,baran
+477,jounral_abbreviation,Oral Surg. Oral Med. Oral Pathol.,1.0000,baran
+541,jounral_abbreviation,Int J Obes (Lond),1.0000,baran
+556,jounral_abbreviation,Int J Obes (Lond),1.0000,baran
+576,jounral_abbreviation,Cardiol Young,1.0000,baran
+611,jounral_abbreviation,Circulation,1.0000,baran
+659,jounral_abbreviation,Auton.Neurosc.Basic Clin.,1.0000,baran
+664,jounral_abbreviation,PloS one,1.0000,baran
+716,jounral_abbreviation,The Journal of hand surgery,1.0000,baran
+746,jounral_abbreviation,Cancer Res.,1.0000,baran
+798,jounral_abbreviation,The Journal of hand surgery,1.0000,baran
+808,jounral_abbreviation,J. Recept. Signal Transduct. Res.,1.0000,baran
+814,jounral_abbreviation,Oral Surg. Oral Med. Oral Pathol.,1.0000,baran
+837,jounral_abbreviation,Parkinsonism Relat. Disord.,1.0000,baran
+838,jounral_abbreviation,Int J Obes (Lond),1.0000,baran
+842,jounral_abbreviation,Cancer Res.,1.0000,baran
+843,jounral_abbreviation,Cancer Res.,1.0000,baran
+858,jounral_abbreviation,Circulation,1.0000,baran
+888,jounral_abbreviation,Headache,1.0000,baran
+900,jounral_abbreviation,The Journal of hand surgery,1.0000,baran
+966,jounral_abbreviation,Cardiol Young,1.0000,baran
+993,jounral_abbreviation,Case Rep.Med.,1.0000,baran
+889,journal_issn,1932-6203,1.0000,baran
+45,journal_issn,0143-005X,1.0000,baran
+85,journal_issn,2154-4212,1.0000,baran
+111,journal_issn,0098-4108 (Print) 0098-4108 (Linking),1.0000,baran
+132,journal_issn,1878-3570,1.0000,baran
+181,journal_issn,0949-2658 (Print) 0949-2658,1.0000,baran
+233,journal_issn,1469-493X,1.0000,baran
+289,journal_issn,0961-5423 (Print) 0961-5423,1.0000,baran
+336,journal_issn,1469-493X,1.0000,baran
+355,journal_issn,1462-2203,1.0000,baran
+373,journal_issn,0301-4215,1.0000,baran
+378,journal_issn,1932-6203,1.0000,baran
+406,journal_issn,1601-0825,1.0000,baran
+416,journal_issn,1098-2752,1.0000,baran
+449,journal_issn,1463-1318,1.0000,baran
+451,journal_issn,1941-2703,1.0000,baran
+467,journal_issn,1538-7445,1.0000,baran
+473,journal_issn,1651-2006,1.0000,baran
+481,journal_issn,1462-0324,1.0000,baran
+482,journal_issn,0214-9915,1.0000,baran
+508,journal_issn,1463-1318,1.0000,baran
+541,journal_issn,1476-5497,1.0000,baran
+566,journal_issn,1538-7445,1.0000,baran
+638,journal_issn,1053881X (ISSN),1.0000,baran
+664,journal_issn,1932-6203,1.0000,baran
+668,journal_issn,0017-5749,1.0000,baran
+706,journal_issn,1469-493X,1.0000,baran
+724,journal_issn,1469-0756,1.0000,baran
+746,journal_issn,1538-7445,1.0000,baran
+808,journal_issn,1532-4281,1.0000,baran
+810,journal_issn,1538-7445,1.0000,baran
+838,journal_issn,1476-5497,1.0000,baran
+843,journal_issn,1538-7445,1.0000,baran
+853,journal_issn,0966-6362 DO - http://dx.doi.org/10.1016/j.gaitpost.2010.04.002,1.0000,baran
+911,journal_issn,1469-493X,1.0000,baran
+956,journal_issn,1462-2203,1.0000,baran
+964,journal_issn,-14400,1.0000,baran
+993,journal_issn,1687-9627,1.0000,baran
+889,article_jvolumn,8,1.0000,baran
+377,article_jvolumn,8,1.0000,baran
+478,article_jvolumn,7,1.0000,baran
+970,article_jvolumn,8,1.0000,baran
+889,article_jissue,7,1.0000,baran
+6,article_jissue,7,1.0000,baran
+8,article_jissue,7,1.0000,baran
+12,article_jissue,7,1.0000,baran
+13,article_jissue,7,1.0000,baran
+15,article_jissue,7,1.0000,baran
+17,article_jissue,7,1.0000,baran
+18,article_jissue,7,1.0000,baran
+19,article_jissue,7,1.0000,baran
+22,article_jissue,7,1.0000,baran
+24,article_jissue,8,1.0000,baran
+27,article_jissue,7,1.0000,baran
+28,article_jissue,7,1.0000,baran
+29,article_jissue,7,1.0000,baran
+30,article_jissue,7,1.0000,baran
+34,article_jissue,7,1.0000,baran
+35,article_jissue,7,1.0000,baran
+36,article_jissue,7,1.0000,baran
+37,article_jissue,7,1.0000,baran
+40,article_jissue,7,1.0000,baran
+42,article_jissue,7,1.0000,baran
+46,article_jissue,3,1.0000,baran
+48,article_jissue,7,1.0000,baran
+49,article_jissue,7,1.0000,baran
+51,article_jissue,7,1.0000,baran
+52,article_jissue,7,1.0000,baran
+54,article_jissue,7,1.0000,baran
+57,article_jissue,7,1.0000,baran
+59,article_jissue,7,1.0000,baran
+63,article_jissue,7,1.0000,baran
+66,article_jissue,7,1.0000,baran
+67,article_jissue,7,1.0000,baran
+68,article_jissue,7,1.0000,baran
+72,article_jissue,7,1.0000,baran
+74,article_jissue,7,1.0000,baran
+75,article_jissue,7,1.0000,baran
+76,article_jissue,7,1.0000,baran
+84,article_jissue,7,1.0000,baran
+88,article_jissue,7,1.0000,baran
+92,article_jissue,7,1.0000,baran
+93,article_jissue,7,1.0000,baran
+96,article_jissue,7,1.0000,baran
+109,article_jissue,7,1.0000,baran
+112,article_jissue,7,1.0000,baran
+113,article_jissue,7,1.0000,baran
+114,article_jissue,7,1.0000,baran
+115,article_jissue,4,1.0000,baran
+118,article_jissue,7,1.0000,baran
+122,article_jissue,7,1.0000,baran
+123,article_jissue,7,1.0000,baran
+124,article_jissue,7,1.0000,baran
+125,article_jissue,7,1.0000,baran
+126,article_jissue,7,1.0000,baran
+127,article_jissue,7,1.0000,baran
+128,article_jissue,7,1.0000,baran
+129,article_jissue,7,1.0000,baran
+130,article_jissue,7,1.0000,baran
+132,article_jissue,7,1.0000,baran
+135,article_jissue,7,1.0000,baran
+138,article_jissue,7,1.0000,baran
+139,article_jissue,7,1.0000,baran
+140,article_jissue,7,1.0000,baran
+141,article_jissue,7,1.0000,baran
+144,article_jissue,3,1.0000,baran
+145,article_jissue,7,1.0000,baran
+147,article_jissue,7,1.0000,baran
+149,article_jissue,7,1.0000,baran
+151,article_jissue,8,1.0000,baran
+153,article_jissue,7,1.0000,baran
+156,article_jissue,7,1.0000,baran
+157,article_jissue,7,1.0000,baran
+158,article_jissue,7,1.0000,baran
+160,article_jissue,7,1.0000,baran
+161,article_jissue,7,1.0000,baran
+162,article_jissue,7,1.0000,baran
+164,article_jissue,7,1.0000,baran
+170,article_jissue,7,1.0000,baran
+173,article_jissue,7,1.0000,baran
+174,article_jissue,7,1.0000,baran
+176,article_jissue,7,1.0000,baran
+179,article_jissue,7,1.0000,baran
+182,article_jissue,7,1.0000,baran
+184,article_jissue,7,1.0000,baran
+185,article_jissue,7,1.0000,baran
+186,article_jissue,7,1.0000,baran
+193,article_jissue,7,1.0000,baran
+201,article_jissue,7,1.0000,baran
+204,article_jissue,7,1.0000,baran
+207,article_jissue,7,1.0000,baran
+217,article_jissue,7,1.0000,baran
+218,article_jissue,7,1.0000,baran
+220,article_jissue,7,1.0000,baran
+223,article_jissue,7,1.0000,baran
+226,article_jissue,7,1.0000,baran
+232,article_jissue,7,1.0000,baran
+233,article_jissue,7,1.0000,baran
+235,article_jissue,7,1.0000,baran
+237,article_jissue,7,1.0000,baran
+239,article_jissue,7,1.0000,baran
+240,article_jissue,7,1.0000,baran
+243,article_jissue,7,1.0000,baran
+244,article_jissue,7,1.0000,baran
+250,article_jissue,7,1.0000,baran
+253,article_jissue,7,1.0000,baran
+256,article_jissue,7,1.0000,baran
+260,article_jissue,7,1.0000,baran
+262,article_jissue,7,1.0000,baran
+265,article_jissue,7,1.0000,baran
+268,article_jissue,7,1.0000,baran
+269,article_jissue,7,1.0000,baran
+273,article_jissue,7,1.0000,baran
+274,article_jissue,7,1.0000,baran
+275,article_jissue,7,1.0000,baran
+278,article_jissue,7,1.0000,baran
+279,article_jissue,7,1.0000,baran
+285,article_jissue,7,1.0000,baran
+287,article_jissue,7,1.0000,baran
+288,article_jissue,7,1.0000,baran
+290,article_jissue,7,1.0000,baran
+291,article_jissue,8,1.0000,baran
+293,article_jissue,3,1.0000,baran
+296,article_jissue,7,1.0000,baran
+298,article_jissue,7,1.0000,baran
+303,article_jissue,7,1.0000,baran
+307,article_jissue,7,1.0000,baran
+311,article_jissue,7,1.0000,baran
+323,article_jissue,7,1.0000,baran
+325,article_jissue,7,1.0000,baran
+326,article_jissue,7,1.0000,baran
+329,article_jissue,7,1.0000,baran
+331,article_jissue,7,1.0000,baran
+332,article_jissue,7,1.0000,baran
+333,article_jissue,7,1.0000,baran
+340,article_jissue,7,1.0000,baran
+341,article_jissue,7,1.0000,baran
+344,article_jissue,7,1.0000,baran
+345,article_jissue,7,1.0000,baran
+347,article_jissue,7,1.0000,baran
+348,article_jissue,7,1.0000,baran
+350,article_jissue,7,1.0000,baran
+351,article_jissue,7,1.0000,baran
+352,article_jissue,7,1.0000,baran
+354,article_jissue,7,1.0000,baran
+361,article_jissue,7,1.0000,baran
+362,article_jissue,7,1.0000,baran
+363,article_jissue,7,1.0000,baran
+365,article_jissue,7,1.0000,baran
+367,article_jissue,7,1.0000,baran
+370,article_jissue,7,1.0000,baran
+373,article_jissue,7,1.0000,baran
+374,article_jissue,7,1.0000,baran
+376,article_jissue,7,1.0000,baran
+380,article_jissue,7,1.0000,baran
+381,article_jissue,7,1.0000,baran
+383,article_jissue,3,1.0000,baran
+389,article_jissue,7,1.0000,baran
+391,article_jissue,7,1.0000,baran
+393,article_jissue,7,1.0000,baran
+395,article_jissue,7,1.0000,baran
+397,article_jissue,7,1.0000,baran
+398,article_jissue,3,1.0000,baran
+400,article_jissue,7,1.0000,baran
+407,article_jissue,7,1.0000,baran
+420,article_jissue,7,1.0000,baran
+427,article_jissue,7,1.0000,baran
+431,article_jissue,7,1.0000,baran
+433,article_jissue,7,1.0000,baran
+434,article_jissue,7,1.0000,baran
+439,article_jissue,7,1.0000,baran
+442,article_jissue,7,1.0000,baran
+443,article_jissue,7,1.0000,baran
+448,article_jissue,7,1.0000,baran
+449,article_jissue,7,1.0000,baran
+450,article_jissue,7,1.0000,baran
+451,article_jissue,7,1.0000,baran
+456,article_jissue,8,1.0000,baran
+459,article_jissue,8,1.0000,baran
+463,article_jissue,7,1.0000,baran
+464,article_jissue,7,1.0000,baran
+469,article_jissue,7,1.0000,baran
+473,article_jissue,7,1.0000,baran
+475,article_jissue,7,1.0000,baran
+476,article_jissue,7,1.0000,baran
+481,article_jissue,7,1.0000,baran
+483,article_jissue,7,1.0000,baran
+487,article_jissue,7,1.0000,baran
+489,article_jissue,7,1.0000,baran
+493,article_jissue,7,1.0000,baran
+496,article_jissue,7,1.0000,baran
+497,article_jissue,7,1.0000,baran
+500,article_jissue,7,1.0000,baran
+502,article_jissue,7,1.0000,baran
+503,article_jissue,7,1.0000,baran
+506,article_jissue,7,1.0000,baran
+509,article_jissue,7,1.0000,baran
+510,article_jissue,7,1.0000,baran
+511,article_jissue,7,1.0000,baran
+512,article_jissue,7,1.0000,baran
+516,article_jissue,8,1.0000,baran
+517,article_jissue,7,1.0000,baran
+519,article_jissue,7,1.0000,baran
+520,article_jissue,7,1.0000,baran
+526,article_jissue,7,1.0000,baran
+527,article_jissue,7,1.0000,baran
+534,article_jissue,7,1.0000,baran
+538,article_jissue,7,1.0000,baran
+539,article_jissue,7,1.0000,baran
+543,article_jissue,7,1.0000,baran
+544,article_jissue,7,1.0000,baran
+545,article_jissue,7,1.0000,baran
+550,article_jissue,7,1.0000,baran
+552,article_jissue,7,1.0000,baran
+553,article_jissue,7,1.0000,baran
+554,article_jissue,7,1.0000,baran
+555,article_jissue,7,1.0000,baran
+557,article_jissue,7,1.0000,baran
+559,article_jissue,7,1.0000,baran
+560,article_jissue,7,1.0000,baran
+562,article_jissue,7,1.0000,baran
+565,article_jissue,7,1.0000,baran
+567,article_jissue,7,1.0000,baran
+568,article_jissue,7,1.0000,baran
+569,article_jissue,7,1.0000,baran
+573,article_jissue,7,1.0000,baran
+574,article_jissue,7,1.0000,baran
+575,article_jissue,3,1.0000,baran
+576,article_jissue,7,1.0000,baran
+581,article_jissue,7,1.0000,baran
+583,article_jissue,7,1.0000,baran
+587,article_jissue,7,1.0000,baran
+588,article_jissue,7,1.0000,baran
+592,article_jissue,7,1.0000,baran
+594,article_jissue,7,1.0000,baran
+595,article_jissue,7,1.0000,baran
+596,article_jissue,7,1.0000,baran
+597,article_jissue,7,1.0000,baran
+602,article_jissue,7,1.0000,baran
+614,article_jissue,7,1.0000,baran
+616,article_jissue,7,1.0000,baran
+626,article_jissue,7,1.0000,baran
+628,article_jissue,12,1.0000,baran
+629,article_jissue,7,1.0000,baran
+631,article_jissue,7,1.0000,baran
+634,article_jissue,7,1.0000,baran
+636,article_jissue,7,1.0000,baran
+639,article_jissue,7,1.0000,baran
+642,article_jissue,7,1.0000,baran
+643,article_jissue,7,1.0000,baran
+644,article_jissue,7,1.0000,baran
+646,article_jissue,7,1.0000,baran
+648,article_jissue,7,1.0000,baran
+649,article_jissue,7,1.0000,baran
+652,article_jissue,7,1.0000,baran
+657,article_jissue,7,1.0000,baran
+664,article_jissue,7,1.0000,baran
+665,article_jissue,7,1.0000,baran
+666,article_jissue,7,1.0000,baran
+668,article_jissue,7,1.0000,baran
+669,article_jissue,7,1.0000,baran
+670,article_jissue,7,1.0000,baran
+678,article_jissue,7,1.0000,baran
+679,article_jissue,7,1.0000,baran
+681,article_jissue,7,1.0000,baran
+687,article_jissue,7,1.0000,baran
+690,article_jissue,7,1.0000,baran
+691,article_jissue,7,1.0000,baran
+695,article_jissue,7,1.0000,baran
+696,article_jissue,7,1.0000,baran
+699,article_jissue,7,1.0000,baran
+702,article_jissue,3,1.0000,baran
+704,article_jissue,7,1.0000,baran
+707,article_jissue,7,1.0000,baran
+710,article_jissue,7,1.0000,baran
+712,article_jissue,7,1.0000,baran
+715,article_jissue,7,1.0000,baran
+716,article_jissue,7,1.0000,baran
+722,article_jissue,7,1.0000,baran
+723,article_jissue,7,1.0000,baran
+728,article_jissue,7,1.0000,baran
+735,article_jissue,7,1.0000,baran
+736,article_jissue,7,1.0000,baran
+743,article_jissue,7,1.0000,baran
+744,article_jissue,7,1.0000,baran
+745,article_jissue,7,1.0000,baran
+747,article_jissue,7,1.0000,baran
+748,article_jissue,7,1.0000,baran
+749,article_jissue,7,1.0000,baran
+750,article_jissue,7,1.0000,baran
+754,article_jissue,7,1.0000,baran
+756,article_jissue,7,1.0000,baran
+760,article_jissue,7,1.0000,baran
+763,article_jissue,7,1.0000,baran
+767,article_jissue,7,1.0000,baran
+768,article_jissue,7,1.0000,baran
+770,article_jissue,3,1.0000,baran
+771,article_jissue,3,1.0000,baran
+772,article_jissue,7,1.0000,baran
+773,article_jissue,7,1.0000,baran
+776,article_jissue,3,1.0000,baran
+779,article_jissue,7,1.0000,baran
+780,article_jissue,7,1.0000,baran
+789,article_jissue,7,1.0000,baran
+791,article_jissue,7,1.0000,baran
+797,article_jissue,7,1.0000,baran
+798,article_jissue,7,1.0000,baran
+800,article_jissue,7,1.0000,baran
+807,article_jissue,7,1.0000,baran
+809,article_jissue,7,1.0000,baran
+810,article_jissue,7,1.0000,baran
+815,article_jissue,7,1.0000,baran
+819,article_jissue,7,1.0000,baran
+820,article_jissue,7,1.0000,baran
+821,article_jissue,7,1.0000,baran
+822,article_jissue,7,1.0000,baran
+825,article_jissue,8,1.0000,baran
+827,article_jissue,7,1.0000,baran
+831,article_jissue,7,1.0000,baran
+832,article_jissue,7,1.0000,baran
+833,article_jissue,7,1.0000,baran
+836,article_jissue,7,1.0000,baran
+837,article_jissue,7,1.0000,baran
+838,article_jissue,7,1.0000,baran
+842,article_jissue,7,1.0000,baran
+843,article_jissue,7,1.0000,baran
+845,article_jissue,7,1.0000,baran
+850,article_jissue,3,1.0000,baran
+853,article_jissue,7,1.0000,baran
+854,article_jissue,7,1.0000,baran
+858,article_jissue,7,1.0000,baran
+860,article_jissue,7,1.0000,baran
+862,article_jissue,7,1.0000,baran
+863,article_jissue,7,1.0000,baran
+864,article_jissue,7,1.0000,baran
+865,article_jissue,7,1.0000,baran
+866,article_jissue,3,1.0000,baran
+869,article_jissue,7,1.0000,baran
+871,article_jissue,7,1.0000,baran
+872,article_jissue,7,1.0000,baran
+876,article_jissue,7,1.0000,baran
+879,article_jissue,7,1.0000,baran
+880,article_jissue,7,1.0000,baran
+881,article_jissue,7,1.0000,baran
+882,article_jissue,7,1.0000,baran
+883,article_jissue,7,1.0000,baran
+884,article_jissue,7,1.0000,baran
+885,article_jissue,7,1.0000,baran
+887,article_jissue,7,1.0000,baran
+888,article_jissue,7,1.0000,baran
+892,article_jissue,1,1.0000,baran
+893,article_jissue,7,1.0000,baran
+894,article_jissue,7,1.0000,baran
+897,article_jissue,7,1.0000,baran
+901,article_jissue,7,1.0000,baran
+906,article_jissue,7,1.0000,baran
+907,article_jissue,7,1.0000,baran
+908,article_jissue,7,1.0000,baran
+909,article_jissue,3,1.0000,baran
+910,article_jissue,7,1.0000,baran
+913,article_jissue,7,1.0000,baran
+916,article_jissue,7,1.0000,baran
+919,article_jissue,7,1.0000,baran
+924,article_jissue,7,1.0000,baran
+925,article_jissue,7,1.0000,baran
+927,article_jissue,7,1.0000,baran
+928,article_jissue,7,1.0000,baran
+932,article_jissue,7,1.0000,baran
+933,article_jissue,7,1.0000,baran
+935,article_jissue,7,1.0000,baran
+936,article_jissue,7,1.0000,baran
+937,article_jissue,7,1.0000,baran
+941,article_jissue,7,1.0000,baran
+943,article_jissue,7,1.0000,baran
+945,article_jissue,7,1.0000,baran
+946,article_jissue,7,1.0000,baran
+948,article_jissue,7,1.0000,baran
+953,article_jissue,7,1.0000,baran
+958,article_jissue,7,1.0000,baran
+960,article_jissue,7,1.0000,baran
+961,article_jissue,7,1.0000,baran
+962,article_jissue,7,1.0000,baran
+964,article_jissue,7,1.0000,baran
+965,article_jissue,7,1.0000,baran
+966,article_jissue,7,1.0000,baran
+967,article_jissue,7,1.0000,baran
+971,article_jissue,7,1.0000,baran
+974,article_jissue,7,1.0000,baran
+975,article_jissue,7,1.0000,baran
+976,article_jissue,-1,1.0000,baran
+979,article_jissue,7,1.0000,baran
+986,article_jissue,7,1.0000,baran
+990,article_jissue,7,1.0000,baran
+991,article_jissue,7,1.0000,baran
+992,article_jissue,7,1.0000,baran
+996,article_jissue,8,1.0000,baran
+998,article_jissue,7,1.0000,baran
+889,article_jcreated_at,1/13/01,1.0000,baran
+280,article_jcreated_at,1/13/01,1.0000,baran
+656,article_jcreated_at,1/13/01,1.0000,baran
+657,article_jcreated_at,1/13/01,1.0000,baran
+889,article_pagination,e70858,1.0000,baran
+20,article_pagination,e70858,1.0000,baran
+24,article_pagination,e70858,1.0000,baran
+32,article_pagination,e70858,1.0000,baran
+38,article_pagination,e70858,1.0000,baran
+70,article_pagination,e70858,1.0000,baran
+122,article_pagination,e70858,1.0000,baran
+124,article_pagination,e70858,1.0000,baran
+156,article_pagination,e70858,1.0000,baran
+158,article_pagination,e70858,1.0000,baran
+160,article_pagination,e70858,1.0000,baran
+162,article_pagination,e70858,1.0000,baran
+176,article_pagination,e70858,1.0000,baran
+188,article_pagination,e70858,1.0000,baran
+221,article_pagination,e70858,1.0000,baran
+233,article_pagination,e70858,1.0000,baran
+263,article_pagination,e70858,1.0000,baran
+269,article_pagination,e70858,1.0000,baran
+273,article_pagination,e70858,1.0000,baran
+278,article_pagination,e70858,1.0000,baran
+316,article_pagination,673307,1.0000,baran
+318,article_pagination,e70858,1.0000,baran
+336,article_pagination,e70858,1.0000,baran
+356,article_pagination,8,1.0000,baran
+376,article_pagination,e70858,1.0000,baran
+392,article_pagination,e70858,1.0000,baran
+396,article_pagination,e70858,1.0000,baran
+413,article_pagination,e70858,1.0000,baran
+443,article_pagination,e70858,1.0000,baran
+467,article_pagination,e70858,1.0000,baran
+491,article_pagination,e70858,1.0000,baran
+501,article_pagination,e70858,1.0000,baran
+508,article_pagination,e70858,1.0000,baran
+543,article_pagination,e70858,1.0000,baran
+544,article_pagination,e70858,1.0000,baran
+549,article_pagination,e70858,1.0000,baran
+568,article_pagination,e70858,1.0000,baran
+579,article_pagination,e70858,1.0000,baran
+606,article_pagination,e70858,1.0000,baran
+609,article_pagination,e70858,1.0000,baran
+625,article_pagination,e70858,1.0000,baran
+626,article_pagination,e70858,1.0000,baran
+633,article_pagination,e70858,1.0000,baran
+657,article_pagination,e70858,1.0000,baran
+665,article_pagination,673307,1.0000,baran
+741,article_pagination,e70858,1.0000,baran
+754,article_pagination,e70858,1.0000,baran
+763,article_pagination,673307,1.0000,baran
+768,article_pagination,e70858,1.0000,baran
+774,article_pagination,e70858,1.0000,baran
+807,article_pagination,e70858,1.0000,baran
+828,article_pagination,e70858,1.0000,baran
+838,article_pagination,e70858,1.0000,baran
+849,article_pagination,e70858,1.0000,baran
+863,article_pagination,e70858,1.0000,baran
+879,article_pagination,e70858,1.0000,baran
+882,article_pagination,e70858,1.0000,baran
+903,article_pagination,8,1.0000,baran
+958,article_pagination,e70858,1.0000,baran
+960,article_pagination,e70858,1.0000,baran
+962,article_pagination,e70858,1.0000,baran
+967,article_pagination,e70858,1.0000,baran
+970,article_pagination,e70858,1.0000,baran
+971,article_pagination,e70858,1.0000,baran
+990,article_pagination,e70858,1.0000,baran
+889,author_list,"{""Zhigang Chen"",""Minyue Jia"",""Xiaoying Zhao"",""Xin He""}",1.0000,baran
+575,id,74821,1.0000,baran
+575,article_title,Progesterone receptor PROGINS and +331G/A polymorphisms confer susceptibility to ovarian cancer: a meta-analysis based on 17 studies.,1.0000,baran
+575,article_language,eng,1.0000,baran
+3,article_language,eng,1.0000,baran
+9,article_language,eng,1.0000,baran
+21,article_language,eng,1.0000,baran
+27,article_language,eng,1.0000,baran
+31,article_language,eng,1.0000,baran
+44,article_language,eng,1.0000,baran
+53,article_language,eng,1.0000,baran
+56,article_language,eng,1.0000,baran
+63,article_language,eng,1.0000,baran
+65,article_language,eng,1.0000,baran
+70,article_language,eng,1.0000,baran
+75,article_language,eng,1.0000,baran
+76,article_language,eng,1.0000,baran
+82,article_language,eng,1.0000,baran
+88,article_language,eng,1.0000,baran
+91,article_language,eng,1.0000,baran
+92,article_language,eng,1.0000,baran
+94,article_language,eng,1.0000,baran
+95,article_language,eng,1.0000,baran
+103,article_language,eng,1.0000,baran
+108,article_language,eng,1.0000,baran
+111,article_language,eng,1.0000,baran
+115,article_language,eng,1.0000,baran
+121,article_language,eng,1.0000,baran
+123,article_language,eng,1.0000,baran
+140,article_language,eng,1.0000,baran
+152,article_language,eng,1.0000,baran
+158,article_language,eng,1.0000,baran
+168,article_language,eng,1.0000,baran
+173,article_language,eng,1.0000,baran
+182,article_language,eng,1.0000,baran
+186,article_language,eng,1.0000,baran
+190,article_language,eng,1.0000,baran
+192,article_language,eng,1.0000,baran
+194,article_language,eng,1.0000,baran
+196,article_language,eng,1.0000,baran
+198,article_language,eng,1.0000,baran
+204,article_language,eng,1.0000,baran
+205,article_language,eng,1.0000,baran
+212,article_language,eng,1.0000,baran
+216,article_language,eng,1.0000,baran
+227,article_language,eng,1.0000,baran
+228,article_language,eng,1.0000,baran
+238,article_language,eng,1.0000,baran
+240,article_language,eng,1.0000,baran
+248,article_language,eng,1.0000,baran
+262,article_language,eng,1.0000,baran
+263,article_language,eng,1.0000,baran
+264,article_language,eng,1.0000,baran
+265,article_language,eng,1.0000,baran
+266,article_language,eng,1.0000,baran
+267,article_language,eng,1.0000,baran
+278,article_language,eng,1.0000,baran
+289,article_language,eng,1.0000,baran
+290,article_language,eng,1.0000,baran
+296,article_language,eng,1.0000,baran
+300,article_language,eng,1.0000,baran
+302,article_language,eng,1.0000,baran
+310,article_language,eng,1.0000,baran
+313,article_language,eng,1.0000,baran
+316,article_language,eng,1.0000,baran
+317,article_language,eng,1.0000,baran
+327,article_language,eng,1.0000,baran
+342,article_language,eng,1.0000,baran
+351,article_language,eng,1.0000,baran
+353,article_language,eng,1.0000,baran
+366,article_language,eng,1.0000,baran
+368,article_language,eng,1.0000,baran
+369,article_language,eng,1.0000,baran
+372,article_language,eng,1.0000,baran
+374,article_language,eng,1.0000,baran
+391,article_language,eng,1.0000,baran
+393,article_language,eng,1.0000,baran
+406,article_language,eng,1.0000,baran
+410,article_language,eng,1.0000,baran
+428,article_language,eng,1.0000,baran
+430,article_language,eng,1.0000,baran
+436,article_language,eng,1.0000,baran
+442,article_language,eng,1.0000,baran
+443,article_language,eng,1.0000,baran
+447,article_language,eng,1.0000,baran
+452,article_language,eng,1.0000,baran
+454,article_language,eng,1.0000,baran
+464,article_language,eng,1.0000,baran
+467,article_language,eng,1.0000,baran
+473,article_language,eng,1.0000,baran
+474,article_language,eng,1.0000,baran
+475,article_language,eng,1.0000,baran
+481,article_language,eng,1.0000,baran
+485,article_language,eng,1.0000,baran
+509,article_language,eng,1.0000,baran
+516,article_language,eng,1.0000,baran
+521,article_language,eng,1.0000,baran
+524,article_language,eng,1.0000,baran
+529,article_language,eng,1.0000,baran
+530,article_language,eng,1.0000,baran
+534,article_language,eng,1.0000,baran
+536,article_language,eng,1.0000,baran
+555,article_language,eng,1.0000,baran
+567,article_language,eng,1.0000,baran
+574,article_language,eng,1.0000,baran
+577,article_language,eng,1.0000,baran
+578,article_language,eng,1.0000,baran
+579,article_language,eng,1.0000,baran
+584,article_language,eng,1.0000,baran
+590,article_language,eng,1.0000,baran
+591,article_language,eng,1.0000,baran
+597,article_language,eng,1.0000,baran
+601,article_language,eng,1.0000,baran
+604,article_language,eng,1.0000,baran
+609,article_language,eng,1.0000,baran
+613,article_language,eng,1.0000,baran
+616,article_language,eng,1.0000,baran
+627,article_language,eng,1.0000,baran
+629,article_language,eng,1.0000,baran
+636,article_language,eng,1.0000,baran
+643,article_language,eng,1.0000,baran
+645,article_language,eng,1.0000,baran
+657,article_language,eng,1.0000,baran
+659,article_language,eng,1.0000,baran
+660,article_language,eng,1.0000,baran
+672,article_language,eng,1.0000,baran
+688,article_language,eng,1.0000,baran
+694,article_language,eng,1.0000,baran
+699,article_language,eng,1.0000,baran
+700,article_language,eng,1.0000,baran
+702,article_language,eng,1.0000,baran
+713,article_language,eng,1.0000,baran
+718,article_language,eng,1.0000,baran
+735,article_language,eng,1.0000,baran
+742,article_language,eng,1.0000,baran
+747,article_language,eng,1.0000,baran
+750,article_language,eng,1.0000,baran
+751,article_language,eng,1.0000,baran
+755,article_language,eng,1.0000,baran
+757,article_language,eng,1.0000,baran
+759,article_language,eng,1.0000,baran
+761,article_language,eng,1.0000,baran
+766,article_language,eng,1.0000,baran
+768,article_language,eng,1.0000,baran
+774,article_language,eng,1.0000,baran
+779,article_language,eng,1.0000,baran
+787,article_language,eng,1.0000,baran
+791,article_language,eng,1.0000,baran
+796,article_language,eng,1.0000,baran
+800,article_language,eng,1.0000,baran
+802,article_language,eng,1.0000,baran
+807,article_language,eng,1.0000,baran
+813,article_language,eng,1.0000,baran
+814,article_language,eng,1.0000,baran
+815,article_language,eng,1.0000,baran
+818,article_language,eng,1.0000,baran
+822,article_language,eng,1.0000,baran
+826,article_language,eng,1.0000,baran
+831,article_language,eng,1.0000,baran
+834,article_language,eng,1.0000,baran
+838,article_language,eng,1.0000,baran
+849,article_language,eng,1.0000,baran
+854,article_language,eng,1.0000,baran
+855,article_language,eng,1.0000,baran
+867,article_language,eng,1.0000,baran
+872,article_language,eng,1.0000,baran
+874,article_language,eng,1.0000,baran
+875,article_language,eng,1.0000,baran
+876,article_language,eng,1.0000,baran
+879,article_language,eng,1.0000,baran
+880,article_language,eng,1.0000,baran
+888,article_language,eng,1.0000,baran
+892,article_language,eng,1.0000,baran
+894,article_language,eng,1.0000,baran
+900,article_language,eng,1.0000,baran
+904,article_language,eng,1.0000,baran
+905,article_language,eng,1.0000,baran
+909,article_language,eng,1.0000,baran
+910,article_language,eng,1.0000,baran
+919,article_language,eng,1.0000,baran
+920,article_language,eng,1.0000,baran
+932,article_language,eng,1.0000,baran
+936,article_language,eng,1.0000,baran
+941,article_language,eng,1.0000,baran
+954,article_language,eng,1.0000,baran
+958,article_language,eng,1.0000,baran
+969,article_language,eng,1.0000,baran
+971,article_language,eng,1.0000,baran
+973,article_language,eng,1.0000,baran
+974,article_language,eng,1.0000,baran
+983,article_language,eng,1.0000,baran
+575,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+450,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+522,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+720,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+575,jounral_abbreviation,Tumour Biol.,1.0000,baran
+575,journal_issn,1423-0380,1.0000,baran
+575,article_jvolumn,35,1.0000,baran
+18,article_jvolumn,3,1.0000,baran
+40,article_jvolumn,3,1.0000,baran
+63,article_jvolumn,3,1.0000,baran
+73,article_jvolumn,3,1.0000,baran
+79,article_jvolumn,3,1.0000,baran
+92,article_jvolumn,3,1.0000,baran
+101,article_jvolumn,3,1.0000,baran
+110,article_jvolumn,3,1.0000,baran
+254,article_jvolumn,3,1.0000,baran
+255,article_jvolumn,35,1.0000,baran
+258,article_jvolumn,3,1.0000,baran
+297,article_jvolumn,35,1.0000,baran
+327,article_jvolumn,35,1.0000,baran
+332,article_jvolumn,3,1.0000,baran
+333,article_jvolumn,3,1.0000,baran
+482,article_jvolumn,3,1.0000,baran
+492,article_jvolumn,35,1.0000,baran
+563,article_jvolumn,3,1.0000,baran
+573,article_jvolumn,3,1.0000,baran
+689,article_jvolumn,35,1.0000,baran
+771,article_jvolumn,35,1.0000,baran
+952,article_jvolumn,35,1.0000,baran
+976,article_jvolumn,101,1.0000,baran
+100,article_jissue,35,1.0000,baran
+121,article_jissue,35,1.0000,baran
+208,article_jissue,35,1.0000,baran
+270,article_jissue,35,1.0000,baran
+318,article_jissue,35,1.0000,baran
+339,article_jissue,35,1.0000,baran
+435,article_jissue,35,1.0000,baran
+499,article_jissue,35,1.0000,baran
+523,article_jissue,35,1.0000,baran
+619,article_jissue,35,1.0000,baran
+995,article_jissue,35,1.0000,baran
+575,article_jcreated_at,1/14/03,1.0000,baran
+30,article_jcreated_at,1/14/03,1.0000,baran
+146,article_jcreated_at,1/14/03,1.0000,baran
+210,article_jcreated_at,1/14/03,1.0000,baran
+422,article_jcreated_at,1/14/03,1.0000,baran
+425,article_jcreated_at,1/14/03,1.0000,baran
+528,article_jcreated_at,1/14/03,1.0000,baran
+556,article_jcreated_at,1/14/03,1.0000,baran
+711,article_jcreated_at,1/14/03,1.0000,baran
+771,article_jcreated_at,1/14/03,1.0000,baran
+789,article_jcreated_at,1/14/03,1.0000,baran
+952,article_jcreated_at,1/14/03,1.0000,baran
+148,article_pagination,35,1.0000,baran
+213,article_pagination,1423-0380,1.0000,baran
+414,article_pagination,35,1.0000,baran
+605,article_pagination,1423-0380,1.0000,baran
+836,article_pagination,1423-0380,1.0000,baran
+896,article_pagination,1423-0380,1.0000,baran
+575,author_list,"{""Xinran Wang"",""Chenhuan Ding"",""Lilan Chen"",""Shu Li"",""Ting Liu"",""Xia Yin"",""You Wang"",""Xiangjun Sun"",""Wen Di"",""He Li""}",1.0000,baran
+607,author_list,"{""Xinran Wang"",""Chenhuan Ding"",""Lilan Chen"",""Shu Li"",""Ting Liu"",""Xia Yin"",""You Wang"",""Xiangjun Sun"",""Wen Di"",""He Li""}",1.0000,baran
+733,author_list,"{""Xinran Wang"",""Chenhuan Ding"",""Lilan Chen"",""Shu Li"",""Ting Liu"",""Xia Yin"",""You Wang"",""Xiangjun Sun"",""Wen Di"",""He Li""}",1.0000,baran
+675,id,619668,1.0000,baran
+675,article_title,The psychiatric comorbidity of epilepsy.,1.0000,baran
+675,journal_title,Acta Neurol Scand,1.0000,baran
+675,jounral_abbreviation,Acta neurologica Scandinavica,1.0000,baran
+675,journal_issn,14-Jan,1.0000,baran
+4,article_jvolumn,8,1.0000,baran
+6,article_jvolumn,35,1.0000,baran
+8,article_jvolumn,8,1.0000,baran
+12,article_jvolumn,35,1.0000,baran
+15,article_jvolumn,35,1.0000,baran
+19,article_jvolumn,35,1.0000,baran
+20,article_jvolumn,35,1.0000,baran
+26,article_jvolumn,6,1.0000,baran
+30,article_jvolumn,8,1.0000,baran
+32,article_jvolumn,35,1.0000,baran
+33,article_jvolumn,8,1.0000,baran
+36,article_jvolumn,8,1.0000,baran
+39,article_jvolumn,35,1.0000,baran
+44,article_jvolumn,35,1.0000,baran
+45,article_jvolumn,35,1.0000,baran
+48,article_jvolumn,35,1.0000,baran
+51,article_jvolumn,35,1.0000,baran
+53,article_jvolumn,4,1.0000,baran
+54,article_jvolumn,35,1.0000,baran
+56,article_jvolumn,35,1.0000,baran
+61,article_jvolumn,35,1.0000,baran
+66,article_jvolumn,35,1.0000,baran
+70,article_jvolumn,35,1.0000,baran
+71,article_jvolumn,35,1.0000,baran
+76,article_jvolumn,35,1.0000,baran
+80,article_jvolumn,35,1.0000,baran
+81,article_jvolumn,35,1.0000,baran
+82,article_jvolumn,35,1.0000,baran
+86,article_jvolumn,35,1.0000,baran
+90,article_jvolumn,35,1.0000,baran
+91,article_jvolumn,8,1.0000,baran
+98,article_jvolumn,35,1.0000,baran
+103,article_jvolumn,8,1.0000,baran
+105,article_jvolumn,8,1.0000,baran
+107,article_jvolumn,35,1.0000,baran
+108,article_jvolumn,35,1.0000,baran
+116,article_jvolumn,8,1.0000,baran
+118,article_jvolumn,35,1.0000,baran
+120,article_jvolumn,42,1.0000,baran
+122,article_jvolumn,35,1.0000,baran
+124,article_jvolumn,8,1.0000,baran
+126,article_jvolumn,35,1.0000,baran
+128,article_jvolumn,35,1.0000,baran
+130,article_jvolumn,35,1.0000,baran
+135,article_jvolumn,35,1.0000,baran
+138,article_jvolumn,35,1.0000,baran
+139,article_jvolumn,35,1.0000,baran
+140,article_jvolumn,35,1.0000,baran
+142,article_jvolumn,35,1.0000,baran
+145,article_jvolumn,35,1.0000,baran
+151,article_jvolumn,35,1.0000,baran
+152,article_jvolumn,35,1.0000,baran
+153,article_jvolumn,35,1.0000,baran
+156,article_jvolumn,35,1.0000,baran
+157,article_jvolumn,35,1.0000,baran
+158,article_jvolumn,35,1.0000,baran
+159,article_jvolumn,35,1.0000,baran
+161,article_jvolumn,35,1.0000,baran
+166,article_jvolumn,4,1.0000,baran
+167,article_jvolumn,35,1.0000,baran
+172,article_jvolumn,8,1.0000,baran
+174,article_jvolumn,8,1.0000,baran
+183,article_jvolumn,35,1.0000,baran
+184,article_jvolumn,35,1.0000,baran
+186,article_jvolumn,8,1.0000,baran
+191,article_jvolumn,35,1.0000,baran
+192,article_jvolumn,35,1.0000,baran
+193,article_jvolumn,35,1.0000,baran
+195,article_jvolumn,35,1.0000,baran
+196,article_jvolumn,8,1.0000,baran
+197,article_jvolumn,35,1.0000,baran
+201,article_jvolumn,35,1.0000,baran
+208,article_jvolumn,35,1.0000,baran
+210,article_jvolumn,35,1.0000,baran
+211,article_jvolumn,35,1.0000,baran
+212,article_jvolumn,35,1.0000,baran
+218,article_jvolumn,35,1.0000,baran
+235,article_jvolumn,35,1.0000,baran
+238,article_jvolumn,35,1.0000,baran
+239,article_jvolumn,8,1.0000,baran
+241,article_jvolumn,35,1.0000,baran
+243,article_jvolumn,35,1.0000,baran
+245,article_jvolumn,35,1.0000,baran
+249,article_jvolumn,35,1.0000,baran
+256,article_jvolumn,35,1.0000,baran
+259,article_jvolumn,8,1.0000,baran
+260,article_jvolumn,8,1.0000,baran
+261,article_jvolumn,35,1.0000,baran
+262,article_jvolumn,35,1.0000,baran
+277,article_jvolumn,35,1.0000,baran
+278,article_jvolumn,35,1.0000,baran
+282,article_jvolumn,35,1.0000,baran
+284,article_jvolumn,35,1.0000,baran
+290,article_jvolumn,8,1.0000,baran
+291,article_jvolumn,35,1.0000,baran
+294,article_jvolumn,35,1.0000,baran
+300,article_jvolumn,35,1.0000,baran
+301,article_jvolumn,35,1.0000,baran
+302,article_jvolumn,42,1.0000,baran
+303,article_jvolumn,35,1.0000,baran
+305,article_jvolumn,35,1.0000,baran
+306,article_jvolumn,8,1.0000,baran
+309,article_jvolumn,35,1.0000,baran
+312,article_jvolumn,35,1.0000,baran
+313,article_jvolumn,8,1.0000,baran
+318,article_jvolumn,8,1.0000,baran
+321,article_jvolumn,35,1.0000,baran
+322,article_jvolumn,35,1.0000,baran
+323,article_jvolumn,35,1.0000,baran
+324,article_jvolumn,35,1.0000,baran
+326,article_jvolumn,35,1.0000,baran
+329,article_jvolumn,35,1.0000,baran
+330,article_jvolumn,8,1.0000,baran
+339,article_jvolumn,35,1.0000,baran
+344,article_jvolumn,35,1.0000,baran
+346,article_jvolumn,35,1.0000,baran
+350,article_jvolumn,35,1.0000,baran
+352,article_jvolumn,42,1.0000,baran
+356,article_jvolumn,35,1.0000,baran
+357,article_jvolumn,35,1.0000,baran
+359,article_jvolumn,35,1.0000,baran
+360,article_jvolumn,35,1.0000,baran
+361,article_jvolumn,35,1.0000,baran
+362,article_jvolumn,35,1.0000,baran
+364,article_jvolumn,35,1.0000,baran
+365,article_jvolumn,8,1.0000,baran
+367,article_jvolumn,8,1.0000,baran
+370,article_jvolumn,35,1.0000,baran
+371,article_jvolumn,42,1.0000,baran
+374,article_jvolumn,35,1.0000,baran
+376,article_jvolumn,35,1.0000,baran
+378,article_jvolumn,35,1.0000,baran
+379,article_jvolumn,35,1.0000,baran
+380,article_jvolumn,35,1.0000,baran
+384,article_jvolumn,35,1.0000,baran
+385,article_jvolumn,35,1.0000,baran
+389,article_jvolumn,35,1.0000,baran
+391,article_jvolumn,35,1.0000,baran
+392,article_jvolumn,35,1.0000,baran
+395,article_jvolumn,35,1.0000,baran
+397,article_jvolumn,35,1.0000,baran
+399,article_jvolumn,35,1.0000,baran
+401,article_jvolumn,35,1.0000,baran
+402,article_jvolumn,4,1.0000,baran
+403,article_jvolumn,42,1.0000,baran
+404,article_jvolumn,35,1.0000,baran
+408,article_jvolumn,35,1.0000,baran
+413,article_jvolumn,35,1.0000,baran
+416,article_jvolumn,8,1.0000,baran
+418,article_jvolumn,35,1.0000,baran
+420,article_jvolumn,35,1.0000,baran
+430,article_jvolumn,35,1.0000,baran
+432,article_jvolumn,35,1.0000,baran
+433,article_jvolumn,35,1.0000,baran
+441,article_jvolumn,8,1.0000,baran
+442,article_jvolumn,35,1.0000,baran
+443,article_jvolumn,8,1.0000,baran
+444,article_jvolumn,8,1.0000,baran
+446,article_jvolumn,35,1.0000,baran
+450,article_jvolumn,35,1.0000,baran
+453,article_jvolumn,35,1.0000,baran
+454,article_jvolumn,8,1.0000,baran
+455,article_jvolumn,35,1.0000,baran
+460,article_jvolumn,35,1.0000,baran
+462,article_jvolumn,35,1.0000,baran
+463,article_jvolumn,35,1.0000,baran
+464,article_jvolumn,8,1.0000,baran
+465,article_jvolumn,35,1.0000,baran
+466,article_jvolumn,35,1.0000,baran
+467,article_jvolumn,35,1.0000,baran
+468,article_jvolumn,35,1.0000,baran
+471,article_jvolumn,35,1.0000,baran
+473,article_jvolumn,35,1.0000,baran
+474,article_jvolumn,42,1.0000,baran
+480,article_jvolumn,8,1.0000,baran
+481,article_jvolumn,35,1.0000,baran
+483,article_jvolumn,35,1.0000,baran
+484,article_jvolumn,35,1.0000,baran
+488,article_jvolumn,35,1.0000,baran
+491,article_jvolumn,35,1.0000,baran
+494,article_jvolumn,35,1.0000,baran
+498,article_jvolumn,35,1.0000,baran
+501,article_jvolumn,8,1.0000,baran
+509,article_jvolumn,35,1.0000,baran
+514,article_jvolumn,8,1.0000,baran
+515,article_jvolumn,35,1.0000,baran
+516,article_jvolumn,35,1.0000,baran
+517,article_jvolumn,35,1.0000,baran
+518,article_jvolumn,35,1.0000,baran
+520,article_jvolumn,35,1.0000,baran
+526,article_jvolumn,35,1.0000,baran
+527,article_jvolumn,35,1.0000,baran
+531,article_jvolumn,35,1.0000,baran
+533,article_jvolumn,35,1.0000,baran
+534,article_jvolumn,8,1.0000,baran
+535,article_jvolumn,8,1.0000,baran
+537,article_jvolumn,8,1.0000,baran
+538,article_jvolumn,35,1.0000,baran
+540,article_jvolumn,35,1.0000,baran
+546,article_jvolumn,35,1.0000,baran
+547,article_jvolumn,35,1.0000,baran
+552,article_jvolumn,35,1.0000,baran
+556,article_jvolumn,8,1.0000,baran
+557,article_jvolumn,35,1.0000,baran
+562,article_jvolumn,35,1.0000,baran
+566,article_jvolumn,35,1.0000,baran
+572,article_jvolumn,35,1.0000,baran
+582,article_jvolumn,35,1.0000,baran
+584,article_jvolumn,8,1.0000,baran
+586,article_jvolumn,35,1.0000,baran
+587,article_jvolumn,35,1.0000,baran
+588,article_jvolumn,35,1.0000,baran
+596,article_jvolumn,35,1.0000,baran
+597,article_jvolumn,35,1.0000,baran
+600,article_jvolumn,35,1.0000,baran
+602,article_jvolumn,35,1.0000,baran
+605,article_jvolumn,8,1.0000,baran
+606,article_jvolumn,8,1.0000,baran
+608,article_jvolumn,35,1.0000,baran
+612,article_jvolumn,35,1.0000,baran
+614,article_jvolumn,4,1.0000,baran
+617,article_jvolumn,8,1.0000,baran
+618,article_jvolumn,35,1.0000,baran
+620,article_jvolumn,35,1.0000,baran
+622,article_jvolumn,35,1.0000,baran
+623,article_jvolumn,35,1.0000,baran
+625,article_jvolumn,35,1.0000,baran
+627,article_jvolumn,8,1.0000,baran
+629,article_jvolumn,35,1.0000,baran
+630,article_jvolumn,35,1.0000,baran
+633,article_jvolumn,42,1.0000,baran
+634,article_jvolumn,35,1.0000,baran
+636,article_jvolumn,35,1.0000,baran
+640,article_jvolumn,42,1.0000,baran
+641,article_jvolumn,35,1.0000,baran
+643,article_jvolumn,35,1.0000,baran
+647,article_jvolumn,35,1.0000,baran
+653,article_jvolumn,35,1.0000,baran
+654,article_jvolumn,35,1.0000,baran
+656,article_jvolumn,8,1.0000,baran
+659,article_jvolumn,8,1.0000,baran
+665,article_jvolumn,35,1.0000,baran
+668,article_jvolumn,35,1.0000,baran
+673,article_jvolumn,35,1.0000,baran
+674,article_jvolumn,35,1.0000,baran
+679,article_jvolumn,35,1.0000,baran
+685,article_jvolumn,35,1.0000,baran
+687,article_jvolumn,35,1.0000,baran
+690,article_jvolumn,8,1.0000,baran
+694,article_jvolumn,35,1.0000,baran
+696,article_jvolumn,35,1.0000,baran
+698,article_jvolumn,35,1.0000,baran
+700,article_jvolumn,35,1.0000,baran
+701,article_jvolumn,35,1.0000,baran
+706,article_jvolumn,35,1.0000,baran
+709,article_jvolumn,8,1.0000,baran
+711,article_jvolumn,35,1.0000,baran
+712,article_jvolumn,35,1.0000,baran
+716,article_jvolumn,8,1.0000,baran
+719,article_jvolumn,8,1.0000,baran
+723,article_jvolumn,8,1.0000,baran
+724,article_jvolumn,35,1.0000,baran
+730,article_jvolumn,35,1.0000,baran
+734,article_jvolumn,35,1.0000,baran
+735,article_jvolumn,8,1.0000,baran
+736,article_jvolumn,35,1.0000,baran
+745,article_jvolumn,4,1.0000,baran
+746,article_jvolumn,8,1.0000,baran
+747,article_jvolumn,35,1.0000,baran
+751,article_jvolumn,35,1.0000,baran
+756,article_jvolumn,8,1.0000,baran
+759,article_jvolumn,35,1.0000,baran
+765,article_jvolumn,8,1.0000,baran
+766,article_jvolumn,35,1.0000,baran
+767,article_jvolumn,8,1.0000,baran
+769,article_jvolumn,35,1.0000,baran
+772,article_jvolumn,35,1.0000,baran
+774,article_jvolumn,8,1.0000,baran
+777,article_jvolumn,8,1.0000,baran
+779,article_jvolumn,35,1.0000,baran
+784,article_jvolumn,35,1.0000,baran
+788,article_jvolumn,35,1.0000,baran
+790,article_jvolumn,35,1.0000,baran
+793,article_jvolumn,35,1.0000,baran
+795,article_jvolumn,35,1.0000,baran
+798,article_jvolumn,35,1.0000,baran
+800,article_jvolumn,35,1.0000,baran
+802,article_jvolumn,35,1.0000,baran
+803,article_jvolumn,35,1.0000,baran
+808,article_jvolumn,35,1.0000,baran
+813,article_jvolumn,35,1.0000,baran
+818,article_jvolumn,35,1.0000,baran
+819,article_jvolumn,8,1.0000,baran
+820,article_jvolumn,35,1.0000,baran
+821,article_jvolumn,35,1.0000,baran
+823,article_jvolumn,35,1.0000,baran
+824,article_jvolumn,8,1.0000,baran
+827,article_jvolumn,35,1.0000,baran
+829,article_jvolumn,35,1.0000,baran
+831,article_jvolumn,35,1.0000,baran
+834,article_jvolumn,8,1.0000,baran
+835,article_jvolumn,35,1.0000,baran
+838,article_jvolumn,8,1.0000,baran
+841,article_jvolumn,35,1.0000,baran
+848,article_jvolumn,35,1.0000,baran
+849,article_jvolumn,8,1.0000,baran
+853,article_jvolumn,35,1.0000,baran
+859,article_jvolumn,35,1.0000,baran
+862,article_jvolumn,35,1.0000,baran
+864,article_jvolumn,4,1.0000,baran
+869,article_jvolumn,35,1.0000,baran
+875,article_jvolumn,35,1.0000,baran
+876,article_jvolumn,35,1.0000,baran
+880,article_jvolumn,35,1.0000,baran
+884,article_jvolumn,8,1.0000,baran
+886,article_jvolumn,35,1.0000,baran
+887,article_jvolumn,8,1.0000,baran
+888,article_jvolumn,8,1.0000,baran
+891,article_jvolumn,35,1.0000,baran
+895,article_jvolumn,35,1.0000,baran
+896,article_jvolumn,35,1.0000,baran
+897,article_jvolumn,35,1.0000,baran
+898,article_jvolumn,35,1.0000,baran
+900,article_jvolumn,35,1.0000,baran
+901,article_jvolumn,35,1.0000,baran
+909,article_jvolumn,35,1.0000,baran
+913,article_jvolumn,35,1.0000,baran
+914,article_jvolumn,35,1.0000,baran
+915,article_jvolumn,35,1.0000,baran
+916,article_jvolumn,35,1.0000,baran
+918,article_jvolumn,35,1.0000,baran
+919,article_jvolumn,35,1.0000,baran
+920,article_jvolumn,35,1.0000,baran
+926,article_jvolumn,35,1.0000,baran
+930,article_jvolumn,35,1.0000,baran
+935,article_jvolumn,35,1.0000,baran
+937,article_jvolumn,35,1.0000,baran
+938,article_jvolumn,42,1.0000,baran
+940,article_jvolumn,35,1.0000,baran
+942,article_jvolumn,35,1.0000,baran
+943,article_jvolumn,35,1.0000,baran
+946,article_jvolumn,8,1.0000,baran
+947,article_jvolumn,35,1.0000,baran
+949,article_jvolumn,35,1.0000,baran
+953,article_jvolumn,35,1.0000,baran
+955,article_jvolumn,35,1.0000,baran
+959,article_jvolumn,35,1.0000,baran
+962,article_jvolumn,35,1.0000,baran
+963,article_jvolumn,35,1.0000,baran
+968,article_jvolumn,8,1.0000,baran
+969,article_jvolumn,35,1.0000,baran
+973,article_jvolumn,35,1.0000,baran
+981,article_jvolumn,35,1.0000,baran
+982,article_jvolumn,35,1.0000,baran
+987,article_jvolumn,35,1.0000,baran
+991,article_jvolumn,8,1.0000,baran
+992,article_jvolumn,35,1.0000,baran
+993,article_jvolumn,8,1.0000,baran
+1000,article_jvolumn,35,1.0000,baran
+675,article_jissue,4,1.0000,baran
+675,article_jcreated_at,1/4/10,1.0000,baran
+675,article_pagination,207-20,1.0000,baran
+675,author_list,"{""A Gaitatzis"",""M R Trimble"",""J W Sander""}",1.0000,baran
+115,id,684757,1.0000,baran
+115,article_title,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.,1.0000,baran
+35,article_title,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.,1.0000,baran
+132,article_title,Downregulated E-cadherin expression indicates worse prognosis in Asian patients with colorectal cancer: evidence from meta-analysis.,1.0000,baran
+294,article_title,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.,1.0000,baran
+447,article_title,The psychiatric comorbidity of epilepsy.,1.0000,baran
+925,article_title,The value of a continuous ambulatory activity monitor to quantify the amount and intensity of daily activity in patients with rheumatoid arthritis.,1.0000,baran
+115,journal_title,The Journal Of Rheumatology,1.0000,baran
+978,journal_title,Acta Neurol Scand,1.0000,baran
+115,jounral_abbreviation,J Rheumatol,1.0000,baran
+115,journal_issn,0315-162X,1.0000,baran
+115,article_jcreated_at,1/1/04,1.0000,baran
+115,article_pagination,745-50,1.0000,baran
+115,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+836,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+883,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+937,author_list,"{""A H Zwinderman"",""M Munneke"",""G J Tijhuis"",""Z de Jong"",""J M Hazes"",""T P Vliet Vlieland""}",1.0000,baran
+117,id,585766,1.0000,baran
+117,article_title,Thermoregulatory response of women to intermittent work in the heat,1.0000,baran
+117,journal_title,Journal of applied physiology,1.0000,baran
+117,jounral_abbreviation,J Appl Physiol,1.0000,baran
+117,journal_issn,0021-8987,1.0000,baran
+117,article_jcreated_at,1/1/76,1.0000,baran
+117,article_pagination,57-61,1.0000,baran
+117,author_list,"{""B. L. Drinkwater"",""J. E. Denton"",""S. M. Horvath"",""P. B. Raven""}",1.0000,baran
+938,id,741988,1.0000,baran
+154,id,585766,1.0000,baran
+232,id,619668,1.0000,baran
+497,id,684757,1.0000,baran
+796,id,585766,1.0000,baran
+816,id,741988,1.0000,baran
+899,id,684757,1.0000,baran
+938,article_title,Changes in lower esophageal sphincter pressure (LES) after Stamm gastrostomy,1.0000,baran
+462,article_title,Thermoregulatory response of women to intermittent work in the heat,1.0000,baran
+591,article_title,Thermoregulatory response of women to intermittent work in the heat,1.0000,baran
+631,article_title,Changes in lower esophageal sphincter pressure (LES) after Stamm gastrostomy,1.0000,baran
+938,article_language,eng,1.0000,baran
+1,article_language,eng,1.0000,baran
+16,article_language,eng,1.0000,baran
+52,article_language,eng,1.0000,baran
+62,article_language,eng,1.0000,baran
+69,article_language,eng,1.0000,baran
+84,article_language,eng,1.0000,baran
+105,article_language,eng,1.0000,baran
+141,article_language,eng,1.0000,baran
+144,article_language,eng,1.0000,baran
+165,article_language,eng,1.0000,baran
+200,article_language,eng,1.0000,baran
+209,article_language,eng,1.0000,baran
+213,article_language,eng,1.0000,baran
+241,article_language,eng,1.0000,baran
+259,article_language,eng,1.0000,baran
+293,article_language,eng,1.0000,baran
+320,article_language,eng,1.0000,baran
+339,article_language,eng,1.0000,baran
+348,article_language,eng,1.0000,baran
+354,article_language,eng,1.0000,baran
+357,article_language,eng,1.0000,baran
+362,article_language,eng,1.0000,baran
+385,article_language,eng,1.0000,baran
+392,article_language,eng,1.0000,baran
+396,article_language,eng,1.0000,baran
+402,article_language,eng,1.0000,baran
+432,article_language,eng,1.0000,baran
+450,article_language,eng,1.0000,baran
+462,article_language,eng,1.0000,baran
+463,article_language,eng,1.0000,baran
+486,article_language,eng,1.0000,baran
+520,article_language,eng,1.0000,baran
+525,article_language,eng,1.0000,baran
+549,article_language,eng,1.0000,baran
+559,article_language,eng,1.0000,baran
+570,article_language,eng,1.0000,baran
+586,article_language,eng,1.0000,baran
+606,article_language,eng,1.0000,baran
+612,article_language,eng,1.0000,baran
+644,article_language,eng,1.0000,baran
+649,article_language,eng,1.0000,baran
+655,article_language,eng,1.0000,baran
+663,article_language,eng,1.0000,baran
+667,article_language,eng,1.0000,baran
+677,article_language,eng,1.0000,baran
+705,article_language,eng,1.0000,baran
+709,article_language,eng,1.0000,baran
+714,article_language,eng,1.0000,baran
+734,article_language,eng,1.0000,baran
+740,article_language,eng,1.0000,baran
+781,article_language,eng,1.0000,baran
+797,article_language,eng,1.0000,baran
+825,article_language,eng,1.0000,baran
+830,article_language,eng,1.0000,baran
+881,article_language,eng,1.0000,baran
+893,article_language,eng,1.0000,baran
+918,article_language,eng,1.0000,baran
+925,article_language,eng,1.0000,baran
+944,article_language,eng,1.0000,baran
+962,article_language,eng,1.0000,baran
+966,article_language,eng,1.0000,baran
+988,article_language,eng,1.0000,baran
+990,article_language,eng,1.0000,baran
+996,article_language,eng,1.0000,baran
+938,jounral_abbreviation,The Journal of surgical research,1.0000,baran
+938,journal_issn,0022-4804,1.0000,baran
+938,article_jcreated_at,1/1/87,1.0000,baran
+938,article_pagination,570-4,1.0000,baran
+938,author_list,"{""J. L. Grosfeld"",""S. Goto"",""G. P. Gardner"",""D. F. Canal"",""D. W. Vane""}",1.0000,baran
+231,id,696362,1.0000,baran
+231,journal_title,McNeill Mathematics Program,1.0000,baran
+231,jounral_abbreviation,College Teaching,1.0000,baran
+231,journal_issn,87567555,1.0000,baran
+231,article_jcreated_at,1/6/01,1.0000,baran
+231,article_pagination,291-297,1.0000,baran
+231,author_list,"{""C. G. Mendez""}",1.0000,baran
+324,author_list,"{""C. G. Mendez""}",1.0000,baran
+564,author_list,"{""B. L. Drinkwater"",""J. E. Denton"",""S. M. Horvath"",""P. B. Raven""}",1.0000,baran
+708,id,107924,1.0000,baran
+708,journal_title,European journal of clinical nutrition,1.0000,baran
+27,journal_title,Journal of applied physiology,1.0000,baran
+708,jounral_abbreviation,Eur J Clin Nutr,1.0000,baran
+708,journal_issn,0954-3007,1.0000,baran
+708,article_jvolumn,56,1.0000,baran
+55,article_jvolumn,56,1.0000,baran
+78,article_jvolumn,56,1.0000,baran
+83,article_jvolumn,56,1.0000,baran
+85,article_jvolumn,56,1.0000,baran
+123,article_jvolumn,56,1.0000,baran
+155,article_jvolumn,56,1.0000,baran
+163,article_jvolumn,56,1.0000,baran
+171,article_jvolumn,56,1.0000,baran
+175,article_jvolumn,56,1.0000,baran
+177,article_jvolumn,56,1.0000,baran
+215,article_jvolumn,56,1.0000,baran
+233,article_jvolumn,56,1.0000,baran
+274,article_jvolumn,56,1.0000,baran
+317,article_jvolumn,56,1.0000,baran
+320,article_jvolumn,56,1.0000,baran
+336,article_jvolumn,56,1.0000,baran
+349,article_jvolumn,56,1.0000,baran
+381,article_jvolumn,56,1.0000,baran
+386,article_jvolumn,56,1.0000,baran
+388,article_jvolumn,56,1.0000,baran
+407,article_jvolumn,56,1.0000,baran
+429,article_jvolumn,56,1.0000,baran
+437,article_jvolumn,56,1.0000,baran
+440,article_jvolumn,56,1.0000,baran
+458,article_jvolumn,56,1.0000,baran
+487,article_jvolumn,56,1.0000,baran
+512,article_jvolumn,56,1.0000,baran
+543,article_jvolumn,56,1.0000,baran
+592,article_jvolumn,56,1.0000,baran
+598,article_jvolumn,56,1.0000,baran
+599,article_jvolumn,56,1.0000,baran
+651,article_jvolumn,56,1.0000,baran
+664,article_jvolumn,56,1.0000,baran
+680,article_jvolumn,56,1.0000,baran
+693,article_jvolumn,56,1.0000,baran
+697,article_jvolumn,56,1.0000,baran
+713,article_jvolumn,56,1.0000,baran
+810,article_jvolumn,56,1.0000,baran
+817,article_jvolumn,56,1.0000,baran
+855,article_jvolumn,56,1.0000,baran
+860,article_jvolumn,56,1.0000,baran
+863,article_jvolumn,56,1.0000,baran
+893,article_jvolumn,56,1.0000,baran
+912,article_jvolumn,56,1.0000,baran
+929,article_jvolumn,56,1.0000,baran
+951,article_jvolumn,56,1.0000,baran
+960,article_jvolumn,56,1.0000,baran
+998,article_jvolumn,56,1.0000,baran
+708,article_jcreated_at,1/2/07,1.0000,baran
+708,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+8,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+14,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+96,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+111,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+135,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+144,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+148,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+152,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+200,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+257,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+263,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+276,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+314,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+329,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+395,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+431,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+448,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+451,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+479,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+480,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+486,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+556,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+617,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+637,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+664,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+711,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+776,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+778,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+801,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+806,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+813,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+910,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+979,author_list,"{""K Ishikawa-Takata"",""T Ohta"",""K Moritaki"",""T Gotou"",""S Inoue""}",1.0000,baran
+234,id,235689,1.0000,baran
+89,id,107924,1.0000,baran
+205,id,235689,1.0000,baran
+319,id,235689,1.0000,baran
+414,id,235689,1.0000,baran
+779,id,235689,1.0000,baran
+804,id,235689,1.0000,baran
+822,id,235689,1.0000,baran
+234,article_title,Obstetrical anal sphincter laceration and anal incontinence 5-10 years after childbirth,1.0000,baran
+50,article_title,Obstetrical anal sphincter laceration and anal incontinence 5-10 years after childbirth,1.0000,baran
+119,article_title,Obstetrical anal sphincter laceration and anal incontinence 5-10 years after childbirth,1.0000,baran
+234,jounral_abbreviation,American journal of obstetrics and gynecology,1.0000,baran
+234,journal_issn,0002-9378 (Print) 0002-9378,1.0000,baran
+234,article_jcreated_at,1/12/01,1.0000,baran
+234,article_pagination,425.e1-6,1.0000,baran
+234,author_list,"{""K. C. McDermott"",""J. L. Blomquist"",""V. L. Handa"",""E. C. Evers""}",1.0000,baran
+349,author_list,"{""K. C. McDermott"",""J. L. Blomquist"",""V. L. Handa"",""E. C. Evers""}",1.0000,baran
+7,id,823730,1.0000,baran
+7,article_title,Activation and blockade of beta adrenoceptors in common cardiac disorders,1.0000,baran
+153,article_title,Activation and blockade of beta adrenoceptors in common cardiac disorders,1.0000,baran
+7,journal_title,Br Med Bull,1.0000,baran
+7,jounral_abbreviation,British medical bulletin,1.0000,baran
+7,journal_issn,0007-1420,1.0000,baran
+7,article_pagination,163-7,1.0000,baran
+7,author_list,"{""B N Prichard"",""J W Black""}",1.0000,baran
+137,author_list,"{""B N Prichard"",""J W Black""}",1.0000,baran
+157,author_list,"{""B N Prichard"",""J W Black""}",1.0000,baran
+610,author_list,"{""B N Prichard"",""J W Black""}",1.0000,baran
+934,author_list,"{""B N Prichard"",""J W Black""}",1.0000,baran
+628,id,117678,1.0000,baran
+321,id,823730,1.0000,baran
+978,id,823730,1.0000,baran
+994,id,117678,1.0000,baran
+628,journal_title,Journal of dental research,1.0000,baran
+628,jounral_abbreviation,J. Dent. Res.,1.0000,baran
+628,journal_issn,0022-0345,1.0000,baran
+628,article_jcreated_at,1/1/12,1.0000,baran
+628,article_pagination,Sep-55,1.0000,baran
+628,author_list,"{""L J Hahn"",""C J Chiu"",""M L Chang"",""L L Hsieh"",""Y S Kuo"",""H M Chen"",""C P Chiang"",""C J Chen""}",1.0000,baran
+585,author_list,"{""L J Hahn"",""C J Chiu"",""M L Chang"",""L L Hsieh"",""Y S Kuo"",""H M Chen"",""C P Chiang"",""C J Chen""}",1.0000,baran
+666,author_list,"{""L J Hahn"",""C J Chiu"",""M L Chang"",""L L Hsieh"",""Y S Kuo"",""H M Chen"",""C P Chiang"",""C J Chen""}",1.0000,baran
+976,id,575935,1.0000,baran
+976,article_title,"The association between urinary cortisol excretion and cardiovascular risk factors, bone status and quality of life in the population.",1.0000,baran
+976,journal_title,Steroids,1.0000,baran
+419,journal_title,Br Med Bull,1.0000,baran
+968,journal_title,Steroids,1.0000,baran
+976,journal_issn,1878-5867,1.0000,baran
+976,article_jcreated_at,1/15/09,1.0000,baran
+976,article_pagination,Jul-71,1.0000,baran
+976,author_list,"{""Kerstin Landin-Wilhelmsen"",""G_ran Oler_d"",""Oskar Ragnarsson"",""Penelope Trimpou""}",1.0000,baran
+26,id,21910,1.0000,baran
+59,id,575935,1.0000,baran
+128,id,575935,1.0000,baran
+921,id,21910,1.0000,baran
+961,id,21910,1.0000,baran
+26,article_title,Examining waiting placement in hospital: utilization and the lived experience.,1.0000,baran
+51,article_title,"The association between urinary cortisol excretion and cardiovascular risk factors, bone status and quality of life in the population.",1.0000,baran
+389,article_title,"The association between urinary cortisol excretion and cardiovascular risk factors, bone status and quality of life in the population.",1.0000,baran
+542,article_title,"The association between urinary cortisol excretion and cardiovascular risk factors, bone status and quality of life in the population.",1.0000,baran
+549,article_title,"The association between urinary cortisol excretion and cardiovascular risk factors, bone status and quality of life in the population.",1.0000,baran
+705,article_title,Examining waiting placement in hospital: utilization and the lived experience.,1.0000,baran
+26,journal_title,Global journal of health science,1.0000,baran
+608,journal_title,Global journal of health science,1.0000,baran
+649,journal_title,Global journal of health science,1.0000,baran
+26,jounral_abbreviation,Glob J Health Sci,1.0000,baran
+26,journal_issn,1916-9736,1.0000,baran
+26,article_jcreated_at,1/14/03,1.0000,baran
+26,article_pagination,22-Dec,1.0000,baran
+972,id,855970,1.0000,baran
+972,article_title,Augmin-dependent microtubule nucleation at microtubule walls in the spindle,1.0000,baran
+972,journal_title,JOURNAL OF CELL BIOLOGY,1.0000,baran
+212,journal_title,JOURNAL OF CELL BIOLOGY,1.0000,baran
+349,journal_title,JOURNAL OF CELL BIOLOGY,1.0000,baran
+493,journal_title,JOURNAL OF CELL BIOLOGY,1.0000,baran
+972,jounral_abbreviation,J Cell Biol,1.0000,baran
+972,journal_issn,0021-9525,1.0000,baran
+972,article_pagination,25-33,1.0000,baran
+972,author_list,"{""S. Kita"",""J. R. McIntosh"",""M. Osumi"",""T. Kamasaki"",""G. Goshima"",""E. O'Toole"",""J. Usukura""}",1.0000,baran
+740,id,875781,1.0000,baran
+740,article_title,Dispersal of methicillin-resistant Staphylococcus epidermidis by staff in an operating suite for thoracic and cardiovascular surgery: relation to skin carriage and clothing,1.0000,baran
+740,jounral_abbreviation,The Journal of hospital infection,1.0000,baran
+740,journal_issn,0195-6701 (Print) 0195-6701,1.0000,baran
+740,article_jcreated_at,1/1/00,1.0000,baran
+740,article_pagination,119-26,1.0000,baran
+740,author_list,"{""P. Domicel"",""A. Tammelin"",""E. Stahle"",""A. Hambraeus""}",1.0000,baran
+589,author_list,"{""P. Domicel"",""A. Tammelin"",""E. Stahle"",""A. Hambraeus""}",1.0000,baran
+692,author_list,"{""P. Domicel"",""A. Tammelin"",""E. Stahle"",""A. Hambraeus""}",1.0000,baran
+710,author_list,"{""P. Domicel"",""A. Tammelin"",""E. Stahle"",""A. Hambraeus""}",1.0000,baran
+530,id,484593,1.0000,baran
+183,id,484593,1.0000,baran
+243,id,484593,1.0000,baran
+451,id,875781,1.0000,baran
+771,id,484593,1.0000,baran
+530,article_title,New anticoagulants for atrial fibrillation.,1.0000,baran
+250,article_title,Dispersal of methicillin-resistant Staphylococcus epidermidis by staff in an operating suite for thoracic and cardiovascular surgery: relation to skin carriage and clothing,1.0000,baran
+813,article_title,Dispersal of methicillin-resistant Staphylococcus epidermidis by staff in an operating suite for thoracic and cardiovascular surgery: relation to skin carriage and clothing,1.0000,baran
+530,journal_title,J. Cardiovasc. Med.,1.0000,baran
+530,article_jvolumn,10,1.0000,baran
+530,article_jissue,6,1.0000,baran
+530,article_jcreated_at,1/9/06,1.0000,baran
+530,article_pagination,446-53,1.0000,baran
+530,author_list,"{""Raffaele De Caterina"",""Giulia Renda"",""Steen Dalby Kristensen""}",1.0000,baran
+178,id,335521,1.0000,baran
+178,journal_title,"Obesity (Silver Spring, Md.)",1.0000,baran
+178,jounral_abbreviation,Obesity (Silver Spring),1.0000,baran
+178,journal_issn,1930-7381,1.0000,baran
+178,article_jcreated_at,1/9/01,1.0000,baran
+178,article_pagination,143-9,1.0000,baran
+178,author_list,"{""Jianwen Cai"",""June Stevens"",""Denise K. Houston""}",1.0000,baran
+100,author_list,"{""Jianwen Cai"",""June Stevens"",""Denise K. Houston""}",1.0000,baran
+890,id,730754,1.0000,baran
+189,id,730754,1.0000,baran
+227,id,335521,1.0000,baran
+289,id,730754,1.0000,baran
+875,id,335521,1.0000,baran
+890,article_title,Preoperative administration of tramadol continuous infusion reduces postoperative morphine requirements in patients undergoing surgery following femur fracture,1.0000,baran
+890,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+12,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+30,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+85,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+146,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+153,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+159,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+184,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+206,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+253,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+297,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+370,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+394,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+446,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+501,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+531,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+547,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+602,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+640,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+683,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+690,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+769,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+785,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+829,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+865,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+913,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+930,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+890,journal_title,Pain practice,1.0000,baran
+890,article_jcreated_at,1/9/01,1.0000,baran
+890,article_pagination,153,1.0000,baran
+890,author_list,"{""Anastasiou M"",""Tzortzopoulou A"",""Emexidis T"",""Koudouna E"",""Pouliou A"",""Vasilas N""}",1.0000,baran
+623,author_list,"{""Anastasiou M"",""Tzortzopoulou A"",""Emexidis T"",""Koudouna E"",""Pouliou A"",""Vasilas N""}",1.0000,baran
+398,article_title,Early thoracic sympathetic block improves the treatment effect for upper extremity neuropathic pain,1.0000,baran
+465,article_title,Early thoracic sympathetic block improves the treatment effect for upper extremity neuropathic pain,1.0000,baran
+398,journal_title,Anesthesia And Analgesia,1.0000,baran
+398,jounral_abbreviation,Anesth Analg,1.0000,baran
+398,journal_issn,1526-7598,1.0000,baran
+398,article_jcreated_at,1/11/01,1.0000,baran
+398,author_list,"{""Pyung Bok Lee"",""Francis Sahngun Nahm"",""Hyung Seok Yoo"",""Chul Joong Lee""}",1.0000,baran
+892,article_title,Comparison of different distal radius dorsal and volar fracture fixation plates: a biomechanical study,1.0000,baran
+276,article_title,Comparison of different distal radius dorsal and volar fracture fixation plates: a biomechanical study,1.0000,baran
+595,article_title,Comparison of different distal radius dorsal and volar fracture fixation plates: a biomechanical study,1.0000,baran
+606,article_title,Comparison of different distal radius dorsal and volar fracture fixation plates: a biomechanical study,1.0000,baran
+4,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+120,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+383,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+458,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+471,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+493,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+541,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+573,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+680,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+808,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+864,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+886,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+984,article_language,English; ABSTRACT LANGUAGE:English,1.0000,baran
+892,journal_title,J Hand Surg Am,1.0000,baran
+892,jounral_abbreviation,The Journal of hand surgery,1.0000,baran
+892,journal_issn,0363-5023,1.0000,baran
+892,article_jcreated_at,1/3/01,1.0000,baran
+892,author_list,"{""M. A. Shah"",""S. F. Viegas"",""R. P. Morris"",""R. M. Patterson"",""D. Osada""}",1.0000,baran
+354,author_list,"{""M. A. Shah"",""S. F. Viegas"",""R. P. Morris"",""R. M. Patterson"",""D. Osada""}",1.0000,baran
+947,author_list,"{""M. A. Shah"",""S. F. Viegas"",""R. P. Morris"",""R. M. Patterson"",""D. Osada""}",1.0000,baran

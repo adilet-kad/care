@@ -1,0 +1,476 @@
+row_id,column,value,confidence,source
+363,article_language,eng,1.0000,baran
+210,article_language,eng,1.0000,baran
+691,article_language,eng,1.0000,baran
+695,article_language,eng,1.0000,baran
+363,article_jissue,1,1.0000,baran
+2,article_jissue,1,1.0000,baran
+12,article_jissue,1,1.0000,baran
+35,article_jissue,-1,1.0000,baran
+45,article_jissue,1,1.0000,baran
+57,article_jissue,1,1.0000,baran
+58,article_jissue,0,1.0000,baran
+70,article_jissue,1,1.0000,baran
+93,article_jissue,1,1.0000,baran
+104,article_jissue,1,1.0000,baran
+146,article_jissue,0,1.0000,baran
+147,article_jissue,0,1.0000,baran
+151,article_jissue,1,1.0000,baran
+164,article_jissue,1,1.0000,baran
+243,article_jissue,7,1.0000,baran
+247,article_jissue,1,1.0000,baran
+291,article_jissue,1,1.0000,baran
+299,article_jissue,0,1.0000,baran
+351,article_jissue,1,1.0000,baran
+353,article_jissue,0,1.0000,baran
+386,article_jissue,1,1.0000,baran
+401,article_jissue,1,1.0000,baran
+446,article_jissue,1,1.0000,baran
+462,article_jissue,1,1.0000,baran
+469,article_jissue,1,1.0000,baran
+478,article_jissue,1,1.0000,baran
+493,article_jissue,12,1.0000,baran
+517,article_jissue,1,1.0000,baran
+541,article_jissue,1,1.0000,baran
+547,article_jissue,0,1.0000,baran
+549,article_jissue,1,1.0000,baran
+560,article_jissue,1,1.0000,baran
+571,article_jissue,1,1.0000,baran
+576,article_jissue,1,1.0000,baran
+577,article_jissue,1,1.0000,baran
+599,article_jissue,0,1.0000,baran
+629,article_jissue,4,1.0000,baran
+654,article_jissue,1,1.0000,baran
+663,article_jissue,1,1.0000,baran
+674,article_jissue,1,1.0000,baran
+684,article_jissue,1,1.0000,baran
+709,article_jissue,1,1.0000,baran
+730,article_jissue,1,1.0000,baran
+736,article_jissue,1,1.0000,baran
+772,article_jissue,1,1.0000,baran
+784,article_jissue,1,1.0000,baran
+787,article_jissue,0,1.0000,baran
+793,article_jissue,1,1.0000,baran
+795,article_jissue,1,1.0000,baran
+829,article_jissue,1,1.0000,baran
+832,article_jissue,2,1.0000,baran
+842,article_jissue,1,1.0000,baran
+843,article_jissue,1,1.0000,baran
+856,article_jissue,1,1.0000,baran
+862,article_jissue,1,1.0000,baran
+868,article_jissue,1,1.0000,baran
+879,article_jissue,1,1.0000,baran
+891,article_jissue,1,1.0000,baran
+935,article_jissue,0,1.0000,baran
+940,article_jissue,1,1.0000,baran
+957,article_jissue,2,1.0000,baran
+976,article_jissue,1,1.0000,baran
+977,article_jissue,0,1.0000,baran
+979,article_jissue,0,1.0000,baran
+990,article_jissue,1,1.0000,baran
+994,article_jissue,0,1.0000,baran
+363,article_pagination,56-64,1.0000,baran
+34,article_pagination,479-82,1.0000,baran
+65,article_pagination,851-9,1.0000,baran
+250,article_pagination,SP26-7,1.0000,baran
+366,article_pagination,987149,1.0000,baran
+381,article_pagination,605-9,1.0000,baran
+546,article_pagination,343-7,1.0000,baran
+582,article_pagination,493-503,1.0000,baran
+592,article_pagination,524-529,1.0000,baran
+634,article_pagination,343-7,1.0000,baran
+710,article_pagination,841-7,1.0000,baran
+729,article_pagination,177-88,1.0000,baran
+795,article_pagination,1074-9,1.0000,baran
+892,article_pagination,841-7,1.0000,baran
+910,article_pagination,185-90,1.0000,baran
+932,article_pagination,2496-502,1.0000,baran
+984,article_pagination,1343S-1353S,1.0000,baran
+363,author_list,"{""O Serresse"",""C Boudreau-Lariviere"",""S Grelier"",""R Zory""}",1.0000,baran
+52,id,730822,1.0000,baran
+20,article_language,eng,1.0000,baran
+60,article_language,eng,1.0000,baran
+279,article_language,eng,1.0000,baran
+306,article_language,eng,1.0000,baran
+416,article_language,eng,1.0000,baran
+523,article_language,eng,1.0000,baran
+580,article_language,ita,1.0000,baran
+52,jounral_abbreviation,Ann R Coll Surg Engl,1.0000,baran
+17,jounral_abbreviation,Ophthalmic Surg Lasers,1.0000,baran
+125,jounral_abbreviation,Eur. Respir. J.,1.0000,baran
+521,jounral_abbreviation,Eur J Appl Physiol Occup Physiol,1.0000,baran
+791,jounral_abbreviation,Journal of human hypertension,1.0000,baran
+52,journal_issn,0035-8843,1.0000,baran
+52,article_jcreated_at,1/1/94,1.0000,baran
+242,article_jcreated_at,1/14/01,1.0000,baran
+579,article_jcreated_at,1/10/01,1.0000,baran
+677,article_jcreated_at,1/12/01,1.0000,baran
+701,article_jcreated_at,1/5/07,1.0000,baran
+860,article_jcreated_at,1/9/01,1.0000,baran
+37,article_pagination,343-51,1.0000,baran
+54,article_pagination,25-33,1.0000,baran
+109,article_pagination,714-9,1.0000,baran
+264,article_pagination,223-38,1.0000,baran
+268,article_pagination,143-9,1.0000,baran
+290,article_pagination,S223,1.0000,baran
+303,article_pagination,502-8,1.0000,baran
+383,article_pagination,29-32,1.0000,baran
+525,article_pagination,502-8,1.0000,baran
+659,article_pagination,2335-2340,1.0000,baran
+784,article_pagination,999-1004,1.0000,baran
+822,article_pagination,143-9,1.0000,baran
+828,article_pagination,1182-7,1.0000,baran
+851,article_pagination,222-8,1.0000,baran
+860,article_pagination,223-230,1.0000,baran
+881,article_pagination,9-Jun,1.0000,baran
+954,article_pagination,843-54,1.0000,baran
+16,author_list,"{""M. Pujol"",""P. Barragn"",""J.M. Tiraboschi"",""A. Imaz"",""M.. Dom_nguez"",""D. Podzamczer""}",1.0000,baran
+40,author_list,"{""M Chouchkova"",""A Engibarov""}",1.0000,baran
+168,author_list,"{""M. Pujol"",""P. Barragn"",""J.M. Tiraboschi"",""A. Imaz"",""M.. Dom_nguez"",""D. Podzamczer""}",1.0000,baran
+325,author_list,"{""Emile E Voest"",""Saskia C C M Teunissen"",""Alexander de Graeff"",""Marija Trajkovic-Vidakovic""}",1.0000,baran
+405,author_list,"{""F. Keefe"",""B. Peterson"",""D. Weiner""}",1.0000,baran
+488,author_list,"{""A. Erol"",""J. B. Celik"",""I. Kara"",""A. Topal"",""S. Guven""}",1.0000,baran
+652,author_list,"{""X. H. LYWXWF Wu""}",1.0000,baran
+674,author_list,"{""John F Fraser"",""Kelvin L Choo"",""Roy M Kimble""}",1.0000,baran
+677,author_list,"{""C. S. Berry-Caban"",""L. Bowers"",""S. Wallgren""}",1.0000,baran
+691,author_list,"{""Kooy H."",""Hong T.S."",""Symonifka J."",""Depauw N."",""Wo J.Y.""}",1.0000,baran
+203,id,979292,1.0000,baran
+40,id,38130,1.0000,baran
+97,id,157566,1.0000,baran
+180,id,816680,1.0000,baran
+242,id,981412,1.0000,baran
+304,id,609245,1.0000,baran
+307,id,979292,1.0000,baran
+365,id,658707,1.0000,baran
+403,id,6862,1.0000,baran
+593,id,335521,1.0000,baran
+755,id,276000,1.0000,baran
+884,id,517503,1.0000,baran
+99,article_language,eng,1.0000,baran
+253,article_language,eng,1.0000,baran
+341,article_language,eng,1.0000,baran
+446,article_language,eng,1.0000,baran
+582,article_language,eng,1.0000,baran
+203,jounral_abbreviation,J Sports Sci,1.0000,baran
+477,jounral_abbreviation,J Sports Sci,1.0000,baran
+203,journal_issn,0264-0414,1.0000,baran
+203,article_jvolumn,25,1.0000,baran
+9,article_jvolumn,25,1.0000,baran
+10,article_jvolumn,54,1.0000,baran
+25,article_jvolumn,15,1.0000,baran
+63,article_jvolumn,14,1.0000,baran
+107,article_jvolumn,1,1.0000,baran
+140,article_jvolumn,1,1.0000,baran
+143,article_jvolumn,25,1.0000,baran
+147,article_jvolumn,25,1.0000,baran
+157,article_jvolumn,25,1.0000,baran
+161,article_jvolumn,1,1.0000,baran
+164,article_jvolumn,25,1.0000,baran
+166,article_jvolumn,25,1.0000,baran
+177,article_jvolumn,25,1.0000,baran
+182,article_jvolumn,25,1.0000,baran
+185,article_jvolumn,25,1.0000,baran
+188,article_jvolumn,1,1.0000,baran
+200,article_jvolumn,1,1.0000,baran
+222,article_jvolumn,25,1.0000,baran
+224,article_jvolumn,12,1.0000,baran
+237,article_jvolumn,25,1.0000,baran
+239,article_jvolumn,1,1.0000,baran
+244,article_jvolumn,25,1.0000,baran
+245,article_jvolumn,25,1.0000,baran
+252,article_jvolumn,1,1.0000,baran
+284,article_jvolumn,25,1.0000,baran
+287,article_jvolumn,25,1.0000,baran
+311,article_jvolumn,25,1.0000,baran
+312,article_jvolumn,25,1.0000,baran
+313,article_jvolumn,25,1.0000,baran
+314,article_jvolumn,25,1.0000,baran
+319,article_jvolumn,25,1.0000,baran
+321,article_jvolumn,25,1.0000,baran
+322,article_jvolumn,25,1.0000,baran
+324,article_jvolumn,188,1.0000,baran
+341,article_jvolumn,25,1.0000,baran
+355,article_jvolumn,1,1.0000,baran
+375,article_jvolumn,25,1.0000,baran
+403,article_jvolumn,25,1.0000,baran
+408,article_jvolumn,25,1.0000,baran
+412,article_jvolumn,1,1.0000,baran
+426,article_jvolumn,25,1.0000,baran
+457,article_jvolumn,25,1.0000,baran
+459,article_jvolumn,65,1.0000,baran
+468,article_jvolumn,25,1.0000,baran
+485,article_jvolumn,25,1.0000,baran
+490,article_jvolumn,25,1.0000,baran
+506,article_jvolumn,25,1.0000,baran
+520,article_jvolumn,25,1.0000,baran
+531,article_jvolumn,25,1.0000,baran
+540,article_jvolumn,25,1.0000,baran
+544,article_jvolumn,1,1.0000,baran
+567,article_jvolumn,25,1.0000,baran
+568,article_jvolumn,1,1.0000,baran
+580,article_jvolumn,34,1.0000,baran
+582,article_jvolumn,25,1.0000,baran
+584,article_jvolumn,25,1.0000,baran
+590,article_jvolumn,25,1.0000,baran
+595,article_jvolumn,25,1.0000,baran
+596,article_jvolumn,1,1.0000,baran
+613,article_jvolumn,25,1.0000,baran
+625,article_jvolumn,25,1.0000,baran
+667,article_jvolumn,25,1.0000,baran
+697,article_jvolumn,25,1.0000,baran
+707,article_jvolumn,25,1.0000,baran
+726,article_jvolumn,25,1.0000,baran
+747,article_jvolumn,66,1.0000,baran
+750,article_jvolumn,54,1.0000,baran
+751,article_jvolumn,25,1.0000,baran
+771,article_jvolumn,25,1.0000,baran
+779,article_jvolumn,25,1.0000,baran
+796,article_jvolumn,25,1.0000,baran
+819,article_jvolumn,25,1.0000,baran
+844,article_jvolumn,1,1.0000,baran
+863,article_jvolumn,1,1.0000,baran
+866,article_jvolumn,1,1.0000,baran
+871,article_jvolumn,25,1.0000,baran
+875,article_jvolumn,1,1.0000,baran
+877,article_jvolumn,25,1.0000,baran
+883,article_jvolumn,1,1.0000,baran
+930,article_jvolumn,25,1.0000,baran
+932,article_jvolumn,27,1.0000,baran
+950,article_jvolumn,25,1.0000,baran
+966,article_jvolumn,25,1.0000,baran
+998,article_jvolumn,25,1.0000,baran
+8,article_jcreated_at,1/7/01,1.0000,baran
+10,article_jcreated_at,1/1/94,1.0000,baran
+100,article_jcreated_at,1/1/67,1.0000,baran
+113,article_jcreated_at,1/1/94,1.0000,baran
+178,article_jcreated_at,1/14/04,1.0000,baran
+199,article_jcreated_at,1/11/01,1.0000,baran
+229,article_jcreated_at,1/1/94,1.0000,baran
+257,article_jcreated_at,1/1/94,1.0000,baran
+258,article_jcreated_at,1/1/94,1.0000,baran
+392,article_jcreated_at,1/1/94,1.0000,baran
+428,article_jcreated_at,1/1/94,1.0000,baran
+437,article_jcreated_at,1/14/01,1.0000,baran
+453,article_jcreated_at,1/1/94,1.0000,baran
+465,article_jcreated_at,3/1/94,1.0000,baran
+470,article_jcreated_at,1/1/94,1.0000,baran
+546,article_jcreated_at,1/11/01,1.0000,baran
+560,article_jcreated_at,7/1/94,1.0000,baran
+573,article_jcreated_at,1/1/94,1.0000,baran
+625,article_jcreated_at,1/3/01,1.0000,baran
+627,article_jcreated_at,1/1/94,1.0000,baran
+645,article_jcreated_at,1/1/94,1.0000,baran
+668,article_jcreated_at,6/1/94,1.0000,baran
+697,article_jcreated_at,1/1/94,1.0000,baran
+736,article_jcreated_at,1/1/98,1.0000,baran
+742,article_jcreated_at,1/1/94,1.0000,baran
+753,article_jcreated_at,1/14/01,1.0000,baran
+771,article_jcreated_at,1/1/94,1.0000,baran
+847,article_jcreated_at,1/1/94,1.0000,baran
+852,article_jcreated_at,1/1/94,1.0000,baran
+858,article_jcreated_at,1/1/94,1.0000,baran
+867,article_jcreated_at,1/1/94,1.0000,baran
+930,article_jcreated_at,1/1/94,1.0000,baran
+388,article_pagination,323-333,1.0000,baran
+652,article_pagination,65-68-,1.0000,baran
+753,article_pagination,305-11,1.0000,baran
+151,id,904168,1.0000,baran
+351,id,866131,1.0000,baran
+496,id,161847,1.0000,baran
+547,id,163093,1.0000,baran
+603,id,478292,1.0000,baran
+682,id,908690,1.0000,baran
+764,id,134738,1.0000,baran
+834,id,803653,1.0000,baran
+891,id,474288,1.0000,baran
+910,id,397190,1.0000,baran
+955,id,129552,1.0000,baran
+13,article_language,English,1.0000,baran
+85,article_language,eng,1.0000,baran
+89,article_language,eng,1.0000,baran
+110,article_language,eng,1.0000,baran
+206,article_language,eng,1.0000,baran
+336,article_language,eng,1.0000,baran
+512,article_language,eng,1.0000,baran
+530,article_language,eng,1.0000,baran
+683,article_language,eng,1.0000,baran
+708,article_language,eng,1.0000,baran
+716,article_language,eng,1.0000,baran
+722,article_language,eng,1.0000,baran
+815,article_language,eng,1.0000,baran
+218,journal_title,Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland,1.0000,baran
+218,jounral_abbreviation,Colorectal Dis,1.0000,baran
+29,journal_issn,1932-6203,1.0000,baran
+105,journal_issn,Feb-37,1.0000,baran
+337,journal_issn,1527-1315,1.0000,baran
+347,journal_issn,0895-6111,1.0000,baran
+348,journal_issn,1540-0514,1.0000,baran
+369,journal_issn,1535-4970,1.0000,baran
+383,journal_issn,"0361-6843, Print 1471-6402, Electronic",1.0000,baran
+435,journal_issn,Feb-65,1.0000,baran
+473,journal_issn,1095-9203,1.0000,baran
+698,journal_issn,2072-6643,1.0000,baran
+889,journal_issn,1932-6203,1.0000,baran
+910,journal_issn,1058-0832,1.0000,baran
+218,author_list,"{""S. Slawik"",""A. R. Dixon""}",1.0000,baran
+148,id,267879,1.0000,baran
+148,article_title,The value of routine radiography in patients with knee osteoarthritis consulting primary health care: a study of agreement,1.0000,baran
+16,article_title,Management of hemorrhage complicated by novel oral anticoagulants in the emergency department: Case report from the northwestern emergency medicine residency,1.0000,baran
+40,article_title,Value of intravenous cholangiography prior to laparoscopic cholecystectomy,1.0000,baran
+168,article_title,Bruxismo em crian_as Bruxism in children,1.0000,baran
+488,article_title,Case report. Cutaneous cryptococcosis in a patient with systemic erythematous lupus.,1.0000,baran
+652,article_title,Carriage of methicillin-resistant Staphylococcus aureus by veterinarians in Australia,1.0000,baran
+674,article_title,Distribution of silicotic collagenization in relation to smoking habits,1.0000,baran
+677,article_title,Mild endoplasmic reticulum stress augments the proinflammatory effect of IL-1_ in pancreatic rat _-cells via the IRE1/XBP1s pathway.,1.0000,baran
+144,article_language,eng,1.0000,baran
+148,journal_title,Eur J Gen Pract,1.0000,baran
+105,journal_title,Am. J. Trop. Med. Hyg.,1.0000,baran
+155,journal_title,Journal of the International Neuropsychological Society : JINS,1.0000,baran
+174,journal_title,Functional Neurology,1.0000,baran
+244,journal_title,Physiotherapy,1.0000,baran
+268,journal_title,Journal of aerosol medicine and pulmonary drug delivery,1.0000,baran
+337,journal_title,Journal of cardiovascular electrophysiology,1.0000,baran
+347,journal_title,Computerized Medical Imaging and Graphics: The Official Journal of the Computerized Medical Imaging Society,1.0000,baran
+371,journal_title,British Journal of Anaesthesia,1.0000,baran
+381,journal_title,Chinese Journal of New Drugs,1.0000,baran
+383,journal_title,Psychology of Women Quarterly,1.0000,baran
+443,journal_title,"Journal of cardiovascular medicine (Hagerstown, Md.)",1.0000,baran
+471,journal_title,Health Education & Behavior,1.0000,baran
+575,journal_title,Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine,1.0000,baran
+592,journal_title,International Journal of Behavioral Consultation and Therapy,1.0000,baran
+629,journal_title,Dermatologic clinics,1.0000,baran
+657,journal_title,Am. J. Cardiovasc. Drugs,1.0000,baran
+798,journal_title,J Hand Surg Am,1.0000,baran
+853,journal_title,Circulation,1.0000,baran
+65,journal_issn,1547-5271,1.0000,baran
+521,journal_issn,0363-5023,1.0000,baran
+582,journal_issn,1533-7731,1.0000,baran
+834,journal_issn,1558-0520,1.0000,baran
+973,journal_issn,1460-2385,1.0000,baran
+328,article_jvolumn,0,1.0000,baran
+335,article_jvolumn,14,1.0000,baran
+384,article_jvolumn,0,1.0000,baran
+727,article_jvolumn,0,1.0000,baran
+275,article_jissue,25,1.0000,baran
+728,article_jissue,0,1.0000,baran
+733,article_jissue,8,1.0000,baran
+801,article_jissue,11,1.0000,baran
+878,article_jissue,0,1.0000,baran
+880,article_jcreated_at,1/14/12,1.0000,baran
+400,id,34517,1.0000,baran
+400,article_title,Identification of a novel missense (C7W) mutation of SOD1 in a large familial amyotrophic lateral sclerosis pedigree.,1.0000,baran
+54,journal_title,"Science (New York, N.Y.)",1.0000,baran
+109,journal_title,Sheng wu yi xue gong cheng xue za zhi = Journal of biomedical engineering = Shengwu yixue gongchengxue zazhi,1.0000,baran
+264,journal_title,PLoS One,1.0000,baran
+306,journal_title,Spine,1.0000,baran
+791,journal_title,J Hum Hypertens,1.0000,baran
+400,journal_issn,1558-1497,1.0000,baran
+626,journal_issn,1462-2203,1.0000,baran
+909,journal_issn,0003-990X,1.0000,baran
+982,journal_issn,1447-0594,1.0000,baran
+265,article_jissue,0,1.0000,baran
+306,article_jissue,25,1.0000,baran
+457,article_jissue,0,1.0000,baran
+466,article_jissue,25,1.0000,baran
+696,article_jissue,25,1.0000,baran
+983,article_jissue,25,1.0000,baran
+99,article_pagination,245-8,1.0000,baran
+242,article_pagination,56-64,1.0000,baran
+358,article_pagination,56-64,1.0000,baran
+405,article_pagination,56-64,1.0000,baran
+417,article_pagination,56-64,1.0000,baran
+555,article_pagination,593-5,1.0000,baran
+627,article_pagination,1271-6,1.0000,baran
+903,article_pagination,3118-29,1.0000,baran
+967,article_pagination,613-5,1.0000,baran
+91,article_title,Ventricular fibrillation in acute mitral valve insufficiency caused by chordae tendineae rupture: report of a surgically corrected case.,1.0000,baran
+259,article_language,eng,1.0000,baran
+442,article_language,eng,1.0000,baran
+720,article_language,eng,1.0000,baran
+759,article_language,eng,1.0000,baran
+91,jounral_abbreviation,"Journal of cardiovascular medicine (Hagerstown, Md.)",1.0000,baran
+60,article_pagination,56-64,1.0000,baran
+145,article_pagination,25,1.0000,baran
+261,article_pagination,56-64,1.0000,baran
+310,article_pagination,56-64,1.0000,baran
+321,article_pagination,56-64,1.0000,baran
+482,article_pagination,56-64,1.0000,baran
+509,article_pagination,56-64,1.0000,baran
+563,article_pagination,25,1.0000,baran
+649,article_pagination,56-64,1.0000,baran
+713,article_pagination,56-64,1.0000,baran
+791,article_pagination,56-64,1.0000,baran
+992,article_pagination,56-64,1.0000,baran
+121,author_list,"{""Demetrios J. Kutsogiannis"",""Neil K. Singla"",""Frances Chung"",""Stephen R. Lane"",""Jeremey Levin"",""Joseph V.J. Pergolizzi"",""Brendan Johnson"",""Linda Blackburn"",""Sonia K. Singla""}",1.0000,baran
+227,author_list,"{""Michela Miani"",""Decio L Eizirik"",""Laurence Ladrire"",""Maikel L Colli"",""Miriam Cnop""}",1.0000,baran
+521,author_list,"{""M F Jumean"",""P J Erwin"",""V M Montori"",""F Lopez-Jimenez"",""A Romero-Corral"",""V K Somers"",""D O Okorodudu""}",1.0000,baran
+556,author_list,"{""Silke Zimmermann"",""Stefan A Stachelhaus"",""Christiane Hollmann""}",1.0000,baran
+626,author_list,"{""Diana Duro"",""Augusto Goulo"",""Gon_alo Santos"",""Nuno Mendon_a"",""Isabel Santana"",""Eg_dio Machado""}",1.0000,baran
+729,author_list,"{""T. Dovan"",""R. R. Neutra"",""D. A. Savitz"",""R. I. Kavet""}",1.0000,baran
+802,author_list,"{""Antoine Hone-Blanchet"",""Shirley Fecteau""}",1.0000,baran
+909,author_list,"{""Marie-Pierre Gagnon"",""Claude Sicotte"",""_dith-Romy Nsangou"",""Sonya Grenier"",""Julie Payne-Gagnon""}",1.0000,baran
+126,article_title,[Neurological dysfunction induced by bilirrubin].,1.0000,baran
+153,article_language,eng,1.0000,baran
+508,article_language,eng,1.0000,baran
+972,article_language,eng,1.0000,baran
+126,jounral_abbreviation,Neurologia,1.0000,baran
+978,article_title,Complicated skin and soft tissue infection.,1.0000,baran
+17,article_title,The relationship between capsulorhexis size and anterior chamber depth relation.,1.0000,baran
+71,article_title,Pharmacological treatments for obsessive-compulsive disorder in children and adolescents: a qualitative review.,1.0000,baran
+151,article_title,"Can moxibustion, an ancient treatment modality, be evaluated in a double-blind randomized controlled trial? - A narrative review",1.0000,baran
+338,article_title,Antimicrobial resistance of H. pylori isolates in alaska native persons from 2000-2008: Results from the alaska sentinel surveillance project,1.0000,baran
+388,article_title,Effects of multifunctional fabrics on cardiac autonomic tone and psychological state,1.0000,baran
+546,article_title,Competencies for undergraduate community-based education for the health professions - A systematic review.,1.0000,baran
+978,jounral_abbreviation,J. Antimicrob. Chemother.,1.0000,baran
+157,article_jissue,0,1.0000,baran
+794,article_jissue,0,1.0000,baran
+97,author_list,"{""S. Vernino"",""P.A. Low"",""P. Sandroni"",""K. Kimpinski"",""V. Iodice""}",1.0000,baran
+180,author_list,"{""Sergio Raposeiras-Roub_n"",""Jos Maria Garc_a-Acua"",""Jos Ram_n Gonzlez-Juanatey""}",1.0000,baran
+242,author_list,"{""G. S. McDonald"",""J. W. Bachman"",""P. C. O'Brien""}",1.0000,baran
+266,author_list,"{""H. Oshima"",""K. Kobayashi"",""T. Yamamoto"",""M. Kasai"",""C. Fukaya"",""Y. Katayama""}",1.0000,baran
+304,author_list,"{""C. E. Barber""}",1.0000,baran
+307,author_list,{NULL},1.0000,baran
+365,author_list,{NULL},1.0000,baran
+593,author_list,"{""J. L. Li"",""P. Newcomb""}",1.0000,baran
+703,author_list,"{""M Chouchkova"",""A Engibarov""}",1.0000,baran
+884,author_list,"{""C.P. Richter"",""L.H. Riley Jr.""}",1.0000,baran
+19,id,478292,1.0000,baran
+19,article_title,Haemodynamic ischaemia in paediatric moyamoya disease associated with renovascular hypertension.,1.0000,baran
+210,article_title,[Neurological dysfunction induced by bilirrubin].,1.0000,baran
+695,article_title,Ventricular fibrillation in acute mitral valve insufficiency caused by chordae tendineae rupture: report of a surgically corrected case.,1.0000,baran
+19,journal_title,Acta Neurochirurgica,1.0000,baran
+167,article_jcreated_at,1/10/01,1.0000,baran
+381,article_jcreated_at,1/12/01,1.0000,baran
+473,article_jcreated_at,11/7/05,1.0000,baran
+437,id,687404,1.0000,baran
+893,id,267879,1.0000,baran
+437,jounral_abbreviation,BMC oral health,1.0000,baran
+650,jounral_abbreviation,Am J Infect Control,1.0000,baran
+291,article_jcreated_at,1/1/77,1.0000,baran
+543,article_jcreated_at,1/12/01,1.0000,baran
+555,article_jcreated_at,1/3/07,1.0000,baran
+650,author_list,"{""E Larson"",""B A Laughon"",""K Mayur""}",1.0000,baran
+26,journal_title,Global journal of health science,1.0000,baran
+26,jounral_abbreviation,Glob J Health Sci,1.0000,baran
+26,author_list,"{""Donna M Wilson"",""Jessica A Hewitt"",""Ralph Magnus"",""Jill Vihos"",""Karen Peterson"",""Nancy Barnes""}",1.0000,baran
+175,jounral_abbreviation,Spine,1.0000,baran
+175,author_list,"{""Girault G"",""Rose RJ"",""Weinstein JN"",""Ball PA"",""Hanscom B"",""Fanciullo GJ""}",1.0000,baran
+938,jounral_abbreviation,The Journal of surgical research,1.0000,baran
+496,article_pagination,248-58,1.0000,baran
+603,article_pagination,925-31,1.0000,baran
+824,article_pagination,6-May,1.0000,baran
+938,author_list,"{""J. L. Grosfeld"",""S. Goto"",""G. P. Gardner"",""D. F. Canal"",""D. W. Vane""}",1.0000,baran
+597,id,887041,1.0000,baran
+597,journal_title,Geriatr Gerontol Int,1.0000,baran
+194,article_jvolumn,106,1.0000,baran
+619,article_jvolumn,-1,1.0000,baran
+597,article_jcreated_at,1/10/10,1.0000,baran
+780,jounral_abbreviation,Oper Dent,1.0000,baran
+780,journal_issn,0361-7734,1.0000,baran
+192,author_list,"{""E Larson"",""B A Laughon"",""K Mayur""}",1.0000,baran
+750,jounral_abbreviation,Bundesgesundheitsblatt Gesundheitsforschung Gesundheitsschutz,1.0000,baran
+750,journal_issn,1437-1588,1.0000,baran
+49,article_title,A cohort study of the prevalence and impact of comorbid medical conditions in pediatric bipolar disorder.,1.0000,baran
+49,journal_issn,1555-2101,1.0000,baran
+7,article_title,Activation and blockade of beta adrenoceptors in common cardiac disorders,1.0000,baran
+7,journal_issn,0007-1420,1.0000,baran

@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+rayyan,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,LLMOnly,-,0.05,detected,0.0,0.9307407407407406,0.06925925925925926,0.9349999999999999,False,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,CARE,mondrian,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,LLMOnly,-,0.1,detected,0.0,0.9307407407407406,0.06925925925925926,0.9349999999999999,False,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,CARE,marginal,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,CARE,mondrian,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,LLMOnly,-,0.2,detected,0.0,0.9307407407407406,0.06925925925925926,0.9349999999999999,False,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv
+rayyan,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish:csvs/jellyfish_rayyan_mapped.csv

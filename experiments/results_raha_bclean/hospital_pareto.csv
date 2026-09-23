@@ -1,0 +1,16 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+hospital,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian_src,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,LLMOnly,-,0.05,detected,0.0,0.21282051282051287,0.7871794871794872,0.22564102564102567,False,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,CARE,marginal,0.1,detected,0.21623931623931622,0.0,0.8785854382373804,0.0,True,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian,0.1,detected,0.9372881355932204,0.002702702702702697,0.07500000000000001,0.008108108108108091,True,False,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian_src,0.1,detected,1.0,0.0,0.0,0.0,True,False,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,LLMOnly,-,0.1,detected,0.0,0.21282051282051287,0.7871794871794872,0.22564102564102567,False,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,False,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,CARE,marginal,0.2,detected,0.21623931623931622,0.0,0.8785854382373804,0.0,True,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian,0.2,detected,0.33220338983050846,0.04253301765432569,0.766370706420411,0.06714643381310051,True,False,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,CARE,mondrian_src,0.2,detected,0.37815126050420167,0.0,0.766839378238342,0.0,True,False,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,LLMOnly,-,0.2,detected,0.0,0.21282051282051287,0.7871794871794872,0.22564102564102567,False,True,bclean_keep:csvs/bclean_keep_hospital_mapped.csv
+hospital,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,False,bclean_keep:csvs/bclean_keep_hospital_mapped.csv

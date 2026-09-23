@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights,CARE,marginal,0.05,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,CARE,mondrian,0.05,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,LLMOnly,-,0.05,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,NoOp,-,0.05,errors,1.0,0.0,0.0,0.0,True,False,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,CARE,marginal,0.1,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,CARE,mondrian,0.1,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,LLMOnly,-,0.1,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,NoOp,-,0.1,errors,1.0,0.0,0.0,0.0,True,False,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,CARE,marginal,0.2,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,CARE,mondrian,0.2,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,LLMOnly,-,0.2,errors,0.0,0.0,1.0,0.0,True,True,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv
+flights,NoOp,-,0.2,errors,1.0,0.0,0.0,0.0,True,False,baran:csvs/baran_var_flights/4/baran_flights_mapped.csv

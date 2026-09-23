@@ -1,0 +1,16 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,CARE,mondrian,0.05,detected,0.9197493517718236,0.0053538330957685785,0.14777636199391747,0.00858000858000858,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,CARE,mondrian_src,0.05,detected,0.9203455723542117,0.0064516129032258,0.1465945986140364,0.009677419354838701,True,False,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,LLMOnly,-,0.05,detected,0.0,0.6766104626026807,0.32338953739731957,0.6789450929528752,False,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,CARE,mondrian,0.1,detected,0.9190579083837511,0.006949942935585518,0.14872126639822,0.009163403087150046,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,CARE,mondrian_src,0.1,detected,0.9196544276457883,0.007526881720430101,0.14762095161935224,0.009677419354838701,True,False,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,LLMOnly,-,0.1,detected,0.0,0.6766104626026807,0.32338953739731957,0.6789450929528752,False,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,CARE,marginal,0.2,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,CARE,mondrian,0.2,detected,0.8812445980985306,0.025424886140984326,0.20608507918560237,0.034223133089566184,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,CARE,mondrian_src,0.2,detected,0.876803455723542,0.033869513724034205,0.21139749185015416,0.04526784657806186,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,LLMOnly,-,0.2,detected,0.0,0.6766104626026807,0.32338953739731957,0.6789450929528752,False,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv
+flights,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_flights_mapped.csv

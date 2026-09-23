@@ -1,0 +1,2 @@
+t1&t2&EQ(t1.brewery_id,t2.brewery_id)&IQ(t1.city,t2.city)
+t1&t2&EQ(t1.brewery_id,t2.brewery_id)&IQ(t1.state,t2.state)

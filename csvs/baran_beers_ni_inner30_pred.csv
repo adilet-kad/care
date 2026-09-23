@@ -1,0 +1,1411 @@
+row_id,column,value,confidence,source
+2161,beer_name,Double Trunk,1.0000,baran
+18,beer_name,Samuel Adams Winter Lager,1.0000,baran
+21,beer_name,The Golden One,1.0000,baran
+28,beer_name,Summer Honey,1.0000,baran
+36,beer_name,PONTO S.I.P.A.,1.0000,baran
+39,beer_name,483 Pale Ale,1.0000,baran
+46,beer_name,Schlafly American Brown Ale,1.0000,baran
+96,beer_name,Tart Side of the Moon,1.0000,baran
+123,beer_name,King Coconut,1.0000,baran
+155,beer_name,Miner's Gold,1.0000,baran
+160,beer_name,T-Rail Pale Ale,1.0000,baran
+182,beer_name,15th Anniversary Abbey Ale (2012),1.0000,baran
+212,beer_name,Miami Vice IPA,1.0000,baran
+219,beer_name,Ice Pick Ale,1.0000,baran
+243,beer_name,Java the Hop,1.0000,baran
+249,beer_name,Organic Baba Black Lager,1.0000,baran
+339,beer_name,Hopalicious,1.0000,baran
+361,beer_name,Czech Yo Self,1.0000,baran
+380,beer_name,Hopportunity Knocks IPA,1.0000,baran
+391,beer_name,Worthy Pale,1.0000,baran
+396,beer_name,Dead Armadillo Amber Ale,1.0000,baran
+403,beer_name,Four Squared (2015),1.0000,baran
+432,beer_name,Heliocentric Hefeweizen,1.0000,baran
+448,beer_name,Epicenter Amber Ale,1.0000,baran
+450,beer_name,Mjöllnir,1.0000,baran
+467,beer_name,Point Oktoberfest,1.0000,baran
+521,beer_name,Dirty Blonde Chocolate Ale,1.0000,baran
+574,beer_name,Great Crescent Oktoberfest Lager,1.0000,baran
+589,beer_name,Sand Island Lighthouse,1.0000,baran
+595,beer_name,All Aboard! Anniversary Stout,1.0000,baran
+615,beer_name,Saint Archer Blonde,1.0000,baran
+618,beer_name,Modus Hoperandi,1.0000,baran
+631,beer_name,Gandhi-Bot Double IPA (16 oz.) (2010),1.0000,baran
+658,beer_name,Damascene Apricot Sour,1.0000,baran
+696,beer_name,Hurricane Amber Ale,1.0000,baran
+732,beer_name,Northern Hawk Owl Amber,1.0000,baran
+767,beer_name,Driftwood Ale,1.0000,baran
+788,beer_name,Lobo Lito,1.0000,baran
+946,beer_name,Devils Tramping Ground Tripel,1.0000,baran
+954,beer_name,Station 33 Firehouse Red,1.0000,baran
+980,beer_name,Nooner,1.0000,baran
+1026,beer_name,Back East Porter,1.0000,baran
+1061,beer_name,The Crisp,1.0000,baran
+1077,beer_name,All Aboard! Anniversary Stout,1.0000,baran
+1087,beer_name,Jockamo IPA,1.0000,baran
+1113,beer_name,Sand Island Lighthouse,1.0000,baran
+1142,beer_name,Saison Pamplemousse,1.0000,baran
+1143,beer_name,IPA #11,1.0000,baran
+1154,beer_name,Old Forge Pumpkin Ale,1.0000,baran
+1169,beer_name,Summertime Ale,1.0000,baran
+1172,beer_name,Aftermath Pale Ale,1.0000,baran
+1220,beer_name,Lazy Daze Lager,1.0000,baran
+1232,beer_name,Scape Goat Pale Ale,1.0000,baran
+1270,beer_name,Groupe G,1.0000,baran
+1297,beer_name,All Aboard! Anniversary Stout,1.0000,baran
+1319,beer_name,312 Urban Pale Ale,1.0000,baran
+1329,beer_name,Rise Up Red,1.0000,baran
+1356,beer_name,Steel Rail Extra Pale Ale,1.0000,baran
+1414,beer_name,Boneshaker Brown Ale,1.0000,baran
+1450,beer_name,Big Elm IPA,1.0000,baran
+1491,beer_name,Lionshead,1.0000,baran
+1507,beer_name,O’Malley’s IPA,1.0000,baran
+1527,beer_name,Cleveland Beer Week 2013,1.0000,baran
+1552,beer_name,Perpetual Darkness,1.0000,baran
+1581,beer_name,Double Trunk,1.0000,baran
+1605,beer_name,Grapefruit IPA,1.0000,baran
+1683,beer_name,Ring of Dingle,1.0000,baran
+1698,beer_name,Red Clay IPA,1.0000,baran
+1713,beer_name,Lee Hill Series Vol. 1 - Barrel Aged Brown Ale,1.0000,baran
+1718,beer_name,Jon Boat Coastal Ale,1.0000,baran
+1734,beer_name,Hoponius Union,1.0000,baran
+1745,beer_name,Caldera IPA (2007),1.0000,baran
+1752,beer_name,Bleeding Buckeye Red Ale,1.0000,baran
+1837,beer_name,Humpback Blonde Ale,1.0000,baran
+1846,beer_name,Fox Tail Gluten Free Ale,1.0000,baran
+1853,beer_name,Great Falls Select Pale Ale,1.0000,baran
+1889,beer_name,Hopvale Organic Ale,1.0000,baran
+1921,beer_name,Awry Rye Pale Ale,1.0000,baran
+1931,beer_name,Half Court IPA,1.0000,baran
+1932,beer_name,U. P. Witbier,1.0000,baran
+1952,beer_name,Abbey's Single (2015- ),1.0000,baran
+2012,beer_name,Adam's Stout,1.0000,baran
+2058,beer_name,Upslope Belgian Style Pale Ale,1.0000,baran
+2073,beer_name,Zaison (2012),1.0000,baran
+2128,beer_name,Dolores River Dry Stout,1.0000,baran
+2140,beer_name,Southern Cross,1.0000,baran
+2160,beer_name,AXL Pale Ale,1.0000,baran
+2187,beer_name,Hi-Res,1.0000,baran
+2214,beer_name,TailGate IPA,1.0000,baran
+2236,beer_name,Righteous Ale (2011),1.0000,baran
+2276,beer_name,Pau Hana Pilsner,1.0000,baran
+2292,beer_name,Ten Fidy Imperial Stout (2008),1.0000,baran
+2296,beer_name,Czech Yo Self,1.0000,baran
+2307,beer_name,Dale's Pale Ale (2011),1.0000,baran
+2372,beer_name,W.I.P.A Snappa,1.0000,baran
+2380,beer_name,5:00 O'Clock Afternoon Ale,1.0000,baran
+2161,ounces,16,1.0000,baran
+24,ounces,12,1.0000,baran
+26,ounces,12,1.0000,baran
+28,ounces,12,1.0000,baran
+48,ounces,12,1.0000,baran
+55,ounces,16,1.0000,baran
+68,ounces,16,1.0000,baran
+73,ounces,16,1.0000,baran
+96,ounces,16,1.0000,baran
+110,ounces,12,1.0000,baran
+164,ounces,12,1.0000,baran
+182,ounces,12,1.0000,baran
+221,ounces,16,1.0000,baran
+223,ounces,16,1.0000,baran
+269,ounces,16,1.0000,baran
+284,ounces,12,1.0000,baran
+317,ounces,12,1.0000,baran
+425,ounces,16,1.0000,baran
+448,ounces,16,1.0000,baran
+449,ounces,16,1.0000,baran
+501,ounces,16,1.0000,baran
+503,ounces,16,1.0000,baran
+560,ounces,12,1.0000,baran
+635,ounces,12,1.0000,baran
+677,ounces,16,1.0000,baran
+704,ounces,12,1.0000,baran
+767,ounces,12,1.0000,baran
+798,ounces,16,1.0000,baran
+889,ounces,12,1.0000,baran
+1046,ounces,16,1.0000,baran
+1076,ounces,16,1.0000,baran
+1083,ounces,16,1.0000,baran
+1154,ounces,12,1.0000,baran
+1220,ounces,12,1.0000,baran
+1231,ounces,16,1.0000,baran
+1255,ounces,12,1.0000,baran
+1319,ounces,16,1.0000,baran
+1344,ounces,16,1.0000,baran
+1356,ounces,16,1.0000,baran
+1371,ounces,16,1.0000,baran
+1389,ounces,16,1.0000,baran
+1427,ounces,16,1.0000,baran
+1444,ounces,12,1.0000,baran
+1446,ounces,12,1.0000,baran
+1456,ounces,16,1.0000,baran
+1457,ounces,16,1.0000,baran
+1469,ounces,12,1.0000,baran
+1494,ounces,16,1.0000,baran
+1502,ounces,16,1.0000,baran
+1542,ounces,16,1.0000,baran
+1552,ounces,12,1.0000,baran
+1602,ounces,12,1.0000,baran
+1641,ounces,16,1.0000,baran
+1646,ounces,16,1.0000,baran
+1693,ounces,12,1.0000,baran
+1700,ounces,16,1.0000,baran
+1704,ounces,16,1.0000,baran
+1716,ounces,16,1.0000,baran
+1738,ounces,16,1.0000,baran
+1745,ounces,12,1.0000,baran
+1771,ounces,12,1.0000,baran
+1790,ounces,12,1.0000,baran
+1837,ounces,16,1.0000,baran
+1841,ounces,12,1.0000,baran
+1883,ounces,12,1.0000,baran
+1964,ounces,12,1.0000,baran
+1983,ounces,12,1.0000,baran
+2099,ounces,12,1.0000,baran
+2109,ounces,16,1.0000,baran
+2150,ounces,12,1.0000,baran
+2266,ounces,16,1.0000,baran
+2303,ounces,12,1.0000,baran
+2306,ounces,12,1.0000,baran
+2311,ounces,16,1.0000,baran
+2161,abv,0.099,1.0000,baran
+3,abv,0.099,1.0000,baran
+61,abv,0.099,1.0000,baran
+63,abv,0.099,1.0000,baran
+74,abv,0.099,1.0000,baran
+78,abv,0.099,1.0000,baran
+107,abv,0.099,1.0000,baran
+110,abv,0.099,1.0000,baran
+114,abv,0.099,1.0000,baran
+185,abv,0.099,1.0000,baran
+206,abv,0.099,1.0000,baran
+228,abv,0.099,1.0000,baran
+263,abv,0.099,1.0000,baran
+312,abv,0.099,1.0000,baran
+320,abv,0.099,1.0000,baran
+344,abv,0.099,1.0000,baran
+347,abv,0.099,1.0000,baran
+358,abv,0.099,1.0000,baran
+402,abv,0.099,1.0000,baran
+416,abv,0.099,1.0000,baran
+424,abv,0.099,1.0000,baran
+431,abv,0.099,1.0000,baran
+435,abv,0.099,1.0000,baran
+440,abv,0.099,1.0000,baran
+443,abv,0.099,1.0000,baran
+446,abv,0.099,1.0000,baran
+447,abv,0.099,1.0000,baran
+468,abv,0.099,1.0000,baran
+482,abv,0.099,1.0000,baran
+486,abv,0.099,1.0000,baran
+489,abv,0.099,1.0000,baran
+531,abv,0.099,1.0000,baran
+580,abv,0.099,1.0000,baran
+595,abv,0.099,1.0000,baran
+598,abv,0.099,1.0000,baran
+615,abv,0.099,1.0000,baran
+663,abv,0.099,1.0000,baran
+667,abv,0.099,1.0000,baran
+679,abv,0.099,1.0000,baran
+684,abv,0.099,1.0000,baran
+741,abv,0.099,1.0000,baran
+756,abv,0.099,1.0000,baran
+758,abv,0.099,1.0000,baran
+825,abv,0.099,1.0000,baran
+832,abv,0.099,1.0000,baran
+849,abv,0.099,1.0000,baran
+853,abv,0.099,1.0000,baran
+868,abv,0.099,1.0000,baran
+878,abv,0.099,1.0000,baran
+899,abv,0.099,1.0000,baran
+957,abv,0.099,1.0000,baran
+995,abv,0.099,1.0000,baran
+1001,abv,0.099,1.0000,baran
+1015,abv,0.099,1.0000,baran
+1063,abv,0.099,1.0000,baran
+1078,abv,0.099,1.0000,baran
+1082,abv,0.099,1.0000,baran
+1093,abv,0.099,1.0000,baran
+1103,abv,0.099,1.0000,baran
+1108,abv,0.099,1.0000,baran
+1145,abv,0.099,1.0000,baran
+1185,abv,0.099,1.0000,baran
+1202,abv,0.099,1.0000,baran
+1226,abv,0.099,1.0000,baran
+1227,abv,0.099,1.0000,baran
+1232,abv,0.099,1.0000,baran
+1254,abv,0.099,1.0000,baran
+1299,abv,0.099,1.0000,baran
+1301,abv,0.099,1.0000,baran
+1313,abv,0.099,1.0000,baran
+1349,abv,0.099,1.0000,baran
+1367,abv,0.099,1.0000,baran
+1389,abv,0.099,1.0000,baran
+1408,abv,0.099,1.0000,baran
+1446,abv,0.099,1.0000,baran
+1456,abv,0.099,1.0000,baran
+1468,abv,0.099,1.0000,baran
+1498,abv,0.099,1.0000,baran
+1505,abv,0.099,1.0000,baran
+1512,abv,0.099,1.0000,baran
+1525,abv,0.099,1.0000,baran
+1530,abv,0.099,1.0000,baran
+1544,abv,0.099,1.0000,baran
+1565,abv,0.099,1.0000,baran
+1591,abv,0.099,1.0000,baran
+1612,abv,0.099,1.0000,baran
+1617,abv,0.099,1.0000,baran
+1656,abv,0.045,1.0000,baran
+1661,abv,0.099,1.0000,baran
+1694,abv,0.099,1.0000,baran
+1723,abv,0.099,1.0000,baran
+1744,abv,0.099,1.0000,baran
+1756,abv,0.099,1.0000,baran
+1770,abv,0.099,1.0000,baran
+1772,abv,0.099,1.0000,baran
+1788,abv,0.099,1.0000,baran
+1789,abv,0.099,1.0000,baran
+1796,abv,0.099,1.0000,baran
+1797,abv,0.099,1.0000,baran
+1804,abv,0.099,1.0000,baran
+1834,abv,0.099,1.0000,baran
+1839,abv,0.099,1.0000,baran
+1861,abv,0.099,1.0000,baran
+1879,abv,0.099,1.0000,baran
+1920,abv,0.099,1.0000,baran
+1945,abv,0.099,1.0000,baran
+1962,abv,0.099,1.0000,baran
+1976,abv,0.099,1.0000,baran
+2003,abv,0.099,1.0000,baran
+2034,abv,0.099,1.0000,baran
+2039,abv,0.099,1.0000,baran
+2051,abv,0.099,1.0000,baran
+2056,abv,0.099,1.0000,baran
+2061,abv,0.099,1.0000,baran
+2068,abv,0.099,1.0000,baran
+2072,abv,0.099,1.0000,baran
+2080,abv,0.099,1.0000,baran
+2094,abv,0.099,1.0000,baran
+2099,abv,0.099,1.0000,baran
+2102,abv,0.099,1.0000,baran
+2129,abv,0.099,1.0000,baran
+2139,abv,0.099,1.0000,baran
+2141,abv,0.099,1.0000,baran
+2143,abv,0.099,1.0000,baran
+2151,abv,0.099,1.0000,baran
+2178,abv,0.099,1.0000,baran
+2180,abv,0.099,1.0000,baran
+2181,abv,0.099,1.0000,baran
+2191,abv,0.099,1.0000,baran
+2192,abv,0.099,1.0000,baran
+2195,abv,0.099,1.0000,baran
+2201,abv,0.099,1.0000,baran
+2237,abv,0.099,1.0000,baran
+2260,abv,0.099,1.0000,baran
+2264,abv,0.099,1.0000,baran
+2305,abv,0.099,1.0000,baran
+2310,abv,0.099,1.0000,baran
+2311,abv,0.099,1.0000,baran
+2322,abv,0.099,1.0000,baran
+2394,abv,0.099,1.0000,baran
+2399,abv,0.099,1.0000,baran
+2161,ibu,101,1.0000,baran
+355,ibu,101,1.0000,baran
+361,ibu,101,1.0000,baran
+517,ibu,101,1.0000,baran
+632,ibu,101,1.0000,baran
+720,ibu,101,1.0000,baran
+843,ibu,101,1.0000,baran
+874,ibu,101,1.0000,baran
+976,ibu,101,1.0000,baran
+1110,ibu,16,1.0000,baran
+1311,ibu,101,1.0000,baran
+1315,ibu,101,1.0000,baran
+1439,ibu,101,1.0000,baran
+1589,ibu,101,1.0000,baran
+2087,ibu,101,1.0000,baran
+2332,ibu,16,1.0000,baran
+2342,ibu,101,1.0000,baran
+2161,brewery_id,33,1.0000,baran
+2161,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2161,city,Torrance,1.0000,baran
+2161,state,CA,1.0000,baran
+28,state,CA,1.0000,baran
+233,state,CA,1.0000,baran
+247,state,CA,1.0000,baran
+269,state,CA,1.0000,baran
+343,state,CA,1.0000,baran
+437,state,CA,1.0000,baran
+438,state,CA,1.0000,baran
+453,state,CA,1.0000,baran
+471,state,CA,1.0000,baran
+498,state,CA,1.0000,baran
+507,state,CA,1.0000,baran
+517,state,CA,1.0000,baran
+622,state,CA,1.0000,baran
+669,state,CA,1.0000,baran
+720,state,CA,1.0000,baran
+808,state,CA,1.0000,baran
+815,state,CA,1.0000,baran
+995,state,CA,1.0000,baran
+1109,state,CA,1.0000,baran
+1141,state,CA,1.0000,baran
+1245,state,CA,1.0000,baran
+1276,state,CA,1.0000,baran
+1327,state,CA,1.0000,baran
+1338,state,CA,1.0000,baran
+1354,state,CA,1.0000,baran
+1435,state,CA,1.0000,baran
+1468,state,CA,1.0000,baran
+1472,state,CA,1.0000,baran
+1634,state,CA,1.0000,baran
+1772,state,CA,1.0000,baran
+1881,state,CA,1.0000,baran
+1943,state,CA,1.0000,baran
+1991,state,CA,1.0000,baran
+1994,state,CA,1.0000,baran
+2028,state,CA,1.0000,baran
+2307,state,CA,1.0000,baran
+2333,state,CA,1.0000,baran
+2376,state,CA,1.0000,baran
+2377,state,CA,1.0000,baran
+2022,id,1410,1.0000,baran
+651,id,1410,1.0000,baran
+1559,id,412,1.0000,baran
+2022,beer_name,Sand Island Lighthouse,1.0000,baran
+2022,style,Kölsch,1.0000,baran
+2022,ounces,12,1.0000,baran
+2,ounces,12,1.0000,baran
+15,ounces,12,1.0000,baran
+20,ounces,12,1.0000,baran
+22,ounces,16,1.0000,baran
+30,ounces,12,1.0000,baran
+60,ounces,16,1.0000,baran
+63,ounces,12,1.0000,baran
+74,ounces,16,1.0000,baran
+76,ounces,16,1.0000,baran
+78,ounces,16,1.0000,baran
+84,ounces,16,1.0000,baran
+85,ounces,16,1.0000,baran
+117,ounces,12,1.0000,baran
+131,ounces,16,1.0000,baran
+152,ounces,16,1.0000,baran
+158,ounces,12,1.0000,baran
+167,ounces,12,1.0000,baran
+177,ounces,12,1.0000,baran
+217,ounces,12,1.0000,baran
+277,ounces,12,1.0000,baran
+278,ounces,12,1.0000,baran
+292,ounces,12,1.0000,baran
+293,ounces,12,1.0000,baran
+313,ounces,12,1.0000,baran
+322,ounces,12,1.0000,baran
+335,ounces,12,1.0000,baran
+377,ounces,12,1.0000,baran
+398,ounces,16,1.0000,baran
+399,ounces,16,1.0000,baran
+428,ounces,16,1.0000,baran
+461,ounces,12,1.0000,baran
+465,ounces,16,1.0000,baran
+499,ounces,16,1.0000,baran
+510,ounces,12,1.0000,baran
+516,ounces,12,1.0000,baran
+522,ounces,12,1.0000,baran
+540,ounces,12,1.0000,baran
+546,ounces,16,1.0000,baran
+551,ounces,16,1.0000,baran
+590,ounces,16,1.0000,baran
+601,ounces,12,1.0000,baran
+628,ounces,12,1.0000,baran
+630,ounces,12,1.0000,baran
+631,ounces,16,1.0000,baran
+638,ounces,12,1.0000,baran
+651,ounces,16,1.0000,baran
+665,ounces,12,1.0000,baran
+678,ounces,16,1.0000,baran
+680,ounces,12,1.0000,baran
+681,ounces,12,1.0000,baran
+721,ounces,12,1.0000,baran
+728,ounces,16,1.0000,baran
+735,ounces,16,1.0000,baran
+744,ounces,16,1.0000,baran
+749,ounces,16,1.0000,baran
+757,ounces,12,1.0000,baran
+773,ounces,12,1.0000,baran
+778,ounces,16,1.0000,baran
+782,ounces,16,1.0000,baran
+801,ounces,16,1.0000,baran
+804,ounces,16,1.0000,baran
+837,ounces,12,1.0000,baran
+866,ounces,12,1.0000,baran
+874,ounces,12,1.0000,baran
+882,ounces,12,1.0000,baran
+885,ounces,16,1.0000,baran
+894,ounces,16,1.0000,baran
+902,ounces,16,1.0000,baran
+906,ounces,16,1.0000,baran
+916,ounces,16,1.0000,baran
+931,ounces,16,1.0000,baran
+939,ounces,16,1.0000,baran
+943,ounces,16,1.0000,baran
+945,ounces,16,1.0000,baran
+950,ounces,12,1.0000,baran
+969,ounces,16,1.0000,baran
+976,ounces,16,1.0000,baran
+978,ounces,16,1.0000,baran
+1015,ounces,12,1.0000,baran
+1026,ounces,12,1.0000,baran
+1031,ounces,12,1.0000,baran
+1037,ounces,12,1.0000,baran
+1039,ounces,16,1.0000,baran
+1052,ounces,12,1.0000,baran
+1056,ounces,16,1.0000,baran
+1072,ounces,12,1.0000,baran
+1092,ounces,16,1.0000,baran
+1094,ounces,16,1.0000,baran
+1102,ounces,12,1.0000,baran
+1116,ounces,12,1.0000,baran
+1121,ounces,16,1.0000,baran
+1125,ounces,12,1.0000,baran
+1129,ounces,12,1.0000,baran
+1131,ounces,12,1.0000,baran
+1134,ounces,12,1.0000,baran
+1137,ounces,12,1.0000,baran
+1148,ounces,12,1.0000,baran
+1164,ounces,16,1.0000,baran
+1197,ounces,12,1.0000,baran
+1210,ounces,12,1.0000,baran
+1233,ounces,16,1.0000,baran
+1243,ounces,12,1.0000,baran
+1272,ounces,12,1.0000,baran
+1276,ounces,16,1.0000,baran
+1279,ounces,16,1.0000,baran
+1296,ounces,12,1.0000,baran
+1305,ounces,12,1.0000,baran
+1308,ounces,12,1.0000,baran
+1310,ounces,12,1.0000,baran
+1320,ounces,16,1.0000,baran
+1326,ounces,12,1.0000,baran
+1328,ounces,12,1.0000,baran
+1337,ounces,16,1.0000,baran
+1343,ounces,16,1.0000,baran
+1369,ounces,12,1.0000,baran
+1379,ounces,16,1.0000,baran
+1426,ounces,16,1.0000,baran
+1431,ounces,16,1.0000,baran
+1435,ounces,16,1.0000,baran
+1493,ounces,12,1.0000,baran
+1531,ounces,16,1.0000,baran
+1534,ounces,16,1.0000,baran
+1535,ounces,16,1.0000,baran
+1537,ounces,16,1.0000,baran
+1538,ounces,16,1.0000,baran
+1544,ounces,16,1.0000,baran
+1587,ounces,12,1.0000,baran
+1592,ounces,12,1.0000,baran
+1600,ounces,16,1.0000,baran
+1611,ounces,16,1.0000,baran
+1638,ounces,12,1.0000,baran
+1658,ounces,16,1.0000,baran
+1682,ounces,12,1.0000,baran
+1689,ounces,12,1.0000,baran
+1705,ounces,16,1.0000,baran
+1712,ounces,16,1.0000,baran
+1721,ounces,12,1.0000,baran
+1722,ounces,12,1.0000,baran
+1723,ounces,12,1.0000,baran
+1726,ounces,12,1.0000,baran
+1732,ounces,12,1.0000,baran
+1735,ounces,12,1.0000,baran
+1740,ounces,16,1.0000,baran
+1763,ounces,16,1.0000,baran
+1765,ounces,16,1.0000,baran
+1767,ounces,16,1.0000,baran
+1772,ounces,12,1.0000,baran
+1774,ounces,12,1.0000,baran
+1782,ounces,16,1.0000,baran
+1789,ounces,16,1.0000,baran
+1806,ounces,12,1.0000,baran
+1825,ounces,12,1.0000,baran
+1831,ounces,16,1.0000,baran
+1844,ounces,12,1.0000,baran
+1847,ounces,12,1.0000,baran
+1852,ounces,16,1.0000,baran
+1859,ounces,12,1.0000,baran
+1866,ounces,16,1.0000,baran
+1875,ounces,12,1.0000,baran
+1887,ounces,12,1.0000,baran
+1919,ounces,12,1.0000,baran
+1934,ounces,12,1.0000,baran
+1975,ounces,16,1.0000,baran
+1997,ounces,12,1.0000,baran
+2003,ounces,16,1.0000,baran
+2007,ounces,12,1.0000,baran
+2008,ounces,12,1.0000,baran
+2009,ounces,12,1.0000,baran
+2015,ounces,12,1.0000,baran
+2016,ounces,12,1.0000,baran
+2034,ounces,16,1.0000,baran
+2038,ounces,16,1.0000,baran
+2047,ounces,16,1.0000,baran
+2052,ounces,16,1.0000,baran
+2059,ounces,16,1.0000,baran
+2064,ounces,16,1.0000,baran
+2076,ounces,16,1.0000,baran
+2080,ounces,16,1.0000,baran
+2083,ounces,16,1.0000,baran
+2118,ounces,16,1.0000,baran
+2119,ounces,16,1.0000,baran
+2125,ounces,16,1.0000,baran
+2130,ounces,12,1.0000,baran
+2131,ounces,12,1.0000,baran
+2136,ounces,12,1.0000,baran
+2164,ounces,12,1.0000,baran
+2182,ounces,16,1.0000,baran
+2192,ounces,16,1.0000,baran
+2206,ounces,16,1.0000,baran
+2229,ounces,12,1.0000,baran
+2234,ounces,12,1.0000,baran
+2247,ounces,16,1.0000,baran
+2278,ounces,16,1.0000,baran
+2304,ounces,12,1.0000,baran
+2307,ounces,16,1.0000,baran
+2315,ounces,12,1.0000,baran
+2337,ounces,12,1.0000,baran
+2345,ounces,12,1.0000,baran
+2356,ounces,12,1.0000,baran
+2360,ounces,12,1.0000,baran
+2374,ounces,12,1.0000,baran
+2377,ounces,16,1.0000,baran
+2388,ounces,12,1.0000,baran
+2403,ounces,12,1.0000,baran
+2409,ounces,12,1.0000,baran
+2022,abv,0.051,1.0000,baran
+47,abv,0.051,1.0000,baran
+301,abv,0.051,1.0000,baran
+510,abv,0.051,1.0000,baran
+511,abv,0.051,1.0000,baran
+601,abv,0.051,1.0000,baran
+719,abv,0.051,1.0000,baran
+897,abv,0.051,1.0000,baran
+1000,abv,0.051,1.0000,baran
+1089,abv,0.051,1.0000,baran
+1139,abv,0.051,1.0000,baran
+1427,abv,0.051,1.0000,baran
+1514,abv,0.051,1.0000,baran
+1579,abv,0.051,1.0000,baran
+1730,abv,0.051,1.0000,baran
+1739,abv,0.051,1.0000,baran
+1798,abv,0.051,1.0000,baran
+2404,abv,0.051,1.0000,baran
+132,ibu,12,1.0000,baran
+1053,ibu,12,1.0000,baran
+1586,ibu,12,1.0000,baran
+2022,brewery_id,412,1.0000,baran
+2022,city,Huntsville,1.0000,baran
+202,city,Huntsville,1.0000,baran
+405,city,Torrance,1.0000,baran
+443,city,Huntsville,1.0000,baran
+587,city,Torrance,1.0000,baran
+651,city,Torrance,1.0000,baran
+656,city,Torrance,1.0000,baran
+735,city,Torrance,1.0000,baran
+1057,city,Torrance,1.0000,baran
+1289,city,Torrance,1.0000,baran
+1404,city,Huntsville,1.0000,baran
+1573,city,Torrance,1.0000,baran
+1658,city,Huntsville,1.0000,baran
+2225,city,Torrance,1.0000,baran
+2022,state,AL,1.0000,baran
+1731,beer_name,Dad,1.0000,baran
+712,beer_name,Sand Island Lighthouse,1.0000,baran
+1692,beer_name,Double Trunk,1.0000,baran
+1960,beer_name,Dad,1.0000,baran
+2029,beer_name,Sand Island Lighthouse,1.0000,baran
+2110,beer_name,Double Trunk,1.0000,baran
+1731,style,American Amber / Red Ale,1.0000,baran
+186,ounces,12,1.0000,baran
+240,ounces,16,1.0000,baran
+242,ounces,16,1.0000,baran
+315,ounces,12,1.0000,baran
+344,ounces,12,1.0000,baran
+547,ounces,12,1.0000,baran
+736,ounces,12,1.0000,baran
+790,ounces,16,1.0000,baran
+832,ounces,16,1.0000,baran
+836,ounces,16,1.0000,baran
+927,ounces,12,1.0000,baran
+941,ounces,16,1.0000,baran
+1117,ounces,12,1.0000,baran
+1118,ounces,16,1.0000,baran
+1200,ounces,12,1.0000,baran
+1219,ounces,12,1.0000,baran
+1338,ounces,16,1.0000,baran
+1377,ounces,12,1.0000,baran
+1397,ounces,16,1.0000,baran
+1488,ounces,16,1.0000,baran
+1503,ounces,12,1.0000,baran
+1505,ounces,12,1.0000,baran
+1569,ounces,12,1.0000,baran
+1584,ounces,12,1.0000,baran
+1687,ounces,12,1.0000,baran
+1769,ounces,16,1.0000,baran
+1770,ounces,16,1.0000,baran
+1786,ounces,12,1.0000,baran
+2091,ounces,12,1.0000,baran
+2265,ounces,16,1.0000,baran
+2371,ounces,12,1.0000,baran
+2379,ounces,16,1.0000,baran
+1731,abv,0.06,1.0000,baran
+1731,ibu,60,1.0000,baran
+1731,brewery_id,93,1.0000,baran
+1731,brewery_name,Rhinegeist Brewery,1.0000,baran
+1731,state,OH,1.0000,baran
+173,state,OH,1.0000,baran
+273,state,AL,1.0000,baran
+363,state,AL,1.0000,baran
+465,state,OH,1.0000,baran
+608,state,AL,1.0000,baran
+664,state,AL,1.0000,baran
+746,state,OH,1.0000,baran
+832,state,AL,1.0000,baran
+904,state,AL,1.0000,baran
+1054,state,AL,1.0000,baran
+1090,state,AL,1.0000,baran
+1154,state,AL,1.0000,baran
+1156,state,AL,1.0000,baran
+1303,state,AL,1.0000,baran
+1328,state,OH,1.0000,baran
+1337,state,OH,1.0000,baran
+1389,state,AL,1.0000,baran
+1510,state,OH,1.0000,baran
+1537,state,OH,1.0000,baran
+1649,state,OH,1.0000,baran
+1874,state,OH,1.0000,baran
+1909,state,AL,1.0000,baran
+2053,state,AL,1.0000,baran
+2263,state,AL,1.0000,baran
+2329,state,OH,1.0000,baran
+884,id,1259,1.0000,baran
+884,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+3,style,Kölsch,1.0000,baran
+16,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+32,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+62,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+100,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+109,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+121,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+137,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+139,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+161,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+173,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+202,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+217,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+233,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+242,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+251,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+274,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+297,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+309,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+317,style,Kölsch,1.0000,baran
+389,style,Kölsch,1.0000,baran
+394,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+422,style,American Amber / Red Ale,1.0000,baran
+433,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+475,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+485,style,American Amber / Red Ale,1.0000,baran
+500,style,Asheville,1.0000,baran
+507,style,Asheville,1.0000,baran
+555,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+577,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+626,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+658,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+693,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+702,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+800,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+811,style,American Amber / Red Ale,1.0000,baran
+817,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+869,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+923,style,American Amber / Red Ale,1.0000,baran
+934,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+935,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+987,style,American Amber / Red Ale,1.0000,baran
+1017,style,Asheville,1.0000,baran
+1042,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1053,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1058,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1064,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1078,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1119,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1137,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1182,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1197,style,American Amber / Red Ale,1.0000,baran
+1244,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1248,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1286,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1380,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1396,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1403,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1427,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1429,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1432,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1440,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1482,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1535,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1564,style,American Amber / Red Ale,1.0000,baran
+1582,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1671,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1674,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1721,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1758,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1772,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1774,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1804,style,Asheville,1.0000,baran
+1834,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1856,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1859,style,Asheville,1.0000,baran
+1879,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1918,style,Kölsch,1.0000,baran
+1972,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1981,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1982,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+1986,style,Kölsch,1.0000,baran
+2033,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2037,style,Asheville,1.0000,baran
+2052,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2150,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2151,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2164,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2216,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2227,style,Asheville,1.0000,baran
+2280,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2291,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2296,style,Asheville,1.0000,baran
+2300,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2302,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2318,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2335,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2336,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2352,style,American Amber / Red Ale,1.0000,baran
+2365,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2371,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2392,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+2406,style,Extra Special / Strong Bitter (ESB),1.0000,baran
+884,abv,0.052,1.0000,baran
+884,ibu,42,1.0000,baran
+884,brewery_id,433,1.0000,baran
+884,city,Asheville,1.0000,baran
+258,city,Asheville,1.0000,baran
+998,city,Asheville,1.0000,baran
+1141,city,Asheville,1.0000,baran
+1359,city,Asheville,1.0000,baran
+1471,city,Asheville,1.0000,baran
+1515,city,Asheville,1.0000,baran
+2192,city,Asheville,1.0000,baran
+1989,id,369,1.0000,baran
+108,style,Crozet,1.0000,baran
+241,style,Crozet,1.0000,baran
+521,style,Crozet,1.0000,baran
+643,style,Crozet,1.0000,baran
+704,style,Crozet,1.0000,baran
+1050,style,Crozet,1.0000,baran
+1521,style,Crozet,1.0000,baran
+1601,style,Crozet,1.0000,baran
+1665,style,Crozet,1.0000,baran
+1686,style,Crozet,1.0000,baran
+1724,style,Crozet,1.0000,baran
+1869,style,Crozet,1.0000,baran
+1890,style,Crozet,1.0000,baran
+2044,style,Crozet,1.0000,baran
+2339,style,Crozet,1.0000,baran
+1989,abv,0.048,1.0000,baran
+1989,ibu,12,1.0000,baran
+1989,brewery_id,383,1.0000,baran
+1989,brewery_name,Starr Hill Brewery,1.0000,baran
+1989,city,Crozet,1.0000,baran
+1835,id,1768,1.0000,baran
+1835,style,English Brown Ale,1.0000,baran
+82,style,English Brown Ale,1.0000,baran
+156,style,English Brown Ale,1.0000,baran
+561,style,English Brown Ale,1.0000,baran
+878,style,English Brown Ale,1.0000,baran
+1309,style,English Brown Ale,1.0000,baran
+1603,style,English Brown Ale,1.0000,baran
+2170,style,English Brown Ale,1.0000,baran
+2398,style,English Brown Ale,1.0000,baran
+1835,abv,0.053,1.0000,baran
+1835,ibu,20,1.0000,baran
+1835,brewery_name,Seventh Son Brewing Company,1.0000,baran
+1835,city,Columbus,1.0000,baran
+740,city,Columbus,1.0000,baran
+1982,city,Columbus,1.0000,baran
+1340,beer_name,Grazias,1.0000,baran
+1340,abv,0.063,1.0000,baran
+1340,ibu,30,1.0000,baran
+1340,brewery_id,3,1.0000,baran
+1340,city,San Diego,1.0000,baran
+1340,state,CA,1.0000,baran
+1768,id,1577,1.0000,baran
+1768,abv,0.076,1.0000,baran
+1768,brewery_id,376,1.0000,baran
+150,brewery_id,383,1.0000,baran
+190,brewery_id,383,1.0000,baran
+288,brewery_id,3,1.0000,baran
+304,brewery_id,383,1.0000,baran
+617,brewery_id,376,1.0000,baran
+852,brewery_id,101,1.0000,baran
+942,brewery_id,93,1.0000,baran
+1505,brewery_id,93,1.0000,baran
+1692,brewery_id,383,1.0000,baran
+1768,brewery_name,RoughTail Brewing Company,1.0000,baran
+24,brewery_name,The Dudes' Brewing Company,1.0000,baran
+27,brewery_name,The Dudes' Brewing Company,1.0000,baran
+36,brewery_name,The Dudes' Brewing Company,1.0000,baran
+77,brewery_name,Seventh Son Brewing Company,1.0000,baran
+129,brewery_name,Seventh Son Brewing Company,1.0000,baran
+181,brewery_name,The Dudes' Brewing Company,1.0000,baran
+319,brewery_name,The Dudes' Brewing Company,1.0000,baran
+348,brewery_name,English Brown Ale,1.0000,baran
+355,brewery_name,The Dudes' Brewing Company,1.0000,baran
+372,brewery_name,Seventh Son Brewing Company,1.0000,baran
+378,brewery_name,Starr Hill Brewery,1.0000,baran
+559,brewery_name,English Brown Ale,1.0000,baran
+604,brewery_name,Seventh Son Brewing Company,1.0000,baran
+615,brewery_name,Rhinegeist Brewery,1.0000,baran
+635,brewery_name,The Dudes' Brewing Company,1.0000,baran
+638,brewery_name,English Brown Ale,1.0000,baran
+740,brewery_name,The Dudes' Brewing Company,1.0000,baran
+779,brewery_name,RoughTail Brewing Company,1.0000,baran
+804,brewery_name,Seventh Son Brewing Company,1.0000,baran
+920,brewery_name,Seventh Son Brewing Company,1.0000,baran
+957,brewery_name,The Dudes' Brewing Company,1.0000,baran
+959,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1058,brewery_name,Seventh Son Brewing Company,1.0000,baran
+1137,brewery_name,Seventh Son Brewing Company,1.0000,baran
+1200,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1208,brewery_name,Rhinegeist Brewery,1.0000,baran
+1276,brewery_name,English Brown Ale,1.0000,baran
+1322,brewery_name,Seventh Son Brewing Company,1.0000,baran
+1342,brewery_name,English Brown Ale,1.0000,baran
+1425,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1434,brewery_name,Seventh Son Brewing Company,1.0000,baran
+1478,brewery_name,Seventh Son Brewing Company,1.0000,baran
+1489,brewery_name,Starr Hill Brewery,1.0000,baran
+1514,brewery_name,Starr Hill Brewery,1.0000,baran
+1516,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1549,brewery_name,English Brown Ale,1.0000,baran
+1562,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1636,brewery_name,Seventh Son Brewing Company,1.0000,baran
+1658,brewery_name,English Brown Ale,1.0000,baran
+1681,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1694,brewery_name,English Brown Ale,1.0000,baran
+1727,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1884,brewery_name,English Brown Ale,1.0000,baran
+1968,brewery_name,English Brown Ale,1.0000,baran
+1974,brewery_name,English Brown Ale,1.0000,baran
+2010,brewery_name,Seventh Son Brewing Company,1.0000,baran
+2011,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2012,brewery_name,Starr Hill Brewery,1.0000,baran
+2100,brewery_name,Seventh Son Brewing Company,1.0000,baran
+2296,brewery_name,Rhinegeist Brewery,1.0000,baran
+2323,brewery_name,English Brown Ale,1.0000,baran
+2346,brewery_name,RoughTail Brewing Company,1.0000,baran
+2375,brewery_name,English Brown Ale,1.0000,baran
+1768,city,Midwest City,1.0000,baran
+8,city,San Diego,1.0000,baran
+206,city,San Diego,1.0000,baran
+336,city,Midwest City,1.0000,baran
+351,city,San Diego,1.0000,baran
+815,city,Midwest City,1.0000,baran
+829,city,San Diego,1.0000,baran
+842,city,San Diego,1.0000,baran
+853,city,San Diego,1.0000,baran
+934,city,San Diego,1.0000,baran
+1076,city,Midwest City,1.0000,baran
+1115,city,San Diego,1.0000,baran
+1173,city,Midwest City,1.0000,baran
+1198,city,Midwest City,1.0000,baran
+1578,city,Midwest City,1.0000,baran
+1641,city,Midwest City,1.0000,baran
+1710,city,Midwest City,1.0000,baran
+1781,city,San Diego,1.0000,baran
+2083,city,Midwest City,1.0000,baran
+2250,city,San Diego,1.0000,baran
+2383,city,San Diego,1.0000,baran
+1768,state,OK,1.0000,baran
+286,id,2484,1.0000,baran
+115,id,79,1.0000,baran
+568,id,2484,1.0000,baran
+696,id,3,1.0000,baran
+986,id,1577,1.0000,baran
+1218,id,79,1.0000,baran
+1289,id,1768,1.0000,baran
+1392,id,79,1.0000,baran
+1457,id,1768,1.0000,baran
+286,beer_name,Bomber Mountain Amber Ale,1.0000,baran
+1964,beer_name,Grazias,1.0000,baran
+286,style,American Amber / Red Ale,1.0000,baran
+76,style,American Amber / Red Ale,1.0000,baran
+106,style,American Amber / Red Ale,1.0000,baran
+140,style,American Amber / Red Ale,1.0000,baran
+150,style,American Amber / Red Ale,1.0000,baran
+275,style,American Amber / Red Ale,1.0000,baran
+281,style,American Amber / Red Ale,1.0000,baran
+282,style,American Amber / Red Ale,1.0000,baran
+313,style,San Diego,1.0000,baran
+320,style,American Amber / Red Ale,1.0000,baran
+324,style,San Diego,1.0000,baran
+326,style,American Amber / Red Ale,1.0000,baran
+349,style,American Amber / Red Ale,1.0000,baran
+352,style,American Amber / Red Ale,1.0000,baran
+362,style,American Amber / Red Ale,1.0000,baran
+406,style,American Amber / Red Ale,1.0000,baran
+452,style,American Amber / Red Ale,1.0000,baran
+550,style,American Amber / Red Ale,1.0000,baran
+627,style,American Amber / Red Ale,1.0000,baran
+730,style,American Amber / Red Ale,1.0000,baran
+783,style,American Amber / Red Ale,1.0000,baran
+839,style,American Amber / Red Ale,1.0000,baran
+871,style,American Amber / Red Ale,1.0000,baran
+906,style,American Amber / Red Ale,1.0000,baran
+993,style,American Amber / Red Ale,1.0000,baran
+995,style,American Amber / Red Ale,1.0000,baran
+1014,style,American Amber / Red Ale,1.0000,baran
+1077,style,American Amber / Red Ale,1.0000,baran
+1153,style,American Amber / Red Ale,1.0000,baran
+1160,style,American Amber / Red Ale,1.0000,baran
+1166,style,American Amber / Red Ale,1.0000,baran
+1194,style,American Amber / Red Ale,1.0000,baran
+1204,style,American Amber / Red Ale,1.0000,baran
+1221,style,American Amber / Red Ale,1.0000,baran
+1226,style,American Amber / Red Ale,1.0000,baran
+1243,style,American Amber / Red Ale,1.0000,baran
+1295,style,American Amber / Red Ale,1.0000,baran
+1298,style,American Amber / Red Ale,1.0000,baran
+1308,style,American Amber / Red Ale,1.0000,baran
+1326,style,San Diego,1.0000,baran
+1338,style,American Amber / Red Ale,1.0000,baran
+1443,style,American Amber / Red Ale,1.0000,baran
+1519,style,American Amber / Red Ale,1.0000,baran
+1528,style,San Diego,1.0000,baran
+1555,style,American Amber / Red Ale,1.0000,baran
+1572,style,American Amber / Red Ale,1.0000,baran
+1590,style,American Amber / Red Ale,1.0000,baran
+1615,style,American Amber / Red Ale,1.0000,baran
+1634,style,San Diego,1.0000,baran
+1663,style,American Amber / Red Ale,1.0000,baran
+1763,style,San Diego,1.0000,baran
+1814,style,American Amber / Red Ale,1.0000,baran
+1830,style,American Amber / Red Ale,1.0000,baran
+1841,style,American Amber / Red Ale,1.0000,baran
+1866,style,American Amber / Red Ale,1.0000,baran
+1881,style,American Amber / Red Ale,1.0000,baran
+1910,style,American Amber / Red Ale,1.0000,baran
+1914,style,American Amber / Red Ale,1.0000,baran
+1941,style,American Amber / Red Ale,1.0000,baran
+1944,style,American Amber / Red Ale,1.0000,baran
+1956,style,American Amber / Red Ale,1.0000,baran
+1993,style,American Amber / Red Ale,1.0000,baran
+2034,style,American Amber / Red Ale,1.0000,baran
+2039,style,American Amber / Red Ale,1.0000,baran
+2080,style,American Amber / Red Ale,1.0000,baran
+2082,style,American Amber / Red Ale,1.0000,baran
+2136,style,San Diego,1.0000,baran
+2163,style,San Diego,1.0000,baran
+2181,style,American Amber / Red Ale,1.0000,baran
+2192,style,American Amber / Red Ale,1.0000,baran
+2198,style,American Amber / Red Ale,1.0000,baran
+2231,style,American Amber / Red Ale,1.0000,baran
+2250,style,San Diego,1.0000,baran
+2254,style,American Amber / Red Ale,1.0000,baran
+2257,style,American Amber / Red Ale,1.0000,baran
+2264,style,American Amber / Red Ale,1.0000,baran
+2308,style,American Amber / Red Ale,1.0000,baran
+2362,style,American Amber / Red Ale,1.0000,baran
+2382,style,American Amber / Red Ale,1.0000,baran
+2390,style,American Amber / Red Ale,1.0000,baran
+286,abv,0.046,1.0000,baran
+286,brewery_id,79,1.0000,baran
+286,state,WY,1.0000,baran
+55,state,OK,1.0000,baran
+119,state,WY,1.0000,baran
+130,state,OK,1.0000,baran
+144,state,WY,1.0000,baran
+175,state,OK,1.0000,baran
+252,state,OK,1.0000,baran
+285,state,WY,1.0000,baran
+295,state,OK,1.0000,baran
+324,state,WY,1.0000,baran
+414,state,CA,1.0000,baran
+510,state,WY,1.0000,baran
+511,state,OK,1.0000,baran
+529,state,OK,1.0000,baran
+532,state,OK,1.0000,baran
+533,state,OK,1.0000,baran
+561,state,WY,1.0000,baran
+577,state,OK,1.0000,baran
+710,state,CA,1.0000,baran
+750,state,OK,1.0000,baran
+847,state,OK,1.0000,baran
+913,state,WY,1.0000,baran
+926,state,OK,1.0000,baran
+945,state,WY,1.0000,baran
+975,state,OK,1.0000,baran
+1039,state,WY,1.0000,baran
+1058,state,WY,1.0000,baran
+1092,state,CA,1.0000,baran
+1215,state,OK,1.0000,baran
+1290,state,OK,1.0000,baran
+1326,state,OK,1.0000,baran
+1368,state,OK,1.0000,baran
+1369,state,OK,1.0000,baran
+1370,state,OK,1.0000,baran
+1422,state,OK,1.0000,baran
+1445,state,WY,1.0000,baran
+1512,state,WY,1.0000,baran
+1571,state,OK,1.0000,baran
+1601,state,OK,1.0000,baran
+1623,state,OK,1.0000,baran
+1671,state,OK,1.0000,baran
+1710,state,WY,1.0000,baran
+1732,state,WY,1.0000,baran
+1738,state,WY,1.0000,baran
+1741,state,CA,1.0000,baran
+1744,state,WY,1.0000,baran
+1776,state,OK,1.0000,baran
+1796,state,CA,1.0000,baran
+1799,state,CA,1.0000,baran
+1816,state,OK,1.0000,baran
+1842,state,CA,1.0000,baran
+1868,state,OK,1.0000,baran
+1990,state,CA,1.0000,baran
+2113,state,OK,1.0000,baran
+2164,state,WY,1.0000,baran
+2196,state,OK,1.0000,baran
+2209,state,OK,1.0000,baran
+2221,state,OK,1.0000,baran
+2256,state,OK,1.0000,baran
+2295,state,WY,1.0000,baran
+2299,state,WY,1.0000,baran
+2312,state,CA,1.0000,baran
+2359,state,WY,1.0000,baran
+2383,state,OK,1.0000,baran
+1230,id,1571,1.0000,baran
+1230,beer_name,Slow Hand Stout,1.0000,baran
+1230,abv,0.052,1.0000,baran
+1230,brewery_id,377,1.0000,baran
+438,brewery_id,377,1.0000,baran
+1230,city,Menominee,1.0000,baran
+1230,state,WI,1.0000,baran
+1542,id,891,1.0000,baran
+1542,beer_name,Overbite IPA,1.0000,baran
+1542,abv,0.075,1.0000,baran
+1542,brewery_id,301,1.0000,baran
+1542,city,Danville,1.0000,baran
+2357,city,Menominee,1.0000,baran
+1542,state,PA,1.0000,baran
+73,state,WI,1.0000,baran
+120,state,WI,1.0000,baran
+228,state,WI,1.0000,baran
+229,state,WI,1.0000,baran
+500,state,WI,1.0000,baran
+548,state,PA,1.0000,baran
+633,state,PA,1.0000,baran
+674,state,WI,1.0000,baran
+733,state,WI,1.0000,baran
+803,state,WI,1.0000,baran
+984,state,PA,1.0000,baran
+1012,state,WI,1.0000,baran
+1030,state,WI,1.0000,baran
+1356,state,WI,1.0000,baran
+1380,state,WI,1.0000,baran
+1501,state,WI,1.0000,baran
+1615,state,WI,1.0000,baran
+1665,state,WI,1.0000,baran
+1705,state,WI,1.0000,baran
+1974,state,WI,1.0000,baran
+2068,state,PA,1.0000,baran
+2149,state,PA,1.0000,baran
+2165,state,WI,1.0000,baran
+2224,state,WI,1.0000,baran
+2271,state,WI,1.0000,baran
+2282,state,WI,1.0000,baran
+2286,state,WI,1.0000,baran
+2392,state,WI,1.0000,baran
+58,beer_name,Rude Parrot IPA,1.0000,baran
+248,style,Menominee,1.0000,baran
+364,style,Menominee,1.0000,baran
+2247,style,Menominee,1.0000,baran
+58,ibu,75,1.0000,baran
+58,brewery_id,481,1.0000,baran
+58,brewery_name,7 Seas Brewing Company,1.0000,baran
+58,city,Gig Harbor,1.0000,baran
+103,city,Gig Harbor,1.0000,baran
+313,city,Gig Harbor,1.0000,baran
+460,city,Gig Harbor,1.0000,baran
+522,city,Gig Harbor,1.0000,baran
+972,city,Gig Harbor,1.0000,baran
+1049,city,Gig Harbor,1.0000,baran
+1226,city,Gig Harbor,1.0000,baran
+1497,city,Gig Harbor,1.0000,baran
+1634,city,Gig Harbor,1.0000,baran
+1670,city,Gig Harbor,1.0000,baran
+2402,city,Gig Harbor,1.0000,baran
+111,id,1217,1.0000,baran
+111,ibu,25,1.0000,baran
+111,brewery_id,171,1.0000,baran
+179,brewery_id,481,1.0000,baran
+237,brewery_id,171,1.0000,baran
+470,brewery_id,301,1.0000,baran
+487,brewery_id,171,1.0000,baran
+818,brewery_id,481,1.0000,baran
+844,brewery_id,481,1.0000,baran
+865,brewery_id,481,1.0000,baran
+946,brewery_id,301,1.0000,baran
+1504,brewery_id,171,1.0000,baran
+1716,brewery_id,171,1.0000,baran
+1953,brewery_id,301,1.0000,baran
+2050,brewery_id,301,1.0000,baran
+2273,brewery_id,301,1.0000,baran
+2332,brewery_id,481,1.0000,baran
+111,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+485,brewery_name,7 Seas Brewing Company,1.0000,baran
+500,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+517,brewery_name,7 Seas Brewing Company,1.0000,baran
+697,brewery_name,7 Seas Brewing Company,1.0000,baran
+1081,brewery_name,7 Seas Brewing Company,1.0000,baran
+1401,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+1455,brewery_name,7 Seas Brewing Company,1.0000,baran
+2290,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+2392,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+111,state,CA,1.0000,baran
+601,state,CA,1.0000,baran
+688,state,CA,1.0000,baran
+805,state,CA,1.0000,baran
+831,state,CA,1.0000,baran
+977,state,CA,1.0000,baran
+1028,state,CA,1.0000,baran
+1119,state,CA,1.0000,baran
+1132,state,CA,1.0000,baran
+1318,state,CA,1.0000,baran
+1479,state,CA,1.0000,baran
+1692,state,CA,1.0000,baran
+1947,state,CA,1.0000,baran
+2037,state,CA,1.0000,baran
+2045,state,CA,1.0000,baran
+2168,state,CA,1.0000,baran
+1181,id,2459,1.0000,baran
+2327,id,2459,1.0000,baran
+1181,abv,0.048,1.0000,baran
+1181,ibu,11,1.0000,baran
+1181,brewery_id,87,1.0000,baran
+876,brewery_id,87,1.0000,baran
+1060,brewery_id,87,1.0000,baran
+1925,brewery_id,87,1.0000,baran
+1181,brewery_name,Kirkwood Station Brewing Company,1.0000,baran
+1656,id,846,1.0000,baran
+1656,beer_name,Black Walnut Wheat,1.0000,baran
+1656,style,American Dark Wheat Ale,1.0000,baran
+1656,brewery_name,Piney River Brewing Company,1.0000,baran
+1656,city,Bucryus,1.0000,baran
+1656,state,MO,1.0000,baran
+1437,id,1705,1.0000,baran
+273,id,1705,1.0000,baran
+383,id,1705,1.0000,baran
+2081,id,1705,1.0000,baran
+1437,beer_name,Wick For Brains,1.0000,baran
+914,beer_name,Wick For Brains,1.0000,baran
+1110,beer_name,Wick For Brains,1.0000,baran
+2250,beer_name,Wick For Brains,1.0000,baran
+37,style,American Dark Wheat Ale,1.0000,baran
+92,style,American Dark Wheat Ale,1.0000,baran
+147,style,American Dark Wheat Ale,1.0000,baran
+153,style,American Dark Wheat Ale,1.0000,baran
+717,style,American Dark Wheat Ale,1.0000,baran
+778,style,American Dark Wheat Ale,1.0000,baran
+837,style,American Dark Wheat Ale,1.0000,baran
+868,style,American Dark Wheat Ale,1.0000,baran
+976,style,American Dark Wheat Ale,1.0000,baran
+984,style,American Dark Wheat Ale,1.0000,baran
+1070,style,American Dark Wheat Ale,1.0000,baran
+1159,style,Bucryus,1.0000,baran
+1431,style,American Dark Wheat Ale,1.0000,baran
+1495,style,American Dark Wheat Ale,1.0000,baran
+1583,style,American Dark Wheat Ale,1.0000,baran
+1619,style,American Dark Wheat Ale,1.0000,baran
+1703,style,American Dark Wheat Ale,1.0000,baran
+1798,style,American Dark Wheat Ale,1.0000,baran
+1987,style,American Dark Wheat Ale,1.0000,baran
+2045,style,American Dark Wheat Ale,1.0000,baran
+2132,style,American Dark Wheat Ale,1.0000,baran
+2143,style,American Dark Wheat Ale,1.0000,baran
+2281,style,Bucryus,1.0000,baran
+2314,style,American Dark Wheat Ale,1.0000,baran
+2373,style,American Dark Wheat Ale,1.0000,baran
+1437,abv,0.061,1.0000,baran
+1437,ibu,11,1.0000,baran
+1437,brewery_id,337,1.0000,baran
+130,brewery_id,337,1.0000,baran
+159,brewery_id,337,1.0000,baran
+578,brewery_id,337,1.0000,baran
+696,brewery_id,337,1.0000,baran
+1197,brewery_id,337,1.0000,baran
+1204,brewery_id,337,1.0000,baran
+1231,brewery_id,337,1.0000,baran
+1302,brewery_id,337,1.0000,baran
+1665,brewery_id,337,1.0000,baran
+2067,brewery_id,337,1.0000,baran
+2272,brewery_id,337,1.0000,baran
+403,brewery_name,Kirkwood Station Brewing Company,1.0000,baran
+473,brewery_name,Kirkwood Station Brewing Company,1.0000,baran
+581,brewery_name,Kirkwood Station Brewing Company,1.0000,baran
+899,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+1172,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+1304,brewery_name,Kirkwood Station Brewing Company,1.0000,baran
+1366,brewery_name,Kirkwood Station Brewing Company,1.0000,baran
+1649,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+1987,brewery_name,Anderson Valley Brewing Company,1.0000,baran
+2118,brewery_name,Piney River Brewing Company,1.0000,baran
+48,city,Bucryus,1.0000,baran
+1284,city,Bucryus,1.0000,baran
+160,state,MO,1.0000,baran
+1031,state,MO,1.0000,baran
+1142,state,MO,1.0000,baran
+1260,state,MO,1.0000,baran
+1343,state,MO,1.0000,baran
+2370,state,MO,1.0000,baran
+2013,id,141,1.0000,baran
+2013,ibu,7,1.0000,baran
+2013,brewery_id,131,1.0000,baran
+2013,brewery_name,Stevens Point Brewery,1.0000,baran
+46,brewery_name,Stevens Point Brewery,1.0000,baran
+2013,state,WI,1.0000,baran
+114,state,WI,1.0000,baran
+434,state,WI,1.0000,baran
+570,state,WI,1.0000,baran
+871,state,WI,1.0000,baran
+999,state,WI,1.0000,baran
+1022,state,WI,1.0000,baran
+1201,state,WI,1.0000,baran
+1222,state,WI,1.0000,baran
+1269,state,WI,1.0000,baran
+1274,state,WI,1.0000,baran
+1344,state,WI,1.0000,baran
+1463,state,WI,1.0000,baran
+1559,state,WI,1.0000,baran
+1703,state,WI,1.0000,baran
+1840,state,WI,1.0000,baran
+1946,state,WI,1.0000,baran
+2036,state,WI,1.0000,baran
+2378,state,WI,1.0000,baran
+51,id,131,1.0000,baran
+1125,id,131,1.0000,baran
+1581,id,141,1.0000,baran
+2157,abv,0.052,1.0000,baran
+2157,ibu,35,1.0000,baran
+2157,brewery_id,33,1.0000,baran
+614,brewery_id,33,1.0000,baran
+891,brewery_id,33,1.0000,baran
+1384,brewery_id,33,1.0000,baran
+2405,brewery_id,131,1.0000,baran
+2157,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2177,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2157,city,Torrance,1.0000,baran
+37,city,Torrance,1.0000,baran
+49,city,Torrance,1.0000,baran
+579,city,Torrance,1.0000,baran
+973,city,Torrance,1.0000,baran
+1048,city,Torrance,1.0000,baran
+1694,city,Torrance,1.0000,baran
+1705,city,Torrance,1.0000,baran
+2376,city,Torrance,1.0000,baran
+168,id,1620,1.0000,baran
+2207,id,1620,1.0000,baran
+168,style,Pumpkin Ale,1.0000,baran
+916,style,Pumpkin Ale,1.0000,baran
+1126,style,Pumpkin Ale,1.0000,baran
+1136,style,Pumpkin Ale,1.0000,baran
+1218,style,Pumpkin Ale,1.0000,baran
+1448,style,Pumpkin Ale,1.0000,baran
+1520,style,Pumpkin Ale,1.0000,baran
+1569,style,Pumpkin Ale,1.0000,baran
+1600,style,Pumpkin Ale,1.0000,baran
+1618,style,Pumpkin Ale,1.0000,baran
+1684,style,Pumpkin Ale,1.0000,baran
+1850,style,Pumpkin Ale,1.0000,baran
+1854,style,Pumpkin Ale,1.0000,baran
+168,ibu,17,1.0000,baran
+168,brewery_id,360,1.0000,baran
+1413,brewery_id,360,1.0000,baran
+31,brewery_name,The Dudes' Brewing Company,1.0000,baran
+99,brewery_name,The Dudes' Brewing Company,1.0000,baran
+102,brewery_name,The Dudes' Brewing Company,1.0000,baran
+119,brewery_name,The Dudes' Brewing Company,1.0000,baran
+120,brewery_name,The Dudes' Brewing Company,1.0000,baran
+128,brewery_name,The Dudes' Brewing Company,1.0000,baran
+182,brewery_name,The Dudes' Brewing Company,1.0000,baran
+196,brewery_name,The Dudes' Brewing Company,1.0000,baran
+217,brewery_name,The Dudes' Brewing Company,1.0000,baran
+291,brewery_name,The Dudes' Brewing Company,1.0000,baran
+301,brewery_name,The Dudes' Brewing Company,1.0000,baran
+307,brewery_name,The Dudes' Brewing Company,1.0000,baran
+308,brewery_name,The Dudes' Brewing Company,1.0000,baran
+350,brewery_name,The Dudes' Brewing Company,1.0000,baran
+359,brewery_name,The Dudes' Brewing Company,1.0000,baran
+383,brewery_name,The Dudes' Brewing Company,1.0000,baran
+402,brewery_name,The Dudes' Brewing Company,1.0000,baran
+445,brewery_name,The Dudes' Brewing Company,1.0000,baran
+579,brewery_name,The Dudes' Brewing Company,1.0000,baran
+585,brewery_name,The Dudes' Brewing Company,1.0000,baran
+589,brewery_name,The Dudes' Brewing Company,1.0000,baran
+677,brewery_name,The Dudes' Brewing Company,1.0000,baran
+755,brewery_name,The Dudes' Brewing Company,1.0000,baran
+763,brewery_name,The Dudes' Brewing Company,1.0000,baran
+838,brewery_name,The Dudes' Brewing Company,1.0000,baran
+931,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1089,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1157,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1202,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1211,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1249,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1310,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1358,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1452,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1504,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1601,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1619,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1634,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1701,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1748,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1795,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1830,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1843,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1902,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1914,brewery_name,The Dudes' Brewing Company,1.0000,baran
+1980,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2016,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2054,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2120,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2154,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2199,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2227,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2234,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2237,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2325,brewery_name,The Dudes' Brewing Company,1.0000,baran
+2328,brewery_name,The Dudes' Brewing Company,1.0000,baran
+168,city,Fuquay-Varina,1.0000,baran
+2155,id,1747,1.0000,baran
+1859,id,1747,1.0000,baran
+2155,style,American Black Ale,1.0000,baran
+967,style,American Black Ale,1.0000,baran
+981,style,American Black Ale,1.0000,baran
+1000,style,American Black Ale,1.0000,baran
+1477,style,American Black Ale,1.0000,baran
+1552,style,American Black Ale,1.0000,baran
+1950,style,American Black Ale,1.0000,baran
+2031,style,American Black Ale,1.0000,baran
+2155,ibu,46,1.0000,baran
+2155,brewery_id,329,1.0000,baran
+1096,brewery_id,329,1.0000,baran
+2155,city,Bronx,1.0000,baran

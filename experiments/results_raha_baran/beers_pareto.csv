@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,CARE,mondrian,0.05,detected,0.23402001177163037,0.025034578146611353,0.8045786963434022,0.02883817427385893,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,LLMOnly,-,0.05,detected,0.0,0.05315262227460225,0.9468473777253978,0.05462581025338834,False,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,CARE,marginal,0.1,detected,0.0,0.05315262227460225,0.9468473777253978,0.05462581025338834,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,CARE,mondrian,0.1,detected,0.1489111241907004,0.027385892116182586,0.8943720190779014,0.02883817427385893,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,LLMOnly,-,0.1,detected,0.0,0.05315262227460225,0.9468473777253978,0.05462581025338834,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,CARE,marginal,0.2,detected,0.0,0.05315262227460225,0.9468473777253978,0.05462581025338834,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,CARE,mondrian,0.2,detected,0.058269570335491475,0.024749999999999984,0.9459836314034555,0.026062499999999978,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,LLMOnly,-,0.2,detected,0.0,0.05315262227460225,0.9468473777253978,0.05462581025338834,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv
+beers,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,baran_raha:csvs/baran_raha_beers_mapped.csv

@@ -1,0 +1,162 @@
+proposer,dataset,bin_lo,bin_hi,n,mean_conf,accuracy
+Baran,beers,0.9,1.0,3334,1.0,0.8809
+Baran,flights,0.9,1.0,4920,1.0,1.0
+Baran,hospital,0.9,1.0,499,1.0,0.9319
+Baran (Raha),beers,0.9,1.0,2832,1.0,0.9474
+Baran (Raha),flights,0.9,1.0,2794,1.0,0.9123
+Baran (Raha),hospital,0.9,1.0,215,1.0,0.7721
+Baran (Raha),rayyan,0.9,1.0,408,1.0,0.7132
+Baran,rayyan,0.9,1.0,461,1.0,0.9241
+BClean,beers,0.5,0.6,956,0.5141,0.728
+BClean,beers,0.6,0.7,330,0.6555,0.5636
+BClean,beers,0.7,0.8,416,0.757,0.6899
+BClean,beers,0.8,0.9,605,0.8532,0.7785
+BClean,beers,0.9,1.0,453,0.9427,0.8477
+BClean,flights,0.5,0.6,565,0.5274,0.2956
+BClean,flights,0.6,0.7,389,0.6556,0.455
+BClean,flights,0.7,0.8,628,0.7352,0.1863
+BClean,flights,0.8,0.9,267,0.855,0.6779
+BClean,flights,0.9,1.0,829,0.9765,0.7455
+BClean,hospital,0.5,0.6,1,0.5334,1.0
+BClean,hospital,0.9,1.0,397,0.9983,1.0
+BClean (+keep),beers,0.0,0.1,4462,0.0005,0.9715
+BClean (+keep),beers,0.1,0.2,8,0.1484,1.0
+BClean (+keep),beers,0.2,0.3,2,0.2295,1.0
+BClean (+keep),beers,0.3,0.4,7,0.3438,1.0
+BClean (+keep),beers,0.4,0.5,3,0.4605,1.0
+BClean (+keep),beers,0.5,0.6,5575,0.5024,0.8888
+BClean (+keep),beers,0.6,0.7,330,0.6555,0.5636
+BClean (+keep),beers,0.7,0.8,416,0.757,0.6899
+BClean (+keep),beers,0.8,0.9,605,0.8532,0.7785
+BClean (+keep),beers,0.9,1.0,453,0.9427,0.8477
+BClean (+keep),flights,0.0,0.1,4476,0.0092,0.8487
+BClean (+keep),flights,0.1,0.2,300,0.1403,0.7533
+BClean (+keep),flights,0.2,0.3,198,0.2442,0.6313
+BClean (+keep),flights,0.3,0.4,268,0.3427,0.5858
+BClean (+keep),flights,0.4,0.5,175,0.4373,0.5429
+BClean (+keep),flights,0.5,0.6,5661,0.5027,0.8735
+BClean (+keep),flights,0.6,0.7,389,0.6556,0.455
+BClean (+keep),flights,0.7,0.8,628,0.7352,0.1863
+BClean (+keep),flights,0.8,0.9,267,0.855,0.6779
+BClean (+keep),flights,0.9,1.0,829,0.9765,0.7455
+BClean (+keep),hospital,0.0,0.1,12143,0.0005,0.9984
+BClean (+keep),hospital,0.2,0.3,2,0.2801,1.0
+BClean (+keep),hospital,0.4,0.5,3,0.4769,0.3333
+BClean (+keep),hospital,0.5,0.6,2455,0.5,0.9853
+BClean (+keep),hospital,0.9,1.0,397,0.9983,1.0
+GPT-4o-mini,beers,0.2,0.3,6,0.2167,0.0
+GPT-4o-mini,beers,0.3,0.4,1,0.3333,0.0
+GPT-4o-mini,beers,0.4,0.5,184,0.4,0.0761
+GPT-4o-mini,beers,0.5,0.6,14,0.5,0.0
+GPT-4o-mini,beers,0.6,0.7,735,0.6005,0.1823
+GPT-4o-mini,beers,0.7,0.8,4,0.75,0.0
+GPT-4o-mini,beers,0.8,0.9,917,0.8,0.2126
+GPT-4o-mini,beers,0.9,1.0,17409,1.0,0.7759
+GPT-4o-mini,flights,0.2,0.3,9,0.2,0.0
+GPT-4o-mini,flights,0.4,0.5,134,0.4,0.0597
+GPT-4o-mini,flights,0.5,0.6,1,0.5,0.0
+GPT-4o-mini,flights,0.6,0.7,631,0.6,0.2456
+GPT-4o-mini,flights,0.7,0.8,1,0.75,0.0
+GPT-4o-mini,flights,0.8,0.9,848,0.8,0.3172
+GPT-4o-mini,flights,0.9,1.0,12613,1.0,0.6403
+GPT-4o-mini,hospital,0.2,0.3,3,0.2,0.0
+GPT-4o-mini,hospital,0.4,0.5,122,0.4,0.2295
+GPT-4o-mini,hospital,0.6,0.7,1220,0.6,0.3525
+GPT-4o-mini,hospital,0.7,0.8,1,0.75,0.0
+GPT-4o-mini,hospital,0.8,0.9,1846,0.8,0.4036
+GPT-4o-mini,hospital,0.9,1.0,13808,1.0,0.6732
+GPT-4o-mini,rayyan,0.2,0.3,23,0.2087,0.0
+GPT-4o-mini,rayyan,0.3,0.4,4,0.3333,0.0
+GPT-4o-mini,rayyan,0.4,0.5,161,0.4,0.0621
+GPT-4o-mini,rayyan,0.5,0.6,18,0.5,0.0
+GPT-4o-mini,rayyan,0.6,0.7,643,0.6005,0.2146
+GPT-4o-mini,rayyan,0.7,0.8,6,0.75,0.0
+GPT-4o-mini,rayyan,0.8,0.9,849,0.8,0.2744
+GPT-4o-mini,rayyan,0.9,1.0,7994,1.0,0.5021
+HoloClean,beers,0.0,0.1,162,0.0697,0.0
+HoloClean,beers,0.1,0.2,272,0.1519,0.0
+HoloClean,beers,0.2,0.3,117,0.2443,0.1453
+HoloClean,beers,0.3,0.4,211,0.346,0.4218
+HoloClean,beers,0.4,0.5,11,0.4461,1.0
+HoloClean,beers,0.5,0.6,102,0.5045,0.0196
+HoloClean,beers,0.6,0.7,1,0.6032,0.0
+HoloClean,beers,0.7,0.8,2,0.7572,1.0
+HoloClean,flights,0.1,0.2,128,0.1526,0.1953
+HoloClean,flights,0.2,0.3,478,0.2393,0.4603
+HoloClean,flights,0.3,0.4,457,0.3438,0.6149
+HoloClean,flights,0.4,0.5,303,0.4451,0.9901
+HoloClean,flights,0.5,0.6,271,0.5336,0.786
+HoloClean,flights,0.6,0.7,305,0.6465,0.9836
+HoloClean,flights,0.7,0.8,236,0.751,1.0
+HoloClean,flights,0.8,0.9,133,0.8587,1.0
+HoloClean,flights,0.9,1.0,27,0.9138,1.0
+HoloClean,hospital,0.1,0.2,6,0.1795,1.0
+HoloClean,hospital,0.2,0.3,13,0.2553,1.0
+HoloClean,hospital,0.3,0.4,14,0.3517,1.0
+HoloClean,hospital,0.4,0.5,60,0.4616,1.0
+HoloClean,hospital,0.5,0.6,70,0.5496,1.0
+HoloClean,hospital,0.6,0.7,64,0.647,1.0
+HoloClean,hospital,0.7,0.8,5,0.7156,1.0
+HoloClean (+keep),beers,0.0,0.1,162,0.0697,0.0
+HoloClean (+keep),beers,0.1,0.2,272,0.1519,0.0
+HoloClean (+keep),beers,0.2,0.3,117,0.2443,0.1453
+HoloClean (+keep),beers,0.3,0.4,211,0.346,0.4218
+HoloClean (+keep),beers,0.4,0.5,11,0.4461,1.0
+HoloClean (+keep),beers,0.5,0.6,102,0.5045,0.0196
+HoloClean (+keep),beers,0.6,0.7,2,0.6496,0.0
+HoloClean (+keep),beers,0.7,0.8,44,0.7548,0.7955
+HoloClean (+keep),beers,0.8,0.9,512,0.8615,0.9297
+HoloClean (+keep),beers,0.9,1.0,1922,0.9604,0.961
+HoloClean (+keep),flights,0.1,0.2,128,0.1526,0.1953
+HoloClean (+keep),flights,0.2,0.3,478,0.2393,0.4603
+HoloClean (+keep),flights,0.3,0.4,488,0.3452,0.6004
+HoloClean (+keep),flights,0.4,0.5,452,0.4532,0.7677
+HoloClean (+keep),flights,0.5,0.6,1134,0.5544,0.4868
+HoloClean (+keep),flights,0.6,0.7,1164,0.6479,0.5739
+HoloClean (+keep),flights,0.7,0.8,2443,0.7414,0.5096
+HoloClean (+keep),flights,0.8,0.9,934,0.8638,0.8019
+HoloClean (+keep),flights,0.9,1.0,4611,0.9695,0.9861
+HoloClean (+keep),hospital,0.1,0.2,9,0.1813,0.6667
+HoloClean (+keep),hospital,0.2,0.3,33,0.2659,0.3939
+HoloClean (+keep),hospital,0.3,0.4,40,0.3521,0.35
+HoloClean (+keep),hospital,0.4,0.5,248,0.4671,0.7177
+HoloClean (+keep),hospital,0.5,0.6,408,0.5608,0.8554
+HoloClean (+keep),hospital,0.6,0.7,597,0.6543,0.9732
+HoloClean (+keep),hospital,0.7,0.8,1231,0.7617,0.9935
+HoloClean (+keep),hospital,0.8,0.9,2342,0.8563,0.9996
+HoloClean (+keep),hospital,0.9,1.0,6130,0.9549,1.0
+Jellyfish,beers,0.2,0.3,430,0.2027,0.0233
+Jellyfish,beers,0.3,0.4,42,0.3333,0.0
+Jellyfish,beers,0.4,0.5,1281,0.4,0.1077
+Jellyfish,beers,0.5,0.6,111,0.5,0.0
+Jellyfish,beers,0.6,0.7,2102,0.6017,0.2074
+Jellyfish,beers,0.7,0.8,32,0.75,0.0
+Jellyfish,beers,0.8,0.9,1798,0.8,0.2892
+Jellyfish,beers,0.9,1.0,13194,1.0,0.7595
+Jellyfish,flights,0.2,0.3,525,0.2,0.0552
+Jellyfish,flights,0.4,0.5,2409,0.4,0.1494
+Jellyfish,flights,0.6,0.7,3287,0.6,0.2565
+Jellyfish,flights,0.8,0.9,2187,0.8,0.3649
+Jellyfish,flights,0.9,1.0,5848,1.0,0.5311
+Jellyfish,hospital,0.2,0.3,130,0.2,0.0154
+Jellyfish,hospital,0.4,0.5,698,0.4,0.1848
+Jellyfish,hospital,0.6,0.7,1577,0.6,0.3678
+Jellyfish,hospital,0.8,0.9,1401,0.8,0.459
+Jellyfish,hospital,0.9,1.0,13194,1.0,0.7986
+Jellyfish,rayyan,0.2,0.3,387,0.2027,0.0362
+Jellyfish,rayyan,0.3,0.4,14,0.3333,0.0
+Jellyfish,rayyan,0.4,0.5,975,0.4,0.1251
+Jellyfish,rayyan,0.5,0.6,46,0.5,0.0
+Jellyfish,rayyan,0.6,0.7,1561,0.6007,0.2255
+Jellyfish,rayyan,0.7,0.8,7,0.75,0.0
+Jellyfish,rayyan,0.8,0.9,1328,0.8,0.2959
+Jellyfish,rayyan,0.9,1.0,5646,1.0,0.5613
+Jellyfish,tax,0.2,0.3,2438,0.2,0.0656
+Jellyfish,tax,0.4,0.5,27275,0.4,0.1848
+Jellyfish,tax,0.6,0.7,53872,0.6,0.3199
+Jellyfish,tax,0.8,0.9,45704,0.8,0.4032
+Jellyfish,tax,0.9,1.0,245711,1.0,0.719
+RetClean,flights,0.3,0.4,174,0.3,0.0172
+RetClean,flights,0.8,0.9,6107,0.8,0.5002
+RetClean,hospital,0.3,0.4,1184,0.3,0.5279
+RetClean,hospital,0.8,0.9,7125,0.8,0.6215

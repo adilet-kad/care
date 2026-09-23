@@ -1,0 +1,16 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian_src,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,LLMOnly,-,0.05,detected,0.0,0.37420020639834883,0.625799793601651,0.3767285861713106,False,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian,0.1,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian_src,0.1,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,LLMOnly,-,0.1,detected,0.0,0.37420020639834883,0.625799793601651,0.3767285861713106,False,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,marginal,0.2,detected,0.9283281733746129,0.06937284313445426,0.09856079602118056,0.12280365728340126,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian,0.2,detected,0.9721505930892211,0.03221343873517786,0.041012122808114115,0.08033596837944662,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,CARE,mondrian_src,0.2,detected,0.986900464156782,0.01692913385826772,0.019243046055631555,0.05078740157480316,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,LLMOnly,-,0.2,detected,0.0,0.37420020639834883,0.625799793601651,0.3767285861713106,False,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
+beers,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,bclean_keep:csvs/bclean_keep_beers_mapped.csv
