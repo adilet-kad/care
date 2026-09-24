@@ -157,6 +157,11 @@ signal *discriminates* (top-k accuracy vs pool). If it says a config will escala
 
 ## 4. Regenerating results
 
+`./reproduce.sh` (Linux/macOS) and `.\reproduce.ps1` (Windows PowerShell) run every
+command in this section in order, with the same flags, and end with the verification
+step of section 6. The individual commands are listed here for running one sweep at a
+time.
+
 ```bash
 cd CARE && source .venv/bin/activate
 

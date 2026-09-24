@@ -30,6 +30,10 @@ pytest -q                          # unit + property suites (the property suite 
 ./reproduce.sh --verify            # only re-check that the stored results still regenerate
 ```
 
+On Windows, `reproduce.ps1` is the same script step for step: `python -m venv .venv;
+.\.venv\Scripts\Activate.ps1`, then `.\reproduce.ps1` with `-Quick` or `-Verify` in place of
+the flags above. The stored results reproduce on both (50 of 50 sweeps).
+
 The five benchmark tables (hospital, beers, flights, rayyan, tax) are not redistributed
 here. They are the Raha/Baran benchmark suite (Mahdavi et al., SIGMOD 2019 / PVLDB 2020),
 which in turn collected them from their original sources (hospital: Chu et al., ICDE 2013;
@@ -51,6 +55,7 @@ numpy, pandas, scipy or sklearn); matplotlib is needed only for figures.
 | `experiments/` | result CSVs; every reported number is read from these | check any number |
 | `paper/` | generated `figures/` and `tables/`, written by `make_figures.py` (`tab5_error_drop.tex` by `audit_error_drop.py --tex`) | read the results |
 | `audit_*.py`, `make_figures.py`, `prepare_log.py`, `precheck_log.py` | the documented CLI (below) | regenerate |
+| `reproduce.sh`, `reproduce.ps1` | the one-command replay, Linux/macOS and Windows | regenerate everything |
 | `tools/` | verification scripts and the sweep pre-registration | audit the results |
 | `integrations/` | the exporters that produced each log, run *inside* the cleaners' own repos; CARE never imports them | regenerate a log |
 | `baselines/` | the GPT-4o-mini driver (needs an API key; replaying its log does not) | regenerate a log |
