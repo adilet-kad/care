@@ -127,7 +127,7 @@ class AuditReport(BaseModel):
 
     ``quality_vector`` maps each soft predicate's cid to its graded score in
     [0, 1]; ``hard_violations`` lists the boolean predicates that failed; and
-    ``satisfied_fraction`` is the headline — the fraction of enabled predicates
+    ``satisfied_fraction`` is the headline: the fraction of enabled predicates
     the artifact satisfies, counting a soft one as satisfied when it meets its
     declared target. The work queue is returned separately by the Auditor, so
     this report describes the artifact rather than prescribing repairs.

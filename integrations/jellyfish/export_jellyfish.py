@@ -29,7 +29,7 @@ same collection. Imputation's seen sets are Buy/Restaurant (not ours), so cell-r
 here isn't directly a trained task -- but the model has plausibly seen these records.
 Treat hospital as contamination-suspect.
 
-PERFORMANCE NOTES — tuned for NVIDIA DGX Spark (GB10 Blackwell, 128 GB unified,
+PERFORMANCE NOTES, tuned for NVIDIA DGX Spark (GB10 Blackwell, 128 GB unified,
 273 GB/s)
 ------------------------------------------------------------------------------
 273 GB/s is *low* bandwidth, so token DECODE is bandwidth-bound: a 13B in bf16

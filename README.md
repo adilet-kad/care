@@ -1,4 +1,4 @@
-# CARE — Certifiable Automation for Data Repair
+# CARE: Certifiable Automation for Data Repair
 
 CARE is a **governance layer, not a cleaner**. It sits between an arbitrary data-repair
 system (the *proposer*) and the database, and decides for each proposed repair whether it
@@ -6,8 +6,8 @@ may be auto-applied or must be escalated to a human, under a distribution-free b
 the error rate of the auto-applied set at a user-chosen budget α with confidence 1−δ.
 
 The proposer is untrusted and unmodified: CARE reads one CSV contract and never imports a
-cleaner's code. The study in this repository governs six of them — Baran, BClean,
-HoloClean, Jellyfish, RetClean and GPT-4o-mini — across five standard repair benchmarks.
+cleaner's code. The study in this repository governs six of them (Baran, BClean,
+HoloClean, Jellyfish, RetClean and GPT-4o-mini) across five standard repair benchmarks.
 
 ```
 row_id, column, value, [confidence], [source]      # empty value = "nothing to fix here"
@@ -38,7 +38,7 @@ PVLDB 2015; beers: a Kaggle table). `bench/datasets.py` downloads the clean/dirt
 first use from `github.com/BigDaMa/raha` into `data/`, which is gitignored; if that
 repository moves, point `RAW` in `bench/datasets.py` at any copy of the same files (the
 loader checks only that `clean.csv` and `dirty.csv` are present). Nothing else is fetched. `pip install pydantic`
-alone is enough to run the certification path — `care/` and `bench/` are stdlib-first (no
+alone is enough to run the certification path, since `care/` and `bench/` are stdlib-first (no
 numpy, pandas, scipy or sklearn); matplotlib is needed only for figures.
 
 ## What is in the box
@@ -47,7 +47,7 @@ numpy, pandas, scipy or sklearn); matplotlib is needed only for figures.
 |---|---|---|
 | `care/` | the library: fixed-grid Learn-then-Test controller, Clopper–Pearson bounds, Mondrian strata, exact constraint verifier with the hoisted fast path, evidence-trust gate, audit | run CARE |
 | `bench/` | harness: `run_study` (sweeps), `study`/`experiments` (the evaluation protocol), `throughput`, dataset loader | reproduce results |
-| `csvs/` | **the proposer logs** — one `<tool>_<dataset>_pred.csv` per cleaner × dataset as exported, `_mapped.csv` after schema mapping, detector queues, Baran reruns (`baran_var*/`), controlled-noise variants (`*_ni_*`), the token-probability control (`logprob/`) | replay everything without a GPU |
+| `csvs/` | **the proposer logs**: one `<tool>_<dataset>_pred.csv` per cleaner × dataset as exported, `_mapped.csv` after schema mapping, detector queues, Baran reruns (`baran_var*/`), controlled-noise variants (`*_ni_*`), the token-probability control (`logprob/`) | replay everything without a GPU |
 | `experiments/` | result CSVs; every reported number is read from these | check any number |
 | `paper/` | generated `figures/` and `tables/`, written by `make_figures.py` (`tab5_error_drop.tex` by `audit_error_drop.py --tex`) | read the results |
 | `audit_*.py`, `make_figures.py`, `prepare_log.py`, `precheck_log.py` | the documented CLI (below) | regenerate |
@@ -89,13 +89,13 @@ recalibration exceeds the budget in 60 of 80 runs where CARE exceeds it in 1.
 
 There are three depths, and each is documented separately.
 
-1. **Replay the released logs** — `./reproduce.sh`. Sweeps, audits, figures, tables, then
+1. **Replay the released logs**: `./reproduce.sh`. Sweeps, audits, figures, tables, then
    verification. Everything except the proposer logs themselves.
-2. **Regenerate the logs** — `docs/REPRODUCE.md` §3. Runs each cleaner in its own
+2. **Regenerate the logs**: `docs/REPRODUCE.md` §3. Runs each cleaner in its own
    repository through the exporters in `integrations/`, including the five Baran reruns
    per dataset and the controlled-noise sweep. Needs the cleaners' environments, a GPU
    for Jellyfish (~17 GPU-hours for the tax shard) and an API key for GPT-4o-mini.
-3. **Read the protocol** — `docs/REPRODUCE.md` §5 lists 34 numbered decisions: every
+3. **Read the protocol**: `docs/REPRODUCE.md` §5 lists 34 numbered decisions: every
    choice that constrains a reported number, with the direction it moves it (Baran's
    oracle detection and 20 labelled tuples, the three degenerate pairs, the Jellyfish tax
    shard, the schema-supported subset of the published denial constraints used for
@@ -158,6 +158,6 @@ probe) are from this machine.
 
 ## License
 
-Apache License 2.0 — see `LICENSE`. The benchmark datasets and the external cleaners keep
+Apache License 2.0, see `LICENSE`. The benchmark datasets and the external cleaners keep
 their own licenses; this repository redistributes none of their code, only the CSV logs
 their runs produced.

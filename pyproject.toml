@@ -1,7 +1,7 @@
 [project]
 name = "care"
 version = "1.0.0"
-description = "CARE — Certifiable Automation for data REpair: a proposer-agnostic governance layer with a distribution-free bound on the error of auto-applied repairs"
+description = "CARE: Certifiable Automation for data REpair: a proposer-agnostic governance layer with a distribution-free bound on the error of auto-applied repairs"
 requires-python = ">=3.10"
 license = {file = "LICENSE"}
 dependencies = ["pydantic>=2.6"]

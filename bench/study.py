@@ -384,7 +384,7 @@ def _warn_detection_mismatch(refs, defects, *, mode):
     print(f"  [detection={mode}] detected={len(detected)} true_errors={len(gold)} "
           f"TP={tp} recall={recall:.2f} precision={precision:.2f}")
     if tp == 0 or recall < 0.05:
-        print("  [detection] ⚠️  detected set barely overlaps the true errors "
+        print("  [detection] WARNING: detected set barely overlaps the true errors "
               "-- this detector does not match the error type; results will be "
               "meaningless. Use a real error-detection log (e.g. Raha) instead.")
 

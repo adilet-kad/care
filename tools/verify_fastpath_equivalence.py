@@ -44,7 +44,7 @@ def main() -> int:
     log = os.path.join(root, LOG)
     if not os.path.exists(log):
         raise SystemExit(f"missing proposer log: {log}\n"
-                         f"Regenerate it first (docs/REPRODUCE.md §3).")
+                         f"Regenerate it first (docs/REPRODUCE.md section 3).")
 
     art, defects, _ = load(DATASET)
     reg = _registry()

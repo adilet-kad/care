@@ -21,7 +21,7 @@ one CSV per dataset.
 | `results_detected/`, `results_gpt4o/`, `results_retclean/` | Jellyfish, GPT-4o-mini and RetClean | Table 1 |
 | `results_jelly_tax25k/` | Jellyfish on the tax row shard `[0, 25000)`; swept with `--row-range` so unseen rows are not scored as escalations | Table 1 |
 | `results_raha_baran/`, `results_raha_bclean/`, `results_raha_holoclean/`, `results_raha_jelly/` | the same proposer logs behind Raha's real detector instead of the oracle | Table 3, real-detection section |
-| `results_constraints_baran/`, `results_constraints_jelly/` | a second detector — a completeness-constraint predicate — to separate detector precision from recall | real-detection section |
+| `results_constraints_baran/`, `results_constraints_jelly/` | a second detector (a completeness-constraint predicate) to separate detector precision from recall | real-detection section |
 | `results_poison_<proposer>_<dataset>/` | corruption injected through an untrusted channel (Theorem 1) and a trusted one (Theorem 2), at poison fractions 0–0.2 | Table 2, robustness section |
 | `results_sweep_baran_var/<variant>/<draw>/` | Baran on controlled-noise variants of four corpora, three to four unseeded draws each (draw `0` is the first run, `1`–`3` the repeats) | error-rate sweep figure |
 
@@ -33,7 +33,7 @@ so no poisoned cell can reach the applied set and the contamination stays at zer
 **Columns.** A `*_pareto.csv` row is one (baseline, stratification, α) configuration:
 `human_cost` is the fraction escalated (so automation is `1 − human_cost`),
 `realized_error` the error of the auto-applied set, `err_hi` its one-sided bootstrap
-upper bound, and `covered` whether that bound is at or below α — the flag the guarantee
+upper bound, and `covered` whether that bound is at or below α, the flag the guarantee
 is judged on. A `*_poison.csv` row adds `poison_frac`, `applied_contamination` (ε_S),
 `thm2_bound` and `within_thm2_bound`.
 
