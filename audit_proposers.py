@@ -120,6 +120,8 @@ def main():
                                              errors="replace")):
                     ref = f"{r['row_id']}::{r['column']}"
                     v = _norm(r.get("value"))
+                    if not v:
+                        continue      # logged abstention: not a proposal, not a touch
                     cols.add(r["column"])
                     if ref in gold:
                         n += 1

@@ -60,7 +60,7 @@ numpy, pandas, scipy or sklearn); matplotlib is needed only for figures.
 | `integrations/` | the exporters that produced each log, run *inside* the cleaners' own repos; CARE never imports them | regenerate a log |
 | `baselines/` | the GPT-4o-mini driver (needs an API key; replaying its log does not) | regenerate a log |
 | `tests/` | unit + property suites | trust the library |
-| `docs/` | `REPRODUCE.md`: environments, how each log was produced, 34 numbered protocol decisions, and the result inventory | understand the choices |
+| `docs/` | `REPRODUCE.md`: environments, how each log was produced, 35 numbered protocol decisions, and the result inventory | understand the choices |
 
 ## The result in two figures
 
@@ -100,7 +100,7 @@ There are three depths, and each is documented separately.
    repository through the exporters in `integrations/`, including the five Baran reruns
    per dataset and the controlled-noise sweep. Needs the cleaners' environments, a GPU
    for Jellyfish (~17 GPU-hours for the tax shard) and an API key for GPT-4o-mini.
-3. **Read the protocol**: `docs/REPRODUCE.md` §5 lists 34 numbered decisions: every
+3. **Read the protocol**: `docs/REPRODUCE.md` §5 lists 35 numbered decisions: every
    choice that constrains a reported number, with the direction it moves it (Baran's
    oracle detection and 20 labelled tuples, the three degenerate pairs, the Jellyfish tax
    shard, the schema-supported subset of the published denial constraints used for
@@ -131,6 +131,7 @@ lists the rest.
 | `tools/verify_fastpath_equivalence.py` | the constant-time verification path is exact, not approximate (D11) |
 | `tools/verify_precondition_fallback.py` | its precondition is probed at run time and a violating constraint set falls back to the exact path |
 | `tools/compare_confidence_signals.py` | token log-probability against self-consistency as a confidence signal, on the `csvs/logprob/` control |
+| `tools/gate_by_votes.py` | derives stricter abstention gates from a `verify-correct` log's recorded votes without a GPU pass (the shipped votes are near-binary, so the paper reports the single gate) |
 | `tools/agreement_strata.py` | per-column accuracy at each self-consistency level on error cells; the beers `state`/`abv` and hospital column tallies quoted in Section 7.2 |
 | `audit_alpha_ceiling.py` / `audit_sweep.py` | the sweep ceilings were sealed (SHA-256) before calibration, and the sweep is checked against the seal |
 | `tests/property/` | coverage of the fixed-grid controller, group-conditional coverage, projector invariant, Theorems 1–2 on generated data |

@@ -58,6 +58,12 @@ if [ "$ONLY_VERIFY" = 0 ]; then
     run --dataset $ds --backends "holoclean_keep:csvs/holoclean_keep_${ds}_mapped.csv" $A --scoring detected --out experiments/results_holoclean_keep_oracle
   done
   run --dataset flights --backends "retclean:csvs/retclean_flights_mapped.csv" $A --scoring detected --out experiments/results_retclean
+  # Section 8.4: Jellyfish-13B out of the box, and both checkpoints under verify-correct
+  for ds in $SMALL; do
+    run --dataset $ds --backends "jellyfish_13b:csvs/jellyfish_13b_${ds}_mapped.csv"     $A --scoring detected --out experiments/results_jelly13b
+    run --dataset $ds --backends "jellyfish_vc:csvs/jellyfish_vc_${ds}_mapped.csv"       $A --scoring detected --out experiments/results_jellyfish_vc
+    run --dataset $ds --backends "jellyfish_vc13b:csvs/jellyfish_vc13b_${ds}_mapped.csv" $A --scoring detected --out experiments/results_jellyfish_vc13b
+  done
 
   step "2/8  Table 3: the same logs behind a real detector (Raha) and a constraint detector"
   for ds in $SMALL; do
@@ -71,6 +77,14 @@ if [ "$ONLY_VERIFY" = 0 ]; then
         --detection log:csvs/raha_${ds}_detected.csv --out experiments/results_raha_bclean
     run --dataset $ds --backends "holoclean_keep:csvs/holoclean_keep_${ds}_mapped.csv" $A --scoring detected \
         --detection log:csvs/raha_${ds}_detected.csv --out experiments/results_raha_holoclean
+  done
+  for ds in $SMALL; do   # Section 8.4 variants behind Raha
+    run --dataset $ds --backends "jellyfish_13b:csvs/jellyfish_13b_${ds}_mapped.csv"     $A --scoring detected \
+        --detection log:csvs/raha_${ds}_detected.csv --out experiments/results_raha_jelly13b
+    run --dataset $ds --backends "jellyfish_vc:csvs/jellyfish_vc_${ds}_mapped.csv"       $A --scoring detected \
+        --detection log:csvs/raha_${ds}_detected.csv --out experiments/results_raha_jellyfish_vc
+    run --dataset $ds --backends "jellyfish_vc13b:csvs/jellyfish_vc13b_${ds}_mapped.csv" $A --scoring detected \
+        --detection log:csvs/raha_${ds}_detected.csv --out experiments/results_raha_jellyfish_vc13b
   done
   for ds in hospital flights; do
     run --dataset $ds --backends "baran:csvs/baran_${ds}_mapped.csv" $A --scoring detected \

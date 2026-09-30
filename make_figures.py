@@ -25,7 +25,7 @@ PLOTTING CONVENTIONS (why the plots look the way they do)
 
 OUTPUT MAP (file -> paper numbering): fig5_mechanism = Fig. 2, fig9_error_rate = Fig. 3,
 fig2_pareto = Fig. 4, fig8_heldout = Fig. 5; tab1_audit / tab2_theorem2 / tab3_nonoracle
-= Tables 1-3. fig7_label_budget, tab4_calibration and tab6_sweep are artifact-only (the
+= Tables 1-3, tab7_variants = Table 4 (Section 8.4). fig7_label_budget, tab4_calibration and tab6_sweep are artifact-only (the
 paper quotes their numbers in the text). tab5_error_drop.tex is written by
 audit_error_drop.py --tex, not by this script.
 """
@@ -154,7 +154,7 @@ def fig2(plt):
     """Operating points at alpha=0.2 with CI upper bounds. Empty-S points are shown
     on a separate band so a 'zero error' that means 'nothing applied' cannot be
     mistaken for a genuine zero."""
-    fig, ax = plt.subplots(figsize=(3.34, 2.3))
+    fig, ax = plt.subplots(figsize=(3.34, 2.05))
     import statistics as _st
     for c, rd in CLEANERS:
         st = STYLE[c]
@@ -293,7 +293,7 @@ def fig9(plt, alpha=0.2, partition="mondrian"):
     bases = sorted({r["base"] for r in rows})
     ncol = 2 if len(bases) > 2 else len(bases)
     nrow = (len(bases) + ncol - 1) // ncol
-    fig, axes = plt.subplots(nrow, ncol, figsize=(3.34, 1.15 * nrow + 0.4),
+    fig, axes = plt.subplots(nrow, ncol, figsize=(3.34, 1.02 * nrow + 0.4),
                              sharey=True, squeeze=False)
     seen = {}
     for i, base in enumerate(bases):
@@ -414,7 +414,7 @@ def fig8(plt):
         print("  fig8: skipped (run audit_heldout_budget.py first)"); return
     COL = {("Baran", "beers"): "#7d6608", ("BClean", "flights"): "#78281f",
            ("Jellyfish", "beers"): "#1b4f72"}
-    fig, ax = plt.subplots(figsize=(3.34, 2.05))
+    fig, ax = plt.subplots(figsize=(3.34, 1.85))
     delta = None
     for (prop, ds), col in COL.items():
         pts = sorted((int(r["cal_size"]), int(r["seeds"]),
@@ -574,7 +574,7 @@ def fig5(plt):
     bounds = {c: _cp_upper(bad[c], min(per[c], 400), DELTA / L) for c in per}
     cols = sorted(per, key=lambda c: bounds[c])
 
-    fig, (ax, ax2) = plt.subplots(1, 2, figsize=(7.0, 2.6))
+    fig, (ax, ax2) = plt.subplots(1, 2, figsize=(7.0, 2.4))
 
     ys = list(range(len(cols)))
     vals = [bounds[c] for c in cols]
@@ -855,6 +855,88 @@ def tab3():
     print("  tab3_nonoracle.tex")
 
 
+def tab7():
+    """Interface and scale: the four Jellyfish variants of Section 8.4, from their logs.
+
+    Rows are the variants, column groups the four tables. Block one reports what each
+    variant does to cells that were already correct (correct cells rewritten, and errors
+    fixed minus correct cells broken); block two its accuracy on error cells and pi_0.
+    Everything is computed here from the mapped log and the gold labels, the same way
+    audit_proposers.py scores the published logs; A(0.2) for the variants is read from
+    the sweeps and quoted in the text (only beers is non-zero)."""
+    import collections
+    try:
+        from bench.datasets import load
+    except Exception as e:
+        print(f"  tab7: skipped ({e})"); return
+    VARIANTS = [("8B, published", "jellyfish"),
+                ("8B, verify-correct", "jellyfish_vc"),
+                ("13B, published", "jellyfish_13b"),
+                ("13B, verify-correct", "jellyfish_vc13b")]
+    DS = ["hospital", "beers", "flights", "rayyan"]
+
+    def _n(v):
+        return (str(v) if v is not None else "").strip().lower()
+
+    stats = {}
+    for ds in DS:
+        art, defects, _ = load(ds)
+        gold = {k: _n(v) for k, v in defects.gold.items()}
+        cur = {f"{c.row_id}::{c.col}": _n(c.value) for c in art.iter_cells()}
+        for _label, tag in VARIANTS:
+            path = f"csvs/{tag}_{ds}_mapped.csv"
+            if not os.path.exists(path):
+                continue
+            eT = eF = cB = 0
+            per, ok = collections.Counter(), collections.Counter()
+            with open(path, newline="", encoding="utf-8", errors="replace") as fh:
+                for r in csv.DictReader(fh):
+                    v = _n(r.get("value"))
+                    if not v:
+                        continue                  # logged abstention
+                    ref = f"{r['row_id']}::{r['column']}"
+                    if ref in gold:
+                        h = v == gold[ref]
+                        eT += 1; eF += h; per[r["column"]] += 1; ok[r["column"]] += h
+                    elif ref in cur:
+                        cB += v != cur[ref]
+            pi0 = sum(per[c] for c in per if ok[c] == per[c]) / eT if eT else 0.0
+            stats[(tag, ds)] = dict(eT=eT, acc=(eF / eT if eT else 0.0), pi0=pi0,
+                                    broken=cB, net=eF - cB)
+    if not stats:
+        print("  tab7: no variant logs found"); return
+
+    def num(x):
+        return f"{x:,}".replace(",", "{,}")
+
+    L = [r"\footnotesize", r"\setlength{\tabcolsep}{2.6pt}",
+         r"\renewcommand{\arraystretch}{0.92}",
+         r"\begin{tabular}{@{}lrrrr@{}}", r"\toprule",
+         r"& \textsc{hospital} & \textsc{beers} & \textsc{flights} & \textsc{rayyan} \\",
+         r"\midrule",
+         r"\multicolumn{5}{@{}l}{\emph{correct cells rewritten (fixes $-$ breaks)}} \\"]
+    for label, tag in VARIANTS:
+        cells = []
+        for ds in DS:
+            st = stats.get((tag, ds))
+            if st is None:
+                cells.append("--"); continue
+            sign = "+" if st["net"] > 0 else ("-" if st["net"] < 0 else "")
+            cells.append(f"{num(st['broken'])} (${sign}{num(abs(st['net']))}$)")
+        L.append(f"{label} & " + " & ".join(cells) + r" \\")
+    L += [r"\addlinespace[2pt]",
+          r"\multicolumn{5}{@{}l}{\emph{accuracy on error cells touched ($\pi_0$)}} \\"]
+    for label, tag in VARIANTS:
+        cells = []
+        for ds in DS:
+            st = stats.get((tag, ds))
+            cells.append("--" if st is None else f"{st['acc']:.3f} ({st['pi0']:.3f})")
+        L.append(f"{label} & " + " & ".join(cells) + r" \\")
+    L += [r"\bottomrule", r"\end{tabular}"]
+    open(f"{OUT_TAB}/tab7_variants.tex", "w").write("\n".join(L) + "\n")
+    print("  tab7_variants.tex")
+
+
 def main():
     os.makedirs(OUT_FIG, exist_ok=True); os.makedirs(OUT_TAB, exist_ok=True)
     try:
@@ -871,7 +953,7 @@ def main():
     print("generating ->")
     if plt:
         fig2(plt); fig5(plt); fig7(plt); fig8(plt); fig9(plt)
-    tab1(); tab2(); tab3(); tab4(); tab6()
+    tab1(); tab2(); tab3(); tab4(); tab6(); tab7()
     print("done -> paper/figures/*.pdf, paper/tables/*.tex")
 
 

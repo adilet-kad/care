@@ -1,0 +1,20 @@
+\footnotesize
+\setlength{\tabcolsep}{2.6pt}
+\renewcommand{\arraystretch}{0.92}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& \textsc{hospital} & \textsc{beers} & \textsc{flights} & \textsc{rayyan} \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{correct cells rewritten (fixes $-$ breaks)}} \\
+8B, published & 4{,}815 ($-4{,}600$) & 5{,}158 ($-4{,}508$) & 4{,}291 ($-4{,}200$) & 4{,}971 ($-4{,}969$) \\
+8B, verify-correct & 372 ($-185$) & 180 ($-179$) & 20 ($-1$) & 1{,}383 ($-1{,}382$) \\
+13B, published & 670 ($-468$) & 32 ($+107$) & 3{,}724 ($-3{,}620$) & 1{,}402 ($-1{,}401$) \\
+13B, verify-correct & 40 ($+159$) & 27 ($+103$) & 65 ($+30$) & 50 ($-49$) \\
+\addlinespace[2pt]
+\multicolumn{5}{@{}l}{\emph{accuracy on error cells touched ($\pi_0$)}} \\
+8B, published & 0.422 (0.051) & 0.194 (0.000) & 0.018 (0.000) & 0.002 (0.000) \\
+8B, verify-correct & 0.475 (0.066) & 0.010 (0.010) & 0.028 (0.000) & 0.004 (0.000) \\
+13B, published & 0.397 (0.051) & 0.041 (0.000) & 0.034 (0.000) & 0.001 (0.000) \\
+13B, verify-correct & 0.446 (0.058) & 0.212 (0.000) & 0.082 (0.000) & 0.001 (0.000) \\
+\bottomrule
+\end{tabular}

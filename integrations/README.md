@@ -52,8 +52,11 @@ detector's false positive, so the non-oracle result cannot be obtained by re-sco
 Reports accuracy split into *on true errors* vs *on false positives*.
 
 **`jellyfish/export_jellyfish.py`**: offline vLLM pass over a dataset. Supports
-`--confidence agreement` (self-consistency over `n` samples) and `--offset/--limit`
-row sharding for tables too large for one run.
+`--confidence agreement` (self-consistency over `n` samples), `--offset/--limit`
+row sharding for tables too large for one run, `--model` for another checkpoint of the
+family (the paper's 13B rows), `--tag` so a variant never overwrites the published log,
+and `--mode verify-correct`, which asks the model its own error-detection question first
+and logs unflagged cells as abstentions (Section 8.4).
 
 **`bclean/export_bclean.py`**: runs BClean with the authors' own user-constraint files
 and captures the candidate scores it computes internally but discards. `--emit-keep`

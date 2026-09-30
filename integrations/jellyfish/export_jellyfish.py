@@ -126,6 +126,35 @@ def _find_dataset_dir(dataset, override=None):
                      "\n  ".join(cands) + "\nPass --data-dir.")
 
 
+def build_verify_prompt(dataset, header, row, col_idx, col_start):
+    """Jellyfish's own error-detection prompt (its trained ED task, model card wording):
+    the record, the attribute under verification with its current value, and a Yes/No
+    question. Used by ``--mode verify-correct`` as an abstention gate: a cell the model
+    does not flag is logged as an abstention (empty value) and never corrected."""
+    target = header[col_idx]
+    cur_val = row[col_idx] if col_idx < len(row) else ""
+    attrs = ", ".join(header[j] for j in range(col_start, len(header)))
+    fields = ", ".join(f"{header[j]}: {row[j] if j < len(row) else ''}"
+                       for j in range(col_start, len(header)))
+    user = (
+        f"Your task is to determine if there is an error in the value of a specific "
+        f"attribute within the whole record provided.\n"
+        f"The attributes may include {attrs}.\n"
+        f"Errors may include, but are not limited to, spelling errors, inconsistencies, "
+        f"or values that don't make sense given the context of the whole record.\n"
+        f"Record [{fields}]\n"
+        f"Attribute for Verification: [{target}: {cur_val}]\n"
+        f"Question: Is there an error in the value of the attribute {target}?\n"
+        f"Choose your answer from: [Yes, No]"
+    )
+    return f"{SYSTEM_MESSAGE}\n\n### Instruction:\n\n{user}\n\n### Response:\n\n"
+
+
+def _is_yes(text):
+    t = (text or "").strip().lower()
+    return t.startswith("yes")
+
+
 def build_prompt(dataset, header, row, col_idx, col_start, mode="correct"):
     """Build the cell prompt.
 
@@ -280,26 +309,48 @@ def export_one(dataset, args):
           f"engine: {args.engine}  confidence: {args.confidence}")
     print(f"columns: {targets}")
 
-    # Build EVERY prompt up front -> one batched generate call (see PERFORMANCE NOTES).
-    keys, prompts = [], []
+    runner = _run_offline if args.engine == "offline" else _run_server
+    cols_ok = [c for c in targets if c in header]
     for col in targets:
         if col not in header:
             print(f"  !! column {col!r} not in header; skipping", file=sys.stderr)
-            continue
-        ci = header.index(col)
-        for i in range(len(rows)):
-            keys.append((i, col))
-            prompts.append(build_prompt(dataset, header, rows[i], ci, col_start,
-                                        mode=args.mode))
-    if not prompts:
+    cells = [(i, col) for col in cols_ok for i in range(len(rows))]
+    if not cells:
         raise SystemExit("no prompts built (check --columns)")
-    print(f"total prompts: {len(prompts)}  (single batched pass)")
 
-    runner = _run_offline if args.engine == "offline" else _run_server
-    packed = runner(prompts, args)
+    # ---- verify-correct: the model's own error-detection task gates correction ----
+    # The published protocol asks the model to correct every cell it is shown, so a
+    # proposal exists for every clean cell and each one is an opportunity for damage
+    # (the paper's "harm" column). Here the model is first asked its trained Yes/No
+    # question; a cell it does not flag (majority over the same n samples) is logged as
+    # an explicit abstention and is never corrected. Everything else -- prompt, model,
+    # sampling, confidence -- is unchanged, so the difference measures the interface.
+    abstained = set()
+    votes = {}
+    if args.mode == "verify-correct":
+        vprompts = [build_verify_prompt(dataset, header, rows[i], header.index(col), col_start)
+                    for i, col in cells]
+        print(f"verify pass: {len(vprompts)} prompts")
+        vpacked = runner(vprompts, args)
+        for (i, col), per in zip(cells, vpacked):
+            yes = sum(_is_yes(t) for t, _ in per)
+            votes[(i, col)] = (yes, len(per))
+            if yes < args.verify_threshold:
+                abstained.add((i, col))
+        print(f"  flagged {len(cells) - len(abstained)} of {len(cells)} cells at "
+              f">= {args.verify_threshold} yes-votes; {len(abstained)} abstentions")
+    keys = [c for c in cells if c not in abstained]
+    prompts = [build_prompt(dataset, header, rows[i], header.index(col), col_start,
+                            mode=("correct" if args.mode == "verify-correct" else args.mode))
+               for i, col in keys]
+    print(f"correction prompts: {len(prompts)}  (single batched pass)")
+    packed = runner(prompts, args) if prompts else []
 
     log_rows = []
     per_col = collections.Counter()
+    for (i, col) in sorted(abstained):
+        # explicit abstention: empty value is the contract's "no opinion"
+        log_rows.append((row_id(i), col, "", "", args.tag))
     for (i, col), per in zip(keys, packed):
         if args.confidence == "agreement":
             vals = [v for v in (_clean(t) for t, _ in per) if v]
@@ -314,32 +365,45 @@ def export_one(dataset, args):
                 continue
             conf = math.exp(mlp) if mlp is not None else args.default_confidence
         conf = min(1.0, max(0.0, conf))
-        log_rows.append((row_id(i), col, value, f"{conf:.4f}", "jellyfish"))
+        log_rows.append((row_id(i), col, value, f"{conf:.4f}", args.tag))
         per_col[col] += 1
 
     os.makedirs(args.out, exist_ok=True)
     sfx = f"_{args.offset:07d}_{args.offset + len(rows):07d}" if (args.offset or args.limit) else ""
-    out_path = os.path.join(args.out, f"jellyfish_{dataset}_pred{sfx}.csv")
+    out_path = os.path.join(args.out, f"{args.tag}_{dataset}_pred{sfx}.csv")
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["row_id", "column", "value", "confidence", "source"])
         w.writerows(log_rows)
+    if votes:
+        # Sidecar with the per-cell yes-vote count, so stricter gates can be derived
+        # offline (tools/gate_by_votes.py) without another GPU pass. The log itself
+        # keeps the five-column contract.
+        vpath = os.path.join(args.out, f"{args.tag}_{dataset}_votes{sfx}.csv")
+        with open(vpath, "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["row_id", "column", "yes", "n"])
+            for (i, col), (yes, nn) in sorted(votes.items()):
+                w.writerow([row_id(i), col, yes, nn])
+        print(f"WROTE: {vpath}  (verification votes per cell)")
 
     for col in targets:
         if col in header:
             print(f"  repaired {col}: {per_col[col]} non-abstained cells")
-    if log_rows:
-        cs = sorted(float(r[3]) for r in log_rows)
-        print(f"WROTE: {out_path}  ({len(log_rows)} repairs; confidence "
-              f"min/med/max = {cs[0]:.3f}/{cs[len(cs)//2]:.3f}/{cs[-1]:.3f})")
+    proposals = [r for r in log_rows if r[2]]          # abstention rows carry no confidence
+    if proposals:
+        cs = sorted(float(r[3]) for r in proposals)
+        print(f"WROTE: {out_path}  ({len(proposals)} repairs, {len(log_rows) - len(proposals)} "
+              f"abstentions; confidence min/med/max = "
+              f"{cs[0]:.3f}/{cs[len(cs)//2]:.3f}/{cs[-1]:.3f})")
         print("  ^ a SPREAD here (not all one value) is what lets CARE rank within a "
               "stratum; a flat distribution means no ranking signal.")
     else:
-        print(f"WROTE: {out_path} (0 repairs -- model abstained everywhere?)")
-    print(f"Next (in CARE):  python retclean_prepare.py {dataset} "
-          f"csvs/jellyfish_{dataset}_pred.csv")
-    print(f"          then:  python retclean_precheck.py {dataset} "
-          f"csvs/jellyfish_{dataset}_pred.csv   # FREE gate before the sweep")
+        print(f"WROTE: {out_path} ({len(log_rows)} rows, 0 repairs -- model abstained everywhere?)")
+    print(f"Next (in CARE):  python prepare_log.py {dataset} "
+          f"csvs/{args.tag}_{dataset}_pred.csv --tool {args.tag}")
+    print(f"          then:  python precheck_log.py {dataset} "
+          f"csvs/{args.tag}_{dataset}_pred.csv   # free gate before the sweep")
     print("=" * (24 + len(dataset)) + "\n")
 
 
@@ -354,11 +418,23 @@ def main():
                     help="offline = in-process vLLM, ONE batched generate call "
                          "(recommended); server = OpenAI-compatible HTTP")
     ap.add_argument("--columns", nargs="+", default=None)
-    ap.add_argument("--mode", default="correct", choices=["correct", "impute"],
+    ap.add_argument("--tag", default="jellyfish",
+                    help="log name and source tag, e.g. jellyfish_vc for --mode "
+                         "verify-correct or jellyfish13b for a different checkpoint, so "
+                         "a variant never overwrites the published log")
+    ap.add_argument("--mode", default="correct", choices=["correct", "impute", "verify-correct"],
                     help="correct = show the current (dirty) value and ask for a "
                          "correction (DEFAULT; the dirty value carries most of the "
                          "signal for repair); impute = withhold it (Jellyfish's "
-                         "literal trained task) -- keep for the ablation")
+                         "literal trained task) -- keep for the ablation; "
+                         "verify-correct = ask the model's trained Yes/No error-detection "
+                         "question first and correct only the cells it flags, logging "
+                         "the rest as abstentions (the interface experiment)")
+    ap.add_argument("--verify-threshold", type=int, default=1,
+                    help="verify-correct: minimum yes-votes (of --n-samples) for a cell "
+                         "to be corrected rather than abstained. 1 corrects every cell "
+                         "any sample flagged and records the votes, so stricter gates "
+                         "are derived offline with tools/gate_by_votes.py")
     ap.add_argument("--confidence", default="logprob", choices=["logprob", "agreement"])
     ap.add_argument("--n-samples", type=int, default=5, help="for --confidence agreement")
     ap.add_argument("--temperature", type=float, default=0.35,

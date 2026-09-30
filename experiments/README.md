@@ -19,6 +19,8 @@ one CSV per dataset.
 | `results_bclean/`, `results_holoclean/` | BClean and HoloClean, change-only logs, oracle detection | Table 1 |
 | `results_bclean_keep_oracle/`, `results_holoclean_keep_oracle/` | the same proposers' keep-inclusive logs (their implicit "leave this cell alone" decisions made explicit) | Table 3, stratification section |
 | `results_detected/`, `results_gpt4o/`, `results_retclean/` | Jellyfish, GPT-4o-mini and RetClean | Table 1 |
+| `results_jelly13b/`, `results_jellyfish_vc/`, `results_jellyfish_vc13b/` | Jellyfish-13B under the published protocol, and Jellyfish-8B/-13B under `verify-correct` (the model's own error-detection question gates correction; unflagged cells are logged abstentions), oracle detection | Table 4, Section 8.4 |
+| `results_raha_jelly13b/`, `results_raha_jellyfish_vc/`, `results_raha_jellyfish_vc13b/` | the same three variants behind Raha's detector | Section 8.4 |
 | `results_jelly_tax25k/` | Jellyfish on the tax row shard `[0, 25000)`; swept with `--row-range` so unseen rows are not scored as escalations | Table 1 |
 | `results_raha_baran/`, `results_raha_bclean/`, `results_raha_holoclean/`, `results_raha_jelly/` | the same proposer logs behind Raha's real detector instead of the oracle | Table 3, real-detection section |
 | `results_constraints_baran/`, `results_constraints_jelly/` | a second detector (a completeness-constraint predicate) to separate detector precision from recall | real-detection section |

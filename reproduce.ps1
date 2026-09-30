@@ -89,6 +89,12 @@ if (-not $Verify) {
         Run --dataset $ds --backends "holoclean_keep:csvs/holoclean_keep_${ds}_mapped.csv" @A --scoring detected --out experiments/results_holoclean_keep_oracle
     }
     Run --dataset flights --backends "retclean:csvs/retclean_flights_mapped.csv" @A --scoring detected --out experiments/results_retclean
+    # Section 8.4: Jellyfish-13B out of the box, and both checkpoints under verify-correct
+    foreach ($ds in $SMALL) {
+        Run --dataset $ds --backends "jellyfish_13b:csvs/jellyfish_13b_${ds}_mapped.csv"     @A --scoring detected --out experiments/results_jelly13b
+        Run --dataset $ds --backends "jellyfish_vc:csvs/jellyfish_vc_${ds}_mapped.csv"       @A --scoring detected --out experiments/results_jellyfish_vc
+        Run --dataset $ds --backends "jellyfish_vc13b:csvs/jellyfish_vc13b_${ds}_mapped.csv" @A --scoring detected --out experiments/results_jellyfish_vc13b
+    }
 
     Step "2/8  Table 3: the same logs behind a real detector (Raha) and a constraint detector"
     foreach ($ds in $SMALL) {
@@ -102,6 +108,14 @@ if (-not $Verify) {
             --detection "log:csvs/raha_${ds}_detected.csv" --out experiments/results_raha_bclean
         Run --dataset $ds --backends "holoclean_keep:csvs/holoclean_keep_${ds}_mapped.csv" @A --scoring detected `
             --detection "log:csvs/raha_${ds}_detected.csv" --out experiments/results_raha_holoclean
+    }
+    foreach ($ds in $SMALL) {   # Section 8.4 variants behind Raha
+        Run --dataset $ds --backends "jellyfish_13b:csvs/jellyfish_13b_${ds}_mapped.csv"     @A --scoring detected `
+            --detection "log:csvs/raha_${ds}_detected.csv" --out experiments/results_raha_jelly13b
+        Run --dataset $ds --backends "jellyfish_vc:csvs/jellyfish_vc_${ds}_mapped.csv"       @A --scoring detected `
+            --detection "log:csvs/raha_${ds}_detected.csv" --out experiments/results_raha_jellyfish_vc
+        Run --dataset $ds --backends "jellyfish_vc13b:csvs/jellyfish_vc13b_${ds}_mapped.csv" @A --scoring detected `
+            --detection "log:csvs/raha_${ds}_detected.csv" --out experiments/results_raha_jellyfish_vc13b
     }
     foreach ($ds in @("hospital", "flights")) {
         Run --dataset $ds --backends "baran:csvs/baran_${ds}_mapped.csv" @A --scoring detected `

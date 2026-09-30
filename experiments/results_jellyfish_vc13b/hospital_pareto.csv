@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+hospital,CARE,marginal,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,CARE,mondrian,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,LLMOnly,-,0.05,detected,0.0,0.5716417910447762,0.42835820895522386,0.5858208955223881,False,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,NoOp,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,CARE,marginal,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,CARE,mondrian,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,LLMOnly,-,0.1,detected,0.0,0.5716417910447762,0.42835820895522386,0.5858208955223881,False,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,NoOp,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,CARE,marginal,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,CARE,mondrian,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,LLMOnly,-,0.2,detected,0.0,0.5716417910447762,0.42835820895522386,0.5858208955223881,False,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv
+hospital,NoOp,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv

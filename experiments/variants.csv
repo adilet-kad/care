@@ -1,0 +1,17 @@
+dataset,variant,label,proposals,errors_total,errors_touched,errors_fixed,acc_on_touched,pi0,clean_touched,clean_broken,net,A02,R02
+hospital,jellyfish,8B,17000,509,509,215,0.4224,0.0511,16491,4815,-4600,0.0000,
+hospital,jellyfish_vc,"8B, verify-correct",793,509,394,187,0.4746,0.0660,399,372,-185,0.0000,
+hospital,jellyfish_13b,13B,16996,509,509,202,0.3969,0.0511,16487,670,-468,0.0000,
+hospital,jellyfish_vc13b,"13B, verify-correct",490,509,446,199,0.4462,0.0583,44,40,159,0.0000,
+beers,jellyfish,8B,18990,3357,3357,650,0.1936,0.0000,15633,5158,-4508,0.0382,0.0039
+beers,jellyfish_vc,"8B, verify-correct",279,3357,99,1,0.0101,0.0101,180,180,-179,0.0000,
+beers,jellyfish_13b,13B,18227,3357,3357,139,0.0414,0.0000,14870,32,107,0.0338,0.0406
+beers,jellyfish_vc13b,"13B, verify-correct",947,3357,614,130,0.2117,0.0000,333,27,103,0.1811,0.0334
+flights,jellyfish,8B,14256,4920,4920,91,0.0185,0.0000,9336,4291,-4200,0.0000,
+flights,jellyfish_vc,"8B, verify-correct",728,4920,681,19,0.0279,0.0000,47,20,-1,0.0000,
+flights,jellyfish_13b,13B,12409,4920,3073,104,0.0338,0.0000,9336,3724,-3620,0.0000,
+flights,jellyfish_vc13b,"13B, verify-correct",1259,4920,1154,95,0.0823,0.0000,105,65,30,0.0000,
+rayyan,jellyfish,8B,9964,948,945,2,0.0021,0.0000,9019,4971,-4969,0.0000,
+rayyan,jellyfish_vc,"8B, verify-correct",1762,948,272,1,0.0037,0.0000,1490,1383,-1382,0.0000,
+rayyan,jellyfish_13b,13B,8535,948,873,1,0.0011,0.0000,7662,1402,-1401,0.0000,
+rayyan,jellyfish_vc13b,"13B, verify-correct",994,948,795,1,0.0013,0.0000,199,50,-49,0.0000,
