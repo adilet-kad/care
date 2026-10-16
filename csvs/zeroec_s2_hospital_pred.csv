@@ -1,0 +1,489 @@
+row_id,column,value,confidence,source
+1,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,,zeroec_llm
+4,City,birmingham,,zeroec_rule
+8,City,birmingham,,zeroec_rule
+11,City,sheffield,,zeroec_rule
+17,HospitalType,acute care hospitals,,zeroec_rule
+22,Condition,heart attack,,zeroec_rule
+25,PhoneNumber,3347938701,,zeroec_llm
+25,EmergencyService,yes,,zeroec_llm
+27,HospitalName,southeast alabama medical center,,zeroec_rule
+28,HospitalOwner,government - hospital district or authority,,zeroec_rule
+32,HospitalOwner,government - hospital district or authority,,zeroec_rule
+37,PhoneNumber,3347938701,,zeroec_llm
+40,HospitalType,acute care hospitals,,zeroec_rule
+43,State,al,,zeroec_rule
+43,HospitalOwner,government - hospital district or authority,,zeroec_rule
+44,EmergencyService,yes,,zeroec_llm
+45,ZipCode,35957,,zeroec_rule
+46,ProviderNumber,10005,,zeroec_rule
+47,State,al,,zeroec_rule
+51,State,al,,zeroec_rule
+52,EmergencyService,yes,,zeroec_llm
+57,City,boaz,,zeroec_rule
+57,Stateavg,al_pn-3b,,zeroec_llm
+58,Address1,2505 u s highway 431 north,,zeroec_rule
+58,PhoneNumber,2565938310,,zeroec_llm
+61,PhoneNumber,2565938310,,zeroec_llm
+64,ZipCode,35957,,zeroec_rule
+66,PhoneNumber,2565938310,,zeroec_llm
+70,Stateavg,al_ami-1,,zeroec_llm
+71,ZipCode,35631,,zeroec_rule
+73,CountyName,lauderdale,,zeroec_rule
+74,Condition,heart attack,,zeroec_rule
+78,CountyName,lauderdale,,zeroec_rule
+80,City,florence,,zeroec_rule
+82,ProviderNumber,10006,,zeroec_rule
+84,State,al,,zeroec_rule
+89,City,florence,,zeroec_rule
+92,Sample,619 patients,,zeroec_llm
+94,City,florence,,zeroec_rule
+94,ZipCode,35631,,zeroec_llm
+95,Address1,702 n main st,,zeroec_rule
+95,MeasureName,heart attack patients given aspirin at arrival,,zeroec_llm
+98,MeasureCode,ami-4,,zeroec_llm
+99,State,al,,zeroec_rule
+99,HospitalType,acute care hospitals,,zeroec_rule
+102,PhoneNumber,3344933541,,zeroec_llm
+102,MeasureCode,hf-1,,zeroec_llm
+107,Address1,702 n main st,,zeroec_rule
+109,MeasureCode,pn-5c,,zeroec_llm
+112,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,,zeroec_llm
+114,HospitalOwner,voluntary non-profit - private,,zeroec_rule
+116,Sample,0 patients,,zeroec_llm
+120,State,al,,zeroec_rule
+120,MeasureName,heart attack patients given aspirin at arrival,,zeroec_llm
+121,MeasureCode,ami-2,,zeroec_llm
+121,Score,100%,,zeroec_llm
+128,Condition,heart failure,,zeroec_rule
+132,HospitalName,crenshaw community hospital,,zeroec_rule
+134,Sample,21 patients,,zeroec_llm
+137,CountyName,crenshaw,,zeroec_rule
+138,ZipCode,36049,,zeroec_rule
+140,ZipCode,36049,,zeroec_rule
+141,State,al,,zeroec_rule
+146,MeasureName,heart attack patients given aspirin at discharge,,zeroec_llm
+150,ZipCode,35640,,zeroec_rule
+158,ZipCode,35640,,zeroec_rule
+158,HospitalOwner,proprietary,,zeroec_rule
+158,EmergencyService,yes,,zeroec_llm
+159,Score,90%,,zeroec_llm
+160,HospitalOwner,proprietary,,zeroec_rule
+162,Address1,201 pine street northwest,,zeroec_rule
+163,HospitalOwner,proprietary,,zeroec_rule
+164,Score,97%,,zeroec_llm
+165,HospitalOwner,proprietary,,zeroec_rule
+166,State,al,,zeroec_rule
+167,Sample,0 patients,,zeroec_llm
+171,Sample,6 patients,,zeroec_llm
+172,HospitalName,marshall medical center north,,zeroec_rule
+176,Address1,8000 alabama highway 69,,zeroec_rule
+178,MeasureCode,hf-2,,zeroec_llm
+181,City,guntersville,,zeroec_rule
+183,State,al,,zeroec_rule
+188,Score,95%,,zeroec_llm
+191,MeasureCode,scip-inf-4,,zeroec_llm
+194,Stateavg,al_scip-vte-2,,zeroec_llm
+197,ZipCode,35233,,zeroec_rule
+200,HospitalType,acute care hospitals,,zeroec_llm
+200,Condition,heart attack,,zeroec_rule
+208,City,birmingham,,zeroec_rule
+209,Score,95%,,zeroec_llm
+211,MeasureName,pneumonia patients assessed and given influenza vaccination,,zeroec_llm
+213,City,birmingham,,zeroec_rule
+214,ProviderNumber,10011,,zeroec_rule
+214,HospitalType,acute care hospitals,,zeroec_rule
+214,Stateavg,al_scip-inf-2,,zeroec_llm
+217,CountyName,jefferson,,zeroec_rule
+217,HospitalOwner,voluntary non-profit - private,,zeroec_rule
+218,PhoneNumber,2058383122,,zeroec_llm
+219,HospitalOwner,voluntary non-profit - private,,zeroec_rule
+220,MeasureName,heart attack patients given aspirin at arrival,,zeroec_llm
+222,CountyName,de kalb,,zeroec_rule
+222,HospitalOwner,voluntary non-profit - church,,zeroec_rule
+224,CountyName,de kalb,,zeroec_rule
+225,Sample,1 patients,,zeroec_llm
+226,Condition,heart attack,,zeroec_rule
+228,CountyName,de kalb,,zeroec_rule
+230,Condition,heart failure,,zeroec_rule
+233,ZipCode,35968,,zeroec_rule
+235,Sample,82 patients,,zeroec_llm
+237,Condition,surgical infection prevention,,zeroec_rule
+238,Score,90%,,zeroec_llm
+240,Condition,surgical infection prevention,,zeroec_rule
+244,HospitalName,dekalb regional medical center,,zeroec_rule
+245,ProviderNumber,10015,,zeroec_rule
+245,Stateavg,al_ami-1,,zeroec_llm
+248,PhoneNumber,3346366221,,zeroec_llm
+248,HospitalOwner,government - federal,,zeroec_rule
+249,Stateavg,al_ami-5,,zeroec_llm
+253,CountyName,clarke,,zeroec_rule
+253,Score,89%,,zeroec_llm
+254,ProviderNumber,10015,,zeroec_rule
+257,Condition,pneumonia,,zeroec_rule
+257,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,,zeroec_llm
+257,Score,96%,,zeroec_llm
+261,Address1,33700 highway 43,,zeroec_rule
+262,PhoneNumber,3346366221,,zeroec_llm
+267,HospitalType,acute care hospitals,,zeroec_rule
+268,ZipCode,36784,,zeroec_rule
+270,Stateavg,al_ami-1,,zeroec_llm
+274,ProviderNumber,10016,,zeroec_rule
+276,Address1,1000 first street north,,zeroec_rule
+279,State,al,,zeroec_rule
+280,Condition,heart failure,,zeroec_rule
+281,HospitalType,acute care hospitals,,zeroec_rule
+282,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,,zeroec_llm
+284,ZipCode,35007,,zeroec_rule
+294,HospitalType,acute care hospitals,,zeroec_rule
+296,Address1,1720 university blvd,,zeroec_rule
+312,City,anniston,,zeroec_rule
+313,CountyName,calhoun,,zeroec_rule
+314,HospitalOwner,proprietary,,zeroec_rule
+315,ProviderNumber,10038,,zeroec_rule
+317,Address1,301 east 18th st,,zeroec_rule
+317,Sample,29 patients,,zeroec_llm
+319,EmergencyService,yes,,zeroec_llm
+322,PhoneNumber,2562358900,,zeroec_llm
+325,CountyName,calhoun,,zeroec_rule
+326,ZipCode,36201,,zeroec_rule
+328,EmergencyService,yes,,zeroec_llm
+333,ZipCode,36302,,zeroec_rule
+333,HospitalOwner,proprietary,,zeroec_rule
+333,EmergencyService,yes,,zeroec_llm
+335,Address1,4370 west main street,,zeroec_rule
+335,Stateavg,al_pn-2,,zeroec_llm
+337,Score,99%,,zeroec_llm
+338,HospitalName,flowers hospital,,zeroec_rule
+341,ZipCode,36302,,zeroec_rule
+343,PhoneNumber,3347935000,,zeroec_llm
+347,CountyName,houston,,zeroec_rule
+347,MeasureName,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,,zeroec_llm
+348,Stateavg,al_scip-vte-2,,zeroec_llm
+350,MeasureCode,ami-2,,zeroec_llm
+351,Address1,810 st vincents drive,,zeroec_rule
+351,EmergencyService,yes,,zeroec_llm
+355,Sample,1 patients,,zeroec_llm
+357,State,al,,zeroec_rule
+357,HospitalOwner,proprietary,,zeroec_rule
+361,ProviderNumber,10086,,zeroec_rule
+364,Address1,1530 u s highway 43,,zeroec_rule
+367,ZipCode,35594,,zeroec_rule
+367,Condition,pneumonia,,zeroec_rule
+368,City,winfield,,zeroec_rule
+370,Condition,pneumonia,,zeroec_rule
+371,Stateavg,al_pn-7,,zeroec_llm
+374,Stateavg,al_scip-inf-2,,zeroec_llm
+375,EmergencyService,yes,,zeroec_llm
+376,ZipCode,35594,,zeroec_rule
+379,Score,95%,,zeroec_llm
+381,MeasureName,heart attack patients given aspirin at discharge,,zeroec_llm
+382,PhoneNumber,2514717110,,zeroec_llm
+385,HospitalName,univ of south alabama medical center,,zeroec_rule
+385,PhoneNumber,2514717110,,zeroec_llm
+386,HospitalName,univ of south alabama medical center,,zeroec_rule
+387,State,al,,zeroec_rule
+387,PhoneNumber,2514717110,,zeroec_llm
+387,Condition,heart failure,,zeroec_rule
+388,Stateavg,al_hf-2,,zeroec_llm
+390,EmergencyService,yes,,zeroec_llm
+390,MeasureName,heart failure patients given smoking cessation advice/counseling,,zeroec_llm
+392,MeasureCode,pn-3b,,zeroec_llm
+394,Address1,124 s memorial dr,,zeroec_rule
+394,PhoneNumber,3343614267,,zeroec_llm
+399,MeasureCode,hf-1,,zeroec_llm
+401,Condition,heart failure,,zeroec_rule
+403,State,al,,zeroec_rule
+406,Score,94%,,zeroec_llm
+407,ZipCode,36067,,zeroec_rule
+409,ProviderNumber,10108,,zeroec_rule
+410,MeasureCode,scip-inf-1,,zeroec_llm
+411,EmergencyService,yes,,zeroec_llm
+412,Address1,124 s memorial dr,,zeroec_rule
+412,HospitalType,acute care hospitals,,zeroec_rule
+412,Score,100%,,zeroec_llm
+414,HospitalType,acute care hospitals,,zeroec_rule
+414,Sample,125 patients,,zeroec_llm
+416,Address1,315 w hickory st,,zeroec_rule
+416,CountyName,talladega,,zeroec_rule
+419,EmergencyService,no,,zeroec_llm
+419,Sample,4 patients,,zeroec_llm
+421,ZipCode,35150,,zeroec_rule
+427,Score,97%,,zeroec_llm
+429,ZipCode,35150,,zeroec_rule
+432,Address1,315 w hickory st,,zeroec_rule
+435,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),,zeroec_llm
+438,City,anchorage,,zeroec_rule
+445,Sample,521 patients,,zeroec_llm
+448,MeasureName,"surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream, not a razor)",,zeroec_llm
+449,HospitalName,alaska regional hospital,,zeroec_rule
+450,HospitalOwner,proprietary,,zeroec_rule
+452,Address1,po box 287,,zeroec_rule
+454,HospitalType,acute care hospitals,,zeroec_rule
+457,CountyName,jefferson,,zeroec_rule
+457,HospitalOwner,government - hospital district or authority,,zeroec_rule
+458,CountyName,jefferson,,zeroec_rule
+463,Sample,0 patients,,zeroec_llm
+465,MeasureCode,scip-vte-1,,zeroec_llm
+466,CountyName,jefferson,,zeroec_rule
+468,Condition,heart attack,,zeroec_rule
+472,PhoneNumber,3347742601,,zeroec_llm
+473,Address1,126 hospital ave,,zeroec_rule
+474,MeasureName,heart failure patients given discharge instructions,,zeroec_llm
+475,City,ozark,,zeroec_rule
+478,State,al,,zeroec_rule
+478,Stateavg,al_pn-2,,zeroec_llm
+483,Sample,62 patients,,zeroec_llm
+484,State,al,,zeroec_rule
+485,Address1,126 hospital ave,,zeroec_rule
+486,City,ozark,,zeroec_rule
+489,Score,99%,,zeroec_llm
+491,ZipCode,36360,,zeroec_rule
+491,HospitalType,acute care hospitals,,zeroec_rule
+493,EmergencyService,yes,,zeroec_llm
+494,HospitalType,acute care hospitals,,zeroec_rule
+494,HospitalOwner,voluntary non-profit - private,,zeroec_rule
+494,MeasureName,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),,zeroec_llm
+496,MeasureCode,ami-5,,zeroec_llm
+497,Sample,0 patients,,zeroec_llm
+498,HospitalType,acute care hospitals,,zeroec_rule
+500,ZipCode,35960,,zeroec_rule
+503,CountyName,cherokee,,zeroec_rule
+503,Sample,44 patients,,zeroec_llm
+505,State,al,,zeroec_rule
+507,Condition,pneumonia,,zeroec_rule
+507,Score,93%,,zeroec_llm
+508,MeasureName,pneumonia patients assessed and given influenza vaccination,,zeroec_llm
+512,HospitalType,acute care hospitals,,zeroec_rule
+514,CountyName,cherokee,,zeroec_rule
+515,Score,100%,,zeroec_llm
+517,PhoneNumber,3342882100,,zeroec_llm
+518,City,montgomery,,zeroec_rule
+522,EmergencyService,yes,,zeroec_llm
+524,Sample,25 patients,,zeroec_llm
+527,HospitalOwner,voluntary non-profit - church,,zeroec_rule
+528,CountyName,montgomery,,zeroec_rule
+537,EmergencyService,yes,,zeroec_llm
+541,CountyName,montgomery,,zeroec_rule
+542,MeasureName,heart attack patients given aspirin at arrival,,zeroec_llm
+545,ZipCode,36106,,zeroec_rule
+546,MeasureName,heart attack patients given beta blocker at discharge,,zeroec_llm
+547,Sample,0 patients,,zeroec_llm
+549,PhoneNumber,3342938000,,zeroec_llm
+552,CountyName,montgomery,,zeroec_rule
+555,Sample,74 patients,,zeroec_llm
+556,Condition,pneumonia,,zeroec_rule
+556,Stateavg,al_pn-5c,,zeroec_llm
+560,ProviderNumber,10024,,zeroec_rule
+560,State,al,,zeroec_rule
+561,HospitalName,jackson hospital & clinic inc,,zeroec_rule
+562,PhoneNumber,3342938000,,zeroec_llm
+563,PhoneNumber,3342938000,,zeroec_llm
+563,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,,zeroec_llm
+568,Stateavg,al_ami-2,,zeroec_llm
+573,State,al,,zeroec_rule
+573,PhoneNumber,3347561400,,zeroec_llm
+573,HospitalOwner,voluntary non-profit - other,,zeroec_rule
+579,City,valley,,zeroec_rule
+579,CountyName,chambers,,zeroec_rule
+580,EmergencyService,yes,,zeroec_llm
+581,MeasureCode,pn-5c,,zeroec_llm
+581,Sample,50 patients,,zeroec_llm
+588,EmergencyService,yes,,zeroec_llm
+589,HospitalType,acute care hospitals,,zeroec_rule
+589,Sample,172 patients,,zeroec_llm
+591,City,valley,,zeroec_rule
+591,CountyName,chambers,,zeroec_rule
+593,State,al,,zeroec_rule
+594,PhoneNumber,3348972257,,zeroec_llm
+600,Condition,heart failure,,zeroec_rule
+602,City,elba,,zeroec_rule
+603,CountyName,coffee,,zeroec_rule
+609,ProviderNumber,10027,,zeroec_rule
+609,Condition,surgical infection prevention,,zeroec_rule
+613,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,,zeroec_llm
+623,Stateavg,al_ami-8a,,zeroec_llm
+628,ProviderNumber,10029,,zeroec_rule
+629,EmergencyService,yes,,zeroec_llm
+632,Condition,pneumonia,,zeroec_rule
+634,CountyName,lee,,zeroec_rule
+635,HospitalType,acute care hospitals,,zeroec_rule
+640,ProviderNumber,10029,,zeroec_rule
+640,MeasureCode,scip-vte-1,,zeroec_llm
+646,ProviderNumber,10032,,zeroec_rule
+647,Stateavg,al_ami-7a,,zeroec_llm
+649,MeasureCode,hf-1,,zeroec_llm
+651,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),,zeroec_llm
+652,MeasureName,heart failure patients given smoking cessation advice/counseling,,zeroec_llm
+653,Address1,209 north main street,,zeroec_rule
+654,EmergencyService,no,,zeroec_llm
+655,HospitalName,wedowee hospital,,zeroec_rule
+655,City,wedowee,,zeroec_llm
+656,ProviderNumber,10032,,zeroec_rule
+667,PhoneNumber,2059344011,,zeroec_llm
+669,Sample,87 patients,,zeroec_llm
+673,CountyName,jefferson,,zeroec_rule
+673,MeasureName,heart attack patients given pci within 90 minutes of arrival,,zeroec_llm
+674,MeasureCode,hf-1,,zeroec_llm
+674,Sample,618 patients,,zeroec_llm
+675,EmergencyService,yes,,zeroec_llm
+677,MeasureCode,hf-4,,zeroec_llm
+679,Stateavg,al_pn-3b,,zeroec_llm
+680,ZipCode,35233,,zeroec_rule
+680,Condition,pneumonia,,zeroec_rule
+686,ZipCode,35233,,zeroec_rule
+690,CountyName,jefferson,,zeroec_rule
+691,City,birmingham,,zeroec_rule
+692,MeasureCode,ami-1,,zeroec_llm
+693,CountyName,elmore,,zeroec_rule
+695,MeasureCode,ami-4,,zeroec_llm
+696,HospitalType,acute care hospitals,,zeroec_llm
+696,Condition,heart attack,,zeroec_rule
+697,City,tallassee,,zeroec_rule
+698,HospitalName,community hospital inc,,zeroec_rule
+699,CountyName,elmore,,zeroec_rule
+699,Condition,heart failure,,zeroec_rule
+699,Score,95%,,zeroec_llm
+700,PhoneNumber,3342836541,,zeroec_llm
+702,State,al,,zeroec_rule
+705,ProviderNumber,10034,,zeroec_rule
+706,HospitalType,acute care hospitals,,zeroec_rule
+706,MeasureName,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,,zeroec_llm
+707,MeasureName,pneumonia patients given the most appropriate initial antibiotic(s),,zeroec_llm
+711,HospitalName,community hospital inc,,zeroec_rule
+711,ZipCode,36078,,zeroec_rule
+712,Score,99%,,zeroec_llm
+713,Condition,surgical infection prevention,,zeroec_rule
+714,PhoneNumber,3342836541,,zeroec_llm
+714,MeasureName,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),,zeroec_llm
+717,Condition,heart attack,,zeroec_rule
+719,MeasureCode,ami-3,,zeroec_llm
+719,Score,67%,,zeroec_llm
+722,ProviderNumber,10035,,zeroec_rule
+722,Stateavg,al_ami-7a,,zeroec_llm
+723,CountyName,cullman,,zeroec_rule
+725,ProviderNumber,10035,,zeroec_rule
+730,HospitalType,acute care hospitals,,zeroec_rule
+730,MeasureCode,pn-4,,zeroec_llm
+731,HospitalName,cullman regional medical center,,zeroec_rule
+731,CountyName,cullman,,zeroec_llm
+734,Condition,surgical infection prevention,,zeroec_rule
+736,MeasureCode,scip-inf-2,,zeroec_llm
+737,Address1,1912 alabama highway 157,,zeroec_rule
+737,City,cullman,,zeroec_rule
+745,HospitalOwner,proprietary,,zeroec_rule
+750,MeasureCode,hf-2,,zeroec_llm
+751,ZipCode,36420,,zeroec_rule
+752,PhoneNumber,3342228466,,zeroec_llm
+753,CountyName,covington,,zeroec_rule
+756,ProviderNumber,10036,,zeroec_rule
+757,City,andalusia,,zeroec_rule
+759,HospitalName,andalusia regional hospital,,zeroec_rule
+761,Stateavg,al_scip-inf-2,,zeroec_llm
+764,PhoneNumber,3342228466,,zeroec_llm
+765,State,al,,zeroec_rule
+765,Stateavg,al_scip-vte-1,,zeroec_llm
+766,HospitalName,andalusia regional hospital,,zeroec_rule
+768,Address1,301 east 18th st,,zeroec_rule
+770,Score,93%,,zeroec_llm
+773,City,anniston,,zeroec_rule
+775,MeasureCode,cac-1,,zeroec_llm
+777,Sample,193 patients,,zeroec_llm
+778,HospitalName,huntsville hospital,,zeroec_rule
+780,HospitalType,acute care hospitals,,zeroec_rule
+781,ProviderNumber,10039,,zeroec_rule
+781,Condition,heart attack,,zeroec_rule
+783,HospitalType,acute care hospitals,,zeroec_rule
+785,HospitalOwner,government - hospital district or authority,,zeroec_rule
+786,CountyName,madison,,zeroec_rule
+786,MeasureName,heart failure patients given an evaluation of left ventricular systolic (lvs) function,,zeroec_llm
+788,Stateavg,al_hf-4,,zeroec_llm
+789,MeasureCode,pn-2,,zeroec_llm
+790,ProviderNumber,10039,,zeroec_rule
+792,State,al,,zeroec_rule
+794,ProviderNumber,10039,,zeroec_rule
+797,Stateavg,al_scip-inf-2,,zeroec_llm
+798,EmergencyService,yes,,zeroec_llm
+799,CountyName,madison,,zeroec_rule
+803,MeasureName,heart attack patients given aspirin at arrival,,zeroec_llm
+810,EmergencyService,yes,,zeroec_llm
+815,HospitalType,acute care hospitals,,zeroec_rule
+816,ZipCode,35901,,zeroec_rule
+817,MeasureName,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,,zeroec_llm
+822,City,gadsden,,zeroec_rule
+825,PhoneNumber,2564944000,,zeroec_llm
+828,Stateavg,al_ami-1,,zeroec_llm
+843,MeasureCode,pn-6,,zeroec_llm
+843,Stateavg,al_pn-6,,zeroec_llm
+846,Sample,4 patients,,zeroec_llm
+847,HospitalOwner,voluntary non-profit - private,,zeroec_rule
+849,HospitalType,acute care hospitals,,zeroec_rule
+850,Address1,1010 lay dam road,,zeroec_rule
+852,Condition,surgical infection prevention,,zeroec_rule
+856,City,hamilton,,zeroec_rule
+856,PhoneNumber,2059216200,,zeroec_llm
+858,Address1,1256 military street south,,zeroec_rule
+860,ProviderNumber,10044,,zeroec_rule
+861,Score,80%,,zeroec_llm
+866,PhoneNumber,2059216200,,zeroec_llm
+866,MeasureCode,pn-4,,zeroec_llm
+867,EmergencyService,yes,,zeroec_llm
+867,Sample,121 patients,,zeroec_llm
+869,HospitalOwner,voluntary non-profit - private,,zeroec_rule
+870,Condition,surgical infection prevention,,zeroec_rule
+873,HospitalOwner,voluntary non-profit - private,,zeroec_rule
+873,Sample,15 patients,,zeroec_llm
+878,HospitalType,acute care hospitals,,zeroec_rule
+879,ProviderNumber,10045,,zeroec_rule
+882,PhoneNumber,2059325966,,zeroec_llm
+884,PhoneNumber,2059325966,,zeroec_llm
+885,State,al,,zeroec_rule
+887,State,al,,zeroec_rule
+889,ProviderNumber,10045,,zeroec_rule
+889,Score,95%,,zeroec_llm
+890,EmergencyService,yes,,zeroec_llm
+894,MeasureName,pneumonia patients assessed and given influenza vaccination,,zeroec_llm
+896,City,fayette,,zeroec_rule
+896,CountyName,fayette,,zeroec_rule
+903,HospitalType,acute care hospitals,,zeroec_rule
+903,MeasureName,children who received reliever medication while hospitalized for asthma,,zeroec_llm
+904,HospitalName,riverview regional medical center,,zeroec_rule
+906,Sample,126 patients,,zeroec_llm
+916,Address1,600 south third street,,zeroec_rule
+916,MeasureName,heart failure patients given smoking cessation advice/counseling,,zeroec_llm
+917,PhoneNumber,2565435200,,zeroec_llm
+918,CountyName,etowah,,zeroec_rule
+920,EmergencyService,yes,,zeroec_llm
+921,Stateavg,al_pn-6,,zeroec_llm
+922,HospitalName,riverview regional medical center,,zeroec_rule
+922,EmergencyService,yes,,zeroec_llm
+923,HospitalName,riverview regional medical center,,zeroec_rule
+923,State,al,,zeroec_rule
+924,ZipCode,35901,,zeroec_rule
+927,HospitalType,acute care hospitals,,zeroec_rule
+931,MeasureCode,ami-1,,zeroec_llm
+934,ProviderNumber,10047,,zeroec_rule
+935,Address1,515 miranda st,,zeroec_rule
+936,Address1,515 miranda st,,zeroec_rule
+939,HospitalName,georgiana hospital,,zeroec_rule
+944,CountyName,butler,,zeroec_rule
+946,Address1,515 miranda st,,zeroec_rule
+950,City,georgiana,,zeroec_rule
+950,HospitalType,acute care hospitals,,zeroec_rule
+956,ProviderNumber,10049,,zeroec_rule
+956,Condition,heart attack,,zeroec_rule
+957,HospitalName,medical center enterprise,,zeroec_rule
+957,Address1,400 n edwards street,,zeroec_rule
+957,HospitalType,acute care hospitals,,zeroec_rule
+961,City,enterprise,,zeroec_rule
+963,HospitalName,medical center enterprise,,zeroec_rule
+965,HospitalType,acute care hospitals,,zeroec_rule
+967,CountyName,coffee,,zeroec_rule
+969,City,enterprise,,zeroec_rule
+973,Sample,27 patients,,zeroec_llm
+975,Condition,surgical infection prevention,,zeroec_rule
+977,HospitalType,acute care hospitals,,zeroec_rule
+986,City,oneonta,,zeroec_rule
+987,Address1,150 gilbreath drive,,zeroec_rule
+988,HospitalName,st vincents blount,,zeroec_rule
+998,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,,zeroec_llm

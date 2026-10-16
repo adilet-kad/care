@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers,CARE,marginal,0.05,detected,0.0,0.01940446650124069,0.9805955334987594,0.020645161290322577,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,CARE,mondrian,0.05,detected,0.28309370352007934,0.0008990318118948792,0.8343632688420446,0.0013139695712309774,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,ApplyAll,-,0.05,detected,0.0,0.01940446650124069,0.9805955334987594,0.020645161290322577,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,EscalateAll,-,0.05,detected,1.0,0.0,0.0,0.0,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,CARE,marginal,0.1,detected,0.0,0.01940446650124069,0.9805955334987594,0.020645161290322577,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,CARE,mondrian,0.1,detected,0.26241943480416463,0.0031761781626475803,0.8446787095391339,0.007937939743821032,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,ApplyAll,-,0.1,detected,0.0,0.01940446650124069,0.9805955334987594,0.020645161290322577,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,EscalateAll,-,0.1,detected,1.0,0.0,0.0,0.0,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,CARE,marginal,0.2,detected,0.0,0.01940446650124069,0.9805955334987594,0.020645161290322577,True,False,gidcl:csvs/gidcl_beers_mapped.csv
+beers,CARE,mondrian,0.2,detected,0.0,0.018195339613287065,0.981804660386713,0.019484382746653473,True,True,gidcl:csvs/gidcl_beers_mapped.csv
+beers,ApplyAll,-,0.2,detected,0.0,0.01940446650124069,0.9805955334987594,0.020645161290322577,True,False,gidcl:csvs/gidcl_beers_mapped.csv
+beers,EscalateAll,-,0.2,detected,1.0,0.0,0.0,0.0,True,True,gidcl:csvs/gidcl_beers_mapped.csv

@@ -1,24 +1,7 @@
-"""audit_label_budget.py -- how many labelled cells does certification actually cost?
+"""CARE automation as a function of the number of labelled calibration cells.
 
-Assumption A1 asks for a clean calibration set, and whether labelling one is
-affordable on a dirty enterprise table is the practical question. Section 5 answers
-that with an inequality, n >~ ln(|Lambda|/delta)/alpha labels per stratum. This script
-answers it with a measurement: hold everything else fixed, vary only the number of
-labelled cells an operator is willing to pay for, and plot what certifiable
-automation that buys.
-
-The model is the operator's, not the statistician's. Given a budget of n labels,
-we draw n cells uniformly at random from the work queue, calibrate on those, and
-decide every remaining cell. The draw is deliberately not stratified-proportional:
-somebody labelling 50 cells across a 17-column table cannot guarantee each column
-its quota, and columns that draw too few labels should fail to certify. That
-failure is the quantity of interest.
-
-Two things the curve shows that the inequality alone does not. Where it saturates
--- the label count beyond which more labelling buys nothing, because automation has
-reached the pi_0 ceiling set by the proposer rather than by the calibration data.
-And how steeply it climbs before then, which is what tells an operator whether the
-first afternoon of labelling is worth spending.
+Calibration cells are drawn uniformly from the work queue (not per stratum); the rest
+are decided. Mondrian and marginal strata are reported per budget.
 
     python audit_label_budget.py
     -> experiments/label_budget.csv
@@ -34,9 +17,7 @@ import sys
 
 DEFAULT_BUDGETS = (25, 50, 100, 200, 400, 800, 1600)
 
-# (proposer tag, dataset, log). Chosen to span the two regimes the inequality
-# predicts: a table whose strata are large enough to calibrate cheaply, and one
-# whose strata are thin enough that the multiplicity penalty bites.
+# (proposer tag, dataset, log): large-strata and thin-strata tables
 CONFIGS = [
     ("Baran", "hospital", "csvs/baran_hospital_mapped.csv"),
     ("Baran", "beers", "csvs/baran_beers_mapped.csv"),

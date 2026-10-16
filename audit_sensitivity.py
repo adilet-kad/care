@@ -1,30 +1,9 @@
-"""audit_sensitivity.py -- is the guarantee sensitive to |Lambda| and delta?
+"""CARE automation and budget violations across grid size |Lambda| and delta.
 
-Two knobs in CARE are not derived from the data: the size of the fixed candidate grid
-|Lambda|, and the confidence level delta. If the reported automation were an artifact
-of tuning them the result would not mean much, so this sweeps both over the existing
-logs and reports what moves.
-
-What should happen, if the construction is sound:
-
-  * COVERAGE is insensitive. The guarantee is one-sided and holds for any grid and any
-    delta; changing them must not produce a budget violation. If it does, the
-    Bonferroni accounting is wrong.
-  * AUTOMATION moves, mildly and in a predictable direction. A larger grid searches
-    more thresholds and pays a larger delta/|Lambda| penalty per test; a larger delta
-    buys a looser bound and more automation. Neither should swing the qualitative
-    picture -- a proposer that certifies nothing should not start certifying half its
-    repairs because the grid grew.
-
-So the result to report is the RANGE of automation across the sweep next to a zero
-violation count, not a single number. That answers "did you tune this?" with evidence
-rather than assurance.
+`_candidate_grid(G)` returns G+1 thresholds, so G = |Lambda| - 1 is passed.
 
     python audit_sensitivity.py
     -> experiments/sensitivity.csv
-
-Note on |Lambda|: `_candidate_grid(G)` for an integer G returns G+1 thresholds, so we
-pass G = |Lambda| - 1 to land on the requested cardinality exactly.
 """
 
 from __future__ import annotations
@@ -39,7 +18,7 @@ CONFIGS = [
     ("Baran", "hospital", "csvs/baran_hospital_mapped.csv"),
     ("Baran", "beers", "csvs/baran_beers_mapped.csv"),
     ("BClean", "flights", "csvs/bclean_flights_mapped.csv"),
-    ("Jellyfish", "beers", "csvs/jellyfish_beers_mapped.csv"),
+    ("BClean+", "beers", "csvs/bclean_plus_beers_mapped.csv"),
 ]
 LAMBDAS = [5, 17, 50]
 DELTAS = [0.05, 0.1, 0.2]
@@ -71,7 +50,7 @@ def main() -> int:
             continue
         print(f"\n===== {tag} / {ds}  (alpha={args.alpha}) =====", flush=True)
         art, defects, repairs, _ = load_and_propose(
-            ds, f"{tag.lower()}:{log}", detection="oracle", fast_verify=True)
+            ds, f"{tag.lower().replace('+', '_plus')}:{log}", detection="oracle", fast_verify=True)
         gold = {k: (str(v).lower().strip() if v is not None else v)
                 for k, v in defects.gold.items()}
         counts = _c.Counter(_CK.parse(r).col for r in gold)

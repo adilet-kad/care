@@ -1,30 +1,11 @@
-"""prepare_log.py -- validate/prepare ANY external cleaner's repair log for CARE.
+"""Validate a cleaner's repair log and map it to CARE's schema.
 
-Generic replacement for the tool-specific prep scripts. Works for Baran, RetClean,
-Jellyfish, or any system emitting the offline-log contract:
+Remaps column names (``COL_MAPS``), drops columns not in CARE's schema, keeps
+``confidence`` and ``source``, reports overlap with the true error cells, and writes
+``csvs/<tool>_<dataset>_mapped.csv``.
 
-    row_id, column, value, [confidence], [source]
-
-What it does
-------------
-1. Remaps the cleaner's column names to CARE's header (via ``COL_MAPS`` below).
-2. DROPS rows whose mapped column doesn't exist in CARE's schema (e.g. hospital's
-   address_2/address_3), so junk never enters the work queue -- and reports them.
-3. Carries `confidence` and `source` through (the graded signal CARE ranks on and the
-   provenance the trust gate reads). Losing these silently is a real failure mode.
-4. Reports alignment against CARE's true error cells + the confidence distribution,
-   and gives a proceed / do-not-proceed verdict.
-5. Writes `csvs/<tool>_<dataset>_mapped.csv` -- the tool name is inferred from the
-   input filename (or set with --tool), so different cleaners never overwrite each
-   other's outputs.
-
-Usage (from the CARE repo root):
     python prepare_log.py <dataset> <path/to/log.csv> [--tool NAME]
-
-Examples:
-    python prepare_log.py hospital csvs/jellyfish_hospital_pred.csv
-    python prepare_log.py flights  csvs/retclean_flights_pred.csv
-    python prepare_log.py beers    csvs/baran_beers_pred.csv --tool baran
+    python prepare_log.py beers csvs/baran_beers_pred.csv --tool baran
 """
 
 import argparse
@@ -33,13 +14,8 @@ import csv
 import os
 import re
 
-# ---------------------------------------------------------------------------
-# Per-dataset column remaps: the cleaner's (Raha-side) column name -> CARE's
-# header name. Only needed when a cleaner's dataframe columns differ from CARE's
-# CSV header; datasets whose names already match (beers, flights, ...) need NO
-# entry. precheck_log.py and audit_calibration.py import this same table, and the
-# exporters under integrations/ keep their copies in sync with it.
-# ---------------------------------------------------------------------------
+# Cleaner column name -> CARE header name, only where they differ.
+# precheck_log.py and audit_calibration.py import this table.
 COL_MAPS = {
     "hospital": {
         "phone": "PhoneNumber", "state": "State", "emergency_service": "EmergencyService",
@@ -52,18 +28,11 @@ COL_MAPS = {
 }
 
 OUT_DIR = "csvs"
-_KNOWN_TOOLS = ("jellyfish", "retclean", "baran", "holoclean", "gpt4o", "bclean")
+_KNOWN_TOOLS = ("baran", "bclean", "holoclean", "gidcl", "zeroec")
 
 
 def _infer_tool(path, dataset=None):
-    """Tool name for the output filename: everything before `_<dataset>_`.
-
-    Prefix matching against _KNOWN_TOOLS alone is WRONG for variant logs. On
-    `baran_raha_hospital_pred.csv` it returns "baran", so the output would be
-    `csvs/baran_hospital_mapped.csv` -- silently overwriting the oracle-detection
-    Baran log that the headline results depend on. Splitting on the dataset name
-    instead yields "baran_raha" and keeps the two side by side.
-    """
+    """Tool name for the output file: the filename part before ``_<dataset>`` (e.g. baran_raha)."""
     base = os.path.basename(path).lower()
     if dataset:
         m = re.match(rf"(.+?)_{re.escape(dataset.lower())}[_.]", base)
@@ -110,8 +79,8 @@ def main():
     for req in ("row_id", "column", "value"):
         if req not in fields:
             raise SystemExit(f"log missing required column {req!r}; has {fields}")
-    has_conf = "confidence" in fields       # graded ranking signal -- must survive
-    has_src = "source" in fields            # provenance -> trust gate
+    has_conf = "confidence" in fields       # cleaner's reported confidence
+    has_src = "source" in fields            # provenance for the trust gate
 
     user_map = COL_MAPS.get(args.dataset, {})
     mapped = lambda c: user_map.get(c, c)
@@ -126,9 +95,7 @@ def main():
 
     os.makedirs(args.out, exist_ok=True)
     out_path = os.path.join(args.out, f"{tool}_{args.dataset}_mapped.csv")
-    # csvs/ holds logs that cost GPU-hours or API spend to produce. Overwriting one
-    # with a different run's output is unrecoverable and silent, so say what is being
-    # replaced and with how many rows -- a large row-count change is the tell.
+    # Report when an existing log is overwritten.
     if os.path.exists(out_path) and os.path.abspath(out_path) != os.path.abspath(args.log):
         try:
             with open(out_path, newline="", encoding="utf-8", errors="replace") as f:
@@ -181,18 +148,18 @@ def main():
             print(f"confidence: min/med/max = {vals[0]:.3f}/{vals[len(vals)//2]:.3f}/"
                   f"{vals[-1]:.3f}   distinct values = {uniq}")
             if uniq <= 2:
-                print("  !! near-constant confidence -> the conformal controller cannot "
+                print("  warning: near-constant confidence -> the conformal controller cannot "
                       "RANK within a stratum; it degenerates to all-or-nothing.")
     else:
-        print("!! no confidence column -> constant s_hat -> all-or-nothing per stratum.")
+        print("warning: no confidence column -> constant s_hat -> all-or-nothing per stratum.")
     if has_src:
         c = collections.Counter((r.get("source") or "").strip() for r, _ in nonblank)
         print("provenance split: " + ", ".join(f"{k or '(blank)'}={v}" for k, v in c.most_common()))
 
     if cov == 0:
-        print("!! ZERO overlap -> row_id base or column format wrong. Do NOT proceed.")
+        print("warning: zero overlap -> row_id base or column format wrong. Do not proceed.")
     elif cov < 0.3:
-        print("!! LOW overlap (<30%) -> the cleaner abstained on most error cells, or a "
+        print("warning: low overlap (<30%) -> the cleaner abstained on most error cells, or a "
               "keying mismatch. Investigate before the sweep.")
     else:
         print("OK -> healthy overlap. Proceed.")

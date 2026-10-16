@@ -1,38 +1,10 @@
-"""Demonstrate that the constant-time verification path detects its own precondition.
+"""Check that the verification fast path detects when its constancy precondition fails.
 
-Section 4.1 claims the fast path is safe because it does not *assume* verification is
-constant across candidates -- it probes k cells on the exact path, checks that
-`feasible`, `s_margin` and `delta_objective` agree, and falls back to the exact path
-when they do not. `verify_fastpath_equivalence.py` shows the two paths agree when the
-precondition HOLDS. Nothing showed what happens when it fails, which leaves the
-weakest engineering claim in the paper resting on a code comment.
-
-This closes that. It constructs a constraint set the precondition genuinely fails
-under, runs both paths, and checks three things:
-
-  1. the probe DETECTS the non-constancy rather than proceeding,
-  2. the run falls back to the exact path and says so,
-  3. the output is identical to running the exact path directly.
-
-Why the artifact is constructed rather than borrowed. The benchmark's default hard
-constraint is the completeness floor, and no single-cell value repair can flip a floor
-already violated by thousands of nulls -- which is exactly why the precondition holds
-there and the fast path is sound. Enabling the cross-row FD predicate on hospital does
-not help either: its `ZipCode -> City` dependency is already violated on 1,122 cells,
-so one repair cannot move the aggregate verdict and verification stays constant for
-the same reason.
-
-Non-constancy needs a constraint set sitting at its boundary: an FD that currently
-HOLDS, where one candidate value preserves it and another breaks it. That is a
-property of the data, not of the dataset's size, so the honest demonstration builds
-the smallest artifact with that property rather than hunting for a real table that
-happens to have it. The mechanism under test -- probe, detect, fall back -- is the
-same either way.
+Builds a 3-row table where the FD ZipCode -> City holds and one candidate breaks it,
+then checks that the probe detects non-constancy and that the fast path matches the
+exact path. Exit status 1 on failure.
 
     python tools/verify_precondition_fallback.py
-
-Exit status is 1 if the probe fails to detect non-constancy, or if the two paths
-disagree. Either would be a real defect in the claim.
 """
 
 from __future__ import annotations
@@ -62,13 +34,7 @@ def build_registry(with_fd: bool):
 
 
 def boundary_artifact():
-    """Smallest table where an FD holds and one repair can break it.
-
-    Two rows share a ZipCode and agree on City, so `ZipCode -> City` is satisfied.
-    Repairing r2's City to match r1 keeps it satisfied; repairing it to anything else
-    violates it. Verification is therefore NOT constant across candidates, which is
-    precisely the precondition the fast path must not assume.
-    """
+    """Smallest table where the FD ZipCode -> City holds and one repair can break it."""
     from care.core import Cell, DataArtifact
 
     art = DataArtifact(artifact_id="boundary")
@@ -83,11 +49,7 @@ def boundary_artifact():
 
 
 class TwoValueProposer:
-    """Offers an FD-preserving value for one ref and an FD-breaking value for another.
-
-    Deliberately minimal: the point is that the two candidates verify differently, so
-    a probe that samples only one of them would generalise a wrong constant.
-    """
+    """Proposes a fixed value per ref, so candidates can verify differently."""
 
     def __init__(self, values):
         self.values = values
@@ -100,7 +62,7 @@ class TwoValueProposer:
                 out.append(RepairCandidate(
                     target_ref=ref, proposed_value=self.values[ref],
                     rationale="fixture", evidence=["reference"],
-                    s_llm=0.9, s_agree=0.9, s_consistency=0.9))
+                    s_conf=0.9, s_agree=0.9, s_consistency=0.9))
         return out
 
 
@@ -115,51 +77,57 @@ def main() -> int:
     os.chdir(ROOT)
 
     art = boundary_artifact()
-    # Options are keyed BY CONSTRAINT ID (see verify.projector._params); a flat
-    # {"fds": ...} silently reaches no predicate and the FD is never evaluated.
+    # options are keyed by constraint id (see verify.projector._params)
     opts = {"dq.consistency.fd": {"fds": [(["ZipCode"], ["City"])]}}
-    # r2 keeps the FD satisfied; r3 breaks it by disagreeing with nothing, so we make
-    # r3 share r1's zip in the candidate space by repairing its City to a value that
-    # conflicts with the r1/r2 group once its zip is corrected.
     values = {"r2::City": "birmingham",       # preserves ZipCode -> City
-              "r3::City": "montgomery",       # r3 has its own zip: still fine
-              "r1::City": "huntsville"}       # BREAKS it: r1 and r2 share 35233
+              "r3::City": "montgomery",       # r3 has its own zip
+              "r1::City": "huntsville"}       # breaks it: r1 and r2 share 35233
     refs = ["r2::City", "r1::City", "r3::City"]
     proposer = TwoValueProposer(values)
 
-    print("constructed artifact: 3 rows, FD ZipCode -> City currently SATISFIED")
+    print("constructed artifact: 3 rows, FD ZipCode -> City currently satisfied")
     print("candidates: r2->birmingham (preserves), r1->huntsville (breaks), "
           "r3->montgomery (independent)")
 
-    # ---- 1. floor only: the precondition holds, as in the paper's configuration --
+    from bench.study import _probe_verifier_constant
+    from care.verify.projector import hard_violation_set
+    from care.verify.verifier import Verifier
+
+    # The sweep uses incremental verification for the floor and FDs and the constancy
+    # probe otherwise; both are checked.
+
+    # 1. floor only: the precondition holds
     reg_floor = build_registry(with_fd=False)
     buf = _io.StringIO()
     with _c.redirect_stdout(buf):
-        propose_repairs(art, refs, proposer, reg=reg_floor, options={},
-                        fast_verify=True, max_workers=1)
-    held = "CONSTANT for this constraint set" in buf.getvalue()
-    print(f"\n[1] completeness floor only -> precondition "
-          f"{'HOLDS, fast path used' if held else 'FAILED (unexpected)'}")
+        held, _ = _probe_verifier_constant(
+            art, refs, proposer, Verifier(), reg_floor, {},
+            hard_violation_set(art, reg_floor, {}), n=len(refs))
+    print(f"\n[1] completeness floor only -> probe precondition "
+          f"{'HOLDS' if held else 'FAILED (unexpected)'}")
 
-    # ---- 2. with the FD: the precondition fails and must be caught ---------------
+    # 2. with the FD: the probe must detect non-constancy
     reg_fd = build_registry(with_fd=True)
     buf = _io.StringIO()
     with _c.redirect_stdout(buf):
+        const_fd, _ = _probe_verifier_constant(
+            art, refs, proposer, Verifier(), reg_fd, opts,
+            hard_violation_set(art, reg_fd, opts), n=len(refs))
+    detected = not const_fd
+    with _c.redirect_stdout(buf):
         fast = propose_repairs(art, refs, proposer, reg=reg_fd, options=opts,
                                fast_verify=True, max_workers=1)
-    out = buf.getvalue()
-    detected = "NON-constant verification" in out
-    fell_back = "falling back to" in out
-    print(f"[2] + cross-row FD          -> non-constancy detected: {detected}, "
-          f"fell back: {fell_back}")
+    incremental = "incremental verification" in buf.getvalue()
+    print(f"[2] + cross-row FD          -> probe detects non-constancy: {detected}; "
+          f"sweep uses incremental verification: {incremental}")
 
-    if not (detected and fell_back):
+    if not (held and detected and incremental):
         print("\nFAIL: the probe accepted a constraint set whose verification is not "
               "constant.\nThe fast path would have reused a wrong constant for every "
               "remaining cell.")
         return 1
 
-    # ---- 3. the fallback must equal the exact path -------------------------------
+    # 3. the fast path must equal the exact path
     buf = _io.StringIO()
     with _c.redirect_stdout(buf):
         exact = propose_repairs(art, refs, proposer, reg=reg_fd, options=opts,
@@ -181,15 +149,15 @@ def main() -> int:
             elif x != y:
                 diffs.append((k, f"{f}: {x!r} vs {y!r}"))
 
-    print(f"[3] fallback vs exact       -> {len(fast)} and {len(exact)} repairs, "
+    print(f"[3] fast path vs exact      -> {len(fast)} and {len(exact)} repairs, "
           f"{len(diffs)} differing fields")
     for k, why in diffs[:5]:
         print(f"      {k}: {why}")
 
     ok = not diffs
-    print("\n" + ("PASS: the precondition is verified at run time, its failure is "
-                  "detected, and the\nfallback reproduces the exact path exactly."
-                  if ok else "FAIL: fallback differs from the exact path."))
+    print("\n" + ("PASS: the probe detects its own precondition failing, and under the "
+                  "FD the\nincremental path reproduces the exact path exactly."
+                  if ok else "FAIL: the fast path differs from the exact path."))
     return 0 if ok else 1
 
 

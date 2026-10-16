@@ -1,0 +1,508 @@
+row_id,column,value,confidence,source
+1,MeasureName,surgery patients who were taking heart drugs caxxed beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,0.000624,gidcl
+4,City,birmingham,0.999964,gidcl
+8,City,birmingham,0.999963,gidcl
+11,City,sheffield,0.999961,gidcl
+14,ProviderNumber,10019,0.999967,gidcl
+17,HospitalType,acute care hospitals,0.999965,gidcl
+18,Sample,38 patients,0.999969,gidcl
+22,Condition,heart attack,0.999965,gidcl
+23,HospitalOwner,government - hospital district or authority,0.999965,gidcl
+23,Condition,heart attack,0.999963,gidcl
+25,PhoneNumber,3347938701,0.999969,gidcl
+25,EmergencyService,yes,0.999963,gidcl
+27,HospitalName,southeast alabama medical center,0.999969,gidcl
+28,HospitalOwner,government - hospital district or authority,0.999968,gidcl
+32,HospitalOwner,government - hospital district or authority,0.999968,gidcl
+37,PhoneNumber,3347938701,0.999970,gidcl
+40,HospitalType,acute care hospitals,0.999966,gidcl
+43,State,al,0.999959,gidcl
+43,HospitalOwner,government - hospital district authority,0.999967,gidcl
+44,EmergencyService,yes,0.999963,gidcl
+45,ZipCode,35957,0.999966,gidcl
+46,ProviderNumber,10005,0.999966,gidcl
+47,State,al,0.999961,gidcl
+51,State,al,0.999962,gidcl
+52,EmergencyService,yes,0.999964,gidcl
+57,Stateavg,al_pn-3b,0.999970,gidcl
+58,Address1,2505 u s highway 431 north,0.999967,gidcl
+58,PhoneNumber,2565938310,0.999969,gidcl
+61,PhoneNumber,2565938310,0.999971,gidcl
+64,ZipCode,35957,0.999967,gidcl
+66,PhoneNumber,2565938310,0.999971,gidcl
+68,CountyName,marshall,0.999968,gidcl
+70,Stateavg,al_ami-1,0.999968,gidcl
+71,ZipCode,35631,0.999965,gidcl
+73,CountyName,lauderdale,0.999965,gidcl
+74,Condition,heart attack,0.999963,gidcl
+78,CountyName,lauderdale,0.999964,gidcl
+80,City,florence,0.999962,gidcl
+82,ProviderNumber,10006,0.999967,gidcl
+84,State,al,0.999958,gidcl
+89,City,florence,0.999962,gidcl
+92,Sample,619 patients,0.999972,gidcl
+94,City,florence,0.999962,gidcl
+94,ZipCode,35631,0.999964,gidcl
+95,Address1,702 n main st,0.999956,gidcl
+95,MeasureName,heart attack patients given aspirin at arrival,0.999959,gidcl
+98,MeasureCode,ami-4,0.999970,gidcl
+99,State,al,0.999960,gidcl
+99,HospitalType,acute care hospitals,0.999963,gidcl
+102,PhoneNumber,3344933541,0.999968,gidcl
+102,MeasureCode,hf-1,0.999970,gidcl
+107,Address1,702 n main st,0.999965,gidcl
+109,MeasureCode,pn-5c,0.999967,gidcl
+112,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,0.999961,gidcl
+114,HospitalOwner,voluntary non-profit - private,0.999965,gidcl
+116,Sample,0 patients,0.999966,gidcl
+120,State,al,0.999958,gidcl
+120,MeasureName,heart attack patients given aspirin at arrival,0.999962,gidcl
+121,MeasureCode,ami-2,0.999969,gidcl
+121,Score,100%,0.999963,gidcl
+128,Condition,heart failure,0.999962,gidcl
+132,HospitalName,crenshaw community hospital,0.999965,gidcl
+134,Sample,21 patients,0.999965,gidcl
+137,CountyName,crenshaw,0.999949,gidcl
+138,ZipCode,36049,0.999963,gidcl
+140,ZipCode,36049,0.999964,gidcl
+141,State,al,0.999956,gidcl
+146,MeasureName,heart attack patients given aspirin at discharge,0.999962,gidcl
+150,ZipCode,35640,0.999967,gidcl
+158,ZipCode,35640,0.999967,gidcl
+158,HospitalOwner,proprietary,0.999965,gidcl
+158,EmergencyService,yes,0.999963,gidcl
+159,Score,98%,0.999962,gidcl
+160,HospitalOwner,proprietary,0.999959,gidcl
+162,Address1,201 pine street northwest,0.999968,gidcl
+163,HospitalOwner,proprietary,0.999963,gidcl
+164,Score,87%,0.999964,gidcl
+165,HospitalOwner,proprietary,0.999964,gidcl
+166,State,al,0.999959,gidcl
+167,Sample,100 patients,0.999967,gidcl
+171,Sample,6 patients,0.999970,gidcl
+172,HospitalName,marshall medical center north,0.999965,gidcl
+176,Address1,8000 alabama highway 69,0.999972,gidcl
+178,MeasureCode,hf-2,0.999972,gidcl
+181,City,guntersville,0.999966,gidcl
+183,State,al,0.999964,gidcl
+188,Score,95%,0.999964,gidcl
+191,MeasureCode,scip-inf-4,0.999972,gidcl
+194,Stateavg,al_scip-vte-2,0.999969,gidcl
+197,ZipCode,35235,0.999966,gidcl
+200,HospitalType,acute care hospitals,0.999963,gidcl
+200,Condition,heart attack,0.999963,gidcl
+208,City,birmingham,0.999960,gidcl
+209,Score,85%,0.999960,gidcl
+211,MeasureName,pneumonia patients assessed and given influenza vaccination,0.999969,gidcl
+213,City,birmingham,0.999959,gidcl
+214,ProviderNumber,10011,0.999966,gidcl
+214,HospitalType,acute care hospitals,0.999964,gidcl
+214,Stateavg,al_scip-inf-2,0.999963,gidcl
+217,CountyName,jefferson,0.999958,gidcl
+217,HospitalOwner,voluntary non-profit - private,0.999963,gidcl
+218,PhoneNumber,2058383122,0.999969,gidcl
+219,HospitalOwner,voluntary non-profit - private,0.999965,gidcl
+220,MeasureName,heart attack patients given aspirin at arrival,0.999958,gidcl
+222,CountyName,de kalb,0.999961,gidcl
+222,HospitalOwner,voluntary non-profit - church,0.999964,gidcl
+224,CountyName,de kalb,0.999964,gidcl
+225,Sample,1 patients,0.999967,gidcl
+226,Condition,heart attack,0.999964,gidcl
+228,CountyName,de kalb,0.999965,gidcl
+229,City,fort payne,0.999943,gidcl
+229,State,al,0.999959,gidcl
+229,PhoneNumber,2568453150,0.999968,gidcl
+230,Condition,heart failure,0.999965,gidcl
+233,ZipCode,35968,0.999966,gidcl
+235,Sample,82 patients,0.999967,gidcl
+237,Condition,surgical infection prevention,0.999966,gidcl
+238,Score,98%,0.999964,gidcl
+239,CountyName,de kalb,0.999962,gidcl
+239,HospitalOwner,voluntary non-profit - church,0.999963,gidcl
+239,Score,99%,0.999961,gidcl
+240,Condition,surgical infection prevention,0.999966,gidcl
+244,HospitalName,dekalb regional medical center,0.999966,gidcl
+245,ProviderNumber,10015,0.999967,gidcl
+245,Stateavg,al_ami-1,0.999968,gidcl
+248,PhoneNumber,3346366221,0.999969,gidcl
+248,HospitalOwner,government - federal,0.999965,gidcl
+249,Stateavg,al_ami-5,0.999968,gidcl
+253,CountyName,clarke,0.999950,gidcl
+253,Score,89,0.999959,gidcl
+254,ProviderNumber,10015,0.999967,gidcl
+257,Condition,pneumonia,0.999966,gidcl
+257,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.999967,gidcl
+257,Score,96%,0.999962,gidcl
+261,Address1,33700 highway 43,0.999967,gidcl
+262,PhoneNumber,3346366221,0.999969,gidcl
+265,Address1,33700 highway 43,0.999967,gidcl
+265,MeasureCode,scip-inf-3,0.999972,gidcl
+267,HospitalType,acute care hospitals,0.999966,gidcl
+268,ZipCode,36784,0.999966,gidcl
+270,Stateavg,al_ami-1,0.999968,gidcl
+274,ProviderNumber,10016,0.999967,gidcl
+276,Address1,1000 first street north,0.999968,gidcl
+279,State,al,0.999962,gidcl
+280,Condition,heart failure,0.999966,gidcl
+281,HospitalType,acute care hospitals,0.999966,gidcl
+282,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.999968,gidcl
+284,ZipCode,35007,0.999964,gidcl
+291,ZipCode,35007,0.999965,gidcl
+291,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.999968,gidcl
+294,HospitalType,acute care hospitals,0.999965,gidcl
+296,Address1,1720 university blvd,0.999918,gidcl
+312,City,anniston,0.999961,gidcl
+313,CountyName,calhoun,0.999962,gidcl
+314,HospitalOwner,proprietary,0.999964,gidcl
+315,ProviderNumber,10038,0.999966,gidcl
+317,Address1,301 east 18th st,0.999967,gidcl
+317,Sample,29 patients,0.999967,gidcl
+319,EmergencyService,yes,0.999962,gidcl
+322,PhoneNumber,2562358900,0.999966,gidcl
+325,CountyName,calhoun,0.999963,gidcl
+326,ZipCode,36201,0.999967,gidcl
+328,EmergencyService,yes,0.999960,gidcl
+333,ZipCode,36305,0.999966,gidcl
+333,HospitalOwner,proprietary,0.999964,gidcl
+333,EmergencyService,yes,0.999962,gidcl
+335,Address1,4370 west main street,0.999967,gidcl
+335,Stateavg,al_pn-2,0.999966,gidcl
+337,Score,100%,0.999963,gidcl
+338,HospitalName,flowers hospital,0.999965,gidcl
+341,ZipCode,36201,0.999967,gidcl
+343,PhoneNumber,3347935000,0.999966,gidcl
+347,CountyName,houston,0.999961,gidcl
+347,MeasureName,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,0.999969,gidcl
+348,Stateavg,al_scip-vte-2,0.999967,gidcl
+350,MeasureCode,ami-2,0.999969,gidcl
+351,Address1,810 st vincents drive,0.999963,gidcl
+351,EmergencyService,yes,0.999961,gidcl
+355,Sample,1 patients,0.999968,gidcl
+357,State,al,0.999960,gidcl
+357,HospitalOwner,proprietary,0.999964,gidcl
+361,ProviderNumber,10086,0.999967,gidcl
+364,Address1,1530 u s highway 43,0.999965,gidcl
+367,ZipCode,35594,0.999964,gidcl
+367,Condition,pneumonia,0.999966,gidcl
+368,City,winfield,0.999966,gidcl
+370,Condition,pneumonia,0.999961,gidcl
+371,Stateavg,al_pn-7,0.999968,gidcl
+374,Stateavg,al_scip-inf-2,0.999966,gidcl
+375,EmergencyService,yes,0.999961,gidcl
+376,ZipCode,35594,0.999963,gidcl
+379,Score,95%,0.999961,gidcl
+381,MeasureName,heart attack patients given aspirin at discharge,0.999962,gidcl
+382,PhoneNumber,2514717110,0.999967,gidcl
+385,HospitalName,univ of south alabama medical center,0.999968,gidcl
+385,PhoneNumber,2514717110,0.999967,gidcl
+386,HospitalName,univ of south alabama medical center,0.999970,gidcl
+387,State,al,0.999962,gidcl
+387,PhoneNumber,2514717110,0.999967,gidcl
+387,Condition,heart failure,0.999966,gidcl
+388,Stateavg,al_hf-2,0.999969,gidcl
+390,EmergencyService,yes,0.999963,gidcl
+390,MeasureName,heart failure patients given smoking cessation advice/counseling,0.999970,gidcl
+392,MeasureCode,pn-3b,0.999972,gidcl
+394,Address1,124 s memorial dr,0.999963,gidcl
+394,PhoneNumber,3343614267,0.999968,gidcl
+399,MeasureCode,hf-1,0.999971,gidcl
+401,Condition,heart failure,0.999966,gidcl
+403,State,al,0.999963,gidcl
+406,Score,84%,0.999962,gidcl
+407,ZipCode,36067,0.999954,gidcl
+409,ProviderNumber,10108,0.999969,gidcl
+410,MeasureCode,scip-inf-1,0.999971,gidcl
+411,EmergencyService,yes,0.999963,gidcl
+412,Address1,124 s memorial dr,0.999964,gidcl
+412,HospitalType,acute care hospitals,0.999966,gidcl
+412,Score,100%,0.999964,gidcl
+414,HospitalType,acute care hospitals,0.999964,gidcl
+414,Sample,125 patients,0.999966,gidcl
+416,Address1,15155 highway 43,0.999967,gidcl
+416,CountyName,talladega,0.999957,gidcl
+419,EmergencyService,no,0.999967,gidcl
+419,Sample,4 patients,0.999966,gidcl
+421,ZipCode,35150,0.999965,gidcl
+427,Score,87%,0.999965,gidcl
+429,ZipCode,35150,0.999964,gidcl
+432,Address1,315 w hickory st,0.999965,gidcl
+435,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.999956,gidcl
+438,City,anchorage,0.999963,gidcl
+445,Sample,521 patients,0.999969,gidcl
+448,MeasureName,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream) or not using a razor,0.999938,gidcl
+449,HospitalName,alaska regional hospital,0.999967,gidcl
+450,HospitalOwner,proprietary,0.999963,gidcl
+452,Address1,2801 debarr road,0.999965,gidcl
+454,HospitalType,acute care hospitals,0.999966,gidcl
+457,CountyName,jefferson,0.999959,gidcl
+457,HospitalOwner,government - hospital district or authority,0.999967,gidcl
+458,CountyName,jefferson,0.999963,gidcl
+463,Sample,1 patients,0.999969,gidcl
+465,MeasureCode,scip-vte-1,0.999969,gidcl
+466,CountyName,jefferson,0.999962,gidcl
+468,Condition,heart attack,0.999963,gidcl
+472,PhoneNumber,3347742601,0.999968,gidcl
+473,Address1,126 hospital ave,0.999965,gidcl
+474,MeasureName,heart failure patients given discharge instructions,0.999969,gidcl
+475,City,ozark,0.028977,gidcl
+478,State,al,0.999961,gidcl
+478,Stateavg,al_pn-2,0.999967,gidcl
+483,Sample,62 patients,0.999966,gidcl
+484,State,al,0.999960,gidcl
+485,Address1,126 hospital ave,0.999964,gidcl
+486,City,ozark,0.048641,gidcl
+489,Score,100%,0.999965,gidcl
+491,ZipCode,36360,0.999964,gidcl
+491,HospitalType,acute care hospitals,0.999962,gidcl
+493,EmergencyService,yes,0.999961,gidcl
+494,HospitalType,acute care hospitals,0.999959,gidcl
+494,HospitalOwner,voluntary non-profit private,0.999962,gidcl
+494,MeasureName,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.999947,gidcl
+496,MeasureCode,ami-5,0.999969,gidcl
+497,Sample,0 patients,0.999967,gidcl
+498,HospitalType,acute care hospitals,0.999964,gidcl
+500,ZipCode,35960,0.999964,gidcl
+503,CountyName,cherokee,0.999959,gidcl
+503,Sample,44 patients,0.999968,gidcl
+505,State,al,0.999961,gidcl
+507,Condition,pneumonia,0.999961,gidcl
+507,Score,93%,0.999961,gidcl
+508,MeasureName,pneumonia patients assessed and given influenza vaccination,0.999969,gidcl
+512,HospitalType,acute care hospitals,0.999965,gidcl
+514,CountyName,cherokee,0.999960,gidcl
+515,Score,100%,0.999966,gidcl
+517,PhoneNumber,3342882100,0.999967,gidcl
+518,City,montgomery,0.999961,gidcl
+522,EmergencyService,yes,0.999963,gidcl
+524,Sample,25% patients,0.999968,gidcl
+527,HospitalOwner,voluntary non-profit - church,0.999967,gidcl
+528,CountyName,montgomery,0.999964,gidcl
+533,HospitalName,baptist medical center south,0.999965,gidcl
+533,HospitalType,acute care hospitals,0.999962,gidcl
+533,MeasureName,pneumonia patients assessed and given influenza vaccination,0.999967,gidcl
+533,Sample,87 patients,0.999964,gidcl
+537,EmergencyService,yes,0.999965,gidcl
+541,CountyName,montgomery,0.999963,gidcl
+542,MeasureName,heart attack patients given aspirin at arrival,0.999961,gidcl
+545,ZipCode,36106,0.999967,gidcl
+546,MeasureName,heart attack patients given beta blockers at discharge,0.999962,gidcl
+547,Sample,184 patients,0.999968,gidcl
+549,PhoneNumber,3342938000,0.999969,gidcl
+552,CountyName,montgomery,0.999964,gidcl
+555,Sample,74 patients,0.999967,gidcl
+556,Condition,pneumonia,0.999963,gidcl
+556,Stateavg,al_pn-5c,0.999965,gidcl
+560,ProviderNumber,10024,0.999967,gidcl
+560,State,al,0.999960,gidcl
+561,HospitalName,jackson hospital & clinic inc,0.999964,gidcl
+562,PhoneNumber,3342938000,0.999969,gidcl
+563,PhoneNumber,3342938000,0.999967,gidcl
+563,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.999967,gidcl
+565,EmergencyService,yes,0.999965,gidcl
+565,Stateavg,al_scip-vte-1,0.999967,gidcl
+568,Stateavg,al_ami-2,0.999967,gidcl
+573,State,al,0.999958,gidcl
+573,PhoneNumber,3347561400,0.999966,gidcl
+573,HospitalOwner,voluntary non-profit - other,0.999963,gidcl
+579,City,valley,0.999955,gidcl
+579,CountyName,chambers,0.999964,gidcl
+580,EmergencyService,yes,0.999961,gidcl
+581,MeasureCode,pn-5c,0.999961,gidcl
+581,Sample,50 patients,0.999961,gidcl
+588,EmergencyService,yes,0.999963,gidcl
+589,HospitalType,acute care hospitals,0.999963,gidcl
+589,Sample,172 patients,0.999967,gidcl
+591,City,valley,0.999953,gidcl
+591,CountyName,chambers,0.999962,gidcl
+593,State,al,0.999961,gidcl
+594,PhoneNumber,3348972257,0.999968,gidcl
+600,Condition,heart failure,0.999963,gidcl
+602,City,elba,0.999951,gidcl
+603,CountyName,coffee,0.999960,gidcl
+609,ProviderNumber,10027,0.999964,gidcl
+609,Condition,surgical infection prevention,0.999966,gidcl
+613,MeasureName,all heart attack patients whose blood sugar (blood glucose) is kept under good control in the days after surgery,0.999965,gidcl
+623,Stateavg,al_ami-8a,0.999967,gidcl
+628,ProviderNumber,10029,0.999968,gidcl
+629,EmergencyService,yes,0.999964,gidcl
+632,Condition,pneumonia,0.999966,gidcl
+634,CountyName,lee,0.999951,gidcl
+635,HospitalType,acute care hospitals,0.999964,gidcl
+640,ProviderNumber,10029,0.999967,gidcl
+640,MeasureCode,scip-vte-1,0.999969,gidcl
+646,ProviderNumber,10032,0.999966,gidcl
+647,Stateavg,al_ami-7a,0.999967,gidcl
+649,MeasureCode,hf-1,0.999970,gidcl
+651,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.999954,gidcl
+652,MeasureName,heart failure patients given smoking cessation advice/counseling,0.999969,gidcl
+653,Address1,209 north main street,0.999969,gidcl
+654,EmergencyService,no,0.999965,gidcl
+655,HospitalName,wedowee hospital,0.999963,gidcl
+655,City,wedowee,0.999960,gidcl
+656,ProviderNumber,10032,0.999964,gidcl
+667,PhoneNumber,2059344011,0.999970,gidcl
+669,Sample,87 patients,0.999968,gidcl
+673,CountyName,jefferson,0.999957,gidcl
+673,MeasureName,heart attack patients given pci with in 90 minutes of arrival,0.999968,gidcl
+674,MeasureCode,hf-1,0.999971,gidcl
+674,Sample,618 patients,0.999971,gidcl
+675,EmergencyService,yes,0.999964,gidcl
+677,MeasureCode,hf-4,0.999971,gidcl
+679,Stateavg,al_pn-3b,0.999970,gidcl
+680,ZipCode,35233,0.999967,gidcl
+680,Condition,pneumonia,0.999967,gidcl
+686,ZipCode,35233,0.999967,gidcl
+690,CountyName,jefferson,0.999963,gidcl
+691,City,birmingham,0.999964,gidcl
+692,MeasureCode,ami-1,0.999970,gidcl
+693,CountyName,elmore,0.999963,gidcl
+695,MeasureCode,ami-4,0.999970,gidcl
+696,HospitalType,acute care hospitals,0.999963,gidcl
+696,Condition,heart attack,0.999963,gidcl
+697,City,tallassee,0.999965,gidcl
+698,HospitalName,community hospital inc,0.999963,gidcl
+699,CountyName,elmore,0.999962,gidcl
+699,Condition,heart failure,0.999962,gidcl
+699,Score,99%,0.999960,gidcl
+700,PhoneNumber,3342836541,0.999967,gidcl
+702,State,al,0.999961,gidcl
+705,ProviderNumber,10034,0.999966,gidcl
+706,HospitalType,acute care hospitals,0.999958,gidcl
+706,MeasureName,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.999965,gidcl
+707,MeasureName,pneumonia patients given the most appropriate initial antibiotic(s),0.999967,gidcl
+711,HospitalName,community hospital inc,0.999961,gidcl
+711,ZipCode,36078,0.999965,gidcl
+712,Score,100%,0.999964,gidcl
+713,Condition,surgical infection prevention,0.999965,gidcl
+714,PhoneNumber,3342836541,0.999967,gidcl
+714,MeasureName,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream with no razor),0.999906,gidcl
+717,Condition,heart attack,0.999964,gidcl
+719,MeasureCode,ami-3,0.999971,gidcl
+719,Score,97%,0.999964,gidcl
+722,ProviderNumber,10035,0.999967,gidcl
+722,Stateavg,al_ami-7a,0.999967,gidcl
+723,CountyName,cullman,0.999964,gidcl
+725,ProviderNumber,10035,0.999967,gidcl
+730,HospitalType,acute care hospitals,0.999965,gidcl
+730,MeasureCode,pn-4,0.999970,gidcl
+731,HospitalName,cullman regional medical center,0.999969,gidcl
+731,CountyName,cullman,0.999963,gidcl
+734,Condition,surgical infection prevention,0.999967,gidcl
+736,MeasureCode,scip-inf-2,0.999972,gidcl
+737,Address1,1912 alabama highway 157,0.999971,gidcl
+737,City,cullman,0.999962,gidcl
+745,HospitalOwner,proprietary,0.999965,gidcl
+750,MeasureCode,hf-2,0.999969,gidcl
+751,ZipCode,36420,0.999965,gidcl
+752,PhoneNumber,3342228466,0.999969,gidcl
+753,CountyName,covington,0.999963,gidcl
+756,ProviderNumber,10036,0.999964,gidcl
+757,City,andalusia,0.999952,gidcl
+759,HospitalName,andalusia regional hospital,0.999960,gidcl
+761,Stateavg,al_scip-inf-2,0.999967,gidcl
+764,PhoneNumber,3342228466,0.999968,gidcl
+765,State,al,0.999961,gidcl
+765,Stateavg,al_scip-vte-1,0.999966,gidcl
+766,HospitalName,andalusia regional hospital,0.999960,gidcl
+768,Address1,301 east 18th st,0.999966,gidcl
+770,Score,93%,0.999962,gidcl
+773,City,anniston,0.999963,gidcl
+775,MeasureCode,cac-1,0.999969,gidcl
+777,Sample,193 patients,0.999967,gidcl
+778,HospitalName,huntsville hospital,0.999966,gidcl
+780,HospitalType,acute care hospitals,0.999964,gidcl
+781,ProviderNumber,1xx39,0.000319,gidcl
+781,Condition,heart attack,0.999965,gidcl
+783,HospitalType,acute care hospitals,0.999964,gidcl
+785,HospitalOwner,government - hospital district or authority,0.999967,gidcl
+786,CountyName,madison,0.999958,gidcl
+786,MeasureName,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.999965,gidcl
+788,Stateavg,al_hf-4,0.999969,gidcl
+789,MeasureCode,pn-2,0.999971,gidcl
+790,ProviderNumber,10039,0.999968,gidcl
+792,State,al,0.999959,gidcl
+794,ProviderNumber,10039,0.999968,gidcl
+797,Stateavg,al_scip-inf-2,0.999967,gidcl
+798,EmergencyService,yes,0.999964,gidcl
+799,CountyName,madison,0.999960,gidcl
+803,MeasureName,heart attack patients given aspirin at arrival,0.999962,gidcl
+810,EmergencyService,yes,0.999963,gidcl
+815,HospitalType,acute care hospitals,0.999965,gidcl
+816,ZipCode,35903,0.999965,gidcl
+817,MeasureName,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.999968,gidcl
+822,City,gadsden,0.999961,gidcl
+825,PhoneNumber,2564944000,0.999969,gidcl
+828,Stateavg,al_ami-1,0.999968,gidcl
+843,MeasureCode,pn-2,0.999961,gidcl
+846,Sample,4 patients,0.999967,gidcl
+847,HospitalOwner,voluntary non-profit - private,0.999966,gidcl
+849,HospitalType,acute care hospitals,0.999966,gidcl
+850,Address1,1010 lay dam road,0.999970,gidcl
+852,Condition,surgical infection prevention,0.999965,gidcl
+856,City,hamilton,0.999962,gidcl
+856,PhoneNumber,2059216200,0.999969,gidcl
+858,Address1,1256 military street south,0.999967,gidcl
+860,ProviderNumber,10044,0.999967,gidcl
+861,Score,80%,0.999963,gidcl
+866,PhoneNumber,2059216200,0.999969,gidcl
+866,MeasureCode,pn-4,0.999970,gidcl
+867,EmergencyService,yes,0.999960,gidcl
+867,Sample,121 patients,0.999966,gidcl
+869,HospitalOwner,voluntary non-profit - private,0.999966,gidcl
+870,Condition,surgical infection prevention,0.999966,gidcl
+873,HospitalOwner,voluntary non-profit - private,0.999966,gidcl
+873,Sample,15 patients,0.999966,gidcl
+878,HospitalType,acute care hospitals,0.999963,gidcl
+879,ProviderNumber,10045,0.999966,gidcl
+882,PhoneNumber,2059325966,0.999969,gidcl
+884,PhoneNumber,2059325966,0.999970,gidcl
+885,State,al,0.999962,gidcl
+887,State,al,0.999961,gidcl
+889,ProviderNumber,10045,0.999967,gidcl
+889,Score,95%,0.999965,gidcl
+890,EmergencyService,yes,0.999963,gidcl
+894,MeasureName,pneumonia patients assessed and given influenza vaccination,0.999970,gidcl
+896,City,fayette,0.999960,gidcl
+896,CountyName,fayette,0.999960,gidcl
+903,HospitalType,acute care hospitals,0.999958,gidcl
+903,MeasureName,children who received reliever medication while hospitalized for asthma,0.999969,gidcl
+904,HospitalName,riverview regional medical center,0.999967,gidcl
+906,Sample,126 patients,0.999968,gidcl
+916,Address1,600 south third street,0.999965,gidcl
+916,MeasureName,heart failure patients given smoking cessation advice/counseling,0.999968,gidcl
+917,PhoneNumber,2565435200,0.999968,gidcl
+918,CountyName,etowah,0.999958,gidcl
+920,EmergencyService,yes,0.999961,gidcl
+921,Stateavg,al_pn-6,0.999959,gidcl
+922,HospitalName,riverview regional medical center,0.999967,gidcl
+922,EmergencyService,yes,0.999962,gidcl
+923,HospitalName,riverview regional medical center,0.999967,gidcl
+923,State,al,0.999961,gidcl
+924,ZipCode,35901,0.999966,gidcl
+927,HospitalType,acute care hospitals,0.999965,gidcl
+931,MeasureCode,ami-1,0.999970,gidcl
+934,ProviderNumber,10047,0.999966,gidcl
+935,Address1,515 miranda st,0.999962,gidcl
+936,Address1,515 miranda st,0.999962,gidcl
+939,HospitalName,georgiana hospital,0.999965,gidcl
+944,CountyName,butler,0.999963,gidcl
+946,Address1,515 miranda st,0.999963,gidcl
+950,City,georgiana,0.999958,gidcl
+950,HospitalType,acute care hospitals,0.999964,gidcl
+956,ProviderNumber,10049,0.999963,gidcl
+956,Condition,heart attack,0.999963,gidcl
+957,HospitalName,medical center enterprise,0.999964,gidcl
+957,Address1,400 n edwards street,0.999963,gidcl
+957,HospitalType,acute care hospitals,0.999962,gidcl
+961,City,enterprise,0.999959,gidcl
+963,HospitalName,medical center enterprise,0.999966,gidcl
+965,HospitalType,acute care hospitals,0.999963,gidcl
+967,CountyName,coffee,0.999962,gidcl
+969,City,enterprise,0.999959,gidcl
+973,Sample,27 patients,0.999968,gidcl
+975,Condition,surgical infection prevention,0.999964,gidcl
+977,HospitalType,acute care hospitals,0.999963,gidcl
+986,City,oneonta,0.999955,gidcl
+987,Address1,150 gilbreath drive,0.999965,gidcl
+988,HospitalName,st vincents blount,0.999965,gidcl
+998,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,0.999960,gidcl

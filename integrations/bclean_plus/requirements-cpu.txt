@@ -1,0 +1,22 @@
+# BClean+ cleaning step (Bayesian inference), CPU only. Verified end to end on the
+# hospital table with export_bclean_plus.py. BClean+'s own requirements.txt pins x86
+# CUDA wheels (torch 2.4.1, nvidia-*-cu12) that do not install on aarch64 (GB10) and
+# are not used by the cleaning path; only generate_UC.py needs torch/transformers, and
+# run_generate_uc.sh runs it inside the NVIDIA vLLM container instead.
+# The pins need Python 3.11 (no 3.12 wheels) and scikit-sparse needs libsuitesparse-dev;
+# Dockerfile.care provides both, so `bash run_bclean_plus.sh setup` needs neither on the host.
+numpy==1.24.4
+pandas==2.0.3
+pgmpy==0.1.21
+networkx==3.1
+scikit-learn==1.3.2
+scikit-sparse==0.4.16
+scipy==1.10.1
+statsmodels==0.14.1
+tdda==2.2.17
+infomap
+fuzzywuzzy
+Levenshtein==0.20.9
+rapidfuzz==2.15.2
+regex
+tqdm

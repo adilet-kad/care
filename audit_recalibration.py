@@ -1,27 +1,8 @@
-"""audit_recalibration.py -- would recalibrating the confidence be enough?
+"""Budget violations of Platt, isotonic and empirical-threshold rules against CARE.
 
-Section 8.3 shows proposer confidence is not a probability. The natural reply is
-that this is a solved problem: fit Platt scaling or isotonic regression on held-out
-data, then auto-apply everything scoring above 1-alpha. This script tests that
-reply directly, on the same splits, budgets and seeds CARE is evaluated on.
-
-The reply fails, and for a reason worth stating precisely. Recalibration targets a
-MARGINAL property: after fitting, cells scoring 0.9 are right about 90% of the time
-*on average over the whole pool*. Auto-applying is a SELECTION, and the selected
-subset is exactly where the recalibrated score is most optimistic, because
-selection keeps the cells whose scores landed high -- including the ones that
-landed high by estimation error. Nothing in Platt or isotonic bounds the error rate
-*conditional on having been selected*, and neither carries a finite-sample
-correction: both are asymptotic fits, so on a few dozen calibration cells the fitted
-map is itself noisy in a direction selection then exploits.
-
-What we report is therefore not calibration quality but budget compliance: over
-`seeds` random splits, how often does each policy's realised error on the cells it
-auto-applied exceed alpha? CARE's guarantee says this should happen at most a
-delta fraction of the time. Nothing constrains the recalibrated thresholds.
-
-Both fits are stdlib-only, matching the rest of the library: Platt is a 1-D logistic
-regression by gradient descent, isotonic is the pool-adjacent-violators algorithm.
+Each policy is fit on the calibration split and auto-applies test cells; reported is
+how often its realised error on the auto-applied cells exceeds alpha over `seeds`
+splits, and its automation. Platt and isotonic auto-apply above 1-alpha.
 
     python audit_recalibration.py
     -> experiments/recalibration.csv
@@ -41,11 +22,10 @@ CONFIGS = [
     ("Baran", "hospital", "csvs/baran_hospital_mapped.csv"),
     ("Baran", "beers", "csvs/baran_beers_mapped.csv"),
     ("BClean", "flights", "csvs/bclean_flights_mapped.csv"),
-    ("Jellyfish", "beers", "csvs/jellyfish_beers_mapped.csv"),
+    ("BClean+", "beers", "csvs/bclean_plus_beers_mapped.csv"),
 ]
 
 
-# --------------------------------------------------------------------------
 def platt(scores, labels, *, epochs=400, lr=0.5):
     """1-D logistic recalibration: P(correct) = sigmoid(a*s + b)."""
     a, b, n = 1.0, 0.0, max(len(scores), 1)
@@ -62,7 +42,7 @@ def platt(scores, labels, *, epochs=400, lr=0.5):
 
 
 def isotonic(scores, labels):
-    """Pool-adjacent-violators: the standard non-parametric calibration map."""
+    """Isotonic recalibration by pool-adjacent-violators."""
     pts = sorted(zip(scores, labels))
     if not pts:
         return lambda s: 0.0
@@ -94,22 +74,7 @@ def isotonic(scores, labels):
 
 
 def heldout_thresholds(cal_scores, cal_ok, cal_stratum, *, alpha, grid):
-    """Per-stratum thresholds chosen by EMPIRICAL calibration error alone.
-
-    This is CARE's own procedure with exactly one thing removed: the
-    Clopper-Pearson upper bound and its Bonferroni correction. Same fixed grid,
-    same per-stratum selection, same "smallest threshold wins" tie-break -- the
-    only difference is that a stratum is accepted when its OBSERVED error on the
-    calibration cells is at or below alpha, rather than when the upper end of a
-    1-delta confidence interval is.
-
-    It is the baseline a practitioner reaches for first: why pay for a bound
-    when the calibration set already tells you the error rate? The answer is
-    that k/n is an estimate, selection runs
-    over the whole grid, and the threshold that looks best is disproportionately
-    the one whose estimate was luckiest. Returns {stratum: threshold}; a stratum
-    with no acceptable threshold escalates entirely, as it does under CARE.
-    """
+    """{stratum: smallest grid threshold with empirical error <= alpha}, inf if none."""
     by_stratum = {}
     for s, ok, st in zip(cal_scores, cal_ok, cal_stratum):
         by_stratum.setdefault(st, []).append((s, ok))
@@ -160,7 +125,7 @@ def main():
             continue
         print(f"\n===== {tag} / {ds} =====", flush=True)
         art, defects, repairs, _ = load_and_propose(
-            ds, f"{tag.lower()}:{log}", detection="oracle", fast_verify=True)
+            ds, f"{tag.lower().replace('+', '_plus')}:{log}", detection="oracle", fast_verify=True)
         gold = {k: (str(v).lower().strip() if v is not None else v)
                 for k, v in defects.gold.items()}
         counts = _c.Counter(_CK.parse(r).col for r in gold)
@@ -168,7 +133,7 @@ def main():
         sf = by_column() if median >= 60 else by_cardinality(art)
 
         from care.conformal.rcps import _DEFAULT_GRID, _candidate_grid
-        grid = _candidate_grid(_DEFAULT_GRID)      # the same grid CARE searches
+        grid = _candidate_grid(_DEFAULT_GRID)      # same grid as CARE
 
         acc = {k: {"viol": 0, "err": [], "auto": []}
                for k in ("CARE", "HeldOut", "Platt", "Isotonic", "Raw")}
@@ -183,7 +148,7 @@ def main():
             cy = [ok(r) for r in cal]
             maps = {"Platt": platt(cs, cy), "Isotonic": isotonic(cs, cy),
                     "Raw": lambda x: x}
-            # HeldOut: per-stratum, empirical-error selection on the SAME grid.
+            # HeldOut: per-stratum empirical-error thresholds
             lam = heldout_thresholds([repairs[r].s_hat for r in cal],
                                      [ok(r) for r in cal], [sf(repairs[r]) for r in cal],
                                      alpha=args.alpha, grid=grid)

@@ -1,18 +1,12 @@
-"""care.predicates.dq -- the shipped data-quality predicates.
+"""Data-quality predicates.
 
-Six predicates, chosen to be structurally different rather than numerous. Each
-reads a different part of the artifact, so the projector invariant of Section 4.1
-is tested against genuinely distinct evaluation shapes:
-
-    dq.completeness           W   per-cell     ratio of required cells that are filled
-    dq.completeness.floor     H   per-cell     no required cell is null
-    dq.consistency.fd         H   cross-row    every declared FD holds
-    dq.traceability           H   lineage      every ref carries a provenance edge
-    dq.source.integrity       H   sources      every declared source carries a digest
-    dq.metadata.usage_terms   H   metadata     the artifact declares its usage terms
-
-Only ``dq.completeness.floor`` is enabled in the paper's runs; see the package
-docstring for why the rest are here.
+    dq.completeness           W   ratio of required cells that are filled
+    dq.completeness.floor     H   no required cell is null
+    dq.consistency.fd         H   every declared FD holds
+    dq.consistency.cfd        H   every declared conditional FD holds
+    dq.traceability           H   every ref carries a provenance edge
+    dq.source.integrity       H   every declared source carries a digest
+    dq.metadata.usage_terms   H   the artifact declares its usage terms
 """
 
 from __future__ import annotations
@@ -24,7 +18,7 @@ from care.core.registry import register_constraint
 
 
 def _source_ref(source_id: str) -> str:
-    """Reference form for a source, so violations point at something addressable."""
+    """Ref string for a source."""
     return f"meta:source:{source_id}"
 
 
@@ -55,14 +49,7 @@ class Completeness(BaseConstraint):
 
 @register_constraint
 class CompletenessFloor(BaseConstraint):
-    """H: no null in any ``is_required`` cell.
-
-    This is the predicate every experiment in the paper runs with, and the reason
-    is that it is monotone in the right direction: writing a value into a missing
-    cell can never *newly* violate it. The verifier therefore cannot reject a
-    proposer's correction for a reason unrelated to the correction's quality, so
-    the certified automation measures the conformal gate rather than the filter.
-    """
+    """H: no null in any ``is_required`` cell. Filling a missing cell never violates it."""
 
     cid = "dq.completeness.floor"
     source = "data-quality: completeness (hard floor)"
@@ -87,10 +74,7 @@ class ConsistencyFD(BaseConstraint):
 
     FDs arrive via ``params.options["fds"]`` as ``(determinant, dependent)``
     column-list pairs. For each X -> Y, rows agreeing on X must agree on every
-    column of Y; rows that disagree are flagged. This is the predicate whose
-    evaluation is genuinely cross-row, which is what makes it useful for testing
-    that hoisting the violation set is sound: a single-cell repair can in
-    principle change another row's verdict.
+    column of Y; rows that disagree are flagged.
     """
 
     cid = "dq.consistency.fd"
@@ -131,18 +115,76 @@ class ConsistencyFD(BaseConstraint):
         )
 
 
+@register_constraint
+class ConsistencyCFD(BaseConstraint):
+    """H: every declared conditional functional dependency holds.
+
+    A CFD ``(X -> Y, t_p)`` applies only to rows whose X values match the constants in
+    its pattern ``t_p`` (Bohannon et al., ICDE 2007). CFDs arrive via
+    ``params.options["cfds"]`` as ``(det_cols, dep_cols, lhs_pattern, rhs_pattern)``,
+    the two patterns being ``{column: constant}`` dicts (empty = wildcard). Among the
+    rows matching ``lhs_pattern`` (with no null in X):
+
+      * a dependent column with a constant in ``rhs_pattern`` must equal it, a
+        single-row check: cell (r, y) violates iff its value is non-null and differs;
+      * a dependent column without one must be functionally determined by X, exactly
+        as in ``dq.consistency.fd`` but over the matching rows only.
+
+    With both patterns empty a CFD is an FD.
+    """
+
+    cid = "dq.consistency.cfd"
+    source = "data-quality: conditional functional-dependency consistency"
+    ctype = "H"
+    reads = ["cells"]
+
+    def evaluate(self, art: DataArtifact, params: Params) -> ConstraintResult:
+        cfds = params.options.get("cfds", [])
+        if not cfds:
+            return ConstraintResult(satisfied=True, detail={"cfds": 0})
+
+        rows: dict[str, dict[str, object]] = {}
+        for c in art.iter_cells():
+            rows.setdefault(c.row_id, {})[c.col] = c.value
+
+        violating: set[str] = set()
+        for det_cols, dep_cols, lhs, rhs in cfds:
+            det_cols, dep_cols = list(det_cols), list(dep_cols)
+            groups: dict[tuple, list[tuple[str, dict]]] = {}
+            for rid, cols in rows.items():
+                if any(cols.get(d) is None for d in det_cols):
+                    continue
+                if any(cols.get(col) != const for col, const in lhs.items()):
+                    continue
+                groups.setdefault(tuple(cols.get(d) for d in det_cols), []).append(
+                    (rid, cols))
+            for members in groups.values():
+                for dep in dep_cols:
+                    if dep in rhs:
+                        for rid, cols in members:
+                            v = cols.get(dep)
+                            if v is not None and v != rhs[dep]:
+                                violating.add(CellKey(rid, dep).key)
+                        continue
+                    distinct = {m[1].get(dep) for m in members if m[1].get(dep) is not None}
+                    if len(distinct) > 1:
+                        for rid, _cols in members:
+                            violating.add(CellKey(rid, dep).key)
+
+        return ConstraintResult(
+            satisfied=len(violating) == 0,
+            violating_refs=sorted(violating),
+            detail={"cfds": len(cfds)},
+        )
+
+
 # --------------------------------------------------------------------------- #
 # Provenance: the lineage-graph and source-integrity predicates                 #
 # --------------------------------------------------------------------------- #
 
 @register_constraint
 class Traceability(BaseConstraint):
-    """H: every cell carries at least one provenance edge.
-
-    Reads the lineage graph rather than the cells, which is what makes it a
-    different evaluation shape from the value predicates above. Empty artifacts
-    are vacuously traceable.
-    """
+    """H: every cell and metadata triple carries at least one provenance edge."""
 
     cid = "dq.traceability"
     source = "data-quality: provenance coverage"
@@ -158,12 +200,7 @@ class Traceability(BaseConstraint):
 class SourceIntegrity(BaseConstraint):
     """H: every declared source carries a recorded content digest.
 
-    Reads the source table, so its violating refs are sources rather than cells
-    -- the one predicate here whose violations are not addressable as ``row::col``.
-    An artifact with no sources is vacuously satisfied. A source failing this is
-    quarantined at ingestion rather than repaired, so no proposer can fix it,
-    which is precisely why it is useful in the projector test: it is a hard
-    predicate that repairs cannot influence in either direction.
+    Violating refs are sources (``meta:source:<id>``), which repairs cannot change.
     """
 
     cid = "dq.source.integrity"
@@ -187,12 +224,8 @@ class SourceIntegrity(BaseConstraint):
 class UsageTermsDeclared(BaseConstraint):
     """H: the artifact declares its usage terms as a metadata triple.
 
-    Reads the metadata triples rather than the cells, so its violating ref is a
-    ``meta:<artifact>:<predicate>`` address and a repair for it is a *triple*
-    rather than a value. That is the point of keeping it: it is the one shipped
-    predicate whose repairs are not cell writes, which keeps the proposer's
-    metadata path and the verifier's non-cell projection covered. The required
-    predicate name is configurable via ``params.options["predicate"]``.
+    The violating ref is ``meta:<artifact>:<predicate>`` and its repair is a triple.
+    The predicate name is set via ``params.options["predicate"]``.
     """
 
     cid = "dq.metadata.usage_terms"
@@ -214,6 +247,7 @@ PLUGINS = [
     Completeness,
     CompletenessFloor,
     ConsistencyFD,
+    ConsistencyCFD,
     Traceability,
     SourceIntegrity,
     UsageTermsDeclared,

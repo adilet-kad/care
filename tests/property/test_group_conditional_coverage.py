@@ -1,19 +1,4 @@
-"""Group-conditional (Mondrian) coverage.
-
-Marginal control only bounds the *pooled* error: under heterogeneity a single
-threshold can satisfy the overall budget while quietly violating a hard subgroup
-(the easy majority's low error masks it). Group-conditional (Mondrian) control
-calibrates one threshold per stratum, giving a per-stratum guarantee.
-
-We validate both halves of that claim by Monte-Carlo over a heterogeneous data
-process (a reliable "easy" stratum and a less-reliable "hard" stratum sharing the
-same s_hat range):
-
-  * group-conditional -> EACH stratum's realized error <= alpha at rate >= 1-delta;
-  * marginal -> the hard stratum is under-covered (the motivation for Mondrian control).
-
-Seeds are fixed for reproducibility.
-"""
+"""Per-stratum (Mondrian) coverage versus marginal coverage on heterogeneous strata."""
 
 from __future__ import annotations
 

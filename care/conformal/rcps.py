@@ -1,37 +1,10 @@
-"""care.conformal.rcps -- Risk-Controlling Prediction Sets threshold search.
+"""Threshold search over a fixed grid of candidate thresholds (Learn-then-Test).
 
-Given calibration repairs with confidence ``s_hat`` and a binary ``correct``
-label, find the auto-apply threshold lambda_hat so that auto-applying iff
-``s_hat >= lambda_hat`` controls the selective error
-``R(lambda) = E[wrong | s_hat >= lambda]`` at ``R(lambda_hat) <= alpha`` with
-probability ``>= 1 - delta``.
-
-Construction (multiplicity-honest). We search a **fixed, data-independent grid**
-of candidate thresholds ``Lambda`` (default: ``0, 1/G, ..., 1``). Each candidate
-``lambda`` is a hypothesis ``H_lambda: R(lambda) > alpha``, certified when its
-``(1 - delta')`` upper confidence bound ``R^+`` (``bounds.py``) on the selected
-set's error is ``<= alpha``. Because the threshold is *selected from the data*
-among ``m = |Lambda|`` candidates, we control the family-wise error with a
-Bonferroni level ``delta' = delta / m`` (Learn-then-Test, Angelopoulos et al.
-2021). Among the certified thresholds we return the smallest -- the largest
-auto-applied set, i.e. maximal automation. If none certifies, ``lambda_hat =
-+inf`` and everything escalates.
-
-Why the fixed grid + correction (and not the naive "smallest data value whose
-pointwise UCB <= alpha"). Selecting a threshold from *all distinct calibration
-s_hat values* and testing each with a pointwise UCB is a multiple-comparisons
-procedure with no correction: in simulation it UNDER-COVERS at the nominal
-1-delta where the fixed grid does not (``tests/property`` asserts this). A fixed
-coarse grid keeps ``m`` small so the Bonferroni penalty is mild, restores valid
-coverage, and still auto-applies a real fraction. The genuine RCPS
-tail-monotonicity argument (no union bound) requires certifying the *entire* tail
-``lambda' >= lambda``; on a data-dependent grid the extreme-high thresholds have
-tiny support and unbounded CIs, which collapses the tail rule to escalate-all.
-The fixed-grid LTT view is the honest, robust choice.
-
-Validity rests on the pointwise-valid UCB at each grid point, the Bonferroni
-union bound over the fixed grid, and exchangeability of calibration and test
-repairs (heterogeneity is handled per stratum by the controller's strata_fn).
+Finds the smallest lambda_hat such that auto-applying iff ``s_hat >= lambda_hat``
+keeps the selective error ``R(lambda) = P(wrong | s_hat >= lambda)`` at most alpha
+with probability ``>= 1 - delta``. Each grid point is tested with a
+``(1 - delta/m)`` upper confidence bound (Bonferroni over the ``m`` grid points;
+Angelopoulos et al. 2021). If none certifies, ``lambda_hat = +inf``.
 """
 
 from __future__ import annotations
@@ -48,14 +21,12 @@ _BOUNDS: dict[str, Callable[[int, int, float], float]] = {
     "clopper_pearson": clopper_pearson_upper,
 }
 
-# Default fixed grid granularity: 21 thresholds at 0, 0.05, ..., 1.0. Fine enough
-# to sit a threshold near any reliable/unreliable confidence boundary, coarse
-# enough that the Bonferroni penalty delta/21 barely dents the bound.
+# default grid: 21 thresholds 0, 0.05, ..., 1.0
 _DEFAULT_GRID = 20
 
 
 def _candidate_grid(grid: int | Sequence[float]) -> list[float]:
-    """A fixed, data-independent grid of candidate thresholds in ascending order."""
+    """Fixed candidate thresholds in ascending order."""
     if isinstance(grid, int):
         if grid < 1:
             raise ValueError("grid must be a positive int or a sequence of floats")
@@ -71,15 +42,17 @@ def rcps_threshold(
     delta: float,
     bound: str = "hoeffding",
     grid: int | Sequence[float] = _DEFAULT_GRID,
+    procedure: str = "bonferroni",
 ) -> tuple[float, list[dict]]:
-    """Return ``(lambda_hat, trace)``; ``trace`` records each evaluated n/k/UCB.
+    """Return ``(lambda_hat, trace)``; ``trace`` records n, k and the bound per threshold.
 
-    ``grid`` -- fixed candidate thresholds. An ``int`` G yields ``0, 1/G, ..., 1``;
-    a sequence is used verbatim. Kept data-independent so the Bonferroni family
-    size ``m`` is fixed and the coverage guarantee is honest.
+    ``grid``: an int G gives ``0, 1/G, ..., 1``; a sequence is used as given.
+    It must not depend on the calibration data.
     """
     if bound not in _BOUNDS:
         raise ValueError(f"unknown bound {bound!r}; choose from {sorted(_BOUNDS)}")
+    if procedure not in _PROCEDURES:
+        raise ValueError(f"unknown procedure {procedure!r}; choose from {_PROCEDURES}")
     ucb = _BOUNDS[bound]
 
     pairs = sorted(zip(s_hat, correct), key=lambda t: t[0])  # ascending s_hat
@@ -89,12 +62,13 @@ def rcps_threshold(
     for i in range(total - 1, -1, -1):
         suffix_wrong[i] = suffix_wrong[i + 1] + (0 if pairs[i][1] else 1)
 
+    if procedure == "sgr":
+        return _sgr(pairs, suffix_wrong, alpha, delta, ucb)
     candidate_lambdas = _candidate_grid(grid)
+    if procedure == "fixed_sequence":
+        return _fixed_sequence(s_sorted, suffix_wrong, candidate_lambdas, alpha, delta, ucb)
     m = max(1, len(candidate_lambdas))
-    # Fixed-grid Learn-then-Test: the threshold is chosen from m data-independent
-    # candidates, so a delta/m union bound controls the family-wise error. This is
-    # exactly the correction that makes the selected-threshold guarantee valid; it
-    # is *not* optional under the tight bound (see module docstring).
+    # Bonferroni over the m grid points
     delta_c = delta / m
 
     lambda_hat = math.inf
@@ -104,13 +78,59 @@ def rcps_threshold(
         n = total - i
         k = suffix_wrong[i]
         if n == 0 or k / n > alpha:
-            continue  # empirical risk already > alpha -> UCB > alpha, cannot certify
+            continue  # empirical risk > alpha, cannot certify
         r_ucb = ucb(k, n, delta_c)
         trace.append({"lambda": lam, "n": n, "k": k, "rhat": k / n, "ucb": r_ucb})
         if r_ucb <= alpha:
             lambda_hat = lam  # smallest certified lambda -> maximal automation
             break
     return lambda_hat, trace
+
+
+_PROCEDURES = ("bonferroni", "fixed_sequence", "sgr")
+
+
+def _fixed_sequence(s_sorted, suffix_wrong, lambdas, alpha, delta, ucb):
+    """Fixed-sequence testing: from the highest threshold down, each at level delta,
+    stopping at the first that fails. Returns the last certified threshold or +inf."""
+    total = len(s_sorted)
+    lambda_hat, trace = math.inf, []
+    for lam in sorted(lambdas, reverse=True):
+        i = bisect.bisect_left(s_sorted, lam)
+        n, k = total - i, suffix_wrong[i]
+        r_ucb = ucb(k, n, delta) if n > 0 else 1.0
+        trace.append({"lambda": lam, "n": n, "k": k, "ucb": r_ucb})
+        if r_ucb > alpha:
+            break
+        lambda_hat = lam
+    return lambda_hat, trace
+
+
+def _sgr(pairs, suffix_wrong, alpha, delta, ucb):
+    """Selection with Guaranteed Risk (Geifman and El-Yaniv, 2017): binary search
+    over the calibration scores, each test at ``delta / ceil(log2 n)``."""
+    n_all = len(pairs)
+    if n_all == 0:
+        return math.inf, []
+    steps = max(1, math.ceil(math.log2(n_all)))
+    dc = delta / steps
+    lo, hi = 0, n_all - 1          # indices into ascending scores
+    best, trace = math.inf, []
+    for _ in range(steps):
+        mid = (lo + hi) // 2
+        lam = pairs[mid][0]
+        i = bisect.bisect_left([p[0] for p in pairs], lam)
+        n, k = n_all - i, suffix_wrong[i]
+        r_ucb = ucb(k, n, dc)
+        trace.append({"lambda": lam, "n": n, "k": k, "ucb": r_ucb})
+        if r_ucb <= alpha:
+            best = min(best, lam)
+            hi = mid - 1
+        else:
+            lo = mid + 1
+        if lo > hi:
+            break
+    return best, trace
 
 
 __all__ = ["rcps_threshold"]

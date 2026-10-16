@@ -1,14 +1,4 @@
-"""Unit tests for the shipped data-quality predicates (care.predicates.dq).
-
-One test per predicate, asserting the satisfied and violated branches plus the
-vacuous case, because a predicate that is vacuously satisfied on an empty
-artifact is the one that silently stops gating anything.
-
-The registry-level test at the bottom is the one that matters for the paper: it
-asserts the shipped set stays heterogeneous in what it reads, since the
-projector-invariant property test in tests/property/ is only meaningful if the
-predicates it registers evaluate in structurally different ways.
-"""
+"""Unit tests for the data-quality predicates in care.predicates.dq."""
 
 from __future__ import annotations
 
@@ -81,7 +71,6 @@ def test_completeness_floor_gates_on_any_missing_required_cell():
 
 
 def test_completeness_floor_cannot_be_newly_violated_by_filling_a_value():
-    """The property the benchmark relies on: writing a value never breaks the floor."""
     bad = _art([("r1", "a", None, True), ("r2", "a", "y", True)])
     before = set(dq.CompletenessFloor().evaluate(bad, _p()).violating_refs)
     bad.set_cell(Cell(row_id="r1", col="a", value="filled", is_required=True, dtype="string"))
@@ -134,10 +123,7 @@ def test_shipped_set_is_registrable_and_typed():
 
 
 def test_shipped_set_stays_heterogeneous():
-    """The projector-invariant property test is only meaningful if these read
-    different parts of the artifact. Guard that, so a later cleanup that collapses
-    them into four value-predicates fails here rather than silently weakening the
-    evidence for Section 4.1."""
+    """The shipped predicates read different parts of the artifact."""
     reads = {frozenset(c.reads) for c in ALL_CONSTRAINTS}
     assert len(reads) >= 3, f"predicates read only {reads}"
     hard = [c for c in ALL_CONSTRAINTS if c.ctype == "H"]

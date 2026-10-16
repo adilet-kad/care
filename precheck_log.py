@@ -1,31 +1,9 @@
-"""precheck_log.py -- FREE certifiability pre-check for any cleaner's repair log.
+"""Predict from a cleaner's log whether CARE will certify any column, before a sweep.
 
-Run AFTER the (expensive) generation step and BEFORE the pareto sweep, to predict
-whether CARE will certify any automation -- so you never spend a sweep on a config
-that will just escalate everything.
+``--scope errors`` scores only true error cells (as under oracle detection);
+``--scope touched`` scores every proposed cell, counting a changed clean cell as an
+error. Also reports whether confidence ranks correct repairs above incorrect ones.
 
-TWO SCOPES (the distinction matters, and it's a real methodological choice):
-
-  --scope errors   Score only the dataset's TRUE ERROR cells. This is what CARE
-                   evaluates under ORACLE detection: the hardest possible subset,
-                   and the standard repair-F1 population.
-
-  --scope touched  Score EVERY cell the cleaner proposed on (default). Repairing a
-                   clean cell to itself counts as correct; changing it counts as an
-                   error. This is what CARE evaluates when the cleaner's own log is
-                   the work queue (`--detection log:<path>`), and it is the more
-                   deployment-realistic picture: a cleaner proposes on many cells and
-                   the governance layer must judge all of them.
-
-The two can disagree sharply. On hospital/Jellyfish, ProviderNumber is 2.8% error
-over touched cells (it preserves clean values well) but 0% successful on true error
-cells. Report whichever you use, explicitly.
-
-It also reports whether the CONFIDENCE column actually discriminates -- if
-high-confidence repairs are not more accurate than low-confidence ones, the conformal
-controller has nothing to rank on and can only take a stratum all-or-nothing.
-
-Usage (from the CARE repo root):
     python precheck_log.py <dataset> <log.csv> [--scope touched|errors] [--alpha 0.1]
 """
 
@@ -39,10 +17,7 @@ try:
 except Exception:
     COL_MAPS = {}
 
-# A per-column stratum needs enough calibration mass AND low enough error: ~60
-# attempted cells gives ~24 calibration after a 40/60 split, roughly the floor at
-# which an exact Clopper-Pearson + Bonferroni bound can certify error <= 0.2 at
-# delta=0.1. Heuristic, but it matched the real sweep on hospital and flights.
+# Minimum attempted cells per column (~24 calibration cells after a 40/60 split).
 _MIN_MASS = 60
 
 
@@ -97,17 +72,12 @@ def main():
         tot += n; ok_tot += k
         cert = (n >= _MIN_MASS and err <= args.alpha)
         any_cert = any_cert or cert
-        print(f"{col:18}{n:7}{acc:9.1%}{err:9.1%}   {'<== likely CERTIFIES' if cert else ''}")
+        print(f"{col:18}{n:7}{acc:9.1%}{err:9.1%}   {'<- likely certifies' if cert else ''}")
     if tot:
         print(f"\noverall: n={tot}  acc={ok_tot/tot:.1%}  err={1-ok_tot/tot:.1%}")
 
     if conf_recs:
-        # Break ties RANDOMLY, not by correctness. `sort(reverse=True)` on
-        # (confidence, correct) puts correct answers first inside a tie group, so
-        # "top 10%" reports the best 10% of a tie rather than a random 10%. These
-        # signals are coarse -- self-consistency over 5 samples takes 6 values, and
-        # 65% of tax cells sit at the maximum -- so that bias is large: it reported
-        # top-10% accuracy of 1.000 on three logs whose fair values are 0.51-0.75.
+        # Shuffle before the stable sort so ties are broken at random.
         import random as _rnd
         _rnd.Random(0).shuffle(conf_recs)
         conf_recs.sort(key=lambda r: -r[0])

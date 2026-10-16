@@ -1,13 +1,6 @@
-"""bench.datasets -- real cleaning corpora: download + CSV -> DataArtifact loader.
+"""Raha/Baran benchmark corpora: download and load dirty/clean CSV pairs.
 
-Uses the canonical Raha/Baran benchmark datasets (dirty/clean CSV pairs with
-ground truth). Each dataset folder has ``dirty.csv`` and ``clean.csv`` with the
-same rows aligned by the first ``index`` column and columns aligned by position
-(``empty`` and "" are the null tokens). Errors are the cells where dirty != clean;
-those cells (and their clean gold values) become the ``Defects`` the harness
-scores against.
-
-Stdlib only (csv + urllib); no pandas/network deps beyond the standard library.
+Error cells are those where dirty != clean; their clean values form the gold ``Defects``.
 """
 
 from __future__ import annotations
@@ -40,8 +33,7 @@ class DatasetSpec:
     name: str
 
 
-# The five base corpora. Imported Ni et al. variants are registered on top of these
-# by ``register_variants`` below.
+# Base corpora; Ni et al. variants are added by ``_register_ni_variants``.
 DATASETS: dict[str, DatasetSpec] = {
     "hospital": DatasetSpec("hospital"),
     "flights": DatasetSpec("flights"),
@@ -52,16 +44,9 @@ DATASETS: dict[str, DatasetSpec] = {
 
 
 def _register_ni_variants() -> int:
-    """Register Ni et al.'s controlled-noise variants from the import manifest.
+    """Register Ni et al. noise variants listed in data/ni_variants.csv; returns the count.
 
-    Read from `data/ni_variants.csv` rather than globbed off the filesystem: the
-    manifest is written by `tools/import_ni_variants.py` only after each pair passes
-    its structural checks, so a half-copied or refused variant (Ni's flights `outer`
-    files, whose clean/dirty pair differs on 98.6% of cells) can never appear here by
-    accident. Absent manifest means nothing is registered and every base dataset
-    behaves exactly as before.
-
-    A variant shares its base dataset's schema, so nothing beyond the name is recorded.
+    The manifest is written by tools/import_ni_variants.py for pairs that pass its checks.
     """
     path = os.path.join(DATA_DIR, "ni_variants.csv")
     if not os.path.exists(path):
@@ -90,11 +75,7 @@ def _norm(v: str | None) -> str | None:
     return None if s.lower() in NULL_TOKENS else s
 
 
-# The only names that exist upstream in the Raha benchmark repo. Anything else is a
-# local dataset (an imported Ni et al. variant, a shard, a typo, or an unexpanded shell
-# glob) and must fail with a readable message rather than a urllib traceback: the old
-# behaviour turned `--dataset '*_ni_*'` -- what bash leaves behind when a glob matches
-# nothing -- into `HTTP Error 404`, which reads like a network problem and is not one.
+# Corpora available upstream; any other name must exist locally.
 DOWNLOADABLE = ("hospital", "flights", "beers", "rayyan", "tax")
 
 
@@ -126,9 +107,8 @@ def _read(path: str) -> tuple[list[str], list[list[str]]]:
 def load(name: str, *, data_dir: str = DATA_DIR, source_trust: float = 0.7):
     """Return (dirty_artifact, defects, columns).
 
-    The dirty artifact holds the dirty values (errors present); ``defects.gold``
-    maps each error cell ``"<rowkey>::<col>"`` to its clean value. Columns align by
-    position; the clean header provides canonical names; column 0 is the row key.
+    ``defects.gold`` maps each error cell ``"<rowkey>::<col>"`` to its clean value.
+    Columns align by position; the clean header gives the names.
     """
     folder = os.path.join(data_dir, name)
     if not (os.path.exists(os.path.join(folder, "dirty.csv"))):
@@ -136,10 +116,8 @@ def load(name: str, *, data_dir: str = DATA_DIR, source_trust: float = 0.7):
     _dh, drows = _read(os.path.join(folder, "dirty.csv"))
     chead, crows = _read(os.path.join(folder, "clean.csv"))
 
-    # Detect whether the first column is an index/key (numeric-unique or named
-    # 'index'/'id'/...) -- most Raha sets have one -- or real data (e.g. tax has
-    # NO index column). If none, synthesize a 0-based positional key and keep ALL
-    # columns; getting this wrong shifts every column by one (silent misalignment).
+    # Column 0 is the row key only if it looks like an index (tax has none);
+    # otherwise use the 0-based row position.
     first_name = chead[0].strip().lower()
     looks_named_index = first_name in {"index", "tid", "id", "row_id", "key", ""}
     first_vals = [r[0] for r in crows if r]
@@ -155,7 +133,7 @@ def load(name: str, *, data_dir: str = DATA_DIR, source_trust: float = 0.7):
         cols = chead[:]                 # no key column -- keep every column
         col_start = 0
         def row_key(i, drow):
-            return str(i)               # 0-based position, matches Baran df position
+            return str(i)               # 0-based position, as in Baran's dataframe
 
     art = DataArtifact(artifact_id=name)
     art.add_source(Source(source_id="ingest", uri=folder, kind="lake", trust_prior=source_trust))

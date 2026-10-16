@@ -1,44 +1,13 @@
-"""audit_sweep.py -- join the sealed ceiling predictions to what the sweeps measured.
+"""Join the sealed ceiling predictions to the measured A(alpha) of the sweeps.
 
-`audit_alpha_ceiling.py` wrote pi_alpha before any calibration was spent. The sweeps
-then measured A(alpha). This script puts them side by side, one row per
-(proposer, dataset, partition, alpha), and answers the three questions the error-rate
-experiment exists to answer:
-
-  1. Did the budget hold everywhere?  `covered` must be true on every row. A single
-     false is a bug in the import or the certifier and invalidates the rest.
-  2. Does A(alpha) track the floor-adjusted ceiling as the proposer degrades?
-     Reported as the signed gap A - pi_alpha_floor, its mean and its extremes.
-  3. Is the collapse to the empty set predicted before it happens? Reported as the
-     first variant (by measured cell error rate) where pi_alpha_floor hits zero
-     against the first where A hits zero.
-
-THE GAP HAS A SIGN, AND BOTH SIGNS MEAN SOMETHING
-
-  A < pi_alpha_floor  -- the usual case. The certifier could not reach the ceiling:
-       the stratum was thin, the bound was conservative, or the score put some correct
-       repairs below the threshold. The size of this shortfall is the price of the
-       finite-sample correction.
-
-  A > pi_alpha_floor  -- NOT a violation, and the script does not report it as one.
-       pi_alpha is the ceiling on what a rule that accepts or rejects WHOLE STRATA can
-       automate. CARE's threshold selects a subset of a stratum, so whenever the
-       confidence score ranks correctness inside a stratum, it can certify part of a
-       stratum whose overall error exceeds alpha and legitimately beat the ceiling.
-       HoloClean on flights does exactly this under marginal control: pooled error is
-       0.258, so the marginal pi_0.2 is 0, yet A(0.2) is 0.74 on the high-confidence
-       tail. Exceedances are therefore counted and reported separately, and they are
-       the direct measurement of how much within-stratum ranking a proposer's score
-       carries -- the same quantity Section 8.3 argues is usually absent.
-
-So the honest claim the joined file supports is "pi_alpha is the ceiling attainable
-without within-stratum ranking", and the exceedance count is the evidence for how
-often that qualifier binds.
+One row per (proposer, dataset, partition, alpha, draw) with coverage, the gap
+A - pi_alpha_floor, and the error rates at which predicted and measured automation
+first reach zero. A > pi_alpha_floor is possible when the score ranks within a stratum.
 
     python audit_sweep.py                                  # all results_sweep_* dirs
     python audit_sweep.py --results experiments/results_sweep_baran_var
     python audit_sweep.py --no-verify-seal                 # only for a re-run in place
-    -> experiments/sweep.csv
+    -> experiments/sweep.csv  (+ sweep_median.csv when there are several draws)
 """
 
 from __future__ import annotations
@@ -56,8 +25,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
 MEASURED_PARTITIONS = ("marginal", "mondrian")   # the strata the pareto files carry
-# Two ratios over a few thousand cells that select the SAME cells still differ in the
-# fourth decimal. Anything inside this is a tie, not a gap in either direction.
+# gaps within TIE are treated as zero
 TIE = 1e-3
 
 
@@ -66,11 +34,7 @@ def tag_for(alpha) -> str:
 
 
 def verify_seal(path) -> str:
-    """Recompute the digest over the prediction rows and compare to the sidecar.
-
-    The point of pre-registration is that the predictions cannot be quietly edited
-    after the measurement arrives. Without this check the seal is decoration.
-    """
+    """Recompute the prediction digest and compare to the sidecar; '' if it matches."""
     side = path + ".sha256"
     if not os.path.exists(side):
         return f"no {os.path.basename(side)} -- predictions are UNSEALED"
@@ -96,8 +60,7 @@ def load_results(dirs):
     """(log_path, dataset, strata, alpha) -> row, from every *_pareto.csv found."""
     out = {}
     for d in dirs:
-        # Recursive: draws live in per-variant, per-draw subdirectories so that two
-        # draws of the same variant cannot overwrite each other's pareto file.
+        # draws live in per-draw subdirectories
         for p in sorted(glob.glob(os.path.join(d, "**", "*_pareto.csv"), recursive=True)):
             with open(p, newline="") as fh:
                 for r in csv.DictReader(fh):
@@ -111,18 +74,9 @@ def load_results(dirs):
 
 
 def write_medians(rows, out):
-    """Collapse draws to a median per (proposer, dataset, partition, alpha).
+    """Median (with min/max) over draws per (proposer, dataset, partition, alpha).
 
-    Baran selects its 20 labelled tuples by unseeded active learning, so each log is a
-    draw. Table 1 already reports medians over six draws for this reason; a curve built
-    from single draws would carry less evidence than the table it sits beside. The
-    median rather than the mean because certification is close to all-or-nothing per
-    stratum -- the distribution over draws is bimodal, and a mean between two modes
-    describes no run that happened.
-
-    Also carries min and max, which is what the figure's range bars and the caption's
-    spread statement need. Returns the path written, or None if every point is a single
-    draw (in which case a median file would only invite over-reading).
+    Returns the path written, or None if every point has a single draw.
     """
     groups = collections.defaultdict(list)
     for r in rows:
@@ -147,8 +101,7 @@ def write_medians(rows, out):
             "pi_alpha_floor": med("pi_alpha_floor"),
             "A": med("A"), "A_min": round(min(A), 4), "A_max": round(max(A), 4),
             "A_queue": med("A_queue"), "R": med("R"),
-            # A median that hides a violation would be the worst possible summary, so
-            # coverage is reported as the WORST draw, not the typical one.
+            # covered only if every draw is covered
             "covered": all(str(r["covered"]).lower() == "true" for r in sub),
             "R_max": round(max(float(r["R"]) for r in sub), 4),
             "gap": med("gap"),
@@ -193,7 +146,7 @@ def main() -> int:
     rows, missing = [], 0
     for pr in preds:
         if pr["partition"] not in MEASURED_PARTITIONS:
-            continue                       # `column` is a diagnostic, never measured
+            continue                       # `column` is not measured
         for a in alphas:
             key = (pr["log"], pr["dataset"], pr["partition"], a)
             m = res.get(key)
@@ -204,11 +157,7 @@ def main() -> int:
             pi = float(pr.get(f"pi{t}", "nan"))
             pif = float(pr.get(f"pi{t}_floor", "nan"))
             A = 1.0 - float(m["human_cost"])
-            # A is the auto-applied share of the cells the proposer PROPOSED on.
-            # A_queue rebases it on the whole error queue, which is the denominator
-            # that stays fixed as the injected rate changes. Quote A against the
-            # ceiling (they share a denominator) and A_queue when comparing points
-            # along a curve whose coverage moves.
+            # A is over proposed cells; A_queue is over the whole error queue
             cov = float(pr["coverage"]) if pr.get("coverage") not in ("", None) else 1.0
             rows.append({
                 "proposer": pr["proposer"], "base": pr["base"], "kind": pr["kind"],
@@ -246,16 +195,16 @@ def main() -> int:
               f"MEDIAN\nover draws with a min-max range; make_figures.fig9 prefers this "
               f"file.")
 
-    # ---- 1. coverage ------------------------------------------------------
+    # 1. coverage
     viol = [r for r in rows if str(r["covered"]).lower() != "true"]
     print(f"\n1. COVERAGE  {len(rows) - len(viol)}/{len(rows)} rows covered")
     for r in viol:
-        print(f"   !! {r['proposer']}/{r['dataset']} {r['partition']} a={r['alpha']}: "
+        print(f"   warning: {r['proposer']}/{r['dataset']} {r['partition']} a={r['alpha']}: "
               f"R={r['R']} > alpha, A={r['A']}")
     if not viol:
         print("   no budget violation at any error rate, partition or alpha.")
 
-    # ---- 2. tracking ------------------------------------------------------
+    # 2. A(alpha) against the ceiling
     print("\n2. TRACKING  A(alpha) against the floor-adjusted ceiling")
     print(f"   {'partition':<10}{'alpha':>6}{'rows':>6}{'mean gap':>10}"
           f"{'worst short':>13}{'exceed':>8}{'max exceed':>12}")
@@ -265,30 +214,22 @@ def main() -> int:
             if not sub:
                 continue
             gaps = [r["gap"] for r in sub]
-            # TIE is 0.001, not 0: A and the ceiling are both ratios over a few
-            # thousand cells, so they routinely differ in the fourth decimal when the
-            # certified set is the same set. Counting those as exceedances would
-            # manufacture a within-stratum-ranking finding out of float noise.
             over = [g for g in gaps if g > TIE]
             print(f"   {part:<10}{a:>6}{len(sub):>6}{statistics.mean(gaps):>10.3f}"
                   f"{min(gaps):>13.3f}{len(over):>4}/{len(sub):<3}"
                   f"{(max(over) if over else 0.0):>12.3f}")
     print("   negative gap = the certifier fell short of the ceiling (the usual case).")
-    print("   exceed = A above the ceiling, i.e. the score ranked WITHIN a stratum;")
+    print("   exceed = A above the ceiling, i.e. the score ranked within a stratum;")
     print("   see the module docstring -- this is a measurement, not a violation.")
 
-    # A proposer whose score is constant cannot rank within a stratum, so for it the
-    # ceiling is not a bound but an equality, and any deviation is the calibration
-    # sample's error rate differing from the stratum's. Worth stating separately:
-    # it is the cleanest possible test of the identity, and Baran is exactly this case
-    # (s_hat is 0.666667 on every repair in every Baran log, base and variant).
+    # with constant confidence (Baran) A should equal the ceiling
     flat = [r for r in rows if r["partition"] == "mondrian"]
     if flat:
         exact = sum(1 for r in flat if abs(r["gap"]) <= TIE)
         print(f"   A == ceiling exactly on {exact}/{len(flat)} mondrian rows "
               f"(expect ~all of them for a constant-confidence proposer).")
 
-    # ---- 3. collapse ------------------------------------------------------
+    # 3. first error rate with no automation
     print("\n3. COLLAPSE  first cell error rate at which each series certifies nothing")
     print(f"   {'proposer':<11}{'base':<10}{'kind':<7}{'part':<10}{'alpha':>6}"
           f"{'predicted':>11}{'observed':>10}")
@@ -312,12 +253,7 @@ def main() -> int:
     if total:
         print(f"   the predicted and observed collapse points agree on {agree}/{total} series.")
 
-    # ---- 4. does the partition itself change along the curve? -------------
-    # `mondrian` is by_column() when the median column holds >= 60 error cells and
-    # by_cardinality otherwise, so injecting more errors can flip the certifier's
-    # partition mid-sweep. A curve whose x-axis is the error rate and whose strata
-    # silently change at some level is not one experiment; say so rather than let a
-    # reader read the discontinuity as a proposer effect.
+    # 4. mondrian stratifier changes along a series
     flips = []
     series = collections.defaultdict(list)
     for r in rows:
@@ -328,7 +264,7 @@ def main() -> int:
         if len(kinds) > 1:
             flips.append((k, sorted(kinds)))
     if flips:
-        print("\n4. PARTITION CHANGES ALONG THE CURVE (record or pin these)")
+        print("\n4. partition changes along the curve")
         for k, kinds in flips:
             print(f"   {k[0]}/{k[1]} {k[2]} alpha={k[3]}: mondrian is "
                   f"{' then '.join(kinds)} at different levels")

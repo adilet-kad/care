@@ -1,29 +1,11 @@
-"""Re-run every sweep behind the paper and diff it against the stored result CSV.
+"""Re-run each stored pareto sweep and compare it with the stored result CSV.
 
-Reproducibility asks one question above all: does running the documented
-command reproduce the reported number? This answers it mechanically. Each entry
-in ``RUNS`` names a stored result file and the exact ``bench.run_study``
-invocation that should regenerate it; the script runs each into a temporary
-directory and compares field by field, numerically. The comparison is deliberately
-not byte-exact: the sweep sums per-seed scores across a thread pool, so the last
-bit of a mean varies between runs, and flagging those one-ULP artefacts as failures
-would train you to ignore the tool. `--tol` controls the threshold.
+Fields are compared numerically within --tol, since thread-pool summation order
+changes the last bit of a mean. --fix overwrites stale stored files.
 
-Why this exists as a tool rather than a test: a full pass re-runs every sweep in
-the paper, which is minutes for the small corpora and considerably longer for
-tax, so it cannot live in CI. Run it before submitting an artifact, and after any
-change to the proposer, verifier or certifier.
-
-    python tools/verify_results_reproduce.py                 # everything
-    python tools/verify_results_reproduce.py --only hospital # one dataset
-    python tools/verify_results_reproduce.py --fix           # rewrite stale files
-
-``--fix`` regenerates the stored file in place. Use it deliberately: if a stored
-result no longer reproduces, one of two things is true, and they need different
-responses. Either the code changed and the paper's number is now stale (regenerate,
-then re-run make_figures.py and check which reported numbers moved), or the code
-regressed (find the regression instead). The script cannot tell these apart, so it
-never rewrites anything unless asked.
+    python tools/verify_results_reproduce.py                  # everything
+    python tools/verify_results_reproduce.py --only hospital  # one dataset
+    python tools/verify_results_reproduce.py --fix
 """
 
 from __future__ import annotations
@@ -38,134 +20,47 @@ import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# (stored dir, dataset, extra args). The backend tag must match the one used
-# originally, because it is written into the result file's last column.
+# RUNS: (stored dir, dataset, backend, extra args); the backend tag is written into
+# the result file, so it must match the stored one.
 COMMON = ["--experiment", "pareto", "--alphas", "0.05", "0.1", "0.2",
           "--seeds", "10", "--fast-verify", "on"]
 
-RUNS = [
-    ("results_baran_errors", "hospital", "baran:csvs/baran_hospital_mapped.csv", ["--scoring", "errors"]),
-    ("results_baran_errors", "beers", "baran:csvs/baran_beers_mapped.csv", ["--scoring", "errors"]),
-    ("results_baran_errors", "flights", "baran:csvs/baran_flights_mapped.csv", ["--scoring", "errors"]),
-    ("results_baran_errors", "rayyan", "baran:csvs/baran_rayyan_mapped.csv", ["--scoring", "errors"]),
-    ("results_baran_errors", "tax", "baran:csvs/baran_tax_mapped.csv", ["--scoring", "errors"]),
-    ("results_baran_detected", "hospital", "baran:csvs/baran_hospital_mapped.csv", ["--scoring", "detected"]),
-    ("results_baran_detected", "beers", "baran:csvs/baran_beers_mapped.csv", ["--scoring", "detected"]),
-    ("results_baran_detected", "flights", "baran:csvs/baran_flights_mapped.csv", ["--scoring", "detected"]),
-    ("results_baran_detected", "rayyan", "baran:csvs/baran_rayyan_mapped.csv", ["--scoring", "detected"]),
-    ("results_holoclean", "hospital", "holoclean:csvs/holoclean_hospital_mapped.csv", ["--scoring", "errors"]),
-    ("results_bclean", "hospital", "bclean:csvs/bclean_hospital_mapped.csv", ["--scoring", "errors"]),
-    ("results_bclean", "beers", "bclean:csvs/bclean_beers_mapped.csv", ["--scoring", "errors"]),
-    ("results_bclean", "flights", "bclean:csvs/bclean_flights_mapped.csv", ["--scoring", "errors"]),
-    ("results_detected", "hospital", "jellyfish:csvs/jellyfish_hospital_mapped.csv", ["--scoring", "detected"]),
-    ("results_detected", "beers", "jellyfish:csvs/jellyfish_beers_mapped.csv", ["--scoring", "detected"]),
-    ("results_detected", "flights", "jellyfish:csvs/jellyfish_flights_mapped.csv", ["--scoring", "detected"]),
-    ("results_detected", "rayyan", "jellyfish:csvs/jellyfish_rayyan_mapped.csv", ["--scoring", "detected"]),
-    ("results_gpt4o", "hospital", "gpt4o:csvs/gpt4o_hospital_mapped.csv", ["--scoring", "detected"]),
-    ("results_gpt4o", "beers", "gpt4o:csvs/gpt4o_beers_mapped.csv", ["--scoring", "detected"]),
-    ("results_gpt4o", "flights", "gpt4o:csvs/gpt4o_flights_mapped.csv", ["--scoring", "detected"]),
-    ("results_gpt4o", "rayyan", "gpt4o:csvs/gpt4o_rayyan_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_baran", "hospital", "baran_raha:csvs/baran_raha_hospital_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_hospital_detected.csv"]),
-    ("results_raha_baran", "beers", "baran_raha:csvs/baran_raha_beers_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_beers_detected.csv"]),
-    ("results_raha_baran", "flights", "baran_raha:csvs/baran_raha_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_flights_detected.csv"]),
-    ("results_raha_baran", "rayyan", "baran_raha:csvs/baran_raha_rayyan_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_rayyan_detected.csv"]),
-    # HoloClean's keep log carries two provenance tags, so the sweep auto-adds
-    # strata=mondrian_src and the stored file has 15 rows rather than 12. If a rerun
-    # produces 12, the exporter regressed to a single SOURCE and D23's guard is off.
-    ("results_holoclean_keep_oracle", "hospital", "holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv",
-     ["--scoring", "detected"]),
-    # beers and flights use denial constraints we wrote (deviation: not upstream's);
-    # see integrations/holoclean/constraints/README.md.
-    ("results_holoclean", "beers", "holoclean:csvs/holoclean_beers_mapped.csv",
-     ["--scoring", "errors"]),
-    ("results_holoclean", "flights", "holoclean:csvs/holoclean_flights_mapped.csv",
-     ["--scoring", "errors"]),
-    ("results_holoclean_keep_oracle", "beers", "holoclean_keep:csvs/holoclean_keep_beers_mapped.csv",
-     ["--scoring", "detected"]),
-    ("results_holoclean_keep_oracle", "flights", "holoclean_keep:csvs/holoclean_keep_flights_mapped.csv",
-     ["--scoring", "detected"]),
-    ("results_raha_holoclean", "beers", "holoclean_keep:csvs/holoclean_keep_beers_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_beers_detected.csv"]),
-    ("results_raha_holoclean", "flights", "holoclean_keep:csvs/holoclean_keep_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_flights_detected.csv"]),
-    ("results_raha_holoclean", "hospital", "holoclean_keep:csvs/holoclean_keep_hospital_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_hospital_detected.csv"]),
-    ("results_bclean_keep_oracle", "hospital", "bclean_keep:csvs/bclean_keep_hospital_mapped.csv", ["--scoring", "detected"]),
-    ("results_bclean_keep_oracle", "beers", "bclean_keep:csvs/bclean_keep_beers_mapped.csv", ["--scoring", "detected"]),
-    ("results_bclean_keep_oracle", "flights", "bclean_keep:csvs/bclean_keep_flights_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_bclean", "hospital", "bclean_keep:csvs/bclean_keep_hospital_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_hospital_detected.csv"]),
-    ("results_raha_bclean", "beers", "bclean_keep:csvs/bclean_keep_beers_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_beers_detected.csv"]),
-    ("results_raha_bclean", "flights", "bclean_keep:csvs/bclean_keep_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_flights_detected.csv"]),
-    ("results_raha_jelly", "hospital", "jellyfish:csvs/jellyfish_hospital_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_hospital_detected.csv"]),
-    ("results_raha_jelly", "beers", "jellyfish:csvs/jellyfish_beers_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_beers_detected.csv"]),
-    ("results_raha_jelly", "flights", "jellyfish:csvs/jellyfish_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_flights_detected.csv"]),
-    ("results_raha_jelly", "rayyan", "jellyfish:csvs/jellyfish_rayyan_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_rayyan_detected.csv"]),
-    ("results_constraints_baran", "flights", "baran:csvs/baran_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "constraints"]),
-    ("results_constraints_baran", "hospital", "baran:csvs/baran_hospital_mapped.csv",
-     ["--scoring", "detected", "--detection", "constraints"]),
-    ("results_constraints_jelly", "flights", "jellyfish:csvs/jellyfish_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "constraints"]),
-    ("results_retclean", "flights", "retclean:csvs/retclean_flights_mapped.csv", ["--scoring", "detected"]),
-    # Section 8.4 variants: Jellyfish-13B under the published protocol, and both
-    # checkpoints under verify-correct (the model's own error-detection question as an
-    # abstention gate), each under oracle and Raha detection.
-    ("results_jelly13b", "hospital", "jellyfish_13b:csvs/jellyfish_13b_hospital_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jelly13b", "hospital", "jellyfish_13b:csvs/jellyfish_13b_hospital_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_hospital_detected.csv"]),
-    ("results_jelly13b", "beers", "jellyfish_13b:csvs/jellyfish_13b_beers_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jelly13b", "beers", "jellyfish_13b:csvs/jellyfish_13b_beers_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_beers_detected.csv"]),
-    ("results_jelly13b", "flights", "jellyfish_13b:csvs/jellyfish_13b_flights_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jelly13b", "flights", "jellyfish_13b:csvs/jellyfish_13b_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_flights_detected.csv"]),
-    ("results_jelly13b", "rayyan", "jellyfish_13b:csvs/jellyfish_13b_rayyan_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jelly13b", "rayyan", "jellyfish_13b:csvs/jellyfish_13b_rayyan_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_rayyan_detected.csv"]),
-    ("results_jellyfish_vc", "hospital", "jellyfish_vc:csvs/jellyfish_vc_hospital_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jellyfish_vc", "hospital", "jellyfish_vc:csvs/jellyfish_vc_hospital_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_hospital_detected.csv"]),
-    ("results_jellyfish_vc", "beers", "jellyfish_vc:csvs/jellyfish_vc_beers_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jellyfish_vc", "beers", "jellyfish_vc:csvs/jellyfish_vc_beers_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_beers_detected.csv"]),
-    ("results_jellyfish_vc", "flights", "jellyfish_vc:csvs/jellyfish_vc_flights_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jellyfish_vc", "flights", "jellyfish_vc:csvs/jellyfish_vc_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_flights_detected.csv"]),
-    ("results_jellyfish_vc", "rayyan", "jellyfish_vc:csvs/jellyfish_vc_rayyan_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jellyfish_vc", "rayyan", "jellyfish_vc:csvs/jellyfish_vc_rayyan_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_rayyan_detected.csv"]),
-    ("results_jellyfish_vc13b", "hospital", "jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jellyfish_vc13b", "hospital", "jellyfish_vc13b:csvs/jellyfish_vc13b_hospital_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_hospital_detected.csv"]),
-    ("results_jellyfish_vc13b", "beers", "jellyfish_vc13b:csvs/jellyfish_vc13b_beers_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jellyfish_vc13b", "beers", "jellyfish_vc13b:csvs/jellyfish_vc13b_beers_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_beers_detected.csv"]),
-    ("results_jellyfish_vc13b", "flights", "jellyfish_vc13b:csvs/jellyfish_vc13b_flights_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jellyfish_vc13b", "flights", "jellyfish_vc13b:csvs/jellyfish_vc13b_flights_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_flights_detected.csv"]),
-    ("results_jellyfish_vc13b", "rayyan", "jellyfish_vc13b:csvs/jellyfish_vc13b_rayyan_mapped.csv", ["--scoring", "detected"]),
-    ("results_raha_jellyfish_vc13b", "rayyan", "jellyfish_vc13b:csvs/jellyfish_vc13b_rayyan_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_rayyan_detected.csv"]),
-    # tax: the Jellyfish run is a 25,000-row shard, so the sweep must be restricted to
-    # the same rows or the 105,591 unseen rows score as escalations.
-    ("results_jelly_tax25k", "tax", "jellyfish:csvs/jellyfish_tax_mapped.csv",
-     ["--scoring", "detected", "--row-range", "0", "25000"]),
-    ("results_baran_detected", "tax", "baran:csvs/baran_tax_mapped.csv", ["--scoring", "detected"]),
-    # tax's non-oracle row uses a reduced detector; see docs/REPRODUCE.md D18/D19.
-    ("results_raha_baran", "tax", "baran:csvs/baran_tax_mapped.csv",
-     ["--scoring", "detected", "--detection", "log:csvs/raha_tax_detected.csv"]),
-]
+SMALL = ("hospital", "beers", "flights", "rayyan")
+THREE = ("hospital", "beers", "flights")
+
+
+def _raha(ds):
+    return ["--scoring", "detected", "--detection", f"log:csvs/raha_{ds}_detected.csv"]
+
+
+RUNS = (
+    [("results_baran_errors", d, f"baran:csvs/baran_{d}_mapped.csv", ["--scoring", "errors"])
+     for d in SMALL + ("tax",)]
+    + [("results_baran_detected", d, f"baran:csvs/baran_{d}_mapped.csv", ["--scoring", "detected"])
+       for d in SMALL + ("tax",)]
+    + [("results_bclean", d, f"bclean:csvs/bclean_{d}_mapped.csv", ["--scoring", "errors"]) for d in THREE]
+    + [("results_bclean_keep_oracle", d, f"bclean_keep:csvs/bclean_keep_{d}_mapped.csv",
+        ["--scoring", "detected"]) for d in THREE]
+    + [("results_bclean_plus", d, f"bclean_plus:csvs/bclean_plus_{d}_mapped.csv", ["--scoring", "errors"])
+       for d in THREE]
+    + [("results_holoclean", d, f"holoclean:csvs/holoclean_{d}_mapped.csv", ["--scoring", "errors"])
+       for d in THREE]
+    + [("results_holoclean_keep_oracle", d, f"holoclean_keep:csvs/holoclean_keep_{d}_mapped.csv",
+        ["--scoring", "detected"]) for d in THREE]
+    + [("results_gidcl", d, f"gidcl:csvs/gidcl_{d}_mapped.csv", ["--scoring", "errors"])
+       for d in SMALL + ("tax",)]
+    + [("results_gidcl_owndet", d, f"gidcl:csvs/gidcl_{d}_mapped.csv",
+        ["--scoring", "detected", "--detection", f"log:csvs/gidcl_{d}_detected.csv"])
+       for d in SMALL + ("tax",)]
+    + [("results_zeroec", d, f"zeroec:csvs/zeroec_{d}_mapped.csv", ["--scoring", "errors"]) for d in SMALL]
+    + [("results_raha_baran", d, f"baran_raha:csvs/baran_raha_{d}_mapped.csv", _raha(d)) for d in SMALL]
+    + [("results_raha_baran", "tax", "baran:csvs/baran_tax_mapped.csv", _raha("tax"))]
+    + [("results_raha_bclean", d, f"bclean_keep:csvs/bclean_keep_{d}_mapped.csv", _raha(d)) for d in THREE]
+    + [("results_raha_holoclean", d, f"holoclean_keep:csvs/holoclean_keep_{d}_mapped.csv", _raha(d))
+       for d in THREE]
+    + [("results_constraints_baran", d, f"baran:csvs/baran_{d}_mapped.csv",
+        ["--scoring", "detected", "--detection", "constraints"]) for d in ("hospital", "flights")]
+)
 
 
 def main() -> int:
@@ -178,14 +73,7 @@ def main() -> int:
     os.chdir(ROOT)
 
     def compare(stored, fresh, tol=1e-9):
-        """Numeric comparison, not byte comparison.
-
-        The sweep dispatches proposals across a thread pool, so the order in which
-        per-seed scores are summed varies between runs and the last bit of a mean
-        can differ. Those are one-ULP artefacts (~2e-16), not result changes, and a
-        byte comparison reports them as failures -- which trains you to ignore the
-        tool. Anything above `tol` is a real difference and is shown.
-        """
+        """Field-by-field comparison with numeric tolerance ``tol``."""
         A, B = list(csv.DictReader(open(stored))), list(csv.DictReader(open(fresh)))
         if len(A) != len(B):
             return False, f"row count {len(A)} vs {len(B)}"

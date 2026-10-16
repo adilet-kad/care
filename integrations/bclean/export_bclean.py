@@ -1,64 +1,18 @@
-"""export_bclean.py -- run BClean (ICDE'24) and export a CARE-ready repair log.
+"""Run BClean on CARE's tables and export its repairs as a CARE log
+(row_id, column, value, confidence, source).
 
-Same zero-coupling pattern as the Baran / Raha / RetClean / Jellyfish integrations:
-BClean runs natively here, and we export a plain CSV that CARE reads through its
-offline-log proposer (`bclean:<log>` backend). CARE never imports BClean's code.
+BClean runs in its own repository with the authors' user constraints
+(UC_json/<dataset>.json), so only the UC-declared columns are repaired. The input
+is CARE's dirty.csv, renamed to the UC column names. clean_df is used only for
+BClean's own precision/recall report. With --with-confidence, src/infer.py is
+patched in memory to record the top two candidate scores; confidence is the
+margin top1 / (top1 + top2). Repairs are unchanged by the patch.
 
-WHY BCLEAN IS IN THE PANEL
---------------------------
-It is a genuinely THIRD paradigm alongside the classical-ML (Baran) and LLM
-(Jellyfish/GPT/RetClean) proposers: Bayesian-network inference with user constraints.
-It is peer-reviewed at a main A* database venue (ICDE 2024) and was already evaluated
-on Hospital and Flights, so we are using it on its home turf -- unlike RetClean, whose
-native task (imputation from a data lake) mismatched these corruption benchmarks.
-
-FAIRNESS DECISIONS (state these in the paper)
----------------------------------------------
-1. **We use the AUTHORS' user constraints verbatim** (`UC_json/<dataset>.json`).
-   Authoring our own UCs would let us tune BClean's performance up or down, which
-   would make the comparison meaningless. Consequence: BClean only repairs the columns
-   its UC file declares -- hospital 15 of 17, beers 6 of 10, flights 6 of 6. Cells in
-   undeclared columns are simply absent from the log (CARE escalates them), which is
-   the honest representation of what BClean does.
-2. **Every proposer sees identical input.** We feed BClean OUR dirty.csv (renamed to
-   the column names its UC file expects) rather than its bundled copy, so row order
-   and cell values are guaranteed identical to what Baran/Jellyfish/GPT saw. Verified:
-   the bundled copies match ours row-for-row anyway, but constructing the input removes
-   the assumption.
-3. **No oracle leakage.** BClean's API takes `clean_df`, which we verified is used ONLY
-   to compute `actual_error` for its own precision/recall reporting -- `Inference.Repair`
-   passes it through untouched and `repair_line` never receives it. The repair decision
-   sees dirty data only. (Contrast with the Baran logs, which DO use oracle detection.)
-
-CONFIDENCE (--with-confidence, optional)
-----------------------------------------
-BClean internally computes, per candidate value, a score
-    P(value | parents) * P(children | value) * penalty
-sorts candidates by it, and takes the top one -- then DISCARDS the scores, keeping only
-the winning value. That score is a natural Bayesian confidence, and CARE needs a graded
-signal to rank repairs within a stratum (without one it degenerates to all-or-nothing;
-this is why the no-confidence Baran logs certify whole columns or nothing).
-
-With `--with-confidence` we capture it by patching BClean's `infer.py` **source at
-import time, in memory**: the file on disk is never modified. The patch only ADDS a
-recording statement; it does not change which candidate is selected, so BClean's repairs
-are bit-identical with and without it. Confidence is
-reported as the normalised margin  top1 / (top1 + top2), i.e. how decisively the
-Bayesian network preferred its choice.
-
-If the patch fails to apply, we fall back to constant confidence and say so loudly
-rather than silently emitting a degraded signal.
-
-USAGE (from the BClean repo root)
----------------------------------
-    pip install -r requirements.txt
-    python export_bclean.py hospital --with-confidence
+Run from the BClean repository root:
     python export_bclean.py hospital beers flights --with-confidence --workers 32
+    python export_bclean.py hospital beers flights --with-confidence --emit-keep
 
-Output: ../CARE/csvs/bclean_<dataset>_pred.csv  (row_id,column,value,confidence,source)
-Then in CARE:
-    python prepare_log.py  <ds> csvs/bclean_<ds>_pred.csv
-    python precheck_log.py <ds> csvs/bclean_<ds>_pred.csv --scope touched
+Output: ../CARE/csvs/bclean_<dataset>_pred.csv
 """
 
 from __future__ import annotations
@@ -74,12 +28,12 @@ import types
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_OUT_DIR = os.path.join(HERE, os.pardir, "CARE", "csvs")
 _DATA_CANDIDATES = [
-    os.path.join(HERE, os.pardir, "RetClean", "datasets"),
+    os.path.join(HERE, os.pardir, "CARE", "data"),
     os.path.join(HERE, os.pardir, "raha", "datasets"),
 ]
 
 # Raha/CARE lowercase name -> the column name BClean's UC_json expects.
-# Kept in sync with CARE/prepare_log.py::COL_MAPS; only hospital differs in naming.
+# Same as prepare_log.py::COL_MAPS; only hospital differs.
 COL_MAPS = {
     "hospital": {
         "provider_number": "ProviderNumber", "name": "HospitalName",
@@ -120,7 +74,7 @@ def _load_bclean(with_confidence):
         infer_path = os.path.join(HERE, "src", "infer.py")
         src = open(infer_path, encoding="utf-8").read()
         if _PATCH_ANCHOR not in src:
-            print("  !! could not find the instrumentation anchor in src/infer.py; "
+            print("  warning: could not find the instrumentation anchor in src/infer.py; "
                   "BClean's source may have changed. Falling back to CONSTANT "
                   "confidence (CARE will only be able to certify whole strata).",
                   file=sys.stderr)
@@ -164,10 +118,7 @@ def _read_csv(path):
 
 
 def _has_index_col(header, rows):
-    """Mirror bench.datasets.load's index detection EXACTLY.
-
-    A wrong row-key convention shifts every column by one and silently misaligns
-    every gold comparison, so this must not drift from CARE's copy."""
+    """Same index-column detection as bench.datasets.load; keep in sync."""
     first = header[0].strip().lower()
     if first in {"index", "tid", "id", "row_id", "key", ""}:
         return True
@@ -176,29 +127,14 @@ def _has_index_col(header, rows):
 
 
 def _norm(name):
-    """Normalise a column name for matching across dirty/clean files.
-
-    NECESSARY because the benchmark's dirty and clean CSVs do NOT use identical
-    headers (verified):
-        beers    dirty: beer_name, brewery_name   clean: beer-name, brewery-name
-        hospital dirty: provider_number, name...  clean: ProviderNumber, HospitalName...
-        flights  identical
-    Selecting columns independently per file therefore yields DIFFERENT column sets
-    (beers clean lost 'brewery-name' -> BClean crashed with KeyError). We instead fix
-    the selection from the dirty header and locate each column in clean by this
-    normalised key.
-    """
+    """Normalise a column name; dirty and clean headers differ (e.g. beer_name vs beer-name)."""
     return re.sub(r"[^a-z0-9]", "", name.lower())
 
 
 def _build_bclean_input(dataset, ds_dir, uc_cols, tmp_dir, limit=None):
-    """Write dirty/clean CSVs restricted+renamed to what BClean's UC file expects.
+    """Write dirty/clean CSVs restricted to and renamed for BClean's UC columns.
 
-    The DIRTY header is authoritative: it fixes which columns are kept and what they
-    are called. The clean file is matched to that selection by normalised name, so a
-    header mismatch is impossible by construction (and is reported loudly if a column
-    genuinely cannot be located rather than silently dropped).
-
+    Columns are selected from the dirty header and matched in clean by normalised name.
     Returns (dirty_path, clean_path, row_ids).
     """
     os.makedirs(tmp_dir, exist_ok=True)
@@ -216,7 +152,7 @@ def _build_bclean_input(dataset, ds_dir, uc_cols, tmp_dir, limit=None):
     col_start = 1 if has_idx else 0
     row_ids = [(r[0] if has_idx else str(i)) for i, r in enumerate(d_rows)]
 
-    # 1) selection fixed by the DIRTY header
+    # columns selected from the dirty header
     keep = []
     for j in range(col_start, len(d_header)):
         out_name = cmap.get(d_header[j], d_header[j])
@@ -226,7 +162,7 @@ def _build_bclean_input(dataset, ds_dir, uc_cols, tmp_dir, limit=None):
         raise SystemExit(f"none of the UC columns {sorted(uc_cols)} matched {dataset}'s "
                          f"dirty header {d_header}. Check COL_MAPS.")
 
-    # 2) locate the SAME columns in clean, by normalised name
+    # same columns in clean, by normalised name
     c_by_norm = {}
     for j, h in enumerate(c_header):
         c_by_norm.setdefault(_norm(cmap.get(h, h)), j)
@@ -311,27 +247,13 @@ def export_one(dataset, args, BayesianClean, Dataset, UC, care_scores):
     for (line, col), value in repair_err.items():
         v = "" if value is None else str(value).strip()
         if not v or v == "A Null Cell":
-            continue                            # BClean's null sentinel -> abstain
+            continue                            # BClean's null sentinel -> skip
         log_rows.append((row_ids[line], col, v, f"{_conf(line, col):.4f}", "bclean"))
 
     if args.emit_keep:
-        # FULL-COVERAGE MODE, for the non-oracle-detection comparison.
-        #
-        # BClean has no detection input: it infers over the whole table and
-        # repair_list[3] holds only the cells it decided to CHANGE. That makes its log
-        # impossible to re-slice onto a different work queue -- for a detector's false
-        # positive, BClean has no row, and absence is ambiguous between "I say keep
-        # this value" and "I never considered it".
-        #
-        # Within the UC-declared columns BClean DID consider every cell, so there the
-        # ambiguity is resolvable: absence means "keep". Emitting that explicitly turns
-        # the log into a full-coverage proposal set over the declared columns, directly
-        # comparable to the LLM proposers', and lets the same log be scored against
-        # oracle or detector queues.
-        #
-        # Restricted to declared columns on purpose: outside them BClean genuinely has
-        # no opinion, and inventing one would manufacture correctness on cells it never
-        # examined.
+        # BClean logs only changed cells. Within UC-declared columns it considered
+        # every cell, so absence means "keep"; emit those rows explicitly so the log
+        # covers every declared cell and can be sliced onto any detection queue.
         changed = set(repair_err)
         added = 0
         for line in range(len(row_ids)):
@@ -342,19 +264,13 @@ def export_one(dataset, args, BayesianClean, Dataset, UC, care_scores):
                 cur = "" if cur is None else str(cur).strip()
                 if not cur or cur == "A Null Cell":
                     continue
-                # SEMANTICS: care_scores holds the margin of the best ALTERNATIVE
-                # BClean scored for this cell. For a cell it chose NOT to change, a
-                # high margin means it came close to overwriting -- i.e. LOW confidence
-                # that the current value should stand. So a keep's confidence is the
-                # complement. Measured on flights: as-is the keep rows rank INVERSELY
-                # (top-10% 0.813 vs 0.873 pool); complemented they rank correctly
-                # (0.936 vs 0.873).
+                # the margin scores the best alternative, so a keep uses its complement
                 log_rows.append((row_ids[line], col, cur,
                                  f"{1.0 - _conf(line, col):.4f}", "bclean_keep"))
                 added += 1
         print(f"  --emit-keep: added {added} 'keep current value' proposals over the "
               f"{len(uc_cols)} UC-declared columns (source=bclean_keep)")
-        print("  !! The log now mixes TWO decision types whose confidence scales are "
+        print("  warning: the log now mixes two decision types whose confidence scales are "
               "NOT comparable: 'change' scores the chosen repair, 'keep' scores the "
               "absence of one. Pooled in a single stratum they produce a Simpson's "
               "paradox -- each source ranks correctly alone, the pool ranks inversely."
@@ -364,10 +280,7 @@ def export_one(dataset, args, BayesianClean, Dataset, UC, care_scores):
 
     os.makedirs(args.out, exist_ok=True)
     sfx = f"_first{args.limit}" if args.limit else ""
-    # --emit-keep produces a DIFFERENT log (full coverage over UC columns, ~5x the
-    # rows), so it must not land on the oracle run's filename. Writing both to
-    # bclean_<ds>_pred.csv would silently replace the log every published BClean
-    # number derives from.
+    # --emit-keep writes to a separate file name
     stem = "bclean_keep" if args.emit_keep else "bclean"
     out_path = os.path.join(args.out, f"{stem}_{dataset}_pred{sfx}.csv")
     with open(out_path, "w", newline="", encoding="utf-8") as f:
@@ -383,7 +296,7 @@ def export_one(dataset, args, BayesianClean, Dataset, UC, care_scores):
         print(f"  confidence min/med/max = {cs[0]:.3f}/{cs[len(cs)//2]:.3f}/{cs[-1]:.3f}"
               f"   distinct={uniq}")
         if uniq <= 2:
-            print("  !! near-constant confidence -> CARE cannot rank within a stratum.")
+            print("  warning: near-constant confidence -> CARE cannot rank within a stratum.")
     print(f"WROTE: {out_path}")
     print(f"Next (in CARE):  python prepare_log.py {dataset} csvs/bclean_{dataset}_pred.csv")
     print("=" * (22 + len(dataset)) + "\n")

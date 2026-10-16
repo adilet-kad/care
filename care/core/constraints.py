@@ -1,14 +1,10 @@
-"""care.core.constraints -- the constraint contract C = (H, W, P).
-
-A constraint is a machine-decidable predicate over the artifact, typed by the
-kind of guarantee it carries -- the "separated guarantee types":
+"""Constraint contract C = (H, W, P).
 
     H  hard     {0,1} gate; the verifier projects onto the feasible set F_H
-    W  soft     q_i in [0,1] graded measure, reported by the auditor
-    P  process  clause about procedure; routed to humans, never faked as data
+    W  soft     graded measure q_i in [0,1], reported by the auditor
+    P  process  procedural clause, routed to humans
 
-Concrete predicates are *not* implemented here -- they live as plugins under
-``care/predicates/``. This module defines only the contract they fill.
+Concrete predicates live in ``care.predicates``.
 """
 
 from __future__ import annotations
@@ -24,13 +20,7 @@ ConstraintType = Literal["H", "W", "P"]
 
 
 class ConstraintResult(BaseModel):
-    """The outcome of evaluating one constraint against an artifact.
-
-    For H / P constraints, ``satisfied`` is set and ``score`` is None. For W
-    constraints, ``score`` (q_i) is set in [0, 1] and ``satisfied`` is None.
-    ``violating_refs`` lists the cells/triples that need repair -- this is what
-    the Auditor turns into the Proposer's work queue.
-    """
+    """Outcome of one constraint: ``satisfied`` for H/P, ``score`` in [0, 1] for W."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -48,12 +38,7 @@ class ConstraintResult(BaseModel):
 
 
 class Params(BaseModel):
-    """Per-constraint configuration bound at evaluation time.
-
-    ``theta`` (the target) and ``weight`` (w_i) come from the DQRequirements;
-    ``options`` carries constraint-specific knobs (e.g. the FD set for
-    ``dq.consistency.fd``, the predicate name for ``dq.metadata.usage_terms``).
-    """
+    """Per-constraint target, weight and options (e.g. the FD set)."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -67,14 +52,11 @@ class Params(BaseModel):
 
 
 class BaseConstraint(ABC):
-    """Base class for constraint plugins under ``care/predicates/``.
+    """Base class for constraint plugins.
 
-    ``cid`` is the stable identifier (e.g. ``"dq.completeness"``), ``source``
-    a human-readable description, ``ctype`` the H/W/P type, and ``reads``
-    declares which artifact slices the predicate touches (``"cells"`` /
-    ``"metadata"`` / ``"provenance"``). Authoring a new constraint is: subclass,
-    declare ``cid / source / ctype / reads``, implement ``evaluate``, and
-    decorate with ``@register_constraint``.
+    Subclasses declare ``cid``, ``source`` (description), ``ctype`` (H/W/P) and
+    ``reads`` (artifact parts touched), implement ``evaluate`` and are decorated
+    with ``@register_constraint``.
     """
 
     cid: ClassVar[str]

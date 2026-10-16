@@ -1,0 +1,16 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers,CARE,marginal,0.05,errors,0.0,0.0047952047952047995,0.9952047952047952,0.005194805194805185,True,True,zeroec:csvs/zeroec_beers_mapped.csv
+beers,CARE,mondrian,0.05,errors,0.07488766849725412,0.005342687533729085,0.9559647302904564,0.005882352941176472,True,False,zeroec:csvs/zeroec_beers_mapped.csv
+beers,CARE,mondrian_src,0.05,errors,0.07488766849725412,0.005342687533729085,0.9559647302904564,0.005882352941176472,True,False,zeroec:csvs/zeroec_beers_mapped.csv
+beers,ApplyAll,-,0.05,errors,0.0,0.0047952047952047995,0.9952047952047952,0.005194805194805185,True,True,zeroec:csvs/zeroec_beers_mapped.csv
+beers,EscalateAll,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,zeroec:csvs/zeroec_beers_mapped.csv
+beers,CARE,marginal,0.1,errors,0.0,0.0047952047952047995,0.9952047952047952,0.005194805194805185,True,True,zeroec:csvs/zeroec_beers_mapped.csv
+beers,CARE,mondrian,0.1,errors,0.07488766849725412,0.005342687533729085,0.9559647302904564,0.005882352941176472,True,False,zeroec:csvs/zeroec_beers_mapped.csv
+beers,CARE,mondrian_src,0.1,errors,0.07488766849725412,0.005342687533729085,0.9559647302904564,0.005882352941176472,True,False,zeroec:csvs/zeroec_beers_mapped.csv
+beers,ApplyAll,-,0.1,errors,0.0,0.0047952047952047995,0.9952047952047952,0.005194805194805185,True,True,zeroec:csvs/zeroec_beers_mapped.csv
+beers,EscalateAll,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,zeroec:csvs/zeroec_beers_mapped.csv
+beers,CARE,marginal,0.2,errors,0.0,0.0047952047952047995,0.9952047952047952,0.005194805194805185,True,True,zeroec:csvs/zeroec_beers_mapped.csv
+beers,CARE,mondrian,0.2,errors,0.0,0.0049425861208187705,0.9950574138791811,0.005441837244133796,True,False,zeroec:csvs/zeroec_beers_mapped.csv
+beers,CARE,mondrian_src,0.2,errors,0.0,0.0049425861208187705,0.9950574138791811,0.005441837244133796,True,False,zeroec:csvs/zeroec_beers_mapped.csv
+beers,ApplyAll,-,0.2,errors,0.0,0.0047952047952047995,0.9952047952047952,0.005194805194805185,True,True,zeroec:csvs/zeroec_beers_mapped.csv
+beers,EscalateAll,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,zeroec:csvs/zeroec_beers_mapped.csv

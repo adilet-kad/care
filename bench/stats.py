@@ -1,4 +1,4 @@
-"""bench.stats -- confidence intervals and seed aggregation for the paper tables."""
+"""Bootstrap confidence intervals over seeds."""
 
 from __future__ import annotations
 

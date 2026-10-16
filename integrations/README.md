@@ -1,83 +1,60 @@
-# Integrations: exporters for the external cleaners
+# Exporters
 
-These scripts are **not part of CARE and are never imported by it.** Each one runs
-*inside* its own upstream repository, in that repository's own virtualenv, and writes a
-CSV that CARE later reads. They live here so the repository is self-contained: how every
-proposer log was produced is visible without cloning five upstream repos first.
+These scripts run inside each cleaner's own repository and environment and write a log
+that CARE reads. CARE never imports them; removing this directory changes nothing in
+CARE or its tests.
 
-That separation is the point, not an accident. CARE's claim is that it governs any
-proposer through one contract, so it must never depend on a proposer's code. Keeping the
-exporters in a directory CARE does not import preserves that: deleting this folder
-changes nothing about CARE's behaviour or its test suite.
-
-## The contract
-
-Every exporter emits the same five columns:
+## Log contract
 
 ```
 row_id, column, value, [confidence], [source]
 ```
 
-- `ref = "{row_id}::{column}"` must match CARE's `CellKey` format.
-- An empty `value` is an **abstention**: CARE escalates that cell rather than treating
-  it as a repair. This is the mechanism that lets a proposer say "nothing to fix here",
-  and Section 8.2 of the paper shows it is what decides robustness to detection error.
-- `confidence` is optional. Without it CARE gets a constant score and can only take a
-  stratum all-or-nothing.
-- `source` is optional per-cell provenance and feeds the evidence-trust gate.
+- `row_id::column` must match CARE's `CellKey`.
+- An empty `value` is an abstention: CARE escalates the cell.
+- `confidence` is optional; without it a stratum is certified whole or not at all.
+- `source` is optional provenance for the trust gate.
 
 ## Deployment
 
-Copy the file into the sibling repo and run it there:
-
 | directory | copy into | environment |
 |---|---|---|
-| `raha/` | `raha/` | raha's venv (needs scikit-learn, scipy) |
-| `jellyfish/` | `Jellyfish/` | CUDA + vLLM container |
-| `bclean/` | `BClean/` | Python ≤3.11 (`src/infer.py` uses `DataFrame.append`) |
-| `retclean/` | `RetClean/` | Docker stack up (`docker compose up -d`) |
-| `holoclean/` | `holoclean/` | Python 3.6/3.7 + PostgreSQL ≥ 9.4 (upstream pins) |
+| `raha/` | `raha/` | raha's venv |
+| `bclean/` | `BClean/` | Python ≤ 3.11 |
+| `bclean_plus/` | `BCleanplus/` | CPU image from `requirements-cpu.txt`; UC generation in a CUDA container |
+| `holoclean/` | `holoclean/` | Python 3.6/3.7, PostgreSQL ≥ 9.4 |
+| `gidcl/` | `GIDCL/` | Python 3; detector retraining in a CUDA container |
+| `zeroec/` | `ZeroEC/` | Docker image from `Dockerfile.care` |
 
-Exact commands, including which flags matter and why, are in `docs/REPRODUCE.md` §3.
+After a cleaner has written its logs, from the CARE root:
 
-## What each one does
+    bash integrations/sweep_offline_logs.sh <cleaner> <table>...
 
-**`raha/export_detection.py`**: runs Raha's real detection ensemble and exports the
-flagged cells as a work queue (`row_id,column`, no values). Prints precision/recall
-against ground truth so detection quality is known *before* a sweep is spent on it.
+maps each log (`prepare_log.py`), scores it (`tools/score_log.py`) and runs the sweep
+into `experiments/results_<cleaner>/`. Commands for every cleaner are in
+`docs/REPRODUCE.md`.
 
-**`raha/export_baran_raha.py`**: re-runs Baran with a detector's cells as its input
-rather than the oracle diff. Needed because Baran's oracle log contains no row for a
-detector's false positive, so the non-oracle result cannot be obtained by re-scoring.
-Reports accuracy split into *on true errors* vs *on false positives*.
+## Scripts
 
-**`jellyfish/export_jellyfish.py`**: offline vLLM pass over a dataset. Supports
-`--confidence agreement` (self-consistency over `n` samples), `--offset/--limit`
-row sharding for tables too large for one run, `--model` for another checkpoint of the
-family (the paper's 13B rows), `--tag` so a variant never overwrites the published log,
-and `--mode verify-correct`, which asks the model its own error-detection question first
-and logs unflagged cells as abstentions (Section 8.4).
+- `raha/export_detection.py`: Raha's detection ensemble; writes the flagged cells as a
+  work queue and prints precision and recall.
+- `raha/export_baran_raha.py`: Baran, either with oracle detection (`--oracle`) or on a
+  detector's cells. Baran's oracle log has no row for a detector false positive, so the
+  real-detector run is a rerun, not a rescoring.
+- `bclean/export_bclean.py`: BClean with the authors' constraint files; keeps the
+  candidate scores BClean computes and discards. `--emit-keep` also logs the cells it
+  keeps, so the log can be scored against a detector's queue.
+- `bclean_plus/`: BClean+ with the authors' released UCs (`run_bclean_plus.sh best`);
+  `generate_UC.py` output for other tables (`uc`, `generated`). Confidence as for BClean.
+- `holoclean/export_holoclean.py`: HoloClean's repairs with their posterior probability.
+  `--probe` reports which result schema the installed revision exposes.
+  `prepare_holoclean_input.py` and `constraints/` are needed for beers and flights.
+- `gidcl/export_gidcl.py` (`run_gidcl.sh`): every cell GIDCL's released cleaned table
+  changes, after an md5 check that its dirty table is CARE's. Serialisation artefacts
+  (`12.0` for `12`) are counted, not logged.
+- `gidcl/score_gidcl.py` (`run_gidcl_scores.sh`): attaches the score of GIDCL's detector,
+  retrained with the authors' settings, as confidence (`gidcl_scored_<table>_pred.csv`).
+- `zeroec/` (`run_zeroec.sh`): ZeroEC's released `correction.py` with gpt-4o-mini; see
+  `zeroec/README.md`.
 
-**`bclean/export_bclean.py`**: runs BClean with the authors' own user-constraint files
-and captures the candidate scores it computes internally but discards. `--emit-keep`
-additionally records its implicit "keep this value" decisions, which is what makes the
-log scoreable against a detector's queue.
-
-**`holoclean/export_holoclean.py`**: runs HoloClean's factor-graph inference and exports
-each repaired cell with its **posterior probability**. It is the only proposer that emits a
-true probability rather than a heuristic score, which makes it the sharpest test of whether
-a model's own confidence substitutes for a distribution-free bound. Run `--probe` first: the
-upstream result schema has moved between revisions, and the script reports which access
-path worked instead of guessing silently.
-
-**`retclean/build_lake.py`**: builds the reference data lake by majority vote over the
-*dirty* table only, so no ground-truth cell can leak into retrieval.
-
-**`retclean/export_retclean.py`**: runs RetClean against that lake, tagging each repair
-with whether the lake or the model produced it.
-
-## Keeping these in sync
-
-They are copies. If you change an exporter in its upstream repo, copy it back here, and
-note the change in `docs/REPRODUCE.md`'s deviation register if it affects any reported
-number.
+If an exporter is changed in its repository, copy it back here.

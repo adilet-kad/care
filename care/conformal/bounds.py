@@ -1,14 +1,7 @@
-"""care.conformal.bounds -- upper confidence bounds on the selective risk.
+"""Upper confidence bounds on a [0, 1] mean (the selective error rate k/n).
 
-The selective risk at a threshold is a [0,1]-bounded mean (here the error rate
-``k/n`` among the ``n`` auto-applied calibration repairs, ``k`` of them wrong).
-A valid ``(1 - delta)`` upper confidence bound ``R^+`` on this mean is the engine
-of the RCPS / Learn-then-Test threshold search:
-
-  * ``hoeffding_upper`` -- closed-form, always valid, mildly conservative.
-  * ``clopper_pearson_upper`` -- exact binomial (Beta-quantile) upper bound,
-    tighter than Hoeffding/Bentkus, computed without SciPy by bisecting the
-    binomial CDF in log-space.
+``hoeffding_upper`` is closed form; ``clopper_pearson_upper`` is the exact
+binomial bound, computed without SciPy by bisection on the binomial CDF.
 """
 
 from __future__ import annotations
@@ -18,7 +11,7 @@ from functools import lru_cache
 
 
 def hoeffding_upper(k: int, n: int, delta: float) -> float:
-    """Hoeffding ``(1 - delta)`` UCB on a [0,1] mean from ``k`` "successes" in ``n``."""
+    """Hoeffding ``(1 - delta)`` upper bound on a [0,1] mean from ``k`` errors in ``n``."""
     if n <= 0:
         return 1.0
     rhat = k / n
@@ -41,11 +34,7 @@ def _binom_cdf_le(k: int, n: int, p: float) -> float:
 
 @lru_cache(maxsize=100_000)
 def clopper_pearson_upper(k: int, n: int, delta: float, *, iters: int = 60) -> float:
-    """Exact ``(1 - delta)`` Clopper-Pearson upper bound on a binomial proportion.
-
-    ``p_U`` solves ``P(X <= k; n, p_U) = delta`` (the CDF is decreasing in ``p``),
-    found by bisection. ``k = n`` (all wrong) gives 1.0.
-    """
+    """Exact ``(1 - delta)`` Clopper-Pearson upper bound; solves ``P(X <= k; n, p) = delta``."""
     if n <= 0:
         return 1.0
     if k >= n:

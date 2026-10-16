@@ -1,10 +1,4 @@
-"""Tests for the non-oracle detection-log path (bench.study.detect, mode='log:').
-
-This is the counterpart to the Baran offline-log adapter, but for DETECTION: a
-real detector (e.g. Raha) runs natively in its own repo, exports the cells it
-flagged as a plain ``row_id,column`` CSV, and this reads that log as the work
-queue -- so CARE never imports the detector's code, mirroring BaranProposer.
-"""
+"""Tests for bench.study.detect with a detector log (mode='log:')."""
 
 from __future__ import annotations
 
@@ -52,9 +46,7 @@ def test_load_detection_log_rejects_missing_columns(tmp_path):
 def test_detect_log_mode_filters_to_known_cells(tmp_path):
     art = _artifact()
     p = tmp_path / "detected.csv"
-    # includes one real cell (0::age), one real cell not flagged (1::age is
-    # absent -> a detector false negative, fine), and one bogus ref that is not
-    # a cell in this artifact at all (a stray/miskeyed detector output).
+    # two real cells and one ref that is not a cell of the artifact
     _write_log(p, [("0", "age"), ("0", "city"), ("99", "nonexistent_col")])
     defects = Defects(gold={"0::age": "30"})
     refs = detect(art, reg=None, defects=defects, mode=f"log:{p}")

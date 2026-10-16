@@ -1,0 +1,8 @@
+# Dockerfile.care -- CPU image for BClean+'s cleaning step, used by run_bclean_plus.sh.
+# Python 3.11 for the pinned requirements-cpu.txt; SuiteSparse for scikit-sparse.
+FROM python:3.11-slim
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        build-essential libsuitesparse-dev && rm -rf /var/lib/apt/lists/*
+COPY requirements-cpu.txt /tmp/requirements-cpu.txt
+RUN pip install --no-cache-dir -r /tmp/requirements-cpu.txt
+WORKDIR /workspace

@@ -1,65 +1,17 @@
-"""export_holoclean.py -- run HoloClean over a dataset and export a CARE-ready
-offline-repair log.
+"""Run HoloClean and export its repairs as a CARE log
+(row_id, column, value, confidence, source).
 
-Why HoloClean is worth adding as a fifth proposer: it is the probabilistic
-data-repair system this literature is built on, and unlike every other proposer in
-the study it emits a genuine posterior probability per repair rather than a
-heuristic score. That makes it the sharpest available test of the paper's central
-claim. The natural objection is "HoloClean already gives me a probability, so why do
-I need a certifier?" -- and the answer is that a marginal posterior from
-a factor graph is not a distribution-free bound on the error rate of the set you
-choose to auto-apply. Running CARE on top of HoloClean's own probabilities either
-demonstrates that gap empirically or fails to, and both outcomes are informative.
-Report the calibration curve of `prob` against realised correctness either way.
+Confidence is HoloClean's marginal probability `prob` from inf_values_idx, joined to
+cell_domain on _vid_ (inf_values_dom has no probability). row_id = _tid_ + 1, and
+HoloClean's null `_nan_` and CARE's `empty` are both treated as null. HoloClean needs
+its own environment (Python 3.6/3.7, PostgreSQL); run from the HoloClean repository root:
 
-Same zero-coupling pattern as the other integrations: HoloClean runs natively in
-its own repo and environment, and this script writes a plain CSV that CARE reads
-through the offline-log proposer (`holoclean:<log>` backend spec). CARE never
-imports HoloClean's code, and HoloClean never learns CARE exists.
-
-    row_id, column, value, confidence, source
-
-Environment. HoloClean is old and pinned: Python 3.6/3.7, PostgreSQL >= 9.4, and a
-torch build from that era. Do NOT try to run it in CARE's venv -- it will not
-resolve. Create its own, follow the upstream README to start Postgres and create
-the `holo` database and user, then run this script from the HoloClean repo root.
-
-    git clone https://github.com/HoloClean/holoclean
-    # ... upstream env setup, start postgres, create db ...
     python export_holoclean.py hospital \\
       --data testdata/hospital.csv --dcs testdata/hospital_constraints.txt
+    python export_holoclean.py beers --data beers_holoclean.csv \\
+      --dcs constraints/beers_constraints.txt --emit-keep
 
-Then, back in CARE:
-
-    python prepare_log.py  hospital csvs/holoclean_hospital_pred.csv
-    python precheck_log.py hospital csvs/holoclean_hospital_mapped.csv
-    python -m bench.run_study --dataset hospital \\
-      --backends "holoclean:csvs/holoclean_hospital_mapped.csv" \\
-      --experiment pareto --alphas 0.05 0.1 0.2 --seeds 10 \\
-      --scoring errors --out experiments/results_holoclean
-
-Where the numbers come from, verified against this checkout rather than assumed:
-
-* `inf_values_dom` holds (`_tid_`, `attribute`, `rv_value`) and carries **no
-  probability**. The probability lives in `inf_values_idx` as `prob`, keyed by
-  `_vid_`, alongside `inferred_val`. So the export joins `cell_domain` (which maps
-  `_vid_` to `_tid_`, `attribute` and `init_value`) against `inf_values_idx`.
-  Reading `inf_values_dom` instead -- the obvious guess -- silently yields a log
-  with no confidence column, which reduces CARE to all-or-nothing per stratum and
-  throws away the entire reason for running HoloClean.
-* `_tid_` is 0-based row position. CARE's `row_id` is the 1-based `index` column of
-  its own dirty CSV, so `row_id = _tid_ + 1`.
-* Row alignment was checked, not hoped for: HoloClean's `testdata/hospital.csv` and
-  CARE's `data/hospital/dirty.csv` are the same 1000 rows in the same order
-  (6000 fields compared across six columns, zero mismatches). You can therefore run
-  HoloClean on its own testdata copy unchanged. If you ever point it at a different
-  file, re-check that before trusting a sweep.
-* CARE writes the literal string `empty` where HoloClean writes its `NULL_REPR`
-  (`_nan_`) for a missing value. Both are normalised here, otherwise every imputed
-  null would be miscounted as a change to a non-empty value.
-
-`--probe` prints the tables and columns actually present after inference. Use it if
-you are on a different HoloClean revision than this one.
+--probe prints the database tables after inference.
 """
 
 from __future__ import annotations
@@ -70,15 +22,8 @@ import os
 import sys
 
 SOURCE = "holoclean"
-# Keeps get their OWN provenance tag, and this is load-bearing rather than cosmetic.
-# A "change" row's confidence scores the repair HoloClean chose; a "keep" row's scores
-# the absence of one. The two are not on a comparable scale -- measured on hospital,
-# changes have median 0.530 and keeps 0.918 -- so pooling them into one stratum lets
-# the ranking invert (deviation D23, the Simpson's paradox BClean hit first).
-# CARE's guard is `strata=mondrian_src`, which bench.experiments.pareto auto-enables
-# when a log carries MORE THAN ONE source. Emitting a single tag for both decision
-# types therefore silently disables that guard, which is why this is not just a
-# label. BClean's exporter has always tagged them separately; this matches it.
+# Keep rows get their own source tag, so CARE stratifies by source (strata=mondrian_src);
+# change and keep confidences are not on a comparable scale.
 SOURCE_KEEP = "holoclean_keep"
 
 # HoloClean's null marker; CARE's benchmark CSVs use the literal string "empty".
@@ -86,7 +31,7 @@ NULL_TOKENS = {"", "_nan_", "empty", "nan", "null", "none"}
 
 
 def _norm(v):
-    """Compare values the way both systems mean them, not the way they spell them."""
+    """Normalise a value for comparison, mapping null tokens to ''."""
     s = str(v).strip().lower() if v is not None else ""
     return "" if s in NULL_TOKENS else s
 
@@ -132,7 +77,7 @@ def _query(hc, sql):
 
 
 def probe(hc):
-    """Print what is actually in the database, so a wrong assumption is visible."""
+    """Print the database tables and their columns."""
     rows = _query(hc, """
         SELECT table_name FROM information_schema.tables
         WHERE table_schema='public' ORDER BY table_name
@@ -160,8 +105,7 @@ EXTRACT_SQL = """
 def extract(hc):
     """Return [(tid, attribute, inferred_value, prob, init_value)] per inferred cell.
 
-    The join is the whole point: `inf_values_idx` has the probability but is keyed
-    by `_vid_`, and only `cell_domain` knows which (tuple, attribute) a `_vid_` is.
+    inf_values_idx holds prob keyed by _vid_; cell_domain maps _vid_ to (tid, attribute).
     """
     rows = _query(hc, EXTRACT_SQL)
     if not rows:
@@ -209,8 +153,7 @@ def main():
     preds = extract(hc)
     print(f"  [extract] {len(preds)} inferred cells")
 
-    # Read the input purely to check alignment. A mismatch here means the log would
-    # be written against the wrong rows, which no downstream check would catch.
+    # check row alignment against the input
     with open(args.data, newline="") as fh:
         dirty = list(csv.DictReader(fh))
     max_tid = max(p[0] for p in preds)
@@ -220,11 +163,7 @@ def main():
             f"in {args.data}. The log would be misaligned; fix --row-offset or --data."
         )
 
-    # The keep log gets its OWN filename. Writing both variants to one name silently
-    # destroys whichever was produced first, and the two are not interchangeable: the
-    # changes-only log is the repair proposal set, the keep log additionally records
-    # every cell HoloClean examined and declined to alter. `prepare_log.py` splits the
-    # tool name on the dataset, so "holoclean_keep" survives as a distinct backend tag.
+    # the keep log gets its own file name and backend tag
     stem = "holoclean_keep" if args.emit_keep else "holoclean"
     out = args.out or f"{stem}_{args.dataset}_pred.csv"
     n_change = n_keep = 0
@@ -236,9 +175,7 @@ def main():
             if not changed and not args.emit_keep:
                 n_keep += 1
                 continue
-            # A keep is recorded as the CURRENT value, not as an abstention: an empty
-            # value means "I have nothing to say about this cell" and CARE escalates
-            # it, which is a different statement from "I examined this and it is fine".
+            # a keep records the current value; an empty value would mean "no proposal"
             wr.writerow([tid + args.row_offset, attr, value,
                          "" if prob is None else f"{prob:.6f}",
                          SOURCE if changed else SOURCE_KEEP])

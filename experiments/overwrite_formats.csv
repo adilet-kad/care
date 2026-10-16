@@ -1,0 +1,10 @@
+cleaner,dataset,overwrites,format_only,semantic
+BClean,beers,17,0,17
+BClean,flights,156,0,156
+BClean+,beers,16,0,16
+BClean+,flights,81,0,81
+GIDCL,beers,7,0,7
+GIDCL,flights,29,0,29
+GIDCL,rayyan,176,25,151
+GIDCL,tax,22,0,22
+HoloClean,flights,1,0,1

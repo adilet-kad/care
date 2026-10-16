@@ -1,9 +1,4 @@
-"""Unit tests for the CARE core data model and constraint registry.
-
-These assert the data-model contracts behave as specified and that the registry
-enforces the H/W/P typing invariant. The heavy property-based tests (the I2
-projector invariant, conformal coverage) live under tests/property/.
-"""
+"""Unit tests for the CARE core data model and constraint registry."""
 
 from __future__ import annotations
 
@@ -40,8 +35,7 @@ def _clean_registry():
 
 
 def _register_completeness() -> type[BaseConstraint]:
-    """A minimal Completeness plugin used to exercise the registry machinery
-    (the shipped plugins live in care.predicates)."""
+    """Minimal Completeness plugin for exercising the registry."""
 
     @register_constraint
     class Completeness(BaseConstraint):

@@ -1,30 +1,11 @@
 """Write a HoloClean-loadable copy of a CARE dirty table.
 
-HoloClean ships its own `testdata/hospital.csv`, which is CARE's hospital table with
-the index column removed and the canonical column names already in place. No such file
-exists for beers or flights -- HoloClean's `flight.csv` is a different extraction
-(57,246 rows, eight columns) whose logs would not key against CARE's gold set. So the
-input has to be produced from CARE's own copy, and two things must be true of it:
-
-  1. **No index column.** CARE's CSVs carry `index` or `tuple_id`. HoloClean would load
-     it as an ordinary attribute, spend domain modelling on it, and may propose repairs
-     to a surrogate key. Dropping it also makes the row mapping below exact.
-
-  2. **Row order preserved.** `export_holoclean.py` maps HoloClean's 0-based `_tid_` to
-     CARE's 1-based `row_id` by adding `--row-offset` (default 1). That is only valid if
-     row *i* of this file is row *i* of CARE's table. This script therefore verifies the
-     index column is exactly 1..N in order and refuses to write if it is not, rather
-     than letting a silent misalignment score every repair against the wrong cell.
+Drops the index column and checks it is 1..N in order, since export_holoclean.py
+maps row_id = _tid_ + 1. Column names are kept as in dirty.csv. Writes
+<dataset>_holoclean.csv next to this script (or --out).
 
     python prepare_holoclean_input.py beers   --care-root ../CARE
     python prepare_holoclean_input.py flights --care-root ../CARE
-
-Writes `<dataset>_holoclean.csv` next to this script (or --out). Column names are left
-exactly as CARE spells them in `dirty.csv`, so the exported log needs no renaming; the
-one wrinkle is beers, where CARE's internal schema hyphenates `beer-name` and
-`brewery-name` while the CSV uses underscores. Those two columns are not referenced by
-the shipped constraints, so nothing HoloClean repairs is affected -- see
-`constraints/README.md`.
 """
 
 from __future__ import annotations
@@ -62,7 +43,7 @@ def main() -> int:
     if idx is None:
         print(f"  no index column found in {header[:3]}...; writing as-is")
     else:
-        # The offset mapping is only sound on a contiguous, ordered index.
+        # the row offset needs a contiguous, ordered index
         bad = None
         for i, r in enumerate(rows, 1):
             try:
@@ -79,7 +60,7 @@ def main() -> int:
                 f"every\nrepair. Fix the source or pass --allow-unordered and set "
                 f"--row-offset yourself.")
         if bad:
-            print(f"  !! index is not 1..N (row {bad[0]} = {bad[1]!r}); writing anyway "
+            print(f"  warning: index is not 1..N (row {bad[0]} = {bad[1]!r}); writing anyway "
                   f"because --allow-unordered was given. Check --row-offset.")
 
     out = args.out or os.path.join(os.path.dirname(os.path.abspath(__file__)),

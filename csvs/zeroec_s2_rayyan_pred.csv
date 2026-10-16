@@ -1,0 +1,918 @@
+row_id,column,value,confidence,source
+789958,article_jcreated_at,12/1/01,,zeroec_llm
+169865,article_jcreated_at,1/1/01,,zeroec_llm
+729712,author_list,"{""St_ber F"",""Mutz N"",""Wrigge H"",""Putensen C"",""Zinserling J"",""Zech S"",""Von Spiegel T""}",,zeroec_llm
+396821,article_jcreated_at,1/11/01,,zeroec_llm
+340222,article_jcreated_at,1/1/01,,zeroec_llm
+184417,article_jcreated_at,1/9/01,,zeroec_llm
+729686,article_jcreated_at,1/1/05,,zeroec_llm
+278396,article_jcreated_at,1/1/01,,zeroec_llm
+965082,article_jcreated_at,1/1/01,,zeroec_llm
+53321,article_jcreated_at,1/11/01,,zeroec_llm
+282987,article_jcreated_at,1/1/01,,zeroec_llm
+43736,article_jcreated_at,6/1/01,,zeroec_llm
+82614,article_jcreated_at,12/1/01,,zeroec_llm
+163526,article_jcreated_at,1/11/01,,zeroec_llm
+21910,article_jcreated_at,3/14/12,,zeroec_llm
+378490,article_jcreated_at,12/1/01,,zeroec_llm
+793918,article_jcreated_at,1/1/01,,zeroec_llm
+819166,article_jcreated_at,1/9/01,,zeroec_llm
+880881,article_jcreated_at,12/08/01,,zeroec_llm
+629530,article_jcreated_at,9/1/01,,zeroec_llm
+379737,article_jissue,-1,,zeroec_llm
+676042,article_jcreated_at,2/1/01,,zeroec_llm
+353972,article_jcreated_at,1/1/01,,zeroec_llm
+968125,article_jcreated_at,1/14/12,,zeroec_llm
+660168,article_jcreated_at,2/1/01,,zeroec_llm
+660168,author_list,"{""R Loch Macdonald"",""Farbod Asgarzadie-Gadim"",""Yeon Gyoe Jang"",""Daniel J Curry"",""Rachel N Yanowitch"",""Kim E Schultheiss"",""Jocelyn Tolentino"",""Jürgen Lüders""}",,zeroec_llm
+473026,article_jcreated_at,6/1/01,,zeroec_llm
+110072,article_jcreated_at,1/14/12,,zeroec_llm
+23215,article_jcreated_at,1/14/12,,zeroec_llm
+719532,article_jcreated_at,1/10/01,,zeroec_llm
+530323,article_jissue,4,,zeroec_llm
+530323,article_jcreated_at,1/1/01,,zeroec_llm
+102893,article_jcreated_at,11/1/01,,zeroec_llm
+864817,article_jcreated_at,1/1/01,,zeroec_llm
+659297,article_jcreated_at,11/1/01,,zeroec_llm
+42247,article_jcreated_at,11/1/01,,zeroec_llm
+302969,article_jcreated_at,1/1/01,,zeroec_llm
+158672,article_jissue,-1,,zeroec_llm
+158672,article_jcreated_at,12/4/02,,zeroec_llm
+616298,article_jcreated_at,9/1/01,,zeroec_llm
+221086,article_jcreated_at,1/12/01,,zeroec_llm
+548616,article_jcreated_at,1/10/01,,zeroec_llm
+669596,article_jcreated_at,1/14/12,,zeroec_llm
+669596,article_pagination,Jul-91,,zeroec_rule
+474288,article_jcreated_at,1/1/05,,zeroec_llm
+108424,article_jcreated_at,4/1/01,,zeroec_llm
+841679,article_jcreated_at,1/11/01,,zeroec_llm
+173830,article_jcreated_at,1/1/01,,zeroec_llm
+852927,article_jissue,-1,,zeroec_llm
+852927,article_jcreated_at,1/9/01,,zeroec_llm
+237623,article_jissue,-1,,zeroec_llm
+237623,article_jcreated_at,1/1/01,,zeroec_llm
+912884,article_jcreated_at,1/1/01,,zeroec_llm
+318931,article_jcreated_at,1/10/01,,zeroec_llm
+318931,author_list,"{""M. Pujol"",""P. Barragán"",""J.M. Tiraboschi"",""A. Imaz"",""M.́. Domínguez"",""D. Podzamczer""}",,zeroec_llm
+93659,article_jcreated_at,6/1/01,,zeroec_llm
+349150,author_list,"{""O Ceki"",""C Batman""}",,zeroec_llm
+826030,article_jcreated_at,1/12/01,,zeroec_llm
+826030,author_list,"{""Cecilia Bjorkelund"",""Margaretha Jerlock""}",,zeroec_llm
+574309,article_jcreated_at,1/1/05,,zeroec_llm
+200077,article_jcreated_at,7/1/01,,zeroec_llm
+421512,article_jcreated_at,1/1/01,,zeroec_llm
+421512,article_pagination,Aug-17,,zeroec_rule
+715052,article_jcreated_at,1/11/01,,zeroec_llm
+172966,article_jcreated_at,1/6/01,,zeroec_llm
+282039,article_jcreated_at,1/1/01,,zeroec_llm
+835177,article_jcreated_at,1/1/01,,zeroec_llm
+519732,article_jcreated_at,2/1/01,,zeroec_llm
+761104,article_jcreated_at,1/1/01,,zeroec_llm
+408062,article_jcreated_at,5/1/05,,zeroec_llm
+408062,author_list,"{""E Huguet"",""O Porta"",""E Martinez"",""I Mora"",""M Sim"",""J Pubill"",""J A Ortega"",""M T Castillo""}",,zeroec_llm
+889481,article_jcreated_at,1/14/12,,zeroec_llm
+894596,journal_issn,848-0000000,,zeroec_llm
+894596,article_jcreated_at,1/1/01,,zeroec_llm
+894596,author_list,"{""Miquel Sánchez-Marré"",""Geoff Holmes"",""Joaquín Izquierdo"",""Joaquim Comas"",""Ioannis Athanasiadis"",""Karina Gibert""}",,zeroec_llm
+604985,article_jcreated_at,12/1/01,,zeroec_llm
+220950,article_jcreated_at,1/1/01,,zeroec_llm
+914468,article_jcreated_at,1/1/01,,zeroec_llm
+346326,article_jcreated_at,3/1/01,,zeroec_llm
+612846,article_jcreated_at,1/10/01,,zeroec_llm
+612846,article_pagination,Jul-93,,zeroec_rule
+870257,article_jcreated_at,1/1/01,,zeroec_llm
+417578,article_jcreated_at,1/1/01,,zeroec_llm
+949067,article_jcreated_at,1/1/01,,zeroec_llm
+931323,article_jcreated_at,1/9/01,,zeroec_llm
+931323,author_list,"{""N. Jakubik"",""L. Trzpil"",""F. Raciborski"",""U. Samolinska-Zawisza"",""L. Samoliski"",""D. Paczesny"",""Z. Halat"",""J. Marszalkowska"",""B. Samolinski"",""P. Samel-Kowalik"",""A. Lusawa"",""J. Gutowska"",""A. Tomaszewska"",""A. Walkiewicz""}",,zeroec_llm
+377284,article_jcreated_at,9/1/01,,zeroec_llm
+816680,article_jcreated_at,1/1/12,,zeroec_llm
+816680,author_list,"{""M. Tercedor Sánchez"",""J.A. Prieto Velasco""}",,zeroec_llm
+491006,article_jcreated_at,1/15/04,,zeroec_llm
+628299,article_jcreated_at,8/1/01,,zeroec_llm
+72089,article_jcreated_at,4/1/12,,zeroec_llm
+847287,article_jcreated_at,3/1/01,,zeroec_llm
+764224,article_jcreated_at,1/12/01,,zeroec_llm
+591619,article_jcreated_at,1/12/01,,zeroec_llm
+125072,article_jcreated_at,4/1/01,,zeroec_llm
+255432,article_jvolumn,24,,zeroec_llm
+689284,article_jcreated_at,1/14/12,,zeroec_llm
+781141,article_jcreated_at,1/1/01,,zeroec_llm
+148787,article_jcreated_at,1/1/01,,zeroec_llm
+779281,article_jcreated_at,1/1/01,,zeroec_llm
+185291,article_jcreated_at,1/10/01,,zeroec_llm
+886237,article_title,"Effet d'une intervention non médicamenteuse, Voix d'Or, sur les troubles du comportement dans la maladie d'Alzheimer ou une maladie apparente. [Effect of a non-pharmacological intervention, Voix d'Or, on behavior disturbances in Alzheimer disease and associated disorders.]",,zeroec_llm
+886237,journal_title,Griatrie et Psychologie Neuropsychiatrie du Vieillissement,,zeroec_llm
+886237,author_list,"{""Geralidine Martin-Gaujard"",""Floriane Delphin-Combe"",""Isabelle Rouch"",""Solveig Relland"",""Pierre Krolak-Salmon""}",,zeroec_llm
+922646,journal_issn,2022-03,,zeroec_llm
+843485,article_jcreated_at,2/1/01,,zeroec_llm
+668845,article_jissue,-1,,zeroec_llm
+668845,article_jcreated_at,1/1/01,,zeroec_llm
+863844,article_jcreated_at,1/1/01,,zeroec_llm
+863844,article_pagination,Aug-03,,zeroec_rule
+946006,article_jcreated_at,1/1/01,,zeroec_llm
+36429,article_jcreated_at,5/1/01,,zeroec_llm
+36429,author_list,"{""V Cus"",""H Galvez"",""M Iriondo"",""J Campistol"",""I Málaga"",""A García Cazorla""}",,zeroec_llm
+259367,article_jcreated_at,1/1/01,,zeroec_llm
+977276,article_jcreated_at,1/1/01,,zeroec_llm
+772616,author_list,"{""di Raimondo D."",""Pinto A."",""Lucifora B."",""Tuttolomondo A."",""Licata G."",""Butt C.""}",,zeroec_llm
+334681,journal_issn,1532-5415,,zeroec_llm
+334681,article_jcreated_at,1/1/01,,zeroec_llm
+757463,article_jcreated_at,6/1/01,,zeroec_llm
+812893,article_jcreated_at,1/5/01,,zeroec_llm
+513829,article_jcreated_at,11/1/12,,zeroec_llm
+862798,article_jcreated_at,1/5/01,,zeroec_llm
+316632,article_jcreated_at,1/1/12,,zeroec_llm
+38413,article_jcreated_at,1/14/12,,zeroec_llm
+595469,article_jcreated_at,1/11/01,,zeroec_llm
+49698,article_jcreated_at,1/9/01,,zeroec_llm
+900624,article_jcreated_at,1/11/01,,zeroec_llm
+246528,article_jcreated_at,1/1/01,,zeroec_llm
+347144,article_jcreated_at,3/1/01,,zeroec_llm
+957059,article_jcreated_at,1/12/01,,zeroec_llm
+267879,article_jcreated_at,1/1/12,,zeroec_llm
+62306,article_jcreated_at,5/1/01,,zeroec_llm
+182986,article_jcreated_at,1/1/01,,zeroec_llm
+663994,article_jcreated_at,10/1/01,,zeroec_llm
+963532,article_jcreated_at,1/9/01,,zeroec_llm
+131820,article_jissue,-1,,zeroec_llm
+131820,article_jcreated_at,12/1/01,,zeroec_llm
+912377,article_jcreated_at,1/14/12,,zeroec_llm
+68354,article_jcreated_at,5/1/12,,zeroec_llm
+259916,article_jcreated_at,1/1/12,,zeroec_llm
+199407,article_jcreated_at,1/11/01,,zeroec_llm
+592893,article_jcreated_at,1/1/01,,zeroec_llm
+232775,article_jcreated_at,1/10/01,,zeroec_llm
+232775,article_pagination,Apr-43,,zeroec_rule
+631610,article_jcreated_at,8/1/01,,zeroec_llm
+901298,article_jcreated_at,1/1/01,,zeroec_llm
+429995,article_jcreated_at,7/1/01,,zeroec_llm
+429995,author_list,"{""A Philotheou"",""S R Heller"",""J Jendle"",""M-A Gall"",""K Kälendorf"",""G P Ross"",""G Perriello"",""I Pavlic-Renar""}",,zeroec_llm
+709359,article_jcreated_at,1/5/01,,zeroec_llm
+690938,article_title,"Association of transforming growth factor-1 T869C, G915C, and C509T gene polymorphisms with rheumatoid arthritis risk.",,zeroec_llm
+690938,article_jcreated_at,1/14/12,,zeroec_llm
+730191,article_jcreated_at,1/1/01,,zeroec_llm
+42135,article_jissue,-1,,zeroec_llm
+335521,article_jcreated_at,1/1/01,,zeroec_llm
+22708,article_jcreated_at,1/14/12,,zeroec_llm
+704111,article_jcreated_at,10/1/01,,zeroec_llm
+804762,article_jcreated_at,1/1/12,,zeroec_llm
+657210,article_jvolumn,24,,zeroec_llm
+657210,article_jissue,-1,,zeroec_llm
+657210,author_list,"{""Michiel A J Kompier"",""Etty G A Wielenga-Meijer"",""Daniël H J Wigboldus"",""Toon W Taris""}",,zeroec_llm
+490584,article_jcreated_at,1/1/01,,zeroec_llm
+929252,article_jcreated_at,1/12/01,,zeroec_llm
+821382,article_jcreated_at,1/12/01,,zeroec_llm
+925885,article_jcreated_at,1/10/01,,zeroec_llm
+717315,article_jcreated_at,1/12/01,,zeroec_llm
+928952,article_jcreated_at,1/1/01,,zeroec_llm
+225002,article_jcreated_at,1/1/01,,zeroec_llm
+550350,article_jcreated_at,3/1/01,,zeroec_llm
+622979,article_jcreated_at,8/2/01,,zeroec_llm
+501663,article_jcreated_at,1/12/01,,zeroec_llm
+48738,article_jcreated_at,1/1/01,,zeroec_llm
+143029,article_jvolumn,24,,zeroec_llm
+143029,article_jissue,-1,,zeroec_llm
+667611,article_jissue,-1,,zeroec_llm
+667611,article_jcreated_at,1/12/01,,zeroec_llm
+565079,article_jcreated_at,1/14/12,,zeroec_llm
+565079,author_list,"{""John M O_Callaghan"",""Robert D Morgan"",""Peter J Morris"",""Simon R Knight""}",,zeroec_llm
+348006,article_jcreated_at,4/1/01,,zeroec_llm
+55412,article_jissue,-1,,zeroec_llm
+55412,article_jcreated_at,12/1/12,,zeroec_llm
+546048,article_jcreated_at,1/1/01,,zeroec_llm
+979292,article_jcreated_at,7/1/01,,zeroec_llm
+971456,article_jcreated_at,1/1/01,,zeroec_llm
+533193,article_jcreated_at,1/1/01,,zeroec_llm
+970436,article_jcreated_at,1/1/01,,zeroec_llm
+979059,article_jvolumn,24,,zeroec_llm
+979059,article_jissue,0,,zeroec_llm
+979059,article_jcreated_at,9/10/10,,zeroec_llm
+661572,article_jcreated_at,3/1/01,,zeroec_llm
+245822,article_jcreated_at,1/1/01,,zeroec_llm
+245822,article_pagination,Apr-41,,zeroec_rule
+77389,article_jcreated_at,10/1/01,,zeroec_llm
+592817,article_jcreated_at,1/12/01,,zeroec_llm
+288711,article_jcreated_at,1/1/01,,zeroec_llm
+184949,article_jcreated_at,1/10/01,,zeroec_llm
+833251,article_jcreated_at,1/6/01,,zeroec_llm
+787529,article_jcreated_at,1/9/01,,zeroec_llm
+481882,article_jcreated_at,9/1/01,,zeroec_llm
+581864,article_jcreated_at,1/1/01,,zeroec_llm
+696362,article_jcreated_at,1/6/01,,zeroec_llm
+504206,article_jcreated_at,7/1/12,,zeroec_llm
+800900,article_jcreated_at,1/9/01,,zeroec_llm
+235689,article_jcreated_at,1/12/01,,zeroec_llm
+659896,article_jcreated_at,1/1/01,,zeroec_llm
+84944,article_jcreated_at,1/1/01,,zeroec_llm
+326944,article_jcreated_at,12/1/01,,zeroec_llm
+326944,author_list,"{""Andreas M_gge"",""Christoph Hanefeld"",""Rainer H B_ger"",""[Collective Name] CARDIAC study investigators""}",,zeroec_llm
+922795,journal_title,Schlafstörungen bei kritisch kranken patienten,,zeroec_llm
+922795,journal_issn,2017-03,,zeroec_llm
+922795,article_jissue,-1,,zeroec_llm
+768486,article_jcreated_at,1/14/12,,zeroec_llm
+428363,author_list,"{""L Ramos"",""S Mathur_n"",""A Mateo"",""C Lopez"",""C Gomez""}",,zeroec_llm
+519287,article_jissue,-1,,zeroec_llm
+519287,article_jcreated_at,1/1/01,,zeroec_llm
+638918,article_jcreated_at,2/12/01,,zeroec_llm
+111336,article_jcreated_at,1/14/12,,zeroec_llm
+111336,author_list,"{""Anders Halling"",""Håkan Odeberg"",""Henrik Forssell"",""Jacob Odeberg"",""Marie-Louise Persson"",""Lennart Ristam"",""Ivar Vaara"",""Ulf Lindblad"",""Michael Freitag""}",,zeroec_llm
+674696,article_jcreated_at,1/1/01,,zeroec_llm
+258108,article_jcreated_at,1/1/01,,zeroec_llm
+59308,article_jcreated_at,1/10/01,,zeroec_llm
+610641,article_jcreated_at,1/12/01,,zeroec_llm
+610641,author_list,"{""Luiz Rogério de Carvalho Oliveira"",""Nilza Aparecida Almeida de Carvalho"",""Flávio C L Cavalcanti Araújo"",""Izabela Menezes Pagotto"",""Paulo Chiavone""}",,zeroec_llm
+973076,article_jcreated_at,9/1/01,,zeroec_llm
+931402,article_jcreated_at,1/1/01,,zeroec_llm
+908690,article_jcreated_at,1/1/01,,zeroec_llm
+386327,article_jcreated_at,10/1/01,,zeroec_llm
+695010,article_jcreated_at,4/1/04,,zeroec_llm
+191908,article_jcreated_at,1/14/12,,zeroec_llm
+384767,article_jcreated_at,5/1/12,,zeroec_llm
+855912,article_jcreated_at,1/12/01,,zeroec_llm
+710727,article_jcreated_at,10/1/01,,zeroec_llm
+625016,article_jcreated_at,7/1/01,,zeroec_llm
+275675,article_jcreated_at,1/1/01,,zeroec_llm
+967376,article_jcreated_at,1/1/01,,zeroec_llm
+640230,article_jcreated_at,2/1/01,,zeroec_llm
+625663,article_jcreated_at,7/1/01,,zeroec_llm
+480649,article_jcreated_at,1/15/10,,zeroec_llm
+782541,article_jcreated_at,1/14/12,,zeroec_llm
+692358,article_jcreated_at,1/1/01,,zeroec_llm
+867207,article_jcreated_at,1/10/01,,zeroec_llm
+929971,article_jcreated_at,1/1/01,,zeroec_llm
+731703,article_jcreated_at,1/1/01,,zeroec_llm
+685178,article_jcreated_at,5/1/01,,zeroec_llm
+653325,article_jcreated_at,11/1/01,,zeroec_llm
+893573,article_jcreated_at,1/1/05,,zeroec_llm
+737786,article_jcreated_at,1/11/01,,zeroec_llm
+680306,article_jcreated_at,1/14/12,,zeroec_llm
+53877,article_jcreated_at,1/14/12,,zeroec_llm
+504928,article_jcreated_at,1/1/01,,zeroec_llm
+671386,article_jcreated_at,10/1/01,,zeroec_llm
+981412,article_jcreated_at,1/14/12,,zeroec_llm
+981412,author_list,"{""N. M. Pinheiro"",""R. Almeida-Reis"",""L. Oliva"",""M. A. Martins"",""M. L. V. Oliva"",""O. A. Theodoro-Junior"",""E. A. Leick"",""I. F. L. C. Tibirio"",""C. M. Prado"",""R. F. Righetti"",""B. T. M. Oliveira""}",,zeroec_llm
+785472,article_jcreated_at,1/12/01,,zeroec_llm
+734077,article_jcreated_at,1/14/12,,zeroec_llm
+734077,author_list,"{""M. Niewada"",""J. Pawelska"",""A. Budaj"",""T. Macioch"",""P. Perkowski""}",,zeroec_llm
+743129,article_jcreated_at,1/1/05,,zeroec_llm
+392246,article_jcreated_at,2/1/01,,zeroec_llm
+904889,author_list,"{""Ge H.-Y."",""Fernández-de-las-Peñas C."",""Yue S.-W.""}",,zeroec_llm
+360147,article_jcreated_at,1/1/01,,zeroec_llm
+670289,article_jcreated_at,3/1/12,,zeroec_llm
+821702,article_jcreated_at,1/1/01,,zeroec_llm
+188890,article_jissue,-1,,zeroec_llm
+321660,article_jcreated_at,1/1/01,,zeroec_llm
+427455,article_jcreated_at,11/1/01,,zeroec_llm
+246204,article_jcreated_at,1/1/01,,zeroec_llm
+857402,article_jcreated_at,1/1/01,,zeroec_llm
+704357,article_jcreated_at,1/10/01,,zeroec_llm
+716785,article_jcreated_at,1/1/01,,zeroec_llm
+746065,author_list,"{""Costin M."",""Dumbrav_ E.L."",""Postolache P."",""Cojocaru D.C.""}",,zeroec_llm
+351534,article_jcreated_at,1/1/01,,zeroec_llm
+499983,article_jcreated_at,1/15/05,,zeroec_llm
+320139,article_jcreated_at,1/12/01,,zeroec_llm
+735083,article_jvolumn,24,,zeroec_llm
+735083,article_jissue,1,,zeroec_llm
+735083,article_jcreated_at,8/15/10,,zeroec_llm
+978471,article_jcreated_at,1/1/01,,zeroec_llm
+152626,article_jcreated_at,1/10/01,,zeroec_llm
+90272,article_jcreated_at,2/1/12,,zeroec_llm
+931361,article_jcreated_at,1/9/01,,zeroec_llm
+623358,article_jcreated_at,6/1/01,,zeroec_llm
+385940,article_jcreated_at,6/1/04,,zeroec_llm
+385940,author_list,"{""Jesper I Reimers"",""Sabrina G Ellesée"",""Henrik Andersen""}",,zeroec_llm
+951168,article_jcreated_at,1/1/01,,zeroec_llm
+515254,article_jcreated_at,1/1/01,,zeroec_llm
+515254,author_list,"{""S Murat"",""H Avsever"",""S Yüksel"",""C S Paksoy"",""B Onder"",""K Kamburoglu""}",,zeroec_llm
+674623,journal_title,Actas espanolas de psiquiatria,,zeroec_llm
+674623,article_jcreated_at,5/1/01,,zeroec_llm
+674623,author_list,"{""Angel Rosa-Alcazar"",""Ana I Rosa-Alcazar"",""Marina Iniesta-Sepulveda""}",,zeroec_llm
+226419,article_jvolumn,24,,zeroec_llm
+226419,article_jissue,9,,zeroec_llm
+226419,article_jcreated_at,1/7/01,,zeroec_llm
+178078,article_jcreated_at,1/1/01,,zeroec_llm
+57483,article_jcreated_at,5/12/01,,zeroec_llm
+57483,author_list,"{""Diana Duro"",""Goulo"",""Gonalo Santos"",""Nuno Mendona"",""Isabel Santana"",""Egidio Machado""}",,zeroec_llm
+338547,article_jcreated_at,1/10/01,,zeroec_llm
+352040,article_jcreated_at,1/1/01,,zeroec_llm
+887131,article_jissue,-1,,zeroec_llm
+887131,article_jcreated_at,12/1/01,,zeroec_llm
+182296,article_jcreated_at,1/6/01,,zeroec_llm
+49847,article_jcreated_at,1/1/01,,zeroec_llm
+348813,author_list,"{""G Vaksmann"",""A Vincentelli"",""C Francart"",""M A Cajot"",""G M Breviere"",""F Godart"",""J M Coullet"",""P Devos"",""C Rey""}",,zeroec_llm
+427933,article_jcreated_at,10/1/01,,zeroec_llm
+6862,article_jcreated_at,1/12/01,,zeroec_llm
+853676,article_jcreated_at,1/1/01,,zeroec_llm
+556116,article_title,A controlled trial of anterior spinal fusion and debridement in the surgical management of tuberculosis of the spine in patients on standard chemotherapy: a study in two centres in South Africa. Seventh Report of the Medical Research Council Working Party on tuberculosis of the spine,,zeroec_llm
+734870,article_jvolumn,24,,zeroec_llm
+734870,article_jissue,-1,,zeroec_llm
+734870,article_jcreated_at,10/9/10,,zeroec_llm
+762269,article_jcreated_at,9/1/01,,zeroec_llm
+762269,author_list,"{""Renata Vrsalovi"",""Eva Verona"",""Iva Mihatov-Stefanovi"",""Biserka Cicak""}",,zeroec_llm
+950233,article_jcreated_at,1/1/01,,zeroec_llm
+633877,article_jcreated_at,3/1/01,,zeroec_llm
+756208,article_jcreated_at,5/12/01,,zeroec_llm
+97853,article_jcreated_at,1/9/01,,zeroec_llm
+720775,article_jcreated_at,1/12/01,,zeroec_llm
+375430,article_jcreated_at,1/1/04,,zeroec_llm
+689666,article_jissue,-1,,zeroec_llm
+689666,article_jcreated_at,1/12/01,,zeroec_llm
+896848,article_jcreated_at,8/1/05,,zeroec_llm
+231182,article_jcreated_at,1/10/01,,zeroec_llm
+232896,article_jvolumn,24,,zeroec_llm
+232896,article_jissue,-1,,zeroec_llm
+232896,article_jcreated_at,3/7/05,,zeroec_llm
+798716,article_jcreated_at,7/1/01,,zeroec_llm
+798716,author_list,"{""Akin Uzmanoglu"",""Meral Topu"",""M Fani Bozkurt"",""Sinem Akgul""}",,zeroec_llm
+81959,article_jvolumn,24,,zeroec_llm
+81959,article_jissue,-1,,zeroec_llm
+235924,article_jcreated_at,1/1/01,,zeroec_llm
+291020,article_jcreated_at,2/1/01,,zeroec_llm
+408188,article_pagination,Jul-00,,zeroec_rule
+283460,article_jcreated_at,1/12/01,,zeroec_llm
+563505,article_jissue,-1,,zeroec_llm
+563505,article_jcreated_at,1/14/12,,zeroec_llm
+761676,article_jcreated_at,1/9/01,,zeroec_llm
+248075,article_jcreated_at,1/10/01,,zeroec_llm
+313030,article_jcreated_at,1/1/01,,zeroec_llm
+361906,article_jcreated_at,2/9/12,,zeroec_llm
+180827,article_jcreated_at,1/12/01,,zeroec_llm
+723057,article_jcreated_at,1/1/12,,zeroec_llm
+894502,article_jcreated_at,1/1/01,,zeroec_llm
+793410,article_jcreated_at,7/1/12,,zeroec_llm
+816944,article_jcreated_at,1/15/04,,zeroec_llm
+632040,article_jcreated_at,1/12/01,,zeroec_llm
+716594,article_jcreated_at,1/4/01,,zeroec_llm
+919751,article_jcreated_at,5/1/01,,zeroec_llm
+757176,article_jcreated_at,8/1/01,,zeroec_llm
+261329,article_jcreated_at,1/12/01,,zeroec_llm
+178424,article_jcreated_at,1/7/01,,zeroec_llm
+716357,article_jcreated_at,1/5/01,,zeroec_llm
+788729,article_jcreated_at,1/12/01,,zeroec_llm
+881020,journal_title,Cirugia Pediatrica: Organo Oficial De La Sociedad Española De Cirugia Pediatrica,,zeroec_llm
+881020,article_jcreated_at,7/1/01,,zeroec_llm
+881020,author_list,"{""J Arana"",""E Rezola"",""A Villanueva"",""M I Intxaurrondo"",""M Suol"",""I Eizaguirre"",""J Garay""}",,zeroec_llm
+605643,article_jcreated_at,12/1/01,,zeroec_llm
+5782,article_jcreated_at,1/12/01,,zeroec_llm
+852332,article_jcreated_at,8/1/01,,zeroec_llm
+343395,article_jcreated_at,4/1/12,,zeroec_llm
+826830,article_jcreated_at,1/1/01,,zeroec_llm
+34517,article_jcreated_at,3/1/12,,zeroec_llm
+771377,article_jcreated_at,1/1/01,,zeroec_llm
+32426,article_jcreated_at,2/1/04,,zeroec_llm
+722451,article_jcreated_at,1/14/12,,zeroec_llm
+318542,article_jcreated_at,1/12/01,,zeroec_llm
+533425,article_jcreated_at,2/1/01,,zeroec_llm
+2842,article_jcreated_at,4/1/01,,zeroec_llm
+789057,article_jcreated_at,7/1/01,,zeroec_llm
+205187,article_jcreated_at,1/1/01,,zeroec_llm
+161630,article_jcreated_at,1/10/01,,zeroec_llm
+583682,article_jcreated_at,3/1/01,,zeroec_llm
+891722,article_jcreated_at,11/1/01,,zeroec_llm
+852213,article_title,Safety and efficacy of weekly nab-paclitaxel in combination with carboplatin as first-line therapy in elderly patients with advanced non-small-cell lung cancer.,,zeroec_llm
+852213,article_jcreated_at,2/1/01,,zeroec_llm
+475847,article_pagination,Mar-91,,zeroec_rule
+893664,article_jcreated_at,1/1/01,,zeroec_llm
+838034,article_jcreated_at,1/1/01,,zeroec_llm
+119186,article_jissue,12,,zeroec_llm
+274083,article_jcreated_at,1/12/01,,zeroec_llm
+784224,article_jcreated_at,1/1/05,,zeroec_llm
+784224,article_pagination,Aug-43,,zeroec_rule
+260769,article_jcreated_at,1/1/01,,zeroec_llm
+369162,article_jcreated_at,12/1/01,,zeroec_llm
+369162,author_list,"{""Serkan Durdu"",""Ahmet Rıza Akar"",""Günseli Cubukoğlu Deniz""}",,zeroec_llm
+217524,author_list,"{""K. Tamaki"",""A. G. Cular"",""S. Beyrer"",""H. Aoki""}",,zeroec_llm
+53319,article_jcreated_at,1/7/01,,zeroec_llm
+962338,article_jcreated_at,1/1/01,,zeroec_llm
+972821,article_jcreated_at,1/1/01,,zeroec_llm
+49274,article_jcreated_at,1/8/01,,zeroec_llm
+687404,article_jissue,-1,,zeroec_llm
+687404,article_jcreated_at,1/14/12,,zeroec_llm
+687404,author_list,"{""Yi Wang"",""Yu Zhou"",""RongDang Hu"",""XiuYing Wang"",""Gerald Volire""}",,zeroec_llm
+858569,article_jcreated_at,1/11/01,,zeroec_llm
+982590,article_jcreated_at,1/1/04,,zeroec_llm
+853882,author_list,"{""M Raderer"",""C Gedlicka"",""A Lenauer"",""D Depisch"",""W Scheithauer"",""B Schneeweiss"",""W Fiebiger"",""F Lang"",""G V Kornek"",""B Schöll""}",,zeroec_llm
+743989,journal_issn,14-Feb,,zeroec_llm
+71263,article_jcreated_at,4/1/04,,zeroec_llm
+111970,article_jcreated_at,6/1/12,,zeroec_llm
+941646,article_jcreated_at,1/1/01,,zeroec_llm
+397190,article_jcreated_at,1/1/01,,zeroec_llm
+98562,article_jvolumn,24,,zeroec_llm
+98562,article_jissue,-1,,zeroec_llm
+56014,article_jissue,-1,,zeroec_llm
+56014,article_jcreated_at,1/1/01,,zeroec_llm
+911271,article_jcreated_at,1/1/01,,zeroec_llm
+565528,article_jcreated_at,5/1/12,,zeroec_llm
+565528,author_list,"{""Marie-Pierre Gagnon"",""Claude Sicotte"",""Édith-Romy Nsangou"",""Sonya Grenier"",""Julie Payne-Gagnon""}",,zeroec_llm
+951143,article_jcreated_at,1/1/01,,zeroec_llm
+658707,article_jcreated_at,5/1/01,,zeroec_llm
+84905,article_jcreated_at,9/12/01,,zeroec_llm
+891370,article_jcreated_at,1/10/01,,zeroec_llm
+697286,article_jcreated_at,1/1/01,,zeroec_llm
+819701,article_jcreated_at,1/1/01,,zeroec_llm
+855099,journal_title,Nowoczesne biomateriały jako opatrunki hemostatyczne w chirurgii oszczędzającej miazsz nerki--model zwierzęcy. Doniesienie wstępne.,,zeroec_llm
+855099,article_jcreated_at,1/1/01,,zeroec_llm
+855099,article_pagination,May-51,,zeroec_rule
+855099,author_list,"{""Przemysław P Szyber"",""Artur Pupka"",""Piotr Szyber"",""Jerzy Garcarek""}",,zeroec_llm
+123492,article_jcreated_at,1/9/01,,zeroec_llm
+226966,article_jcreated_at,12/1/01,,zeroec_llm
+850788,article_jcreated_at,1/1/01,,zeroec_llm
+811354,article_jcreated_at,1/9/01,,zeroec_llm
+323305,article_jcreated_at,1/12/01,,zeroec_llm
+485934,article_jcreated_at,11/1/01,,zeroec_llm
+743602,article_jcreated_at,1/14/12,,zeroec_llm
+743602,article_pagination,Sep-92,,zeroec_rule
+960371,article_jcreated_at,1/1/01,,zeroec_llm
+944668,article_jcreated_at,1/1/01,,zeroec_llm
+873987,article_jcreated_at,1/1/01,,zeroec_llm
+873987,article_pagination,Apr-72,,zeroec_rule
+968211,article_jcreated_at,1/1/05,,zeroec_llm
+299635,article_jcreated_at,5/1/01,,zeroec_llm
+846319,author_list,"{""Nielsen H.O."",""Edwin B."",""H_nerbein M."",""Hovendal C."",""Liedman B."",""Mortensen M.B.""}",,zeroec_llm
+263027,article_jcreated_at,1/1/01,,zeroec_llm
+788168,article_jcreated_at,1/1/01,,zeroec_llm
+146560,article_jcreated_at,5/1/01,,zeroec_llm
+498344,article_jcreated_at,4/3/05,,zeroec_llm
+385772,article_jissue,-1,,zeroec_llm
+385772,article_jcreated_at,1/1/01,,zeroec_llm
+917417,article_jcreated_at,7/12/01,,zeroec_llm
+72325,article_jcreated_at,3/1/01,,zeroec_llm
+85920,article_jcreated_at,1/1/01,,zeroec_llm
+145874,article_jcreated_at,4/1/01,,zeroec_llm
+145874,article_pagination,Sep-94,,zeroec_rule
+888553,article_jcreated_at,1/6/01,,zeroec_llm
+732272,article_jcreated_at,4/1/01,,zeroec_llm
+732272,author_list,"{""Linsenmaier U"",""Geyer LL"",""Körner M"",""Meisel CD"",""Wirth S"",""Reiser MF""}",,zeroec_llm
+378289,author_list,"{""L Lenhardt"",""S Mozes"",""A Martinkov""}",,zeroec_llm
+684476,article_jcreated_at,3/1/01,,zeroec_llm
+179093,article_jcreated_at,1/14/12,,zeroec_llm
+539034,article_jcreated_at,7/12/01,,zeroec_llm
+208435,article_jcreated_at,9/1/01,,zeroec_llm
+556624,article_jcreated_at,1/1/01,,zeroec_llm
+422857,article_jcreated_at,8/1/01,,zeroec_llm
+720372,article_jcreated_at,1/1/01,,zeroec_llm
+863342,article_jcreated_at,1/1/01,,zeroec_llm
+260745,article_jcreated_at,1/11/01,,zeroec_llm
+941515,article_jcreated_at,1/1/01,,zeroec_llm
+641972,article_jcreated_at,2/12/01,,zeroec_llm
+641972,author_list,"{""Søren Brostrøm"",""Gunnar Lose""}",,zeroec_llm
+946112,article_jcreated_at,1/1/01,,zeroec_llm
+958639,article_jcreated_at,1/9/01,,zeroec_llm
+125302,article_jcreated_at,3/1/01,,zeroec_llm
+125302,author_list,"{""E A M Janssen"",""C Brodin"",""P Ogreid"",""K Kjellevold"",""L G Gäransson"",""L Vatten"",""P R Romundstad"",""R Omdal"",""K Wildhagen""}",,zeroec_llm
+782211,article_jcreated_at,1/1/01,,zeroec_llm
+473599,article_jcreated_at,1/1/01,,zeroec_llm
+915463,article_jcreated_at,1/1/01,,zeroec_llm
+476199,article_jcreated_at,6/1/05,,zeroec_llm
+405141,article_jissue,7462,,zeroec_llm
+405141,article_jcreated_at,1/1/01,,zeroec_llm
+89897,article_jcreated_at,4/1/04,,zeroec_llm
+187552,article_jcreated_at,1/11/01,,zeroec_llm
+144339,article_jcreated_at,8/1/01,,zeroec_llm
+656518,article_jcreated_at,10/1/01,,zeroec_llm
+925315,article_pagination,Jul-15,,zeroec_rule
+237077,article_jcreated_at,1/1/01,,zeroec_llm
+600827,article_jvolumn,24,,zeroec_llm
+851773,article_jcreated_at,4/1/05,,zeroec_llm
+67292,article_jcreated_at,10/3/04,,zeroec_llm
+129698,article_jcreated_at,10/5/01,,zeroec_llm
+254327,article_jcreated_at,3/1/01,,zeroec_llm
+254327,article_pagination,Jul-83,,zeroec_rule
+556803,article_jcreated_at,1/1/12,,zeroec_llm
+73792,article_jcreated_at,1/14/12,,zeroec_llm
+484593,article_jcreated_at,6/1/01,,zeroec_llm
+105981,article_jcreated_at,5/11/01,,zeroec_llm
+105981,author_list,"{""George Davey Smith"",""Amanda J Bennett"",""Eleftheria Zeggini"",""Marjo-Riitta Jarvelin"",""Nicholas J Wareham"",""Lorna W Harries"",""Colin N A Palmer"",""Shah Ebrahim"",""Timothy M Frayling"",""Susan M Ring"",""Bridget Knight"",""Sian Ellard"",""Katharine R Owen"",""Rachel M Freathy"",""Hana Lango"",""Debbie A Lawlor"",""Lon R Cardon"",""John R B Perry"",""Jeffrey C Barrett"",""Andrew D Morris"",""Graham A Hitman"",""Katherine S Elliott"",""Ulla Sovio"",""Mark I McCarthy"",""David Melzer"",""Alex S F Doney"",""Andrew R Ness"",""Yoav Ben-Shlomo"",""Andrew T Hattersley"",""Ann-Marie Patch"",""Nicholas J Timpson"",""Nigel W Rayner"",""Mark Walker"",""Michael N Weedon"",""Ruth J F Loos"",""Fredrik Karpe"",""Inês Barroso"",""Luigi Ferrucci"",""Christopher J Groves"",""Cecilia M Lindgren"",""Beverley Shields""}",,zeroec_llm
+408198,article_title,"The parvalbumin-positive interneurons in the mouse dentate gyrus express GABAA receptor subunits 1, 2, and along their extrasynaptic cell membrane.",,zeroec_llm
+408198,article_jissue,-1,,zeroec_llm
+408198,author_list,"{""H Hger"",""W Sieghart"",""T Klausberger"",""I Milenkovic"",""M Vasiljevic"",""D Maurer""}",,zeroec_llm
+30272,article_jvolumn,24,,zeroec_llm
+30272,article_jissue,-1,,zeroec_llm
+299297,article_jcreated_at,10/1/01,,zeroec_llm
+302268,article_jcreated_at,1/1/01,,zeroec_llm
+592663,article_jcreated_at,1/1/01,,zeroec_llm
+520843,article_jcreated_at,5/1/01,,zeroec_llm
+751811,article_jcreated_at,1/1/01,,zeroec_llm
+796900,article_jcreated_at,1/1/01,,zeroec_llm
+491837,article_jcreated_at,1/1/01,,zeroec_llm
+893227,article_jcreated_at,1/1/12,,zeroec_llm
+26475,article_jvolumn,24,,zeroec_llm
+26475,article_jissue,-1,,zeroec_llm
+476191,article_jvolumn,24,,zeroec_llm
+476191,article_jissue,2,,zeroec_llm
+719389,article_jcreated_at,1/1/01,,zeroec_llm
+268361,article_jcreated_at,1/7/01,,zeroec_llm
+664795,article_jcreated_at,9/1/01,,zeroec_llm
+102180,article_jcreated_at,6/1/01,,zeroec_llm
+102180,author_list,"{""R Carraro"",""M F Rasmussen"",""L Niskanen"",""A Harper"",""N Finer"",""S Rassner"",""M Kunesova"",""L Van Gaal"",""M E J Lean"",""A Astrup"",""A Rissanen"",""M J Savolainen"",""[Collective Name] NN8022-1807 Investigators""}",,zeroec_llm
+258486,article_jcreated_at,1/10/01,,zeroec_llm
+961081,article_jcreated_at,1/1/01,,zeroec_llm
+812757,article_jcreated_at,1/11/01,,zeroec_llm
+713518,article_jcreated_at,11/1/01,,zeroec_llm
+713518,author_list,"{""Gerlane Ângela da Costa Moreira"",""Denyse Dutra Alencar Vasconcelos"",""Amanda Costa de Freitas"",""Carla Cristina Braga Maranhão"",""Danielle Figueiredo Patricio""}",,zeroec_llm
+180977,article_jcreated_at,1/1/01,,zeroec_llm
+828214,article_jcreated_at,5/10/01,,zeroec_llm
+828214,author_list,"{""Philipp Martius"",""Anna Buchheim"",""Peter Buchheim"",""Susanne Hörz"",""Michael Rentrop"",""Cord Benecke"",""Peter Schuster"",""Melitta Fischer-Kern"",""Stephan Doering""}",,zeroec_llm
+176160,article_jcreated_at,1/11/01,,zeroec_llm
+677752,article_jcreated_at,2/1/05,,zeroec_llm
+107417,article_jcreated_at,1/1/01,,zeroec_llm
+708911,article_jcreated_at,1/10/01,,zeroec_llm
+647583,article_jcreated_at,7/1/01,,zeroec_llm
+647583,author_list,"{""Ana Maria Baptista Menezes"",""David Alejandro González"",""Elaine Cardozo Macedo"",""Pedro Curi Hallal"",""Maria de Fátima Maia"",""Marli Knorst"",""Samuel Carvalho Dumith"",""Jeovany Martínez-Mesa"",""Ricardo Bica Noal"",""Fernando César Wehrmeister"",""José Roberto Jardim""}",,zeroec_llm
+361080,article_jcreated_at,1/12/01,,zeroec_llm
+283168,article_jcreated_at,1/12/01,,zeroec_llm
+74821,article_jcreated_at,1/14/12,,zeroec_llm
+373015,article_jcreated_at,1/1/01,,zeroec_llm
+529562,article_jcreated_at,6/14/01,,zeroec_llm
+574242,article_jcreated_at,1/1/12,,zeroec_llm
+966388,article_jcreated_at,1/1/01,,zeroec_llm
+919014,article_jcreated_at,7/1/01,,zeroec_llm
+494428,article_jcreated_at,6/10/01,,zeroec_llm
+55809,article_jcreated_at,4/1/04,,zeroec_llm
+55809,author_list,"{""Anna Nidecker"",""Siamak Ardekani"",""E Mark Mahone"",""Firouzeh Tannazi"",""Jarunee Intrapiromkul"",""Moody Wharam"",""Larry J Brant"",""Alena Horsk""}",,zeroec_llm
+368651,article_jcreated_at,1/1/01,,zeroec_llm
+423691,article_jcreated_at,1/11/01,,zeroec_llm
+407245,article_jcreated_at,10/1/01,,zeroec_llm
+918698,article_jcreated_at,9/1/01,,zeroec_llm
+209138,article_jcreated_at,12/1/01,,zeroec_llm
+862844,article_jcreated_at,1/1/01,,zeroec_llm
+587683,article_jcreated_at,1/1/01,,zeroec_llm
+587683,article_pagination,Mar-81,,zeroec_rule
+927711,article_jcreated_at,1/1/12,,zeroec_llm
+161847,article_jcreated_at,1/1/01,,zeroec_llm
+543292,article_jcreated_at,1/4/01,,zeroec_llm
+248064,article_jcreated_at,1/1/01,,zeroec_llm
+887041,article_jcreated_at,1/10/01,,zeroec_llm
+314737,article_jcreated_at,1/1/01,,zeroec_llm
+709094,article_jcreated_at,1/1/01,,zeroec_llm
+327157,article_jcreated_at,1/14/12,,zeroec_llm
+793206,article_jcreated_at,9/1/05,,zeroec_llm
+361682,article_jcreated_at,1/14/12,,zeroec_llm
+732256,article_jcreated_at,8/1/01,,zeroec_llm
+636937,article_jcreated_at,1/12/01,,zeroec_llm
+743394,article_jissue,-1,,zeroec_llm
+743394,article_jcreated_at,1/14/12,,zeroec_llm
+914007,article_jcreated_at,1/9/01,,zeroec_llm
+208824,article_title,"Optical turbulence: weak turbulence, condensates and collapsing filaments in the nonlinear Schrödinger equation",,zeroec_llm
+759501,journal_title,Zeitschrift fuer Erkrankungen der Atmungsorgane mit Folia bronchologica,,zeroec_llm
+506162,article_jcreated_at,12/1/01,,zeroec_llm
+372697,article_jcreated_at,9/1/12,,zeroec_llm
+609245,article_jcreated_at,10/1/01,,zeroec_llm
+822897,article_jcreated_at,1/1/01,,zeroec_llm
+145770,article_jcreated_at,4/1/01,,zeroec_llm
+145770,author_list,"{""Gilles Montalescot"",""Gordon FitzGerald"",""Kurt G Barringhaus"",""[Collective Name] GRACE Investigators"",""Frans Van de Werf"",""Joel M Gore"",""David D McManus"",""José López-Sendón"",""Philippe Gabriel Steg"",""Kay Lee Park""}",,zeroec_llm
+24026,article_jcreated_at,2/6/01,,zeroec_llm
+24026,article_pagination,Jun-93,,zeroec_rule
+24026,author_list,"{""Marcus R Munaf"",""Mike W Peacey"",""In-Uck Park""}",,zeroec_llm
+44484,article_jcreated_at,9/1/01,,zeroec_llm
+333862,article_jcreated_at,1/1/01,,zeroec_llm
+779555,article_jcreated_at,1/14/12,,zeroec_llm
+323860,article_jcreated_at,1/1/01,,zeroec_llm
+646572,article_jcreated_at,8/10/01,,zeroec_llm
+646572,author_list,"{""R Schwarz"",""J Ernst"",""M Zenger"",""E Brühler"",""R Schmidt""}",,zeroec_llm
+128182,article_jcreated_at,1/1/01,,zeroec_llm
+128182,author_list,"{""M. Rossignol"",""F. A. Allaert"",""B. Bannwarth"",""S. Rozenberg"",""B. Avouac""}",,zeroec_llm
+252998,article_jcreated_at,1/1/01,,zeroec_llm
+231933,article_jcreated_at,1/11/01,,zeroec_llm
+683304,article_jcreated_at,9/1/01,,zeroec_llm
+117678,article_pagination,Sep-55,,zeroec_rule
+795170,article_jcreated_at,12/1/01,,zeroec_llm
+783722,article_jcreated_at,1/15/05,,zeroec_llm
+376103,article_jcreated_at,1/11/01,,zeroec_llm
+868618,article_jcreated_at,1/1/01,,zeroec_llm
+503451,article_jcreated_at,1/12/01,,zeroec_llm
+944558,article_jcreated_at,1/1/01,,zeroec_llm
+875250,article_jcreated_at,1/9/01,,zeroec_llm
+786108,article_jcreated_at,1/9/01,,zeroec_llm
+233544,article_jcreated_at,8/1/12,,zeroec_llm
+163093,article_jcreated_at,1/9/01,,zeroec_llm
+31763,author_list,"{""Irene G Salado"",""Ana Martinez"",""Daniel I Perez"",""Brian C Kraemer"",""Murilo L Bello"",""Concepción Perez"",""Nicole F Liachko"",""Magalie Lecourtois"",""Miriam Redondo"",""Carmen Gil"",""Laetitia Miguel""}",,zeroec_llm
+949775,article_jcreated_at,1/1/01,,zeroec_llm
+847600,article_jvolumn,24,,zeroec_llm
+847600,article_jissue,4,,zeroec_llm
+847600,article_jcreated_at,11/4/10,,zeroec_llm
+638338,article_jcreated_at,11/1/01,,zeroec_llm
+638338,author_list,"{""Sergio Raposeiras-Roub_n"",""Jos Maria Garcia-Acu_a"",""Jos Ram_n Gonzalez-Juanatey""}",,zeroec_llm
+14077,author_list,"{""C Lliger"",""K Neuber"",""J Ring"",""I Kähler""}",,zeroec_llm
+690793,article_jcreated_at,3/1/01,,zeroec_llm
+718091,article_jcreated_at,1/1/01,,zeroec_llm
+711472,article_jcreated_at,7/2/01,,zeroec_llm
+660574,article_jcreated_at,6/1/01,,zeroec_llm
+873322,article_jcreated_at,1/10/01,,zeroec_llm
+774830,article_jcreated_at,1/15/04,,zeroec_llm
+768192,article_jcreated_at,1/1/01,,zeroec_llm
+950926,article_jcreated_at,1/1/01,,zeroec_llm
+204215,article_jcreated_at,1/10/01,,zeroec_llm
+204215,article_pagination,Sep-11,,zeroec_rule
+204215,author_list,"{""Nuria Lloberas"",""Marcel la Franquesa"",""Josep M Cruzado"",""Josep M Griny"",""Ines Rama"",""Gabriela Alperovich"",""Immaculada Herrero-Fresneda"",""Joan Torras"",""Pepita Gimenez-Bonaf""}",,zeroec_llm
+129552,article_jcreated_at,1/10/01,,zeroec_llm
+526825,article_jcreated_at,3/1/05,,zeroec_llm
+56464,article_jcreated_at,10/1/01,,zeroec_llm
+20641,article_jcreated_at,7/1/01,,zeroec_llm
+706764,article_jcreated_at,1/1/01,,zeroec_llm
+388872,article_jcreated_at,5/1/01,,zeroec_llm
+681305,article_jcreated_at,1/14/12,,zeroec_llm
+541739,article_jcreated_at,5/1/01,,zeroec_llm
+558824,article_jcreated_at,1/1/05,,zeroec_llm
+954980,article_jcreated_at,1/1/05,,zeroec_llm
+896410,article_jcreated_at,2/1/01,,zeroec_llm
+751168,article_jcreated_at,1/1/01,,zeroec_llm
+303571,article_title,Constructing differences: A qualitative analysis of teachers' perspectives on linguistic and cultural diversity,,zeroec_llm
+303571,article_jcreated_at,1/7/01,,zeroec_llm
+193059,article_jcreated_at,1/14/12,,zeroec_llm
+416171,article_jcreated_at,1/1/01,,zeroec_llm
+164085,article_jcreated_at,1/1/01,,zeroec_llm
+619668,journal_issn,2014-01,,zeroec_llm
+619668,article_jcreated_at,1/10/01,,zeroec_llm
+490750,article_jcreated_at,1/11/01,,zeroec_llm
+136068,author_list,"{""T. H. Michel"",""A. Wagner"",""H. Wittink"",""R. Kulich"",""A. Sukiennik"",""R. Maciewicz""}",,zeroec_llm
+198675,article_jcreated_at,1/7/01,,zeroec_llm
+316114,article_jcreated_at,1/10/01,,zeroec_llm
+626797,article_jcreated_at,8/1/01,,zeroec_llm
+577842,article_jcreated_at,3/1/01,,zeroec_llm
+811629,article_jcreated_at,1/1/01,,zeroec_llm
+280418,article_jcreated_at,1/1/01,,zeroec_llm
+54163,article_jcreated_at,1/10/01,,zeroec_llm
+65723,article_jcreated_at,1/1/12,,zeroec_llm
+293974,article_jcreated_at,1/14/12,,zeroec_llm
+247571,article_jcreated_at,1/1/01,,zeroec_llm
+292980,article_jcreated_at,7/1/01,,zeroec_llm
+160820,article_jcreated_at,11/1/01,,zeroec_llm
+160820,author_list,"{""M Caliskan"",""M Karab̦coglu"",""A Citak"",""N Uzel"",""K Aydin"",""A Nayir"",""D D Soysal""}",,zeroec_llm
+876536,article_jcreated_at,1/1/01,,zeroec_llm
+776197,article_jcreated_at,1/1/12,,zeroec_llm
+605277,article_jcreated_at,8/1/01,,zeroec_llm
+605277,author_list,"{""Andreas Beelmann"",""Friedrich Lsel""}",,zeroec_llm
+749261,article_jcreated_at,1/14/12,,zeroec_llm
+179196,article_jcreated_at,1/1/01,,zeroec_llm
+150198,article_jcreated_at,1/7/01,,zeroec_llm
+187769,article_jcreated_at,1/12/01,,zeroec_llm
+556090,article_title,Lung function efficacy of olodaterol qd delivered via respimat vs placebo and formoterol bid in patients with COPD: two 48-week studies [Abstract],,zeroec_llm
+556090,article_jcreated_at,1/14/12,,zeroec_llm
+770589,article_jcreated_at,1/15/04,,zeroec_llm
+157566,article_jissue,-1,,zeroec_llm
+157566,article_jcreated_at,1/14/12,,zeroec_llm
+157566,author_list,"{""Paolo Dell'Oglio"",""Alessandro Larcher"",""Nicola Fossati"",""Nicola Maria Buffi"",""Alberto Abrate"",""Giuliana Lista"",""Francesco Montorsi"",""Francesco Mistretta"",""Massimo Lazzeri"",""Giorgio Guazzoni"",""Giovanni Lughezzani""}",,zeroec_llm
+589465,article_pagination,Sep-36,,zeroec_rule
+560120,article_jcreated_at,6/12/01,,zeroec_llm
+107924,article_jcreated_at,7/1/01,,zeroec_llm
+265969,article_jcreated_at,1/1/01,,zeroec_llm
+820508,author_list,"{""E.-B. Malmgren-Olsson"",""K. Armelius"",""B.-A. Armelius""}",,zeroec_llm
+84941,article_jissue,0,,zeroec_llm
+84941,article_jcreated_at,1/12/01,,zeroec_llm
+558766,article_jcreated_at,1/1/01,,zeroec_llm
+428909,article_jcreated_at,10/1/01,,zeroec_llm
+110453,article_jcreated_at,4/1/04,,zeroec_llm
+837546,article_jcreated_at,1/2/01,,zeroec_llm
+82695,article_jcreated_at,1/1/12,,zeroec_llm
+82695,article_pagination,Jul-64,,zeroec_rule
+820059,article_jcreated_at,1/1/01,,zeroec_llm
+771288,article_jcreated_at,1/1/01,,zeroec_llm
+54202,article_jcreated_at,1/12/01,,zeroec_llm
+54202,author_list,"{""O E Havik"",""P Carlbring"",""L G Aast"",""T Nordgreen"",""G Andersson"",""T Furmark""}",,zeroec_llm
+888477,article_jcreated_at,1/1/05,,zeroec_llm
+741279,article_jcreated_at,1/1/01,,zeroec_llm
+64430,article_jcreated_at,10/1/01,,zeroec_llm
+696132,article_jcreated_at,1/11/01,,zeroec_llm
+257990,article_jcreated_at,1/1/12,,zeroec_llm
+332032,article_jcreated_at,1/1/01,,zeroec_llm
+617801,article_jcreated_at,8/1/01,,zeroec_llm
+480030,article_jcreated_at,1/14/12,,zeroec_llm
+660499,article_jcreated_at,1/1/01,,zeroec_llm
+355078,article_jcreated_at,1/1/01,,zeroec_llm
+355078,article_pagination,Jun-74,,zeroec_rule
+696985,article_jcreated_at,1/1/01,,zeroec_llm
+826471,article_jcreated_at,1/10/01,,zeroec_llm
+826471,author_list,"{""Sergio Garrido"",""Angeles Pulgar"",""Stefan Duschek"",""María Martín-Vázquez"",""Gustavo A Reyes Del Paso""}",,zeroec_llm
+322953,article_jcreated_at,1/10/01,,zeroec_llm
+180588,article_jcreated_at,1/5/01,,zeroec_llm
+758629,article_jissue,-1,,zeroec_llm
+964184,journal_issn,1524-4539,,zeroec_llm
+964184,article_jcreated_at,1/1/01,,zeroec_llm
+265490,article_jcreated_at,1/14/12,,zeroec_llm
+749844,article_jcreated_at,1/1/01,,zeroec_llm
+300057,article_jcreated_at,5/1/01,,zeroec_llm
+166521,article_jcreated_at,1/1/01,,zeroec_llm
+292018,article_jcreated_at,8/1/01,,zeroec_llm
+181456,article_jcreated_at,1/1/01,,zeroec_llm
+668772,article_jcreated_at,5/1/01,,zeroec_llm
+788507,article_jcreated_at,1/10/01,,zeroec_llm
+856471,article_jcreated_at,1/1/01,,zeroec_llm
+570704,article_jcreated_at,7/1/01,,zeroec_llm
+520153,article_jcreated_at,7/1/01,,zeroec_llm
+259267,article_jcreated_at,1/12/01,,zeroec_llm
+24381,article_jcreated_at,11/1/01,,zeroec_llm
+827921,article_jcreated_at,4/1/01,,zeroec_llm
+18298,article_jvolumn,24,,zeroec_llm
+18298,article_jissue,-1,,zeroec_llm
+18298,article_jcreated_at,7/4/04,,zeroec_llm
+365654,article_jcreated_at,1/1/12,,zeroec_llm
+625306,journal_title,Prevention de l'insuffisance renale induite par les produits de contraste iodes,,zeroec_llm
+625306,article_jcreated_at,9/1/01,,zeroec_llm
+572343,article_jissue,-1,,zeroec_llm
+88262,article_jcreated_at,1/14/12,,zeroec_llm
+307302,article_jcreated_at,6/1/01,,zeroec_llm
+413717,article_jcreated_at,1/6/01,,zeroec_llm
+62246,article_jcreated_at,5/1/01,,zeroec_llm
+945021,article_pagination,Aug-84,,zeroec_rule
+649817,article_jcreated_at,6/10/01,,zeroec_llm
+546484,article_jcreated_at,4/1/01,,zeroec_llm
+917231,article_jcreated_at,7/1/01,,zeroec_llm
+887418,article_jcreated_at,1/1/01,,zeroec_llm
+724055,article_jcreated_at,1/14/12,,zeroec_llm
+63738,journal_title,Stomatologiia,,zeroec_llm
+422739,article_jcreated_at,1/10/01,,zeroec_llm
+155127,article_jcreated_at,1/14/12,,zeroec_llm
+100986,article_jvolumn,24,,zeroec_llm
+100986,article_jissue,6,,zeroec_llm
+740811,article_jcreated_at,1/1/01,,zeroec_llm
+379577,author_list,"{""C Pithan"",""M Mazariegos"",""N W Solomons"",""P F_urst""}",,zeroec_llm
+658981,article_jcreated_at,12/1/01,,zeroec_llm
+215650,article_title,Bruxismo em crianças,,zeroec_llm
+215650,article_pagination,Aug-91,,zeroec_rule
+215650,author_list,"{""Ronaldo Fazzi"",""Ana Estela Haddad"",""Maria Salete Nahas Pires Corra""}",,zeroec_llm
+521132,article_jcreated_at,9/1/01,,zeroec_llm
+366275,article_jcreated_at,8/1/01,,zeroec_llm
+513630,article_jcreated_at,11/14/12,,zeroec_llm
+605423,article_jcreated_at,1/1/01,,zeroec_llm
+605423,author_list,"{""Jürgen Rehm"",""Gerhard Gmel"",""Maurizio Trevisan"",""Christopher T Sempos""}",,zeroec_llm
+733752,article_jcreated_at,1/1/01,,zeroec_llm
+80799,article_jcreated_at,2/10/12,,zeroec_llm
+385163,article_jcreated_at,1/15/04,,zeroec_llm
+645061,article_jcreated_at,3/1/01,,zeroec_llm
+730721,article_jcreated_at,1/12/01,,zeroec_llm
+410748,article_jcreated_at,1/14/12,,zeroec_llm
+133777,article_jcreated_at,7/1/01,,zeroec_llm
+133777,author_list,"{""P Gerard"",""J Montesanti"",""P Lepage"",""M M Massin""}",,zeroec_llm
+775428,article_jcreated_at,1/14/12,,zeroec_llm
+497593,article_jcreated_at,1/14/12,,zeroec_llm
+899060,article_jcreated_at,1/1/01,,zeroec_llm
+161290,article_jcreated_at,1/5/01,,zeroec_llm
+191138,article_jcreated_at,1/14/12,,zeroec_llm
+743819,article_jcreated_at,4/1/12,,zeroec_llm
+743819,author_list,"{""Eunice Molinar-Toribio"",""Benjamín Piña"",""Livia Gómez"",""Jara Pérez-Jiménez"",""Marta Casado"",""Sara Ramos-Romero"",""Pere Clapés"",""Josep Lluís Torres""}",,zeroec_llm
+193292,article_jcreated_at,1/1/01,,zeroec_llm
+663526,article_jcreated_at,4/1/01,,zeroec_llm
+382853,article_jcreated_at,4/1/04,,zeroec_llm
+1266,article_jcreated_at,1/1/01,,zeroec_llm
+407082,article_jcreated_at,11/10/01,,zeroec_llm
+407082,article_pagination,Aug-63,,zeroec_rule
+411673,article_jcreated_at,1/12/01,,zeroec_llm
+382297,article_jcreated_at,4/1/05,,zeroec_llm
+414396,article_jcreated_at,1/1/01,,zeroec_llm
+376525,article_jcreated_at,10/1/01,,zeroec_llm
+637323,article_jcreated_at,5/1/01,,zeroec_llm
+153797,article_jcreated_at,1/1/01,,zeroec_llm
+9325,article_jcreated_at,3/1/01,,zeroec_llm
+294719,article_jcreated_at,11/1/01,,zeroec_llm
+518335,article_jcreated_at,5/7/01,,zeroec_llm
+503528,article_jcreated_at,1/14/12,,zeroec_llm
+176844,article_jcreated_at,1/14/12,,zeroec_llm
+820549,article_jcreated_at,1/10/01,,zeroec_llm
+250975,article_jcreated_at,1/14/12,,zeroec_llm
+37173,article_jcreated_at,1/1/01,,zeroec_llm
+641251,article_jcreated_at,1/10/01,,zeroec_llm
+302179,article_jcreated_at,1/11/01,,zeroec_llm
+627882,article_jcreated_at,5/1/01,,zeroec_llm
+264151,article_jcreated_at,1/1/12,,zeroec_llm
+711975,journal_issn,1524-4539,,zeroec_llm
+12554,article_jcreated_at,6/10/01,,zeroec_llm
+564924,article_jcreated_at,1/1/12,,zeroec_llm
+356635,journal_issn,1524-4539,,zeroec_llm
+356635,article_jcreated_at,1/1/01,,zeroec_llm
+272721,article_jcreated_at,1/9/01,,zeroec_llm
+979725,article_jcreated_at,1/15/05,,zeroec_llm
+470615,article_jcreated_at,1/14/12,,zeroec_llm
+470615,author_list,"{""Francitorra ME"",""Sanchez GS"",""Manrique CA"",""Velasco TT"",""Castany A R"",""Escriche XF"",""Fernández CS"",""Fornell LL"",""Álvarez S"",""Fernández EA"",""Rodriguez MVF"",""Simón MR"",""Mayo EP""}",,zeroec_llm
+71351,article_jvolumn,24,,zeroec_llm
+71351,article_jissue,-1,,zeroec_llm
+793299,article_jissue,-1,,zeroec_llm
+793299,article_jcreated_at,1/1/05,,zeroec_llm
+793299,article_pagination,Jul-72,,zeroec_rule
+793299,author_list,"{""Venancio Martinez Suarez""}",,zeroec_llm
+673560,article_jcreated_at,7/7/04,,zeroec_llm
+673560,author_list,"{""Margarita Admetlla Falgueras"",""Josep Fust Sugraes""}",,zeroec_llm
+258181,article_jcreated_at,1/10/01,,zeroec_llm
+11709,article_jcreated_at,1/1/01,,zeroec_llm
+603381,article_jvolumn,24,,zeroec_llm
+603381,article_jcreated_at,1/1/01,,zeroec_llm
+570263,article_jcreated_at,3/1/01,,zeroec_llm
+395807,article_jcreated_at,1/1/01,,zeroec_llm
+149836,article_jcreated_at,1/1/01,,zeroec_llm
+813023,article_jcreated_at,1/1/01,,zeroec_llm
+691035,article_jcreated_at,1/1/12,,zeroec_llm
+121133,article_jcreated_at,1/1/01,,zeroec_llm
+82486,article_jcreated_at,1/14/12,,zeroec_llm
+136032,article_jcreated_at,1/1/01,,zeroec_llm
+136032,author_list,"{""D. Russell"",""P. Linck"",""R. Hibbs"",""I. Russell"",""R. Muntz"",""N. H. Williams"",""R. T. Edwards"",""C. Wilkinson""}",,zeroec_llm
+57286,article_jcreated_at,3/1/01,,zeroec_llm
+107979,article_jcreated_at,6/1/01,,zeroec_llm
+107979,author_list,"{""T Forsn"",""J Eriksson"",""C Osmond"",""D Barker""}",,zeroec_llm
+252990,article_title,Effects on prolongation of Bazett's corrected QT interval of seven second-generation antipsychotics in the treatment of schizophrenia: A meta-analysis,,zeroec_llm
+252990,article_jcreated_at,1/1/01,,zeroec_llm
+861475,article_jcreated_at,1/1/01,,zeroec_llm
+399134,article_jcreated_at,1/1/05,,zeroec_llm
+315951,article_jcreated_at,1/1/01,,zeroec_llm
+98479,article_jvolumn,24,,zeroec_llm
+98479,article_jissue,5,,zeroec_llm
+673307,article_jcreated_at,1/1/01,,zeroec_llm
+730754,article_jcreated_at,1/1/01,,zeroec_llm
+246067,article_jcreated_at,1/1/01,,zeroec_llm
+161814,article_jcreated_at,1/1/01,,zeroec_llm
+8529,article_jcreated_at,6/1/01,,zeroec_llm
+8529,author_list,"{""Gerard H Koppelman"",""Johan C de Jongste"",""Liset E M Elstgeest"",""Henriëtte A Smit"",""Ulrike Gehring"",""Annemien Haveman-Nies"",""Marjan Kerkhof"",""Marga B M Bekkers"",""Alet H Wijga"",""Salome Scholtens""}",,zeroec_llm
+198813,article_jcreated_at,1/9/01,,zeroec_llm
+162189,article_jcreated_at,1/1/01,,zeroec_llm
+197174,article_jissue,-1,,zeroec_llm
+197174,article_jcreated_at,7/1/01,,zeroec_llm
+6786,journal_issn,0000-0000,,zeroec_llm
+6786,article_jcreated_at,1/10/01,,zeroec_llm
+309274,article_jcreated_at,11/1/01,,zeroec_llm
+672671,article_jcreated_at,9/1/01,,zeroec_llm
+819735,article_jcreated_at,1/1/01,,zeroec_llm
+21599,article_jcreated_at,3/1/12,,zeroec_llm
+980682,article_jcreated_at,1/1/02,,zeroec_llm
+547657,article_jcreated_at,1/12/01,,zeroec_llm
+682676,article_jcreated_at,9/14/12,,zeroec_llm
+820238,article_jcreated_at,1/5/01,,zeroec_llm
+82540,article_jcreated_at,12/1/01,,zeroec_llm
+776189,article_jcreated_at,1/7/01,,zeroec_llm
+422951,article_jcreated_at,6/15/05,,zeroec_llm
+514759,article_jcreated_at,11/1/01,,zeroec_llm
+26216,article_jcreated_at,3/1/12,,zeroec_llm
+164517,article_jcreated_at,1/1/01,,zeroec_llm
+304082,journal_issn,0000-0000,,zeroec_llm
+304082,article_jcreated_at,3/1/01,,zeroec_llm
+33728,article_jcreated_at,1/14/12,,zeroec_llm
+33728,article_pagination,Jul-41,,zeroec_rule
+424870,article_jcreated_at,1/1/01,,zeroec_llm
+916713,article_jcreated_at,1/15/05,,zeroec_llm
+916713,author_list,"{""Delia Aguado"",""Javier Benito"",""Ignacio A Gómez de Segura"",""Mariana Abreu"",""Javier García-Fernández""}",,zeroec_llm
+892141,article_jcreated_at,9/1/01,,zeroec_llm
+513503,article_jcreated_at,2/1/05,,zeroec_llm
+513503,author_list,"{""Felipe Serro de Souza"",""Ney Pecegueiro do Amaral"",""Carlos Henrique Mendes"",""Hilton Augusto Koch"",""Vincenzo Giordano"",""Andr Bergamin""}",,zeroec_llm
+83012,article_jcreated_at,7/10/01,,zeroec_llm
+83012,author_list,"{""Chu Chen"",""Brian L Strom"",""Susan E McCann"",""Harvey A Risch"",""Lingeng Lu"",""Fulvio Ricceri"",""Immaculata De Vivo"",""Amanda B Spurdle"",""Susan E Hankinson"",""Pamela J Thompson"",""Catherine Schairer"",""Herbert Yu"",""Radhai Rastogi"",""Jennifer Doherty"",""Carlotta Sacerdote"",""Laurence N Kolonel"",""Mia M Gaudet"",""Kim Robien"",""Marc T Goodman"",""Piet A van den Brandt"",""Robert A Soslow"",""Jolanta Lissowska"",""Anthony B Miller"",""Kirsten B Moysich"",""Montserrat Garcia-Closas"",""Silvia Polidoro"",""Linda S Cook"",""Kristin E Anderson"",""Rayna K Matsuno"",""Xiao-ou Shu"",""Penelope M Webb"",""Kerry S Courneya"",""Christine M Friedenreich"",""Jo L Freudenheim"",""Yong-Bing Xiang"",""Brian E Henderson"",""Galina Lurie"",""Leo J Schouten"",""Timothy R Rebbeck"",""Anthony M Magliocco"",""Malcolm C Pike"",""Leslie Bernstein"",""Hannah P Yang"",""[Collective Name] Australian National Endometrial Cancer Study Group"",""Sara H Olson"",""Pamela L Horn-Ross"",""Marjorie L McCullough"",""Hoda Anton-Culver"",""Noel S Weiss"",""James R Cerhan"",""Louise A Brinton"",""Alicja Wolk"",""Jennifer Prescott"",""Xiaolin Liang"",""Thomas E Rohan"",""Yikyung Park"",""Niclas Håkansson"",""Veronica Wendy Setiawan"",""James V Lacey"",""Hui Cai"",""Nicolas Wentzensen"",""Koen van de Vijver""}",,zeroec_llm
+261121,article_jcreated_at,1/5/01,,zeroec_llm
+296269,article_jcreated_at,1/1/04,,zeroec_llm
+296269,article_pagination,205427-15,,zeroec_llm
+960478,article_jcreated_at,1/1/01,,zeroec_llm
+589265,article_jcreated_at,1/14/12,,zeroec_llm
+931944,article_jcreated_at,1/1/01,,zeroec_llm
+305933,article_jcreated_at,1/1/12,,zeroec_llm
+360693,article_jcreated_at,1/10/01,,zeroec_llm
+683893,article_jcreated_at,5/1/01,,zeroec_llm
+168157,article_jcreated_at,1/1/01,,zeroec_llm
+97775,article_jcreated_at,1/1/01,,zeroec_llm
+134738,article_jcreated_at,1/12/01,,zeroec_llm
+134738,author_list,"{""Stuart Calver"",""Julia Nichols"",""Rachel C""}",,zeroec_llm
+66579,article_jcreated_at,1/14/12,,zeroec_llm
+557824,article_jcreated_at,1/14/12,,zeroec_llm
+215820,article_title,Prevalência de bruxismo e distúrbio do sono em deficientes visuais Prevalence of bruxism and sleep disorders in the visually impaired individuals,,zeroec_llm
+215820,author_list,"{""Ana Paula de Lima Ferreira"",""Marcelo de Souza Figueiroa"",""Bárbara Bernardo Rinaldo da Silva"",""Kátia Roberta Rapso Sales Lacerda""}",,zeroec_llm
+658982,article_jcreated_at,5/1/01,,zeroec_llm
+272806,article_jcreated_at,1/10/01,,zeroec_llm
+500618,article_jcreated_at,1/1/01,,zeroec_llm
+385346,article_jcreated_at,10/1/01,,zeroec_llm
+383183,article_jcreated_at,1/5/05,,zeroec_llm
+889260,article_jcreated_at,1/15/05,,zeroec_llm
+392576,article_jcreated_at,6/1/01,,zeroec_llm
+209012,article_jcreated_at,1/1/12,,zeroec_llm
+786558,article_jcreated_at,1/1/01,,zeroec_llm
+35875,article_title,18F-flumazenil: a _-aminobutyric acid A-specific PET radiotracer for the localization of drug-resistant temporal lobe epilepsy.,,zeroec_llm
+35875,article_jcreated_at,8/1/01,,zeroec_llm
+882786,article_jcreated_at,10/1/01,,zeroec_llm
+332926,article_jcreated_at,1/1/01,,zeroec_llm
+109843,article_jissue,-1,,zeroec_llm
+817811,article_jcreated_at,1/1/01,,zeroec_llm
+855970,article_jcreated_at,1/1/01,,zeroec_llm
+643856,article_jissue,-1,,zeroec_llm
+643856,article_jcreated_at,1/1/01,,zeroec_llm
+482584,article_jcreated_at,6/1/12,,zeroec_llm
+553088,article_jcreated_at,10/1/12,,zeroec_llm
+575935,article_jissue,-1,,zeroec_llm
+575935,article_jcreated_at,9/1/05,,zeroec_llm
+575935,article_pagination,Jul-71,,zeroec_rule
+575935,author_list,"{""Kerstin Landin-Wilhelmsen"",""Göran Olerd"",""Oskar Ragnarsson"",""Penelope Trimpou""}",,zeroec_llm
+160121,article_jissue,-1,,zeroec_llm
+160121,article_jcreated_at,11/10/01,,zeroec_llm
+84783,article_title,Mild endoplasmic reticulum stress augments the proinflammatory effect of IL-1 in pancreatic rat beta-cells via the IRE1/XBP1s pathway.,,zeroec_llm
+84783,article_jcreated_at,7/12/01,,zeroec_llm
+84783,author_list,"{""Michela Miani"",""Decio L Eizirik"",""Laurence Ladriere"",""Maikel L Colli"",""Miriam Cnop""}",,zeroec_llm
+894794,article_jcreated_at,8/1/01,,zeroec_llm
+946487,article_jcreated_at,1/10/01,,zeroec_llm
+6028,article_jcreated_at,1/1/01,,zeroec_llm
+558738,article_jcreated_at,1/1/01,,zeroec_llm
+558738,article_pagination,Aug-71,,zeroec_rule
+260738,article_jcreated_at,1/1/01,,zeroec_llm
+979155,article_jcreated_at,1/14/12,,zeroec_llm
+670823,article_jcreated_at,11/1/01,,zeroec_llm
+73289,article_jcreated_at,1/4/04,,zeroec_llm
+426134,article_jcreated_at,1/14/12,,zeroec_llm
+255382,article_jcreated_at,6/1/01,,zeroec_llm
+814758,article_jcreated_at,1/1/01,,zeroec_llm
+226417,article_jvolumn,24,,zeroec_llm
+226417,article_jissue,-1,,zeroec_llm
+968815,article_jcreated_at,1/1/01,,zeroec_llm
+734259,article_jcreated_at,1/12/01,,zeroec_llm

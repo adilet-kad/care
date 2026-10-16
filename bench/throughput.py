@@ -1,31 +1,9 @@
-"""bench.throughput -- what does the governance layer itself cost?
+"""Time CARE's governance layer with the cleaner replayed from a log.
 
-The proposer's cost is not CARE's cost. An LLM pass over a table is seconds per
-cell and dwarfs everything else, so quoting end-to-end wall-clock would measure
-vLLM, not this system. What a reader needs to know before putting a certifier in
-front of a database is the *marginal* cost of governing a repair that has already
-been proposed. This script times only the parts CARE is responsible for, with the
-proposer stubbed out to a dictionary lookup over an existing log.
+Phases: load, scan (hard-violation set, once per run), govern (per-candidate verify
+and score, exact vs fast path) and certify (calibrate and decide).
 
-Four phases are timed separately because they scale differently, and lumping them
-together would hide the one that actually matters:
-
-  load       parse the table into the artifact.                        O(|D|)
-  scan       the hoisted hard-constraint violation set. Computed ONCE per run
-             and reused for every candidate -- this is the hoisting described in
-             Section 4.1, and it is why verification is O(|D| + m) rather than
-             O(m|D|). Recomputing it per candidate made tax ~25 s per cell.      O(|D|)
-  govern     per-candidate verify + score. This is the marginal cost per repair
-             and the number to quote when asking "can I afford this?"            O(m)
-  certify    calibrate the fixed grid, then decide every test candidate. The
-             grid is swept once per stratum, independent of table size.          O(m + |A||L|)
-
-Reported per-candidate figures are the honest unit: the scan is amortised across
-however many repairs a run governs, so a table with one repair pays for a whole
-scan and a table with 100k repairs pays almost nothing per repair.
-
-    python -m bench.throughput --datasets beers hospital flights \\
-      --out experiments/throughput.csv
+    python -m bench.throughput --datasets beers hospital flights --out experiments/throughput.csv
 """
 
 from __future__ import annotations
@@ -41,7 +19,7 @@ from care.conformal import by_column
 from care.core import CalibrationRecord
 from care.conformal.controller import ConformalController
 
-# One log per dataset: the proposer is replayed from disk so no model runs.
+# Default cleaner log per dataset.
 DEFAULT_LOGS = {
     "beers": "csvs/baran_beers_mapped.csv",
     "hospital": "csvs/baran_hospital_mapped.csv",
@@ -51,8 +29,7 @@ DEFAULT_LOGS = {
 
 
 def _time(fn, repeat=1):
-    """Best-of-`repeat` wall clock. Best, not mean: we are measuring the work, and
-    a slower sample only ever means the sandbox was doing something else."""
+    """Best wall-clock time over ``repeat`` runs; returns (result, seconds)."""
     best = float("inf")
     out = None
     for _ in range(repeat):
@@ -76,23 +53,11 @@ def measure(dataset, log, *, alpha=0.1, delta=0.1, max_cells=None, fast_verify=T
     if max_cells:
         refs = refs[:max_cells]
 
-    from bench.baran_proposer import BaranProposer
-    proposer = BaranProposer(log, source_id="bench")
+    from bench.log_proposer import LogProposer
+    proposer = LogProposer(log, source_id="bench")
 
-    # The two verification paths of Section 4.1, measured against each other. This
-    # is the only comparison that isolates what hoisting buys, because both paths
-    # produce bit-identical output (tools/verify_fastpath_equivalence.py).
-    #
-    #   exact  re-derives the hard-violation set per candidate: O(m|D|), so its
-    #          per-repair cost grows with the TABLE, not the queue. Timed on a small
-    #          sample because doing the full queue takes minutes.
-    #   fast   reuses the hoisted set: O(|D| + m). Its per-repair cost should be
-    #          flat in |D|.
-    #
-    # The fast path's fixed 64-cell precondition probe is timed separately and
-    # subtracted. Leaving it in would be a measurement error, not conservatism: it
-    # is paid once per run regardless of m, so on hospital's 499 candidates it alone
-    # accounts for ~10 ms of an apparent 10.6 ms "per repair".
+    # Exact path re-derives the violation set per candidate (timed on a sample); the
+    # fast path reuses it. The fast path's one-off probe is timed and subtracted.
     from bench.study import _probe_verifier_constant
     from care.verify import Verifier
     verifier = Verifier()
@@ -110,7 +75,7 @@ def measure(dataset, log, *, alpha=0.1, delta=0.1, max_cells=None, fast_verify=T
     ms_fast = 1000 * max(t_fast_total - t_probe, 0.0) / m_all
     t_govern = t_fast_total
 
-    # certify: calibrate the grid on 40% then decide the rest, as evaluate_split does.
+    # certify: calibrate on 40%, decide the rest
     gold = {k: str(v).lower().strip() for k, v in defects.gold.items()}
     keys = [r for r in repairs if r in gold]
     random.Random(0).shuffle(keys)
@@ -132,8 +97,7 @@ def measure(dataset, log, *, alpha=0.1, delta=0.1, max_cells=None, fast_verify=T
         "cells": n_cells,
         "candidates": len(repairs),
         "load_s": round(t_load, 3),
-        # One hard constraint is enabled (a completeness floor), so this is a floor
-        # on scan cost, not a claim about arbitrary constraint sets.
+        # one hard constraint is enabled, so this is a lower bound on scan cost
         "scan_s": round(t_scan, 4),
         "scan_violations": len(_before),
         "scan_cells_per_s": round(n_cells / t_scan) if t_scan else 0,
@@ -148,7 +112,7 @@ def measure(dataset, log, *, alpha=0.1, delta=0.1, max_cells=None, fast_verify=T
         "decide_s": round(t_dec, 4),
         "decide_us_per_repair": round(1e6 * t_dec / max(len(test), 1), 1),
         "certify_s": round(t_cal + t_dec, 4),
-        # What a run of this size actually paid per governed repair, everything in.
+        # total cost per governed repair
         "amortised_ms_per_repair": round(1000 * (t_scan + t_govern + t_cal + t_dec) / m, 3),
         "fast_verify": bool(fast_verify),
     }

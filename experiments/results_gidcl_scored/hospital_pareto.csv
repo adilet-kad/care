@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+hospital,CARE,marginal,0.05,errors,1.0,0.0,0.0,0.0,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,CARE,mondrian,0.05,errors,1.0,0.0,0.0,0.0,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,ApplyAll,-,0.05,errors,0.0,0.0537704918032787,0.9462295081967212,0.059016393442622925,False,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,EscalateAll,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,CARE,marginal,0.1,errors,0.8,0.013114754098360649,0.18688524590163935,0.03278688524590162,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,CARE,mondrian,0.1,errors,0.8288524590163935,0.013793103448275845,0.2602040816326531,0.02068965517241377,True,False,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,ApplyAll,-,0.1,errors,0.0,0.0537704918032787,0.9462295081967212,0.059016393442622925,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,EscalateAll,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,CARE,marginal,0.2,errors,0.0,0.0537704918032787,0.9462295081967212,0.059016393442622925,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,CARE,mondrian,0.2,errors,0.0,0.05409836065573772,0.9459016393442623,0.05868852459016394,True,False,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,ApplyAll,-,0.2,errors,0.0,0.0537704918032787,0.9462295081967212,0.059016393442622925,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv
+hospital,EscalateAll,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,gidcl_scored:csvs/gidcl_scored_hospital_mapped.csv

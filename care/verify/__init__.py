@@ -1,4 +1,4 @@
-"""care.verify -- the Verifier: projection of repair candidates onto F_H."""
+"""Verifier: projection of repair candidates onto the hard-feasible set F_H."""
 
 from care.verify.projector import apply_repair, hard_violation_set
 from care.verify.verifier import Verifier

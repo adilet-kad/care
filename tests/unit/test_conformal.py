@@ -83,7 +83,7 @@ def _records(s_vals, c_vals, stratum="default"):
 
 def test_controller_combine_uses_components():
     ctrl = ConformalController()
-    r = RepairCandidate(target_ref="x", s_llm=0.8, s_agree=0.4, s_margin=None)
+    r = RepairCandidate(target_ref="x", s_conf=0.8, s_agree=0.4, s_margin=None)
     assert ctrl.combine(r) == pytest.approx(0.6)
 
 
@@ -112,5 +112,5 @@ def test_controller_uncontrollable_escalates_all():
 
 def test_assign_s_hat_fills_from_combiner():
     ctrl = ConformalController()
-    [r] = ctrl.assign_s_hat([RepairCandidate(target_ref="x", s_llm=0.6, s_agree=0.6, s_margin=0.6)])
+    [r] = ctrl.assign_s_hat([RepairCandidate(target_ref="x", s_conf=0.6, s_agree=0.6, s_margin=0.6)])
     assert r.s_hat == pytest.approx(0.6)

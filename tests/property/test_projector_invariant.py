@@ -1,11 +1,4 @@
-"""Property-based test of the I2 projector invariant.
-
-I2 is the load-bearing guarantee: the Verifier is a *projector* onto the
-hard-feasible set F_H, never a scorer. For **arbitrary** artifacts and
-**arbitrary** (including adversarial / garbage) repair candidates, no candidate
-the verifier marks ``feasible`` may introduce a new hard-constraint violation
-``(cid, ref)`` when applied alone. ``project`` must return exactly that set.
-"""
+"""Property test: no candidate the Verifier marks feasible introduces a new hard violation."""
 
 from __future__ import annotations
 
@@ -38,8 +31,7 @@ _ROWS = ["r0", "r1", "r2", "r3"]
 _COLS = ["age", "city", "dept"]
 _VALUES = st.one_of(st.none(), st.integers(0, 3), st.sampled_from(["NYC", "SF", "LA"]))
 _CELL = st.tuples(st.sampled_from(_ROWS), st.sampled_from(_COLS), _VALUES, st.booleans())
-# Candidate target refs: mostly existing (row, col) pairs, sometimes a fresh
-# cell that does not yet exist (which must be rejected -- it would be untraced).
+# target refs: mostly existing cells, sometimes a new cell (must be rejected)
 _REF = st.one_of(
     st.tuples(st.sampled_from(_ROWS), st.sampled_from(_COLS)),
     st.tuples(st.sampled_from(["rx", "ry"]), st.sampled_from(["zz", "age"])),

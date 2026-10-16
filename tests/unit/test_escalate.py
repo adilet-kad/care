@@ -22,8 +22,7 @@ def _sources(*specs):
 
 def test_poison_override_escalates_low_trust_auto_apply():
     esc = ActiveEscalator(tau_min=0.5)
-    # the controller WOULD auto-apply (s_hat above threshold), but the only
-    # evidence is a low-trust source -> override to escalate as suspected poison
+    # s_hat is above threshold, but the only evidence is a low-trust source -> escalate
     decisions = [Decision(target_ref="r1::x", action="auto_apply", s_hat=0.95, lambda_hat=0.6)]
     repairs = [RepairCandidate(target_ref="r1::x", s_hat=0.95, evidence=["leak"])]
     final, queue = esc.route(decisions, repairs, sources=_sources(("leak", 0.1)))
@@ -52,20 +51,16 @@ def test_no_evidence_repair_is_governed_only_by_threshold():
 
 
 def test_absent_source_is_not_treated_as_poison_regression():
-    """An absent source must not be read as an untrusted one.
+    """A source id absent from the sources map means unknown trust, not zero trust.
 
-    A repair carries evidence (``["reference"]``) whose source id is *absent* from
-    the sources map -- exactly what ``evaluate_split`` passes when ``poison_frac=0``
-    (``sources={}``). Absent must mean "unknown trust", not "zero trust": the
-    poison gate must ignore it and leave the controller's ``auto_apply`` intact.
-    The original bug returned trust 0.0 for an absent source, flagged every
-    FD-grounded repair as poison, and silently pinned ``human_cost`` at 1.00.
+    evaluate_split passes sources={} when poison_frac=0; the poison gate must then
+    leave auto_apply intact.
     """
     esc = ActiveEscalator(tau_min=0.5)
     decisions = [Decision(target_ref="r1::x", action="auto_apply", s_hat=0.95, lambda_hat=0.6)]
     repairs = [RepairCandidate(target_ref="r1::x", s_hat=0.95, evidence=["reference"])]
     final, queue = esc.route(decisions, repairs, sources={})
-    assert final[0].action == "auto_apply"      # NOT overridden to escalate
+    assert final[0].action == "auto_apply"      # not overridden to escalate
     assert len(queue) == 0
     assert not [it for it in queue if it.reason == EscalationReason.SUSPECTED_POISON]
 

@@ -1,17 +1,4 @@
-"""Conformal-coverage guarantee -- the second load-bearing test.
-
-The headline claim is distribution-free error control: with the threshold
-calibrated at level (alpha, delta), the realized error among auto-applied
-repairs is <= alpha with probability >= 1 - delta. We validate it the standard
-way -- Monte-Carlo over fresh calibration/test splits, checking the fraction of
-trials with test error <= alpha is at least 1 - delta.
-
-The data process is a mixture: a reliable high-confidence mass and an unreliable
-low-confidence mass. This both (a) makes the test meaningful -- the threshold
-genuinely auto-applies a non-trivial set rather than escalating everything -- and
-(b) keeps the guarantee honest, since the auto-applied set still carries real
-error that must stay under alpha. Seeds are fixed for reproducibility.
-"""
+"""Monte-Carlo check that auto-applied error is <= alpha with probability >= 1 - delta."""
 
 from __future__ import annotations
 
@@ -69,8 +56,7 @@ def test_marginal_coverage_holds(alpha, delta):
 
 @pytest.mark.parametrize("alpha,delta", [(0.1, 0.1), (0.15, 0.1)])
 def test_exact_bound_covers_and_actually_automates(alpha, delta):
-    """The tight Clopper-Pearson bound auto-applies a real fraction while keeping
-    coverage -- the 'minimal human intervention' regime, not escalate-all."""
+    """The Clopper-Pearson bound keeps coverage and auto-applies a non-trivial fraction."""
     ctrl = ConformalController(method="rcps", bound="exact")
     coverage, auto_frac = _run(
         ctrl, alpha, delta, trials=60, n_cal=500, n_test=400, seed0=50_000

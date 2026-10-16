@@ -15,7 +15,6 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
-baselines/.env
 data/
 csvs/**/*.bak
 csvs/**/*.latin1.bak

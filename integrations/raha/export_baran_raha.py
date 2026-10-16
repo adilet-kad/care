@@ -1,67 +1,17 @@
-"""export_baran_raha.py -- Baran corrections driven by REAL (Raha) detection.
+"""Run Baran with Raha's detected cells as its work queue and export a CARE log
+(row_id, column, value, confidence, source).
 
-WHY THIS EXISTS
----------------
-Every Baran number in the paper uses Baran's published protocol, in which the error
-locations are handed to it (`correction.py`'s own `__main__` does
-`data.detected_cells = dict(data.get_actual_errors_dictionary())` -- the oracle diff).
-That is the right protocol for reproducing Baran, but it is not a deployment setting,
-and it is the strongest assumption behind Baran's numbers.
+By default the queue is ../CARE/csvs/raha_<ds>_detected.csv (from export_detection.py);
+--rerun-detection runs raha.detection instead, and --oracle uses the gold diff (Baran's
+published protocol). Baran's 20 labelled tuples still use ground truth. correction.py
+never reads values in detected_cells, so they are set to "".
 
-We already measured the cost of dropping it for the LLM proposer, whose log covers every
-cell and could therefore simply be re-scored against a different work queue. Baran's log
-cannot: it records only the cells Baran CHANGED, so it holds no opinion about a
-detector's false positives. Scoring that silence would measure the protocol rather than
-the proposer. The only honest way to close the gap is to RE-RUN Baran with the detector's
-cells as its input, which is what this script does.
-
-This is not a hack on Baran. Raha (detector) and Baran (corrector) are the same project,
-and Raha -> Baran is its intended pipeline; `detected_cells` is the documented seam.
-
-WHAT IS AND IS NOT NON-ORACLE HERE
-----------------------------------
-NOT oracle any more:  the work queue. Cells come from raha.detection's real ensemble.
-STILL oracle:         Baran's 20 labelled tuples (`LABELING_BUDGET = 20`), which use
-                      ground truth. That is Baran's published active-learning protocol
-                      and we keep it so the comparison to our oracle-detection runs
-                      changes exactly ONE variable. Both facts belong together:
-                      "non-oracle detection" here means detection only.
-
-VALUES IN `detected_cells` ARE UNUSED -- verified, not assumed
--------------------------------------------------------------
-`correction.py` touches `d.detected_cells` at lines 377, 397, 399, 462-463, 608, 663:
-every one is a membership test or a len(), and 463 overwrites the value with
-IGNORE_SIGN. No code path reads a value. So seeding it with a placeholder is exactly
-equivalent to seeding it with the oracle's clean values -- and, unlike the latter, it
-cannot leak ground truth into the corrector. We use a placeholder.
-
-DETECTION IS REUSED, NOT RE-RUN (by default)
---------------------------------------------
-We load ../CARE/csvs/raha_<ds>_detected.csv, the same file the LLM non-oracle sweep
-used. That makes the two comparable: same detector, same cells, only the proposer
-differs. `--rerun-detection` re-runs raha.detection instead, which will NOT reproduce
-the earlier file exactly (Raha's active-learning sampling is stochastic).
-
-USAGE (from the raha repo root, in raha's own venv)
----------------------------------------------------
-    python export_baran_raha.py hospital
+Run from the raha repository root, in raha's environment:
     python export_baran_raha.py hospital beers flights rayyan
+    python export_baran_raha.py hospital --oracle
 
-Output: ../CARE/csvs/baran_raha_<ds>_pred.csv, or baran_<ds>_pred.csv with --oracle
-        (row_id,column,value,confidence,source)
-
-Then, in CARE:
-    python prepare_log.py  <ds> csvs/baran_raha_<ds>_pred.csv
-    python precheck_log.py <ds> csvs/baran_raha_<ds>_pred.csv --scope touched
-    python -m bench.run_study --dataset <ds> \
-        --backends "baran_raha:csvs/baran_raha_<ds>_mapped.csv" \
-        --experiment pareto --alphas 0.05 0.1 0.2 --seeds 10 \
-        --scoring detected --fast-verify on \
-        --detection log:csvs/raha_<ds>_detected.csv \
-        --out experiments/results_raha_baran
-
-Note the sweep ALSO passes --detection: the log and the work queue must be the same
-cells, or CARE will queue cells Baran was never asked about.
+Output: ../CARE/csvs/baran_raha_<ds>_pred.csv, or baran_<ds>_pred.csv with --oracle.
+Sweep it in CARE with --detection log:csvs/raha_<ds>_detected.csv.
 """
 
 from __future__ import annotations
@@ -73,18 +23,14 @@ import sys
 
 import raha.correction
 import raha.dataset
-# Imported at module level ON PURPOSE. A conditional `import raha.detection` inside
-# export_one() would bind the name `raha` as a FUNCTION-LOCAL, shadowing the two
-# module-level imports above for the whole function -- so `raha.dataset.Dataset(...)`
-# would raise UnboundLocalError even on the path that never runs the import.
+# module-level: an import inside export_one() would make `raha` a local name
 import raha.detection
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_OUT_DIR = os.path.join(HERE, os.pardir, "CARE", "csvs")
 DEFAULT_DET_DIR = os.path.join(HERE, os.pardir, "CARE", "csvs")
 
-# Must stay in sync with export_detection.py::COL_MAPS and CARE's
-# prepare_log.py::COL_MAPS. Same raha.dataset column ordering feeds all three.
+# raha column name -> CARE column name; same as export_detection.py and prepare_log.py
 COL_MAPS = {
     "hospital": {
         "phone": "PhoneNumber", "state": "State", "emergency_service": "EmergencyService",
@@ -104,8 +50,7 @@ def _read_csv(path):
 
 
 def _has_index_col(clean_header, clean_rows):
-    """Mirrors bench.datasets.load AND export_detection.py EXACTLY. Getting this wrong
-    shifts every column by one and silently produces a plausible, wrong log."""
+    """Same index-column detection as bench.datasets.load and export_detection.py."""
     first_name = clean_header[0].strip().lower()
     looks_named_index = first_name in {"index", "tid", "id", "row_id", "key", ""}
     first_vals = [r[0] for r in clean_rows if r]
@@ -137,20 +82,11 @@ def export_one(dataset, args):
     care_to_j = {col_map.get(name, name): j for j, name in enumerate(raw_cols)}
     rowid_to_i = {row_id(i): i for i in range(len(dirty_rows))}
 
-    print(f"\n========== BARAN + RAHA DETECTION: {dataset} ==========")
+    print(f"\n== Baran on Raha-detected cells: {dataset}")
 
     # ---- work queue -------------------------------------------------------
     if args.oracle:
-        # Baran's own published protocol: the work queue IS the gold diff. This is
-        # the documented regeneration path for the oracle logs in csvs/.
-        #
-        # The gold VALUES are blanked even though Baran's published call passes
-        # them through. correction.py never reads a detected cell's value (see the
-        # module docstring: verified at lines 377, 397, 399, 462-463, 608, 663), so
-        # this is behaviourally identical -- but "identical because we checked" is
-        # a worse guarantee than "cannot leak because the value is not there", and
-        # seeding a corrector with the answers is the one mistake that would
-        # invalidate every number in the paper.
+        # Baran's published protocol: the queue is the gold diff, values blanked
         detected = {k: "" for k in data.get_actual_errors_dictionary()}
         print(f"ORACLE queue: {len(detected)} cells (Baran's published protocol; "
               f"gold values blanked, keys only)")
@@ -179,15 +115,13 @@ def export_one(dataset, args):
                 elif j is None:
                     dropped_col += 1
                 else:
-                    # Value is never read by correction.py (see module docstring);
-                    # a placeholder avoids seeding the corrector with gold values.
+                    # value is never read by correction.py
                     detected[(i, j)] = ""
         print(f"loaded {det_path}")
         print(f"  work queue: {len(detected)} cells")
         if dropped_row or dropped_col:
-            # Loud, because a silent inversion failure looks exactly like a detector
-            # that found fewer errors, and would quietly change every number below.
-            print(f"  !! DROPPED {dropped_row} rows + {dropped_col} columns that could "
+            # unmapped cells indicate a COL_MAPS or index bug
+            print(f"  warning: dropped {dropped_row} rows + {dropped_col} columns that could "
                   f"not be mapped back to raha's frame. This is a BUG, not a detector "
                   f"property -- check COL_MAPS and the index-column logic before "
                   f"using this log.", file=sys.stderr)
@@ -197,8 +131,7 @@ def export_one(dataset, args):
     if not detected:
         raise SystemExit("empty work queue")
 
-    # How different is this from the oracle queue? Report it here so the log carries
-    # its own provenance rather than relying on the reader to recompute it.
+    # detection quality against the oracle queue
     actual = data.get_actual_errors_dictionary()
     det_set, act_set = set(detected), set(actual)
     tp = len(det_set & act_set)
@@ -228,21 +161,19 @@ def export_one(dataset, args):
             continue                      # the key column is not a CARE "column"
         v = "" if value is None else str(value).strip()
         if not v:
-            continue                      # empty -> abstention, CARE escalates
+            continue                      # empty -> no proposal
         out_rows.append((row_id(i), col_map.get(raw_cols[j], raw_cols[j]), v,
                          "1.0000", stem))
 
     os.makedirs(args.out, exist_ok=True)
-    # Distinct filenames: the oracle-queue log and the detector-queue log are
-    # different measurements of the same system and must never overwrite each other.
+    # oracle-queue and detector-queue logs use distinct file names
     out_path = os.path.join(args.out, f"{stem}_{dataset}_pred.csv")
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["row_id", "column", "value", "confidence", "source"])
         w.writerows(out_rows)
 
-    # accuracy split by whether the queued cell was a real error, which is the
-    # comparison this whole run exists to make
+    # accuracy on true errors vs on detector false positives
     on_err = on_err_ok = on_fp = on_fp_broken = 0
     for (i, j), value in corrections.items():
         if has_index and j == 0:
@@ -260,7 +191,7 @@ def export_one(dataset, args):
     print(f"WROTE: {out_path}  ({len(out_rows)} repairs)")
     print(f"  on true errors      : {on_err_ok}/{on_err} correct "
           f"({on_err_ok/max(1,on_err):.3f})")
-    print(f"  on detector FALSE POSITIVES: {on_fp} touched, {on_fp_broken} CHANGED "
+    print(f"  on detector false positives: {on_fp} touched, {on_fp_broken} changed "
           f"(each change corrupts an already-correct cell)")
     print("=" * (34 + len(dataset)))
 

@@ -1,32 +1,4 @@
-"""Monte-Carlo characterization of calibration label corruption.
-
-Assumption A1 (clean calibration) is load-bearing. This test empirically maps what
-actually happens when it is violated -- and the result is more nuanced (and more
-favorable) than "any label noise breaks the guarantee." Two regimes, verified here:
-
-  (1) RANDOM / symmetric labeler error (each label flipped w.p. eta, both
-      directions). Does NOT break validity: the exact (Clopper-Pearson) bound
-      absorbs it, coverage stays >= 1 - delta. The cost is THROUGHPUT -- noisy
-      calibration widens the bound, so CARE certifies a higher threshold and
-      escalates more. So CARE is *robust* to honest labeler mistakes; they cost
-      automation, not safety. (Deflating the budget would only reduce automation
-      further -- it is NOT the right response to symmetric noise.)
-
-  (2) ADVERSARIAL / biased calibration poisoning (an attacker flips only
-      wrong -> "correct", hiding errors from the calibrator). This DOES break
-      validity: the controller under-estimates the true error, certifies too
-      permissive a threshold, and coverage collapses (measured ~0.60 at eta=0.20,
-      target 0.90). This is the genuine threat and a real limitation of A1.
-
-  (3) MITIGATION for the adversarial case: calibrating at the deflated budget
-      alpha - eta restores coverage >= 1 - delta. It is a *blunt* fallback -- it
-      buys safety by shrinking the certifiable budget (often to escalate-all), so
-      it trades automation for a validity floor when calibration integrity cannot
-      be trusted. The graceful fix (multi-labeler agreement to shrink effective
-      eta) is a design option discussed in the paper, not coded here.
-
-Numbers verified in-session; small sizes keep the test fast + deterministic.
-"""
+"""Coverage under symmetric and one-sided calibration label noise, and the alpha - eta fix."""
 
 from __future__ import annotations
 
@@ -67,14 +39,11 @@ def _coverage(flip, *, calibrate_at, eta, seed0):
 
 
 def test_symmetric_label_noise_retains_validity():
-    """Honest labeler error costs automation, not safety: coverage stays >= 1-delta."""
     cov = _coverage(_sym_flip, calibrate_at=_ALPHA, eta=_ETA, seed0=10)
     assert cov >= (1.0 - _DELTA) - 0.03, f"symmetric-noise coverage {cov} dropped below target"
 
 
 def test_adversarial_calibration_poisoning_breaks_validity():
-    """The real threat: one-sided (error-hiding) poisoning UNDER-covers.
-    Documents the limitation so it can't silently regress into a false 'we're fine'."""
     cov = _coverage(_adv_flip, calibrate_at=_ALPHA, eta=_ETA, seed0=10)
     assert cov < (1.0 - _DELTA) - 0.05, (
         f"expected adversarial poisoning to break coverage (got {cov}); if this "
@@ -82,6 +51,5 @@ def test_adversarial_calibration_poisoning_breaks_validity():
 
 
 def test_deflation_restores_validity_under_adversarial_poisoning():
-    """Mitigation: calibrating at alpha - eta restores the validity floor."""
     cov = _coverage(_adv_flip, calibrate_at=_ALPHA - _ETA, eta=_ETA, seed0=10)
     assert cov >= (1.0 - _DELTA) - 0.03, f"deflated coverage {cov} did not restore validity"

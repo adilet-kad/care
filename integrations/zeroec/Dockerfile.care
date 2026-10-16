@@ -1,0 +1,18 @@
+# Dockerfile.care -- ZeroEC as released, for CARE.
+# Python 3.10; PyPI torch and CPU onnxruntime instead of CUDA builds. Other packages
+# follow requirements.txt; faiss-cpu and onnxruntime fall back to the nearest later
+# version where no aarch64 wheel exists. gcc builds packages without aarch64 wheels.
+FROM python:3.10-slim
+ENV PIP_NO_CACHE_DIR=1 PYTHONUNBUFFERED=1 TOKENIZERS_PARALLELISM=false
+RUN apt-get update && apt-get install -y --no-install-recommends gcc g++ \
+ && rm -rf /var/lib/apt/lists/* && pip install --upgrade pip
+RUN pip install "torch==2.2.2"
+RUN pip install faiss-cpu==1.7.4 || pip install "faiss-cpu>=1.7.4,<1.9"
+RUN pip install onnxruntime==1.17.1 || pip install "onnxruntime>=1.17.1,<1.20"
+RUN pip install fast_sentence_transformers==0.4.1 sentence_transformers==2.7.0 \
+      langchain==0.1.12 langchain_community==0.0.28 langchain_core==0.1.32 \
+      langchain_openai==0.0.5 \
+      openpyxl "pandas<2.3" "numpy<2" scikit_learn scipy networkx tiktoken
+RUN python -c "import faiss, onnxruntime, torch, langchain_openai, fast_sentence_transformers; \
+print('faiss', faiss.__version__, '| onnxruntime', onnxruntime.__version__, '| torch', torch.__version__)"
+WORKDIR /work

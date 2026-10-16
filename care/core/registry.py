@@ -1,12 +1,4 @@
-"""care.core.registry -- the ConstraintRegistry and plugin registration.
-
-Constraint plugins live under ``care.predicates`` and self-register with the
-``@register_constraint`` decorator. A ``ConstraintRegistry`` is the *assembled,
-active* set for a particular run: it is built from a DQRequirements (only the
-``enabled`` cids) and exposes the constraints sliced by type (hard / soft /
-process) and by source. Adding a predicate is a matter of dropping a class into
-``care/predicates/`` -- the engine is untouched.
-"""
+"""Constraint plugin registration and the per-run ConstraintRegistry."""
 
 from __future__ import annotations
 
@@ -15,20 +7,14 @@ from typing import Iterable
 from care.core.artifact import DQRequirements
 from care.core.constraints import BaseConstraint, ConstraintType
 
-# Global registry of constraint *classes*, keyed by cid. Populated at import
-# time by the @register_constraint decorator on plugins under care/predicates/.
+# cid -> constraint class, populated at import time by @register_constraint
 _REGISTRY: dict[str, type[BaseConstraint]] = {}
 
 _VALID_TYPES: tuple[ConstraintType, ...] = ("H", "W", "P")
 
 
 def register_constraint(cls: type[BaseConstraint]) -> type[BaseConstraint]:
-    """Class decorator that registers a constraint plugin.
-
-    Validates the H/W/P typing rule and rejects duplicate cids at
-    import time, turning a whole class of configuration errors into immediate,
-    loud failures.
-    """
+    """Class decorator that validates and registers a constraint plugin."""
     cid = getattr(cls, "cid", None)
     ctype = getattr(cls, "ctype", None)
     if not cid:
@@ -49,17 +35,16 @@ def register_constraint(cls: type[BaseConstraint]) -> type[BaseConstraint]:
 
 
 def registered_constraints() -> dict[str, type[BaseConstraint]]:
-    """A copy of the global cid -> plugin-class map."""
     return dict(_REGISTRY)
 
 
 def clear_registry() -> None:
-    """Empty the global registry (primarily for tests)."""
+    """Empty the global registry (for tests)."""
     _REGISTRY.clear()
 
 
 class ConstraintRegistry:
-    """An assembled, active set of constraint instances for one run."""
+    """The active constraint instances for one run."""
 
     def __init__(
         self,
@@ -67,9 +52,7 @@ class ConstraintRegistry:
         requirements: DQRequirements | None = None,
     ):
         self._by_cid: dict[str, BaseConstraint] = {c.cid: c for c in constraints}
-        # The statement of applicability this set was assembled from. Downstream
-        # modules (Auditor, Verifier) read theta_i / w_i from here, so the
-        # documented run(art, reg) signature needs no extra dqr argument.
+        # source of theta_i / w_i for the auditor and verifier
         self.requirements: DQRequirements = (
             requirements if requirements is not None else DQRequirements()
         )
@@ -79,11 +62,7 @@ class ConstraintRegistry:
     def from_requirements(
         cls, dqr: DQRequirements, *, strict: bool = False
     ) -> "ConstraintRegistry":
-        """Instantiate the registered plugins whose cid is in ``dqr.enabled``.
-
-        With ``strict=True`` an enabled-but-unregistered cid raises; otherwise it
-        is skipped.
-        """
+        """Instantiate registered plugins enabled in ``dqr``; unknown cids raise if ``strict``."""
         active: list[BaseConstraint] = []
         for cid in dqr.enabled:
             plugin = _REGISTRY.get(cid)
@@ -96,9 +75,7 @@ class ConstraintRegistry:
 
     @classmethod
     def from_registered(cls) -> "ConstraintRegistry":
-        """Instantiate every registered plugin (ignores ``enabled`` -- mostly for
-        introspection / tests).
-        """
+        """Instantiate every registered plugin, ignoring ``enabled``."""
         return cls(plugin() for plugin in _REGISTRY.values())
 
     # --- access ------------------------------------------------------------ #
@@ -114,7 +91,7 @@ class ConstraintRegistry:
     def __contains__(self, cid: object) -> bool:
         return cid in self._by_cid
 
-    # --- typed slices (the H / W / Pi separation) -------------------------- #
+    # --- typed slices ------------------------------------------------------ #
     def hard(self) -> list[BaseConstraint]:
         return [c for c in self._by_cid.values() if c.ctype == "H"]
 
@@ -125,7 +102,7 @@ class ConstraintRegistry:
         return [c for c in self._by_cid.values() if c.ctype == "P"]
 
     def by_source(self, src: str) -> list[BaseConstraint]:
-        """Constraints whose ``source`` citation contains ``src`` (case-insensitive)."""
+        """Constraints whose ``source`` contains ``src`` (case-insensitive)."""
         needle = src.lower()
         return [c for c in self._by_cid.values() if needle in c.source.lower()]
 

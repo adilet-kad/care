@@ -1,20 +1,7 @@
-"""care.audit.auditor -- the Auditor: assessment without repair.
+"""Auditor: assessment without repair.
 
-The Auditor runs the assembled ``ConstraintRegistry`` over a ``DataArtifact``
-and produces:
-
-  * the soft-measure scores (cid -> q_i for the W predicates),
-  * the hard-violation list (H predicates that fail),
-  * the work queue ``V = {hard h_k : satisfied=False} u {soft w_i : q_i < theta_i}``
-    -- the refs a proposer is asked about, and
-  * the headline ``satisfied_fraction``: the share of enabled predicates the
-    artifact satisfies.
-
-It does not write to D and it never calls a proposer. In the benchmark it is the
-``detection="constraints"`` path (``bench.study.detect``).
-
-Constraint-specific knobs (e.g. the FD set for ``dq.consistency.fd``) are
-supplied per cid through the ``options`` mapping.
+Produces the soft-measure scores, the failed hard predicates, the work queue
+V (hard failures plus soft measures below target) and the satisfied fraction.
 """
 
 from __future__ import annotations
@@ -43,14 +30,13 @@ class Auditor:
         quality_vector: dict[str, float] = {}
         hard_violations: list[Violation] = []
         soft_violations: list[Violation] = []
-        # cid -> did it pass (H) / meet its target (W). Feeds satisfied_fraction.
+        # cid -> passed (H) / met its target (W)
         satisfied: dict[str, bool] = {}
 
         primary = list(reg.all())
 
         for c in primary:
-            # P (process) clauses route to humans; they are never evaluated as
-            # data predicates here. None of the shipped predicates is typed P.
+            # P clauses are routed to humans, not evaluated
             if c.ctype == "P":
                 continue
 
@@ -79,10 +65,7 @@ class Auditor:
                         )
                     )
 
-        # Headline: the fraction of enabled predicates the artifact satisfies.
-        # Hard predicates count as satisfied when they hold; soft ones when they
-        # meet their declared target. Vacuously 1.0 on an empty requirement set,
-        # matching the predicates' own empty-input convention.
+        # vacuously 1.0 when no predicate is enabled
         satisfied_fraction = (
             sum(1 for ok in satisfied.values() if ok) / len(satisfied)
             if satisfied
@@ -94,7 +77,6 @@ class Auditor:
             hard_violations=hard_violations,
             satisfied_fraction=satisfied_fraction,
         )
-        # V = hard failures u soft-below-target (the Proposer's work queue).
         work_queue = hard_violations + soft_violations
         return report, work_queue
 

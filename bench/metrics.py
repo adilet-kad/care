@@ -1,10 +1,4 @@
-"""bench.metrics -- evaluation metrics for one governed-repair run.
-
-All metrics are computed against a truth map (the gold clean values of the error
-cells, or the full per-cell truth under ``scoring="detected"``). A ``RepairResult``
-says, for each ref, the value the system wrote if it auto-applied, or that it
-escalated the cell to a human.
-"""
+"""Scores for one governed-repair run against a truth map."""
 
 from __future__ import annotations
 
@@ -27,9 +21,7 @@ class Scores:
     human_cost: float               # escalated fraction of defects
     n_auto: int
     n_escalated: int
-    applied_contamination: float = 0.0  # eps_S: fraction of the auto-applied set that
-                                        # is corrupted (Theorem 2's degradation term).
-                                        # 0.0 unless a `contaminated` set is supplied.
+    applied_contamination: float = 0.0  # eps_S: corrupted fraction of the auto-applied set
 
 
 def _f1(p: float, r: float) -> float:
@@ -42,12 +34,9 @@ def score(
     *,
     contaminated: set[str] = frozenset(),
 ) -> Scores:
-    """Score a governed-repair run against gold.
+    """Score ``result`` against ``gold``.
 
-    ``contaminated`` -- refs known to be corrupted (e.g. injected poison). Used only
-    to report ``applied_contamination`` (eps_S = corrupted fraction of the
-    auto-applied set), the quantity the robustness bound R <= alpha + eps_S(1-alpha)
-    is stated in terms of. It does NOT change any other metric.
+    ``contaminated`` (e.g. injected poison) only sets ``applied_contamination``.
     """
     refs = set(gold)
     applied = {k: v for k, v in result.applied.items() if k in refs}

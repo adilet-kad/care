@@ -1,57 +1,13 @@
-"""import_ni_variants.py -- Ni et al.'s controlled-noise tables as CARE datasets.
+"""Import Ni et al. (PVLDB 2024) controlled-noise variants as CARE datasets.
 
-Ni et al. (PVLDB 2024) republish the same five corpora this paper uses, with errors
-re-injected at nine controlled rates and in two controlled kinds. That turns the
-paper's ceiling identity from a claim shown on one table into a controlled
-experiment: hold the table and the proposer fixed, turn one knob, and watch whether
-A(alpha) tracks the pre-registered ceiling as the proposer degrades.
+A synthetic 1-based `index` column is prepended so the loader does not take the first
+attribute as the row key. Pairs whose clean and dirty files differ on more than
+--max-rate of cells (Ni's flights outer files) are refused. The level in a variant's
+name is not its cell error rate; the manifest records the measured rate.
 
-This script imports those tables. It is a copy with two additions, and both are
-load-bearing.
-
-WHY AN INDEX COLUMN IS PREPENDED (do not remove this)
------------------------------------------------------
-`bench.datasets.load` decides whether the first column is a row key or an attribute:
-a name in {index, tid, id, row_id, key} or an all-integer column is treated as a key,
-dropped from the scored schema, and used as the row identifier. Ni's files have no
-index column, so the first real attribute would be taken as one. Measured on the
-inner-30 variants:
-
-    dataset   first column      distinct values / rows
-    beers     id                1,828 / 2,410
-    rayyan    id                  760 / 1,000
-    hospital  ProviderNumber       45 / 1,000     <- all-integer, so also caught
-    flights   src                  38 / 2,376     (string, correctly NOT a key)
-
-Two independent failures follow. The column is dropped from the schema, so the
-errors injected into it become invisible and the gold count comes out short; and the
-surviving keys collide, so `art.set_cell` overwrites rows -- on hospital, 1,000 rows
-would collapse onto 45 keys. Neither raises. Prepending an explicit `index` of 1..N
-to both files removes the ambiguity: the key is synthetic and uncorrupted, every
-injected attribute stays in the schema, and row_id is 1-based exactly as in CARE's
-own beers/hospital/flights copies.
-
-WHY SOME VARIANTS ARE REFUSED
------------------------------
-Ni's flights `clean.csv` and `dirty.csv` disagree on 98.6% of cells (a time-format
-normalisation, not corruption), and the `outer` and `inner_outer` files were built
-from `dirty.csv`, so they inherit it: flights outer-30 measures 0.987. A "98.7% error
-rate" variant is not a high-noise data point, it is a broken pair, and scoring a
-proposer on it measures the formatting. The `inner` files were built from `clean.csv`
-and are unaffected. Any pair differing on more than `--max-rate` of cells is refused
-with the number printed, rather than imported and silently averaged into a curve.
-
-    python tools/import_ni_variants.py --adr /tmp/adr
-    python tools/import_ni_variants.py --adr /tmp/adr --raha-datasets <path-to>/raha/datasets
-
-The second form also mirrors each variant into Raha's `datasets/` tree, which is what
-`export_baran_raha.py` and `export_detection.py` read; without it every Baran and Raha
-run on a variant fails with "missing datasets/<name>/dirty.csv".
-
-Writes `data/<ds>_ni_<variant>/{dirty,clean}.csv` and the manifest
-`data/ni_variants.csv`, whose `cell_error_rate` column is the x-axis of the sweep figure (Fig. 3) --
-the level in the filename (10 ... 90) is NOT the cell error rate (beers inner-30 is
-0.239, hospital inner-30 is 0.185) and must never be plotted as one.
+    python tools/import_ni_variants.py --adr /tmp/adr [--raha-datasets <raha>/datasets]
+    python tools/import_ni_variants.py --verify
+    -> data/<ds>_ni_<variant>/{dirty,clean}.csv, data/ni_variants.csv
 """
 
 from __future__ import annotations
@@ -63,8 +19,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Mirrors bench.datasets.NULL_TOKENS. Error counts must be computed under the same
-# normalisation the loader uses, or the manifest disagrees with defects.gold.
+# Same as bench.datasets.NULL_TOKENS, so error counts match defects.gold.
 NULL_TOKENS = {"", "empty", "nan", "null", "n/a", "na", "?"}
 
 DATASETS = ("beers", "hospital", "rayyan", "flights")
@@ -84,7 +39,7 @@ def _read(path):
 
 
 def _write_indexed(path, header, rows):
-    """Write with a synthetic 1-based `index` column prepended. See the docstring."""
+    """Write with a synthetic 1-based `index` column prepended."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
@@ -110,11 +65,7 @@ def variant_files(adr, ds, kinds, levels):
     out = []
     for kind in kinds:
         if kind == "orig":
-            # inner_outer-01 is byte-identical to the shipped dirty table (verified:
-            # same differing-cell count on beers, hospital and rayyan). It is the
-            # anchor -- a variant whose sweep must reproduce the paper's Table 1 row,
-            # up to Ni's normalisation. If the anchor does not reproduce, the import
-            # is wrong and no other point on the curve means anything.
+            # inner_outer-01 matches the original dirty table; used as the anchor
             out.append(("orig", os.path.join(base, "noise", f"{ds}-inner_outer_error-01.csv")))
             continue
         for lv in levels:
@@ -160,8 +111,7 @@ def main() -> int:
             name = f"{ds}_ni_{var}"
             dhead, drows = _read(dpath)
 
-            # Structural checks first: a header or row-count mismatch means the pair
-            # is not aligned and every cell comparison after it is meaningless.
+            # the pair must be aligned before cells are compared
             if dhead != chead:
                 refused.append((name, "header differs from clean.csv"))
                 continue
@@ -223,13 +173,7 @@ def main() -> int:
 
 
 def verify(manifest=None) -> int:
-    """Load every imported variant and check gold count == the manifest's count.
-
-    This is the check that catches a misimport. `load()`'s index detection, the
-    prepended key, the null-token normalisation and the column alignment all have to
-    agree for these two numbers to match, and a mismatch is always an import bug
-    rather than a proposer or certifier bug.
-    """
+    """Load every imported variant and check its gold count, rows and columns against the manifest."""
     sys.path.insert(0, ROOT)
     os.chdir(ROOT)
     from bench.datasets import load
@@ -253,7 +197,7 @@ def verify(manifest=None) -> int:
         print(f"{r['dataset']:<26}{exp:>10}{got:>8}{len(cols):>6}  {note}")
     print(f"\n{len(rows) - bad}/{len(rows)} variants load exactly as imported")
     if bad:
-        print("A mismatch is an IMPORT bug. Do not run sweeps until it is zero.")
+        print("A mismatch is an import bug. Do not run sweeps until it is zero.")
     return 1 if bad else 0
 
 

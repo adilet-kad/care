@@ -1,18 +1,7 @@
-"""care.conformal.controller -- the ConformalController.
+"""Conformal controller: calibrates per-stratum thresholds and makes decisions.
 
-Ties the pieces together:
-
-  * ``combine`` -- fold (s_llm, s_margin, s_agree, s_consistency) into one s_hat.
-  * ``calibrate`` -- from a labelled calibration set, produce a ``ThresholdTable``
-    whose threshold(s) guarantee ``R(lambda_hat) <= alpha`` w.p. ``>= 1 - delta``
-    (fixed-grid RCPS, ``rcps.py``). Records are grouped by their ``stratum``:
-    ``marginal_strata`` puts everything in one group (marginal control); a
-    Mondrian stratifier gives one threshold per group (group-conditional control).
-  * ``decide`` -- auto-apply iff ``s_hat >= lambda_hat[stratum]``, else escalate.
-
-The threshold is the *only* place the error guarantee comes from (I3): the
-verifier gives the hard guarantee, and this layer gives the distribution-free
-bound on the automated error rate.
+A repair is auto-applied iff ``s_hat >= lambda_hat[stratum]``; calibration
+guarantees ``R(lambda_hat) <= alpha`` with probability ``>= 1 - delta``.
 """
 
 from __future__ import annotations
@@ -43,6 +32,7 @@ class ConformalController:
         bound: str = "hoeffding",
         strata_fn: Callable = marginal_strata,
         grid=None,
+        procedure: str = "bonferroni",
     ):
         if method != "rcps":
             raise ValueError("method must be 'rcps'")
@@ -50,16 +40,15 @@ class ConformalController:
         self.method = method
         self.bound = bound
         self.strata_fn = strata_fn
-        # Fixed, data-independent candidate set. |Lambda| sets the Bonferroni penalty
-        # delta/|Lambda|, so it is a real knob rather than an implementation detail:
-        # a coarse grid pays little multiplicity but may miss the best threshold, a
-        # fine one searches better and pays more. None keeps the library default.
+        # fixed candidate grid; its size sets the Bonferroni penalty delta/|Lambda|
         self.grid = grid
+        # "bonferroni" (default), "fixed_sequence" or "sgr"
+        self.procedure = procedure
 
     # --- s_hat ------------------------------------------------------------- #
 
     def combine(self, repair: RepairCandidate) -> float:
-        return self.combiner.combine(repair.s_llm, repair.s_margin, repair.s_agree, repair.s_consistency)
+        return self.combiner.combine(repair.s_conf, repair.s_margin, repair.s_agree, repair.s_consistency)
 
     def assign_s_hat(self, repairs: Iterable[RepairCandidate]) -> list[RepairCandidate]:
         """Return copies with ``s_hat`` filled from the combiner."""
@@ -70,7 +59,8 @@ class ConformalController:
     def _threshold(self, s_hat: Sequence[float], correct: Sequence[bool], alpha, delta) -> float:
         kw = {} if self.grid is None else {"grid": self.grid}
         lam, _trace = rcps_threshold(
-            s_hat, correct, alpha=alpha, delta=delta, bound=self.bound, **kw
+            s_hat, correct, alpha=alpha, delta=delta, bound=self.bound,
+            procedure=self.procedure, **kw
         )
         return lam
 
@@ -90,9 +80,7 @@ class ConformalController:
             thresholds[stratum] = self._threshold(
                 [r.s_hat for r in recs], [r.correct for r in recs], alpha, delta
             )
-        # An unseen stratum at decide time falls back to the default: the
-        # "default" group's threshold if present, else +inf (escalate) -- never
-        # silently auto-apply an un-calibrated stratum.
+        # unseen strata use the "default" threshold if calibrated, else +inf
         default = thresholds.get(DEFAULT_STRATUM, math.inf)
         return ThresholdTable(
             alpha=alpha, delta=delta, thresholds=thresholds, default=default

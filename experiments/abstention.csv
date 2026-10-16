@@ -1,9 +1,0 @@
-proposer,dataset,log_rows,error_cells,abstentions,abstain_frac,proposals,on_error_cells,gate_recall,gate_precision,exact,contains_gold,wrong,acc_exact,acc_lenient,harm_empty,harm_value,malformed,unmatched,acc_exact_nomal,log
-jellyfish,beers,18990,3357,0,0.0,18990,3357,1.0,0.1768,650,1504,1203,0.1936,0.6416,782,14851,637,0,0.2305,csvs/jellyfish_beers_mapped.csv
-jellyfish,flights,14256,4920,0,0.0,14256,4920,1.0,0.3451,91,103,4726,0.0185,0.0394,0,9336,1611,0,0.0215,csvs/jellyfish_flights_mapped.csv
-jellyfish,hospital,17000,509,0,0.0,17000,509,1.0,0.0299,215,11,283,0.4224,0.444,227,16264,94,0,0.4257,csvs/jellyfish_hospital_mapped.csv
-jellyfish,rayyan,9964,948,0,0.0,9964,945,0.9968,0.0948,2,0,943,0.0021,0.0021,1574,7445,267,0,0.0021,csvs/jellyfish_rayyan_mapped.csv
-jellyfish_vc,beers,19252,3357,19070,0.9905,182,79,0.0235,0.4341,0,40,39,0.0,0.5063,87,16,1,0,0.0,csvs/jellyfish_vc_beers_mapped.csv
-jellyfish_vc,flights,14256,4920,13882,0.9738,374,341,0.0693,0.9118,12,4,325,0.0352,0.0469,0,33,2,0,0.0354,csvs/jellyfish_vc_flights_mapped.csv
-jellyfish_vc,hospital,17000,509,16245,0.9556,755,379,0.7446,0.502,178,8,193,0.4697,0.4908,227,149,2,0,0.4721,csvs/jellyfish_vc_hospital_mapped.csv
-jellyfish_vc,rayyan,9987,948,8582,0.8593,1405,184,0.1941,0.131,0,0,184,0.0,0.0,741,480,13,0,0.0,csvs/jellyfish_vc_rayyan_mapped.csv

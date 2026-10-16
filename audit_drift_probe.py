@@ -1,27 +1,7 @@
-"""audit_drift_probe.py -- does the guarantee survive a non-exchangeable split?
+"""Coverage under a non-exchangeable split: calibrate on some sources, deploy on others.
 
-Assumption A1 says calibration and deployment cells are exchangeable. Section 9 names
-non-stationarity as the sharper threat and does nothing about it. This is the cheapest
-experiment that finds out whether that admission is a formality or a real hole.
-
-The manipulation is the split, not the data. CARE normally calibrates on a uniform
-random subset, which makes A1 true by construction. Here calibration and test are
-divided by a REAL key instead -- flights has 38 distinct `src` values of roughly 100
-cells each -- so the certifier calibrates on some sources and is deployed on others it
-has never seen. Nothing else changes: same log, same proposer, same budget.
-
-Two arms:
-
-  random   the paper's protocol. A1 holds. Coverage should hold.
-  drift    split by the key column (default `src`), so calibration and deployment
-           come from disjoint sources. A1 is violated and nothing in the certifier
-           can see it. Coverage MAY fail.
-
-Read the arms together. `drift` failing while `random` holds is the informative
-outcome: it locates the failure in the assumption rather than the method. `drift`
-NOT failing is also worth knowing -- it would mean this dataset's sources are close
-enough to exchangeable that the split does not test anything, and a stronger key is
-needed before the experiment is reportable.
+Two arms over the same log: `random` splits cells uniformly; `drift` splits rows by
+the value of a key column (default `src`), so calibration and test sources are disjoint.
 
     python audit_drift_probe.py
     -> experiments/drift_probe.csv
@@ -67,9 +47,7 @@ def main() -> int:
 
     art, defects, _ = load(args.dataset)
     gold = {k: _norm(v) for k, v in defects.gold.items()}
-    # A degenerate proposer cannot show a coverage failure: Baran is exactly correct
-    # on flights, so every arm reports zero error whatever the split does. The probe
-    # needs a proposer that errs, or it measures nothing.
+    # default log is BClean: Baran is exactly correct on flights
     tag = args.tag or os.path.basename(args.log).split("_")[0]
     _art, _d, repairs, _r = load_and_propose(
         args.dataset, f"{tag}:{args.log}", detection="oracle", fast_verify=True)

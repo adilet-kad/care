@@ -1,29 +1,10 @@
-"""audit_proposers.py -- measure what each proposer actually did, before CARE sees it.
+"""Per-proposer accuracy on error cells and damage to clean cells, measured on the logs.
 
-Writes experiments/proposer_accuracy.csv. Every column is a direct measurement on the
-proposer's own log against the benchmark's ground truth; nothing here involves CARE.
+Also writes Raha detector quality and how each cleaner handles detector false positives.
+Pairs with acc_on_errors == 1.0 are tagged degenerate.
 
-Why this file exists
---------------------
-CARE's job is to decide which of a proposer's repairs are safe to apply. Its behaviour
-is therefore only interpretable relative to how good the proposer was in the first
-place. Several (proposer, dataset) pairs produce a selective error of exactly 0.000,
-and a reader is entitled to ask whether that is a bug. It is not: it is what happens
-when the proposer is exactly right on the cells CARE certifies. This audit makes that
-checkable by reporting, per pair:
-
-  acc_on_errors   accuracy on cells the benchmark marks as erroneous (the cells that
-                  matter -- proposing the status quo on a clean cell is not a repair)
-  n_perfect_cols  number of columns where the proposer is right on every error cell
-  frac_in_perfect fraction of proposed error-cell repairs living in those columns
-                  -- this is the automation ceiling a column-stratified certifier can
-                  reach while remaining exactly correct
-  clean_touched   clean cells the proposer also rewrote (collateral damage risk)
-  clean_broken    of those, how many it changed to something else
-
-A pair with acc_on_errors == 1.0 is DEGENERATE: the proposer solves the benchmark, so
-CARE certifying everything is the correct-but-uninformative answer. Such pairs are
-reported as sanity checks, never as evidence that CARE adds value.
+    python audit_proposers.py
+    -> experiments/proposer_accuracy.csv, detector_quality.csv, fp_handling.csv
 """
 from __future__ import annotations
 
@@ -38,33 +19,17 @@ DATASETS = ["hospital", "beers", "flights", "rayyan", "tax"]
 PROPOSERS = [
     ("Baran",       "csvs/baran_%s_mapped.csv"),
     ("BClean",      "csvs/bclean_%s_mapped.csv"),
-    ("Jellyfish",   "csvs/jellyfish_%s_mapped.csv"),
-    ("RetClean",    "csvs/retclean_%s_mapped.csv"),   # hospital == Jellyfish (D29); flights is independent
-    ("GPT-4o-mini", "csvs/gpt4o_%s_mapped.csv"),
-    # HoloClean runs on hospital, beers and flights (the corpora with denial
-    # constraints); beers is degenerate and dropped from Table 1 (make_figures).
+    ("BClean+",     "csvs/bclean_plus_%s_mapped.csv"),   # hospital, beers, flights
+    ("GIDCL",       "csvs/gidcl_%s_mapped.csv"),          # authors' released output
+    ("ZeroEC",      "csvs/zeroec_%s_mapped.csv"),         # integrations/zeroec
+    # HoloClean: hospital, beers and flights (datasets with denial constraints)
     ("HoloClean",   "csvs/holoclean_%s_mapped.csv"),
 ]
 
-# ROW SHARDS. A proposer too expensive to run over a whole table can be run over a
-# contiguous row range instead. That is NOT the same as a truncated log, and the
-# distinction decides how the numbers may be read:
-#
-#   truncated log  -- the run stopped early (rate limits, a crash). Which cells are
-#                     missing is determined by when the failure happened, so the
-#                     surviving set is biased in a way we cannot characterise.
-#   row shard      -- the range was chosen BEFORE the run and processed exhaustively.
-#                     Exchangeability holds within the shard, so it is a smaller
-#                     benchmark rather than a biased sample of a larger one.
-#
-# Coverage is therefore computed against the SHARD's error cells, not the whole
-# table's, and the regime is tagged 'shard' rather than 'partial'. The same range must
-# be passed to bench.run_study via --row-range or the un-sharded rows are scored as
-# escalations. Verify against the run log: it prints the queue reduction.
-SHARDS = {
-    ("Jellyfish", "tax"): {"path": "csvs/jellyfish_tax_mapped.csv",
-                           "row_range": (0, 25000)},
-}
+# (proposer, dataset) -> {"path", "row_range"} for logs run on a fixed row range;
+# coverage is computed against the shard's error cells. Pass the same range to
+# bench.run_study via --row-range.
+SHARDS = {}
 OUT = "experiments/proposer_accuracy.csv"
 
 
@@ -108,10 +73,7 @@ def main():
                             return lo <= int(ref.split("::")[0]) < hi
                         except (TypeError, ValueError):
                             return False
-                    # Score against the shard's own population, so 'coverage' answers
-                    # "did the proposer answer everything it was asked?" rather than
-                    # "how much of the table did we run?" -- which is a budget fact,
-                    # not a property of the proposer.
+                    # restrict gold to the shard
                     gold = {k: v for k, v in gold.items() if _in(k)}
                 per, ok = collections.Counter(), collections.Counter()
                 n = clean_touched = clean_broken = 0
@@ -121,7 +83,7 @@ def main():
                     ref = f"{r['row_id']}::{r['column']}"
                     v = _norm(r.get("value"))
                     if not v:
-                        continue      # logged abstention: not a proposal, not a touch
+                        continue      # empty value: not a proposal
                     cols.add(r["column"])
                     if ref in gold:
                         n += 1
@@ -153,10 +115,7 @@ def main():
                             regime])
                 extra = ""
                 if clean_touched:
-                    # The damage a proposer does to cells that were ALREADY correct is
-                    # invisible to repair-F1, which only scores error cells. On tax it
-                    # is the dominant effect and the reason the ungoverned baseline is
-                    # unusable, so surface it here rather than leaving it in the CSV.
+                    # changes to clean cells, which repair-F1 does not score
                     per_fix = (clean_broken / (n * acc)) if n * acc >= 1 else float("inf")
                     extra = (f"  clean_broken={clean_broken:,}/{clean_touched:,}"
                              f" ({clean_broken/clean_touched*100:.1f}%)"
@@ -175,11 +134,7 @@ def main():
 
 
 def audit_detector(path="experiments/detector_quality.csv"):
-    """Precision/recall of the real detector whose log we use as a non-oracle work
-    queue. Reported because the non-oracle automation numbers are only interpretable
-    relative to how good the detector was: false positives inject clean cells into the
-    queue (which a detector-free proposer then rewrites), and missed errors shrink the
-    per-stratum calibration mass the certifier needs."""
+    """Precision, recall and F1 of the Raha detector logs."""
     import glob
     from bench.datasets import load
     rows = []
@@ -209,18 +164,9 @@ def audit_detector(path="experiments/detector_quality.csv"):
         print(f"wrote {path}")
 
 def audit_fp_handling(path="experiments/fp_handling.csv"):
-    """What each proposer does with the detector's FALSE POSITIVES.
-
-    This is the quantity that decides robustness to detection error, and it is not
-    visible in any accuracy metric: a false positive is a cell that was already
-    correct, so repair-F1 never scores it. A proposer asked "fix this cell" that has
-    no way to answer "there is nothing to fix" will invent a change, and every such
-    change converts a clean cell into an error inside a stratum that would otherwise
-    have been certifiable.
-    """
+    """How often each cleaner changes a clean cell that the detector flagged."""
     from bench.datasets import load
     LOGS = [("Baran", "csvs/baran_raha_%s_mapped.csv"),
-            ("Jellyfish", "csvs/jellyfish_%s_mapped.csv"),
             ("BClean", "csvs/bclean_keep_%s_mapped.csv")]
     rows = []
     for ds in DATASETS:
@@ -245,7 +191,7 @@ def audit_fp_handling(path="experiments/fp_handling.csv"):
                     continue
                 v = _norm(r.get("value"))
                 if not v:
-                    continue                  # abstention: the safe answer
+                    continue                  # empty value: cell left as is
                 touched += 1
                 changed += v != cur[ref]
             if not touched:

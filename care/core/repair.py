@@ -1,21 +1,9 @@
-"""care.core.repair -- the repair lifecycle objects.
+"""Repair lifecycle objects.
 
-A repair flows through the pipeline as:
-
-    Violation            (Auditor: a constraint failed, on these refs)
-      -> RepairCandidate (Proposer: a proposed fix + evidence + s_llm/s_agree)
-      -> VerifiedRepair  (Verifier: feasible against H? + delta_objective)
-      -> Decision        (Conformal controller: auto_apply vs escalate)
-      -> CalibrationRecord (human label, feeds recalibration)
-
-``AuditReport`` is the Auditor's summary output (the soft-measure scores, the
-failed hard predicates and the satisfied fraction). ``ThresholdTable`` is the
-conformal controller's per-stratum output.
-
-Crucially, ``RepairCandidate`` is what the proposer produces -- it never writes to D
-(I1). Only after the Verifier projects it to a ``VerifiedRepair`` with
-``feasible=True`` (I2) and the controller emits an ``auto_apply`` Decision can
-it be applied.
+    Violation          -> RepairCandidate   (cleaner's proposed fix)
+                       -> VerifiedRepair    (verifier: feasible against H)
+                       -> Decision          (controller: auto_apply / escalate)
+    CalibrationRecord  labelled outcome used to calibrate the threshold
 """
 
 from __future__ import annotations
@@ -28,9 +16,7 @@ ActionType = Literal["auto_apply", "escalate"]
 
 
 class Violation(BaseModel):
-    """A failed constraint and the refs responsible. The Auditor's work queue V
-    is a collection of these (hard failures union soft measures below theta).
-    """
+    """A failed constraint and the refs responsible."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -40,14 +26,10 @@ class Violation(BaseModel):
 
 
 class RepairCandidate(BaseModel):
-    """A proposed repair for a single ref. Produced by the proposer, which
-    fills value/rationale/evidence/s_llm/s_agree. ``s_margin`` (verifier) and
-    ``s_hat`` (controller) are filled downstream.
+    """A cleaner's proposed repair for one ref.
 
-    ``proposed_value`` is a cell value for X, or a ``MetadataTriple`` for M.
-    ``evidence`` lists the retrieved source_ids backing the edit -- required so
-    that score gains are source-justified (I4); evidence-free metadata repairs
-    are rejected by the H-floor.
+    ``proposed_value`` is a cell value, or a ``MetadataTriple`` for M.
+    ``s_margin`` and ``s_hat`` are filled by the verifier and controller.
     """
 
     model_config = ConfigDict(extra="forbid")
@@ -55,22 +37,19 @@ class RepairCandidate(BaseModel):
     target_ref: str
     proposed_value: Any = None          # cell value, or a MetadataTriple for M
     rationale: str = ""
-    evidence: list[str] = Field(default_factory=list)   # retrieved source_ids (I4)
-    s_llm: float | None = Field(None, ge=0.0, le=1.0)   # LLM likelihood; None when no logprob
-    s_agree: float = Field(0.0, ge=0.0, le=1.0)         # self-consistency / ensemble
-    s_consistency: float | None = None  # per-cell confidence signal from the proposer's log
-    s_margin: float | None = None       # verifier/constraint margin (filled by the verifier)
-    s_hat: float | None = None          # combined confidence (filled by the controller)
+    evidence: list[str] = Field(default_factory=list)   # source_ids backing the edit
+    s_conf: float | None = Field(None, ge=0.0, le=1.0)   # optional extra score; unset by the log reader
+    s_agree: float = Field(0.0, ge=0.0, le=1.0)         # cleaner's confidence (a constant if the log has none)
+    s_consistency: float | None = None  # cleaner's confidence, None if the log has none
+    s_margin: float | None = None       # hard-constraint margin (verifier)
+    s_hat: float | None = None          # combined confidence (controller)
 
 
 class VerifiedRepair(RepairCandidate):
-    """A candidate that has passed through the Verifier's projector.
+    """A candidate assessed by the verifier.
 
-    ``feasible`` MUST be True for the repair to be applicable -- it is the
-    engineering form of "projected onto F_H" (I2), asserted by the property-
-    based projector test. ``delta_objective`` is the soft-objective gain
-    ``sum_i w_i * dq_i - lambda * Delta`` of applying the repair (I3: a
-    heuristic diagnostic; correctness is not claimed from it).
+    Only ``feasible`` repairs may be applied. ``delta_objective`` is the
+    diagnostic gain ``sum_i w_i * dq_i - lambda * Delta``.
     """
 
     feasible: bool = False
@@ -78,10 +57,7 @@ class VerifiedRepair(RepairCandidate):
 
 
 class CalibrationRecord(BaseModel):
-    """One labelled outcome used to calibrate the conformal threshold. ``correct``
-    is the human/ground-truth verdict on a repair with confidence ``s_hat`` in a
-    given ``stratum`` (for group-conditional / Mondrian control).
-    """
+    """A labelled repair (confidence, correctness, stratum) used for calibration."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -92,9 +68,7 @@ class CalibrationRecord(BaseModel):
 
 
 class Decision(BaseModel):
-    """The controller's auto-apply / escalate decision for one repair, recording
-    the confidence and the stratum threshold that produced it.
-    """
+    """Auto-apply / escalate decision for one repair, with its score and threshold."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -106,10 +80,7 @@ class Decision(BaseModel):
 
 
 class ThresholdTable(BaseModel):
-    """Per-stratum auto/escalate thresholds lambda_hat from the conformal
-    controller, guaranteeing R(lambda_hat) <= alpha w.p. 1 - delta. Auto-apply
-    iff ``s_hat >= threshold_for(stratum)``.
-    """
+    """Per-stratum thresholds lambda_hat; auto-apply iff ``s_hat >= threshold_for(stratum)``."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -123,14 +94,9 @@ class ThresholdTable(BaseModel):
 
 
 class AuditReport(BaseModel):
-    """The Auditor's assessment-only summary of an artifact.
+    """Auditor summary: soft scores, failed hard predicates and the satisfied fraction.
 
-    ``quality_vector`` maps each soft predicate's cid to its graded score in
-    [0, 1]; ``hard_violations`` lists the boolean predicates that failed; and
-    ``satisfied_fraction`` is the headline: the fraction of enabled predicates
-    the artifact satisfies, counting a soft one as satisfied when it meets its
-    declared target. The work queue is returned separately by the Auditor, so
-    this report describes the artifact rather than prescribing repairs.
+    ``satisfied_fraction`` counts a soft predicate as satisfied when it meets its target.
     """
 
     model_config = ConfigDict(extra="forbid")

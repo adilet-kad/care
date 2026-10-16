@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers,CARE,marginal,0.05,errors,0.9892839258888333,0.0032710280373831726,0.018724559023066484,0.009813084112149517,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,CARE,mondrian,0.05,errors,1.0,0.0,0.0,0.0,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,ApplyAll,-,0.05,errors,0.0,0.21992989484226344,0.7800701051577366,0.22303455182774162,False,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,EscalateAll,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,CARE,marginal,0.1,errors,0.8299949924887331,0.038243253989564595,0.2600630029951959,0.05833191254848792,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,CARE,mondrian,0.1,errors,0.9944944944944945,0.005454545454545457,0.009867172675521821,0.01636363636363637,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,ApplyAll,-,0.1,errors,0.0,0.21992989484226344,0.7800701051577366,0.22303455182774162,False,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,EscalateAll,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,CARE,marginal,0.2,errors,0.4205307961942914,0.14893048148647428,0.6219691952923684,0.16245728121787884,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,CARE,mondrian,0.2,errors,0.5021521521521521,0.12335689997092802,0.5796498771045451,0.13888230917133199,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,ApplyAll,-,0.2,errors,0.0,0.21992989484226344,0.7800701051577366,0.22303455182774162,False,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv
+beers,EscalateAll,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,bclean_plus:csvs/bclean_plus_beers_mapped.csv

@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+tax,CARE,marginal,0.05,errors,0.9,0.00433048433048433,0.09566951566951568,0.01299145299145299,True,False,gidcl:csvs/gidcl_tax_mapped.csv
+tax,CARE,mondrian,0.05,errors,0.4735344336937962,0.0,0.6897837434750187,0.0,True,True,gidcl:csvs/gidcl_tax_mapped.csv
+tax,ApplyAll,-,0.05,errors,0.0,0.03834757834757836,0.9616524216524216,0.04011396011396012,True,True,gidcl:csvs/gidcl_tax_mapped.csv
+tax,EscalateAll,-,0.05,errors,1.0,0.0,0.0,0.0,True,False,gidcl:csvs/gidcl_tax_mapped.csv
+tax,CARE,marginal,0.1,errors,0.0,0.03834757834757836,0.9616524216524216,0.04011396011396012,True,True,gidcl:csvs/gidcl_tax_mapped.csv
+tax,CARE,mondrian,0.1,errors,0.13204325554923166,0.0,0.9293113954905545,0.0,True,True,gidcl:csvs/gidcl_tax_mapped.csv
+tax,ApplyAll,-,0.1,errors,0.0,0.03834757834757836,0.9616524216524216,0.04011396011396012,True,True,gidcl:csvs/gidcl_tax_mapped.csv
+tax,EscalateAll,-,0.1,errors,1.0,0.0,0.0,0.0,True,False,gidcl:csvs/gidcl_tax_mapped.csv
+tax,CARE,marginal,0.2,errors,0.0,0.03834757834757836,0.9616524216524216,0.04011396011396012,True,True,gidcl:csvs/gidcl_tax_mapped.csv
+tax,CARE,mondrian,0.2,errors,0.13204325554923166,0.0,0.9293113954905545,0.0,True,True,gidcl:csvs/gidcl_tax_mapped.csv
+tax,ApplyAll,-,0.2,errors,0.0,0.03834757834757836,0.9616524216524216,0.04011396011396012,True,True,gidcl:csvs/gidcl_tax_mapped.csv
+tax,EscalateAll,-,0.2,errors,1.0,0.0,0.0,0.0,True,False,gidcl:csvs/gidcl_tax_mapped.csv

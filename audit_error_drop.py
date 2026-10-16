@@ -1,45 +1,15 @@
-"""audit_error_drop.py -- Error Drop Rate (Ni et al., PVLDB 2024) for apply-all vs CARE.
+"""Error Drop Rate (Ni et al., PVLDB 2024) of apply-all and CARE on the same cells.
 
-Ni et al. ("Automatic Data Repair: Are We Ready to Deploy?", PVLDB 17(10)) argue that
-precision/recall hide whether a repair run actually LEAVES THE TABLE CLEANER, and report
-that most repair algorithms raise the error count. Their metric is the Error Drop Rate,
+EDR = (errors_before - errors_after) / errors_before, over the test split of each seed.
+Apply-all writes every proposal; CARE writes only auto-applied cells, the rest keep
+their dirty value. Among CARE's changes, fixes - breaks >= (1 - 2*alpha) * n_changes
+whenever the risk bound holds; violations are counted per seed. `edr_care_table`
+divides by all gold errors in the table.
 
-    EDR = (errors_before - errors_after) / errors_before,
-
-positive when a run removes more errors than it creates. This script computes it, from
-the released logs and the same certifier that produced every other number in the paper,
-for two policies over the same cells:
-
-    apply-all   every proposal in the test split is written (ungoverned; Ni's setting)
-    CARE        only the auto-applied set is written; escalated and calibration cells
-                keep their dirty value (no credit is taken for the human's work)
-
-Nothing is re-proposed: `load_and_propose` replays each proposer's log exactly as the
-Table 1 / Table 3 sweeps do, and `evaluate_split(..., return_decisions=True)` returns
-the cells CARE actually auto-applied on each seed. The only new computation is counting.
-
-Why the bound matters. Among the CHANGES CARE auto-applies at budget alpha, at most an
-alpha fraction are wrong (that is the certificate) and every correct change on an error
-cell is a fix, so
-
-    fixes - breaks  >=  (1 - 2*alpha) * n_changes                      (*)
-
-whenever the certificate holds -- i.e. certification at any alpha < 1/2 cannot raise the
-error count among the cells it writes. Apply-all has no such property. The script checks
-(*) on every seed and reports violations (there should be none where `covered` is True).
-
-    python audit_error_drop.py                # Table 1 protocol (oracle detection)
-    python audit_error_drop.py --raha         # add Table 3 rows (Raha detection)
+    python audit_error_drop.py                # oracle detection
+    python audit_error_drop.py --raha         # add Raha-detection rows
     python audit_error_drop.py --skip-tax     # skip the two slow tax configurations
     -> experiments/error_drop.csv  (+ paper/tables/tab5_error_drop.tex with --tex)
-
-Populations. `errors_before` is counted over the TEST split of the work queue on each
-seed: under `--scoring errors` (Baran, BClean, HoloClean) that is the error cells the
-proposer proposed on; under `--scoring detected` (LLM logs, keep logs, Raha runs) it is
-every cell the proposer touched, clean or not. A second column, `edr_care_table`, divides
-by ALL gold errors in the table, so an operator can read what one CARE pass buys on the
-whole table without any human effort counted. Baran rows use the shipped draw (the
-Table 1 medians are over six draws; `--baran-draw DIR` points at another draw).
 """
 
 from __future__ import annotations
@@ -50,10 +20,8 @@ import os
 import statistics
 import sys
 
-# (tag, dataset, log, scoring, detection, row_range): the Table 1 pairs the paper
-# reports, i.e. the reproduce.sh step-1 sweeps minus the degenerate pairs that
-# make_figures.TAB1_EXCLUDE drops (Baran/flights, BClean/rayyan+tax, RetClean/hospital,
-# HoloClean/beers).
+# (tag, dataset, log, scoring, detection, row_range), oracle detection; degenerate
+# pairs (Baran/flights, BClean/rayyan+tax, HoloClean/beers) are excluded.
 TABLE1 = [
     ("baran", "hospital", "csvs/baran_hospital_mapped.csv", "errors", "oracle", None),
     ("baran", "beers", "csvs/baran_beers_mapped.csv", "errors", "oracle", None),
@@ -62,22 +30,30 @@ TABLE1 = [
     ("bclean", "hospital", "csvs/bclean_hospital_mapped.csv", "errors", "oracle", None),
     ("bclean", "beers", "csvs/bclean_beers_mapped.csv", "errors", "oracle", None),
     ("bclean", "flights", "csvs/bclean_flights_mapped.csv", "errors", "oracle", None),
-    ("jellyfish", "hospital", "csvs/jellyfish_hospital_mapped.csv", "detected", "oracle", None),
-    ("jellyfish", "beers", "csvs/jellyfish_beers_mapped.csv", "detected", "oracle", None),
-    ("jellyfish", "flights", "csvs/jellyfish_flights_mapped.csv", "detected", "oracle", None),
-    ("jellyfish", "rayyan", "csvs/jellyfish_rayyan_mapped.csv", "detected", "oracle", None),
-    ("jellyfish", "tax", "csvs/jellyfish_tax_mapped.csv", "detected", "oracle", (0, 25000)),
-    ("gpt4o", "hospital", "csvs/gpt4o_hospital_mapped.csv", "detected", "oracle", None),
-    ("gpt4o", "beers", "csvs/gpt4o_beers_mapped.csv", "detected", "oracle", None),
-    ("gpt4o", "flights", "csvs/gpt4o_flights_mapped.csv", "detected", "oracle", None),
-    ("gpt4o", "rayyan", "csvs/gpt4o_rayyan_mapped.csv", "detected", "oracle", None),
-    ("retclean", "flights", "csvs/retclean_flights_mapped.csv", "detected", "oracle", None),
     ("holoclean", "hospital", "csvs/holoclean_hospital_mapped.csv", "errors", "oracle", None),
     ("holoclean", "flights", "csvs/holoclean_flights_mapped.csv", "errors", "oracle", None),
+    ("bclean_plus", "hospital", "csvs/bclean_plus_hospital_mapped.csv", "errors", "oracle", None),
+    ("bclean_plus", "beers", "csvs/bclean_plus_beers_mapped.csv", "errors", "oracle", None),
+    ("bclean_plus", "flights", "csvs/bclean_plus_flights_mapped.csv", "errors", "oracle", None),
+    ("gidcl", "hospital", "csvs/gidcl_hospital_mapped.csv", "errors", "oracle", None),
+    ("gidcl", "beers", "csvs/gidcl_beers_mapped.csv", "errors", "oracle", None),
+    ("gidcl", "flights", "csvs/gidcl_flights_mapped.csv", "errors", "oracle", None),
+    ("gidcl", "rayyan", "csvs/gidcl_rayyan_mapped.csv", "errors", "oracle", None),
+    ("gidcl", "tax", "csvs/gidcl_tax_mapped.csv", "errors", "oracle", None),
+    ("zeroec", "hospital", "csvs/zeroec_hospital_mapped.csv", "errors", "oracle", None),
+    ("zeroec", "beers", "csvs/zeroec_beers_mapped.csv", "errors", "oracle", None),
+    ("zeroec", "flights", "csvs/zeroec_flights_mapped.csv", "errors", "oracle", None),
+    ("zeroec", "rayyan", "csvs/zeroec_rayyan_mapped.csv", "errors", "oracle", None),
+    ("zeroec", "tax", "csvs/zeroec_tax_mapped.csv", "errors", "oracle", None),
+    # GIDCL with its own detector: writes to clean cells are scored too
+    ("gidcl_owndet", "hospital", "csvs/gidcl_hospital_mapped.csv", "detected", "log:csvs/gidcl_hospital_detected.csv", None),
+    ("gidcl_owndet", "beers", "csvs/gidcl_beers_mapped.csv", "detected", "log:csvs/gidcl_beers_detected.csv", None),
+    ("gidcl_owndet", "flights", "csvs/gidcl_flights_mapped.csv", "detected", "log:csvs/gidcl_flights_detected.csv", None),
+    ("gidcl_owndet", "rayyan", "csvs/gidcl_rayyan_mapped.csv", "detected", "log:csvs/gidcl_rayyan_detected.csv", None),
+    ("gidcl_owndet", "tax", "csvs/gidcl_tax_mapped.csv", "detected", "log:csvs/gidcl_tax_detected.csv", None),
 ]
 
-# Table 3 protocol: a real detector's queue (false positives included), keep logs where
-# a change-only log has no row for a false positive.
+# Raha detection (false positives included); keep logs cover cells left unchanged.
 TABLE3 = [
     ("baran_raha", "hospital", "csvs/baran_raha_hospital_mapped.csv", "detected", "log:csvs/raha_hospital_detected.csv", None),
     ("baran_raha", "beers", "csvs/baran_raha_beers_mapped.csv", "detected", "log:csvs/raha_beers_detected.csv", None),
@@ -87,16 +63,12 @@ TABLE3 = [
     ("bclean_keep", "hospital", "csvs/bclean_keep_hospital_mapped.csv", "detected", "log:csvs/raha_hospital_detected.csv", None),
     ("bclean_keep", "beers", "csvs/bclean_keep_beers_mapped.csv", "detected", "log:csvs/raha_beers_detected.csv", None),
     ("bclean_keep", "flights", "csvs/bclean_keep_flights_mapped.csv", "detected", "log:csvs/raha_flights_detected.csv", None),
-    ("jellyfish", "hospital", "csvs/jellyfish_hospital_mapped.csv", "detected", "log:csvs/raha_hospital_detected.csv", None),
-    ("jellyfish", "beers", "csvs/jellyfish_beers_mapped.csv", "detected", "log:csvs/raha_beers_detected.csv", None),
-    ("jellyfish", "flights", "csvs/jellyfish_flights_mapped.csv", "detected", "log:csvs/raha_flights_detected.csv", None),
-    ("jellyfish", "rayyan", "csvs/jellyfish_rayyan_mapped.csv", "detected", "log:csvs/raha_rayyan_detected.csv", None),
     ("holoclean_keep", "hospital", "csvs/holoclean_keep_hospital_mapped.csv", "detected", "log:csvs/raha_hospital_detected.csv", None),
     ("holoclean_keep", "flights", "csvs/holoclean_keep_flights_mapped.csv", "detected", "log:csvs/raha_flights_detected.csv", None),
 ]
 
 PRETTY = {"baran": "Baran", "baran_raha": "Baran", "bclean": "BClean", "bclean_keep": "BClean",
-          "jellyfish": "Jellyfish", "gpt4o": "GPT-4o-mini", "retclean": "RetClean",
+          "bclean_plus": "BClean+", "gidcl": "GIDCL", "gidcl_owndet": "GIDCL (own detector)", "zeroec": "ZeroEC",
           "holoclean": "HoloClean", "holoclean_keep": "HoloClean"}
 
 
@@ -105,9 +77,7 @@ def _norm(v):
 
 
 def _strata(art, defects, repairs):
-    """Same rule as bench.experiments.pareto: per-column Mondrian when columns are fat
-    enough, else cardinality buckets; column x source when the log carries >1 source
-    (the partition Tables 1 and 3 report as the operating point)."""
+    """Mondrian strata as in bench.experiments.pareto, crossed with source if >1 source."""
     from care.conformal import by_product, by_source
     from bench.experiments import _mondrian_strata_fn
     sf = _mondrian_strata_fn(art, defects)
@@ -152,7 +122,7 @@ def run_config(tag, ds, log, scoring, detection, row_range, *, alphas, delta, se
             care_vals = {r: (auto[r] if r in auto else dirty[r]) for r in test}
             after_care = _count_errors(test, care_vals, truth)
 
-            # bookkeeping among CARE's auto-applied CHANGES
+            # counts among CARE's auto-applied changes
             changes = [r for r in auto if _norm(auto[r]) != dirty[r]]
             fixes = sum(1 for r in changes if dirty[r] != truth[r] and _norm(auto[r]) == truth[r])
             breaks = sum(1 for r in changes if dirty[r] == truth[r])
@@ -227,7 +197,7 @@ def main() -> int:
     ap.add_argument("--alphas", nargs="*", type=float, default=[0.05, 0.1, 0.2])
     ap.add_argument("--delta", type=float, default=0.1)
     ap.add_argument("--seeds", type=int, default=10)
-    ap.add_argument("--raha", action="store_true", help="also run the Table 3 (Raha) rows")
+    ap.add_argument("--raha", action="store_true", help="also run the rows under the Raha detector")
     ap.add_argument("--only-raha", action="store_true")
     ap.add_argument("--skip-tax", action="store_true")
     ap.add_argument("--only", nargs="*", default=None, help="restrict to these datasets")
@@ -268,7 +238,7 @@ def main() -> int:
         w.writerows(rows)
     print(f"\nwrote {args.out} ({len(rows)} rows)")
 
-    # headline numbers for the paper
+    # summary
     pairs = {(r["proposer"], r["dataset"], r["detection"]) for r in rows}
     neg_all = {(r["proposer"], r["dataset"], r["detection"]) for r in rows
                if r["edr_apply_all"] is not None and r["edr_apply_all"] < 0}

@@ -1,9 +1,4 @@
-"""care.core -- the data-model contracts every other module plugs into.
-
-Re-exports the data model (artifact), the constraint contract (constraints),
-the repair lifecycle (repair), and the plugin registry (registry). Provenance
-analysis helpers are available from ``care.core.provenance``.
-"""
+"""Core data model: artifact, constraint contract, repair objects and registry."""
 
 from care.core.artifact import (
     Cell,

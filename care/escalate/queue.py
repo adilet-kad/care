@@ -1,10 +1,4 @@
-"""care.escalate.queue -- the human-review queue.
-
-Repairs the controller does not auto-apply are escalated to humans as
-``EscalationItem``s, each tagged with the reason it was escalated: below the
-stratum's threshold, an uncontrollable (+inf) stratum, or suspected poison (a
-low-trust source backed the repair -- the tau override in ``active.py``).
-"""
+"""Human-review queue of escalated repairs, each tagged with its reason."""
 
 from __future__ import annotations
 

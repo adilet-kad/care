@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights,CARE,marginal,0.05,errors,0.0,0.013811007268951203,0.9861889927310488,0.01471097265489788,True,True,gidcl:csvs/gidcl_flights_mapped.csv
+flights,CARE,mondrian,0.05,errors,0.1841176470588235,0.010152221230047997,0.8744936387031037,0.012911980968858127,True,True,gidcl:csvs/gidcl_flights_mapped.csv
+flights,ApplyAll,-,0.05,errors,0.0,0.013811007268951203,0.9861889927310488,0.01471097265489788,True,True,gidcl:csvs/gidcl_flights_mapped.csv
+flights,EscalateAll,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,gidcl:csvs/gidcl_flights_mapped.csv
+flights,CARE,marginal,0.1,errors,0.0,0.013811007268951203,0.9861889927310488,0.01471097265489788,True,False,gidcl:csvs/gidcl_flights_mapped.csv
+flights,CARE,mondrian,0.1,errors,0.0,0.013425605536332175,0.9865743944636678,0.014117647058823523,True,True,gidcl:csvs/gidcl_flights_mapped.csv
+flights,ApplyAll,-,0.1,errors,0.0,0.013811007268951203,0.9861889927310488,0.01471097265489788,True,False,gidcl:csvs/gidcl_flights_mapped.csv
+flights,EscalateAll,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,gidcl:csvs/gidcl_flights_mapped.csv
+flights,CARE,marginal,0.2,errors,0.0,0.013811007268951203,0.9861889927310488,0.01471097265489788,True,False,gidcl:csvs/gidcl_flights_mapped.csv
+flights,CARE,mondrian,0.2,errors,0.0,0.013425605536332175,0.9865743944636678,0.014117647058823523,True,True,gidcl:csvs/gidcl_flights_mapped.csv
+flights,ApplyAll,-,0.2,errors,0.0,0.013811007268951203,0.9861889927310488,0.01471097265489788,True,False,gidcl:csvs/gidcl_flights_mapped.csv
+flights,EscalateAll,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,gidcl:csvs/gidcl_flights_mapped.csv

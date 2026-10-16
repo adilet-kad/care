@@ -1,1 +1,1 @@
-"""bench -- the evaluation harness: run_study (CLI), study/experiments (protocol), throughput, datasets."""
+"""Evaluation harness for CARE: datasets, study protocol, experiments and throughput."""

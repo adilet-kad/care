@@ -1,0 +1,16 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+flights,CARE,marginal,0.05,errors,0.0,0.00412265758091993,0.9958773424190801,0.0045655877342419045,True,False,zeroec:csvs/zeroec_flights_mapped.csv
+flights,CARE,mondrian,0.05,errors,0.0,0.0034741144414168978,0.996525885558583,0.0039509536784741225,True,True,zeroec:csvs/zeroec_flights_mapped.csv
+flights,CARE,mondrian_src,0.05,errors,0.030643513789581207,0.002915349490691921,0.9815698478561549,0.0033719704952581255,True,True,zeroec:csvs/zeroec_flights_mapped.csv
+flights,ApplyAll,-,0.05,errors,0.0,0.00412265758091993,0.9958773424190801,0.0045655877342419045,True,False,zeroec:csvs/zeroec_flights_mapped.csv
+flights,EscalateAll,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,zeroec:csvs/zeroec_flights_mapped.csv
+flights,CARE,marginal,0.1,errors,0.0,0.00412265758091993,0.9958773424190801,0.0045655877342419045,True,False,zeroec:csvs/zeroec_flights_mapped.csv
+flights,CARE,mondrian,0.1,errors,0.0,0.0034741144414168978,0.996525885558583,0.0039509536784741225,True,True,zeroec:csvs/zeroec_flights_mapped.csv
+flights,CARE,mondrian_src,0.1,errors,0.016002723867892407,0.0033542468690841987,0.9885509511687036,0.003891486039538694,True,True,zeroec:csvs/zeroec_flights_mapped.csv
+flights,ApplyAll,-,0.1,errors,0.0,0.00412265758091993,0.9958773424190801,0.0045655877342419045,True,False,zeroec:csvs/zeroec_flights_mapped.csv
+flights,EscalateAll,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,zeroec:csvs/zeroec_flights_mapped.csv
+flights,CARE,marginal,0.2,errors,0.0,0.00412265758091993,0.9958773424190801,0.0045655877342419045,True,False,zeroec:csvs/zeroec_flights_mapped.csv
+flights,CARE,mondrian,0.2,errors,0.0,0.0034741144414168978,0.996525885558583,0.0039509536784741225,True,True,zeroec:csvs/zeroec_flights_mapped.csv
+flights,CARE,mondrian_src,0.2,errors,0.0,0.003643173306094649,0.9963568266939052,0.004119850187265917,True,False,zeroec:csvs/zeroec_flights_mapped.csv
+flights,ApplyAll,-,0.2,errors,0.0,0.00412265758091993,0.9958773424190801,0.0045655877342419045,True,False,zeroec:csvs/zeroec_flights_mapped.csv
+flights,EscalateAll,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,zeroec:csvs/zeroec_flights_mapped.csv

@@ -1,0 +1,409 @@
+row_id,column,value,confidence,source
+1,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,0.9986,bclean_plus
+4,City,birmingham,0.9989,bclean_plus
+8,City,birmingham,0.9989,bclean_plus
+11,City,sheffield,0.9976,bclean_plus
+14,ProviderNumber,10019,1.0000,bclean_plus
+22,Condition,heart attack,0.9996,bclean_plus
+23,HospitalOwner,government - hospital district or authority,0.9993,bclean_plus
+23,Condition,heart attack,0.9996,bclean_plus
+25,PhoneNumber,3347938701,1.0000,bclean_plus
+25,EmergencyService,yes,0.9999,bclean_plus
+27,HospitalName,southeast alabama medical center,0.9970,bclean_plus
+28,HospitalOwner,government - hospital district or authority,0.9993,bclean_plus
+32,HospitalOwner,government - hospital district or authority,0.9993,bclean_plus
+37,PhoneNumber,3347938701,1.0000,bclean_plus
+43,State,al,0.9995,bclean_plus
+43,HospitalOwner,government - hospital district or authority,0.9993,bclean_plus
+44,EmergencyService,yes,0.9999,bclean_plus
+45,ZipCode,35957,0.9999,bclean_plus
+46,ProviderNumber,10005,1.0000,bclean_plus
+47,State,al,0.9995,bclean_plus
+51,State,al,0.9995,bclean_plus
+52,EmergencyService,yes,0.9999,bclean_plus
+57,City,boaz,0.9974,bclean_plus
+57,Stateavg,al_pn-3b,0.9986,bclean_plus
+58,Address1,2505 u s highway 431 north,1.0000,bclean_plus
+58,PhoneNumber,2565938310,1.0000,bclean_plus
+61,PhoneNumber,2565938310,1.0000,bclean_plus
+64,ZipCode,35957,0.9999,bclean_plus
+66,PhoneNumber,2565938310,1.0000,bclean_plus
+68,CountyName,marshall,0.9983,bclean_plus
+70,Stateavg,al_ami-1,0.9981,bclean_plus
+71,ZipCode,35631,1.0000,bclean_plus
+73,CountyName,lauderdale,0.9973,bclean_plus
+74,Condition,heart attack,0.9997,bclean_plus
+78,CountyName,lauderdale,0.9973,bclean_plus
+80,City,florence,0.9973,bclean_plus
+82,ProviderNumber,10006,1.0000,bclean_plus
+84,State,al,0.9990,bclean_plus
+89,City,florence,0.9973,bclean_plus
+94,City,florence,0.9971,bclean_plus
+94,ZipCode,35631,1.0000,bclean_plus
+95,Address1,702 n main st,0.9977,bclean_plus
+95,MeasureName,heart attack patients given aspirin at arrival,0.9982,bclean_plus
+98,MeasureCode,ami-4,0.9981,bclean_plus
+99,State,al,0.9996,bclean_plus
+102,MeasureCode,hf-1,0.9989,bclean_plus
+102,PhoneNumber,3344933541,1.0000,bclean_plus
+107,Address1,702 n main st,0.9972,bclean_plus
+109,MeasureCode,pn-5c,0.9993,bclean_plus
+112,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,0.9984,bclean_plus
+114,HospitalOwner,voluntary non-profit - private,0.9993,bclean_plus
+120,State,al,0.9996,bclean_plus
+120,MeasureName,heart attack patients given aspirin at arrival,0.9984,bclean_plus
+121,MeasureCode,ami-2,0.9984,bclean_plus
+128,Condition,heart failure,0.9995,bclean_plus
+132,HospitalName,crenshaw community hospital,0.9978,bclean_plus
+137,CountyName,crenshaw,0.9978,bclean_plus
+138,ZipCode,36049,1.0000,bclean_plus
+140,ZipCode,36049,1.0000,bclean_plus
+141,State,al,0.9991,bclean_plus
+146,MeasureName,heart attack patients given aspirin at discharge,0.9987,bclean_plus
+150,ZipCode,35640,1.0000,bclean_plus
+158,ZipCode,35640,1.0000,bclean_plus
+158,HospitalOwner,proprietary,0.9988,bclean_plus
+158,EmergencyService,yes,0.9999,bclean_plus
+160,HospitalOwner,proprietary,0.9990,bclean_plus
+162,Address1,201 pine street northwest,0.9975,bclean_plus
+163,HospitalOwner,proprietary,0.9990,bclean_plus
+165,HospitalOwner,proprietary,0.9988,bclean_plus
+166,State,al,0.9992,bclean_plus
+172,HospitalName,marshall medical center north,0.9979,bclean_plus
+176,Address1,8000 alabama highway 69,0.9978,bclean_plus
+178,MeasureCode,hf-2,0.9995,bclean_plus
+181,City,guntersville,0.9978,bclean_plus
+183,State,al,0.9995,bclean_plus
+191,MeasureCode,scip-inf-4,0.9981,bclean_plus
+194,Stateavg,al_scip-vte-2,0.9984,bclean_plus
+197,ZipCode,35235,0.9999,bclean_plus
+200,Condition,heart attack,0.9997,bclean_plus
+208,City,birmingham,0.9989,bclean_plus
+211,MeasureName,pneumonia patients assessed and given influenza vaccination,0.9986,bclean_plus
+213,City,birmingham,0.9989,bclean_plus
+214,ProviderNumber,10011,1.0000,bclean_plus
+214,Stateavg,al_scip-inf-2,0.9953,bclean_plus
+217,CountyName,jefferson,0.9997,bclean_plus
+217,HospitalOwner,voluntary non-profit - private,0.9994,bclean_plus
+218,PhoneNumber,2058383122,1.0000,bclean_plus
+219,HospitalOwner,voluntary non-profit - private,0.9995,bclean_plus
+220,MeasureName,heart attack patients given aspirin at arrival,0.9983,bclean_plus
+222,CountyName,de kalb,0.9895,bclean_plus
+222,HospitalOwner,voluntary non-profit - church,0.9987,bclean_plus
+224,CountyName,de kalb,0.9902,bclean_plus
+226,Condition,heart attack,0.9996,bclean_plus
+228,CountyName,de kalb,0.9902,bclean_plus
+229,State,al,0.9991,bclean_plus
+229,City,fort payne,0.9973,bclean_plus
+229,PhoneNumber,2568453150,1.0000,bclean_plus
+230,Condition,heart failure,0.9995,bclean_plus
+233,ZipCode,35968,1.0000,bclean_plus
+237,Condition,surgical infection prevention,0.9993,bclean_plus
+239,CountyName,de kalb,0.9895,bclean_plus
+239,HospitalOwner,voluntary non-profit - church,0.9987,bclean_plus
+240,Condition,surgical infection prevention,0.9997,bclean_plus
+244,HospitalName,dekalb regional medical center,0.9976,bclean_plus
+245,ProviderNumber,10015,1.0000,bclean_plus
+245,Stateavg,al_ami-1,0.9981,bclean_plus
+248,PhoneNumber,3346366221,1.0000,bclean_plus
+248,HospitalOwner,government - federal,0.9996,bclean_plus
+249,Stateavg,al_ami-5,0.9986,bclean_plus
+253,CountyName,clarke,0.9978,bclean_plus
+254,ProviderNumber,10015,1.0000,bclean_plus
+257,Condition,pneumonia,0.9996,bclean_plus
+257,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.9988,bclean_plus
+261,Address1,33700 highway 43,0.9976,bclean_plus
+262,PhoneNumber,3346366221,1.0000,bclean_plus
+265,MeasureCode,scip-inf-3,0.9983,bclean_plus
+265,Address1,33700 highway 43,0.9977,bclean_plus
+268,ZipCode,36784,1.0000,bclean_plus
+270,Stateavg,al_ami-1,0.9981,bclean_plus
+274,ProviderNumber,10016,1.0000,bclean_plus
+276,Address1,1000 first street north,0.9978,bclean_plus
+279,State,al,0.9990,bclean_plus
+280,Condition,heart failure,0.9995,bclean_plus
+282,MeasureName,pneumonia patients whose initial emergency room blood culture was performed prior to the administration of the first hospital dose of antibiotics,0.9987,bclean_plus
+284,ZipCode,35007,1.0000,bclean_plus
+291,ZipCode,35007,1.0000,bclean_plus
+291,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.9984,bclean_plus
+296,Address1,1720 university blvd,0.9979,bclean_plus
+312,City,anniston,0.9980,bclean_plus
+313,CountyName,calhoun,0.9980,bclean_plus
+314,HospitalOwner,proprietary,0.9993,bclean_plus
+315,ProviderNumber,10038,1.0000,bclean_plus
+317,Address1,301 east 18th st,0.9985,bclean_plus
+319,EmergencyService,yes,0.9999,bclean_plus
+322,PhoneNumber,2562358900,1.0000,bclean_plus
+325,CountyName,calhoun,0.9980,bclean_plus
+326,ZipCode,36201,1.0000,bclean_plus
+328,EmergencyService,yes,0.9999,bclean_plus
+333,ZipCode,36305,0.9999,bclean_plus
+333,HospitalOwner,proprietary,0.9998,bclean_plus
+333,EmergencyService,yes,0.9999,bclean_plus
+335,Address1,4370 west main street,0.9999,bclean_plus
+335,Stateavg,al_pn-2,0.9986,bclean_plus
+338,HospitalName,flowers hospital,0.9932,bclean_plus
+341,ZipCode,36305,0.9999,bclean_plus
+343,PhoneNumber,3347935000,0.9999,bclean_plus
+347,CountyName,houston,0.9986,bclean_plus
+347,MeasureName,surgery patients whose doctors ordered treatments to prevent blood clots after certain types of surgeries,0.9986,bclean_plus
+348,Stateavg,al_scip-vte-2,0.9984,bclean_plus
+350,MeasureCode,ami-2,0.9993,bclean_plus
+351,Address1,810 st vincents drive,0.9287,bclean_plus
+351,EmergencyService,yes,0.9995,bclean_plus
+357,State,al,0.9996,bclean_plus
+357,HospitalOwner,proprietary,0.9992,bclean_plus
+361,ProviderNumber,10086,1.0000,bclean_plus
+364,Address1,1530 u s highway 43,1.0000,bclean_plus
+367,ZipCode,35594,1.0000,bclean_plus
+367,Condition,pneumonia,0.9997,bclean_plus
+368,City,winfield,0.9979,bclean_plus
+370,Condition,pneumonia,0.9997,bclean_plus
+371,Stateavg,al_pn-7,0.9985,bclean_plus
+374,Stateavg,al_scip-inf-2,0.9952,bclean_plus
+375,EmergencyService,yes,0.9999,bclean_plus
+376,ZipCode,35594,1.0000,bclean_plus
+381,MeasureName,heart attack patients given aspirin at discharge,0.9987,bclean_plus
+382,PhoneNumber,2514717110,0.9999,bclean_plus
+385,HospitalName,univ of south alabama medical center,0.9467,bclean_plus
+385,PhoneNumber,2514717110,0.9999,bclean_plus
+386,HospitalName,univ of south alabama medical center,0.9876,bclean_plus
+387,State,al,0.9991,bclean_plus
+387,PhoneNumber,2514717110,0.9999,bclean_plus
+387,Condition,heart failure,0.9994,bclean_plus
+388,Stateavg,al_hf-2,0.9986,bclean_plus
+390,EmergencyService,yes,0.9998,bclean_plus
+390,MeasureName,heart failure patients given smoking cessation advice/counseling,0.9987,bclean_plus
+392,MeasureCode,pn-3b,1.0000,bclean_plus
+394,Address1,124 s memorial dr,0.9968,bclean_plus
+394,PhoneNumber,3343614267,1.0000,bclean_plus
+399,MeasureCode,hf-1,0.9982,bclean_plus
+401,Condition,heart failure,0.9995,bclean_plus
+403,State,al,0.9996,bclean_plus
+407,ZipCode,36067,0.9999,bclean_plus
+409,ProviderNumber,10108,1.0000,bclean_plus
+410,MeasureCode,scip-inf-1,1.0000,bclean_plus
+411,EmergencyService,yes,0.9999,bclean_plus
+412,Address1,124 s memorial dr,0.9961,bclean_plus
+416,Address1,315 w hickory st,0.9948,bclean_plus
+416,CountyName,talladega,0.9959,bclean_plus
+419,EmergencyService,no,0.9961,bclean_plus
+421,ZipCode,35150,0.9999,bclean_plus
+429,ZipCode,35150,0.9999,bclean_plus
+432,Address1,315 w hickory st,0.9963,bclean_plus
+435,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.9981,bclean_plus
+438,City,anchorage,0.9957,bclean_plus
+448,MeasureName,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),0.9979,bclean_plus
+449,HospitalName,alaska regional hospital,0.9959,bclean_plus
+450,HospitalOwner,proprietary,0.9988,bclean_plus
+452,Address1,po box 287,0.9918,bclean_plus
+457,CountyName,jefferson,0.9986,bclean_plus
+457,HospitalOwner,government - hospital district or authority,0.9994,bclean_plus
+458,CountyName,jefferson,0.9988,bclean_plus
+465,MeasureCode,scip-vte-1,0.9981,bclean_plus
+466,CountyName,jefferson,0.9986,bclean_plus
+468,Condition,heart attack,0.9996,bclean_plus
+472,PhoneNumber,3347742601,1.0000,bclean_plus
+473,Address1,126 hospital ave,0.9981,bclean_plus
+474,MeasureName,heart failure patients given discharge instructions,0.9985,bclean_plus
+475,City,ozark,0.9977,bclean_plus
+484,State,al,0.9995,bclean_plus
+485,Address1,126 hospital ave,0.9976,bclean_plus
+486,City,ozark,0.9977,bclean_plus
+491,ZipCode,36360,1.0000,bclean_plus
+493,EmergencyService,yes,0.9999,bclean_plus
+494,HospitalOwner,voluntary non-profit - private,0.9995,bclean_plus
+494,MeasureName,heart attack patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.9987,bclean_plus
+496,MeasureCode,ami-5,1.0000,bclean_plus
+500,ZipCode,35960,1.0000,bclean_plus
+503,CountyName,cherokee,0.9919,bclean_plus
+505,State,al,0.9995,bclean_plus
+507,Condition,pneumonia,0.9997,bclean_plus
+508,MeasureName,pneumonia patients assessed and given influenza vaccination,0.9986,bclean_plus
+514,CountyName,cherokee,0.9919,bclean_plus
+517,PhoneNumber,3342882100,1.0000,bclean_plus
+518,City,montgomery,0.9983,bclean_plus
+522,EmergencyService,yes,0.9999,bclean_plus
+527,HospitalOwner,voluntary non-profit - church,0.9987,bclean_plus
+528,CountyName,montgomery,0.9978,bclean_plus
+533,HospitalName,baptist medical center south,0.9976,bclean_plus
+533,MeasureName,pneumonia patients assessed and given influenza vaccination,0.9986,bclean_plus
+537,EmergencyService,yes,0.9999,bclean_plus
+541,CountyName,montgomery,0.9981,bclean_plus
+542,MeasureName,heart attack patients given aspirin at arrival,0.9983,bclean_plus
+545,ZipCode,36106,1.0000,bclean_plus
+546,MeasureName,heart attack patients given beta blocker at discharge,0.9988,bclean_plus
+549,PhoneNumber,3342938000,1.0000,bclean_plus
+552,CountyName,montgomery,0.9978,bclean_plus
+556,Condition,pneumonia,0.9997,bclean_plus
+556,Stateavg,al_pn-5c,0.9985,bclean_plus
+560,ProviderNumber,10024,1.0000,bclean_plus
+560,State,al,0.9996,bclean_plus
+561,HospitalName,jackson hospital & clinic inc,0.9975,bclean_plus
+562,PhoneNumber,3342938000,1.0000,bclean_plus
+563,PhoneNumber,3342938000,1.0000,bclean_plus
+563,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.9984,bclean_plus
+565,EmergencyService,yes,0.9999,bclean_plus
+565,Stateavg,al_scip-vte-1,0.9983,bclean_plus
+568,Stateavg,al_ami-2,0.9985,bclean_plus
+573,State,al,0.9995,bclean_plus
+573,PhoneNumber,3347561400,1.0000,bclean_plus
+573,HospitalOwner,voluntary non-profit - other,0.9998,bclean_plus
+580,EmergencyService,yes,0.9999,bclean_plus
+581,MeasureCode,pn-5c,0.9983,bclean_plus
+588,EmergencyService,yes,0.9999,bclean_plus
+593,State,al,0.9996,bclean_plus
+594,PhoneNumber,3348972257,1.0000,bclean_plus
+600,Condition,heart failure,0.9995,bclean_plus
+602,City,elba,0.9978,bclean_plus
+603,CountyName,coffee,0.9983,bclean_plus
+609,ProviderNumber,10027,1.0000,bclean_plus
+609,Condition,surgical infection prevention,0.9993,bclean_plus
+613,MeasureName,all heart surgery patients whose blood sugar (blood glucose) is kept under good control in the days right after surgery,0.9983,bclean_plus
+623,Stateavg,al_ami-8a,0.9985,bclean_plus
+628,ProviderNumber,10029,1.0000,bclean_plus
+629,EmergencyService,yes,0.9999,bclean_plus
+632,Condition,pneumonia,0.9997,bclean_plus
+634,CountyName,lee,0.9978,bclean_plus
+640,ProviderNumber,10029,1.0000,bclean_plus
+640,MeasureCode,scip-vte-1,0.9982,bclean_plus
+646,ProviderNumber,10032,1.0000,bclean_plus
+647,Stateavg,al_ami-7a,0.9982,bclean_plus
+649,MeasureCode,hf-1,0.9992,bclean_plus
+651,MeasureName,heart failure patients given ace inhibitor or arb for left ventricular systolic dysfunction (lvsd),0.9985,bclean_plus
+652,MeasureName,heart failure patients given smoking cessation advice/counseling,0.9985,bclean_plus
+653,Address1,209 north main street,0.9977,bclean_plus
+654,EmergencyService,no,0.9972,bclean_plus
+656,ProviderNumber,10032,1.0000,bclean_plus
+667,PhoneNumber,2059344011,1.0000,bclean_plus
+673,CountyName,jefferson,0.9996,bclean_plus
+673,MeasureName,heart attack patients given pci within 90 minutes of arrival,0.9988,bclean_plus
+674,MeasureCode,hf-1,0.9981,bclean_plus
+675,EmergencyService,yes,0.9999,bclean_plus
+677,MeasureCode,hf-4,1.0000,bclean_plus
+679,Stateavg,al_pn-3b,0.9985,bclean_plus
+680,ZipCode,35233,1.0000,bclean_plus
+680,Condition,pneumonia,0.9996,bclean_plus
+686,ZipCode,35233,1.0000,bclean_plus
+690,CountyName,jefferson,0.9996,bclean_plus
+691,City,birmingham,0.9989,bclean_plus
+692,MeasureCode,ami-1,1.0000,bclean_plus
+693,CountyName,elmore,0.9975,bclean_plus
+695,MeasureCode,ami-4,0.9981,bclean_plus
+696,Condition,heart attack,0.9996,bclean_plus
+697,City,tallassee,0.9975,bclean_plus
+698,HospitalName,community hospital inc,0.9974,bclean_plus
+699,CountyName,elmore,0.9975,bclean_plus
+699,Condition,heart failure,0.9994,bclean_plus
+700,PhoneNumber,3342836541,1.0000,bclean_plus
+702,State,al,0.9995,bclean_plus
+705,ProviderNumber,10034,1.0000,bclean_plus
+706,MeasureName,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.9985,bclean_plus
+707,MeasureName,pneumonia patients given the most appropriate initial antibiotic(s),0.9986,bclean_plus
+711,ZipCode,36078,0.5391,bclean_plus
+713,Condition,surgical infection prevention,0.9997,bclean_plus
+714,PhoneNumber,3342836541,1.0000,bclean_plus
+714,MeasureName,surgery patients needing hair removed from the surgical area before surgery who had hair removed using a safer method (electric clippers or hair removal cream c not a razor),0.9984,bclean_plus
+717,Condition,heart attack,0.9996,bclean_plus
+719,MeasureCode,ami-3,0.9983,bclean_plus
+722,ProviderNumber,10035,1.0000,bclean_plus
+722,Stateavg,al_ami-7a,0.9985,bclean_plus
+723,CountyName,cullman,0.9919,bclean_plus
+725,ProviderNumber,10035,1.0000,bclean_plus
+730,MeasureCode,pn-4,0.9950,bclean_plus
+731,HospitalName,cullman regional medical center,0.9972,bclean_plus
+731,CountyName,cullman,0.9919,bclean_plus
+734,Condition,surgical infection prevention,0.9993,bclean_plus
+736,MeasureCode,scip-inf-2,0.9983,bclean_plus
+737,Address1,1912 alabama highway 157,1.0000,bclean_plus
+737,City,cullman,0.9978,bclean_plus
+745,HospitalOwner,proprietary,0.9989,bclean_plus
+750,MeasureCode,hf-2,0.9980,bclean_plus
+751,ZipCode,36420,1.0000,bclean_plus
+752,PhoneNumber,3342228466,1.0000,bclean_plus
+753,CountyName,covington,0.9982,bclean_plus
+756,ProviderNumber,10036,1.0000,bclean_plus
+757,City,andalusia,0.9976,bclean_plus
+759,HospitalName,andalusia regional hospital,0.9973,bclean_plus
+761,Stateavg,al_scip-inf-2,0.9962,bclean_plus
+764,PhoneNumber,3342228466,1.0000,bclean_plus
+765,Stateavg,al_scip-vte-1,0.9372,bclean_plus
+766,HospitalName,andalusia regional hospital,0.9973,bclean_plus
+768,Address1,301 east 18th st,0.9981,bclean_plus
+773,City,anniston,0.9980,bclean_plus
+778,HospitalName,huntsville hospital,0.9981,bclean_plus
+781,ProviderNumber,10039,1.0000,bclean_plus
+781,Condition,heart attack,0.9996,bclean_plus
+785,HospitalOwner,government - hospital district or authority,0.9995,bclean_plus
+786,CountyName,madison,0.9981,bclean_plus
+786,MeasureName,heart failure patients given an evaluation of left ventricular systolic (lvs) function,0.9988,bclean_plus
+788,Stateavg,al_hf-4,0.9985,bclean_plus
+789,MeasureCode,pn-2,1.0000,bclean_plus
+790,ProviderNumber,10039,1.0000,bclean_plus
+792,State,al,0.9990,bclean_plus
+794,ProviderNumber,10039,1.0000,bclean_plus
+797,Stateavg,al_scip-inf-2,0.9963,bclean_plus
+798,EmergencyService,yes,0.9999,bclean_plus
+799,CountyName,madison,0.9981,bclean_plus
+803,MeasureName,heart attack patients given aspirin at arrival,0.9983,bclean_plus
+810,EmergencyService,yes,0.9999,bclean_plus
+816,ZipCode,35903,1.0000,bclean_plus
+817,MeasureName,pneumonia patients given initial antibiotic(s) within 6 hours after arrival,0.9986,bclean_plus
+822,City,gadsden,0.9987,bclean_plus
+825,PhoneNumber,2564944000,1.0000,bclean_plus
+828,Stateavg,al_ami-1,0.9981,bclean_plus
+843,MeasureCode,pn-6,1.0000,bclean_plus
+843,Stateavg,al_pn-6,0.9992,bclean_plus
+847,HospitalOwner,voluntary non-profit - private,0.9994,bclean_plus
+850,Address1,1010 lay dam road,0.9979,bclean_plus
+852,Condition,surgical infection prevention,0.9998,bclean_plus
+856,City,hamilton,0.9977,bclean_plus
+856,PhoneNumber,2059216200,1.0000,bclean_plus
+858,Address1,1256 military street south,0.9978,bclean_plus
+860,ProviderNumber,10044,1.0000,bclean_plus
+866,MeasureCode,pn-4,0.9951,bclean_plus
+866,PhoneNumber,2059216200,1.0000,bclean_plus
+867,EmergencyService,yes,0.9999,bclean_plus
+869,HospitalOwner,voluntary non-profit - private,0.9994,bclean_plus
+870,Condition,surgical infection prevention,0.9993,bclean_plus
+873,HospitalOwner,voluntary non-profit - private,0.9993,bclean_plus
+879,ProviderNumber,10045,1.0000,bclean_plus
+882,PhoneNumber,2059325966,1.0000,bclean_plus
+884,PhoneNumber,2059325966,1.0000,bclean_plus
+885,State,al,0.9990,bclean_plus
+887,State,al,0.9990,bclean_plus
+889,ProviderNumber,10045,1.0000,bclean_plus
+890,EmergencyService,yes,0.9999,bclean_plus
+894,MeasureName,pneumonia patients assessed and given influenza vaccination,0.9986,bclean_plus
+903,MeasureName,children who received reliever medication while hospitalized for asthma,0.5430,bclean_plus
+904,HospitalName,riverview regional medical center,0.9979,bclean_plus
+916,Address1,600 south third street,0.9981,bclean_plus
+916,MeasureName,heart failure patients given smoking cessation advice/counseling,0.9987,bclean_plus
+917,PhoneNumber,2565435200,1.0000,bclean_plus
+918,CountyName,etowah,0.9994,bclean_plus
+920,EmergencyService,yes,0.9999,bclean_plus
+921,Stateavg,al_pn-6,0.9985,bclean_plus
+922,EmergencyService,yes,0.8547,bclean_plus
+923,State,al,0.9996,bclean_plus
+923,HospitalName,riverview regional medical center,0.9981,bclean_plus
+924,ZipCode,35901,1.0000,bclean_plus
+931,MeasureCode,ami-1,1.0000,bclean_plus
+934,ProviderNumber,10047,1.0000,bclean_plus
+935,Address1,515 miranda st,0.9973,bclean_plus
+936,Address1,515 miranda st,0.9973,bclean_plus
+939,HospitalName,georgiana hospital,0.9976,bclean_plus
+944,CountyName,butler,0.9977,bclean_plus
+946,Address1,515 miranda st,0.9973,bclean_plus
+950,City,georgiana,0.9977,bclean_plus
+956,ProviderNumber,10049,1.0000,bclean_plus
+956,Condition,heart attack,0.9996,bclean_plus
+957,Address1,400 n edwards street,0.5937,bclean_plus
+961,City,enterprise,0.9974,bclean_plus
+963,HospitalName,medical center enterprise,0.9976,bclean_plus
+967,CountyName,coffee,0.9982,bclean_plus
+969,City,enterprise,0.9974,bclean_plus
+975,Condition,surgical infection prevention,0.9998,bclean_plus
+986,City,oneonta,0.9966,bclean_plus
+987,Address1,150 gilbreath drive,0.9964,bclean_plus
+988,HospitalName,st vincents blount,0.9966,bclean_plus
+998,MeasureName,surgery patients who were taking heart drugs called beta blockers before coming to the hospital who were kept on the beta blockers during the period just before and after their surgery,0.9986,bclean_plus

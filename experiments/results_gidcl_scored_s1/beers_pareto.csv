@@ -1,0 +1,13 @@
+dataset,baseline,strata,alpha,scoring,human_cost,realized_error,repair_f1,err_hi,covered,on_pareto_front,backend
+beers,CARE,marginal,0.05,errors,0.0,0.01601193436101441,0.9839880656389856,0.01685728493286922,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,CARE,mondrian,0.05,errors,0.2816691505216095,0.0008990318118948792,0.8353281295172016,0.0013139695712309774,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,ApplyAll,-,0.05,errors,0.0,0.01601193436101441,0.9839880656389856,0.01685728493286922,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,EscalateAll,-,0.05,errors,1.0,0.0,0.0,0.0,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,CARE,marginal,0.1,errors,0.0,0.01601193436101441,0.9839880656389856,0.01685728493286922,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,CARE,mondrian,0.1,errors,0.26115250869349227,0.002873985255089628,0.8458378878670805,0.00689304843470181,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,ApplyAll,-,0.1,errors,0.0,0.01601193436101441,0.9839880656389856,0.01685728493286922,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,EscalateAll,-,0.1,errors,1.0,0.0,0.0,0.0,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,CARE,marginal,0.2,errors,0.0,0.01601193436101441,0.9839880656389856,0.01685728493286922,True,False,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,CARE,mondrian,0.2,errors,0.0,0.015896671634376545,0.9841033283656234,0.016890213611525085,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,ApplyAll,-,0.2,errors,0.0,0.01601193436101441,0.9839880656389856,0.01685728493286922,True,False,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv
+beers,EscalateAll,-,0.2,errors,1.0,0.0,0.0,0.0,True,True,gidcl_scored_s1:csvs/gidcl_scored_s1_beers_mapped.csv

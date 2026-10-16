@@ -1,27 +1,11 @@
-"""audit_heldout_budget.py -- does the finite-sample correction earn its cost?
+"""Violations and automation of CARE and an empirical-threshold rule per label budget.
 
-The first question about CARE is why the Clopper-Pearson bound and the Bonferroni
-correction are needed at all: the calibration set already reports an error
-rate, so why not take the most permissive threshold whose OBSERVED error is at or
-below alpha? `audit_recalibration.py` answers that at the natural calibration size and
-the answer there is uncomfortable -- the naive rule never exceeds the budget and
-automates more than CARE does.
-
-That comparison is run in the wrong regime, and this script says so with data. The
-bound is a finite-sample correction; where n is large it converges to the empirical
-rate and costs automation for nothing. It earns its keep only where a stratum holds
-few labelled cells, which Section 7.3 identifies as the operating point that decides
-certifiability in the first place. So the honest experiment sweeps the label budget
-and asks where the two rules separate.
+The held-out rule picks per-stratum thresholds whose observed calibration error is
+<= alpha, without the Clopper-Pearson bound. Both rules are evaluated over `seeds`
+random splits at each calibration size.
 
     python audit_heldout_budget.py
     -> experiments/heldout_budget.csv
-
-Reported per (proposer, dataset, budget): how often each rule's realised error on the
-cells it auto-applied exceeded alpha, over `seeds` random splits, and how much it
-automated. A valid rule may exceed the budget at most a delta fraction of the time;
-nothing constrains the naive one. Read the violation columns together with the
-automation columns -- a rule that certifies nothing trivially never violates.
 """
 
 from __future__ import annotations
@@ -37,18 +21,13 @@ import sys
 CONFIGS = [
     ("Baran", "beers", "csvs/baran_beers_mapped.csv"),
     ("BClean", "flights", "csvs/bclean_flights_mapped.csv"),
-    ("Jellyfish", "beers", "csvs/jellyfish_beers_mapped.csv"),
+    ("BClean+", "beers", "csvs/bclean_plus_beers_mapped.csv"),
 ]
 BUDGETS = [25, 50, 100, 200, 400, 800]
 
 
 def heldout_thresholds(scores, oks, strata, *, alpha, grid):
-    """Per-stratum thresholds selected on EMPIRICAL calibration error.
-
-    CARE's own procedure with the bound removed: same fixed grid, same per-stratum
-    search, same smallest-threshold-wins rule. A stratum is accepted when its observed
-    error is at or below alpha rather than when a 1-delta upper bound is.
-    """
+    """Smallest grid threshold per stratum with empirical calibration error <= alpha."""
     by = {}
     for s, ok, st in zip(scores, oks, strata):
         by.setdefault(st, []).append((s, ok))
@@ -81,7 +60,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--alpha", type=float, default=0.1)
     ap.add_argument("--delta", type=float, default=0.1)
-    ap.add_argument("--seeds", type=int, default=20)
+    ap.add_argument("--seeds", type=int, default=50)
     ap.add_argument("--budgets", nargs="*", type=int, default=BUDGETS)
     ap.add_argument("--only", nargs="*", default=None)
     ap.add_argument("--out", default="experiments/heldout_budget.csv")
@@ -99,7 +78,7 @@ def main() -> int:
             continue
         print(f"\n===== {tag} / {ds} =====", flush=True)
         art, defects, repairs, _ = load_and_propose(
-            ds, f"{tag.lower()}:{log}", detection="oracle", fast_verify=True)
+            ds, f"{tag.lower().replace('+', '_plus')}:{log}", detection="oracle", fast_verify=True)
         gold = {k: (str(v).lower().strip() if v is not None else v)
                 for k, v in defects.gold.items()}
         counts = _c.Counter(_CK.parse(r).col for r in gold)

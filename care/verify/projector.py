@@ -1,15 +1,7 @@
-"""care.verify.projector -- the projection primitives onto the feasible set F_H.
+"""Projection primitives onto the hard-feasible set F_H.
 
-The verifier is a *projector*, not a scorer (invariant I2): a repair is admitted
-only if applying it does not push the artifact further outside F_H. Concretely,
-a candidate is feasible iff applying it introduces **no new** hard-constraint
-violation ``(cid, ref)`` relative to the working artifact. This is the correct
-incremental notion of "projected onto F_H" when D0 itself starts infeasible: a
-feasible repair may *remove* violations (move toward F_H) but never *add* one.
-
-This module holds the pure primitives -- ``apply_repair``, the hard-violation
-set, the soft-objective gain, the tau-weighted edit cost, and the boundary
-margin -- used by the Verifier facade.
+A candidate is feasible iff applying it introduces no new hard violation
+``(cid, ref)`` relative to the current artifact; it may remove violations.
 """
 
 from __future__ import annotations
@@ -38,19 +30,15 @@ def _params(reg: ConstraintRegistry, cid: str, options: Options) -> Params:
 def apply_repair(art: DataArtifact, repair: RepairCandidate) -> DataArtifact:
     """Return a deep copy of ``art`` with ``repair`` applied.
 
-    A ``MetadataTriple`` proposed_value is appended to M; otherwise the
-    proposed_value is written to the cell named by ``target_ref`` (creating the
-    cell if it does not yet exist). Refs that are neither a valid cell key nor a
-    metadata repair are a no-op (defensive against garbage candidates).
+    A ``MetadataTriple`` is appended to M; otherwise the value is written to the
+    cell ``target_ref`` (created if missing). Other refs are a no-op.
     """
     new = art.model_copy(deep=True)
     value = repair.proposed_value
 
     if isinstance(value, MetadataTriple):
         new.add_metadata(value)
-        # Record the edit's provenance so the new triple is itself traceable
-        # (audit trail of changes). The triple's source_id is the
-        # trusted evidence that justified it (I4).
+        # record provenance so the new triple is itself traceable
         if value.source_id:
             new.add_event(
                 ProvenanceEvent(
@@ -115,12 +103,9 @@ def soft_objective_gain(
 def edit_cost(
     repair: RepairCandidate, art: DataArtifact, default_trust: float = 1.0
 ) -> float:
-    """tau-weighted edit cost for the anti-fabrication penalty Delta (I4).
+    """Trust-weighted edit cost ``1 + (1 - tau)``, tau = mean evidence trust.
 
-    One edit, penalised by how *untrusted* its supporting sources are: cost
-    ``1 + (1 - tau)``. With no cited evidence (e.g. an in-table rule-based
-    repair) tau falls back to ``default_trust``. Low-trust sources are thus
-    penalised more, and the escalation router prefers them for human review.
+    Without known evidence, tau is ``default_trust``.
     """
     if repair.evidence:
         trusts = [
@@ -137,8 +122,7 @@ def edit_cost(
 def hard_satisfied_fraction(
     art: DataArtifact, reg: ConstraintRegistry, options: Options | None = None
 ) -> float:
-    """Fraction of hard constraints satisfied after the repair -- the
-    boundary-margin proxy the verifier writes into ``s_margin``."""
+    """Fraction of hard constraints satisfied (used as ``s_margin``)."""
     options = options or {}
     hards = reg.hard()
     if not hards:

@@ -1,26 +1,11 @@
-"""audit_baran_median.py -- Baran's Table 1 row, as a median over draws.
+"""Baran's proposer statistics and CARE automation as a median over draws.
 
-Baran selects its labelled tuples by unseeded active learning, so a single run is one
-draw from a distribution, not a measurement. That matters here beyond tidiness: the
-log shipped in `csvs/` reports A(0.2)=0.86 on hospital, the MAXIMUM of six independent
-draws whose median is 0.58, and 0.77 on rayyan against a median of 0.69; on tax the
-shipped log is the LEAST accurate draw (0.732 against a median of 0.914). Reporting a
-single draw is not wrong, but anyone re-running the cleaner will rarely reproduce it.
-
-So Table 1's Baran rows report the MEDIAN over every draw available -- the shipped log
-plus the five in `csvs/baran_var_*/` -- for every column of the table, not only for
-automation. Reporting a median automation beside a single draw's accuracy would mix
-two different runs in one row.
-
-The median rather than the mean: the marginal control column is bimodal (a proposer
-emitting constant confidence certifies all or none), and a mean between two modes
-describes no run that happened.
+Baran samples its labelled tuples without a seed, so each statistic is the median
+(with min and max) over the shipped log and the draws in csvs/baran_var_*/.
+flights is omitted: every draw is exactly correct there.
 
     python audit_baran_median.py
     -> experiments/baran_median.csv
-
-flights is absent by design: Baran is exactly correct there, every draw certifies
-everything, and the pair is excluded from the paper's claims as degenerate.
 """
 
 from __future__ import annotations
@@ -51,7 +36,7 @@ def _norm(v):
 
 
 def proposer_stats(ds, log, gold):
-    """n on error cells, accuracy, pi_0 -- the three proposer columns of Table 1."""
+    """(n on error cells, accuracy, pi_0) of one log."""
     per, ok = collections.Counter(), collections.Counter()
     n = 0
     with open(log, newline="", encoding="utf-8", errors="replace") as fh:

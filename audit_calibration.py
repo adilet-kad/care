@@ -1,33 +1,8 @@
-"""audit_calibration.py -- is a proposer's self-reported confidence a probability?
+"""Calibration of each cleaner's confidence: mean confidence against accuracy, per log.
 
-This is the empirical premise of the whole paper. If a cleaner's confidence score
-were calibrated -- if the cells it marks 0.9 were right 90% of the time -- then
-governing auto-application would need no machinery at all: threshold at 1-alpha and
-you are done. Conformal control earns its place only to the extent that these
-scores are NOT probabilities.
-
-So the question is worth measuring rather than asserting. For every proposer x
-dataset log carrying a confidence column, this script bins the score, compares each
-bin's mean confidence against the fraction actually correct, and reports:
-
-    gap  mean(confidence) - accuracy, pooled. Positive = overconfident.
-    ECE  expected calibration error, sum_b (n_b/N) * |acc_b - conf_b|. This is the
-         honest headline: a proposer can have gap ~ 0 while being badly calibrated
-         in both directions, and ECE catches that where the pooled gap cancels.
-
-Two measurement choices that change the answer, both deliberate:
-
-*Correctness is judged against the full truth map*, not just the gold error set: a
-proposal on an already-clean cell is correct if it preserves the value and wrong if
-it changes it. Scoring only true error cells would ignore the majority of what a
-full-table LLM sweep does, and those are exactly the cells it is most confident and
-most wrong about.
-
-*Equal-width bins, not equal-mass.* These signals are coarse -- self-consistency
-over 5 samples takes 6 values, and most mass sits at the maximum -- so equal-mass
-bins would split one spike across several bins and manufacture a curve out of
-nothing. Bins holding fewer than `--min-bin` records are reported but excluded from
-ECE, since a bin of 3 cells estimates nothing.
+Reports the pooled gap (mean confidence - accuracy) and ECE over equal-width bins;
+bins with fewer than min_bin records are excluded from ECE. A proposal is correct if
+it matches the gold value, or, on a clean cell, if it preserves the current value.
 
     python audit_calibration.py
     -> experiments/calibration.csv, experiments/calibration_bins.csv
@@ -37,24 +12,27 @@ from __future__ import annotations
 
 import csv
 import glob
+import re
 import os
 import sys
 
 OUT = "experiments"
 DATASETS = ("hospital", "beers", "flights", "rayyan", "tax")
 
-# file prefix -> the name used in the paper's figures
+# file prefix -> display name
 PROPOSER = {
     "baran_raha": "Baran (Raha)",
     "baran": "Baran",
     "bclean_keep": "BClean (+keep)",
+    "bclean_plus": "BClean+",
     "bclean": "BClean",
-    "gpt4o": "GPT-4o-mini",
+    "gidcl_scored": "GIDCL",          # GIDCL's own repair-selection score (seed 0)
     "holoclean_keep": "HoloClean (+keep)",
+    "zeroec": "ZeroEC",               # seed-agreement confidence over three runs
     "holoclean": "HoloClean",
-    "jellyfish": "Jellyfish",
-    "retclean": "RetClean",
 }
+# skip GIDCL's retrained-detector seed variants
+_SEED_VARIANT = re.compile(r"_s\d+_")
 
 
 def _proposer_of(stem):
@@ -72,17 +50,13 @@ def _dataset_of(stem):
 
 
 def records(path, ds, gold, cur, colmap):
-    """(confidence, correct) for every non-abstaining proposal we can score."""
+    """(confidence, correct) for every non-empty proposal that can be scored."""
     out = []
-    # errors="replace", as every other log reader here: an exporter that writes one
-    # Latin-1 byte (HoloClean did, on beers' "kolsch") must not abort the audit. The
-    # right fix is at the source, in the exporter, but a reader that
-    # crashes on a byte is worse than one that flags it.
     with open(path, newline="", encoding="utf-8", errors="replace") as fh:
         for r in csv.DictReader(fh):
             v = (r.get("value") or "").strip().lower()
             if not v:
-                continue                      # abstention: no claim, nothing to score
+                continue                      # empty value: nothing to score
             ref = f"{r['row_id']}::{colmap.get(r['column'], r['column'])}"
             if ref in gold:
                 ok = v == str(gold[ref]).lower().strip()
@@ -142,7 +116,11 @@ def main():
     rows, binrows = [], []
     for path in sorted(glob.glob("csvs/*_pred.csv")):
         stem = os.path.basename(path)[:-len("_pred.csv")]
-        if "_ni_" in stem:                       # Ni et al. sweep variants: own gold, own audit
+        if "_ni_" in stem:                       # Ni et al. variants have their own gold
+            continue
+        if _SEED_VARIANT.search(stem):
+            continue
+        if stem == "gidcl_scored_flights":   # retrained detector has F1 0 here
             continue
         prop, ds = _proposer_of(stem), _dataset_of(stem)
         if not prop or not ds:

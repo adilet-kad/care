@@ -1,14 +1,4 @@
-"""care.verify.verifier -- the Verifier facade.
-
-``project`` is the hard guarantee (I2): each candidate is assessed and only
-those that keep the artifact in F_H (introduce no new hard violation) are
-returned; H-violating proposals are dropped. The per-candidate verdict is
-exposed via ``assess`` so the property-based I2 test can inspect both accepted
-and rejected proposals.
-
-``s_margin`` (boundary distance) is filled here; ``s_hat`` stays ``None`` until
-the conformal controller combines the confidence components.
-"""
+"""Verifier: keeps only candidates that introduce no new hard violation."""
 
 from __future__ import annotations
 
@@ -44,7 +34,7 @@ class Verifier:
         options: Options | None = None,
         before: set[tuple[str, str]] | None = None,
     ) -> VerifiedRepair:
-        """Assess one candidate: feasibility (I2), delta_objective (I3), margin."""
+        """Assess one candidate: feasibility, delta_objective and margin."""
         options = options or {}
         if before is None:
             before = hard_violation_set(art, reg, options)
@@ -60,7 +50,7 @@ class Verifier:
             proposed_value=cand.proposed_value,
             rationale=cand.rationale,
             evidence=list(cand.evidence),
-            s_llm=cand.s_llm,
+            s_conf=cand.s_conf,
             s_agree=cand.s_agree,
             s_consistency=cand.s_consistency,
             s_margin=margin,
@@ -78,14 +68,11 @@ class Verifier:
         options: Options | None = None,
         before: set[tuple[str, str]] | None = None,
     ) -> list[VerifiedRepair]:
-        """Assess all candidates and drop the H-violating ones (return feasible).
+        """Return the feasible candidates.
 
-        ``before`` is the artifact's current hard-violation set. Computing it scans
-        EVERY cell, and it is INVARIANT while proposing (invariant I1: the proposer
-        never writes to the artifact), so callers that assess many candidates against
-        the same artifact should compute it once and pass it in. Leaving it to be
-        recomputed per call is O(cells) per candidate -- on tax (121K candidate cells
-        x 3M cells) that measured ~25 s/cell, i.e. months. See bench.study.propose_repairs.
+        ``before`` is the artifact's current hard-violation set. It does not change
+        while candidates are assessed (I1), so pass it in to avoid a full scan per
+        candidate.
         """
         options = options or {}
         if before is None:

@@ -1,10 +1,4 @@
-"""Unit tests for the Auditor.
-
-The Auditor is assessment-only: it runs the registry over an artifact and emits
-(AuditReport, V). These tests lock down the soft-measure scores, the hard-violation
-list, the work-queue construction (V = hard u soft-below-target), the
-satisfied-fraction headline, and the per-cid options passthrough.
-"""
+"""Unit tests for the Auditor: soft scores, hard violations, work queue and per-cid options."""
 
 from __future__ import annotations
 
@@ -37,8 +31,7 @@ def _load_constraints():
 
 
 def _dirty_artifact() -> DataArtifact:
-    """A toy artifact with a missing required cell, an unhashed source, a traced
-    cell, an untraced cell, and a license triple (so r11 passes)."""
+    """Toy artifact: a missing required cell, an unhashed source, traced and untraced cells, a license triple."""
     art = DataArtifact(artifact_id="toy")
     art.set_cell(Cell(row_id="r1", col="age", value=None, is_required=True))
     art.set_cell(Cell(row_id="r2", col="age", value=42, is_required=True))
@@ -110,8 +103,7 @@ def test_soft_measure_meeting_target_is_not_queued():
 
 def test_satisfied_fraction_matches_the_fraction_of_predicates_that_hold():
     art = _dirty_artifact()
-    # 3 hard gates: floor (fails, r1::age null), integrity (fails, s1 unhashed),
-    # usage terms (passes, the fixture declares a license triple).
+    # hard gates: floor fails (r1::age null), integrity fails (s1 unhashed), license passes
     reg = _reg({
         "dq.completeness.floor",
         "dq.source.integrity",

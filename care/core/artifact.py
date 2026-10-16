@@ -1,12 +1,8 @@
-"""care.core.artifact -- the data-artifact contract D = (X, M, G).
+"""Data artifact D = (X, M, G).
 
-    D = (X, M, G)
-        X  cells          relational values, keyed by "{row_id}::{col}"
-        M  metadata       provenance-linked (subject, predicate, object) triples
-        G  provenance     sources with trust priors, and edit-lineage events
-
-These are *contracts*: field names and types are the interface every other
-module plugs into. The model is in-memory and storage-agnostic.
+    X  cells        relational values keyed by "{row_id}::{col}"
+    M  metadata     provenance-linked (subject, predicate, object) triples
+    G  provenance   sources with trust priors and edit-lineage events
 """
 
 from __future__ import annotations
@@ -40,13 +36,7 @@ ProvenanceEventType = Literal[
 
 @dataclass(frozen=True, slots=True)
 class CellKey:
-    """Identity of a single cell in X.
-
-    Canonical string form is ``"{row_id}::{col}"``. ``DataArtifact.cells`` is
-    keyed by this canonical string (JSON-native), while ``CellKey`` is the
-    typed value object used at the API boundary. Neither component may contain
-    the reserved separator.
-    """
+    """Identity of a cell in X; canonical string form ``"{row_id}::{col}"``."""
 
     row_id: str
     col: str
@@ -64,7 +54,7 @@ class CellKey:
 
     @property
     def key(self) -> str:
-        """The canonical string form (used as the dict key in DataArtifact)."""
+        """Canonical string form, used as the key in ``DataArtifact.cells``."""
         return str(self)
 
     @classmethod
@@ -80,11 +70,7 @@ class CellKey:
 # --------------------------------------------------------------------------- #
 
 class Source(BaseModel):
-    """A provenance source ``s`` with an optional integrity hash and a trust
-    prior ``tau(s)``. ``trust_prior`` drives the tau-aware escalation gate and
-    the edit-cost penalty, so low-trust edits are penalized and preferentially
-    escalated (I4).
-    """
+    """A provenance source with an optional content digest and a trust prior tau(s)."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -105,9 +91,7 @@ class Source(BaseModel):
 
 
 class ProvenanceEvent(BaseModel):
-    """A provenance event over a cell or metadata triple. The presence of any
-    event for a ref is what the traceability predicate checks.
-    """
+    """A provenance event over a cell or metadata triple."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -120,10 +104,7 @@ class ProvenanceEvent(BaseModel):
 
 
 class ProvenanceGraph(BaseModel):
-    """G -- the provenance graph: sources keyed by id plus an event list.
-
-    ``edges_for`` is the traceability hot path (an in-memory scan).
-    """
+    """Provenance graph G: sources keyed by id plus an event list."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -137,7 +118,7 @@ class ProvenanceGraph(BaseModel):
         self.events.append(event)
 
     def edges_for(self, ref: str) -> list[ProvenanceEvent]:
-        """All provenance events touching ``ref`` (the traceability check)."""
+        """All provenance events touching ``ref``."""
         return [e for e in self.events if e.target_ref == ref]
 
 
@@ -146,10 +127,7 @@ class ProvenanceGraph(BaseModel):
 # --------------------------------------------------------------------------- #
 
 class MetadataTriple(BaseModel):
-    """A metadata triple in M. Every triple is provenance-linked via
-    ``source_id``, so a metadata repair is traceable to the source that
-    justified it.
-    """
+    """A metadata triple in M, linked to its source via ``source_id``."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -160,7 +138,7 @@ class MetadataTriple(BaseModel):
 
     @property
     def triple_id(self) -> str:
-        """Stable reference used as a provenance ``target_ref``."""
+        """Reference used as a provenance ``target_ref``."""
         return f"{self.subject}|{self.predicate}|{self.object}"
 
 
@@ -169,9 +147,7 @@ class MetadataTriple(BaseModel):
 # --------------------------------------------------------------------------- #
 
 class Cell(BaseModel):
-    """An element of X -- a single (row, col) value with dtype, requiredness,
-    and provenance refs. ``is_required`` drives the Completeness hard floor.
-    """
+    """A single (row, col) value in X with dtype, requiredness and provenance refs."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -192,11 +168,7 @@ class Cell(BaseModel):
 # --------------------------------------------------------------------------- #
 
 class DQRequirements(BaseModel):
-    """The enabled predicate set for a run: which constraints are in scope
-    (``enabled``), each soft constraint's weight ``w_i``, and each constraint's
-    target ``theta_i``. ``ConstraintRegistry.from_requirements`` assembles the
-    active registry from it.
-    """
+    """Enabled constraint ids with their weights ``w_i`` and targets ``theta_i``."""
 
     model_config = ConfigDict(extra="forbid")
 
@@ -216,12 +188,7 @@ class DQRequirements(BaseModel):
 # --------------------------------------------------------------------------- #
 
 class DataArtifact(BaseModel):
-    """The full data artifact D = (X, M, G) with its DQ requirements.
-
-    Cells are stored in a dict keyed by the canonical ``CellKey`` string so the
-    artifact serializes natively to JSON. The typed-key API (``set_cell`` /
-    ``get_cell`` / ``cell`` / ``cell_keys``) hides that representation.
-    """
+    """Data artifact D = (X, M, G) with its DQ requirements; cells keyed by ``CellKey.key``."""
 
     model_config = ConfigDict(extra="forbid")
 

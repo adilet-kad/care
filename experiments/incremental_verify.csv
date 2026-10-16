@@ -1,0 +1,3 @@
+dataset,cells,fds,dependent_cols,candidates,existing_violations,rejected,undecided,build_s,incremental_total_s,incremental_us_per_cand,exact_compared,mismatches,exact_s_per_cand,exact_projected_h
+tax,3000000,2,3,121193,164924,31253,0,4.365,1.554,12.82,60,0,38.3861,1292.257
+hospital,19000,6,11,499,6921,82,0,0.028,0.004,8.68,499,0,0.0911,0.013

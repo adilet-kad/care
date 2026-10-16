@@ -1,36 +1,13 @@
-"""export_detection.py -- run REAL Raha error detection and export a CARE-ready
-detected-cells log, for the non-oracle-detection experiment (Table 3).
+"""Run Raha error detection and export the detected cells for CARE.
 
-Deliberate architectural choice (same as the Baran correction integration):
-Raha runs natively in ITS OWN repo/environment here, and we export a plain CSV
-log that CARE reads through `bench.study.detect(..., mode="log:<path>")`. CARE
-never imports raha's code -- this keeps the "governs any proposer/detector with
-zero coupling" claim literal in the codebase.
+Uses raha.detection.Detection().run() (not the gold diff) and writes row_id,column
+pairs, read in CARE with --detection log:<path>. Prints precision/recall/F1 against
+clean.csv. Run from the raha repository root, in raha's environment:
 
-What this produces is genuinely different from the oracle detection already used
-everywhere else in CARE: raha.detection.Detection().run() runs Raha's real
-ensemble of error-detection strategies (outlier detection, pattern violation,
-rule violation, knowledge-base violation) plus its active-learning classifier --
-NOT the ground-truth diff. (Careful: raha/correction.py's own __main__ example
-uses `data.detected_cells = dict(data.get_actual_errors_dictionary())`, which
-IS the oracle diff -- that is fine for generating Baran's corrections (CARE's
-headline results are explicitly oracle-detection), but it is NOT what we want
-here. This script calls raha.detection.Detection().run() directly, which is the
-real, non-oracle detector.)
+    python export_detection.py hospital beers rayyan flights
+    python export_detection.py tax --algorithms PVD RVD      # OD/KBVD are slow on tax
 
-Usage (run from the raha repo root, in raha's own venv):
-    python export_detection.py hospital
-    python export_detection.py beers rayyan flights          # several datasets
-    python export_detection.py tax --algorithms PVD RVD      # tax is 200K rows;
-                                                               # OD/KBVD are slow
-                                                               # at that scale --
-                                                               # start without them
-
-Output:
-    ../CARE/csvs/raha_<dataset>_detected.csv   (row_id,column -- no value; this
-                                                 is a WORK QUEUE, not a proposer)
-and a precision/recall/F1 printout against the dataset's own clean.csv, so you
-know the detection quality before it ever reaches CARE.
+Output: ../CARE/csvs/raha_<dataset>_detected.csv
 """
 
 from __future__ import annotations
@@ -43,12 +20,7 @@ import sys
 import raha.dataset
 import raha.detection
 
-# ---------------------------------------------------------------------------
-# Column remap: raha's raw dataframe column name -> CARE's CSV header name.
-# MUST stay in sync with CARE's prepare_log.py::COL_MAPS -- same underlying
-# raha.dataset.Dataset column ordering feeds both the correction and detection
-# exports, so a column that needed remapping for Baran needs it here too.
-# ---------------------------------------------------------------------------
+# raha column name -> CARE column name; same as prepare_log.py::COL_MAPS
 COL_MAPS = {
     "hospital": {
         "phone": "PhoneNumber", "state": "State", "emergency_service": "EmergencyService",
@@ -71,9 +43,7 @@ def _read_csv(path):
 
 
 def _has_index_col(clean_header, clean_rows):
-    """Mirror bench.datasets.load's index-column detection EXACTLY.
-
-    Getting this wrong shifts every column by one."""
+    """Same index-column detection as bench.datasets.load."""
     first_name = clean_header[0].strip().lower()
     looks_named_index = first_name in {"index", "tid", "id", "row_id", "key", ""}
     first_vals = [r[0] for r in clean_rows if r]
@@ -102,14 +72,14 @@ def export_one(dataset, *, out_dir, algorithms):
     def care_col(raw_name):
         return col_map.get(raw_name, raw_name)
 
-    print(f"\n========== RAHA DETECTION: {dataset} ==========")
+    print(f"\n== Raha detection: {dataset}")
     print(f"rows: {len(dirty_rows)}  has_index_col: {has_index}  algorithms: {algorithms}")
 
     dd = {"name": dataset, "path": dirty_path, "clean_path": clean_path}
     app = raha.detection.Detection()
     app.ERROR_DETECTION_ALGORITHMS = algorithms
     app.VERBOSE = False
-    detected_cells = app.run(dd)   # {(i, j): value} -- REAL, non-oracle detection
+    detected_cells = app.run(dd)   # {(i, j): value}
 
     d = raha.dataset.Dataset(dd)
     raw_cols = d.dataframe.columns.tolist()
@@ -118,7 +88,7 @@ def export_one(dataset, *, out_dir, algorithms):
     skipped_index_col = 0
     for (i, j) in detected_cells:
         if has_index and j == 0:
-            skipped_index_col += 1   # the key column itself isn't a CARE "column"
+            skipped_index_col += 1   # the key column is not a CARE column
             continue
         col = care_col(raw_cols[j])
         out_rows.append((row_id(i), col))
@@ -130,10 +100,8 @@ def export_one(dataset, *, out_dir, algorithms):
         w.writerow(["row_id", "column"])
         w.writerows(out_rows)
 
-    # Precision/recall/F1 against ground truth, so detection quality is known
-    # BEFORE this log reaches CARE. A suspiciously high number and a suspiciously
-    # low one are both worth catching here rather than after a full sweep.
-    actual_errors = d.get_actual_errors_dictionary()   # {(i,j): clean_value}, oracle diff
+    # detection precision/recall/F1 against ground truth
+    actual_errors = d.get_actual_errors_dictionary()   # {(i, j): clean_value}
     detected_set = set(detected_cells)
     actual_set = set(actual_errors)
     tp = len(detected_set & actual_set)
@@ -145,7 +113,7 @@ def export_one(dataset, *, out_dir, algorithms):
     print(f"true errors:    {len(actual_set)}")
     print(f"precision={precision:.3f}  recall={recall:.3f}  f1={f1:.3f}")
     if tp == 0:
-        print("!! ZERO true positives -- something is wrong (algorithms misconfigured, "
+        print("warning: zero true positives -- something is wrong (algorithms misconfigured, "
               "or this dataset's errors aren't the type these strategies catch). "
               "Do NOT feed this log to CARE as-is.")
     print(f"WROTE: {out_path}")
@@ -164,7 +132,7 @@ def main():
 
     for ds in args.datasets:
         if ds == "tax" and "OD" in args.algorithms:
-            print("!! tax is 200K rows -- OD (dboost) over the full grid can be very slow. "
+            print("warning: tax is 200K rows -- OD (dboost) over the full grid can be very slow. "
                   "If this hangs, Ctrl-C and retry with --algorithms PVD RVD", file=sys.stderr)
         export_one(ds, out_dir=args.out, algorithms=args.algorithms)
 
