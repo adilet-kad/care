@@ -140,9 +140,12 @@ if (-not $Verify) {
             --alphas 0.2 --out "experiments/drift_monitor_d$d.csv"
     }
     Invoke-Checked $PY -c "import csv,glob,os; ps=sorted(glob.glob('experiments/drift_monitor_d[123].csv')); rows=[r for p in ps for r in csv.DictReader(open(p))]; w=csv.DictWriter(open('experiments/drift_monitor_more.csv','w',newline=''),fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows); [os.remove(p) for p in ps]"
-    Invoke-Checked $PY tools/audit_procedures.py
+    if ($Quick) { Write-Host "  -Quick: Table 5 (procedures) and Table 2 (scaling) keep the stored values" }
+    else {
+        Invoke-Checked $PY tools/audit_procedures.py --tax
+        Invoke-Checked $PY tools/audit_scaling.py
+    }
     Invoke-Checked $PY tools/audit_overwrite_formats.py --all
-    Invoke-Checked $PY tools/audit_scaling.py
 
     Step "8/9  cost per repair"
     Invoke-Checked $PY -m bench.throughput --datasets flights hospital beers --exact-sample 50 --out experiments/throughput.csv

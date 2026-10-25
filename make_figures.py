@@ -126,74 +126,73 @@ def _batch_cost(c, d, h):
 
 
 def fig2(plt):
-    """fig2_pareto.pdf: human cost per batch against realised error at alpha=0.2."""
-    fig, ax = plt.subplots(figsize=(3.34, 2.35))
+    """fig2_pareto.pdf: per cleaner, realised error (left) and human cost per batch (right) at alpha=0.2."""
     import statistics as _st
+    pts = []            # (cleaner, dataset, cost, err, err_hi, hollow, applyall, err_range, cost_range)
     for c, rd in CLEANERS:
-        st = STYLE[c]
-        xs, ys, es, hollow = [], [], [], []
         for d in DATASETS:
             if (c, d) in EXCLUDE:
                 continue
+            rows_all = pareto(rd, d, c)
+            aa = applyall(rows_all)
             draws = _baran_draw_rows(d) if c == "Baran" else []
             if len(draws) >= 2:
-                # each draw small and faint; the median full-size
-                pts = []
+                cs, es, hs = [], [], []
                 for rows in draws:
                     for a, h, e, ehi, _cov in care(rows):
                         if abs(a - 0.2) < 1e-9:
-                            pts.append((h, e))
-                pts = [(_batch_cost(c, d, h), e) for h, e in pts]
-                for h, e in pts:
-                    ax.plot(h, e, marker=st["marker"], ms=3, ls="none",
-                            color=st["color"], alpha=0.35, zorder=2)
-                xs.append(_st.median(p[0] for p in pts))
-                ys.append(_st.median(p[1] for p in pts))
-                es.append(0.0); hollow.append(False)
+                            cs.append(_batch_cost(c, d, h)); es.append(e); hs.append(ehi)
+                pts.append((c, d, _st.median(cs), _st.median(es), max(hs), False, aa,
+                            (min(es), max(es)), (min(cs), max(cs))))
                 continue
-            for a, h, e, ehi, _cov in care(pareto(rd, d, c)):
-                if abs(a - 0.2) > 1e-9:
-                    continue
-                xs.append(_batch_cost(c, d, h)); ys.append(e); es.append(max(0.0, ehi - e))
-                hollow.append(h >= EMPTY)
-        if not xs:
-            continue
-        for x, y, er, ho in zip(xs, ys, es, hollow):
-            ax.errorbar(x, y, yerr=[[0], [er]], fmt=st["marker"], ms=5.5, lw=0,
-                        elinewidth=0.9, capsize=2, ecolor=st["color"],
-                        color="white" if ho else st["color"],
-                        markeredgecolor=st["color"], markeredgewidth=1.1, zorder=3)
-        ax.plot([], [], marker=st["marker"], ls="none", color=st["color"],
-                ms=5, label=f"CARE + {c}")
-    aa = [applyall(pareto(rd, d, c)) for c, rd in CLEANERS for d in DATASETS
-          if (c, d) not in EXCLUDE and applyall(pareto(rd, d, c)) is not None]
-    YMAX = 0.32                                   # apply-all points above it are clipped
-    if aa:
-        inside = [v for v in aa if v <= YMAX - 0.02]
-        above = sorted(v for v in aa if v > YMAX - 0.02)
-        ax.plot([0.0] * len(inside), inside, "x", c="#909497", ms=5.5, mew=1.2,
-                label="ungoverned apply-all", zorder=2)
-        if above:
-            ax.plot([0.0] * len(above), [YMAX - 0.012] * len(above), "x", c="#909497",
-                    ms=5.5, mew=1.2, zorder=2)
-            ax.text(0.03, YMAX - 0.012, f"{len(above)} more, up to {max(above):.2f}",
-                    fontsize=6.5, color="#566573", va="center")
-    ax.axhline(0.2, ls="--", c="#c0392b", lw=1, zorder=1)
-    ax.text(0.09, 0.207, r"budget $\alpha=0.2$", fontsize=7.5, color="#c0392b")
-    ax.axvspan(0.985, 1.02, color="#eaeded", zorder=0)
-    ax.text(0.975, 0.30, "nothing\napplied", fontsize=7, ha="right", va="top",
-            color="#566573")
-    ax.axvline(CAL_FRAC, ls=":", c="#566573", lw=0.8, zorder=1)
-    ax.text(CAL_FRAC + 0.015, 0.30, "40% calibration\nsplit", fontsize=7,
-            color="#566573", ha="left", va="top")
-    ax.set_xlabel("human cost per batch (labels + escalations) / repairs", fontsize=8.5)
-    ax.set_ylabel("error on applied repairs", fontsize=9)
-    ax.set_xlim(-0.04, 1.02); ax.set_ylim(-0.015, YMAX)
-    _style_axes(ax)
-    fig.legend(fontsize=7, frameon=False, loc="lower center", ncol=3,
-               bbox_to_anchor=(0.54, -0.03), columnspacing=0.9, handletextpad=0.3,
-               labelspacing=0.3)
-    fig.tight_layout(rect=(0, 0.13, 1, 1))
+            for a, h, e, ehi, _cov in care(rows_all):
+                if abs(a - 0.2) < 1e-9:
+                    pts.append((c, d, _batch_cost(c, d, h), e, ehi, h >= EMPTY, aa, None, None))
+    names = [c for c, _ in CLEANERS]
+    XMAX = 0.46                                   # apply-all errors above it are clipped
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(3.34, 1.95), sharey=True,
+                                   gridspec_kw={"wspace": 0.08})
+    for i, c in enumerate(names):
+        st = STYLE[c]
+        for cc, d, cost, e, ehi, hollow, aa, er, cr in pts:
+            if cc != c:
+                continue
+            if aa is not None:
+                ax1.plot(min(aa, XMAX - 0.02), i, marker="x", color="#a6acaf", ms=4.5,
+                         mew=1.0, ls="none", zorder=2)
+            if hollow:                            # refused: nothing applied, cost 1
+                for ax, x in ((ax1, e), (ax2, cost)):
+                    ax.plot(x, i, marker=st["marker"], mfc="white", mec=st["color"], ms=5,
+                            mew=1.1, ls="none", zorder=4)
+                continue
+            if er:                                # Baran: min-max over draws
+                ax1.plot(list(er), [i, i], color=st["color"], lw=3, alpha=0.22,
+                         solid_capstyle="butt", zorder=2)
+                ax2.plot(list(cr), [i, i], color=st["color"], lw=3, alpha=0.22,
+                         solid_capstyle="butt", zorder=2)
+            ax1.plot([e, ehi], [i, i], color=st["color"], lw=0.9, zorder=3)
+            ax1.plot(e, i, marker=st["marker"], color=st["color"], ms=5, ls="none", zorder=4)
+            ax2.plot(cost, i, marker=st["marker"], color=st["color"], ms=5, ls="none", zorder=4)
+    ax1.axvline(0.2, ls="--", c="#c0392b", lw=1, zorder=1)
+    ax1.text(0.21, -0.75, r"budget $\alpha$", fontsize=6.5, color="#c0392b", va="center")
+    ax1.set_xlim(-0.02, XMAX); ax1.set_xticks([0, 0.1, 0.2, 0.3, 0.4])
+    ax1.set_xticklabels(["0", "0.1", "0.2", "0.3", "$\\geq$0.4"])
+    ax2.axvline(CAL_FRAC, ls=":", c="#566573", lw=0.8, zorder=1)
+    ax2.text(CAL_FRAC + 0.01, -0.75, "40% split", fontsize=6.5, color="#566573", va="center")
+    ax2.set_xlim(0.35, 1.03); ax2.set_xticks([0.4, 0.6, 0.8, 1.0])
+    ax1.set_yticks(range(len(names))); ax1.set_yticklabels(names, fontsize=7.5)
+    ax1.set_ylim(len(names) - 0.4, -1.1)
+    ax1.set_xlabel("error on applied repairs", fontsize=7.5, labelpad=2)
+    ax2.set_xlabel("human cost per repair", fontsize=7.5, labelpad=2)
+    for ax in (ax1, ax2):
+        _style_axes(ax, fs=8)
+    ax1.plot([], [], marker="x", color="#a6acaf", ls="none", ms=4.5, label="apply-all")
+    ax1.plot([], [], marker="o", color="#1b4f72", ls="none", ms=5, label="CARE, one table")
+    ax1.plot([], [], marker="o", mfc="white", mec="#1b4f72", ls="none", ms=5, label="refused")
+    ax1.plot([], [], color="#1b4f72", lw=3, alpha=0.22, label="Baran min\u2013max")
+    fig.legend(fontsize=6.5, frameon=False, loc="lower center", ncol=4,
+               bbox_to_anchor=(0.56, -0.07), columnspacing=0.8, handletextpad=0.3)
+    fig.subplots_adjust(left=0.2, right=0.99, top=0.98, bottom=0.27)
     fig.savefig(f"{OUT_FIG}/fig2_pareto.pdf", bbox_inches="tight")
     print("  fig2_pareto.pdf")
 
@@ -241,7 +240,7 @@ def fig9(plt, alpha=0.2, partition="mondrian"):
     bases = sorted({r["base"] for r in rows})
     ncol = len(bases)
     nrow = 1
-    fig, axes = plt.subplots(nrow, ncol, figsize=(7.0, 1.5),
+    fig, axes = plt.subplots(nrow, ncol, figsize=(7.0, 1.3),
                              sharey=True, squeeze=False)
     seen = {}
     for i, base in enumerate(bases):
@@ -454,7 +453,7 @@ def _cp_upper(k, n, delta):
 
 
 def fig5(plt):
-    """fig5_mechanism.pdf: (a) per-column error bounds on tax/Baran, (b) A(0.2) against accuracy per pair."""
+    """fig5_mechanism.pdf: (a) per-column error bounds on tax/Baran, (b) accuracy and (c) A(0.2) per cleaner-table pair."""
     import collections
     acc_rows = _read("experiments/proposer_accuracy.csv")
     try:
@@ -482,8 +481,13 @@ def fig5(plt):
     bounds = {c: _cp_upper(bad[c], min(per[c], 400), DELTA / L) for c in per}
     cols = sorted(per, key=lambda c: bounds[c])
 
-    fig, (ax, ax2) = plt.subplots(1, 2, figsize=(7.0, 2.7))
-    fig.subplots_adjust(left=0.135, right=0.995, bottom=0.25, top=0.935, wspace=0.58)
+    from matplotlib.colors import LinearSegmentedColormap
+    fig = plt.figure(figsize=(7.0, 2.35))
+    outer = fig.add_gridspec(1, 2, width_ratios=[1.0, 1.85], wspace=0.34,
+                             left=0.12, right=0.995, bottom=0.2, top=0.86)
+    inner = outer[1].subgridspec(1, 2, wspace=0.07)
+    ax = fig.add_subplot(outer[0])
+    axb, axc = fig.add_subplot(inner[0]), fig.add_subplot(inner[1])
 
     # (a) one bar per column, repair counts in the tick labels
     ys = list(range(len(cols)))
@@ -492,11 +496,11 @@ def fig5(plt):
     ax.barh(ys, vals, height=0.62, edgecolor="black", linewidth=0.4, zorder=2,
             color=["#1b4f72" if v <= 0.2 else "#aab7b8" for v in vals])
     for a, ls, dy, ha in [(0.05, ":", -1.55, "right"), (0.1, "--", -1.55, "left"),
-                          (0.2, "-", -0.85, "left")]:
+                          (0.2, "-", -1.55, "left")]:
         ax.axvline(a, color="#c0392b", lw=0.9, ls=ls, zorder=4, ymin=0.0, ymax=0.87)
         ax.text(a + (0.012 if ha == "left" else -0.012), dy, rf"{a}", fontsize=7.5,
                 color="#c0392b", ha=ha, va="center")
-    ax.text(0.125, -2.4, r"budget $\alpha$", fontsize=7.5, color="#c0392b",
+    ax.text(0.125, -2.5, r"budget $\alpha$", fontsize=7.5, color="#c0392b",
             ha="center", va="center")
     gap_y = n_cert - 0.5                               # between last certified and next
     ax.annotate("", xy=(vals[n_cert - 1], gap_y), xytext=(vals[n_cert], gap_y),
@@ -511,63 +515,60 @@ def fig5(plt):
     ax.set_xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
     ax.invert_yaxis(); ax.set_xlim(0, 1.0); ax.set_ylim(len(cols) - 0.35, -2.9)
     ax.set_xlabel("certified upper bound on column error rate", fontsize=9)
-    ax.set_title("(a) per-column bounds, Baran on tax (repairs in parentheses)",
-                 fontsize=8.5, pad=3)
+    ax.set_title("(a) per-column bounds, Baran on tax", fontsize=8, pad=3)
     _style_axes(ax)
     ax.legend(handles=[plt.Rectangle((0, 0), 1, 1, fc="#1b4f72", ec="black", lw=0.4,
                                      label=r"certified at $\alpha=0.2$"),
                        plt.Rectangle((0, 0), 1, 1, fc="#aab7b8", ec="black", lw=0.4,
                                      label="escalated")],
-              fontsize=7.5, frameon=False, loc="upper right", bbox_to_anchor=(1.0, 1.0))
+              fontsize=7.5, frameon=False, loc="upper right", bbox_to_anchor=(1.0, 0.89))
 
-    # (b) one row per pair, sorted by accuracy: accuracy (grey) against A(0.2) (colour)
+    # (b), (c) one cell per cleaner-table pair: accuracy beside A(0.2)
     _bmed = _baran_medians()
-    rows_b = []                                        # (label, cleaner, acc, A, lo, hi, exact)
+    ACC, AUT, RNG = {}, {}, {}
     for c, rd in CLEANERS:
         for d in DATASETS:
             if (c, d) in TAB1_EXCLUDE:
                 continue
             med = _bmed.get(d) if c == "Baran" else None
             if med:
-                rows_b.append((f"{c} / {d}", c, float(med["acc"]), float(med["A2"]),
-                               float(med["A2_min"]), float(med["A2_max"]), False))
+                ACC[c, d], AUT[c, d] = float(med["acc"]), float(med["A2"])
+                RNG[c, d] = (float(med["A2_min"]), float(med["A2_max"]))
                 continue
             ar = [r for r in acc_rows if r["proposer"] == c and r["dataset"] == d]
             rows = [x for x in care(pareto(rd, d, c)) if abs(x[0] - 0.2) < 1e-9]
-            if not ar or not rows:
-                continue
-            acc = float(ar[0]["acc_on_errors"])
-            rows_b.append((f"{c} / {d}", c, acc, 1 - rows[0][1], None, None, acc >= 0.9999))
-    rows_b.sort(key=lambda t: -t[2])
-    yy = list(range(len(rows_b)))
-    for y, (lab, c, acc, A, lo, hi, exact) in zip(yy, rows_b):
-        st = STYLE[c]
-        ax2.plot([A, acc], [y, y], color="#b0b7bb", lw=1.0, zorder=1)
-        if lo is not None and hi - lo > 1e-9:
-            ax2.plot([lo, hi], [y, y], color=st["color"], lw=3.0, alpha=0.25, zorder=2,
-                     solid_capstyle="butt")
-        ax2.plot(acc, y, marker="o", ms=3.6, ls="none", color="#7b7d7d", zorder=3)
-        ax2.plot(A, y, marker=st["marker"], ms=5.5, ls="none",
-                 color="white" if exact else st["color"],
-                 markeredgecolor=st["color"], markeredgewidth=1.2, zorder=4)
-    ax2.set_yticks(yy); ax2.set_yticklabels([t[0] for t in rows_b], fontsize=6.2)
-    ax2.invert_yaxis(); ax2.set_ylim(len(rows_b) - 0.45, -0.55)
-    ax2.set_xlim(-0.03, 1.03); ax2.set_xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
-    ax2.set_xlabel(r"accuracy on error cells ($\bullet$) and automation $A(0.2)$",
-                   fontsize=9)
-    ax2.set_title("(b) every scored pair, sorted by accuracy", fontsize=8.5, pad=2)
-    _style_axes(ax2)
-    ax2.plot([], [], marker="o", ls="none", color="#7b7d7d", ms=3.6, label="accuracy")
-    for c, _rd in CLEANERS:
-        st = STYLE[c]
-        ax2.plot([], [], marker=st["marker"], ls="none", color=st["color"], ms=5,
-                 label=f"$A$, {c}")
-    ax2.plot([], [], marker="o", ls="none", mfc="white", markeredgecolor="grey", ms=5,
-             label="exact cleaner (hollow)")
-    ax2.plot([], [], color="#1b4f72", lw=3.0, alpha=0.25, label="Baran min\u2013max over draws")
-    _h, _l = ax2.get_legend_handles_labels()
-    fig.legend(_h, _l, fontsize=7, frameon=False, loc="upper center", ncol=5,
-               columnspacing=1.0, handletextpad=0.3, bbox_to_anchor=(0.5, 0.105))
+            if ar and rows:
+                ACC[c, d], AUT[c, d] = float(ar[0]["acc_on_errors"]), 1 - rows[0][1]
+    names = [c for c, _ in CLEANERS]
+    short = {"hospital": "hosp.", "beers": "beers", "flights": "flights",
+             "rayyan": "rayyan", "tax": "tax"}
+    cmap = LinearSegmentedColormap.from_list("care", ["#f4f6f7", "#aed6f1", "#2e86c1", "#1b4f72"])
+    for axm, title, V in ((axb, "(b) accuracy on error cells", ACC),
+                          (axc, "(c) automation $A(0.2)$", AUT)):
+        for i, c in enumerate(names):
+            for j, d in enumerate(DATASETS):
+                if (c, d) not in V:
+                    axm.add_patch(plt.Rectangle((j, i), 1, 1, fc="white", ec="#d5d8dc",
+                                                lw=0.6, hatch="////", alpha=0.5))
+                    continue
+                v = V[c, d]
+                axm.add_patch(plt.Rectangle((j, i), 1, 1, fc=cmap(v), ec="white", lw=1.5))
+                col = "white" if v > 0.62 else "#1b2631"
+                txt = "ref." if (V is AUT and v == 0) else f"{v:.2f}"
+                if V is AUT and ACC[c, d] >= 0.9999:
+                    txt += r"$^\dagger$"
+                axm.text(j + 0.5, i + 0.5, txt, ha="center", va="center", fontsize=7.2,
+                         color=col, fontweight="bold" if V is AUT else None)
+        axm.set_xlim(0, len(DATASETS)); axm.set_ylim(len(names), 0)
+        axm.set_xticks([j + 0.5 for j in range(len(DATASETS))])
+        axm.set_xticklabels([short[d] for d in DATASETS], fontsize=6.6)
+        axm.xaxis.tick_top()
+        axm.set_yticks([i + 0.5 for i in range(len(names))])
+        axm.set_yticklabels(names if axm is axb else [], fontsize=7.2)
+        axm.tick_params(length=0)
+        for sp in axm.spines.values():
+            sp.set_visible(False)
+        axm.set_title(title, fontsize=8, pad=13)
     fig.savefig(f"{OUT_FIG}/fig5_mechanism.pdf", bbox_inches="tight")
     print("  fig5_mechanism.pdf")
 

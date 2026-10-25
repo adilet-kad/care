@@ -49,9 +49,9 @@ and the Proposition 2 bound.
 | `sweep.csv`, `sweep_median.csv` | `audit_sweep.py` | the joined error-rate sweep |
 | `sweep_predictions.csv` (+ `.sha256`, `.strata.csv`) | `audit_alpha_ceiling.py` | per-stratum ceilings, sealed before calibration |
 | `incremental_verify.csv` | `tools/verify_incremental.py` | incremental vs exact verification with FDs |
-| `scaling.csv` | `tools/audit_scaling.py` | build time, index memory, verification and calibration time on 10K–200K tax rows (Table 2; 2-core container) |
+| `scaling.csv` | `tools/audit_scaling.py` | build time, index memory, verification and calibration time on 10K–200K tax rows (Table 2; DGX Spark) |
 | `planner_validation.csv`, `planner_savings.csv`, `planner_breakeven.csv` | `tools/audit_planner.py` | label planner: prediction accuracy, savings (Table 6), break-even sizes |
-| `procedures.csv` | `tools/audit_procedures.py` | alternative threshold procedures (Table 5) |
+| `procedures.csv` | `tools/audit_procedures.py --tax` | alternative threshold procedures on all 21 scored pairs (Table 5) |
 | `partitions.csv` | `tools/audit_partitions.py` | column, data-type, cardinality and planner partitions |
 | `trust_noise.csv` | `tools/audit_trust_noise.py` | mislabelled trust, gate before and after calibration |
 | `drift_monitor.csv`, `drift_monitor_more.csv` | `tools/audit_drift_monitor.py` | drift between corruption levels and re-certification (beers; flights and hospital) |

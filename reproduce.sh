@@ -156,9 +156,13 @@ with open("experiments/drift_monitor_more.csv", "w", newline="") as fh:
     w.writeheader(); w.writerows(rows)
 EOF
   rm -f experiments/drift_monitor_d[123].csv
-  $PY tools/audit_procedures.py
+  if [ "$QUICK" = 1 ]; then
+    echo "  --quick: Table 5 (procedures) and Table 2 (scaling) keep the stored values"
+  else
+    $PY tools/audit_procedures.py --tax     # all 21 scored pairs (Table 5)
+    $PY tools/audit_scaling.py              # Table 2
+  fi
   $PY tools/audit_overwrite_formats.py --all
-  $PY tools/audit_scaling.py
 
   step "8/9  cost per repair"
   $PY -m bench.throughput --datasets flights hospital beers --exact-sample 50 --out experiments/throughput.csv
