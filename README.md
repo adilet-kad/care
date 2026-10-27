@@ -25,13 +25,15 @@ pytest -q                    # unit and property tests
 ./reproduce.sh --quick       # all results except tax and the error-rate sweep
 ./reproduce.sh               # everything (tax needs about 16 GB of RAM)
 ./reproduce.sh --verify      # only check that stored results regenerate
+./reproduce.sh --from 6      # resume a run at step 6
 ```
 
 On Windows use `reproduce.ps1` with `-Quick` or `-Verify`. No GPU or API key is needed:
 everything is replayed from the logs in `csvs/`.
 
 The benchmark tables (hospital, beers, flights, rayyan, tax) are the Raha/Baran suite
-and are not redistributed; `bench/datasets.py` downloads them into `data/` on first use.
+and are not redistributed; `bench/datasets.py` downloads them into `data/` on first use,
+and the full run imports Ni et al.'s error-rate variants the same way (needs `git`).
 The certification path needs only `pydantic`; `matplotlib` is needed for figures.
 
 ## Layout

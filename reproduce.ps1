@@ -107,6 +107,13 @@ if (-not $Verify) {
         }
 
         Step "6/9  controlled error-rate sweep (Ni et al. variants)"
+        if (-not (Test-Path data/ni_variants.csv)) {
+            Write-Host "  importing Ni et al.'s variants (one-time download)"
+            $adr = Join-Path ([System.IO.Path]::GetTempPath()) "adr"
+            if (-not (Test-Path $adr)) { git clone --depth 1 https://github.com/WelkinNi/Automatic-Data-Repair.git $adr }
+            Invoke-Checked $PY tools/import_ni_variants.py --adr $adr
+            Invoke-Checked $PY tools/import_ni_variants.py --verify
+        }
         $logs = @(Get-ChildItem csvs -Filter "baran_*_ni_inner*_mapped.csv") + @(Get-ChildItem csvs/baran_var_ni -Recurse -Filter "baran_*_mapped.csv")
         foreach ($f in $logs) {
             $v = $f.BaseName -replace '^baran_', '' -replace '_mapped$', ''

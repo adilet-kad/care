@@ -7,25 +7,35 @@
 #     ./reproduce.sh            # sweeps, audits, figures, verification
 #     ./reproduce.sh --quick    # skip tax (about 16 GB of RAM) and the error-rate sweep
 #     ./reproduce.sh --verify   # only check that stored sweeps regenerate
+#     ./reproduce.sh --from 6   # resume at step 6 (earlier steps' results are kept)
 #
 # Exits non-zero if any stage fails.
 
 set -euo pipefail
 cd "$(dirname "$0")"
 
-QUICK=0; ONLY_VERIFY=0
+QUICK=0; ONLY_VERIFY=0; FROM=1; prev=""
 for a in "$@"; do
+  if [ "$prev" = "--from" ]; then FROM="$a"; prev=""; continue; fi
   case "$a" in
     --quick)  QUICK=1 ;;
     --verify) ONLY_VERIFY=1 ;;
-    -h|--help) sed -n '2,11p' "$0" | sed 's/^# \?//'; exit 0 ;;
+    --from)   prev="--from" ;;
+    -h|--help) sed -n '2,12p' "$0" | sed 's/^# \?//'; exit 0 ;;
     *) echo "unknown option: $a" >&2; exit 2 ;;
   esac
 done
 
-PY=${PYTHON:-python}
-step() { printf '\n== %s\n' "$1"; }
-$PY -c 'import care' 2>/dev/null || {
+PY_REAL=${PYTHON:-python}; PY=$PY_REAL
+step() {
+  local n=${1%%/*}
+  if [[ "$n" =~ ^[0-9]+$ ]] && [ "$n" -lt "$FROM" ]; then
+    printf '\n== %s  (skipped: --from %s)\n' "$1" "$FROM"; PY=:
+  else
+    printf '\n== %s\n' "$1"; PY=$PY_REAL
+  fi
+}
+$PY_REAL -c 'import care' 2>/dev/null || {
   echo "CARE is not importable; run: pip install -r requirements.txt && pip install -e ." >&2
   exit 1
 }
@@ -108,6 +118,12 @@ if [ "$ONLY_VERIFY" = 0 ]; then
     done
 
     step "6/9  controlled error-rate sweep (Ni et al. variants)"
+    if [ "$PY" != ":" ] && [ ! -f data/ni_variants.csv ]; then
+      echo "  importing Ni et al.'s variants (one-time download)"
+      [ -d /tmp/adr ] || git clone --depth 1 https://github.com/WelkinNi/Automatic-Data-Repair.git /tmp/adr
+      $PY tools/import_ni_variants.py --adr /tmp/adr
+      $PY tools/import_ni_variants.py --verify
+    fi
     for log in csvs/baran_*_ni_inner*_mapped.csv csvs/baran_var_ni/*/*/baran_*_mapped.csv; do
       v=$(basename "$log" _mapped.csv); v=${v#baran_}
       case "$log" in csvs/baran_var_ni/*) d=$(basename "$(dirname "$log")") ;; *) d=0 ;; esac
