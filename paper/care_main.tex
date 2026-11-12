@@ -538,7 +538,8 @@ Algorithm~\ref{alg:care} puts the steps together.
 Invariant I2 must be exact and fast. The rules that matter most in practice are
 \emph{functional dependencies} (FDs), where $X\to Y$ says rows that agree on columns
 $X$ must agree on $Y$ (a zip code determines its city). Re-evaluating every rule after
-each candidate repair takes $38$\,s per candidate on the $3$M-cell tax table. \textsc{Care}
+each candidate repair takes $18$--$38$\,s per candidate on the $3$M-cell tax table,
+depending on the run. \textsc{Care}
 instead keeps, per FD, a count of each $Y$ value in every group of rows that agree on
 $X$, which a single-cell repair updates in constant
 time~\cite{ceri1990deriving}. The index is checked against the reference predicates
