@@ -24,3 +24,4 @@ batch_jobs/
 _to_delete/
 /_*.py
 experiments/_*
+experiments/tax_draws.csv.sha256
