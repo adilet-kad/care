@@ -14,7 +14,7 @@ import os
 from care.core.repair import RepairCandidate, Violation
 
 
-# s_agree when the log has no confidence column; each stratum is then certified all-or-nothing.
+# s_agree when the log has no confidence column; each stratum is then admitted all-or-nothing.
 _CONST_CONFIDENCE = 0.5
 
 

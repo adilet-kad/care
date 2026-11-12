@@ -76,7 +76,7 @@ def _load_bclean(with_confidence):
         if _PATCH_ANCHOR not in src:
             print("  warning: could not find the instrumentation anchor in src/infer.py; "
                   "BClean's source may have changed. Falling back to CONSTANT "
-                  "confidence (CARE will only be able to certify whole strata).",
+                  "confidence (CARE will only be able to admit whole strata).",
                   file=sys.stderr)
             care_scores = None
         else:

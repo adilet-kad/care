@@ -79,7 +79,7 @@ python precheck_log.py <table> csvs/<cleaner>_<table>_pred.csv    # accuracy and
 bash integrations/sweep_offline_logs.sh <cleaner> <table>...       # map, score, sweep
 ```
 
-Error-rate variants for the sweep of Fig. 3 (Ni et al.):
+Error-rate variants for the controlled-corruption sweep (Ni et al.):
 
 ```bash
 git clone --depth 1 https://github.com/WelkinNi/Automatic-Data-Repair.git /tmp/adr
@@ -107,7 +107,7 @@ every proposed cell, so an overwritten correct cell counts as an error. Add
 `--detection log:csvs/raha_<table>_detected.csv` for a real detector's queue; the log
 must then cover that queue (a keep-log, or a rerun behind the detector).
 
-## 5. Protocol decisions
+## 5. Protocol decisions and deviations
 
 | # | decision | effect on the numbers |
 |---|---|---|
@@ -121,11 +121,11 @@ must then cover that queue (a keep-log, or a rerun behind the detector).
 | P8 | ZeroEC uses gpt-4o-mini for every stage (its paper used GPT-4o and GPT-3.5-turbo), three runs per table; the 10 user-labelled rows are dropped from the log. | Confidence is run agreement, of our construction. tax is not run. |
 | P9 | A repair is correct if it equals the clean value after lowercasing and stripping. | Format-only rewrites count as wrong (`tools/audit_overwrite_formats.py` reports them). |
 | P10 | Verification uses the incremental index (`--fast-verify on`), exact for the completeness floor, FDs and CFDs. | No approximation: `tools/verify_fastpath_equivalence.py` and `tools/verify_incremental.py` compare it with the exact path. |
-| P11 | δ = 0.1 and \|Λ\| = 21 in every run. | — |
+| P11 | δ = 0.1 and \|Λ\| = 21 in every reported run except the sensitivity sweep (`audit_sensitivity.py`), which varies both. | — |
 | P12 | tax detection uses Raha's PVD and RVD only (OD and KBVD do not scale to 200K rows). | The tax real-detector row is not comparable to the other tables. |
 | P13 | A real-detector number is compared only with an oracle run under the same scoring (`results_baran_detected/`, `results_*_keep_oracle/`). | Rows differ in detection only. |
 | P14 | Logs with more than one source are stratified by column × source. | Single-source logs are unaffected. |
-| P15 | Poisoning results are reported for the listed configurations (`make_figures._poison_series`), each in its own output directory. | Configurations that certify nothing would make the bound hold trivially and are not used. |
+| P15 | Poisoning results are reported for the listed configurations (`make_figures._poison_series`), each in its own output directory. | Configurations that admit nothing would make the bound hold trivially and are not used. |
 | P16 | Ni et al.'s variants get a synthetic `index` key; pairs that differ on more than 50% of cells (flights `outer`, `inner_outer`) are refused. | flights is swept on `inner` variants only. |
 | P17 | Error counts are CARE's (`defects.gold`); Raha's own printout differs on beers because of a header mismatch. | No reported number uses the Raha-side count. |
 
@@ -144,7 +144,7 @@ Warning signs when adding a cleaner: `covered=True` with `human_cost=1.00` (noth
 automated); a poison run that escalates everything at zero contamination (the bound holds
 trivially, `run_study` warns); 100% accuracy with no correct cell touched (an
 oracle-derived or degenerate log); `distinct ≤ 2` confidence values in `prepare_log.py`
-(no ranking signal, so a stratum is certified whole or not at all).
+(no ranking signal, so a stratum is admitted whole or not at all).
 
 Dirty and clean tables do not always share headers (beers: `beer_name` against
 `beer-name`), so exporters match columns by normalised name.

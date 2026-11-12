@@ -4,7 +4,7 @@ Finds the smallest lambda_hat such that auto-applying iff ``s_hat >= lambda_hat`
 keeps the selective error ``R(lambda) = P(wrong | s_hat >= lambda)`` at most alpha
 with probability ``>= 1 - delta``. Each grid point is tested with a
 ``(1 - delta/m)`` upper confidence bound (Bonferroni over the ``m`` grid points;
-Angelopoulos et al. 2021). If none certifies, ``lambda_hat = +inf``.
+Angelopoulos et al. 2021). If none admits, ``lambda_hat = +inf``.
 """
 
 from __future__ import annotations
@@ -78,11 +78,11 @@ def rcps_threshold(
         n = total - i
         k = suffix_wrong[i]
         if n == 0 or k / n > alpha:
-            continue  # empirical risk > alpha, cannot certify
+            continue  # empirical risk > alpha, cannot admit
         r_ucb = ucb(k, n, delta_c)
         trace.append({"lambda": lam, "n": n, "k": k, "rhat": k / n, "ucb": r_ucb})
         if r_ucb <= alpha:
-            lambda_hat = lam  # smallest certified lambda -> maximal automation
+            lambda_hat = lam  # smallest admitted lambda -> maximal automation
             break
     return lambda_hat, trace
 
@@ -92,7 +92,7 @@ _PROCEDURES = ("bonferroni", "fixed_sequence", "sgr")
 
 def _fixed_sequence(s_sorted, suffix_wrong, lambdas, alpha, delta, ucb):
     """Fixed-sequence testing: from the highest threshold down, each at level delta,
-    stopping at the first that fails. Returns the last certified threshold or +inf."""
+    stopping at the first that fails. Returns the last admitted threshold or +inf."""
     total = len(s_sorted)
     lambda_hat, trace = math.inf, []
     for lam in sorted(lambdas, reverse=True):

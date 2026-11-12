@@ -1,8 +1,8 @@
-"""Label planner: predicted vs certifier automation, review savings, break-even sizes.
+"""Label planner: predicted vs procedure automation, review savings, break-even sizes.
 
 Validation compares the planner's closed-form automation with evaluate_split on the
 unranked pairs (Baran, GIDCL). Savings compare the 40% default, the pilot-based planner
-and an oracle planner, scored with the exact hypergeometric certification probability.
+and an oracle planner, scored with the exact hypergeometric admission probability.
 
     python tools/audit_planner.py              -> experiments/planner_{validation,savings,breakeven}.csv
     python tools/audit_planner.py --skip-real  # synthetic break-even only
@@ -82,7 +82,7 @@ def predicted_automation(counts, alpha, seeds):
 
 
 def certifier_automation(run, alpha, seeds):
-    """Mean automation of the real certifier (evaluate_split) over ``seeds`` splits."""
+    """Mean automation of the real procedure (evaluate_split) over ``seeds`` splits."""
     from bench.study import evaluate_split
     repairs, gold, sf = run
     return statistics.mean(
@@ -167,7 +167,7 @@ def real(args):
                 z = abs(pred - meas) / sd if sd > 0 else (0.0 if abs(pred - meas) < 1e-9
                                                           else float("inf"))
                 print(f"   alpha={a}: predicted A={pred:.3f} (s.d. of a {args.seeds}-seed mean "
-                      f"{sd:.3f})  certifier A={meas:.3f}  published 20-seed A="
+                      f"{sd:.3f})  procedure A={meas:.3f}  published 20-seed A="
                       f"{'-' if pub is None else f'{pub:.3f}'}", flush=True)
                 val.append({"proposer": name, "dataset": ds, "alpha": a,
                             "strata": len(counts), "unranked": unranked,
@@ -188,7 +188,7 @@ def real(args):
     ok = [r for r in val if r["unranked"]]
     if ok:
         d = [r["abs_diff"] for r in ok]
-        print(f"\n  unranked pairs: {len(ok)} (pair, alpha) points, mean |pred - certifier| = "
+        print(f"\n  unranked pairs: {len(ok)} (pair, alpha) points, mean |pred - procedure| = "
               f"{statistics.mean(d):.4f}, max = {max(d):.4f}, "
               f"{sum(r['z'] <= 2 for r in ok)} within 2 s.d.")
 
@@ -242,7 +242,7 @@ def main():
     ap.add_argument("--skip-real", action="store_true")
     ap.add_argument("--skip-synthetic", action="store_true")
     ap.add_argument("--seeds", type=int, default=200,
-                    help="splits of the real certifier per (pair, alpha)")
+                    help="splits of the real procedure per (pair, alpha)")
     a = ap.parse_args()
     if not a.skip_synthetic:
         synthetic()

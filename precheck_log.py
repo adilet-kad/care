@@ -1,4 +1,4 @@
-"""Predict from a cleaner's log whether CARE will certify any column, before a sweep.
+"""Predict from a cleaner's log whether CARE will admit any column, before a sweep.
 
 ``--scope errors`` scores only true error cells (as under oracle detection);
 ``--scope touched`` scores every proposed cell, counting a changed clean cell as an
@@ -72,7 +72,7 @@ def main():
         tot += n; ok_tot += k
         cert = (n >= _MIN_MASS and err <= args.alpha)
         any_cert = any_cert or cert
-        print(f"{col:18}{n:7}{acc:9.1%}{err:9.1%}   {'<- likely certifies' if cert else ''}")
+        print(f"{col:18}{n:7}{acc:9.1%}{err:9.1%}   {'<- likely admits' if cert else ''}")
     if tot:
         print(f"\noverall: n={tot}  acc={ok_tot/tot:.1%}  err={1-ok_tot/tot:.1%}")
 
@@ -102,7 +102,7 @@ def main():
 
     print()
     if any_cert:
-        print("VERDICT: at least one column has the mass + accuracy to certify -> the "
+        print("VERDICT: at least one column has the mass + accuracy to admit -> the "
               "sweep should show REAL graded automation. PROCEED.")
     else:
         print("VERDICT: no column clears the mass+accuracy bar at this alpha -> the "

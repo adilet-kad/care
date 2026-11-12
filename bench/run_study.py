@@ -1,4 +1,4 @@
-"""Run the certification sweeps for one dataset and write result CSVs.
+"""Run the admission sweeps for one dataset and write result CSVs.
 
     python -m bench.run_study --dataset hospital --backends baran:csvs/baran_hospital_mapped.csv
     python -m bench.run_study --dataset hospital \
@@ -109,7 +109,7 @@ def main():
             if _base and float(_base[0]["human_cost"]) >= 0.999:
                 print("  [poison] warning: nothing is auto-applied at poison=0, so the gate "
                       "is never exercised and eps_S=0 is trivial; choose a --scoring/"
-                      "--detection under which this cleaner certifies")
+                      "--detection under which this cleaner admits")
             for r in rows:
                 extra = ""
                 if r["baseline"] == "CARE":

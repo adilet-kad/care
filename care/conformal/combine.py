@@ -1,7 +1,7 @@
 """Confidence combiner: s_hat = f(s_conf, s_margin, s_agree, s_consistency).
 
 The threshold calibrates whatever score it receives, so the combiner affects
-only the ranking, not the guarantee.
+only the ranking, not the bound.
 """
 
 from __future__ import annotations

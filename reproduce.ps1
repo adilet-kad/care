@@ -35,7 +35,7 @@ $SMALL = @("hospital", "beers", "flights", "rayyan")
 function Run { param([Parameter(ValueFromRemainingArguments = $true)][string[]]$RunArgs) Invoke-Checked $PY -m bench.run_study @RunArgs }
 
 if (-not $Verify) {
-    Step "1/9  oracle detection: the six cleaners (Table 4)"
+    Step "1/9  oracle detection: the six cleaners (Table 3)"
     foreach ($ds in $SMALL) {
         Run --dataset $ds --backends "baran:csvs/baran_${ds}_mapped.csv"   @A --scoring errors   --out experiments/results_baran_errors
         Run --dataset $ds --backends "baran:csvs/baran_${ds}_mapped.csv"   @A --scoring detected --out experiments/results_baran_detected
@@ -55,7 +55,7 @@ if (-not $Verify) {
         Run --dataset $ds --backends "gidcl_scored_s2:csvs/gidcl_scored_s2_${ds}_mapped.csv" @A --scoring errors --out experiments/results_gidcl_scored_s2
     }
 
-    Step "2/9  real detectors: Raha, GIDCL's own, a constraint detector (Table 8)"
+    Step "2/9  real detectors: Raha, GIDCL's own, a constraint detector (Table 6)"
     foreach ($ds in $SMALL) {
         Run --dataset $ds --backends "baran_raha:csvs/baran_raha_${ds}_mapped.csv" @A --scoring detected `
             --detection "log:csvs/raha_${ds}_detected.csv" --out experiments/results_raha_baran
@@ -73,7 +73,7 @@ if (-not $Verify) {
             --detection constraints --out experiments/results_constraints_baran
     }
 
-    Step "3/9  corruption through untrusted and trusted sources (Table 7)"
+    Step "3/9  corruption through untrusted and trusted sources (Section 7.6)"
     function Poison([string]$ds, [string]$backend, [string]$out) {
         Run --dataset $ds --backends $backend @P --alphas 0.2 --scoring errors --out "experiments/$out"
         Run --dataset $ds --backends $backend @P --alphas 0.2 --scoring errors --trusted-poison --out "experiments/$out"
@@ -131,11 +131,11 @@ if (-not $Verify) {
                      "audit_heldout_budget.py", "audit_sensitivity.py", "audit_label_budget.py",
                      "audit_drift_probe.py", "audit_gidcl_confidence.py")) { Invoke-Checked $PY $s }
     if ($Quick) {
-        Invoke-Checked $PY audit_error_drop.py --raha --skip-tax --tex paper/tables/tab5_error_drop.tex
+        Invoke-Checked $PY audit_error_drop.py --raha --skip-tax --tex paper/tables/extra_error_drop.tex
     } else {
         Invoke-Checked $PY audit_alpha_ceiling.py --logs "csvs/baran_tax_mapped.csv" "csvs/baran_var_tax/*/baran_tax_mapped.csv" `
             --per-stratum --out experiments/tax_draws.csv
-        Invoke-Checked $PY audit_error_drop.py --raha --tex paper/tables/tab5_error_drop.tex
+        Invoke-Checked $PY audit_error_drop.py --raha --tex paper/tables/extra_error_drop.tex
         Invoke-Checked $PY audit_sweep.py
         Invoke-Checked $PY tools/verify_incremental.py tax --sample 60
     }
@@ -147,7 +147,7 @@ if (-not $Verify) {
             --alphas 0.2 --out "experiments/drift_monitor_d$d.csv"
     }
     Invoke-Checked $PY -c "import csv,glob,os; ps=sorted(glob.glob('experiments/drift_monitor_d[123].csv')); rows=[r for p in ps for r in csv.DictReader(open(p))]; w=csv.DictWriter(open('experiments/drift_monitor_more.csv','w',newline=''),fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows); [os.remove(p) for p in ps]"
-    if ($Quick) { Write-Host "  -Quick: Table 5 (procedures) and Table 2 (scaling) keep the stored values" }
+    if ($Quick) { Write-Host "  -Quick: Table 4 (procedures) and the scaling numbers of Section 4.2 keep the stored values" }
     else {
         Invoke-Checked $PY tools/audit_procedures.py --tax
         Invoke-Checked $PY tools/audit_scaling.py

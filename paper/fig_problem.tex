@@ -1,0 +1,65 @@
+% fig_problem.tex: the operator's problem on one real run (Baran on tax, draw 2), and
+% what each way of handling the cleaner's repairs does with it at a 5% error budget.
+% One column wide. Input from care_main.tex.
+% Numbers (csvs/baran_var_tax/2, results_baran_var_tax/2): 121,219 repairs, 14,049 wrong
+% (11.6%); column rate: 87,342 repairs, 1,185 wrong (1.4%); the nine other columns:
+% 33,877 repairs, 12,864 wrong (38%). At alpha = 0.05 CARE writes the rate column.
+\begin{tikzpicture}[
+  font=\small, x=1pt, y=1pt,
+  seg/.style  ={draw=black!70, line width=0.4pt, minimum height=14pt, inner sep=0pt,
+                anchor=west, align=center, font=\footnotesize},
+  good/.style ={seg, fill=green!22},
+  bad/.style  ={seg, fill=red!24},
+  rev/.style  ={seg, fill=black!8, pattern=north east lines, pattern color=black!28},
+  ttl/.style  ={anchor=west, inner sep=0pt, font=\small},
+  num/.style  ={anchor=center, font=\small, inner sep=0pt},
+  hdr/.style  ={anchor=center, align=center, font=\footnotesize\bfseries, inner sep=0pt},
+]
+\def\wg{94}       % width of the rate column (72% of the repairs)
+\def\wr{36}       % width of the nine other columns (28%)
+\def\xo{166}      % outcome 1: wrong values written
+\def\xp{219}      % outcome 2: left to a person
+
+% ---------------- what the cleaner proposes
+\node[ttl] at (0,166) {\textbf{Baran proposes} 121{,}219 repairs on \textsc{tax}, 88\% correct};
+\node[good, minimum width=174pt] (g0) at (0,149) {column \texttt{rate}: 87{,}342 repairs, 1.4\% wrong};
+\node[bad,  minimum width=66pt, anchor=west] (r0) at (g0.east) {9 columns: 38\%};
+\node[ttl, font=\footnotesize\itshape, text=black!75] at (0,134)
+      {The operator sees the repairs, not which of them are wrong.};
+
+\draw[black!40, line width=0.4pt] (0,125) -- (240,125);
+\node[ttl] at (0,113) {\textbf{Error budget 5\%}};
+\node[hdr] at (\xo,113) {wrong values\\written};
+\node[hdr] at (\xp,113) {left to\\a person};
+
+% ---------------- lane 1: write everything
+\node[ttl] at (0,93) {\textbf{Write everything}, as accuracy and $F_1$ judge it};
+\node[good, minimum width=\wg pt] (g1) at (0,78) {written};
+\node[bad,  minimum width=\wr pt, anchor=west] at (g1.east) {written};
+\node[num, text=red!70!black] at (\xo,78) {\textbf{14{,}000} (11.6\%)};
+\node[num] at (\xp,78) {0};
+
+% ---------------- lane 2: confidence threshold
+\node[ttl] at (0,60) {\textbf{Threshold the confidence}, 1.0 for every repair};
+\node[good, minimum width=\wg pt] (g2) at (0,45) {written};
+\node[bad,  minimum width=\wr pt, anchor=west] at (g2.east) {written};
+\node[num, text=red!70!black] at (\xo,45) {\textbf{14{,}000} (11.6\%)};
+\node[num] at (\xp,45) {0};
+
+% ---------------- lane 3: review everything
+\node[ttl] at (0,27) {\textbf{Review everything}};
+\node[rev, minimum width=\wg pt] (g3) at (0,12) {};
+\node[rev, minimum width=\wr pt, anchor=west] (r3) at (g3.east) {};
+\node[fill=white, inner sep=1.2pt, font=\footnotesize] at ($(g3.west)!0.5!(r3.east)$) {reviewed by a person};
+\node[num] at (\xo,12) {0};
+\node[num] at (\xp,12) {121{,}219};
+
+% ---------------- lane 4: CARE
+\node[ttl] at (0,-6) {\textbf{\textsc{Care}}, after a person checks a sample per column};
+\node[good, minimum width=\wg pt, line width=0.9pt, draw=green!45!black] (g4) at (0,-21)
+      {written};
+\node[rev, minimum width=\wr pt, anchor=west] (r4) at (g4.east) {};
+\node[fill=white, inner sep=1pt, font=\scriptsize] at (r4.center) {escalated};
+\node[num, text=green!35!black] at (\xo,-21) {\textbf{1{,}200} (1.4\%)};
+\node[num] at (\xp,-21) {34{,}000};
+\end{tikzpicture}

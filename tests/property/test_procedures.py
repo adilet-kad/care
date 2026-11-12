@@ -29,7 +29,7 @@ def test_procedure_controls_risk(procedure):
 
 
 def test_constant_score_single_test():
-    # 60 error-free labels certify alpha = 0.05 with one test at delta = 0.1
+    # 60 error-free labels admit alpha = 0.05 with one test at delta = 0.1
     # (needs 45), but not under the 21-way Bonferroni correction (needs 105).
     s, ok = [0.25] * 60, [True] * 60
     one, _ = rcps_threshold(s, ok, alpha=0.05, delta=0.1, bound="exact", grid=[0.25])

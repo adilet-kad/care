@@ -12,7 +12,7 @@ row_id, column, value, [confidence], [source]
 
 - `row_id::column` must match CARE's `CellKey`.
 - An empty `value` is an abstention: CARE escalates the cell.
-- `confidence` is optional; without it a stratum is certified whole or not at all.
+- `confidence` is optional; without it a stratum is admitted whole or not at all.
 - `source` is optional provenance for the trust gate.
 
 ## Deployment

@@ -1,7 +1,7 @@
 """Conformal controller: calibrates per-stratum thresholds and makes decisions.
 
 A repair is auto-applied iff ``s_hat >= lambda_hat[stratum]``; calibration
-guarantees ``R(lambda_hat) <= alpha`` with probability ``>= 1 - delta``.
+bounds ``R(lambda_hat) <= alpha`` with probability ``>= 1 - delta``.
 """
 
 from __future__ import annotations

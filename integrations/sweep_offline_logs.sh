@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# sweep_offline_logs.sh -- certify a cleaner's repair logs with CARE.
+# sweep_offline_logs.sh -- admit a cleaner's repair logs with CARE.
 #
 # Run from the CARE repository root after the cleaner's runner has written
 # csvs/<tool>_<ds>_pred.csv. Maps each log onto CARE's schema, scores it and runs

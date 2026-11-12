@@ -41,7 +41,7 @@ def test_clopper_pearson_upper_bounds_and_monotonicity():
 
 def _separable():
     # high-confidence repairs are correct; low-confidence ones are wrong.
-    # Sized so the (conservative) bound can certify the good tiers at alpha=0.1.
+    # Sized so the (conservative) bound can admit the good tiers at alpha=0.1.
     s = [0.95] * 400 + [0.9] * 400 + [0.3] * 200
     c = [True] * 800 + [False] * 200
     return s, c

@@ -1,4 +1,4 @@
-"""The label planner's closed forms must agree with the certifier they model."""
+"""The label planner's closed forms must agree with the procedure they model."""
 from __future__ import annotations
 
 import random
@@ -15,7 +15,7 @@ DELTA = 0.1
 
 @pytest.mark.parametrize("alpha", [0.05, 0.1, 0.2])
 def test_kmax_is_the_certifier_boundary(alpha):
-    """For a constant score, rcps certifies iff #wrong <= k_max(n)."""
+    """For a constant score, rcps admits iff #wrong <= k_max(n)."""
     for n in [10, 24, 25, 51, 52, 80, 105, 106, 150, 300]:
         kmax = certify_kmax(n, alpha, DELTA)
         for k in range(0, min(n, int(alpha * n) + 3) + 1):

@@ -1,4 +1,4 @@
-"""Multi-seed experiments (pareto, poison robustness) with bootstrap CIs.
+"""Multi-seed experiments (pareto, poisoning) with bootstrap CIs.
 
 Proposals are computed once per run; seeds resample the calibration/test split.
 """
@@ -109,7 +109,7 @@ def poison_robustness(name, client, *, poison_fracs=(0.0, 0.2, 0.4), alpha=0.1, 
     if len(_srcs) > 1:
         strata_fn = by_product(strata_fn, by_source({}))
         print(f"  [strata] log carries {len(_srcs)} sources {sorted(_srcs)}; using "
-              f"column x source (column-only would certify nothing here)")
+              f"column x source (column-only would admit nothing here)")
     rows = []
     for pf in poison_fracs:
         per_seed = [evaluate_split(repairs, truth, alpha=alpha, delta=delta,

@@ -9,7 +9,7 @@ divides by all gold errors in the table.
     python audit_error_drop.py                # oracle detection
     python audit_error_drop.py --raha         # add Raha-detection rows
     python audit_error_drop.py --skip-tax     # skip the two slow tax configurations
-    -> experiments/error_drop.csv  (+ paper/tables/tab5_error_drop.tex with --tex)
+    -> experiments/error_drop.csv  (+ paper/tables/extra_error_drop.tex with --tex)
 """
 
 from __future__ import annotations
@@ -204,7 +204,7 @@ def main() -> int:
     ap.add_argument("--baran-draw", default=None,
                     help="directory holding baran_<ds>_mapped.csv for another draw")
     ap.add_argument("--out", default="experiments/error_drop.csv")
-    ap.add_argument("--tex", default=None, help="e.g. paper/tables/tab5_error_drop.tex")
+    ap.add_argument("--tex", default=None, help="e.g. paper/tables/extra_error_drop.tex")
     args = ap.parse_args()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 

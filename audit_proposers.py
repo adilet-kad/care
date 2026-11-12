@@ -102,7 +102,7 @@ def main():
                 if acc >= 0.9999:
                     regime = "degenerate"        # proposer solves the benchmark
                 elif acc < 0.05:
-                    regime = "hopeless"          # nothing is certifiable
+                    regime = "hopeless"          # nothing is admissible
                 else:
                     regime = "informative"
                 if cov < 0.95:

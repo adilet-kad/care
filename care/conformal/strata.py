@@ -2,7 +2,7 @@
 
 A strata function maps a repair (or a bare ref string) to a stratum label; the
 controller calibrates one threshold per stratum. Finer strata give per-group
-guarantees but leave less calibration data per group.
+bounds but leave less calibration data per group.
 """
 
 from __future__ import annotations
@@ -114,7 +114,7 @@ def by_product(*fns: StrataFn, sep: str = "&") -> StrataFn:
     """Stratum = the joined labels of several stratifiers, e.g. column x source.
 
     Useful when one log mixes score scales (e.g. change vs keep decisions). Each
-    product stratum has less calibration data, so it may certify less overall.
+    product stratum has less calibration data, so it may admit less overall.
     """
     def f(r: Any) -> str:
         return sep.join(fn(r) for fn in fns)

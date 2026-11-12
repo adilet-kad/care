@@ -1,7 +1,7 @@
 """Label-budget planner: how many calibration labels to buy per stratum.
 
 For a stratum with a single confidence value (an unranked cleaner) the
-certification probability has a closed form:
+admission probability has a closed form:
 
     k_max(n)      = largest k with CP_upper(k, n; delta/|Lambda|) <= alpha
     P_cert(n, p)  = P(Binomial(n, p) <= k_max(n))
@@ -26,7 +26,7 @@ GRID_SIZE = 21          # |Lambda| of the default fixed grid 0, 1/20, ..., 1
 
 
 # --------------------------------------------------------------------------- #
-# Certification probability                                                    #
+# Admission probability                                                    #
 # --------------------------------------------------------------------------- #
 
 def _log_binom(n: int, k: int) -> float:
@@ -35,7 +35,7 @@ def _log_binom(n: int, k: int) -> float:
 
 @lru_cache(maxsize=200_000)
 def certify_kmax(n: int, alpha: float, delta: float, grid_size: int = GRID_SIZE) -> int:
-    """Largest number of wrong calibration repairs out of n that still certifies.
+    """Largest number of wrong calibration repairs out of n that still admits.
 
     Uses CP_upper(k, n; d) <= alpha  iff  P(Binomial(n, alpha) <= k) <= d, so one
     cumulative sum suffices. Returns -1 when even k = 0 fails.
@@ -55,7 +55,7 @@ def certify_kmax(n: int, alpha: float, delta: float, grid_size: int = GRID_SIZE)
 
 
 def min_labels(alpha: float, delta: float, grid_size: int = GRID_SIZE) -> int:
-    """Smallest n at which a stratum with zero observed errors certifies."""
+    """Smallest n at which a stratum with zero observed errors admits."""
     n = 1
     while certify_kmax(n, alpha, delta, grid_size) < 0:
         n += 1
@@ -81,7 +81,7 @@ def _binom_cdf(k: int, n: int, p: float) -> float:
 
 def p_certify(n: int, p: float, alpha: float, delta: float,
               grid_size: int = GRID_SIZE) -> float:
-    """P(an unranked stratum with error rate p certifies from n labels)."""
+    """P(an unranked stratum with error rate p admits from n labels)."""
     return _binom_cdf(certify_kmax(n, alpha, delta, grid_size), n, p)
 
 
@@ -285,7 +285,7 @@ def plan(strata: dict, *, alpha: float, delta: float, kappa: float = 1.0,
     Two partitions are costed and the better returned: keep every stratum that pays
     for itself and pool the rest (best prefix by error rate), or pool every eligible
     stratum. Strata believed to be at or above alpha are never pooled. Anything not
-    calibrated is escalated. A pool's guarantee holds over the pool jointly.
+    calibrated is escalated. A pool's bound holds over the pool jointly.
     """
     beliefs = {nm: (int(m), tuple(p) if isinstance(p, (tuple, list)) else float(p))
                for nm, (m, p) in strata.items()}

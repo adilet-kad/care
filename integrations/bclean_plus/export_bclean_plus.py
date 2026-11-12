@@ -94,7 +94,7 @@ def _load_bclean(with_confidence):
         if missing:
             print(f"  warning: instrumentation anchors not found exactly once in src/infer.py: "
                   f"{missing}. BClean+'s source may have changed. Falling back to "
-                  f"CONSTANT confidence (CARE will only be able to certify whole strata).",
+                  f"CONSTANT confidence (CARE will only be able to admit whole strata).",
                   file=sys.stderr)
             care_scores = None
         else:

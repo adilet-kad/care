@@ -218,7 +218,7 @@ def main() -> int:
             print(f"   {part:<10}{a:>6}{len(sub):>6}{statistics.mean(gaps):>10.3f}"
                   f"{min(gaps):>13.3f}{len(over):>4}/{len(sub):<3}"
                   f"{(max(over) if over else 0.0):>12.3f}")
-    print("   negative gap = the certifier fell short of the ceiling (the usual case).")
+    print("   negative gap = the procedure fell short of the ceiling (the usual case).")
     print("   exceed = A above the ceiling, i.e. the score ranked within a stratum;")
     print("   see the module docstring -- this is a measurement, not a violation.")
 
@@ -230,7 +230,7 @@ def main() -> int:
               f"(expect ~all of them for a constant-confidence proposer).")
 
     # 3. first error rate with no automation
-    print("\n3. COLLAPSE  first cell error rate at which each series certifies nothing")
+    print("\n3. COLLAPSE  first cell error rate at which each series admits nothing")
     print(f"   {'proposer':<11}{'base':<10}{'kind':<7}{'part':<10}{'alpha':>6}"
           f"{'predicted':>11}{'observed':>10}")
     groups = collections.defaultdict(list)

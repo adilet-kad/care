@@ -1,9 +1,9 @@
 """Ceiling on A(alpha) per proposer, dataset and partition, computed before calibration.
 
 pi_alpha is the share of repairs in strata with error rate <= alpha; pi_alpha_floor
-drops strata too small to certify at alpha (zero-error Clopper-Pearson bound at
+drops strata too small to admit at alpha (zero-error Clopper-Pearson bound at
 delta/|Lambda|, scaled by --cal-frac). Partitions: marginal, mondrian (the one the
-certifier uses), column. The output is sealed with a SHA-256 digest that
+procedure uses), column. The output is sealed with a SHA-256 digest that
 audit_sweep.py checks.
 
     python audit_alpha_ceiling.py --logs "csvs/baran_*_ni_*_mapped.csv"
@@ -67,7 +67,7 @@ def n_min_cells(alpha, delta, m) -> int:
     while clopper_pearson_upper(0, n, delta / m) > alpha:
         n += 1
         if n > 100_000:
-            raise SystemExit(f"no n certifies alpha={alpha} at delta/{m}")
+            raise SystemExit(f"no n admits alpha={alpha} at delta/{m}")
     return n
 
 

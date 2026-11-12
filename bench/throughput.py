@@ -1,7 +1,7 @@
 """Time CARE's governance layer with the cleaner replayed from a log.
 
 Phases: load, scan (hard-violation set, once per run), govern (per-candidate verify
-and score, exact vs fast path) and certify (calibrate and decide).
+and score, exact vs fast path) and admit (calibrate and decide).
 
     python -m bench.throughput --datasets beers hospital flights --out experiments/throughput.csv
 """
@@ -75,7 +75,7 @@ def measure(dataset, log, *, alpha=0.1, delta=0.1, max_cells=None, fast_verify=T
     ms_fast = 1000 * max(t_fast_total - t_probe, 0.0) / m_all
     t_govern = t_fast_total
 
-    # certify: calibrate on 40%, decide the rest
+    # admit: calibrate on 40%, decide the rest
     gold = {k: str(v).lower().strip() for k, v in defects.gold.items()}
     keys = [r for r in repairs if r in gold]
     random.Random(0).shuffle(keys)

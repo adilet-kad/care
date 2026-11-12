@@ -22,7 +22,7 @@ sys.path.insert(0, _ROOT)
 os.chdir(_ROOT)
 os.environ.setdefault("CARE_PROGRESS", "0")
 
-# (table, variant calibrated on): the levels at which Baran certifies a non-empty set.
+# (table, variant calibrated on): the levels at which Baran admits a non-empty set.
 SOURCES = [("beers", 30), ("beers", 70)]
 TARGETS = [10, 30, 50, 70]
 ALPHAS = [0.1, 0.2]

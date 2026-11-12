@@ -46,7 +46,7 @@ SMALL="hospital beers flights rayyan"
 run() { $PY -m bench.run_study "$@"; }
 
 if [ "$ONLY_VERIFY" = 0 ]; then
-  step "1/9  oracle detection: the six cleaners (Table 4)"
+  step "1/9  oracle detection: the six cleaners (Table 3)"
   for ds in $SMALL; do
     run --dataset $ds --backends "baran:csvs/baran_${ds}_mapped.csv"   $A --scoring errors   --out experiments/results_baran_errors
     run --dataset $ds --backends "baran:csvs/baran_${ds}_mapped.csv"   $A --scoring detected --out experiments/results_baran_detected
@@ -66,7 +66,7 @@ if [ "$ONLY_VERIFY" = 0 ]; then
     run --dataset $ds --backends "gidcl_scored_s2:csvs/gidcl_scored_s2_${ds}_mapped.csv" $A --scoring errors --out experiments/results_gidcl_scored_s2
   done
 
-  step "2/9  real detectors: Raha, GIDCL's own, a constraint detector (Table 8)"
+  step "2/9  real detectors: Raha, GIDCL's own, a constraint detector (Table 6)"
   for ds in $SMALL; do
     run --dataset $ds --backends "baran_raha:csvs/baran_raha_${ds}_mapped.csv" $A --scoring detected \
         --detection log:csvs/raha_${ds}_detected.csv --out experiments/results_raha_baran
@@ -84,7 +84,7 @@ if [ "$ONLY_VERIFY" = 0 ]; then
         --detection constraints --out experiments/results_constraints_baran
   done
 
-  step "3/9  corruption through untrusted and trusted sources (Table 7)"
+  step "3/9  corruption through untrusted and trusted sources (Section 7.6)"
   poison() {  # dataset backend outdir
     run --dataset "$1" --backends "$2" $P --alphas 0.2 --scoring errors                  --out "experiments/$3"
     run --dataset "$1" --backends "$2" $P --alphas 0.2 --scoring errors --trusted-poison --out "experiments/$3"
@@ -145,11 +145,11 @@ if [ "$ONLY_VERIFY" = 0 ]; then
   $PY audit_drift_probe.py
   $PY audit_gidcl_confidence.py
   if [ "$QUICK" = 1 ]; then
-    $PY audit_error_drop.py --raha --skip-tax --tex paper/tables/tab5_error_drop.tex
+    $PY audit_error_drop.py --raha --skip-tax --tex paper/tables/extra_error_drop.tex
   else
     $PY audit_alpha_ceiling.py --logs "csvs/baran_tax_mapped.csv" "csvs/baran_var_tax/*/baran_tax_mapped.csv" \
         --per-stratum --out experiments/tax_draws.csv
-    $PY audit_error_drop.py --raha --tex paper/tables/tab5_error_drop.tex
+    $PY audit_error_drop.py --raha --tex paper/tables/extra_error_drop.tex
     $PY audit_sweep.py
     $PY tools/verify_incremental.py tax --sample 60
   fi
@@ -173,10 +173,10 @@ with open("experiments/drift_monitor_more.csv", "w", newline="") as fh:
 EOF
   rm -f experiments/drift_monitor_d[123].csv
   if [ "$QUICK" = 1 ]; then
-    echo "  --quick: Table 5 (procedures) and Table 2 (scaling) keep the stored values"
+    echo "  --quick: Table 4 (procedures) and the scaling numbers of Section 4.2 keep the stored values"
   else
-    $PY tools/audit_procedures.py --tax     # all 21 scored pairs (Table 5)
-    $PY tools/audit_scaling.py              # Table 2
+    $PY tools/audit_procedures.py --tax     # all 21 scored pairs (Table 4)
+    $PY tools/audit_scaling.py              # Section 4.2
   fi
   $PY tools/audit_overwrite_formats.py --all
 
