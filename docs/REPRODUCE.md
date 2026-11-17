@@ -132,7 +132,7 @@ must then cover that queue (a keep-log, or a rerun behind the detector).
 ## 6. Checks
 
 ```bash
-pytest -q
+python -m pytest -q
 python tools/verify_fastpath_equivalence.py     # incremental and exact verification agree
 python tools/verify_incremental.py hospital --sample 0
 python tools/verify_precondition_fallback.py

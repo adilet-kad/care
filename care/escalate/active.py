@@ -1,7 +1,7 @@
 """Active escalator: applies the trust override and builds the review queue.
 
 A repair whose best evidence trust is below tau_min is escalated as
-``suspected_poison`` even if the conformal threshold would auto-apply it (I4).
+``suspected_poison`` even if the conformal threshold would auto-apply it.
 """
 
 from __future__ import annotations

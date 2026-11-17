@@ -107,7 +107,7 @@ An error in a single cell of a table flows into every report, model and decision
 on it. Automatic data cleaners propose corrections, which we call \emph{repairs}, and
 the best of them reach a repair $F_1$-score of $0.86$--$0.97$ on standard benchmarks.
 The operator of a production table, however, must decide which repairs may be written
-without a person checking them, and an average accuracy says neither which repairs will
+without human review, and an average accuracy says neither which repairs will
 be wrong nor how many. In this paper we introduce \emph{error-bounded automation}, the
 share of a cleaner's repairs that can be written unreviewed while the error rate among
 them stays within a budget the operator sets, with probability $1-\delta$. We realise
@@ -150,17 +150,18 @@ repair~\cite{10.14778/2994509.2994518, 10.14778/3675034.3675051, abdelaal-2023-r
 \begin{figure}[t]
   \centering
   \resizebox{\linewidth}{!}{\input{fig_problem}}
-  \caption{The operator's problem on one run of the cleaner Baran on the \textsc{tax}
-  table, and what each way of handling its repairs does with them at an error budget
-  of $5\%$. Counts are rounded.}
-  \Description{A horizontal bar of 121,219 proposed repairs: one column with 87,342 repairs of which 1.4 percent are wrong, and nine columns in which 38 percent are wrong. Four rows follow. Writing everything and thresholding the confidence both write about 14,000 wrong values, 11.6 percent. Reviewing everything costs 121,219 reviews. CARE writes the first column with about 1,200 wrong values, 1.4 percent, and leaves about 34,000 repairs to a person.}
+  \caption{One run of the cleaner Baran on the \textsc{tax} table at an error budget of
+  $5\%$. The top bar shows what the cleaner proposes, coloured by a correctness the
+  operator cannot see, and each row shows what one way of handling the repairs writes
+  and how many of the wrong values reach the reviewer.}
+  \Description{A bar of 121,219 proposed repairs coloured by correctness: one column holds 87,342 repairs of which 1.4 percent are wrong, and nine other columns hold 33,877 repairs of which 38 percent are wrong. Four rows follow. Writing everything and thresholding the confidence both write 100 percent of the repairs with 11.6 percent wrong, over the budget. Reviewing everything puts every wrong value before the reviewer. CARE writes 72 percent with 1.4 percent wrong, within the budget, and the remaining 28 percent, which hold 92 percent of the wrong values, go to the reviewer.}
   \label{fig:problem}
 \end{figure}
 
 \textbf{The problem: an average does not tell an operator what to write.} Someone
 running a cleaner on a production table must decide, for each proposed repair, whether
 to \emph{auto-apply} it, that is, to write it without review, or to \emph{escalate} it
-to a person. An average does not help with that decision, and
+to a human reviewer. An average does not help with that decision, and
 Figure~\ref{fig:problem} shows why on one run of Baran on the \textsc{tax} table. Of
 its $121{,}219$ repairs $88\%$ are correct, so writing them all puts about $14{,}000$
 wrong values into the table, and the average does not say which ones. Reviewing every
@@ -197,14 +198,17 @@ REpair), is the first that computes such a bound for the repairs of an arbitrary
 unmodified cleaner.
 
 \textsc{Care} is a governance layer between the cleaner and the database, and it reads
-only the cleaner's output. It decides each repair in three steps. First, it never
-writes a repair that breaks a declared integrity rule. Second, it asks a person to
-check a small random sample and, from that sample, sets for each \emph{stratum}, a
-column or a group of columns, the lowest confidence threshold above which the error can
-be proven to be below $\alpha$. Third, it escalates any repair drawn from an untrusted
-source, whatever its confidence. On the run of Fig.~\ref{fig:problem} at a $5\%$
-budget, these steps write the $87{,}342$ repairs of the one column in which Baran is
-reliable, about $1{,}200$ of them wrong, and leave the other $34{,}000$ to a person.
+only the cleaner's output. It changes no repair and makes no cleaner more accurate.
+What it adds is a decision, for each repair, between writing it unreviewed and sending
+it to the reviewer, taken in three steps. First, it never writes a repair that breaks a
+declared integrity rule. Second, it asks the reviewer to check a small random sample
+and, from that sample, sets for each \emph{stratum}, a column or a group of columns, the
+lowest confidence threshold above which the error can be proven to be below $\alpha$.
+Third, it escalates any repair drawn from an untrusted source, whatever its confidence.
+On the run of Fig.~\ref{fig:problem} at a $5\%$ budget, these steps write $72\%$ of
+the repairs without review, $1.4\%$ of them wrong, and send the other $28\%$ to the
+reviewer. Those $28\%$ hold $92\%$ of the cleaner's wrong values, so the reviewer's time
+goes to the repairs that need it.
 
 The threshold cannot be set with the usual recipes for risk control, which require an
 error that falls steadily as the threshold rises. A cleaner's confidence is neither a
@@ -283,7 +287,7 @@ queries, not for the cells written. Interactive cleaners such as
 Falcon~\cite{he2016falcon} and Raha~\cite{10.1145/3299869.3324956} spend a label
 budget to \emph{produce} repairs, whereas \textsc{Care}'s labels bound their error.
 Data-validation systems~\cite{schelter2018deequ, breck2019tfdv, song2021autovalidate}
-check constraints per batch, as I2 does, and drift detectors~\cite{rabanser2019drift}
+check constraints per batch, as \textsc{Care}'s rule check does, and drift detectors~\cite{rabanser2019drift}
 flag a changed input distribution, but neither bounds a repair's error. Trust labels on sources follow the provenance
 literature~\cite{cheney2009provenance}, and conformal validity under noisy
 labels~\cite{einbinder2022noisy} underlies our treatment of label noise.
@@ -339,55 +343,70 @@ combination, which is what a bound on the writes of an unmodified cleaner requir
 \section{Problem Setup and Threat Model}
 \label{sec:setup}
 
-In this section we define the objects \textsc{Care} works with, state the problem it
-solves, and describe the corruption it must withstand.
+This section states what \textsc{Care} decides and what it promises, first in words,
+then in symbols and on an example, and finally under corrupted inputs.
 
-\subsection{Terms and notation}
-A \emph{cell} is one value in a table, at a row and a column. A \emph{detector} flags the cells it believes are wrong, and for
-each flagged cell $i$ the cleaner emits a \emph{candidate repair}, which consists of a
+\subsection{What \textsc{Care} decides}
+\textbf{In words.} A cleaner proposes repairs. For each one \textsc{Care} decides
+whether to write it without review or to send it to the reviewer, and it promises
+that, among the repairs it writes, the share of wrong values stays within a budget.
+
+\textbf{The error budget.} The budget $\alpha$ is an input that the operator sets, and
+not a score that we report. A budget of $5\%$ means that at most $5$ of every $100$
+values written without review may be wrong. Precision, recall and $F_1$-score describe a
+cleaner, whereas the budget states what the owner of the table accepts, and
+\textsc{Care} is judged on keeping whatever budget is set. We report three budgets,
+$5\%$, $10\%$ and $20\%$.
+
+\textbf{Repairs and sources.} A \emph{detector} flags the cells it believes are wrong,
+and for each flagged cell $i$ the cleaner emits a \emph{repair}, which consists of a
 new value, a \emph{confidence score} $\hat s_i\in[0,1]$ and the \emph{sources} the
-value was drawn from. The operator marks each source \emph{trusted} or
-\emph{untrusted}. This is an administrative label, such as an allow-list of governed
-tables, and not a learned score. A repair is \emph{gated} if it names sources and none
-of them is trusted, and a repair that names no source is not gated. Whether a repair is right is unknown until
-a person checks it, after which $Y_i=1$ if the written value equals the true value and
-$0$ otherwise. Truth here is the benchmark's clean table.
-
+value was drawn from. We write $Y_i=1$ if the new value equals the true value and
+$Y_i=0$ otherwise, which is unknown until the reviewer checks the repair. Truth here is
+the benchmark's clean table. The operator marks each source \emph{trusted} or
+\emph{untrusted}, an administrative label such as an allow-list of governed tables. A
+repair is \emph{gated} if it names sources and none of them is trusted, and a repair
+that names no source is not gated.
 
 \begin{figure*}[t]
   \centering
-  \resizebox{0.82\linewidth}{!}{\input{fig_architecture}}
+  \resizebox{0.97\linewidth}{!}{\input{fig_architecture}}
   \caption{The \textsc{Care} pipeline and the path of one repair from the cleaner to
   the database or to a reviewer.}
   \Description{Block diagram: a dirty table feeds an external detector and cleaner, whose output passes through one CSV contract into CARE (verify, govern, trust gate), which either auto-applies a repair to the database or escalates it to a human.}
   \label{fig:arch}
 \end{figure*}
 
-A \emph{stratifier} assigns each cell to a \emph{stratum}, in this paper a column or a group of columns of similar cardinality when columns are too small. Every bound holds
-per stratum, so a cleaner reliable on one column is trusted on that column only. Within
-a stratum, repairs split into a \emph{checked sample} $C$ and a \emph{test set} $T$ on
-which \textsc{Care} must decide. The gate applies to both. From the checked repairs that
-pass it, $C'=\{i\in C:\neg\mathrm{gated}(i)\}$, \textsc{Care} picks a confidence
-threshold $\hat\lambda$, and the \emph{auto-applied set} is
-$S=\{i\in T:\hat s_i\ge\hat\lambda\wedge\neg\mathrm{gated}(i)\}$. The quantity
-controlled is the \emph{selective error} $R(\hat\lambda)=\Pr(Y=0\mid i\in S)$, the
-error rate among the repairs written. \emph{Error-bounded automation} at budget $\alpha$
-is the share of the test set that is written when $\hat\lambda$ is calibrated at
-$\alpha$, that is, $A(\alpha)=|S|/|T|$. We write $R(\alpha)$ for the realised error of
-that set. Table~\ref{tab:audit} reports both. A stratum in which some threshold passes
-the test is \emph{admitted}, and its repairs above that threshold are written. When no
-threshold passes, \textsc{Care} \emph{refuses} the stratum, $S$ is empty, $A(\alpha)=0$
-and there is no $R$.
+\textbf{Strata and the checked sample.} A \emph{stratifier} assigns each repair to a
+\emph{stratum}, in this paper a column, or a group of columns of similar cardinality
+when columns are small. Every promise holds per stratum, so a cleaner that is reliable
+on one column is trusted on that column only. Within a stratum the repairs split into a
+\emph{checked sample} $C$, which the reviewer labels, and a \emph{test set} $T$, on
+which \textsc{Care} decides.
 
-\textbf{Problem.} Given a cleaner's log, a budget $\alpha$, a failure probability
-$\delta$ and a stratifier, choose per stratum the threshold $\hat\lambda$ that
-maximises $|S|$ subject to $\Pr[R(\hat\lambda)\le\alpha]\ge1-\delta$, using as few
-checked labels as possible.
+\textbf{In symbols.} From the checked repairs that pass the gate,
+$C'=\{i\in C:\neg\mathrm{gated}(i)\}$, \textsc{Care} picks one confidence threshold
+$\hat\lambda$ per stratum. Three quantities follow.
+\begin{align*}
+S&=\{i\in T:\hat s_i\ge\hat\lambda\wedge\neg\mathrm{gated}(i)\} &&\text{the repairs written}\\
+R(\hat\lambda)&=\Pr(Y=0\mid i\in S) &&\text{the error among them}\\
+A(\alpha)&=|S|\,/\,|T| &&\text{error-bounded automation}
+\end{align*}
+\textsc{Care} chooses $\hat\lambda$ to make $S$ as large as possible subject to
+\[
+\Pr\bigl[R(\hat\lambda)\le\alpha\bigr]\ge1-\delta ,
+\]
+where the probability is over the random choice of the checked sample, and it does so
+with as few checked labels as possible. A stratum in which some threshold passes is
+\emph{admitted}, and its repairs above that threshold are written. When no threshold
+passes, \textsc{Care} \emph{refuses} the stratum, $S$ is empty and $A(\alpha)=0$. We
+write $R(\alpha)$ for the realised error of the written set, which
+Table~\ref{tab:audit} reports beside $A(\alpha)$.
 
 \textbf{A worked example.} A cleaner proposes $100$ repairs on a table with two
 columns, $60$ in \texttt{city} and $40$ in \texttt{zip}, each with a confidence score.
 The operator sets $\alpha=0.2$ and $\delta=0.1$, and each column is a stratum.
-\textsc{Care} draws $24$ repairs from each column for a person to check. In
+\textsc{Care} draws $24$ repairs from each column for the reviewer to check. In
 \texttt{city} all $24$ are correct, just enough to prove an error below $0.2$
 (Section~\ref{sec:zero}), so the remaining $36$ \texttt{city} repairs may be written.
 In \texttt{zip} $7$ of the $24$ are wrong, no threshold can prove the bound, and the
@@ -399,7 +418,7 @@ way is at most $0.2$.
 
 \textbf{Scope.} The bound is on repairs, not detection. It limits the chance that a
 value \textsc{Care} \emph{writes} is wrong, and says nothing about the errors the
-detector missed or about escalated repairs, which a person decides. It is a statement
+detector missed or about escalated repairs, which the reviewer decides. It is a statement
 about the population of repairs, of which the error measured on a test split is an
 estimate.
 
@@ -428,25 +447,36 @@ Section~\ref{sec:theory} proves what it bounds.
 \label{sec:arch}
 
 Section~\ref{sec:setup} fixed what is promised, and this section gives the system
-that keeps the promise. Since no cleaner can be trusted to grade its own repairs, the
-check sits outside the cleaner and sees only what the cleaner outputs. A detector and a
-cleaner, both external, produce a log of proposed repairs, and \textsc{Care} passes
-each repair through three steps, \textsc{Verify}, \textsc{Govern} and the trust gate
-(Fig.~\ref{fig:arch}). Four invariants state what each part promises. Under
-\textbf{I1} the cleaner only advises. It never writes to the database, and
-\textsc{Care} reads its output and the detector's from a file instead of running their
-code. Under \textbf{I2} rule checking is exact, so a repair that breaks a declared
-\emph{hard constraint}, a rule the table must satisfy, is never written. Its cell
-stays flagged for the reviewer, and the repair is not counted in $A(\alpha)$.
-Under \textbf{I3} only the confidence threshold $\hat\lambda$ makes a probabilistic
-claim, so the proofs account for one mechanism. Under \textbf{I4} escalation is by
-source, and a gated repair is escalated whatever its confidence.
+that keeps the promise. Figure~\ref{fig:arch} shows it and Algorithm~\ref{alg:care}
+states it line by line. \textsc{Care} sits outside the cleaner, since no cleaner can be
+trusted to grade its own repairs. The detector and the cleaner only propose. They never
+write to the database, and \textsc{Care} reads their output from a file instead of
+running their code. Each proposed repair then passes three steps, and each step makes
+one promise.
 
-\textsc{Care} uses a cleaner's confidence only to \emph{order} repairs within a
-stratum and lets the checked sample decide where the order is cut. A cleaner that
-emits the same score for every repair, as Baran does, is therefore admitted or refused
-one stratum at a time.
+\textbf{Step 1, \textsc{Verify}} (line~\ref{ln:verify}). \textsc{Care} checks every
+repair against the declared \emph{hard constraints}, the rules the table must satisfy.
+The check is exact. A repair that breaks a rule is never written, its cell stays
+flagged for the reviewer, and the repair is not counted in $A(\alpha)$.
 
+\textbf{Step 2, \textsc{Govern}} (lines~\ref{ln:sample}--\ref{ln:lambda}). In each
+stratum the reviewer labels a random sample, and \textsc{Care} sets the lowest
+confidence threshold whose error it can prove to be at most $\alpha$. This is the only
+step that makes a probabilistic claim, so the proofs of Section~\ref{sec:theory}
+concern it alone. The cleaner's confidence serves only to \emph{order} the repairs, and
+the checked sample decides where the order is cut. A cleaner that emits the same score
+for every repair, as Baran does, is therefore admitted or refused one stratum at a
+time.
+
+\textbf{Step 3, the trust gate} (lines~\ref{ln:gatec} and~\ref{ln:gates}). A gated
+repair is escalated whatever its confidence. The gate works on the source and not on
+the score, and it is applied to the checked sample as well, so that corrupted repairs
+cannot shape the threshold.
+
+A repair that passes all three steps is written, and every other repair goes to the
+reviewer. Before a batch is committed, a last check re-validates each stratum on a
+sample of its own writes (lines~\ref{ln:audit}--\ref{ln:auditend},
+Section~\ref{sec:operate}).
 
 \begin{algorithm}[t]
 \caption{\textsc{Care} on one batch of proposed repairs}
@@ -455,27 +485,27 @@ one stratum at a time.
 \begin{algorithmic}[1]
 \Require repairs $R$ with scores $\hat s_i$ and sources, budget $\alpha$, failure
   probability $\delta$, grid $\Lambda$, stratifier, trusted sources, hard constraints $F_H$
-\Ensure written set $S$ and escalated set $E$
-\State $E\gets\{i\in R: i \text{ violates } F_H\}$,\; $R\gets R\setminus E$ \Comment{\textsc{Verify}, I2}
+\Ensure written set $S$ and set $E$ escalated to the reviewer
+\State \label{ln:verify}$E\gets\{i\in R: i \text{ violates } F_H\}$,\; $R\gets R\setminus E$ \Comment{Step 1, \textsc{Verify}}
 \For{each stratum $g$ of $R$}
-  \State draw a checked sample $C_g$ uniformly, a person labels it
-  \State $C'_g\gets\{i\in C_g:\neg\mathrm{gated}(i)\}$ \Comment{gate the sample, I4}
+  \State \label{ln:sample}draw a checked sample $C_g$ uniformly, the reviewer labels it
+  \State \label{ln:gatec}$C'_g\gets\{i\in C_g:\neg\mathrm{gated}(i)\}$ \Comment{Step 3 on the sample}
   \For{$\lambda\in\Lambda$}
     \State $n_\lambda\gets|\{i\in C'_g:\hat s_i\ge\lambda\}|$,\; $k_\lambda\gets$ wrong among them
   \EndFor
-  \State $\hat\lambda_g\gets\min\{\lambda: U(k_\lambda,n_\lambda;\delta/|\Lambda|)\le\alpha\}$, else $+\infty$
-        \Comment{\textsc{Govern}, I3}
-  \State $S_g\gets\{i\in T_g:\hat s_i\ge\hat\lambda_g\wedge\neg\mathrm{gated}(i)\}$
-        \Comment{trust gate, I4}
-  \State audit $n_a$ random repairs of $S_g$, $k$ of them wrong
+  \State \label{ln:lambda}$\hat\lambda_g\gets\min\{\lambda: U(k_\lambda,n_\lambda;\delta/|\Lambda|)\le\alpha\}$, else $+\infty$
+        \Comment{Step 2, \textsc{Govern}}
+  \State \label{ln:gates}$S_g\gets\{i\in T_g:\hat s_i\ge\hat\lambda_g\wedge\neg\mathrm{gated}(i)\}$
+        \Comment{Step 3, trust gate}
+  \State \label{ln:audit}audit $n_a$ random repairs of $S_g$, $k$ of them wrong
   \If{$U(k,n_a;\delta)>\alpha$} $S_g\gets\emptyset$ \Comment{re-validation}
-  \EndIf
+  \EndIf\label{ln:auditend}
   \State $S\gets S\cup S_g$,\; $E\gets E\cup(T_g\setminus S_g)$
 \EndFor
 \end{algorithmic}
 {\footnotesize $U(k,n;d)$ is the Clopper--Pearson upper bound at level $d$ for $k$ wrong
 out of $n$, and $T_g$ are the repairs of $g$ outside $C_g$. The repairs of $C_g$ and the
-audited ones are decided by the person who labels them. The audit needs
+audited ones are decided by the reviewer who labels them. The audit needs
 $n_a\ge\lceil\ln\delta/\ln(1-\alpha)\rceil$ repairs to pass at all.}
 \end{algorithm}
 
@@ -535,7 +565,7 @@ Algorithm~\ref{alg:care} puts the steps together.
 \subsection{Constraint verification}
 \label{sec:scalable}
 
-Invariant I2 must be exact and fast. The rules that matter most in practice are
+Step 1 must be exact and fast. The rules that matter most in practice are
 \emph{functional dependencies} (FDs), where $X\to Y$ says rows that agree on columns
 $X$ must agree on $Y$ (a zip code determines its city). Re-evaluating every rule after
 each candidate repair takes $18$--$38$\,s per candidate on the $3$M-cell tax table,
@@ -543,7 +573,7 @@ depending on the run. \textsc{Care}
 instead keeps, per FD, a count of each $Y$ value in every group of rows that agree on
 $X$, which a single-cell repair updates in constant
 time~\cite{ceri1990deriving}. The index is checked against the reference predicates
-when it is built. With it the whole $121{,}193$-repair tax queue verifies in under a
+when it is built. With it the whole tax queue of about $121{,}000$ repairs verifies in under a
 second after a $12$\,s build, at $6$--$14$\,$\mu$s per repair, and build time grows
 linearly with the rows.
 
@@ -769,13 +799,13 @@ Section~\ref{sec:strat}, with one threshold for the whole table.
 
 \textbf{Protocol and metrics.} A \emph{split} is one random division of a cleaner's
 repairs into a checked sample ($40\%$) and a test set, and a \emph{draw} is one rerun
-of Baran, whose sampling is unseeded. $\delta=0.1$ throughout, per stratum. For each
+of Baran, whose sampling is unseeded. $\delta=0.1$ per stratum unless stated otherwise. For each
 configuration we report automation $A(\alpha)$ and the \emph{realised error} of the
 written set, with a one-sided bootstrap upper bound over $10$--$20$ splits. ``The
 budget held'' means that this upper bound is at most $\alpha$. A \emph{refusal}
 (``ref.'') is a pair on which nothing is written. Beside every \textsc{Care} number we
 report the cleaner's accuracy on error cells. The \emph{human cost} of a batch is
-everything a person looks at, that is, the checked sample, the audit and the
+everything the reviewer looks at, that is, the checked sample, the audit and the
 escalations together (Table~\ref{tab:labels}).
 
 \textbf{Scoring scope.} Baran, BClean, BClean+, HoloClean and ZeroEC run under
@@ -810,24 +840,30 @@ and~\ref{sec:nonoracle}).
 
 \subsection{The budget is respected in every configuration}
 \label{sec:coverage}
-We ran every cleaner on five tables, at three budgets, under two stratifications, with
+We ran every cleaner on up to five tables, at three budgets, under two stratifications, with
 $10$--$20$ splits each. In every one of these configurations the upper bound on the
 error of the written set stayed at or below $\alpha$. Written without \textsc{Care},
 the same repairs broke the budget in $12$ of the $21$ scored pairs at $\alpha=0.05$
 and in $7$ at $\alpha=0.2$ (Table~\ref{tab:audit}, Fig.~\ref{fig:pareto}).
 
-Writing nothing would also keep every budget, so the verdict only means something next
-to the share written. On average \textsc{Care} wrote $0.35$ of the repairs at
+Each row of Table~\ref{tab:audit} reads from left to right. It gives what the cleaner
+proposes, the error when all of it is written, and what \textsc{Care} writes at a
+budget of $5\%$ and at one of $20\%$. \textsc{Care} does not repair better than the
+cleaner. It limits how many wrong repairs are written unreviewed. Writing
+nothing would also keep every budget, so the verdict only means something next to the
+share written. On average \textsc{Care} wrote $0.35$ of the repairs at
 $\alpha=0.05$ and $0.70$ at $\alpha=0.2$. The bound is also conservative in practice.
 Of the $1{,}112$ (stratum, split) cells that \textsc{Care} wrote, the realised error
 exceeded $\alpha$ in $2$.
 
 \begin{table*}[t]
-  \centering  \caption{Every scored cleaner--table pair at three budgets. $n$ is the number of
-  repairs on true error cells, acc.\ their accuracy, $\pi_0$ the share of repairs in
-  columns the cleaner gets entirely right, overwr.\ the correct cells it rewrote, and
-  $A(\alpha)$ the share written. Red marks a broken budget and green a kept one, bold the
-  seven pairs that break the $20\%$ budget, $0$ a refusal and $\dagger$ an exactly
+  \centering  \caption{Every scored cleaner--table pair, without and with \textsc{Care}.
+  \textsc{Care} changes no repair. It selects which repairs are written without review.
+  $n$ is the number of repairs on true error cells, acc.\ their accuracy, overwr.\ the
+  correct cells the cleaner rewrote, \emph{error} the share of wrong values among those
+  written, and \emph{written} the share $A(\alpha)$ of repairs written without review.
+  Red marks a budget that is broken and green one that is kept. Bold marks where
+  \textsc{Care} keeps a budget that writing everything breaks. $\dagger$ is an exactly
   correct cleaner. GIDCL is scored over every cell it wrote, and Baran's rows are medians
   over six draws.}
   \label{tab:audit}
@@ -868,12 +904,11 @@ Fig.~\ref{fig:problem} at $\alpha=0.2$, where a sixth small column is also writt
 that budget two of the six draws admit \texttt{zip} as well, which is why the median
 share in Table~\ref{tab:audit} rises to $0.83$.
 
-Two numbers that can be tallied on a small labelled sample summarise this. The first,
-$\pi_0$, is the share of a cleaner's repairs in columns it gets entirely right. The
-second, the \emph{ceiling} at budget $\alpha$, is the share in columns whose error is at
-most $\alpha$, and $A(\alpha)$ cannot exceed it when strata are admitted whole.
-Whether a cleaner may run unattended is therefore a property of the cleaner--table
-pair.
+One number that can be tallied on a small labelled sample summarises this. The
+\emph{ceiling} at budget $\alpha$ is the share of a cleaner's repairs in columns whose
+error is at most $\alpha$, and $A(\alpha)$ cannot exceed it when strata are admitted
+whole. Whether a cleaner may run unattended is therefore a property of the
+cleaner--table pair.
 
 \subsection{A stratum needs enough checked cells}
 \label{sec:zero}
@@ -930,7 +965,7 @@ from a finer grid.
 \begin{table}[t]
   \centering
   \caption{Human cost per $100$ repairs with the planner's labels ($\kappa=1$, pilot
-  charged) on the ten constant-score pairs. \emph{Labels} are the cells a person checks,
+  charged) on the ten constant-score pairs. \emph{Labels} are the cells the reviewer checks,
   and \emph{all} adds the escalations.}
   \label{tab:labels}
   \small
@@ -967,7 +1002,7 @@ without \textsc{Care}, so the worst case is the cost of reviewing everything and
 more, and no entry of Table~\ref{tab:labels} exceeds $100$ reviews per $100$ repairs.
 The floor depends on the budget and not on the size of the stratum, so the cost falls
 with volume. Tax needs about $240$ labels, $0.2\%$ of its queue, whereas hospital, with
-${\sim}500$ repairs over $17$ columns, leaves most of its queue to a person at
+${\sim}500$ repairs over $17$ columns, leaves most of its queue to the reviewer at
 $\alpha=0.05$. A few thousand repairs are already enough. On flights, where each
 cleaner proposes $2{,}337$ to $4{,}891$ repairs, all five scored cleaners are admitted
 in part at that budget (Table~\ref{tab:audit}). The planner reports this before any label is bought, and the artifact
@@ -1004,8 +1039,8 @@ five reliable columns from \texttt{zip}. On hospital the trade reverses. At
 $\alpha=0.2$ marginal control writes everything at error $0.083$ and per-stratum control
 writes only $0.58$, because ${\sim}500$ repairs over $17$ columns leave every stratum
 thin. Stratification pays when reliability differs across strata \emph{and} the strata
-are large enough to calibrate, and both can be checked in advance from $\pi_0$ and the
-stratum sizes.
+are large enough to calibrate, and both can be checked in advance from the ceiling and
+the stratum sizes.
 
 \begin{figure}[t]
   \centering
@@ -1160,7 +1195,7 @@ repairs cannot mislead the decision either.
 \label{sec:limits}
 
 \textbf{Where \textsc{Care} mostly escalates.} Two regimes leave most of the work to
-a person. The first is a wide table with many small columns at a strict budget, where
+the reviewer. The first is a wide table with many small columns at a strict budget, where
 few strata reach the label floor even after grouping (Table~\ref{tab:labels}). The
 second is a table whose distribution shifts faster than batches accumulate, where the
 per-stratum audit is paid on every batch. In both regimes

@@ -2,7 +2,7 @@
 
 CARE is a governance layer between a data cleaner and the database. For each repair a
 cleaner proposes, it decides whether the repair can be written without review or must be
-escalated to a person, so that the error rate among the written repairs stays below a
+escalated to a reviewer, so that the error rate among the written repairs stays below a
 budget α with probability at least 1−δ. CARE never runs or modifies the cleaner; it reads
 the cleaner's output from one CSV file:
 
@@ -21,7 +21,7 @@ benchmark tables, every result file, and scripts that regenerate every table and
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt && pip install -e .
-pytest -q                    # unit and property tests
+python -m pytest -q          # unit and property tests
 ./reproduce.sh --quick       # all results except tax and the error-rate sweep
 ./reproduce.sh               # everything (tax needs about 16 GB of RAM)
 ./reproduce.sh --verify      # only check that stored results regenerate
@@ -69,7 +69,7 @@ text or kept only in this repository.
 | Fig. 6, acceptance without a bound | `paper/figures/fig_naive_threshold.pdf` | `fig_naive` | `heldout_budget.csv` |
 | Algorithm 1, CARE on one batch | code, not a file | `bench/study.py` `evaluate_split`, `care/verify/`, `care/conformal/controller.py` (`calibrate`, `decide`), `care/conformal/rcps.py` (`rcps_threshold`), `care/escalate/active.py` (`route`); the audit in `tools/audit_drift_monitor.py` | — |
 | Algorithm 2, planning the labels | code, not a file | `care/conformal/planner.py` (`plan`) | pilot labels drawn in `tools/audit_planner.py` |
-| Table 3, every scored pair at three budgets | `paper/tables/tab_main.tex` | `tab_main` | `results_*_pareto.csv`, `baran_median.csv` |
+| Table 3, every scored pair without and with CARE, at budgets of 5% and 20% | `paper/tables/tab_main.tex` | `tab_main` | `results_*_pareto.csv`, `baran_median.csv`, Baran's draws in `results_baran_var_*/` |
 | Table 4, alternative threshold procedures | in `paper/care_main.tex` | — | `experiments/procedures.csv` (`tools/audit_procedures.py --tax`) |
 | Table 5, human cost with the label planner | in `paper/care_main.tex` | — | `experiments/planner_savings.csv` (`tools/audit_planner.py`) |
 | Table 6, oracle versus real detection | `paper/tables/tab_detector.tex` | `tab_detector` | `results_raha_*`, `results_gidcl*`, `results_baran_detected`, `detector_quality.csv` |

@@ -71,7 +71,7 @@ class Verifier:
         """Return the feasible candidates.
 
         ``before`` is the artifact's current hard-violation set. It does not change
-        while candidates are assessed (I1), so pass it in to avoid a full scan per
+        while candidates are assessed, so pass it in to avoid a full scan per
         candidate.
         """
         options = options or {}

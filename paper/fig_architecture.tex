@@ -6,9 +6,9 @@
   node distance=0pt,
   box/.style    ={draw, line width=0.5pt, rounded corners=2pt, align=center, inner sep=4pt},
   ext/.style    ={box, fill=black!6, text width=78pt, minimum height=24pt},
-  stage/.style  ={box, fill=blue!7,  text width=96pt, minimum height=44pt},
-  gov/.style    ={box, fill=red!8,   text width=132pt, minimum height=44pt},
-  outbox/.style ={box, text width=92pt, minimum height=18pt},
+  stage/.style  ={box, fill=blue!7,  text width=112pt, minimum height=56pt},
+  gov/.style    ={box, fill=red!8,   text width=132pt, minimum height=56pt},
+  outbox/.style ={box, text width=128pt, minimum height=18pt},
   fl/.style     ={-{Latex[length=5pt,width=4.5pt]}, line width=0.7pt},
   lab/.style    ={font=\small, text=black!85, align=center, inner sep=1.5pt},
   inv/.style    ={font=\small, text=black!85},
@@ -20,7 +20,7 @@
 \node[ext, text width=40pt, left=30pt of extbox] (data) {dirty\\table};
 \node[lab, anchor=south] at (extbox.north) {external, untrusted};
 \node[inv, anchor=north, text width=150pt, align=center] at ([yshift=-1pt]extbox.south)
-      {\textbf{I1} advisory only, never writes};
+      {they only propose and never write};
 \node[box, dashed, fill=yellow!14, right=30pt of extbox, text width=112pt, minimum height=30pt]
       (contract) {\texttt{row\_id, column, value,}\\\texttt{[confidence], [source]}};
 \node[lab, anchor=south] at (contract.north) {one CSV contract};
@@ -29,13 +29,13 @@
 
 % ---------- row 2: CARE ----------
 \node[stage, below=34pt of contract] (verify)
-      {\textbf{Verify}\\hard constraints $F_H$\\[1pt]\inv{\textbf{I2} exact}};
+      {\textbf{Step 1\quad Verify}\\exact check of the hard\\constraints $F_H$\\[1pt]\inv{Alg.~\ref{alg:care}, line~\ref{ln:verify}}};
 \node[gov, right=14pt of verify] (govern)
-      {\textbf{Govern}\\one threshold $\hat\lambda$ per stratum\\[1pt]\inv{\textbf{I3} the only probabilistic step}};
+      {\textbf{Step 2\quad Govern}\\one threshold $\hat\lambda$ per stratum,\\the only probabilistic step\\[1pt]\inv{Alg.~\ref{alg:care}, lines~\ref{ln:sample}--\ref{ln:lambda}}};
 \node[gov, right=14pt of govern] (gate)
-      {\textbf{Trust gate}\\escalate if no source is trusted\\[1pt]\inv{\textbf{I4} provenance, not confidence}};
+      {\textbf{Step 3\quad Trust gate}\\escalate if no source is trusted,\\by source and not by confidence\\[1pt]\inv{Alg.~\ref{alg:care}, lines~\ref{ln:gatec} and~\ref{ln:gates}}};
 \node[draw, line width=0.8pt, rounded corners=3pt, inner sep=7pt, fit=(verify)(govern)(gate)] (care) {};
-\node[font=\small\bfseries, anchor=south east, inner sep=2pt] at ([xshift=-2pt]care.north east) {\textsc{Care} (trusted)};
+\node[font=\small\bfseries, anchor=south east, inner sep=2pt] at ([xshift=-2pt]care.north east) {\textsc{Care}};
 \draw[fl] (verify.east) -- (govern.west);
 \draw[fl] (govern.east) -- (gate.west);
 \draw[fl] (contract.south) -- (verify.north);
@@ -47,10 +47,10 @@
       node[lab, midway, right=2pt] {checked sample $C$, per stratum};
 
 % ---------- outputs ----------
-\node[outbox, fill=green!10, below=22pt of verify.south] (auto) {auto-apply to database};
-\node[outbox, fill=orange!14, below=22pt of gate.south]  (esc)  {escalate to human};
-\draw[fl] (care.south -| auto) -- (auto.north) node[lab, midway, left=2pt] {written set $S$};
+\node[outbox, fill=green!10, below=22pt of verify.south] (auto) {\textbf{written} to the database\\after the batch audit (lines~\ref{ln:audit}--\ref{ln:auditend})};
+\node[outbox, fill=orange!14, below=22pt of gate.south]  (esc)  {\textbf{escalated} to the reviewer};
+\draw[fl] (care.south -| auto) -- (auto.north) node[lab, midway, left=2pt] {set $S$};
 \draw[fl] (care.south -| esc)  -- (esc.north);
 \node[lab] at ($(auto.east)!0.5!(esc.west)$)
-      {every repair leaves as exactly one of these};
+      {every repair leaves\\as one of these};
 \end{tikzpicture}

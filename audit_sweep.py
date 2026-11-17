@@ -192,7 +192,7 @@ def main() -> int:
     med_path = write_medians(rows, args.out)
     if med_path:
         print(f"\nwrote {med_path} -- Baran is unseeded, so every plotted point is the "
-              f"MEDIAN\nover draws with a min-max range; make_figures.fig9 prefers this "
+              f"MEDIAN\nover draws with a min-max range; make_figures.py prefers this "
               f"file.")
 
     # 1. coverage

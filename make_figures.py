@@ -512,7 +512,7 @@ def fig_mechanism(plt):
     axb, axc = fig.add_subplot(inner[0]), fig.add_subplot(inner[1])
 
     # (a) one bar per column. The message is the split: columns whose bound is under
-    # every budget are written, the others go to a person.
+    # every budget are written, the others go to the reviewer.
     BLUE, GREY, RED = "#1b4f72", "#7f8c8d", "#c0392b"
     ys = list(range(len(cols)))
     vals = [bounds[c] for c in cols]
@@ -590,8 +590,8 @@ def fig_mechanism(plt):
 
 
 def tab_main():
-    """tab_main.tex: what each cleaner does alone, what writing everything unreviewed
-    costs against two budgets, and what CARE writes while keeping them."""
+    """tab_main.tex: per pair, the cleaner's repairs, the error of writing all of them
+    against two budgets, and what CARE writes at each of the two budgets."""
     import statistics as _st
     _BARAN_MED = _baran_medians()
     audit = {(r["proposer"], r["dataset"]): r
@@ -599,21 +599,20 @@ def tab_main():
     OK = r"\cellcolor{okgreen}\checkmark"
     BAD = r"\cellcolor{badred}$\boldsymbol{\times}$"
     BUDGETS = (0.05, 0.2)
-    L = [r"\normalsize", r"\setlength{\tabcolsep}{3.2pt}",
+    L = [r"\normalsize", r"\setlength{\tabcolsep}{4.2pt}",
          r"\renewcommand{\arraystretch}{0.95}",
-         r"\begin{tabular}{llrrrrrccrrrrc}", r"\toprule",
-         r"& & \multicolumn{4}{c}{the cleaner's own repairs} & "
-         r"\multicolumn{3}{c}{\begin{tabular}[b]{@{}c@{}}if every repair\\[-2pt]is written\end{tabular}} & "
-         r"\multicolumn{5}{c}{if only what \textsc{Care} admits is written} \\",
-         r"\cmidrule(lr){3-6}\cmidrule(lr){7-9}\cmidrule(lr){10-14}",
-         r"& & & & & & & \multicolumn{2}{c}{budget kept?} & "
-         r"\multicolumn{3}{c}{share written, $A(\alpha)$} & & budget \\",
-         r"\cmidrule(lr){8-9}\cmidrule(lr){10-12}",
-         r"Cleaner & Table & $n$ & acc. & $\pi_0$ & overwr. & error & "
-         r"$5\%$ & $20\%$ & $\alpha{=}0.05$ & $0.1$ & $0.2$ & error at $0.2$ & kept? \\",
+         r"\begin{tabular}{llrrr rcc !{\vrule width 0.9pt} rr rr}", r"\toprule",
+         r"& & \multicolumn{3}{c}{the cleaner's repairs} & "
+         r"\multicolumn{3}{c!{\vrule width 0.9pt}}{all written, no \textsc{Care}} & "
+         r"\multicolumn{2}{c}{\textsc{Care}, budget $5\%$} & "
+         r"\multicolumn{2}{c}{\textsc{Care}, budget $20\%$} \\",
+         r"\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-10}\cmidrule(lr){11-12}",
+         r"Cleaner & Table & $n$ & acc. & overwr. & error & within $5\%$ & within $20\%$ & "
+         r"written & error & written & error \\",
          r"\midrule"]
     broken = {b: 0 for b in BUDGETS}
-    written = {0.05: [], 0.1: [], 0.2: []}
+    written = {b: [] for b in BUDGETS}
+    care_over = {b: 0 for b in BUDGETS}
     scored = 0
     for c, rd in CLEANERS:
         for d in DATASETS:
@@ -625,9 +624,9 @@ def tab_main():
             acc = float(a["acc_on_errors"])
             harm = f"{int(a.get('clean_broken') or 0):,}".replace(",", "{,}")
             med = _BARAN_MED.get(d) if c == "Baran" else None
+            draw_rows = []
             if med:
                 acc = float(med["acc"])
-                a = dict(a, frac_in_perfect_cols=med["pi0"])
                 n = int(med["n"])
                 draw_rows = _baran_draw_rows(d)
                 draws = [applyall(r) for r in draw_rows]
@@ -638,62 +637,64 @@ def tab_main():
                 aa = applyall(rows_all)
             nstr = f"{n:,}".replace(",", "{,}")
             pre = (f"{c} & \\textsc{{{d}}}" + (r"$^{\dagger}$" if acc >= 0.9999 else "")
-                   + f" & {nstr} & {acc:.3f} & {float(a['frac_in_perfect_cols']):.3f} & {harm}")
+                   + f" & {nstr} & {acc:.3f} & {harm}")
             if (c, d) in TAB_MAIN_EXCLUDE or not rows:
                 if (c, d) == ("HoloClean", "beers"):
                     pre = pre.replace(harm, r"\textemdash")
-                L.append(pre + r" & \multicolumn{8}{c}{\emph{excluded (nothing to govern)}} \\")
+                L.append(pre + r" & \multicolumn{3}{c!{\vrule width 0.9pt}}{\emph{excluded}} & "
+                         r"\multicolumn{4}{c}{\emph{nothing to govern}} \\")
                 continue
             scored += 1
-            # the cleaner alone: error of writing everything, verdict at each budget
-            verdict = []
+            # no CARE: error of writing everything, verdict at each budget
+            verdict, breaks = [], {}
             for b in BUDGETS:
                 bad = aa is not None and aa > b
+                breaks[b] = bad
                 broken[b] += bad
                 verdict.append(BAD if bad else OK)
-            broke2 = aa is not None and aa > 0.2
-            astr = "--" if aa is None else (f"$\\mathbf{{{aa:.3f}}}$" if broke2 else f"${aa:.3f}$")
-            # CARE: share written at each budget, realised error at 0.2
+            astr = "--" if aa is None else f"${aa:.3f}$"
+            # CARE: share written and realised error at each budget
             by = {round(x[0], 3): x for x in rows}
             cells = []
-            for al in (0.05, 0.1, 0.2):
+            for b in BUDGETS:
                 if med:
-                    v = float(med["A" + str(al).replace("0.", "")])
+                    # median share over the draws; error is the median over the draws that write
+                    v = float(med["A" + str(b).replace("0.", "")])
                     v = 0.0 if v <= 1 - EMPTY else v
+                    errs = []
+                    for rr in draw_rows:
+                        x = {round(y[0], 3): y for y in care(rr)}.get(b)
+                        if x is not None and x[1] < EMPTY:
+                            errs.append(x[2])
+                    e = _st.median(errs) if errs else None
                 else:
-                    x = by.get(al)
+                    x = by.get(b)
                     v = None if x is None else (0.0 if x[1] >= EMPTY else 1 - x[1])
+                    e = None if (x is None or x[1] >= EMPTY) else x[2]
                 if v is None:
-                    cells.append("--"); continue
-                written[al].append(v)
-                cells.append(r"$0$" if v == 0.0 else f"${v:.2f}$")
-            if med:
-                refused2 = float(med["A2"]) <= 1 - EMPTY
-                r2 = None if refused2 else float(med["R02"])
-                # CARE kept the budget on every draw at every alpha (max realised error)
-                kept = all(x[2] <= x[0] + 1e-12 for rr in draw_rows for x in care(rr))
-            else:
-                x2 = by.get(0.2)
-                refused2 = x2 is None or x2[1] >= EMPTY
-                r2 = None if refused2 else x2[2]
-                kept = all(x[2] <= x[0] + 1e-12 for x in rows)
-            rstr = r"$\varnothing$" if r2 is None else (f"$\\mathbf{{{r2:.3f}}}$" if broke2 else f"${r2:.3f}$")
-            if all(x == r"$0$" for x in cells):
-                tail = r"\multicolumn{4}{c}{\emph{refused at every $\alpha$}}"
-            else:
-                tail = " & ".join(cells) + f" & {rstr}"
-            L.append(pre + f" & {astr} & " + " & ".join(verdict) + " & " + tail
-                     + f" & {OK if kept else BAD} \\\\")
+                    cells += ["--", "--"]; continue
+                written[b].append(v)
+                # bold: CARE keeps a budget that writing everything breaks
+                if v == 0.0:
+                    cells += [r"\textbf{\emph{refused}}" if breaks[b] else r"\emph{refused}", "--"]
+                    continue
+                over = e is not None and e > b + 1e-12
+                care_over[b] += over
+                num = (lambda t: f"$\\mathbf{{{t}}}$") if breaks[b] else (lambda t: f"${t}$")
+                cells += [num(f"{v:.2f}"),
+                          (r"\cellcolor{badred}" if over else r"\cellcolor{okgreen}") + num(f"{e:.3f}")]
+            L.append(pre + f" & {astr} & " + " & ".join(verdict) + " & " + " & ".join(cells) + r" \\")
         L.append(r"\addlinespace[1.5pt]")
     while L and L[-1].startswith(r"\addlinespace"):   # a cleaner with no rows yet
         L.pop()
-    mean_w = {al: sum(v) / len(v) for al, v in written.items() if v}
+    mean_w = {b: sum(v) / len(v) for b, v in written.items() if v}
     L += [r"\midrule",
-          r"\multicolumn{7}{l}{pairs that break the budget (of $" + str(scored) + r"$)} & "
+          r"\multicolumn{6}{l}{pairs over the budget (of $" + str(scored) + r"$)} & "
           + " & ".join(f"$\\mathbf{{{broken[b]}}}$" for b in BUDGETS)
-          + r" & & & & & $\mathbf{0}$ \\",
-          r"\multicolumn{9}{l}{average share written, $A(\alpha)$, over the $" + str(scored) + r"$ pairs} & "
-          + " & ".join(f"$\\mathbf{{{mean_w[al]:.2f}}}$" for al in (0.05, 0.1, 0.2)) + r" & & \\",
+          + "".join(f" & & $\\mathbf{{{care_over[b]}}}$" for b in BUDGETS) + r" \\",
+          r"\multicolumn{8}{l!{\vrule width 0.9pt}}{average share written over the $"
+          + str(scored) + r"$ pairs}"
+          + "".join(f" & $\\mathbf{{{mean_w[b]:.2f}}}$ &" for b in BUDGETS) + r" \\",
           r"\bottomrule", r"\end{tabular}"]
     open(f"{OUT_TAB}/tab_main.tex", "w").write("\n".join(L) + "\n")
     print("  tab_main.tex")
